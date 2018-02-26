@@ -1,0 +1,29 @@
+#!/bin/sh
+
+curDir=$PWD
+convert=
+[ "$1" = "-c" ] && convert="-c"
+curCntr=1
+
+indxFile="$curDir/goldenIndex.txt"
+txtFile="$curDir/goldenTxt.txt"
+
+/bin/rm -f $indxFile $txtFile
+while read oDir; do
+  oDir=$(echo "$oDir" | tr -d '\r')
+  echo $(echo "$oDir##" | sed -e 's/.*-/##/') >> $indxFile
+  cd $curDir/$oDir
+  while read file; do
+    file=$(echo "$file" | sed -e 's/.txt//' | tr -d '\r')
+    echo "$file" >> $indxFile
+    echo "$file" >> $txtFile
+    echo >> $txtFile
+	cat "main/$file.txt" | sed 's/^\xEF\xBB\xBF//' >> $txtFile
+	curCntr=$((curCntr+1))
+  done < "index.txt"
+  cd $curDir
+done < "index.txt"
+
+unix2dos $indxFile
+unix2dos $txtFile
+echo "Processed $curCntr Files"
