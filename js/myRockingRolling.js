@@ -81,6 +81,11 @@ function collapse($elem){
 //    .find('.item_content').stop(true,true).fadeOut().find('p').stop(true,true).fadeOut();
 }
 
+if (typeof showHideMenu !== 'undefined') {
+$('.menu').css({
+  'position' 	:'fixed',
+  'top'		:'0px'
+});
 setInterval(function(){
    if(interval == 3){
        $('.menu').hide(); 
@@ -94,5 +99,6 @@ $(document).bind('mousemove keypress touchmove', function() {
     $('.menu').show();
     interval = 1; 
 });
+}
 
 

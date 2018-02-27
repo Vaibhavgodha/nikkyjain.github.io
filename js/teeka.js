@@ -9,6 +9,7 @@ var bottomFontSz=20;
 var hideTeeka=0;
 var hideArth=0;
 var hideTitle=0;
+showHideMenu=1;
 
 if (typeof homePage === 'undefined') {
   var homePage="teeka.html";
