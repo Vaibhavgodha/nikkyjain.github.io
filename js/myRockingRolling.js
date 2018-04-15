@@ -13,7 +13,7 @@
 })(window.location.search.substr(1).split('&'));
 
 
-if(!('teeka' in qs) && !('padhya'in qs) && !('arth' in qs) && !('title' in qs)) {
+if(!('teeka' in qs) && !('padhya'in qs) && !('arth' in qs) && !('title' in qs) && !('nomenu' in qs)) {
 document.write("  <div class=menu align=center>");
 document.write("      <div class=rrItem>");
 document.write("          <a class='link icon_home' href="+relativePath+homePage+" title='Go Home'></a>");
