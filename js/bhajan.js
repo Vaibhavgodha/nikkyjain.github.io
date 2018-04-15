@@ -3,7 +3,6 @@ var curIndex=0;
 var curTypeIndex=1;
 var curType="abc";
 var selectedId=1;
-var allTips={};
 var mainFontSz=6;
 var menuFontSz=4;
 var bottomFontSz=4;
@@ -142,42 +141,41 @@ function itemClick(id)
     }
     return;
   }
-  var myUrl="jainDataBase/bhajans/"+myType+"/audio/"+myName+".mp3";
-  var has_audio=0;
-  $.ajax({
-    url:myUrl,
-    type:'HEAD',
-    async:false,
-    success: function() { has_audio=1; }
-  });
   var myUrl="jainDataBase/bhajans/"+myType+"/main/"+myName+".txt";
   $.ajax({
     url:myUrl,
     error: function()
     {
       alert('file '+myUrl+' does not exist');
-    },
-    success: function(data)
-    {
-      data=data.replace( /^/, "<h3><strong>"+obj.index+". "+myName+"</strong></h3>\n");
-	  if(has_audio) {
-        data=data.replace( /^/, "<audio controls> <source src='jainDataBase/bhajans/"+myType+"/audio/"+myName+".mp3' type='audio/mpeg'> Your browser does not support this audio format.  </audio>");
-	  }
+    }, success: function(data) {
+      var myUrl="jainDataBase/bhajans/"+myType+"/audio/"+myName+".mp3";
+      var has_audio=0;
+      $.ajax({
+        url:myUrl,
+        type:'HEAD',
+        async:false,
+        error: function() {
+          replaceAndAdd(obj, data, mainFontSz, myName);
+        }, success: function() { 
+            data=data.replace( /^/, "<audio controls> <source src='jainDataBase/bhajans/"+myType+"/audio/"+myName+".mp3' type='audio/mpeg'> Your browser does not support this audio format.  </audio>");
+            replaceAndAdd(obj, data, mainFontSz, myName);
+        }
+      });
+    }
+  });
+}
+
+function replaceAndAdd(obj, data, sz, name) {
+      data=data.replace( /^/, "<h3><strong>"+obj.index+". "+name+"</strong></h3>\n");
       data=data.replace( /\n/g, "<br>");
       data=data.replace( /<i>/g, "<i><font color=darkblue>");
       data=data.replace( /<\/i>/g, "</font></i>");
       data=data.replace( /<strong>/g, "<strong><font color=darkred>");
       data=data.replace( /<\/strong>/g, "</font></strong>");
-      var tips=Object.keys(allTips);
-      for(var i=0; i<tips.length; i++) {
-        var myRegEx = new RegExp(tips[i], 'g'); 
-        data=data.replace(myRegEx, '<a class=tooltip href=#>'+tips[i]+'<span class=classic>'+allTips[tips[i]]+'</span></a>');
-      }
-      data='<font size='+mainFontSz+'>'+data+'</font>';
+      data='<font size='+sz+'>'+data+'</font>';
       obj.main=data;
       $("#mainContainer").html(data);
-    }
-  });
+
 }
 
 function clickNext() 
@@ -204,19 +202,6 @@ function init() {
 
   for(i=0; i<allItems.categories.length; i++) {
     curType=allItems.categories[i];
-    var myUrl="jainDataBase/bhajans/"+curType+"/tooltip/dict.txt";
-    $.ajax({
-      url:myUrl,
-      success: function(myData)
-      {
-        var tips=myData.split("\n");
-        tips.pop();
-        for (i=0; i<tips.length; i++) {
-          var tip=tips[i].split('=');
-          allTips[tip[0]]=tip[1];
-        }
-      }
-    });
     data=$.ajax({
       url: "jainDataBase/bhajans/"+curType+"/index.txt",
       async: false

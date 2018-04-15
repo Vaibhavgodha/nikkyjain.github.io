@@ -9,6 +9,7 @@ var bottomFontSz=20;
 var hideTeeka=0;
 var hideArth=0;
 var hideTitle=0;
+var hidePadhya=0;
 showHideMenu=1;
 
 if (typeof homePage === 'undefined') {
@@ -37,6 +38,16 @@ function hideShowTitle() {
     hideTitle=0;
   }
 }
+function hideShowPadhya() {
+  $('.padhyaContainer').toggle();
+  if(!hidePadhya) {
+    $('.hideShowPadhya').html('Show Padhya');
+    hidePadhya=1;
+  } else {
+    $('.hideShowPadhya').html('Hide Padhya');
+    hidePadhya=0;
+  }
+}
 function hideShowArth() {
   $('.arthContainer').toggle();
   if(!hideArth) {
@@ -63,8 +74,10 @@ function incrFontSz () {
     menuFontSz+=4;
     bottomFontSz+=4;
     $(".mainTitle").css("font-size",mainFontSz+'px');
+    $(".padhyaContainer").css("font-size",bottomFontSz+'px');
     $(".titleContainer").css("font-size",bottomFontSz+'px');
-    $(".bottomContainer").css("font-size",bottomFontSz+'px');
+    $(".teeka").css("font-size",bottomFontSz+'px');
+    $(".arthContainer").css("font-size",bottomFontSz+'px');
     $(".topContainer").css("font-size",mainFontSz+'px');
     $(".display").css("font-size",bottomFontSz+'px');
   }
@@ -76,7 +89,9 @@ function decrFontSz () {
     bottomFontSz-=4;
     $(".mainTitle").css("font-size",mainFontSz+'px');
     $(".titleContainer").css("font-size",bottomFontSz+'px');
-    $(".bottomContainer").css("font-size",bottomFontSz+'px');
+    $(".padhyaContainer").css("font-size",bottomFontSz+'px');
+    $(".teeka").css("font-size",bottomFontSz+'px');
+    $(".arthContainer").css("font-size",bottomFontSz+'px');
     $(".topContainer").css("font-size",mainFontSz+'px');
     $(".display").css("font-size",bottomFontSz+'px');
   }
@@ -107,33 +122,59 @@ function myBottom(elem){
 function doNothing() {
   return 0;
 }
-function clickNext() 
+
+function addTable() 
 {
-  selectedId=(selectedId==curIndex) ? 1 : selectedId+1;
-  //itemClick(selectedId);
-  $(".mainTitle").css("font-size",mainFontSz+'px');
-  $(".titleContainer").css("font-size",bottomFontSz+'px');
-  $(".bottomContainer").css("font-size",bottomFontSz+'px');
-  $(".topContainer").css("font-size",mainFontSz+'px');
-  alert("HaHa "+ nextPage);
-  if(nextPage!="") {
-    window.open(nextPage, "_self");
+  document.write("<table width=100% justify=center border=0><tr>");
+  for(i=0; i<allItems.categories.length; i++) {
+    var curType=allItems.categories[i];
+    //alert("HuHu"+allItems.categories[i]);
+    var myRegEx = new RegExp('.*?_', 'g'); 
+    var myType=curType.replace( myRegEx, '');
+    document.write("<td class=example data-dropdown=#"+curType+">"+myType+"</td>");
   }
+  document.write("</tr></table>");
+  addType();
 }
-function clickPrev() 
+
+function addType() 
 {
-  selectedId=(selectedId==1) ? curIndex : selectedId-1;
-  //itemClick(selectedId);
-  $(".mainTitle").css("font-size",mainFontSz+'px');
-  $(".titleContainer").css("font-size",bottomFontSz+'px');
-  $(".bottomContainer").css("font-size",bottomFontSz+'px');
-  $(".topContainer").css("font-size",mainFontSz+'px');
-  if(prevPage!="") {
-    window.open(prevPage, "_self");
+  //alert("HiHi");
+  for(i=0; i<allItems.categories.length; i++) {
+    var curType=allItems.categories[i];
+    document.write("<div id="+curType+" class=\"dropdown dropdown-tip dropdown-scroll\">");
+    document.write("<ul class=dropdown-menu>");
+    for(j=1; j<allItems[curType]+1; j++) {
+      var obj=allItems[curType+"_"+j];
+      var myRegEx = new RegExp('.*?_', 'g'); 
+      var myName=obj.name.replace( myRegEx, '');
+      document.write("<li><a href=\"jainDataBase/teeka/"+curType+"/"+obj.name+"/index.html\"><font size=4>"+myName+"</font></a></li>");
+    }
+    document.write("</ul></div>");
   }
 }
 
-
+function myExpand(elem){
+  $('#'+elem).slideToggle();
+}
+$(document).ready(function(){
+  function toggleTeeka(gatha,teeka) {
+    var a=gatha+'-'+teeka;
+    if(document.getElementById(a).style.display=='none') {
+      document.getElementById(a).style.display='block';
+      $('#'+teeka+'.'+gatha).css('color', 'green');
+    }else{
+      document.getElementById(a).style.display='none';
+      $('#'+teeka+'.'+gatha).css('color', 'red');
+    };
+  };
+  $('span[id^="teeka"]').click(function() { 
+	toggleTeeka(this.className,this.id); 
+  });
+  $('.sanskritTeeka').click(function() { 
+	$('#sanskritTeeka').slideToggle(); 
+  });
+});
 function init() {
   var data;
   var myUrl="jainDataBase/teeka/index.txt";
@@ -202,26 +243,4 @@ function addType()
     document.write("</ul></div>");
   }
 }
-
-function myExpand(elem){
-  $('#'+elem).slideToggle();
-}
-$(document).ready(function(){
-  function toggleTeeka(gatha,teeka) {
-    var a=gatha+'-'+teeka;
-    if(document.getElementById(a).style.display=='none') {
-      document.getElementById(a).style.display='block';
-      $('#'+teeka+'.'+gatha).css('color', 'green');
-    }else{
-      document.getElementById(a).style.display='none';
-      $('#'+teeka+'.'+gatha).css('color', 'red');
-    };
-  };
-  $('span[id^="teeka"]').click(function() { 
-	toggleTeeka(this.className,this.id); 
-  });
-  $('.sanskritTeeka').click(function() { 
-	$('#sanskritTeeka').slideToggle(); 
-  });
-});
 
