@@ -29,8 +29,7 @@
 029.txt
 030.txt
 031.txt
-032.txt
-033.txt
+032-033.txt
 034.txt
 035.txt
 036.txt
@@ -61,8 +60,7 @@
 061.txt
 062.txt
 063.txt
-064.txt
-065.txt
+064-065.txt
 066.txt
 067.txt
 068.txt
@@ -71,9 +69,7 @@
 071.txt
 072.txt
 073.txt
-074.txt
-075.txt
-076.txt
+074-076.txt
 077.txt
 078.txt
 079.txt
