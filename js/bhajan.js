@@ -1,4 +1,4 @@
-var allItems=new Object();
+﻿var allItems=new Object();
 var curIndex=0;
 var curTypeIndex=1;
 var curType="abc";
@@ -157,7 +157,7 @@ function itemClick(id)
         error: function() {
           replaceAndAdd(obj, data, mainFontSz, myName);
         }, success: function() { 
-            data=data.replace( /^/, "<audio controls> <source src='jainDataBase/bhajans/"+myType+"/audio/"+myName+".mp3' type='audio/mpeg'> Your browser does not support this audio format.  </audio>");
+            data=data.replace( /^/, "<audio controls> <source src='jainDataBase/bhajans/"+myType+"/audio/"+myName+".mp3' type='audio/mpeg'> Your browser does not support this audio format.  </audio><br><br>");
             replaceAndAdd(obj, data, mainFontSz, myName);
         }
       });
