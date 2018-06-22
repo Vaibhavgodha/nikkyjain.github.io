@@ -7,49 +7,361 @@
   <link rel="stylesheet" href="js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
   <script type="text/javascript" src="js/jquery.js"></script>
   <script src="js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script>
+<style>
+img {
+    border-radius: 10px 10px 10px 10px;
+}
+</style>
+<script>
+function openBhajan () {
+    if($('#bhajan').css('display')=='none') {
+        $('#bhajan').show();
+    } else {
+        $('#bhajan').hide();
+    }
+}
+</script>
 </head>
 <body>
+<div data-role="header" data-position="fixed">
+    <!--h1 align=center>Jai Jinendra</h1-->
+    <p align=center><img src="images/jain-saint.jpg" height=100 width=110></img></p>
+    <div data-role="navbar" data-maxbutton="4" data-morebutton="true" data-morebuttonicon="ui-icon-grid" class="ui-body-a">
+        <ul>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupBhajan">Bhajan</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupPooja">Pooja</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupShastra">Shastra</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupCrossword">Crossword</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupKidsGames">Kids Games</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupMisc">Misc</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupDownload">Download</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupWordSearch">Word Search</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupGranth">Granth</a></li>
+        </ul>
+    </div>
+</div>
 
-<a href="#popupNested" data-rel="popup" class="ui-button ui-corner-all ui-shadow ui-button-inline ui-button-b" data-transition="pop">Choose a creature... <span class="ui-icon ui-icon-bars"></span></a>
-<div data-role="popup" id="popupNested" data-theme="none">
+<!--div id=bhajan style="display:none;"-->
+<!--a href="#popupBhajan" data-rel="popup" class="ui-button ui-corner-all ui-shadow ui-button-inline ui-button-b" data-transition="pop">Choose a creature... <span class="ui-icon ui-icon-bars"></span></a-->
+<div data-role="popup" id="popupBhajan" data-theme="none">
     <div data-role="collapsibleset" data-theme="b" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" style="margin:0; width:250px;">
         <div data-role="collapsible" data-inset="false">
-        <h2>Farm animals</h2>
+        <h2>देव</h2>
             <ul data-role="listview">
-                <li><a href="#" data-rel="dialog">Chicken</a></li>
-                <li><a href="#" data-rel="dialog">Cow</a></li>
-                <li><a href="#" data-rel="dialog">Duck</a></li>
-                <li><a href="#" data-rel="dialog">Sheep</a></li>
-            </ul>
-        </div><!-- /collapsible -->
+    <li><a href='#' data-rel='dialog'>ओ जगत के शांति दाता</a></li>
+    <li><a href='#' data-rel='dialog'>आ गया... आ गया...</a></li>
+    <li><a href='#' data-rel='dialog'>भव भव रुले हैं</a></li>
+    <li><a href='#' data-rel='dialog'>गा रे भैया</a></li>
+    <li><a href='#' data-rel='dialog'>कर लो जिनवर का गुणगान</a></li>
+    <li><a href='#' data-rel='dialog'>आज सी सुहानी</a></li>
+    <li><a href='#' data-rel='dialog'>आज हम जिनराज</a></li>
+    <li><a href='#' data-rel='dialog'>जब कोई नहीं आता मेरे बाबा</a></li>
+    <li><a href='#' data-rel='dialog'>हम यही कामना करते हैं</a></li>
+    <li><a href='#' data-rel='dialog'>आज मैं महावीर जी</a></li>
+    <li><a href='#' data-rel='dialog'>मन भाये चित हुलसाये</a></li>
+    <li><a href='#' data-rel='dialog'>तू ज्ञान का सागर है</a></li>
+    <li><a href='#' data-rel='dialog'>हे प्रभो चरणों में</a></li>
+    <li><a href='#' data-rel='dialog'>एक तुम्हीं आधार हो</a></li>
+    <li><a href='#' data-rel='dialog'>आओ जिनमंदिर में आओ</a></li>
+    <li><a href='#' data-rel='dialog'>कोई इत आओ जी</a></li>
+    <li><a href='#' data-rel='dialog'>घडी घडी पल पल</a></li>
+    <li><a href='#' data-rel='dialog'>आयो आयो रे हमारो</a></li>
+    <li><a href='#' data-rel='dialog'>रोम रोम से निकले</a></li>
+    <li><a href='#' data-rel='dialog'>रोम रोम में नेमिकुंवर के</a></li>
+    <li><a href='#' data-rel='dialog'>हरो पीर मेरी</a></li>
+    <li><a href='#' data-rel='dialog'>कभी वीर बनके</a></li>
+    <li><a href='#' data-rel='dialog'>रोम रोम पुलकित हो जाये</a></li>
+    <li><a href='#' data-rel='dialog'>दिन रात स्वामी तेरे गीत</a></li>
+    <li><a href='#' data-rel='dialog'>चाह मुझे है दर्शन की</a></li>
+    <li><a href='#' data-rel='dialog'>आया कहां से</a></li>
+    <li><a href='#' data-rel='dialog'>तुम जैसा मैं भी</a></li>
+    <li><a href='#' data-rel='dialog'>मैं तेरे ढिंग आया रे</a></li>
+    <li><a href='#' data-rel='dialog'>आया तेरे दरबार में</a></li>
+    <li><a href='#' data-rel='dialog'>आये तेरे द्वार</a></li>
+    <li><a href='#' data-rel='dialog'>वीर प्रभु के ये बोल</a></li>
+    <li><a href='#' data-rel='dialog'>जिन ध्याना गुण गाना</a></li>
+    <li><a href='#' data-rel='dialog'>नाथ तुम्हारी पूजा</a></li>
+    <li><a href='#' data-rel='dialog'>नाम तुम्हारा तारणहारा कब तेरा</a></li>
+    <li><a href='#' data-rel='dialog'>मेरे सर पर रख दो भगवन</a></li>
+    <li><a href='#' data-rel='dialog'>तोरी पल पल</a></li>
+    <li><a href='#' data-rel='dialog'>गाएँ जी गाएँ आदिनाथ</a></li>
+    <li><a href='#' data-rel='dialog'>मेरे मन मंदिर में आन</a></li>
+    <li><a href='#' data-rel='dialog'>छोटा सा मंदिर</a></li>
+    <li><a href='#' data-rel='dialog'>देखो जी आदिश्वर स्वामी</a></li>
+    <li><a href='#' data-rel='dialog'>भटके हुए राही को</a></li>
+    <li><a href='#' data-rel='dialog'>करता हूं तुम्हारा सुमिरन</a></li>
+    <li><a href='#' data-rel='dialog'>धन्य धन्य आज घडी</a></li>
+    <li><a href='#' data-rel='dialog'>झीनी झीनी उडे रे</a></li>
+    <li><a href='#' data-rel='dialog'>तेरी शांत छवि</a></li>
+    <li><a href='#' data-rel='dialog'>तेरी शीतल शीतल मूरत</a></li>
+    <li><a href='#' data-rel='dialog'>मनहर तेरी मूरतियाँ</a></li>
+    <li><a href='#' data-rel='dialog'>तेरे दर्शन से मेरा</a></li>
+    <li><a href='#' data-rel='dialog'>पारस प्रभु का दर्शन</a></li>
+    <li><a href='#' data-rel='dialog'>श्री जिनवर पद ध्यावें जे नर</a></li>
+    <li><a href='#' data-rel='dialog'>तुझे प्रभु वीर कहते हैं</a></li>
+    <li><a href='#' data-rel='dialog'>तेरी सुंदर मूरत</a></li>
+    <li><a href='#' data-rel='dialog'>श्री अरिहंत छवि लखिके</a></li>
+    <li><a href='#' data-rel='dialog'>मेरे महावीर झूले पलना</a></li>
+    <li><a href='#' data-rel='dialog'>पारस प्यारा लागो</a></li>
+    <li><a href='#' data-rel='dialog'>नेमि जिनेश्वर</a></li>
+    <li><a href='#' data-rel='dialog'>प्रभु हम सब का एक</a></li>
+    <li><a href='#' data-rel='dialog'>मिलता है सच्चा सुख केवल</a></li>
+    <li><a href='#' data-rel='dialog'>भावना की चूनरी</a></li>
+    <li><a href='#' data-rel='dialog'>चरणों में आया हूं</a></li>
+    <li><a href='#' data-rel='dialog'>निरखो अंग अंग</a></li>
+    <li><a href='#' data-rel='dialog'>जिनवर आनन भान</a></li>
+    <li><a href='#' data-rel='dialog'>निरखत जिन चंद्रवदन</a></li>
+    <li><a href='#' data-rel='dialog'>तुमसे लागी लगन</a></li>
+    <li><a href='#' data-rel='dialog'>करुणा सागर भगवान</a></li>
+    <li><a href='#' data-rel='dialog'>प्रभु दर्शन कर जीवन की</a></li>
+    <li><a href='#' data-rel='dialog'>निरखी निरखी मनहर</a></li>
+    <li><a href='#' data-rel='dialog'>जिनवर दरबार तुम्हारा</a></li>
+    <li><a href='#' data-rel='dialog'>रंगमा रंगमा</a></li>
+    <li><a href='#' data-rel='dialog'>दरबार तुम्हारा मनहर है</a></li>
+    <li><a href='#' data-rel='dialog'>सुरपति ले अपने शीश</a></li>
+    <li><a href='#' data-rel='dialog'>तुम्ही हो ज्ञाता</a></li>
+    <li><a href='#' data-rel='dialog'>स्वामी तेरा मुखडा</a></li>
+    <li><a href='#' data-rel='dialog'>तिहारे ध्यान की मूरत</a></li>
+    <li><a href='#' data-rel='dialog'>अशरीरी सिद्ध भगवान</a></li>
+    <li><a href='#' data-rel='dialog'>वन्दों अद्भुत चन्द्रवीर जिन</a></li>
+    <li><a href='#' data-rel='dialog'>महावीर स्वामी</a></li>
+    <li><a href='#' data-rel='dialog'>सीमंधर स्वामी</a></li>
+    <li><a href='#' data-rel='dialog'>म्हारा आदीश्वर जी</a></li>
+    <li><a href='#' data-rel='dialog'>जयवंतो जिनबिम्ब</a></li>
+    <li><a href='#' data-rel='dialog'>पंचपरम परमेष्ठी</a></li>
+    <li><a href='#' data-rel='dialog'>प्रभुजी अब ना भटकेंगे</a></li>
+    <li><a href='#' data-rel='dialog'>वर्तमान को वर्धमान की</a></li>
+    <li><a href='#' data-rel='dialog'>वीतरागी देव</a></li>
+    <li><a href='#' data-rel='dialog'>वर्धमान ललना से</a></li>
+    <li><a href='#' data-rel='dialog'>शौरीपुर वाले</a></li>
+    <li><a href='#' data-rel='dialog'>बाहुबली भगवान</a></li>
+    <li><a href='#' data-rel='dialog'>महाराजा स्वामी</a></li>
+    <li><a href='#' data-rel='dialog'>केसरिया केसरिया</a></li>
+    <li><a href='#' data-rel='dialog'>तुम्हारे दर्श बिन स्वामी</a></li>
+    <li><a href='#' data-rel='dialog'>चवलेश्वर पारसनाथ</a></li>
+    <li><a href='#' data-rel='dialog'>जगदानंदन</a></li>
+    <li><a href='#' data-rel='dialog'>चंद्रानन</a></li>
+    <li><a href='#' data-rel='dialog'>पद्मासद्म</a></li>
+    <li><a href='#' data-rel='dialog'>शुद्धात्मा का श्रद्धान</a></li>
+  </ul></div>
         <div data-role="collapsible" data-inset="false">
-        <h2>Pets</h2>
+        <h2>शास्त्र</h2>
             <ul data-role="listview">
-                <li><a href="#" data-rel="dialog">Cat</a></li>
-                <li><a href="#" data-rel="dialog">Dog</a></li>
-                <li><a href="#" data-rel="dialog">Iguana</a></li>
-                <li><a href="#" data-rel="dialog">Mouse</a></li>
-            </ul>
-        </div><!-- /collapsible -->
+    <li><a href='#' data-rel='dialog'>जब एक रत्न अनमोल</a></li>
+    <li><a href='#' data-rel='dialog'>आज मैं परम पदारथ</a></li>
+    <li><a href='#' data-rel='dialog'>हे शारदे माँ</a></li>
+    <li><a href='#' data-rel='dialog'>ये शाश्वत सुख का प्याला</a></li>
+    <li><a href='#' data-rel='dialog'>हे जिनवाणी माता तुमको लाखों प्रणाम</a></li>
+    <li><a href='#' data-rel='dialog'>शरण कोई नहीं जग में</a></li>
+    <li><a href='#' data-rel='dialog'>माँ जिनवाणी बसो हृदय में</a></li>
+    <li><a href='#' data-rel='dialog'>माँ जिनवाणी तेरो नाम</a></li>
+    <li><a href='#' data-rel='dialog'>माता तू दया करके</a></li>
+    <li><a href='#' data-rel='dialog'>करता हूं मैं अभिनंदन</a></li>
+    <li><a href='#' data-rel='dialog'>धन्य धन्य वीतराग वाणी</a></li>
+    <li><a href='#' data-rel='dialog'>धन्य धन्य जिनवाणी माता शरण</a></li>
+    <li><a href='#' data-rel='dialog'>महिमा है अगम</a></li>
+    <li><a href='#' data-rel='dialog'>सांची तो गंगा</a></li>
+    <li><a href='#' data-rel='dialog'>चरणों में आ पडा हूं</a></li>
+    <li><a href='#' data-rel='dialog'>सुनकर वाणी जिनवर की</a></li>
+    <li><a href='#' data-rel='dialog'>शांती सुधा बरसाये</a></li>
+    <li><a href='#' data-rel='dialog'>सीमंधर मुख से</a></li>
+    <li><a href='#' data-rel='dialog'>म्हारी माँ जिनवाणी</a></li>
+    <li><a href='#' data-rel='dialog'>जिनवैन सुनत, मोरी भूल भगी</a></li>
+    <li><a href='#' data-rel='dialog'>जिनवाणी की सुनै सो</a></li>
+    <li><a href='#' data-rel='dialog'>जिनवाणी जग मैया</a></li>
+    <li><a href='#' data-rel='dialog'>जिनवाणी माँ जिनवाणी माँ</a></li>
+    <li><a href='#' data-rel='dialog'>जिनवाणी अमृत रसाल</a></li>
+    <li><a href='#' data-rel='dialog'>जिनवाणी माता दर्शन की</a></li>
+    <li><a href='#' data-rel='dialog'>जिनवाणी माता रत्नत्रय निधि</a></li>
+    <li><a href='#' data-rel='dialog'>ओंकारमयी वाणी तेरी</a></li>
+  </ul></div>
         <div data-role="collapsible" data-inset="false">
-        <h2>Ocean Creatures</h2>
+        <h2>गुरु</h2>
             <ul data-role="listview">
-                <li><a href="#" data-rel="dialog">Fish</a></li>
-                <li><a href="#" data-rel="dialog">Octopus</a></li>
-                <li><a href="#" data-rel="dialog">Shark</a></li>
-                <li><a href="#" data-rel="dialog">Starfish</a></li>
-            </ul>
-        </div><!-- /collapsible -->
+    <li><a href='#' data-rel='dialog'>धन धन जैनी साधु…</a></li>
+    <li><a href='#' data-rel='dialog'>है परम-दिगम्बर मुद्रा जिनकी</a></li>
+    <li><a href='#' data-rel='dialog'>वे मुनिवर कब मिली हैं उपगारी</a></li>
+    <li><a href='#' data-rel='dialog'>नित उठ ध्याऊँ, गुण गाऊँ</a></li>
+    <li><a href='#' data-rel='dialog'>संत साधु बन के विचरूँ</a></li>
+    <li><a href='#' data-rel='dialog'>धनि मुनि जिन यह</a></li>
+    <li><a href='#' data-rel='dialog'>धनि मुनि निज आतमहित कीना</a></li>
+    <li><a href='#' data-rel='dialog'>परम गुरु बरसत ज्ञान झरी</a></li>
+    <li><a href='#' data-rel='dialog'>ऐसा योगी क्यों न अभयपद पावै</a></li>
+    <li><a href='#' data-rel='dialog'>ऐसे साधु सुगुरु कब मिलि हैं</a></li>
+    <li><a href='#' data-rel='dialog'>ऐसे मुनिवर देखें</a></li>
+    <li><a href='#' data-rel='dialog'>परम दिगम्बर यती</a></li>
+    <li><a href='#' data-rel='dialog'>वेष दिगम्बर धार</a></li>
+    <li><a href='#' data-rel='dialog'>परम दिगम्बर मुनिवर देखे</a></li>
+    <li><a href='#' data-rel='dialog'>बधाई आज मिल गाओ</a></li>
+    <li><a href='#' data-rel='dialog'>श्री मुनि राजत समता संग</a></li>
+    <li><a href='#' data-rel='dialog'>होली खेलें मुनिराज शिखर वन में</a></li>
+    <li><a href='#' data-rel='dialog'>धन्य मुनिराज हमारे हैं</a></li>
+    <li><a href='#' data-rel='dialog'>गुरु रत्नत्रय के धारी</a></li>
+    <li><a href='#' data-rel='dialog'>धन्य मुनीश्वर आतम हित में</a></li>
+    <li><a href='#' data-rel='dialog'>कबधौं मिलै मोहि श्रीगुरु</a></li>
+    <li><a href='#' data-rel='dialog'>मुनिवर आज मेरी कुटिया में</a></li>
+    <li><a href='#' data-rel='dialog'>मुनिवर को आहार</a></li>
+    <li><a href='#' data-rel='dialog'>म्हारा परम दिगम्बर मुनिवर आया</a></li>
+    <li><a href='#' data-rel='dialog'>शान्ति सुधा बरसा गये</a></li>
+    <li><a href='#' data-rel='dialog'>सिद्धों की श्रेणी में आने वाला</a></li>
+    <li><a href='#' data-rel='dialog'>शुद्धातम तत्व विलासी रे</a></li>
+    <li><a href='#' data-rel='dialog'>निर्ग्रंथों का मार्ग</a></li>
+  </ul></div>
         <div data-role="collapsible" data-inset="false">
-        <h2>Wild Animals</h2>
+        <h2>धर्म</h2>
             <ul data-role="listview">
-                <li><a href="#" data-rel="dialog">Lion</a></li>
-                <li><a href="#" data-rel="dialog">Monkey</a></li>
-                <li><a href="#" data-rel="dialog">Tiger</a></li>
-                <li><a href="#" data-rel="dialog">Zebra</a></li>
-            </ul>
-        </div><!-- /collapsible -->
-    </div><!-- /collapsible set -->
-</div><!-- /popup -->
-</body>
-</html>
+    <li><a href='#' data-rel='dialog'>ये धरम है आतम ज्ञानी का</a></li>
+    <li><a href='#' data-rel='dialog'>सब जैन धर्म की जय बोलो</a></li>
+    <li><a href='#' data-rel='dialog'>जय जिनेन्द्र बोलिए</a></li>
+    <li><a href='#' data-rel='dialog'>उठे सब के कदम</a></li>
+    <li><a href='#' data-rel='dialog'>लहर लहर लहराये, केसरिया झंडा</a></li>
+    <li><a href='#' data-rel='dialog'>जैन धर्म के हीरे मोती</a></li>
+    <li><a href='#' data-rel='dialog'>आजा अपने धर्म की तू राह में</a></li>
+    <li><a href='#' data-rel='dialog'>बडे भाग्य से हमको मिला जिन धर्म</a></li>
+    <li><a href='#' data-rel='dialog'>मैं महापुण्य उदय से जिनधर्म</a></li>
+    <li><a href='#' data-rel='dialog'>जहाँ रागद्वेष से रहित निराकुल</a></li>
+    <li><a href='#' data-rel='dialog'>भावों में सरलता रहती है</a></li>
+    <li><a href='#' data-rel='dialog'>लहरायेगा-लहरायेगा झंडा</a></li>
+    <li><a href='#' data-rel='dialog'>श्रीजिनधर्म सदा जयवन्त</a></li>
+  </ul></div>
+        <div data-role="collapsible" data-inset="false">
+        <h2>तीर्थ</h2>
+            <ul data-role="listview">
+    <li><a href='#' data-rel='dialog'>ऊंचे ऊंचे शिखरों वाला 1</a></li>
+    <li><a href='#' data-rel='dialog'>ऊंचे ऊंचे शिखरों वाला 2</a></li>
+    <li><a href='#' data-rel='dialog'>रे मन भज ले प्रभु का नाम</a></li>
+    <li><a href='#' data-rel='dialog'>चलो सब मिल सिधगिरी</a></li>
+    <li><a href='#' data-rel='dialog'>गगन मंडल में उड जाऊं</a></li>
+    <li><a href='#' data-rel='dialog'>ऊंचे शिखरों पे बसा है</a></li>
+    <li><a href='#' data-rel='dialog'>मधुबन के मंदिरों में</a></li>
+    <li><a href='#' data-rel='dialog'>विश्व तीर्थ बडा प्यारा</a></li>
+    <li><a href='#' data-rel='dialog'>जीयरा...जीयरा...जीयरा</a></li>
+    <li><a href='#' data-rel='dialog'>सम्मेद शिखर पर मैं जाऊंगा</a></li>
+    <li><a href='#' data-rel='dialog'>सांवरिया पारसनाथ शिखर पर</a></li>
+  </ul></div>
+        <div data-role="collapsible" data-inset="false">
+        <h2>कल्याणक</h2>
+            <ul data-role="listview">
+    <li><a href='#' data-rel='dialog'>आज तो बधाई राजा नाभि</a></li>
+    <li><a href='#' data-rel='dialog'>घर घर आनंद छायो</a></li>
+    <li><a href='#' data-rel='dialog'>हो संसार लगने लगा अब</a></li>
+    <li><a href='#' data-rel='dialog'>ये महामहोत्सव पंच कल्याणक</a></li>
+    <li><a href='#' data-rel='dialog'>रोम रोम में नेमिकुंवर के</a></li>
+    <li><a href='#' data-rel='dialog'>आया पंच कल्याणक महान</a></li>
+    <li><a href='#' data-rel='dialog'>जनम लिया है महावीर ने</a></li>
+    <li><a href='#' data-rel='dialog'>दिन-आयो दिन-आयो</a></li>
+    <li><a href='#' data-rel='dialog'>लिया आज प्रभु जी ने जनम सखी</a></li>
+    <li><a href='#' data-rel='dialog'>नाचे रे इन्दर देव</a></li>
+    <li><a href='#' data-rel='dialog'>गावो री बधाईयां</a></li>
+    <li><a href='#' data-rel='dialog'>आनंद अवसर आज सुरगण आये</a></li>
+    <li><a href='#' data-rel='dialog'>लिया रिषभ देव अवतार</a></li>
+    <li><a href='#' data-rel='dialog'>मेरा पलने में</a></li>
+    <li><a href='#' data-rel='dialog'>तेरे पांच हुये कल्याण प्रभु</a></li>
+    <li><a href='#' data-rel='dialog'>लिया प्रभू अवतार जयजयकार</a></li>
+    <li><a href='#' data-rel='dialog'>गर्भ कल्याणक आ गया</a></li>
+    <li><a href='#' data-rel='dialog'>बाजे कुण्डलपुर में बधाई</a></li>
+    <li><a href='#' data-rel='dialog'>झुलाय दइयो पलना</a></li>
+    <li><a href='#' data-rel='dialog'>पालकी उठाने का हमें अधिकार है</a></li>
+    <li><a href='#' data-rel='dialog'>दिव्य ध्वनि वीरा खिराई</a></li>
+    <li><a href='#' data-rel='dialog'>पंखिडा रे उड के आओ कुंड्लपुर में</a></li>
+    <li><a href='#' data-rel='dialog'>मणियों के पलने में स्वामी महावीर</a></li>
+    <li><a href='#' data-rel='dialog'>सुरपति ले अपने शीश</a></li>
+    <li><a href='#' data-rel='dialog'>विषयों की तृष्णा को छोड</a></li>
+    <li><a href='#' data-rel='dialog'>गिरनारी पर तप कल्याणक</a></li>
+    <li><a href='#' data-rel='dialog'>पंखिड़ा तू उड़ के जाना स्वर्ग</a></li>
+    <li><a href='#' data-rel='dialog'>महावीरा झूले पलना</a></li>
+    <li><a href='#' data-rel='dialog'>कल्पद्रुम यह समवसरण है</a></li>
+    <li><a href='#' data-rel='dialog'>कुण्डलपुर में वीर हैं जन्मे</a></li>
+    <li><a href='#' data-rel='dialog'>पंचकल्याण मनाओ मेरे साथी</a></li>
+    <li><a href='#' data-rel='dialog'>कुण्डलपुर वाले कुण्डलपुर वाले वीरजी</a></li>
+    <li><a href='#' data-rel='dialog'>चन्द्रोज्वल अविकार स्वामी जी</a></li>
+  </ul></div>
+        <div data-role="collapsible" data-inset="false">
+        <h2>महामंत्र</h2>
+            <ul data-role="listview">
+    <li><a href='#' data-rel='dialog'>जय जय जय कार परमेष्ठी</a></li>
+    <li><a href='#' data-rel='dialog'>जप जप रे नवकार मंत्र</a></li>
+    <li><a href='#' data-rel='dialog'>जो मंगल चार जगत में हैं</a></li>
+    <li><a href='#' data-rel='dialog'>पंच परम परमेष्ठी देखे</a></li>
+    <li><a href='#' data-rel='dialog'>बने जीवन का मेरा आधार रे</a></li>
+    <li><a href='#' data-rel='dialog'>नमन हमारा अरिहंतों को</a></li>
+    <li><a href='#' data-rel='dialog'>करना मन ध्यान महामंत्र</a></li>
+    <li><a href='#' data-rel='dialog'>मंत्र जपो नवकार मनुवा</a></li>
+    <li><a href='#' data-rel='dialog'>मंत्र नवकार हमें प्राणों से प्यारा</a></li>
+    <li><a href='#' data-rel='dialog'>मंत्र नवकारा हृदय में धर</a></li>
+    <li><a href='#' data-rel='dialog'>णमोकार नाम का ये कौन मंत्र</a></li>
+    <li><a href='#' data-rel='dialog'>णमोकार मन्त्र को प्रणाम हो</a></li>
+  </ul></div>
+        <div data-role="collapsible" data-inset="false">
+        <h2>अध्यात्म</h2>
+            <ul data-role="listview">
+    <li><a href='#' data-rel='dialog'>ओ जीवड़ा तू थारी</a></li>
+    <li><a href='#' data-rel='dialog'>हम न किसीके कोई न हमारा</a></li>
+    <li><a href='#' data-rel='dialog'>आओ रे आओ रे ज्ञानानंद की डगरिया</a></li>
+    <li><a href='#' data-rel='dialog'>जो आज दिन है वो, कल ना रहेगा</a></li>
+    <li><a href='#' data-rel='dialog'>जो जो देखी वीतराग</a></li>
+    <li><a href='#' data-rel='dialog'>हम तो कबहुँ न निज घर आये</a></li>
+    <li><a href='#' data-rel='dialog'>हम तो कबहूँ न हित उपजाये</a></li>
+    <li><a href='#' data-rel='dialog'>हम तो कबहुँ न निजगुन भाये</a></li>
+    <li><a href='#' data-rel='dialog'>और अबै न कुदेव सुहावै</a></li>
+    <li><a href='#' data-rel='dialog'>तू जाग रे चेतन देव तुझे जिनदेव</a></li>
+    <li><a href='#' data-rel='dialog'>तू जाग रे चेतन प्राणी</a></li>
+    <li><a href='#' data-rel='dialog'>मन महल में दो दो भाव जगे</a></li>
+    <li><a href='#' data-rel='dialog'>जब चले आत्माराम</a></li>
+    <li><a href='#' data-rel='dialog'>जो अपना नहीं उसके अपनेपन</a></li>
+    <li><a href='#' data-rel='dialog'>अब मेरे समकित सावन</a></li>
+    <li><a href='#' data-rel='dialog'>तन पिंजरे के अन्दर बैठा</a></li>
+    <li><a href='#' data-rel='dialog'>ये शाश्वत सुख का प्याला</a></li>
+    <li><a href='#' data-rel='dialog'>अब गतियों में नाहीं रुलेंगे</a></li>
+    <li><a href='#' data-rel='dialog'>वीर भज ले रे भाया</a></li>
+    <li><a href='#' data-rel='dialog'>भूल के अपना घर</a></li>
+    <li><a href='#' data-rel='dialog'>सुन रे जिया चिरकाल गया</a></li>
+    <li><a href='#' data-rel='dialog'>मोह की महिमा देखो</a></li>
+    <li><a href='#' data-rel='dialog'>जैन धरम के हीरे मोती</a></li>
+    <li><a href='#' data-rel='dialog'>कोई लाख करे चतुराई</a></li>
+    <li><a href='#' data-rel='dialog'>भजन बिन योंही जनम गमायो</a></li>
+    <li><a href='#' data-rel='dialog'>आतम रूप अनूपम अद्भुत</a></li>
+    <li><a href='#' data-rel='dialog'>मैं हूँ आतमराम</a></li>
+    <li><a href='#' data-rel='dialog'>अरे जिया जग धोखे की टाटी</a></li>
+    <li><a href='#' data-rel='dialog'>ऐसा मोही क्यों न अधोगति जावै</a></li>
+    <li><a href='#' data-rel='dialog'>कहा मानले ओ मेरे भैया</a></li>
+    <li><a href='#' data-rel='dialog'>मैं दर्शन ज्ञान स्वरूपी हूं</a></li>
+    <li><a href='#' data-rel='dialog'>पाप मिटाता चल ओ बंधू</a></li>
+    <li><a href='#' data-rel='dialog'>कबै निरग्रंथ स्वरूप धरूंगा</a></li>
+    <li><a href='#' data-rel='dialog'>मैं ज्ञानानंद स्वभावी हूं</a></li>
+    <li><a href='#' data-rel='dialog'>जीव! तू भ्रमत सदैव अकेला</a></li>
+    <li><a href='#' data-rel='dialog'>धोली हो गई रे काली कामली</a></li>
+    <li><a href='#' data-rel='dialog'>जिया कब तक उलझेगा</a></li>
+    <li><a href='#' data-rel='dialog'>सजधज के जिस दिन</a></li>
+    <li><a href='#' data-rel='dialog'>जीवन के किसी भी पल में</a></li>
+    <li><a href='#' data-rel='dialog'>मेरे कब ह्वै वा दिन की सुघरी</a></li>
+    <li><a href='#' data-rel='dialog'>देखा जब अपने अंतर को</a></li>
+    <li><a href='#' data-rel='dialog'>ममता की पतवार ना तोडी</a></li>
+    <li><a href='#' data-rel='dialog'>गाडी खडी रे खडी रे तैयार</a></li>
+    <li><a href='#' data-rel='dialog'>काहे पाप करे काहे छल</a></li>
+    <li><a href='#' data-rel='dialog'>अपने में अपना परमातम</a></li>
+    <li><a href='#' data-rel='dialog'>चेतन तूँ तिहुँ काल अकेला</a></li>
+    <li><a href='#' data-rel='dialog'>माया में फ़ंसे इंसान</a></li>
+    <li><a href='#' data-rel='dialog'>करलो आतम ज्ञान परमातम</a></li>
+    <li><a href='#' data-rel='dialog'>मोहे भावे न भैया थारो देश</a></li>
+    <li><a href='#' data-rel='dialog'>सोते सोते ही निकल</a></li>
+    <li><a href='#' data-rel='dialog'>सुनो जिया ये सतगुरु की बातैं</a></li>
+    <li><a href='#' data-rel='dialog'>अपनी सुधि पाय आप</a></li>
+    <li><a href='#' data-rel='dialog'>अपनी सुधि भूल आप</a></li>
+    <li><a href='#' data-rel='dialog'>चेतन अपनो रूप निहारो</a></li>
+    <li><a href='#' data-rel='dialog'>पाना नहीं जीवन को</a></li>
+    <li><a href='#' data-rel='dialog'>भाया थारी बावली जवानी</a></li>
+    <li><a href='#' data-rel='dialog'>कैसो सुंदर अवसर आयो है</a></li>
+    <li><a href='#' data-rel='dialog'>तोड़ विषियों से मन जोड़</a></li>
+    <li><a href='#' data-rel='dialog'>कबधौं सर पर धर डोलेगा</a></li>
+    <li><a href='#' data-rel='dialog'>ध्यान धर ले प्रभू को</a></li>
+    <li><a href='#' data-rel='dialog'>मोक्ष पद मिलता है धीरे धीरे</a></li>
+    <li><a href='#' data-rel='dialog'>क्यूं करे अभिमान जीवन</a></li>
+    <li><a href='#' data-rel='dialog'>संसार महा अघसागर</a></li>
+    <li><a href='#' data-rel='dialog'>निजपुर में आज मची रे होरी</a></li>
+    <li><a href='#' data-rel='dialog'>निजपुर में आज मची होरी</a></li>
+    <li><a href='#' data-rel='dialog'>ज्ञाता दृष्टा राही हूं</a></li>
+    <li><a href='#' data-rel='dialog'>सिद्धों से मिलने का मार्ग</a></li>
+    <li><a href='#' data-rel='dialog'>शास्त्रों की बातों को मन</a></li>
+  </ul></div>
+</ul></div></div>
