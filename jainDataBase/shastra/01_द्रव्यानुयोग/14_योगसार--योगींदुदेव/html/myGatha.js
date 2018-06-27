@@ -1,6 +1,6 @@
 document.write("<div id=पं-हुकमचंद-भारिल्ल class='dropdown dropdown-tip dropdown-scroll'>");
 document.write("  <ul class=dropdown-menu>");
-document.write("        <li><a href='001.html'><font size=4><font color=darkPurple><b>001</b></font> - <font color=darkBlue>﻿सिद्धों को नमस्कार</font></font></a></li>");
+document.write("        <li><a href='001.html'><font size=4><br><font size=5 color=black><b>﻿मंगलाचरण </b></font><br><br><font color=darkPurple><b>001</b></font> - <font color=darkBlue>﻿सिद्धों को नमस्कार</font></font></a></li>");
 document.write("        <li><a href='002.html'><font size=4><font color=darkPurple><b>002</b></font> - <font color=darkGreen>﻿अरहंत भगवान को नमस्कार</font></font></a></li>");
 document.write("        <li><a href='003.html'><font size=4><font color=darkPurple><b>003</b></font> - <font color=darkBlue>﻿ग्रन्थ को कहने का प्रयोजन</font></font></a></li>");
 document.write("        <li><a href='004.html'><font size=4><font color=darkPurple><b>004</b></font> - <font color=darkGreen>﻿मिथ्यादर्शन संसार का कारण है</font></font></a></li>");

@@ -98,6 +98,10 @@ document.write("        <li><a href='095.html'><font size=4><font color=darkPurp
 document.write("        <li><a href='096.html'><font size=4><font color=darkPurple><b>096</b></font> - <font color=darkGreen>﻿सुव्रत मुनिराज की कथा</font></font></a></li>");
 document.write("        <li><a href='097.html'><font size=4><font color=darkPurple><b>097</b></font> - <font color=darkBlue>﻿हरिषेण चक्रवर्ती की कथा</font></font></a></li>");
 document.write("        <li><a href='098.html'><font size=4><font color=darkPurple><b>098</b></font> - <font color=darkGreen>﻿हरिषेण चक्रवर्ती की कथा</font></font></a></li>");
+document.write("        <li><a href='099.html'><font size=4><font color=darkPurple><b>099</b></font> - <font color=darkBlue>﻿दूसरों के गुण ग्रहण करने की कथा</font></font></a></li>");
+document.write("        <li><a href='100.html'><font size=4><font color=darkPurple><b>100</b></font> - <font color=darkGreen>﻿जिनाभिषेक से प्रेम करने वाले की कथा</font></font></a></li>");
+document.write("        <li><a href='101.html'><font size=4><font color=darkPurple><b>101</b></font> - <font color=darkBlue>﻿भावानुराग-कथा</font></font></a></li>");
+document.write("        <li><a href='102.html'><font size=4><font color=darkPurple><b>102</b></font> - <font color=darkGreen>﻿प्रेमानुराग-कथा</font></font></a></li>");
 document.write("        <li><a href='103.html'><font size=4><font color=darkPurple><b>103</b></font> - <font color=darkBlue>﻿दूसरों के गुण ग्रहण करने की कथा</font></font></a></li>");
 document.write("        <li><a href='104.html'><font size=4><font color=darkPurple><b>104</b></font> - <font color=darkGreen>﻿धर्मानुराग-कथा</font></font></a></li>");
 document.write("        <li><a href='105.html'><font size=4><font color=darkPurple><b>105</b></font> - <font color=darkBlue>﻿दूसरों के गुण ग्रहण करने की कथा</font></font></a></li>");
