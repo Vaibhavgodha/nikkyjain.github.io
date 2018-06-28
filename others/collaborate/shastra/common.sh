@@ -32,41 +32,41 @@ cat << EOF >> $myFile
           <h2>गुणस्थान</h2>
           <ul data-role=listview>
             <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/GunsthanTable.html>गुणस्थान-विभाजन</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/GunsthanKarmUdayTable.html>गुणस्थान में उदय</a></li> 
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/GunsthanToAndFrom.html>गुणस्थान-गमनागमन</a></li> 
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/GunsthanKaalTable.html>गुणस्थान-काल-संख्या</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/GunsthanKarmUdayTable.html>गुणस्थान में उदय</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/GunsthanToAndFrom.html>गुणस्थान-गमनागमन</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/GunsthanKaalTable.html>गुणस्थान-काल-संख्या</a></li>
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>
           <h2>कर्म</h2>
           <ul data-role=listview>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/karmUdayTable.html>कर्म-उदय</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/karmBandhTable.html>कर्म-बन्ध</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/karmSattaTable.html>कर्म-सत्ता</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/karmUdayTable.html>कर्म-उदय</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/karmBandhTable.html>कर्म-बन्ध</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/karmSattaTable.html>कर्म-सत्ता</a></li>
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>
           <h2>बंध</h2>
           <ul data-role=listview>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/prakratiBandhPrarupana.html>प्रकृति-बंध</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/stithiSaarani.html>स्थिति-बंध</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/anubhagBandhPrarupana.html>अनुभाग-बंध</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/prakratiBandhPrarupana.html>प्रकृति-बंध</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/stithiSaarani.html>स्थिति-बंध</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/anubhagBandhPrarupana.html>अनुभाग-बंध</a></li>
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>
           <h2>प्रमाण</h2>
           <ul data-role=listview>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/kshetraPramaan.html>क्षेत्र-प्रमाण</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/sankhyaPramaan.html>संख्याप्रमाण</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/kshetraPramaan.html>क्षेत्र-प्रमाण</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/sankhyaPramaan.html>संख्याप्रमाण</a></li>
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>
           <h2>Other</h2>
           <ul data-role=listview>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/alpBahutva.html>अल्प बहुत्व</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/GatiAgati.html>गति-आगति</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/nyaay.html>न्याय</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=$myRelPath}jainDataBase/misc/moolSanghPattavali.html>मूल संघ पट्टावली</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/alpBahutva.html>अल्प बहुत्व</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/GatiAgati.html>गति-आगति</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/nyaay.html>न्याय</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/misc/moolSanghPattavali.html>मूल संघ पट्टावली</a></li>
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>

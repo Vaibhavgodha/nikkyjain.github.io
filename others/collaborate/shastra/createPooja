@@ -1,10 +1,10 @@
 #!/bin/sh
 
-. $PWD/common.sh
 
 #export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
 export dbDir=$(cd ../../.. && echo $PWD)
 echo "DB Dir $dbDir"
+. $dbDir/others/collaborate/shastra/common.sh
 myjsFile=myMobile.js
 jsFile=$dbDir/js/$myjsFile
 for category in $(ls -d $dbDir/others/collaborate/poojas/*/)
