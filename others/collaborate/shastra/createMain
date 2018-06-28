@@ -55,14 +55,11 @@ do
     myCategory=$(echo $myCategory | sed 's/.*_//')
     OIFS="$IFS"
     IFS=$'\n'
-    myCntr=1;
     for item in $(ls -d $category/*/)
     do
         myItem=$(basename $item)
         myItem=$(echo $myItem | sed 's/.*_//');
-        echo "  \$('#poojaListView-$myCategory').append('<li data-theme=\"b\"><a href='+relPath+'jainDataBase/poojas/$(basename $category)/$(basename $item)/html/pooja-${myCntr}.html data-rel=dialog data-ajax=false>$myItem</a></li>');" >> $jsFile
-        myCntr=$(($myCntr+1))
-
+        echo "  \$('#poojaListView-$myCategory').append('<li data-theme=\"b\"><a href='+relPath+'jainDataBase/poojas/$(basename $category)/$(basename $item)/html/index.html data-rel=dialog data-ajax=false>$myItem</a></li>');" >> $jsFile
     done
     echo "  \$(\"\#poojaListView-$myCategory\").listview('refresh');" >> $jsFile
     IFS="$OIFS"
@@ -79,15 +76,13 @@ do
     myCategory=$(echo $myCategory | sed 's/.*_//')
     OIFS="$IFS"
     IFS=$'\n'
-    myCntr=1;
     for item in $(ls -d $category/*/)
     do
         myItem=$(basename $item)
         myItem=$(echo $myItem | sed 's/.*_//');
         myIndexFile=$(head -1 $item/index.txt | perl -pe 's/\.txt/.html/')
-        echo "  \$('#granthListView-$myCategory').append('<li data-theme=\"b\"><a href='+relPath+'jainDataBase/teeka/$(basename $category)/$(basename $item)/html/granth-${myCntr}.html data-rel=dialog data-ajax=false>$myItem</a></li>');" >> $jsFile
+        echo "  \$('#granthListView-$myCategory').append('<li data-theme=\"b\"><a href='+relPath+'jainDataBase/teeka/$(basename $category)/$(basename $item)/html/index.html data-rel=dialog data-ajax=false>$myItem</a></li>');" >> $jsFile
         echo "  \$('#shastraListView-$myCategory').append('<li data-theme=\"b\"><a href='+relPath+'jainDataBase/shastra/$(basename $category)/$(basename $item)/html/$myIndexFile data-rel=dialog data-ajax=false>$myItem</a></li>');" >> $jsFile
-        myCntr=$(($myCntr+1))
     done
     echo "  \$(\"\#granthListView-$myCategory\").listview('refresh');" >> $jsFile
     echo "  \$(\"\#shastraListView-$myCategory\").listview('refresh');" >> $jsFile

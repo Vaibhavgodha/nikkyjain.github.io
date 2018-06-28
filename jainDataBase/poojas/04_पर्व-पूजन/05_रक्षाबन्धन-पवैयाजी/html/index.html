@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jai Jinendra</title>
+  <link rel="icon" type="image/png" href="../../../../../images/default/jainFlag-short.jpg"/>
+  <link rel="stylesheet" href="../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
+  <script type="text/javascript" src="../../../../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script>
+  <script type="text/javascript" src="../../../../../js/myMobile.js"></script>
+<style>
+img {
+    border-radius: 10px 10px 10px 10px;
+}
+div.title {
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+div.main {
+    font-size: 35px;
+    color: maroon;
+    font-weight: bold;
+    text-align: center;
+}
+div.pooja {
+    font-size: 25px;
+    color: darkBlue;
+    font-weight: bold;
+    text-align: center;
+}
+div.arth {
+    font-size: 20px;
+    color: darkBlue;
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+}
+span.om {
+    font-size: 20px;
+    color: maroon;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+div.poojarth {
+    font-size: 20px;
+    color: darkGreen;
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<div data-role="header" data-position="fixed">
+    <!--h1 align=center>Jai Jinendra</h1-->
+    <p align=center><img src="../../../../../images/jain-saint.jpg" height=100 width=110></img></p>
+    <div data-role="navbar" data-maxbutton="3" class="ui-body-a">
+        <ul>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupBhajan">भजन</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupPooja">पूजा-पाठ</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupGranth">Full Granth</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupShastra">Granth Gaatha-By-Gatha</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupGames">Play / Test</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupMisc">Misc</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+  relPath="../../../../../";
+</script>
+  <div data-history=false data-role=popup id=popupBhajan data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>01-देव</h2>
+          <ul data-role=listview id=bhajanListView-01-देव></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>02-शास्त्र</h2>
+          <ul data-role=listview id=bhajanListView-02-शास्त्र></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>03-गुरु</h2>
+          <ul data-role=listview id=bhajanListView-03-गुरु></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>04-धर्म</h2>
+          <ul data-role=listview id=bhajanListView-04-धर्म></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>05-तीर्थ</h2>
+          <ul data-role=listview id=bhajanListView-05-तीर्थ></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>06-कल्याणक</h2>
+          <ul data-role=listview id=bhajanListView-06-कल्याणक></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>07-महामंत्र</h2>
+          <ul data-role=listview id=bhajanListView-07-महामंत्र></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>08-अध्यात्म</h2>
+          <ul data-role=listview id=bhajanListView-08-अध्यात्म></ul>
+        </div>
+   </div></div>
+  <div data-history=false data-role=popup id=popupPooja data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>प्रारम्भ</h2>
+          <ul data-role=listview id=poojaListView-प्रारम्भ></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>नित्य-पूजा</h2>
+          <ul data-role=listview id=poojaListView-नित्य-पूजा></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>तीर्थंकर</h2>
+          <ul data-role=listview id=poojaListView-तीर्थंकर></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>पर्व-पूजन</h2>
+          <ul data-role=listview id=poojaListView-पर्व-पूजन></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>विसर्जन</h2>
+          <ul data-role=listview id=poojaListView-विसर्जन></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>पाठ</h2>
+          <ul data-role=listview id=poojaListView-पाठ></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>छहढाला</h2>
+          <ul data-role=listview id=poojaListView-छहढाला></ul>
+        </div>
+   </div></div>
+  <div data-history=false data-role=popup id=popupGranth data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>द्रव्यानुयोग</h2>
+          <ul data-role=listview id=granthListView-द्रव्यानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>चरणानुयोग</h2>
+          <ul data-role=listview id=granthListView-चरणानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>करणानुयोग</h2>
+          <ul data-role=listview id=granthListView-करणानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>प्रथमानुयोग</h2>
+          <ul data-role=listview id=granthListView-प्रथमानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>न्याय</h2>
+          <ul data-role=listview id=granthListView-न्याय></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>भजन-पाठ</h2>
+          <ul data-role=listview id=granthListView-भजन-पाठ></ul>
+        </div>
+   </div></div>
+  <div data-history=false data-role=popup id=popupShastra data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>द्रव्यानुयोग</h2>
+          <ul data-role=listview id=shastraListView-द्रव्यानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>चरणानुयोग</h2>
+          <ul data-role=listview id=shastraListView-चरणानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>करणानुयोग</h2>
+          <ul data-role=listview id=shastraListView-करणानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>प्रथमानुयोग</h2>
+          <ul data-role=listview id=shastraListView-प्रथमानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>न्याय</h2>
+          <ul data-role=listview id=shastraListView-न्याय></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>भजन-पाठ</h2>
+          <ul data-role=listview id=shastraListView-भजन-पाठ></ul>
+        </div>
+   </div></div>
+  <div data-history=false data-role=popup id=popupMisc data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>गुणस्थान</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GunsthanTable.html>गुणस्थान-विभाजन</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GunsthanKarmUdayTable.html>गुणस्थान में उदय</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GunsthanToAndFrom.html>गुणस्थान-गमनागमन</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GunsthanKaalTable.html>गुणस्थान-काल-संख्या</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>कर्म</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/karmUdayTable.html>कर्म-उदय</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/karmBandhTable.html>कर्म-बन्ध</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/karmSattaTable.html>कर्म-सत्ता</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>बंध</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/prakratiBandhPrarupana.html>प्रकृति-बंध</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/stithiSaarani.html>स्थिति-बंध</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/anubhagBandhPrarupana.html>अनुभाग-बंध</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>प्रमाण</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/kshetraPramaan.html>क्षेत्र-प्रमाण</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/sankhyaPramaan.html>संख्याप्रमाण</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Other</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/alpBahutva.html>अल्प बहुत्व</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GatiAgati.html>गति-आगति</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/nyaay.html>न्याय</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/moolSanghPattavali.html>मूल संघ पट्टावली</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Download</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/Jain-Bhajan.pdf>जैन भजन</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/Jain-Pooja-Paath.pdf>जैन पूजा-पाठ</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-ratnakarandShraavakaachaar.pdf>रत्नकरंड-श्रावकाचार--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-samaysaar.pdf>समयसार--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-labdhisaar.pdf>लब्धिसार--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-gommatSaarJeevKand.pdf>गोम्मटसार-जीवकांड--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-panchastikay.pdf>पंचास्तिकाय--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/JeevSamas.pdf>JeevSamas</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/bookmark.pdf>Bookmark</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-yogsaar.pdf>योगसार--गाथा</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+
+  <div data-history=false data-role=popup id=popupGames data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Kids Games</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../kidsGames1.html>Arrange Names</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Crossword Puzzle</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/crosswords/crossword1.html>Puzzle-1</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/crosswords/crossword2.html>Puzzle-2</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/crosswords/crossword3.html>Puzzle-3</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Word Search</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/wordSearch/WordSearch-1.pdf>Puzzle-1</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/wordSearch/WordSearch-2.pdf>Puzzle-2</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/wordSearch/WordSearch-3.pdf>Puzzle-3</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Exam</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/jainExam/GunsthanVivechan.html>गुणस्थान विवेचन</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/jainExam/TattvarthSutra-1.html>तत्वार्थ मंजुषा - अध्याय 1</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/jainExam/jeevSamas.html>JeevSamas</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/jainExam/karmUdayBandh.html>Karm Uday Bandh</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+<div align=center><h1><font color=darkBlue>रक्षाबन्धन-पवैयाजी</font></h1>
+<div class=pooja>
+﻿वर्धमान अतिवीर वीर प्रभु सन्मति महावीर स्वामी <br>वीतराग सर्वज्ञ जिनेश्वर अन्तिम तीर्थंकर नामी ॥<br>श्री अरिहंतदेव मंगलमय स्व-पर प्रकाशक गुणधामी <br>सकल लोक के ज्ञाता-दृष्टा महापूज्य अन्तर्यामी ॥<br>महावीर शासन का पहला दिन श्रावण कृष्णा एकम <br>शासन वीर जयन्ती आती है प्रतिवर्ष सुपावनतम ॥<br>विपुलाचल पर्वत पर प्रभु के समवशरण में मंगलकार <br>खिरी दिव्यध्वनि शासन-वीर जयन्ती-पर्व हुआ साकार ॥<br>प्रभु चरणाम्बुज पूजन करने का आया उर में शुभ भाव <br>सम्यग्ज्ञान प्रकाश मुझे दो, राग-द्वेष का करूँ अभाव ॥<br><span class=om>ॐ ह्रीं श्री सन्मति वीरजिनेन्द्र ! अत्र अवतर अवतर संवौषट् आह्वाननं</span><br><span class=om>ॐ ह्रीं श्री सन्मति वीरजिनेन्द्र ! अत्र तिष्ठ तिष्ठ ठ: ठः स्थापनं</span><br><span class=om>ॐ ह्रीं श्री सन्मति वीरजिनेन्द्र ! अत्र मम सन्निहितो भव भव वषट् सन्निधि करणं</span><br><br>भाग्यहीन नर रत्न स्वर्ण को जैसे प्राप्त नहीं करता <br>ध्यानहीन मुनि निज आतम का त्यों अनुभवन नहीं करता ॥<br>शासन वीर जयन्ती पर जल चढ़ा वीर का ध्यान करूँ <br>खिरी दिव्यध्वनि प्रथम देशना सुन अपना कल्याण करूँ ॥<br><span class=om>ॐ ह्रीं श्री सन्मतिवीरजिनेन्द्राय जन्मजरामृत्युविनाशनाय जलं निर्वपामीति स्वाहा</span> <br><br>विविध कल्पना उठती मन में, वे विकल्प कहलाते हैं <br>बाह्य पदार्थो में ममत्व मन के संकल्प रुलाते हैं  ॥<br>शासन वीर जयन्ती पर चंदन अर्पित कर ध्यान करूँ ॥खिरी.॥<br><span class=om>ॐ ह्रीं श्री सन्मतिवीरजिनेन्द्राय भवातापविनाशनाय चन्दनं निर्वपामीति स्वाहा</span> <br><br>अंतरंग बहिरंग परिग्रह त्यागूँ मैं निर्ग्रन्थ बनूँ <br>जीवन मरण, मित्र अरि सुख दुख लाभ हानि में साम्य बनूँ ॥<br>शासन वीर जयन्ती पर, कर अक्षत भेंट स्वध्यान करूँ ॥खिरी. ॥<br><span class=om>ॐ ह्रीं श्री सन्मतिवीरजिनेन्द्राय अक्षयपदप्राप्तये अक्षतान् निर्वपामीति स्वाहा</span> <br><br>शुद्ध सिद्ध ज्ञानादि गुणों से मैं समृद्ध हूँ देह प्रमाण <br>नित्य असंख्यप्रदेशी निर्मल हूँ अमूर्तिक महिमावान ॥<br>शासन वीर जयन्ती पर, कर भेंट पुष्प निज ध्यान करूँ <br>खिरी दिव्यध्वनि प्रथम देशना सुन अपना कल्याण करूँ ॥<br><span class=om>ॐ ह्रीं श्री सन्मतिवीरजिनेन्द्राय कामबाणविध्वंसनाय पुष्पं निर्वपामीति स्वाहा</span> <br><br>परम तेज हूँ परम ज्ञान हूँ परम पूर्ण हूँ ब्रह्म स्वरूप <br>निरालम्ब हूँ निर्विकार हूँ निश्चय से मैं परम अनूप ॥<br>शासन वीर जयन्ती पर नैवेद्य चढ़ा निज ध्यान करूँ ॥खिरी. ॥<br><span class=om>ॐ ह्रीं श्री सन्मतिवीरजिनेन्द्राय क्षुधारोगविनाशनाय नैवेद्यं निर्वपामीति स्वाहा</span> <br><br>स्व-पर प्रकाशक केवलज्ञानमयी, निजमूर्ति अमूर्ति महान <br>चिदानन्द टंकोत्कीर्ण हूँ ज्ञान-ज्ञेय-ज्ञाता भगवान ॥<br>शासन वीर जयन्ती पर मैं दीप चढ़ा निज ध्यान करूँ ॥खिरी. ॥<br><span class=om>ॐ ह्रीं श्री सन्मतिवीरजिनेन्द्राय मोहान्धकारविनाशनाय दीपं निर्वपामीति स्वाहा</span> <br><br>द्रव्यकर्म ज्ञानावरणादिक देहादिक नोकर्म विहीन <br>भाव कर्म रागादिक से मैं पृथक् आत्मा ज्ञान प्रवीण ॥<br>शासन वीर जयन्ती पर मैं धूप चढ़ा निज ध्यान करूँ ॥खिरी. ॥<br><span class=om>ॐ ह्रीं श्री सन्मतिवीरजिनेन्द्राय अष्टकर्मविध्वंसनाय धूपं निर्वपामीति स्वाहा</span> <br><br>कर्मल रहित शुद्ध ज्ञानमय, परममोक्ष है मेरा धाम <br>भेदज्ञान की महाशक्ति से पाऊँगा अनन्त विश्राम ॥<br>शासन वीर जयन्ती पर मैं सुफल चढ़ा निज ध्यान करूँ ॥खिरी. ॥<br><span class=om>ॐ ह्रीं श्री सन्मतिवीरजिनेन्द्राय मोक्षफलप्राप्तये फलं निर्वपामीति स्वाहा</span> <br><br>मात्र वासनाजन्य कल्पना है परद्रव्यों में सुखबुद्धि <br>इन्द्रियजन्य सुखों के पीछे पाई किंचित् नहीं विशुद्धि ॥<br>शासन वीर जयन्ती पर मैं अर्घ्य चढ़ा निज ध्यान करूँ ॥खिरी. ॥<br><span class=om>ॐ ह्रीं श्री सन्मतिवीरजिनेन्द्राय अनर्घ्यपदप्राप्तये अर्घ्यंं निर्वपामीति स्वाहा</span> <br><br>जयमाला<br><br>विपुलाचल के गगन को, वन्दूँ बारम्बार <br>सन्मति प्रभु की दिव्यध्वनि, जहाँ हुई साकार ॥१॥<br><br>महावीर प्रभु दीक्षा लेकर मौन हुए तप संयम धार <br>परिषह उपसर्गो को जय कर देश-देश में किया विहार ॥<br>द्वादश वर्ष तपस्या करके ऋजुकूला सरितट आये <br>क्षपकश्रेणी चढ़ शुक्ल ध्यान से कर्म घातिया विनसाये ॥<br>स्व-पर प्रकाशक परम ज्योतिमय प्रभु को केवलज्ञान हुआ <br>इन्द्रादिक को समवशरण रच मन में हर्ष महान हुआ ॥<br>बारह सभा जुड़ीं अति सुन्दर, सबके मन का कमल खिला <br>जनमानस को प्रभु की दिव्यध्वनि का, किन्तु न लाभ मिला ॥<br>छ्यासठ दिन तक रहे, मौन प्रभु दिव्यध्वनि का मिला न योग <br>अपने आप स्वयं मिलता है, निमित्त-नैमित्तिक संयोग ॥<br>राजगृही के विपुलाचल पर प्रभु का समवशरण आया <br>अवधिज्ञान से जान इन्द्र ने गणधर का अभाव पाया ॥<br>बड़ी युक्ति से इन्द्रभूति गौतम ब्राह्मण को वह लाया <br>गौतम ने दीक्षा लेते ही ऋषि गणधर का पद पाया ॥<br>तत्क्षण खिरी दिव्यध्वनि प्रभु की द्वादशांगमय कल्याणी <br>रच डाली अन्तरर्मुहूर्त में, गौतम ने श्री जिनवाणी ॥<br>सात शतक लघु और महाभाषा अष्टादश विविध प्रकार <br>सब जीवों ने सुनी दिव्यध्वनि अपने उपादान अनुसार ॥<br>विपुलाचल पर समवशरण का हुआ आज के दिन विस्तार <br>प्रभु की पावन वाणी सुनकर गूँजा नभ में जय-जयकार ॥<br>जन-जन में नव जागृति जागी मिटा जगत का हाहाकार <br>जियो और जीने दो का जीवन संदेश हुआ साकार ॥<br>धर्म अहिंसा सत्य और अस्तेय मनुज जीवन का सार <br>ब्रह्मचर्य अपरिग्रह से ही होगा जीव मात्र से प्यार ॥<br>घृणा पाप से करो सदा ही किन्तु नहीं पापी से द्वेष <br>जीव मात्र को निज-सम समझो यही वीर का था उपदेश ॥<br>इन्द्रभूति गौतम ने गणधर बनकर गूँथी जिनवाणी <br>इसके द्वारा परमात्मा बन सकता कोई भी प्राणी ॥<br>मेघ गर्जना करती श्री जिनवाणी का वह चला प्रवाह <br>पाप ताप संताप नष्ट हो गये मोक्ष की जागी चाह ॥<br>प्रथमं, करणं, चरणं, द्रव्यं ये अनुयोग बताये चार <br>निश्चय नय सत्यार्थ बताया, असत्यार्थ सारा व्यवहार ॥<br>तीन लोक षट् द्रव्यमयी है सात तत्त्व की श्रद्धा सार <br>नव पदार्थ छह लेश्या जानो, पंच महाव्रत उत्तम धार ॥<br>समिति गुप्ति चारित्र पालकर तप संयम धारो अविकार <br>परम शुद्ध निज आत्मतत्त्व, आश्रय से हो जाओ भव पार ॥<br>उस वाणी को मेरा वंदन उसकी महिमा अपरम्पार <br>सदा वीर शासन की पावन, परम जयन्ती जय-जयकार ॥<br>वर्धमान अतिवीर वीर की पूजन का है हर्ष अपार <br>काललब्धि प्रभु मेरी आई, शेष रहा थोड़ा संसार ॥<br><span class=om>ॐ ह्रीं श्रीं सन्मतिवीरजिनेन्द्राय अनर्घ्यपद प्राप्तये जयमालापूर्णार्घ्यं निर्वपामीति स्वाहा</span> <br><br>दिव्यध्वनि प्रभु वीर की देती सौख्य अपार <br>आत्मज्ञान की शक्ति से, खुले मोक्ष का द्वार ॥<br>(पुष्पाञ्जलिं क्षिपेत्)<br><br>
+</div>
+</div></body></html>

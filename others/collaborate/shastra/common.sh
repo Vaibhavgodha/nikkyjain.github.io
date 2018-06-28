@@ -25,7 +25,9 @@ echo "   </div></div>" >> $myFile
 function createMiscList {
   myFile=$1
   myRelPath=$2
-cat << EOF >> $myFile
+if [ "$myMiscListVar" = "" ]; then
+#cat << EOF >> $myFile
+read -r -d '' myMiscListVar << EOF
   <div data-history=false data-role=popup id=popupMisc data-theme=none>
     <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
         <div data-role=collapsible data-inset=false data-theme=a>
@@ -86,9 +88,7 @@ cat << EOF >> $myFile
         </div>
     </div>
   </div>
-EOF
 
-cat << EOF >> $myFile
   <div data-history=false data-role=popup id=popupGames data-theme=none>
     <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
         <div data-role=collapsible data-inset=false data-theme=a>
@@ -124,23 +124,18 @@ cat << EOF >> $myFile
         </div>
     </div>
   </div>
-
 EOF
-
-cat << EOF >> $myFile
-  <div data-history=false data-role=popup id=popupExam data-theme=none>
-    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
-    </div>
-  </div>
-
-EOF
+fi
+echo "$myMiscListVar" >> $myFile
 }
 
 function createHeader {
   myOutFile=$1
   myRelPath=$2
 
-  cat <<EOF > $myOutFile
+if [ "$myHeaderVar" = "" ]; then
+#cat <<EOF > $myOutFile
+read -r -d '' myHeaderVar << EOF
 <!DOCTYPE html>
 <html>
 <head>
@@ -168,6 +163,12 @@ div.main {
     font-weight: bold;
     text-align: center;
 }
+div.pooja {
+    font-size: 25px;
+    color: darkBlue;
+    font-weight: bold;
+    text-align: center;
+}
 div.arth {
     font-size: 20px;
     color: darkBlue;
@@ -177,9 +178,16 @@ div.arth {
 }
 span.om {
     font-size: 20px;
-    color: darkBlue;
+    color: maroon;
     width: 90%;
     text-align: center;
+    margin: 0 auto;
+}
+div.poojarth {
+    font-size: 20px;
+    color: darkGreen;
+    width: 90%;
+    text-align: justify;
     margin: 0 auto;
 }
 </style>
@@ -204,5 +212,6 @@ span.om {
   relPath="$myRelPath";
 </script>
 EOF
-
+fi
+echo "$myHeaderVar" > $myOutFile
 }

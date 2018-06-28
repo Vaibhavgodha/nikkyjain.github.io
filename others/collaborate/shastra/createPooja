@@ -16,10 +16,9 @@ do
     for pooja in $(ls -d $category/*/)
     do
       myPooja=$(basename $pooja)
-      myPoojaName=pooja-$myCntr
       myInDir=$dbDir/others/collaborate/poojas/$myCategory/$myPooja
       myOutDir=$dbDir/jainDataBase/poojas/$myCategory/$myPooja/html
-      myHtml=$myOutDir/${myPoojaName}.html
+      myHtml=$myOutDir/index.html
       echo $(dirname $myHtml)
       mkdir -p $(dirname $myHtml)
       ## ---- Header -----
@@ -37,7 +36,7 @@ do
 
       echo "<div align=center><h1><font color=darkBlue>$(basename $pooja | perl -pe 's/.txt//g' | perl -pe 's/.*_//')</font></h1>" >> $myHtml
       audioFileName=$(basename $pooja | perl -pe 's/\.txt/.mp3/g')
-      if [ -f $pooja/audio/$audioFileName ]; then
+      if [ -f $myOutDir/audio/$audioFileName ]; then
         cat <<EOF >> $myHtml
         <div><audio controls>
           <source src="../audio/$audioFileName" type="audio/mpeg">
@@ -56,7 +55,7 @@ EOF
           echo "</div>" >> $myHtml
         fi
         curFile=$myInDir/main/$cFile
-        echo "<div class=main>" >> $myHtml 
+        echo "<div class=pooja>" >> $myHtml 
         c="$(cat $curFile)"
         c=$(echo "$c" | perl -pe 's/\n/<br>/g')
         c=$(echo "$c" | perl -pe 's/\n/<br>/g')
@@ -70,7 +69,7 @@ EOF
         curFile=$myInDir/arth/$cFile
         if [ -f $curFile ]; then
           c="$(cat $curFile)"
-          echo "<div style='text-align: justify; margin: 0 auto; width: 90%;'><h4><font color=black>अन्वयार्थ : </font><font color=darkBlue>$c</font></h4></div><br>" >>  $myHtml
+          echo "<div class=poojarth><font color=black>अन्वयार्थ : </font>$c</div><br>" >>  $myHtml
         fi
       done < "$myInDir/index.txt"
       echo "</div></body></html>" >> $myHtml

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jai Jinendra</title>
+  <link rel="icon" type="image/png" href="../../../../../images/default/jainFlag-short.jpg"/>
+  <link rel="stylesheet" href="../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
+  <script type="text/javascript" src="../../../../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script>
+  <script type="text/javascript" src="../../../../../js/myMobile.js"></script>
+<style>
+img {
+    border-radius: 10px 10px 10px 10px;
+}
+div.title {
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+div.main {
+    font-size: 35px;
+    color: maroon;
+    font-weight: bold;
+    text-align: center;
+}
+div.pooja {
+    font-size: 25px;
+    color: darkBlue;
+    font-weight: bold;
+    text-align: center;
+}
+div.arth {
+    font-size: 20px;
+    color: darkBlue;
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+}
+span.om {
+    font-size: 20px;
+    color: maroon;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+div.poojarth {
+    font-size: 20px;
+    color: darkGreen;
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<div data-role="header" data-position="fixed">
+    <!--h1 align=center>Jai Jinendra</h1-->
+    <p align=center><img src="../../../../../images/jain-saint.jpg" height=100 width=110></img></p>
+    <div data-role="navbar" data-maxbutton="3" class="ui-body-a">
+        <ul>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupBhajan">भजन</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupPooja">पूजा-पाठ</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupGranth">Full Granth</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupShastra">Granth Gaatha-By-Gatha</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupGames">Play / Test</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupMisc">Misc</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+  relPath="../../../../../";
+</script>
+  <div data-history=false data-role=popup id=popupBhajan data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>01-देव</h2>
+          <ul data-role=listview id=bhajanListView-01-देव></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>02-शास्त्र</h2>
+          <ul data-role=listview id=bhajanListView-02-शास्त्र></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>03-गुरु</h2>
+          <ul data-role=listview id=bhajanListView-03-गुरु></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>04-धर्म</h2>
+          <ul data-role=listview id=bhajanListView-04-धर्म></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>05-तीर्थ</h2>
+          <ul data-role=listview id=bhajanListView-05-तीर्थ></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>06-कल्याणक</h2>
+          <ul data-role=listview id=bhajanListView-06-कल्याणक></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>07-महामंत्र</h2>
+          <ul data-role=listview id=bhajanListView-07-महामंत्र></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>08-अध्यात्म</h2>
+          <ul data-role=listview id=bhajanListView-08-अध्यात्म></ul>
+        </div>
+   </div></div>
+  <div data-history=false data-role=popup id=popupPooja data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>प्रारम्भ</h2>
+          <ul data-role=listview id=poojaListView-प्रारम्भ></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>नित्य-पूजा</h2>
+          <ul data-role=listview id=poojaListView-नित्य-पूजा></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>तीर्थंकर</h2>
+          <ul data-role=listview id=poojaListView-तीर्थंकर></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>पर्व-पूजन</h2>
+          <ul data-role=listview id=poojaListView-पर्व-पूजन></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>विसर्जन</h2>
+          <ul data-role=listview id=poojaListView-विसर्जन></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>पाठ</h2>
+          <ul data-role=listview id=poojaListView-पाठ></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>छहढाला</h2>
+          <ul data-role=listview id=poojaListView-छहढाला></ul>
+        </div>
+   </div></div>
+  <div data-history=false data-role=popup id=popupGranth data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>द्रव्यानुयोग</h2>
+          <ul data-role=listview id=granthListView-द्रव्यानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>चरणानुयोग</h2>
+          <ul data-role=listview id=granthListView-चरणानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>करणानुयोग</h2>
+          <ul data-role=listview id=granthListView-करणानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>प्रथमानुयोग</h2>
+          <ul data-role=listview id=granthListView-प्रथमानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>न्याय</h2>
+          <ul data-role=listview id=granthListView-न्याय></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>भजन-पाठ</h2>
+          <ul data-role=listview id=granthListView-भजन-पाठ></ul>
+        </div>
+   </div></div>
+  <div data-history=false data-role=popup id=popupShastra data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>द्रव्यानुयोग</h2>
+          <ul data-role=listview id=shastraListView-द्रव्यानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>चरणानुयोग</h2>
+          <ul data-role=listview id=shastraListView-चरणानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>करणानुयोग</h2>
+          <ul data-role=listview id=shastraListView-करणानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>प्रथमानुयोग</h2>
+          <ul data-role=listview id=shastraListView-प्रथमानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>न्याय</h2>
+          <ul data-role=listview id=shastraListView-न्याय></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>भजन-पाठ</h2>
+          <ul data-role=listview id=shastraListView-भजन-पाठ></ul>
+        </div>
+   </div></div>
+  <div data-history=false data-role=popup id=popupMisc data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>गुणस्थान</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GunsthanTable.html>गुणस्थान-विभाजन</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GunsthanKarmUdayTable.html>गुणस्थान में उदय</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GunsthanToAndFrom.html>गुणस्थान-गमनागमन</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GunsthanKaalTable.html>गुणस्थान-काल-संख्या</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>कर्म</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/karmUdayTable.html>कर्म-उदय</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/karmBandhTable.html>कर्म-बन्ध</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/karmSattaTable.html>कर्म-सत्ता</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>बंध</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/prakratiBandhPrarupana.html>प्रकृति-बंध</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/stithiSaarani.html>स्थिति-बंध</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/anubhagBandhPrarupana.html>अनुभाग-बंध</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>प्रमाण</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/kshetraPramaan.html>क्षेत्र-प्रमाण</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/sankhyaPramaan.html>संख्याप्रमाण</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Other</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/alpBahutva.html>अल्प बहुत्व</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GatiAgati.html>गति-आगति</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/nyaay.html>न्याय</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/moolSanghPattavali.html>मूल संघ पट्टावली</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Download</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/Jain-Bhajan.pdf>जैन भजन</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/Jain-Pooja-Paath.pdf>जैन पूजा-पाठ</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-ratnakarandShraavakaachaar.pdf>रत्नकरंड-श्रावकाचार--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-samaysaar.pdf>समयसार--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-labdhisaar.pdf>लब्धिसार--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-gommatSaarJeevKand.pdf>गोम्मटसार-जीवकांड--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-panchastikay.pdf>पंचास्तिकाय--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/JeevSamas.pdf>JeevSamas</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/bookmark.pdf>Bookmark</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-yogsaar.pdf>योगसार--गाथा</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+
+  <div data-history=false data-role=popup id=popupGames data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Kids Games</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../kidsGames1.html>Arrange Names</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Crossword Puzzle</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/crosswords/crossword1.html>Puzzle-1</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/crosswords/crossword2.html>Puzzle-2</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/crosswords/crossword3.html>Puzzle-3</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Word Search</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/wordSearch/WordSearch-1.pdf>Puzzle-1</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/wordSearch/WordSearch-2.pdf>Puzzle-2</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/wordSearch/WordSearch-3.pdf>Puzzle-3</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Exam</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/jainExam/GunsthanVivechan.html>गुणस्थान विवेचन</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/jainExam/TattvarthSutra-1.html>तत्वार्थ मंजुषा - अध्याय 1</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/jainExam/jeevSamas.html>JeevSamas</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/jainExam/karmUdayBandh.html>Karm Uday Bandh</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+<div align=center><h1><font color=darkBlue>नंदीश्वर-द्वीप-पूजन</font></h1>
+<div class=pooja>
+﻿द्यानतरायजी<br><br>सरव परव में बड़ो अठाई परव है<br>नन्दीश्वर सुर जाहिं लेय वसु दरब है<br>हमैं सकति सो नाहिं इहां करि थापना<br>पूजैं जिनगृह-प्रतिमा है हित आपना<br><br><span class=om>ॐ ह्रीं श्री नन्दीश्वर द्वीपे द्विपंचाश ज्जिनालयस्थ जिन प्रतिमा समूह अत्र अवतर अवतर संवौषट् आह्वाननं</span><br><span class=om>ॐ ह्रीं श्री नन्दीश्वर द्वीपे द्विपंचाश ज्जिनालयस्थ जिन प्रतिमा समूह अत्र तिष्ठ तिष्ठ ठः ठः स्थापनं</span>  <br><span class=om>ॐ ह्रीं श्री नन्दीश्वर द्वीपे द्विपंचाश ज्जिनालयस्थ जिन प्रतिमा समूह अत्र मम सन्निहितो भव भव वषट् सन्निधि करणं</span><br><br>
+</div>
+<div class=poojarth><font color=black>अन्वयार्थ : </font>सब पर्वों में सबसे बड़ा पर्व अष्टान्हिका पर्व है इस पर्व में चतुर्णिकाय (चारो निकाय के) के देव अष्ठ द्रव्य को लेकर अकृत्रिम चैत्यालय में जिनेन्द्र भगवान की पूजा करने नंदीश्वर द्वीप जाते हैं । हमारी शक्ति नंदीश्वर द्वीप तक जाने की नहीं है । अत: हम यहीं पर नंदीश्वर द्वीप के जिनालयों की स्थापना कर जिनालय और जिनालयों मे स्थित जिन बिम्बों की अपने हित के लिए पूजा करते हैं ।</div><br>
+<div class=pooja>
+﻿कंचन-मणि मय-भृंगार, तीरथ-नीर भरा<br>तिहुं धार दई निरवार, जामन मरन जरा<br>नन्दीश्वर-श्रीजिन-धाम, बावन पुंज करों<br>वसु दिन प्रतिमैं अभिराम, आनंद-भाव धरों<br>नंदीश्वर द्वीप महान, चारों दिशि सोहें<br>बावन जिन मन्दिर जान सुर नर मन मोहें<br><br><span class=om>ॐ ह्रीं श्री नन्दीश्वर द्वीपे पूर्व-पश्चिमोत्तर-दक्षिण दिक्षु द्विपंचाश ज्जिनालयस्थ जिन प्रतिमाभ्यो जन्म जरा मृत्यु विनाश नाय जलं निर्वपामीति स्वाहा</span><br><br>
+</div>
+<div class=poojarth><font color=black>अन्वयार्थ : </font>हे भगवान स्वर्ण के रत्न जडित मूंग (कलश) में तीर्थ का जल भरकर जन्म जरा और मृत्यु को नष्ट करने को आपके चरणों के समक्ष तीन धार देता हूँ । नंदीश्वर द्वीप के बावन जिन मंदिरो की प्रतिमाओं की आठ दिन तक आनंदित होता हुआ उत्साह को धारण कर पूजा करता हूँ । नंदीश्वर द्वीप महान है चारों दिशाओं में सुन्दरता को धारण किये हुए है वहाँ बावन जिन मंदिर है जो देवों और मनुष्यों के मन मोहित करने वाले हैं ।</div><br>
+<div class=pooja>
+﻿भव-तप-हर शीतल वास, सो चंदन नाहीं<br>प्रभु यह गुन कीजै सांच, आयो तुम ठाहीं<br>नन्दीश्वर-श्रीजिन-धाम, बावन पुंज करों<br>वसु दिन प्रतिमैं अभिराम, आनंद-भाव धरों<br>नंदीश्वर द्वीप महान, चारों दिशि सोहें <br>बावन जिन मन्दिर जान सुर नर मन मोहें<br><br><span class=om>ॐ ह्रीं श्री नन्दीश्वर द्वीपे द्विपंचाश ज्जिनालयस्थ जिन प्रतिमाभ्यो संसार ताप विनाश नाय चन्दनं निर्वपामीति स्वाहा</span><br><br>
+</div>
+<div class=poojarth><font color=black>अन्वयार्थ : </font>हे भगवान भव की ताप को नष्ट करने के लिए शीतल सुगंधित चन्दन समर्थ नहीं है यह गुण तो आप में ही है, अर्थात् (भव की ताप नष्ट करने में आप ही समर्थ हो) । इसलिए चंदन लेकर आपके समीप आया हूँ । नंदीश्वर द्वीप के बावन जिन मदिरों की आठ दिन सुन्दर प्रतिमाओं की, आनंदित होता हुआ उत्साह से पूजा करता हूँ ।</div><br>
+<div class=pooja>
+﻿उत्तम अक्षत जिनराज, पुंज धरे सोहै<br>सब जीते अक्ष-समाज, तुम सम अरु को है<br>नन्दीश्वर-श्रीजिन-धाम, बावन पुंज करों<br>वसु दिन प्रतिमैं अभिराम, आनंद-भाव धरों<br>नंदीश्वर द्वीप महान, चारों दिशि सोहें<br>बावन जिन मन्दिर जान सुर नर मन मोहें<br><br><span class=om>ॐ ह्रीं श्री नन्दीश्वर द्वीपे द्विपंचाश ज्जिनालयस्थ जिन प्रतिमाभ्यो अक्षय पद प्राप्तये अक्षतान् निर्वपामीति स्वाहा</span><br><br>
+</div>
+<div class=poojarth><font color=black>अन्वयार्थ : </font>हे जिनेन्द्र देव श्रेष्ठ अक्षतों का पुंज आपके समक्ष रखा हुआ बड़ा सुशोभित हो रहा है । आपने सभी इन्द्रिय समूह को जीत लिया है । आपके समान और कोई नही है । नंदीश्वर द्वीप के बावन जिन मंदिरों की आठ दिन सुन्दर प्रतिमाओं की आनंदित होता हुआ उत्साह से पूजा करता हूँ ।</div><br>
+<div class=pooja>
+﻿तुम काम विनाशक देव, ध्याऊं फूलनसौं<br>लहुं शील लच्छमी एव, छूटों सूलनसों<br>नन्दीश्वर-श्रीजिन-धाम, बावन पुंज करों<br>वसु दिन प्रतिमैं अभिराम, आनंद-भाव धरों<br>नंदीश्वर द्वीप महान, चारों दिशि सोहें<br>बावन जिन मन्दिर जान सुर नर मन मोहें<br><br><span class=om>ॐ ह्रीं श्री नन्दीश्वर द्वीपे द्विपंचाश ज्जिनालयस्थ जिन प्रतिमाभ्यो काम बाण विध्वंस नाय पुष्पं निर्वपामीति स्वाहा</span><br><br>
+</div>
+<div class=poojarth><font color=black>अन्वयार्थ : </font>हे जिनेन्द्र भगवान आप काम को नष्ट करने वाले हो, पुष्पों से आपकी पूजा करता हूँ । शील रूपी लक्ष्मी को प्राप्त कर संसार के दुःखों से छूटना चाहता हूँ । नंदीश्वर द्वीप के बावन जिन मंदिरों की आठ दिन सुन्दर प्रतिमाओं की आनंदित होता हुआ उत्साह से पूजा करता हूँ ।</div><br>
+<div class=pooja>
+﻿नेवज इन्द्रिय-बलकार, सो तुमने चूरा<br>चरु तुम ढिग सोहै सार, अचरज है पूरा<br>नन्दीश्वर-श्रीजिन-धाम, बावन पुंज करों<br>वसु दिन प्रतिमैं अभिराम, आनंद-भाव धरों<br>नंदीश्वर द्वीप महान, चारों दिशि सोहें<br>बावन जिन मन्दिर जान सुर नर मन मोहें<br><br><span class=om>ॐ ह्रीं श्री नन्दीश्वर द्वीपे द्विपंचाश ज्जिनालयस्थ जिन प्रतिमाभ्यो क्षुधा रोग विनाशनाय नैवेद्यं निर्वपामीति स्वाहा</span><br><br>
+</div>
+<div class=poojarth><font color=black>अन्वयार्थ : </font>इन्द्रियों को बलवान बनाने वाला नैवद्य है, हे भगवान उन इन्द्रियों को आपने समाप्त कर दिया है (अब आप अहार नहीं लेते) जो अत्यन्त आश्चर्य की बात है इसीलिए श्रेष्ठ नैवेद्य आपके निकट सुशोभित हो रहा है ।</div><br>
+<div class=pooja>
+﻿दीपक की ज्योति प्रकाश, तुम तन मांहि लसै<br>टूटे करमन की राश, ज्ञान कणी दरशे<br>नन्दीश्वर-श्रीजिन-धाम, बावन पुंज करों<br>वसु दिन प्रतिमैं अभिराम, आनंद-भाव धरों<br>नंदीश्वर द्वीप महान, चारों दिशि सोहें<br>बावन जिन मन्दिर जान सुर नर मन मोहें<br><br><span class=om>ॐ ह्रीं श्री नन्दीश्वर द्वीपे द्विपंचाश ज्जिनालयस्थ जिन प्रतिमाभ्यो मोहान्धकारविनाशनाय दीपं निर्वपामीति स्वाहा</span><br><br>
+</div>
+<div class=poojarth><font color=black>अन्वयार्थ : </font>हे भगवान! दीपक की ज्योति का प्रकाश आपके शरीर में सुशोभित हो रहा है । आपकी दीपक से पूजा करने से कर्म नष्ट हो जाते हैं और केवल-ज्ञान की किरण फूट पड़ती है ।</div><br>
+<div class=pooja>
+﻿कृष्णा गरु धूप सुवास, दश दिशि नारि वरैं<br>अति हरष भाव परकाश, मानों नृत्य करैं<br>नन्दीश्वर-श्रीजिन-धाम, बावन पुंज करों<br>वसु दिन प्रतिमैं अभिराम, आनंद-भाव धरों<br>नंदीश्वर द्वीप महान, चारों दिशि सोहें<br>बावन जिन मन्दिर जान सुर नर मन मोहें<br><br><span class=om>ॐ ह्रीं श्री नन्दीश्वर द्वीपे द्विपंचाश ज्जिनालयस्थ जिन प्रतिमाभ्यो अष्ट कर्म दह नाय धूपं निर्वपामीति स्वाहा</span><br><br>
+</div>
+<div class=poojarth><font color=black>अन्वयार्थ : </font>कृष्ण अगर आदि सुगंधित धूप की सुगंधि दशों दिशाओं को इस प्रकार सुगंधित कर रही है मानो दश दिशा रूपी स्त्रियों का वरण ही कर रही हो और अत्यन्त हर्षित होकर हर्ष को प्रकाशित करने को नृत्य ही कर रही हो ।</div><br>
+<div class=pooja>
+﻿बहु विधि फल ले तिहुं काल, आनंद राचत हैं<br>तुम शिव फल देहु दयाल, तुहि हम जाचत हैं<br>नन्दीश्वर-श्रीजिन-धाम, बावन पुंज करों<br>वसु दिन प्रतिमा अभिराम, आनंद-भाव धरों<br>नंदीश्वर द्वीप महान, चारों दिशि सोहें<br>बावन जिन मन्दिर जान सुर नर मन मोहें<br><br><span class=om>ॐ ह्रीं श्री नन्दीश्वर द्वीपे द्विपंचाश ज्जिनालयस्थ जिन प्रतिमाभ्यो मोक्ष फल प्राप्तये फलं निर्वपामीति स्वाहा</span><br><br>
+</div>
+<div class=poojarth><font color=black>अन्वयार्थ : </font>बहुत प्रकार के तीनों कालों में उत्पन्न होने वाले अर्थात् छहों ऋतुओं के, आनंद को देने वाले फलों से आपकी पूजा करता हूँ । हे दीनदयाल प्रभु ! आप मुझे मोक्ष रूपी फल प्रदान करें ऐसी हम आपसे याचना करते हैं ।</div><br>
+<div class=pooja>
+﻿यह अरघ कियो निज हेत, तुमको अरपतु हों<br>‘द्यानत’ कीज्यो शिव खेत, भूमि समरपतु हों<br>नन्दीश्वर-श्रीजिन-धाम, बावन पुंज करों<br>वसु दिन प्रतिमैं अभिराम, आनंद-भाव धरों<br>नंदीश्वर द्वीप महान, चारों दिशि सोहें<br>बावन जिन मन्दिर जान सुर नर मन मोहें<br><br><span class=om>ॐ ह्रीं श्री नन्दीश्वर द्वीपे द्विपंचाश ज्जिनालयस्थ जिन प्रतिमाभ्यो अनर्घ पद प्राप्तये अर्घ्यं निर्वपामीति स्वाहा</span><br><br>
+</div>
+<div class=poojarth><font color=black>अन्वयार्थ : </font>यह अष्ट द्रव्यमय अर्घ्य मैने अपने कल्याण के लिए किया है जिसे आपके चरणों में अर्पित कर रहा हूँ । श्री द्यानत राय जी कहते हैं कि हे नाथ मैने मोक्ष की खेती की है । उसकी भूमि में बीज स्वरूप यह अर्ध्य समर्पित कर रहा हूँ ।</div><br>
+<div class=title>
+﻿जयमाला</div>
+<div class=pooja>
+﻿कार्तिक फागुन साढके, अंत आठ दिन माहिं<br>नंदीश्वर सुर जात हैं, हम पूजैं इह ठाहिं<br><br>
+</div>
+<div class=poojarth><font color=black>अन्वयार्थ : </font>कार्तिक, फाल्गुन, और आषाढ़ माह के अंतिम आठ दिनों में देव गण नंदीश्वर द्वीप पूजा करने जाते है । हम असमर्थ होने के कारण (इसी स्थान पर) यहाँ ही पूजा करते है ।</div><br>
+<div class=pooja>
+﻿एकसौ त्रेसठ कोडि जोजन महा, लाख चौरासिया इक दिश में लहा<br>आठमों द्वीप नंदीश्वरं भास्वरं, भौन बावन्न प्रतिमा नमों सुख करं ॥<br>चार दिशि चार अंजन गिरी राजहीं, सहस चौरासिया एक दिश छाजहीं<br>ढोल सम गोल ऊपर तले सुन्दरं, भौन बावन्न प्रतिमा नमों सुख करं ॥<br>एक इक चार दिशि चार शुभ बावरी, एक इक लाख जोजन अमल-जल भरी<br>चहु दिशा चार वन लाख जोजन वरं, भौन बावन्न प्रतिमा नमों सुख करं ॥<br>सोल वापीन मधि सोल गिरि दधि-मुखं, सहस दश महा-जोजन लखत ही सुखं<br>बावरी कौन दो माहि दो रति करं, भौन बावन्न प्रतिमा नमों सुख करं ॥<br>शैल बत्तीस इक सहस जोजन कहे, चार सोलै मिले सर्व बावन लहे<br>एक इक सीस पर एक जिन मन्दिरं, भौन बावन्न प्रतिमा नमों सुख करं ॥<br>बिंब अठ एक सौ रतन-मयि सोहहीं, देव देवी सरव नयन मन मोहहीं<br>पांच सै धनुष तन पद्म आसन परम, भौन बावन्न प्रतिमा नमों सुख करं ॥<br>लाल नख-मुख नयन स्याम अरु स्वेत हैं, स्याम-रंग भौंह सिर केश छबि देत हैं<br>बचन बोलत मनों हंसत कालुष हरं, भौन बावन्न प्रतिमा नमों सुख करं ॥<br>कोटि शशि भानु दुति तेज छिप जात है, महा-वैराग परिणाम ठहरात है <br>वयन नहिं कहै लखि होत सम्यक धरं, भौन बावन्न प्रतिमा नमों सुख करं ॥<br><br><span class=om>ॐ ह्रीं श्री नन्दीश्वर द्वीपे द्विपंचाश ज्जिनालयस्थ जिन प्रतिमाभ्यो अनर्घ पद प्राप्तये अर्घ्यं निर्वपामीति स्वाहा</span><br><br>
+</div>
+<div class=poojarth><font color=black>अन्वयार्थ : </font>नंदीश्वर द्वीप की एक दिशा का विस्तार चौड़ाई एक सौ त्रेसठ करोड चौरासी लाख महा योजन है । आगम में नंदीश्वर द्वीप आठवां द्वीप कहा गया है सुख को करने वाली बावन जिनालयों में स्थित सर्व प्रतिमाओं को नमस्कार करता हूँ ।</div><br>
+<div class=pooja>
+﻿नंदीश्वर जिन धाम, प्रतिमा महिमा को कहै<br>‘द्यानत’ लीनो नाम, यही भगति शिव सुख करै<br><br>
+</div>
+<div class=poojarth><font color=black>अन्वयार्थ : </font>नंदीश्वर द्वीप के जिन मंदिरों, एवं प्रतिमाओं की महिमा को कौन कह सकता है द्यानतराय जी कहते हैं कि इनका नाम लेना मात्र ही भक्ति है जो मोक्ष सुख को करने वाली है ।</div><br>
+</div></body></html>

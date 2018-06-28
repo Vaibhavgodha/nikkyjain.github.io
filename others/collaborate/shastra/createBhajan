@@ -35,7 +35,7 @@ do
 
       echo "<div align=center><h2><font color=darkBlue>$(basename $bhajan | perl -pe 's/.txt//g')</font></h2><br><h3>" >> $myHtml
       audioFileName=$(basename $bhajan | perl -pe 's/\.txt/.mp3/g')
-      if [ -f ../audio/$audioFileName ]; then
+      if [ -f $category/audio/$audioFileName ]; then
         cat <<EOF >> $myHtml
         <audio id=audioFile src="../audio/$audioFileName" type="audio/mpeg">
         </audio><br>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jai Jinendra</title>
+  <link rel="icon" type="image/png" href="../../../../../images/default/jainFlag-short.jpg"/>
+  <link rel="stylesheet" href="../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
+  <script type="text/javascript" src="../../../../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script>
+  <script type="text/javascript" src="../../../../../js/myMobile.js"></script>
+<style>
+img {
+    border-radius: 10px 10px 10px 10px;
+}
+div.title {
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+div.main {
+    font-size: 35px;
+    color: maroon;
+    font-weight: bold;
+    text-align: center;
+}
+div.pooja {
+    font-size: 25px;
+    color: darkBlue;
+    font-weight: bold;
+    text-align: center;
+}
+div.arth {
+    font-size: 20px;
+    color: darkBlue;
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+}
+span.om {
+    font-size: 20px;
+    color: maroon;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+div.poojarth {
+    font-size: 20px;
+    color: darkGreen;
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<div data-role="header" data-position="fixed">
+    <!--h1 align=center>Jai Jinendra</h1-->
+    <p align=center><img src="../../../../../images/jain-saint.jpg" height=100 width=110></img></p>
+    <div data-role="navbar" data-maxbutton="3" class="ui-body-a">
+        <ul>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupBhajan">भजन</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupPooja">पूजा-पाठ</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupGranth">Full Granth</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupShastra">Granth Gaatha-By-Gatha</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupGames">Play / Test</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupMisc">Misc</a></li>
+        </ul>
+    </div>
+</div>
+
+<script>
+  relPath="../../../../../";
+</script>
+  <div data-history=false data-role=popup id=popupBhajan data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>देव</h2>
+          <ul data-role=listview id=bhajanListView-देव></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>शास्त्र</h2>
+          <ul data-role=listview id=bhajanListView-शास्त्र></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>गुरु</h2>
+          <ul data-role=listview id=bhajanListView-गुरु></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>धर्म</h2>
+          <ul data-role=listview id=bhajanListView-धर्म></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>तीर्थ</h2>
+          <ul data-role=listview id=bhajanListView-तीर्थ></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>कल्याणक</h2>
+          <ul data-role=listview id=bhajanListView-कल्याणक></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>महामंत्र</h2>
+          <ul data-role=listview id=bhajanListView-महामंत्र></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>अध्यात्म</h2>
+          <ul data-role=listview id=bhajanListView-अध्यात्म></ul>
+        </div>
+   </div></div>
+  <div data-history=false data-role=popup id=popupPooja data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>प्रारम्भ</h2>
+          <ul data-role=listview id=poojaListView-प्रारम्भ></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>नित्य-पूजा</h2>
+          <ul data-role=listview id=poojaListView-नित्य-पूजा></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>तीर्थंकर</h2>
+          <ul data-role=listview id=poojaListView-तीर्थंकर></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>पर्व-पूजन</h2>
+          <ul data-role=listview id=poojaListView-पर्व-पूजन></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>विसर्जन</h2>
+          <ul data-role=listview id=poojaListView-विसर्जन></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>पाठ</h2>
+          <ul data-role=listview id=poojaListView-पाठ></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>छहढाला</h2>
+          <ul data-role=listview id=poojaListView-छहढाला></ul>
+        </div>
+   </div></div>
+  <div data-history=false data-role=popup id=popupGranth data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>द्रव्यानुयोग</h2>
+          <ul data-role=listview id=granthListView-द्रव्यानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>चरणानुयोग</h2>
+          <ul data-role=listview id=granthListView-चरणानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>करणानुयोग</h2>
+          <ul data-role=listview id=granthListView-करणानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>प्रथमानुयोग</h2>
+          <ul data-role=listview id=granthListView-प्रथमानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>न्याय</h2>
+          <ul data-role=listview id=granthListView-न्याय></ul>
+        </div>
+   </div></div>
+  <div data-history=false data-role=popup id=popupShastra data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>द्रव्यानुयोग</h2>
+          <ul data-role=listview id=shastraListView-द्रव्यानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>चरणानुयोग</h2>
+          <ul data-role=listview id=shastraListView-चरणानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>करणानुयोग</h2>
+          <ul data-role=listview id=shastraListView-करणानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>प्रथमानुयोग</h2>
+          <ul data-role=listview id=shastraListView-प्रथमानुयोग></ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>न्याय</h2>
+          <ul data-role=listview id=shastraListView-न्याय></ul>
+        </div>
+   </div></div>
+  <div data-history=false data-role=popup id=popupMisc data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>गुणस्थान</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GunsthanTable.html>गुणस्थान-विभाजन</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GunsthanKarmUdayTable.html>गुणस्थान में उदय</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GunsthanToAndFrom.html>गुणस्थान-गमनागमन</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GunsthanKaalTable.html>गुणस्थान-काल-संख्या</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>कर्म</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/karmUdayTable.html>कर्म-उदय</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/karmBandhTable.html>कर्म-बन्ध</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/karmSattaTable.html>कर्म-सत्ता</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>बंध</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/prakratiBandhPrarupana.html>प्रकृति-बंध</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/stithiSaarani.html>स्थिति-बंध</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/anubhagBandhPrarupana.html>अनुभाग-बंध</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>प्रमाण</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/kshetraPramaan.html>क्षेत्र-प्रमाण</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/sankhyaPramaan.html>संख्याप्रमाण</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Other</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/alpBahutva.html>अल्प बहुत्व</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/GatiAgati.html>गति-आगति</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/nyaay.html>न्याय</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/misc/moolSanghPattavali.html>मूल संघ पट्टावली</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Download</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/Jain-Bhajan.pdf>जैन भजन</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/Jain-Pooja-Paath.pdf>जैन पूजा-पाठ</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-ratnakarandShraavakaachaar.pdf>रत्नकरंड-श्रावकाचार--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-samaysaar.pdf>समयसार--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-labdhisaar.pdf>लब्धिसार--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-gommatSaarJeevKand.pdf>गोम्मटसार-जीवकांड--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-panchastikay.pdf>पंचास्तिकाय--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/JeevSamas.pdf>JeevSamas</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/bookmark.pdf>Bookmark</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/downloads/gathaa-yogsaar.pdf>योगसार--गाथा</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+
+  <div data-history=false data-role=popup id=popupGames data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Kids Games</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../kidsGames1.html>Arrange Names</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Crossword Puzzle</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/crosswords/crossword1.html>Puzzle-1</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/crosswords/crossword2.html>Puzzle-2</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/crosswords/crossword3.html>Puzzle-3</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Word Search</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/wordSearch/WordSearch-1.pdf>Puzzle-1</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/wordSearch/WordSearch-2.pdf>Puzzle-2</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/wordSearch/WordSearch-3.pdf>Puzzle-3</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Exam</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/jainExam/GunsthanVivechan.html>गुणस्थान विवेचन</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/jainExam/TattvarthSutra-1.html>तत्वार्थ मंजुषा - अध्याय 1</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/jainExam/jeevSamas.html>JeevSamas</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=../../../../../jainDataBase/jainExam/karmUdayBandh.html>Karm Uday Bandh</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+<div class=main>
+﻿<font color=black>!!<font color=purple> श्रीसर्वज्ञवीतरागाय नम: </font>!!</font><br><br>श्रीमद्‌-भगवत्योगीन्दु-देव-प्रणीत<br><br>श्री<br><font style="font-size:120px"> परमात्मप्रकाश </font><br><br><span class=bottomContainer align=justify><font color=black>मूल प्राकृत गाथा,<br></font></span><br><br><font size=3 color=blue>आभार : </font></div>
+<div class=main>
+﻿<font color=black>!!<font color=purple> नम: श्रीसर्वज्ञवीतरागाय </font>!!</font><br><br>ओंकारं बिन्दुसंयुक्तं नित्यं ध्यायन्ति योगिनः <br>कामदं मोक्षदं चैव ॐकाराय नमो नम: ॥१॥<br><br>अविरलशब्दघनौघप्रक्षालितसकलभूतलकलंका <br>मुनिभिरूपासिततीर्था सरस्वती हरतु नो दुरितान् ॥२॥<br><br>अज्ञानतिमिरान्धानां ज्ञानाञ्जनशलाकया <br>चक्षुरुन्मीलितं येन तस्मै श्रीगुरवे नम: ॥३॥<br><br><font color=black>॥ श्रीपरमगुरुवे नम:, परम्पराचार्यगुरुवे नम: ॥</font><br><br><span class=bottomContainer><p align=justify><font color=darkblue>सकलकलुषविध्वंसकं, श्रेयसां परिवर्धकं, धर्मसम्बन्धकं, भव्यजीवमन: प्रतिबोधकारकं, पुण्यप्रकाशकं, पापप्रणाशकमिदं शास्त्रं श्री-परमात्मप्रकाश नामधेयं, अस्य मूल-ग्रन्थकर्तार: श्री-सर्वज्ञ-देवास्तदुत्तर-ग्रन्थ-कर्तार: श्री-गणधर-देवा: प्रति-गणधर-देवास्तेषां वचनानुसार-मासाद्य आचार्य श्री-भगवत्योगीन्दु-देव विरचितं ॥ </font></p></span><br><br><font color=black>॥ श्रोतार: सावधान-तया शृणवन्तु ॥</font><br><br><font color=darkGreen>मंगलं भगवान् वीरो मंगलं गौतमो गणी<br>मंगलं कुन्दकुन्दार्यो जैनधर्मोsस्तु मंगलम्‌ ॥<br>सर्वमंगलमांगल्यं सर्वकल्याणकारकं <br>प्रधानं सर्वधर्माणां जैनं जयतु शासनम्‌ ॥</font><br></div>
+<div class=main>
+﻿जे जाया झाणग्गियएँ कम्म-कलंक डहेवि<br>णिच्च-णिरंजण-णाण-मय ते परमप्प णवेवि ॥१॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो ध्यानरूपी अग्नि से कर्मरूपी दोषों को जलाकर, नित्य (<font color=DarkSlateGray>शाश्वत</font>), निरंजन (<font color=DarkSlateGray>सभी दोषों से रहित</font>), (<font color=DarkSlateGray>और</font>) ज्ञानमय हुए हैं, उन परम आत्माओं को नमस्कार करके (<font color=DarkSlateGray>परामात्म-प्रकाश ग्रन्थ प्रारंभ करता हूँ</font>)<br></div><br>
+<div class=main>
+﻿ते वंदउँ सिरि-सिद्ध-गण होसहिँ जे वि अणंत<br>सिवमय-णिरुवम-णाणमय परम-समाहि भजंत ॥२॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿और भी उन मंगलमय, अनुपम, ज्ञानयुक्त, अनन्त श्री सिद्ध समूहों को नमस्कार करता हूँ जो (<font color=DarkSlateGray>आगामी काल में</font>) परम समाधि को अनुभव करते हुए (<font color=DarkSlateGray>सिद्ध</font>) होंगे।<br></div><br>
+<div class=main>
+﻿ते हउँ वंदउँ सिद्ध-गण अच्छहिँ जे वि हवंत<br>परम-समाहि-महग्गियएँ कम्मिंधणइँ हुणंत ॥३॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿और भी उन सिद्ध समूहों को प्रणाम करता हूँ जो (<font color=DarkSlateGray>सिद्ध</font>) परमसमाधिरूप उत्तम अग्नि में कर्मोंरूपी ईंधन को होम करते हुए (<font color=DarkSlateGray>तथा</font>) (<font color=DarkSlateGray>सिद्धत्व को</font>) प्राप्त करते हुए विद्यमान हैं ।<br></div><br>
+<div class=main>
+﻿ते पुणु वंदउँ सिद्ध-गण जे णिव्वाणि वसंति<br>णाणिं तिहुयणि गरुया वि भव-सायरि ण पडंति ॥४॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿पुनः उन सिद्ध समूहों को प्रणाम करता हूँ जो मोक्ष में रहते हैं, ज्ञान से तीन लोक में गुरु हैं और संसाररूपी समुद्र में नहीं पड़ते हैं ।<br></div><br>
+<div class=main>
+﻿ते पुणु वंदउँं सिद्ध-गण जे अप्पाणि वसंत<br>लोयालोउ वि सयलु इहु अच्छहिँ विमलु णियंत ॥५॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿पुनः उन सिद्ध समूहों को प्रणाम करता हूँ जो आत्मा (<font color=DarkSlateGray>स्व</font>) में रहते हुए भी इस समस्त लोक और अलोक को विशुद्धरूप से देखते हुए विद्यमान हैं ।<br></div><br>
+<div class=main>
+﻿केवल-दंसण-णाणमय केवल-सुक्ख-सहाव<br>जिणवर वंदउँ भत्तियए जेहिँ पयासिय भाव ॥६॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿(<font color=DarkSlateGray>अब मैं</font>) केवलदर्शन, केवलज्ञानमय और केवलसुखस्वभाव अरिहन्तों को भक्तिपूर्वक प्रणाम करता हूँ, जिनके द्वारा (<font color=DarkSlateGray>समस्त</font>) पदार्थ प्रकट किये गये हैं ।<br></div><br>
+<div class=main>
+﻿जे परमप्पु णियंति मुणि परम-समाहि धरेवि<br>परमाणंदह कारणिण तिण्णि वि ते वि णवेवि ॥७॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो तीनों मुनि (<font color=DarkSlateGray>आचार्य, उपाध्याय, साधु</font>) परम आनन्द की (<font color=DarkSlateGray>प्राप्ति</font>) के प्रयोजन से परम समाधि को धारण करके (<font color=DarkSlateGray>स्वयं में</font>) परम आत्मा को देखते हैं, उन को भी नमस्कार करता हूँ ।<br></div><br>
+<div class=main>
+﻿भाविं पणविवि पंच-गुरु सिरि-जोइंदु-जिणाउ<br>भट्टपहायरि विण्णविउ विमलु करेविणु भाउ ॥८॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿(<font color=DarkSlateGray>इस प्रकार</font>) अपने भावों को निर्मल करके (<font color=DarkSlateGray>तथा</font>) पंच गुरुओं को भावपूर्वक प्रणाम करके भट्टप्रभाकर के द्वारा श्री योगीन्दु मुनिराज से (<font color=DarkSlateGray>यह</font>) प्रार्थना की गयी ।<br></div><br>
+<div class=main>
+﻿गउ संसारि वसंताहँ सामिय कालु अणंतु<br>पर मइँ किं पि ण पत्तु सुहु दुक्खु जि पत्तु महंतु ॥९॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿हे स्वामि! (<font color=DarkSlateGray>इस</font>) संसार में रहते हुए अनन्त समय व्यतीत गया, परन्तु मेरे द्वारा कुछ भी सुख प्राप्त नहीं किया गया, (<font color=DarkSlateGray>किन्तु</font>) विपुल दुःख ही प्राप्त किया गया है ।<br></div><br>
+<div class=main>
+﻿चउ-गइ-दुक्खहँ तत्ताहँ जो परमप्पउ कोइ<br>चउ-गइ-दुक्ख-विणासयरु कहहु पसाएँ सो वि ॥१०॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿चारों गतियों के दुःखों से दुःखी (<font color=DarkSlateGray>जीवों</font>) के लिए चारों गतियों के दुःख का विनाश करनेवाला जो कोई (<font color=DarkSlateGray>अंतरंग स्थित</font>) परम आत्मा है, वह (<font color=DarkSlateGray>उसके विषय में</font>) ही कृपापूर्वक कहो ।<br></div><br>
+<div class=main>
+﻿पुणु पुणु पणविवि पंच-गुरु भावेँ चित्ति धरेवि<br>भट्टपहायर णिसुणि तुहुँ अप्पा तिविहु कहेवि ॥११॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿हे भट्टप्रभाकर! मैं तीन प्रकार की आत्मा को कहने के लिए (<font color=DarkSlateGray>उद्यत</font>) हुआ हूँ, तू पाँच गुरुओं को बार-बार प्रणाम करके (<font color=DarkSlateGray>और</font>) (<font color=DarkSlateGray>उनको</font>) अंतरङ्ग बहुमानपूर्वक हृदय में धारण करके अन्तर्भाव (<font color=DarkSlateGray>पूर्वक</font>) सुन ।<br></div><br>
+<div class=main>
+﻿अप्पा ति-विहु मुणेवि लहु मूढउ मेल्लहि भाउ<br>मुणि सण्णाणेँ णाणमउ जो परमप्प-सहाउ ॥१२॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿तीन प्रकार की आत्मा को जानकर (<font color=DarkSlateGray>तू</font>) शीघ्र (<font color=DarkSlateGray>आत्मा की</font>) मूच्र्छित अवस्था को छोड़, (<font color=DarkSlateGray>और</font>) जो ज्ञानमय परमात्म स्वभाव (<font color=DarkSlateGray>है</font>) (<font color=DarkSlateGray>उसको</font>) स्वबोध (<font color=DarkSlateGray>स्वसंवेदनात्मक ज्ञान</font>) के द्वारा जान ।<br></div><br>
+<div class=main>
+﻿मूढु वियक्खणु बंभु परु अप्पा ति-विहु हवेइ<br>देहु जि अप्पा जो मुणइ सो जणु मूढु हवेइ ॥१३॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿आत्मा तीन प्रकार की होती है - मूच्र्छित (<font color=DarkSlateGray>बहिरात्मा</font>), जागृत (<font color=DarkSlateGray>अन्तरात्मा</font>) और परम-आत्मा (<font color=DarkSlateGray>शुद्ध आत्मा</font>) । जो देह को ही आत्मा मानता है, वह मनुष्य बहिरात्मा (<font color=DarkSlateGray>मूच्र्छित</font>) होता है ।<br></div><br>
+<div class=main>
+﻿देह-विभिण्णउ णाणमउ जो परमप्पु णिएइ<br>परम-समाहि-परिट्ठियउ पंडिउ सो जि हवेइ ॥१४॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो परम समाधि में स्थित हुआ, देह से भिन्न, ज्ञानमय परमआत्मा को देखता है, वह ही अन्तरात्मा (<font color=DarkSlateGray>जागृत</font>) होता है ।<br></div><br>
+<div class=main>
+﻿अप्पा लद्धउ णाणमउ कम्म-विमुक्केँ जेण<br>मेल्लिवि सयलु वि दव्वु परु सो परु मुणहि मणेण ॥१५॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿कर्म बन्धन से रहित हुए जिसके द्वारा समस्त पर द्रव्य को छोड़कर, ज्ञानमय आत्मा प्राप्त किया गया है, वह ही परम-आत्मा (<font color=DarkSlateGray>सर्वोच्च</font>) है । (<font color=DarkSlateGray>यह</font>) अन्तःकरण से समझ ।<br></div><br>
+<div class=main>
+﻿तिहुयण-वंदिउ सिद्धि-गउ हरि-हर झायहिँ जो जि<br>लक्खु अलक्खेँ धरिवि थिरु मुणि परमप्पउ सो जि ॥१६॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो तीन लोक के द्वारा वन्दित हैं, मुक्ति को प्राप्त हैं (<font color=DarkSlateGray>और</font>) हरि, हर (<font color=DarkSlateGray>आदि भी</font>) (<font color=DarkSlateGray>उस</font>) अदृश्य में अपने लक्ष्य को स्थिर रखकर (<font color=DarkSlateGray>उसका</font>) ध्यान करते हैं, वह ही परम-आत्मा है, (<font color=DarkSlateGray>ऐसा तू</font>) समझ ।<br></div><br>
+<div class=main>
+﻿णिच्चु णिरंजणु णाणमउ परमाणंद-सहाउ<br>जो एहउ सो संतु सिउ तासु मुणिज्जहि भाउ ॥१७॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿नित्य, निरंजन, ज्ञानमय व परम आनन्द स्वभावमय ऐसी जो (<font color=DarkSlateGray>आत्मा</font>) है, वह शान्त और मङ्गलमय है, तू उस (<font color=DarkSlateGray>परम आत्मा</font>) के इस स्वभाव को समझ ।<br></div><br>
+<div class=main>
+﻿जो णिय-भाउ ण परिहरइ जो पर-भाउ ण लेइ<br>जाणइ सयलु वि णिच्चु पर सो सिउ संतु हवेइ ॥१८॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो (<font color=DarkSlateGray>आत्मा</font>) न निज स्वभाव को छोड़ता है, जो न पर स्वभाव को ग्रहण करता है, किन्तु सबको निरन्तर जानता है, वह ही मङ्गल तथा शान्त (<font color=DarkSlateGray>स्वरूप</font>) होता है ।<br></div><br>
+<div class=main>
+﻿जासु ण वण्णु ण गंधु रसु जासु ण सद्दु ण फासु <br>जासु ण जम्मणु मरणु णवि णाउ णिरंजणु  तासु ॥१९॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जिस (<font color=DarkSlateGray>आत्मा</font>) का न (<font color=DarkSlateGray>कोई</font>) रंग है न गन्ध (<font color=DarkSlateGray>और</font>) रस है, जिसका न (<font color=DarkSlateGray>कोई</font>) शब्द है, न स्पर्श है (<font color=DarkSlateGray>तथा</font>) जिसका न जन्म और न ही मरण है, उस (<font color=DarkSlateGray>आत्मा</font>) का नाम निरंजन है ।<br></div><br>
+<div class=main>
+﻿जासु ण कोहु ण मोहु मउ जासु ण माय ण माणु <br>जासु ण ठाणु ण झाणु जिय सो जि णिरंजणु जाणु ॥२०॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जिस (<font color=DarkSlateGray>आत्मा</font>) के न क्रोध (<font color=DarkSlateGray>है</font>) न मोह (<font color=DarkSlateGray>और</font>) मद (<font color=DarkSlateGray>है</font>) जिसके न माया न मान है, जिसके लिए न (<font color=DarkSlateGray>कोई</font>) स्थान (<font color=DarkSlateGray>देश</font>) और न ध्यान (<font color=DarkSlateGray>आवश्यक</font>) है, हे जीव! वह ही (<font color=DarkSlateGray>आत्मा का </font>) निरंजन (<font color=DarkSlateGray>स्वरूप है</font>), (<font color=DarkSlateGray>ऐसा तू</font>)  समझ ।<br></div><br>
+<div class=main>
+﻿अत्थि ण पुण्णु ण पाउ जसु अत्थि ण हरिसु विसाउ <br>अत्थि ण एक्कु वि दोसु जसु सो जि णिरंजणु भाउ ॥२१॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जिस (<font color=DarkSlateGray>आत्मा</font>) के न पुण्य है, न पाप है, जिसके न हर्ष (<font color=DarkSlateGray>और</font>) न विषाद है (<font color=DarkSlateGray>तथा</font>) जिसके एक भी दोष नहीं है, वह ही (<font color=DarkSlateGray>आत्मा की</font>) निरंजन अवस्था है ।<br></div><br>
+<div class=main>
+﻿जासु ण धारणु धेउ ण वि जासु ण जंतु ण मंतु <br>जासु ण मंडलु मुद्द ण वि सो मुणि देउँ अणंतु ॥२२॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जिसके लिए (<font color=DarkSlateGray>ध्यान हेतु</font>) न अवलम्बन (<font color=DarkSlateGray>और</font>) न ही (<font color=DarkSlateGray>कोई</font>) ध्येय (<font color=DarkSlateGray>आवश्यक</font>) है, जिसके लिए न (<font color=DarkSlateGray>कोई</font>) यंत्र (<font color=DarkSlateGray>और</font>) न मन्त्र (<font color=DarkSlateGray>आवश्यक</font>) है (<font color=DarkSlateGray>तथा</font>) जिसके लिए न (<font color=DarkSlateGray>कोई</font>) आसन, न ही (<font color=DarkSlateGray>किसी तरह का</font>) (<font color=DarkSlateGray>कोई</font>) चिन्ह (<font color=DarkSlateGray>आवश्यक</font>) है, वह शाश्वत परमेश्वर है, (<font color=DarkSlateGray>ऐसा</font>) (<font color=DarkSlateGray>तू</font>) समझ ।<br></div><br>
+<div class=main>
+﻿वेयहिँ सत्थहिँ इंदियहिँ जो जिय मुणहु ण जाइ <br>णिम्मल-झाणहँ जो विसउ सो परमप्पु अणाइ ॥२३॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो आत्मा, वेदों के द्वारा, जैन शास्त्रों के द्वारा तथा इन्द्रियों के द्वारा बोध के लिए समर्थ नहीं होती और जो निर्मल ध्यान का विषय है, वह ही शाश्वत परम- आत्मा है ।<br></div><br>
+<div class=main>
+﻿केवल-दंसण -णाणमउ केवल-सुक्ख सहाउ <br>केवल-वीरिउ सो मुणहि जो जि परावरु भाउ ॥२४॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो केवल दर्शन और केवलज्ञानमय, शुद्ध सुख स्वभाव (<font color=DarkSlateGray>तथा</font>) अनुपम शक्ति (<font color=DarkSlateGray>सहित</font>) है, वह ही अत्यन्त उत्तम (<font color=DarkSlateGray>सर्वोच्च</font>) अवस्था है, (<font color=DarkSlateGray>ऐसा</font>) (<font color=DarkSlateGray>तू</font>) समझ ।<br></div><br>
+<div class=main>
+﻿एयहिँ जुत्तउ लक्खणहिँ जो परु णिक्कलु देउ <br>सो तहिँ णिवसइ परम-पइ जो तइलोयहँ झेउ ॥२५॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿इन सब लक्षणों से युक्त जो निःशरीर परम परमेश्वर (<font color=DarkSlateGray>है</font>) वह उसी सर्वोच्च स्थान पर (<font color=DarkSlateGray>परम पद पर</font>) रहता है जो तीन लोक का ध्येय है ।<br></div><br>
+<div class=main>
+﻿जेहउ णिम्मलु णाणमउ सिद्धिहिँ णिवसइ देउ<br>तेहउ णिवसइ बंभु परु देहहं मं करि भेउ ॥२६॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जैसी निर्मल, ज्ञानमय परम-आत्मा सिद्धशिला (<font color=DarkSlateGray>मोक्ष</font>) में रहती है, वैसी ही परम- आत्मा (<font color=DarkSlateGray>विभिन्न</font>) देहों में रहती है, तू (<font color=DarkSlateGray>इसमें</font>) भेद मत कर ।<br></div><br>
+<div class=main>
+﻿जेँ दिट्ठेँ तुट्टंति लहु कम्मइँ पुव्व-कियाइँ<br>सो परु जाणहि जोइया देहि वसंतु ण काइँ ॥२७॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जिस (<font color=DarkSlateGray>आत्मा</font>) के अनुभव किये गए होने के कारण पूर्व में किये गए कर्म शीघ्र नष्ट हो जाते हैं, वह (<font color=DarkSlateGray>ही</font>) परम (<font color=DarkSlateGray>आत्मा</font>) है । हे योगी! (<font color=DarkSlateGray>तू</font>) देह में बसती हुई भी (<font color=DarkSlateGray>उसको</font>) क्यों नहीं जानता है ?<br></div><br>
+<div class=main>
+﻿जित्थु ण इंदिय-सुह-दुहइँ जित्थु ण मण-वावारु<br>सो अप्पा मुणि जीव तुहुँ अण्णु परिं अवहारु ॥२८॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जहाँ इन्द्रिय सुख-दुःख नहीं हैं, जहाँ (<font color=DarkSlateGray>संकल्प-विकल्परूप</font>) मन का व्यापार नहीं है, वह (<font color=DarkSlateGray>परम</font>) आत्मा है । हे जीव! तू (<font color=DarkSlateGray>इस बात को</font>) समझ और दूसरी (<font color=DarkSlateGray>बात</font>) को पूरी तरह से छोड़ ।<br></div><br>
+<div class=main>
+﻿देहादेहहिँ जो वसइ भेयाभेय-णएण<br>सो अप्पा मुणि जीव तुहुँ किं अण्णेँ बहुएण ॥२९॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो भेद और अभेद दृष्टि से (<font color=DarkSlateGray>क्रमशः</font>) देह में और बिना देह (<font color=DarkSlateGray>सिद्धालय</font>) में रहता है, वह (<font color=DarkSlateGray>परम</font>) आत्मा है। हे जीव! तू (<font color=DarkSlateGray>इस बात को</font>) समझ, दूसरी बहुत (<font color=DarkSlateGray>बात</font>) से क्या (<font color=DarkSlateGray>लाभ है</font>) ?<br></div><br>
+<br><div class=title>
+﻿सभी आत्माएँ मूल में समान हैं</div>
+<div class=main>
+﻿जीवाजीव म एक्कु करि लक्खण-भेएँ भेउ<br>जो परु सो परु भणमि मुणि अप्पा अप्पु अभेउ ॥३०॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿(<font color=DarkSlateGray>तू</font>) जीव और अजीव को एक मत कर। (<font color=DarkSlateGray>इन दोनों में</font>) लक्षण के भेद से (<font color=DarkSlateGray>पूर्ण</font>) भेद (<font color=DarkSlateGray>है</font>) । जो (<font color=DarkSlateGray>अपने से</font>) भिन्न (<font color=DarkSlateGray>रागादिभाव</font>) है, वह भिन्न (<font color=DarkSlateGray>ही</font>) है तथा (<font color=DarkSlateGray>शुद्ध</font>) आत्मा (<font color=DarkSlateGray>और</font>) (<font color=DarkSlateGray>संसारी</font>) आत्मा (<font color=DarkSlateGray>मूल में</font>) समान (<font color=DarkSlateGray>है</font>), (<font color=DarkSlateGray>ऐसा</font>) मैं कहता हूँ, तू समझ ।<br></div><br>
+<br><div class=title>
+﻿आत्मा का लक्षण</div>
+<div class=main>
+﻿अमणु अणिंदिउ णाणमउ मुत्ति-विरहिउ चिमित्तु<br>अप्पा इंदिय-विसउ णवि लक्खणु एहु णिरुत्तु ॥३१॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿आत्मा, मन रहित, इन्द्रिय रहित, मूर्ति (<font color=DarkSlateGray>आकार</font>) रहित, ज्ञानमय (<font color=DarkSlateGray>और</font>) चेतना मात्र है, (<font color=DarkSlateGray>यह</font>) इन्द्रियों का विषय नहीं है। (<font color=DarkSlateGray>आत्मा का</font>) यह लक्षण बताया गया है ।<br></div><br>
+<br><div class=title>
+﻿आत्मा के ध्यान करनेवाले की योग्यता और उसका फल</div>
+<div class=main>
+﻿भव-तणु-भोय-विरत्त-मणु जो अप्पा झाएइ<br>तासु  गुरुक्की  वेल्लडी  संसारिणि तुट्टेइ ॥३२॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿संसार, शरीर और भोगों से विरक्त जो मन, आत्मा का ध्यान करता है, उसकी घनी लौकिक (<font color=DarkSlateGray>संसाररूपी</font>) बेल नष्ट हो जाती है ।<br></div><br>
+<br><div class=title>
+﻿देह में ही परमात्मा का निवास</div>
+<div class=main>
+﻿देहादेवलि जो वसइ देउ अणाइ-अणंतु<br>केवल-णाण-फुरंत-तणु सो परमप्पु णिभंतु ॥३३॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो देहरूपी मंदिर में अनादि, अनन्त (<font color=DarkSlateGray>और</font>) चमकता हुआ केवलज्ञानरूपी कमल बसता है, वह निःस्सन्देह दिव्य परम- आत्मा है । <br></div><br>
+<br><div class=title>
+﻿परम आत्मा का एक अद्भुत् लक्षण</div>
+<div class=main>
+﻿देहे वसंतु वि णवि छिवइ णियमेँ देहु वि जो जि<br>देहेँ छिप्पइ जो वि णवि मुणि परमप्पउ सो जि ॥३४॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो देह में रहता हुआ भी नियम से देह को बिल्कुल ही नहीं छूता है (<font color=DarkSlateGray>तथा</font>) जो देह के द्वारा भी नहीं छूआ जाता, वह ही परम-आत्मा है, (<font color=DarkSlateGray>ऐसा</font>) (<font color=DarkSlateGray>तू</font>) समझ ।<br></div><br>
+<br><div class=title>
+﻿सत्य, शिव एवं सुन्दर के समन्वयरूप परम आत्मा का कथन</div>
+<div class=main>
+﻿जो सम-भाव -परिट्ठियहं जोइहँ कोइ फुरेइ<br>परमाणंदु जणंतु  फुडु  सो परमप्पु हवेइ ॥३५॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿समता भाव में सम्पूर्णरूप से स्थित योगियों के (<font color=DarkSlateGray>हृदय में</font>) परम-आनन्द को स्पष्टरूप से उत्पन्न करता हुआ जो कुछ प्रकट होता है, वह परम- आत्मा है ।<br></div><br>
+<br><div class=title>
+﻿आत्मा का परम आत्मा स्वरूप</div>
+<div class=main>
+﻿कम्म-णिबद्धु वि जोइया देहि वसंतु वि जो जि<br>होइ ण सयलु कया वि फुडु मुणि परमप्पउ सो जि ॥३६॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿हे योगी! जो आत्मा, देह में बसता हुई भी कभी भी कर्म से बँधा हुआ और बिल्कुल देह सम नहीं होता, वह (<font color=DarkSlateGray>आत्मा</font>) ही सुविदित परम-आत्मा है, (<font color=DarkSlateGray>ऐसा तुम</font>) जानो ।<br></div><br>
+<br><div class=title>
+﻿पूर्व कथन की पुष्टि</div>
+<div class=main>
+﻿जो परमत्थेँ णिक्कलु वि कम्म-विभिण्णउ जो जि <br>मूढा सयलु भणंति फुडु मुणि परमप्पउ सो जि  ॥३७॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो वास्तविकरूप से शरीर रहित है और निश्चय ही कर्मों से जुदा है, वह ही परम- आत्मा है, (<font color=DarkSlateGray>किन्तु</font>) मूर्ख (<font color=DarkSlateGray>उसको</font>) शरीरस्वरूप ही कहते हैं, (<font color=DarkSlateGray>तुम</font>) (<font color=DarkSlateGray>इस बात को</font>) स्पष्टरूप से समझो ।<br></div><br>
+<br><div class=title>
+﻿परम आत्मा से चन्द्रमा की समानता</div>
+<div class=main>
+﻿गयणि अणंति वि एक्क उडु जेहउ भुयणु विहाइ<br>मुक्कहँ जसु पए बिंबियउ सो परमप्पु अणाइ ॥३८॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿अनन्त आकाश में एक चन्द्रमा के सदृश जिस प्रत्येक मुक्त जीव में प्रतिबिम्बित किया गया (<font color=DarkSlateGray>समस्त</font>) लोक चमकता है, वह (<font color=DarkSlateGray>जीव</font>) ही शाश्वत परम- आत्मा है । <br></div><br>
+<br><div class=title>
+﻿ध्यान, ध्येय व ध्याता की एकता ही परमआत्मा की प्राप्ति है</div>
+<div class=main>
+﻿जोइय-विंदहिँ णाणमउ जो झाइज्जइ झेउ<br>मोक्खहँ कारणि अणवरउ सो परमप्पउ देउ ॥३९॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿योगियों के समूह द्वारा परम शान्ति के प्रयोजन से जो ज्ञानमय ध्यान के योग्य(<font color=DarkSlateGray>आत्मा</font>) निरन्तर ध्यान किया जाता है, वह ही दिव्य परम- आत्मा है ।  <br></div><br>
+<br><div class=title>
+﻿आत्मा संसार का कारण भी है और परम आत्मा भी है</div>
+<div class=main>
+﻿जो जिउ हेउ लहेवि विहि जगु बहु-विहउ जणेइ<br>लिंगत्तय-परिमंडियउ सो परमप्पु हवेइ ॥४०॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जोे आत्मा (<font color=DarkSlateGray>कर्मरूप</font>) कारण को प्राप्त करके तीनों लिङ्गों से सुशोभित अनेक प्रकार के संसार को उत्पन्न करता है, वह (<font color=DarkSlateGray>ही</font>) (<font color=DarkSlateGray>मूलरूप से</font>) परम- आत्मा है ।<br></div><br>
+<br><div class=title>
+﻿आत्मा के ज्ञान गुण का कथन</div>
+<div class=main>
+﻿जसु अब्भंतरि जगु वसइ जग-अब्भंतरि जो जि<br>जगि जि वसंतु वि जगु जि ण वि मुणि परमप्पउ सो जि ॥४१॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जिसके (<font color=DarkSlateGray>ज्ञान के</font>) भीतर संसार बसता (<font color=DarkSlateGray>प्रतिबिम्बित होता</font>) है (<font color=DarkSlateGray>और</font>) भी जो संसार के भीतर (<font color=DarkSlateGray>ज्ञानरूप से</font>) (<font color=DarkSlateGray>व्याप्त है</font>) । इस प्रकार वह संसार में वास करता हुआ भी निश्चय ही संसाररूप नहीं है, वह ही परम- आत्मा है, (<font color=DarkSlateGray>ऐसा तू</font>) समझ ।<br></div><br>
+<br><div class=title>
+﻿परम आत्मा की अनुभूति के लिए परम समाधि व तप आवश्यक</div>
+<div class=main>
+﻿देहि वसंतु वि हरि-हर वि जं अज्ज वि ण मुणंति<br>परम-समाहि-तवेण विणु सो परमप्पु भणंति ॥४२॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿हरि, हर, जैसे महापुरुष भी देह में बसता हुआ भी जिस (<font color=DarkSlateGray>आत्मा</font>) को परम समाधि व तप के बिना आज तक भी नहीं जान सके हैं, वह परम- आत्मा (<font color=DarkSlateGray>है</font>), (<font color=DarkSlateGray>ज्ञानीजन</font>) (<font color=DarkSlateGray>ऐसा</font>) कहते हैं ।<br></div><br>
+<br><div class=title>
+﻿शरीर और आत्मा के दृढ़ सम्बन्ध का सीधे साधे शब्दों में कथन</div>
+<div class=main>
+﻿देहि वसंतेँ जेण पर इंदिय-गामु वसेइ<br>उव्वसु होइ गएण फुडु सो परमप्पु हवेइ ॥४४॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿यह इन्द्रिय रूपी गाँव अर्थात हमारा शरीर जब तक ही है तब तक इसका सम्बन्ध आत्मा से जुड़ा हुआ है । लेकिन जैसे ही इसका आत्मा से सम्बन्ध टूट जाता है, यह शरीर भी पूरी तरह से निष्क्रिय हो जाता है । वैसे ही शरीर के बिना मुक्त आत्मा को छोड़कर सांसारिक आत्मा का कोई अस्तित्व नहीं है ।<br></div><br>
+<br><div class=title>
+﻿देह से आत्मा का विशिष्ट महत्व</div>
+<div class=main>
+﻿जो णिय-करणहिँ पंचहिँ वि पंच वि विसय मुणेइ<br>मुणिउ ण पंचहिँ पंचहिँ वि सो परमप्पु हवेइ ॥४५॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो अपनी पाँचों ही इन्द्रियों द्वारा पाँचों ही विषयों को जानता है (<font color=DarkSlateGray>किन्तु</font>) जो पाँचों (<font color=DarkSlateGray>इन्द्रियों</font>) द्वारा (<font color=DarkSlateGray>और</font>) पाँचों (<font color=DarkSlateGray>ही</font>) (<font color=DarkSlateGray>विषयों</font>) द्वारा नहीं जाना गया (<font color=DarkSlateGray>है</font>), वह परम- आत्मा होता है ।<br></div><br>
+<br><div class=title>
+﻿परमात्मा का वीतराग स्वरूप</div>
+<div class=main>
+﻿जसु परमत्थेँ बंधु णवि जोइय ण वि संसारु<br>सो परमप्पउ जाणि तुहुँ मणि मिल्लिवि ववहारु ॥४६॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿हे योगी! वास्तविक रूप में जिसके न ही (<font color=DarkSlateGray>संसार के कारण, प्रकृति, स्थिति, अनुभाग और प्रदेशरूप</font>) बन्ध है, न ही (<font color=DarkSlateGray>द्रव्य, क्षेत्र, काल, भव और भावरूप</font>) संसार है, वह परम-आत्मा है । तुम मन से (<font color=DarkSlateGray>सब लौकिक व्यवहार</font>) विवाद त्यागकर (<font color=DarkSlateGray>वीतरागता में स्थित होकर</font>) यह समझो ।<br></div><br>
+<br><div class=title>
+﻿परम आत्मा के ज्ञान के स्थान का कथन</div>
+<div class=main>
+﻿णेयाभावे विल्लि जिम थक्कइ णाणु वलेवि<br>मुक्कहँ जसु पय बिंबियउ परम-सहाउ भणेवि ॥४७॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿बेल की तरह मुक्ति को प्राप्त हुए जिस जीव का ज्ञान- ज्ञेय के (<font color=DarkSlateGray>आलम्बन के</font>) अभाव में लौटकर (<font color=DarkSlateGray>तथा</font>) परम स्वभाव का प्रतिपादन करके (<font color=DarkSlateGray>इस लोकाकाश में</font>) प्रतिबिम्बित हुआ स्थिर हो जाता है, (<font color=DarkSlateGray>वह ही परम- आत्मा है</font>) ।<br></div><br>
+<br><div class=title>
+﻿कर्म बंधन से मुक्त परम आत्मा का स्वरूप</div>
+<div class=main>
+﻿णेयाभावे विल्लि जिम थक्कइ णाणु वलेवि<br>मुक्कहँ जसु पय बिंबियउ परम-सहाउ भणेवि ॥४८॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿निश्चयरूप से कर्म ही हमेशा जिसके अपने-अपने (<font color=DarkSlateGray>सुख-दुःखादि</font>) कार्य को उत्पन्न करते हैं । (<font color=DarkSlateGray>किन्तु </font>) (<font color=DarkSlateGray>जो</font>) (<font color=DarkSlateGray>किसी के द्वारा</font>) न कुछ भी उत्पन्न की गई और न ही हरण की गयी (<font color=DarkSlateGray>है</font>), वह ही परम- आत्मा है, (<font color=DarkSlateGray>तुम इस प्रकार </font>) चिन्तन करो ।<br></div><br>
+<br><div class=title>
+﻿कर्म बंधन से मुक्त परम आत्मा का स्वरूप</div>
+<div class=main>
+﻿कम्म-णिबद्धु वि होइ णवि जो फुडु कम्मु कया वि<br>कम्मु वि जो ण कया वि फुडु सो परमप्पउ भावि ॥४९॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो (<font color=DarkSlateGray>आत्मा</font>) आत्मा कर्मरूप होकर भी कर्मों से निश्चितरूप से बँंधी हुई नहीं होती (<font color=DarkSlateGray>तथा</font>) जो कर्म भी निश्चितरूप से कभी भी (<font color=DarkSlateGray>उस आत्मा के</font>) नहीं (<font color=DarkSlateGray>होते</font>) (<font color=DarkSlateGray>ऐसी</font>) वह परम- आत्मा है, (<font color=DarkSlateGray>तुम इस प्रकार</font>) चिन्तन करो ।<br></div><br>
+<br><div class=title>
+﻿आत्मा क्या है</div>
+<div class=main>
+﻿कि वि भणंति जिउ सव्वगउ जिउ जडु के वि भणंति<br>कि वि भणंति जिउ देह-समु सुण्णु वि के वि भणंति ॥५०॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿कोई जीव को सर्वव्यापक कहते हैं, कोई जीव को अचेतन कहते हैं, कोई जीव को देह के समान कहते हैं (<font color=DarkSlateGray>तथा</font>) कोई (<font color=DarkSlateGray>जीव को</font>) शून्य भी कहते हैं । (<font color=DarkSlateGray>आखिर आत्मा का सच्चा स्वरूप क्या है ?</font>)<br></div><br>
+<br><div class=title>
+﻿आत्मा का स्वरूप</div>
+<div class=main>
+﻿अप्पा जोइय सव्व-गउ अप्पा जडु वि वियाणि<br>अप्पा देह-पमाणु मुणि अप्पा सुण्णु वियाणि ॥५१॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿हे योगी ! आत्मा को सर्वव्यापक (<font color=DarkSlateGray>और</font>) जड भी जानो, आत्मा को देह की नाप (<font color=DarkSlateGray>के समान</font>) (<font color=DarkSlateGray>तथा आत्मा को शून्य भी जानो ।<br></div><br>
+<br><div class=title>
+﻿आत्मा का सर्वव्यापक स्वरूप</div>
+<div class=main>
+﻿अप्पा कम्म - विवज्जियउ केवल-णाणेँ जेण<br>लोयालोउ वि  मुणइ  जिय सव्वगु वुच्चइ तेण ॥५२॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿कर्मरहित आत्मा जिस केवलज्ञान से लोक और अलोक कोे जानता है, उस (<font color=DarkSlateGray>केवलज्ञान</font>) के कारण आत्मा सर्वव्यापक कहा जाता है । <br></div><br>
+<br><div class=title>
+﻿आत्मा का जड स्वरूप</div>
+<div class=main>
+﻿जे णिय-बोह -परिट्ठियहँ जीवहँ तुट्टइ णाणु<br>इंदिय-जणियउ जोइया तिं जिउ जडु वि वियाणु ॥५३॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿स्वबोध में सम्पूर्णरूप से स्थित हुए जीवों का जो इन्द्रियों से उत्पन्न किया ज्ञान नष्ट होता है, उस के कारण आत्मा को जड भी जानो ।<br></div><br>
+<br><div class=title>
+﻿आत्मा का चरम शरीर प्रमाणरूप स्वरूप</div>
+<div class=main>
+﻿कारण - विरहिउ सुद्ध-जिउ वड्ढइ खिरइ ण जेण<br>चरम-सरीर-पमाणु जिउ जिणवर बोल्लहिं तेण ॥५४॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿निमित्त से रहित शुद्ध जीव जिस (<font color=DarkSlateGray>निमित्त</font>) के कारण से बढता-खिरता नहीं है, उस (<font color=DarkSlateGray>निमित्त</font>) के कारण जिनेन्द्रदेव आत्मा को सम्पूर्ण (<font color=DarkSlateGray>अन्तिम</font>) शरीर प्रमाण कहते हैं ।<br></div><br>
+<br><div class=title>
+﻿आत्मा के शून्य स्वरूप का कथन</div>
+<div class=main>
+﻿अट्ठ वि कम्मइँ बहुविहइँ णवणव दोस वि जेण<br>सुद्धहँ एक्कुवि अत्थि णवि सुण्णु वि वुच्चइ तेण ॥५५॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जिस कारण से (<font color=DarkSlateGray>आत्मा के</font>) आठ ही कर्म (<font color=DarkSlateGray>तथा</font>) और भी बहुत प्रकार के नौ-नौ (<font color=DarkSlateGray>अठारह</font>) दोष होते हैं, शुद्ध आत्माओं के (<font color=DarkSlateGray>उन दोषों में से</font>) एक भी (<font color=DarkSlateGray>दोष</font>) नहीं है, उस कारण से (<font color=DarkSlateGray>आत्मा</font>) शून्य भी कही जाती है ।<br></div><br>
+<br><div class=title>
+﻿आत्मा के लक्षण</div>
+<div class=main>
+﻿अप्पा जणियउ केण ण वि अप्पेँ जणिउ ण कोइ<br>दव्व-सहावेँ णिच्चु मुणि पज्जउ विणसइ होइ ॥५६॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿आत्मा किसी के द्वारा उत्पन्न नहीं की गई, आत्मा के द्वारा कोई उत्पन्न नहीं किया गया, द्रव्य के स्वभाव से (<font color=DarkSlateGray>आत्मा </font>) नित्य है, किन्तु इसकी पर्याय नष्ट होती है ।<br></div><br>
+<br><div class=title>
+﻿आत्मा के लक्षण का स्पष्टीकरण</div>
+<div class=main>
+﻿तं परियाणहि दव्वु तुहुँ  जं गुण-पज्जय-जुत्तु<br>सह-भुव जाणहि ताहँ गुण कम-भुव पज्जउ वुत्तु ॥५७॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जो कोई गुण और पर्याय सहित है उसको द्रव्य जान, (<font color=DarkSlateGray>आत्मा के</font>) (<font color=DarkSlateGray>सदा</font>) एक साथ विद्यमान को उन (<font color=DarkSlateGray>द्रव्य</font>) का गुण जान (<font color=DarkSlateGray>तथा</font>) अनुक्रम से विद्यमान (<font color=DarkSlateGray>द्रव्य की</font>) पर्याय कही गयी है ।<br></div><br>
+<div class=main>
+﻿अप्पा बुज्झहि दव्वु तुहुँ गुण पुणु दंसणु णाणु<br>पज्जय चउ-गइ-भाव तणु कम्म-विणिम्मिय जाणु ॥५८॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿तू आत्मा को द्रव्य तथा दर्शन और ज्ञान को गुण जान, चारों गति, भाव (<font color=DarkSlateGray>तथा</font>) शरीर को कर्म से रचित पर्याय जान ।<br></div><br>
+<br><div class=title>
+﻿आत्मा और कर्म का परष्पर सम्बन्ध</div>
+<div class=main>
+﻿जीवहँ कम्मु अणाइ जिय जणियउ कम्मु ण तेण<br>कम्मेँ जीउ वि जणिउ णवि दोहिँ वि आइ ण जेण ॥५९॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿हे जीव! जीवों का कर्म अनादिकाल से चला आता हुआ है, उस जीव के द्वारा कर्म उत्पन्न नहीं किया गया, कर्म के द्वारा भी यह जीव उत्पन्न नहीं किया गया, जिससे इन दोनों का ही आदि नहीं है ।<br></div><br>
+<br><div class=title>
+﻿सभी जीवों का प्राण कर्म</div>
+<div class=main>
+﻿एहु ववहारेँ जीवउउ हेउ लहेविणु कम्मु<br>बहुविह-भावेँ परिणवइ तेण जि धम्मु-अहम्मु ॥६०॥</div>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿यह जीव कर्म (<font color=DarkSlateGray>रूप</font>) कारण को प्राप्तकर अनेक प्रकार के भाव से रूपान्तर को प्राप्त होता है, उससे ही धर्म और अधर्म होता है ।<br></div><br>
+</body></html>
