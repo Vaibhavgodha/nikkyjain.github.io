@@ -498,6 +498,4 @@ $(document).on( 'pagecontainershow', function(){
   $('#shastraListView-न्याय').append('<li data-theme="b"><a href='+relPath+'jainDataBase/shastra/06_न्याय/03_परीक्षामुख/html/0000_introduction.html data-rel=dialog data-ajax=false>परीक्षामुख</a></li>');
   $("\#granthListView-न्याय").listview('refresh');
   $("\#shastraListView-न्याय").listview('refresh');
-  $("\#granthListView-भजन-पाठ").listview('refresh');
-  $("\#shastraListView-भजन-पाठ").listview('refresh');
 })
