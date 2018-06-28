@@ -7,7 +7,7 @@ var mainFontSz=30;
 var menuFontSz=4;
 var bottomFontSz=20;
 if (typeof homePage === 'undefined') {
-  var homePage="shastra.html";
+  var homePage="index.html";
 }
 if (typeof relativePath === 'undefined') {
   relativePath="../../../../../";

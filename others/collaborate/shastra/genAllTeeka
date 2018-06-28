@@ -4,9 +4,9 @@ convert=
 [ "$1" = "-c" ] && convert="-c"
 launchDir=$PWD
 
-export dbDir=$(echo $PWD | perl -i -pe 's/(.*jainData).*/$1/g')
-curDir=$dbDir/others/collaborate/teeka
-# To to 'teeka' directory
+export dbDir=$(echo $PWD | perl -i -pe 's/(.*jaindb-dev).*/$1/g')
+curDir=$dbDir/others/collaborate/shastra
+# CD to 'shastra' directory
 cd $curDir
 
 while read oDir; do
@@ -17,7 +17,7 @@ while read oDir; do
         iDir=$(echo "$iDir" | tr -d '\r')
         cd $curDir/$oDir/$iDir
         echo $PWD
-        $curDir/../shastra/createTeeka
+        $curDir/createTeeka
     done < "index.txt"
     cd $curDir
 done < "index.txt"

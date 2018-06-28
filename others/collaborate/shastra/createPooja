@@ -1,0 +1,80 @@
+#!/bin/sh
+
+. common.sh
+
+#export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
+export dbDir=$(cd ../../.. && echo $PWD)
+echo "DB Dir $dbDir"
+myjsFile=myMobile.js
+jsFile=$dbDir/js/$myjsFile
+for category in $(ls -d $dbDir/others/collaborate/poojas/*/)
+do
+    myCntr=1
+    myCategory=$(basename $category)
+    OIFS="$IFS"
+    IFS=$'\n'
+    for pooja in $(ls -d $category/*/)
+    do
+      myPooja=$(basename $pooja)
+      myPoojaName=pooja-$myCntr
+      myInDir=$dbDir/others/collaborate/poojas/$myCategory/$myPooja
+      myOutDir=$dbDir/jainDataBase/poojas/$myCategory/$myPooja/html
+      myHtml=$myOutDir/${myPoojaName}.html
+      echo $(dirname $myHtml)
+      mkdir -p $(dirname $myHtml)
+      ## ---- Header -----
+      createHeader $myHtml '../../../../../'
+      ## ---- Bhajan Div -----
+      createList 'bhajan' $dbDir/jainDataBase/bhajans $myHtml 
+      ## ---- Pooja Div -----
+      createList 'pooja'  $dbDir/others/collaborate/poojas  $myHtml
+      ## ---- Granth Div -----
+      createList 'granth'  $dbDir/others/collaborate/shastra  $myHtml
+      ## ---- Shastra Div -----
+      createList 'shastra'  $dbDir/others/collaborate/shastra  $myHtml
+      ## ---- Misc Div ----
+      createMiscList $myHtml '../../../../../'
+
+      echo "<div align=center><h1><font color=darkBlue>$(basename $pooja | perl -pe 's/.txt//g' | perl -pe 's/.*_//')</font></h1>" >> $myHtml
+      audioFileName=$(basename $pooja | perl -pe 's/\.txt/.mp3/g')
+      if [ -f $pooja/audio/$audioFileName ]; then
+        cat <<EOF >> $myHtml
+        <div><audio controls>
+          <source src="../audio/$audioFileName" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio><br><br><div>
+EOF
+      fi
+      while read cFile; do
+        cFile=$(echo "$cFile" | tr -d '\r')
+        curFile=$myInDir/main/$cFile
+        [ ! -f "$curFile" ] && echo "Didnt find $curFile" && exit 1
+        curFile=$myInDir/title/$cFile
+        if [ -f $curFile ]; then
+          echo "<div class=title>" >> $myHtml 
+          cat $curFile >>  $myHtml 
+          echo "</div>" >> $myHtml
+        fi
+        curFile=$myInDir/main/$cFile
+        echo "<div class=main>" >> $myHtml 
+        c="$(cat $curFile)"
+        c=$(echo "$c" | perl -pe 's/\n/<br>/g')
+        c=$(echo "$c" | perl -pe 's/\n/<br>/g')
+        c=$(echo "$c" | perl -pe 's/ॐ ह्रीं/<span class=om>ॐ ह्रीं/g')
+        c=$(echo "$c" | perl -pe 's/निर्वपामीति स्वाहा/निर्वपामीति स्वाहा<\/span>/g')
+        c=$(echo "$c" | perl -pe 's/संवौषट् आह्वाननं/संवौषट् आह्वाननं<\/span>/g')
+        c=$(echo "$c" | perl -pe 's/ठः स्थापनं/ठः स्थापनं<\/span>/g')
+        c=$(echo "$c" | perl -pe 's/वषट् सन्निधि करणं/वषट् सन्निधि करणं<\/span>/g')
+        echo $c >>  $myHtml
+        echo "</div>" >> $myHtml
+        curFile=$myInDir/arth/$cFile
+        if [ -f $curFile ]; then
+          c="$(cat $curFile)"
+          echo "<div style='text-align: justify; margin: 0 auto; width: 90%;'><h4><font color=black>अन्वयार्थ : </font><font color=darkBlue>$c</font></h4></div><br>" >>  $myHtml
+        fi
+      done < "$myInDir/index.txt"
+      echo "</div></body></html>" >> $myHtml
+      myCntr=$(($myCntr+1))
+    done
+    echo "Pooja Category $(basename $category) Done"
+done

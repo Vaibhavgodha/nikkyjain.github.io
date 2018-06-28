@@ -1,0 +1,98 @@
+#!/bin/sh
+
+. common.sh
+
+#export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
+export dbDir=$(cd ../../.. && echo $PWD)
+echo "DB Dir $dbDir"
+myjsFile=myMobile.js
+jsFile=$dbDir/js/$myjsFile
+for category in $(ls -d $dbDir/others/collaborate/shastra/*/)
+do
+    myCntr=1
+    myCategory=$(basename $category)
+    OIFS="$IFS"
+    IFS=$'\n'
+    for granth in $(ls -d $category/*/)
+    do
+      myPooja=$(basename $granth)
+      myPoojaName=granth-$myCntr
+      myInDir=$dbDir/others/collaborate/shastra/$myCategory/$myPooja
+      myOutDir=$dbDir/jainDataBase/teeka/$myCategory/$myPooja/html
+      myHtml=$myOutDir/${myPoojaName}.html
+      echo $(dirname $myHtml)
+      mkdir -p $(dirname $myHtml)
+      ## ---- Header -----
+      createHeader $myHtml '../../../../../'
+      ## ---- Bhajan Div -----
+      createList 'bhajan' $dbDir/jainDataBase/bhajans $myHtml 
+      ## ---- Pooja Div -----
+      createList 'pooja'  $dbDir/others/collaborate/poojas  $myHtml
+      ## ---- Granth Div -----
+      createList 'granth'  $dbDir/others/collaborate/shastra  $myHtml
+      ## ---- Shastra Div -----
+      createList 'shastra'  $dbDir/others/collaborate/shastra  $myHtml
+      ## ---- Misc Div ----
+      createMiscList $myHtml '../../../../../'
+
+      while read cFile; do
+        cFile=$(echo "$cFile" | tr -d '\r')
+        curFile=$myInDir/main/$cFile
+        [ ! -f "$curFile" ] && echo "Didnt find $curFile" && exit 1
+        curFile=$myInDir/title/$cFile
+        if [ -f $myInDir/header/$cFile -o -f $curFile ]; then
+          echo "<br><div class=title>" >> $myHtml 
+          [ -f $myInDir/header/$cFile ] && curFile=$myInDir/header/$cFile
+          cat $curFile >>  $myHtml 
+          echo "</div>" >> $myHtml
+        fi
+        curFile=$myInDir/main/$cFile
+        echo "<div class=main>" >> $myHtml 
+        cat $curFile | perl -pe 's/\n/<br>/g' >>  $myHtml
+        echo "</div>" >> $myHtml
+        curFile=$myInDir/arth/$cFile
+        if [ -f $curFile ]; then
+          c="$(cat $curFile)"
+          c=$(echo "$c" | perl -pe 's/\n/<br>/g' | perl -pe 's/\[/<b><font color=darkRed>[/g' | perl -pe 's/\]/]<\/font><\/b>/g')
+          c=$(echo "$c" | perl -pe 's/(\()/$1<font color=DarkSlateGray>/g' | perl -pe 's/(\))/<\/font>$1/g'); 
+          echo "<div class=arth><b><font color=black>अन्वयार्थ : </font></b>$c</div><br>" >>  $myHtml
+        fi
+        for teeka in $(ls -d $myInDir/teeka[0-9]* 2>/dev/null)
+        do
+            [[ $teeka =~ notes ]] && continue
+            bottomFile=$teeka/$cFile
+            bottomFileS=$(echo $bottomFile | perl -pe 's/\..*//g')
+            teekakaar=$(echo $(basename $teeka) | perl -pe 's/.*?-//' | perl -pe 's/_/ /g')
+            teekaNum=$(echo $teeka | perl -pe 's/teeka(.*)/$1/')
+            if ls $bottomFileS* 1> /dev/null 2>&1; then
+                c="$(cat $bottomFileS*)"
+                gathaName=$(echo $cFile | sed 's/\..*//')
+                c=$(echo "$c" | perl -pe 's/प्रतिशंका [-–—]/<b><\/font><font color=darkgreen>उत्तर –<\/font><\/b>/g');
+                c=$(echo "$c" | perl -pe 's/शंका [-–—]/<b><font color=red>शंका –/g'); 
+                c=$(echo "$c" | perl -pe 's/प्रश्न [-–—:]/<b><font color=red>प्रश्न –/g'); 
+                c=$(echo "$c" | perl -pe 's/समाधान [-–—]/<\/font><font color=darkGreen>समाधान –<\/font><\/b>/g'); 
+                c=$(echo "$c" | perl -pe 's/उत्तर [-–—:]/<\/font><font color=darkGreen>उत्तर –<\/font><\/b>/g'); 
+                c=$(echo "$c" | perl -pe 's/अर्थ [-–—]/<b><font color=maroon>अर्थ –<\/font><\/b>/g'); 
+                c=$(echo "$c" | perl -pe 's/विशेषार्थ [-–—]/<b><font color=maroon>विशेषार्थ –<\/font><\/b>/g'); 
+                c=$(echo "$c" | perl -pe 's/भावार्थ [-–—]/<b><font color=maroon>भावार्थ –<\/font><\/b>/g'); 
+                c=$(echo "$c" | perl -pe 's/\[\[/<b><font color=maroon>/g' | perl -pe 's/\]\]/<\/font><\/b>/g'); 
+                c=$(echo "$c" | perl -pe 's/\[/<b><font color=maroon>/g' | perl -pe 's/\]/<\/b><\/font>/g'); 
+                c=$(echo "$c" | perl -pe 's:\n:</p><p>:g' | perl -pe 's/\[/<b>[/g' | perl -pe 's/\]/]<\/b>/g'); 
+                c=$(echo "<p>$c</p>" | perl -pe 's/<p>.*\(\(.*\)\)//g' | perl -pe 's/\;\;/<br>/g'); 
+                c=$(echo "$c" | perl -pe 's/(\()/$1<font color=DarkSlateGray>/g' | perl -pe 's/(\))/<\/font>$1/g'); 
+                c=$(echo "$c" | perl -pe 's/<p>\s*<\/p>//g'); 
+                c=$(echo "$c" | perl -pe 's:<p><span:<span:g'); 
+                c=$(echo "$c" | perl -pe 's:<\/p><br><p><sup:<br><sup:g'); 
+                c=$(echo "$c" | perl -pe 's:</span></p>:</span>:g'); 
+                c=$(echo "$c" | perl -pe 's/<br><br>/<br>/g'); 
+                c=$(echo "$c" | perl -pe 's:<br>$::g'); 
+                echo "<br><div class=arth><b><font color=darkgreen>$teekakaar :</font></b> $c</div>" >> $myHtml
+                teekaCntr=$(($teekaCntr+1))
+            fi
+        done
+      done < "$myInDir/index.txt"
+      echo "</body></html>" >> $myHtml
+      myCntr=$(($myCntr+1))
+    done
+    echo "Granth Category $(basename $category) Done"
+done

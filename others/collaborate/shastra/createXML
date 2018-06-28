@@ -6,7 +6,7 @@ convert=0
 pDir=$(basename $PWD)
 gDir=$(basename $(dirname $PWD))
 ggDir=$(basename $(dirname $(dirname $PWD)))
-export dbDir=$(echo $PWD | perl -i -pe 's/(.*jainData).*/$1/g')
+export dbDir=$(echo $PWD | perl -i -pe 's/(.*jaindb-dev).*/$1/g')
 outDir="$dbDir/jainDataBase/$ggDir/$gDir/$pDir"
 /bin/mkdir -p $outDir
 /bin/cp -f $dbDir/others/collaborate/$ggDir/$gDir/$pDir/index.txt $outDir/index.txt 

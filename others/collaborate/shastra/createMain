@@ -1,0 +1,99 @@
+#!/bin/sh
+
+. $PWD/common.sh
+
+#export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
+export dbDir=$(cd ../../.. && echo $PWD)
+echo "DB Dir $dbDir"
+myHtml=$dbDir/index.html
+myjsFile=myMobile.js
+jsFile=$dbDir/js/$myjsFile
+
+## ---- Header -----
+createHeader $myHtml './'
+## ---- Bhajan Div -----
+createList 'bhajan' $dbDir/jainDataBase/bhajans $myHtml 
+## ---- Pooja Div -----
+createList 'pooja'  $dbDir/others/collaborate/poojas  $myHtml
+## ---- Granth Div -----
+createList 'granth'  $dbDir/others/collaborate/shastra  $myHtml
+## ---- Shastra Div -----
+createList 'shastra'  $dbDir/others/collaborate/shastra  $myHtml
+createMiscList $myHtml './'
+
+echo "</body></html>" >>$myHtml
+
+## ---- Main JS file (Bhajan Part) ----
+echo "\$(document).on( 'pagecontainershow', function(){" > $jsFile
+for category in $(ls -d $dbDir/jainDataBase/bhajans/*/)
+do
+    myCategory=$(basename $category)
+    myCategory=$(echo $myCategory | sed 's/.*_//')
+    OIFS="$IFS"
+    IFS=$'\n'
+    myCntr=1;
+    for item in $(ls $category/main/*)
+    do
+        myItem=$(basename $item)
+            myItem=$(echo $myItem | sed 's/.txt//');
+        echo "  \$('#bhajanListView-$myCategory').append('<li data-theme=\"b\"><a href='+relPath+'jainDataBase/bhajans/$(basename $category)/html/bhajan-${myCntr}.html data-rel=dialog data-ajax=false>$myItem</a></li>');" >> $jsFile
+        myCntr=$(($myCntr+1))
+
+    done
+    echo "  \$(\"\#bhajanListView-$myCategory\").listview('refresh');" >> $jsFile
+    IFS="$OIFS"
+    echo "Category $(basename $category) Done"
+done
+echo "})" >> $jsFile
+## ---- Main JS file (Bhajan Part) ----
+
+
+## ---- Main JS file (Pooja Part) ----
+echo "\$(document).on( 'pagecontainershow', function(){" >> $jsFile
+for category in $(ls -d $dbDir/others/collaborate/poojas/*/)
+do
+    myCategory=$(basename $category)
+    myCategory=$(echo $myCategory | sed 's/.*_//')
+    OIFS="$IFS"
+    IFS=$'\n'
+    myCntr=1;
+    for item in $(ls -d $category/*/)
+    do
+        myItem=$(basename $item)
+        myItem=$(echo $myItem | sed 's/.*_//');
+        echo "  \$('#poojaListView-$myCategory').append('<li data-theme=\"b\"><a href='+relPath+'jainDataBase/poojas/$(basename $category)/$(basename $item)/html/pooja-${myCntr}.html data-rel=dialog data-ajax=false>$myItem</a></li>');" >> $jsFile
+        myCntr=$(($myCntr+1))
+
+    done
+    echo "  \$(\"\#poojaListView-$myCategory\").listview('refresh');" >> $jsFile
+    IFS="$OIFS"
+    echo "Category $(basename $category) Done"
+done
+echo "})" >> $jsFile
+## ---- Main JS file (Pooja Part) ----
+
+## ---- Main JS file (Granth Part) ----
+echo "\$(document).on( 'pagecontainershow', function(){" >> $jsFile
+for category in $(ls -d $dbDir/others/collaborate/shastra/*/)
+do
+    myCategory=$(basename $category)
+    myCategory=$(echo $myCategory | sed 's/.*_//')
+    OIFS="$IFS"
+    IFS=$'\n'
+    myCntr=1;
+    for item in $(ls -d $category/*/)
+    do
+        myItem=$(basename $item)
+        myItem=$(echo $myItem | sed 's/.*_//');
+        myIndexFile=$(head -1 $item/index.txt | perl -pe 's/\.txt/.html/')
+        echo "  \$('#granthListView-$myCategory').append('<li data-theme=\"b\"><a href='+relPath+'jainDataBase/teeka/$(basename $category)/$(basename $item)/html/granth-${myCntr}.html data-rel=dialog data-ajax=false>$myItem</a></li>');" >> $jsFile
+        echo "  \$('#shastraListView-$myCategory').append('<li data-theme=\"b\"><a href='+relPath+'jainDataBase/shastra/$(basename $category)/$(basename $item)/html/$myIndexFile data-rel=dialog data-ajax=false>$myItem</a></li>');" >> $jsFile
+        myCntr=$(($myCntr+1))
+    done
+    echo "  \$(\"\#granthListView-$myCategory\").listview('refresh');" >> $jsFile
+    echo "  \$(\"\#shastraListView-$myCategory\").listview('refresh');" >> $jsFile
+    IFS="$OIFS"
+    echo "Category $(basename $category) Done"
+done
+echo "})" >> $jsFile
+## ---- Main JS file (Granth Part) ----

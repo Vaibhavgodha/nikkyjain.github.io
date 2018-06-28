@@ -1,0 +1,50 @@
+#!/bin/sh
+
+. $PWD/common.sh
+
+#export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
+export dbDir=$(cd ../../.. && echo $PWD)
+echo "DB Dir $dbDir"
+myjsFile=myMobile.js
+jsFile=$dbDir/js/$myjsFile
+for category in $(ls -d $dbDir/jainDataBase/bhajans/*/)
+do
+    myCntr=1
+    OIFS="$IFS"
+    IFS=$'\n'
+    [ ! -d $category/main ] && continue
+    for bhajan in $(ls $category/main/*)
+    do
+      mkdir -p $category/html
+      myBhajanName=bhajan-$myCntr
+      myHtml=$category/html/${myBhajanName}.html
+      ## ---- Header -----
+      createHeader $myHtml '../../../../'
+      ## ---- Bhajan Div -----
+      createList 'bhajan' $dbDir/jainDataBase/bhajans $myHtml 
+      ## ---- Pooja Div -----
+      createList 'pooja'  $dbDir/others/collaborate/poojas  $myHtml
+      ## ---- Granth Div -----
+      createList 'granth'  $dbDir/others/collaborate/shastra  $myHtml
+      ## ---- Shastra Div -----
+      createList 'shastra'  $dbDir/others/collaborate/shastra  $myHtml
+      ## ---- Granth Div -----
+      createList 'granth'  $dbDir/others/collaborate/shastra  $myHtml
+      ## ---- Misc Div ----
+      createMiscList $myHtml '../../../../'
+
+
+      echo "<div align=center><h2><font color=darkBlue>$(basename $bhajan | perl -pe 's/.txt//g')</font></h2><br><h3>" >> $myHtml
+      audioFileName=$(basename $bhajan | perl -pe 's/\.txt/.mp3/g')
+      if [ -f ../audio/$audioFileName ]; then
+        cat <<EOF >> $myHtml
+        <audio id=audioFile src="../audio/$audioFileName" type="audio/mpeg">
+        </audio><br>
+EOF
+      fi
+      cat $bhajan | perl -pe 's/\n/<br>/g' >>  $myHtml
+      echo "</h3></div></body></html>" >> $myHtml
+      myCntr=$(($myCntr+1))
+    done
+    echo "Bhajan Category $(basename $category) Done"
+done
