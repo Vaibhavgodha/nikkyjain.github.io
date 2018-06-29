@@ -218,6 +218,10 @@ EOF
   echo "</body>" >> $outFile
   echo "</html>" >> $outFile
   echo "Processed $cFile"
+  if [ "$indexDone" = "" ]; then
+    indexDone="Done"
+    cp $outFile $outDir/html/index.html
+  fi
 done < "index.txt"
 
 # Add Footer

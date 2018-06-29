@@ -22,6 +22,137 @@ done
 echo "   </div></div>" >> $myFile
 }
 
+function createBhajan {
+  relPath=$1
+  createSearch=$2
+  [ "$createSearch" = "" ] && cat <<EOF >> $myHtml
+  <div data-history=false data-role=popup id=popupBhajan data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+EOF
+  for category in $(ls -d $dbDir/jainDataBase/bhajans/*/)
+  do
+      myCategory=$(basename $category)
+      myCategory=$(echo $myCategory | sed 's/.*_//')
+      [ "$createSearch" = "" ] && cat <<EOF >> $myHtml
+    <div data-role=collapsible data-inset=false data-theme=a>
+      <h2>$myCategory</h2>
+      <ul data-role=listview>
+EOF
+      OIFS="$IFS"
+      IFS=$'\n'
+      myCntr=1;
+      for item in $(ls $category/main/*)
+      do
+          myItem=$(basename $item)
+          myItem=$(echo $myItem | sed 's/.txt//');
+          echo "        <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/bhajans/$(basename $category)/html/bhajan-${myCntr}.html>$myItem</a></li>" >> $myHtml
+          myCntr=$(($myCntr+1))
+  
+      done
+      [ "$createSearch" = "" ] && cat << EOF >> $myHtml 
+      </ul>
+    </div>
+EOF
+      IFS="$OIFS"
+      if [ "$createSearch" = "" ]; then 
+        echo "  Category $(basename $category) Done"
+      else
+        echo "  Search $(basename $category) Done"
+      fi
+  done
+  [ "$createSearch" = "" ] && cat << EOF >> $myHtml 
+  </div>
+</div>
+EOF
+}
+
+function createPooja {
+  relPath=$1
+  createSearch=$2
+  [ "$createSearch" = "" ] && cat << EOF >> $myHtml
+  <div data-history=false data-role=popup id=popupPooja data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+EOF
+for category in $(ls -d $dbDir/others/collaborate/poojas/*/)
+do
+    myCategory=$(basename $category)
+    myCategory=$(echo $myCategory | sed 's/.*_//')
+    [ "$createSearch" = "" ] && cat <<EOF >> $myHtml
+    <div data-role=collapsible data-inset=false data-theme=a>
+      <h2>$myCategory</h2>
+      <ul data-role=listview>
+EOF
+    OIFS="$IFS"
+    IFS=$'\n'
+    for item in $(ls -d $category/*/)
+    do
+        myItem=$(basename $item)
+        myItem=$(echo $myItem | sed 's/.*_//');
+        echo "      <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/poojas/$(basename $category)/$(basename $item)/html/index.html>$myItem</a></li>" >> $myHtml
+    done
+    #echo "  \$(\"\#poojaListView-$myCategory\").listview('refresh');" >> $jsFile
+    IFS="$OIFS"
+     [ "$createSearch" = "" ] &&  cat << EOF >> $myHtml 
+      </ul>
+    </div>
+EOF
+   if [ "$createSearch" = "" ];then
+      echo "  Category $(basename $category) Done"
+   else
+      echo "  Search $(basename $category) Done"
+   fi
+done
+
+  [ "$createSearch" = "" ] && cat << EOF >> $myHtml 
+  </div>
+</div>
+EOF
+}
+
+function createGranth {
+  relPath=$1
+  myType=$2
+  createSearch=$3
+  myTypeCap="$(tr '[:lower:]' '[:upper:]' <<< ${myType:0:1})${myType:1}"
+  [ "$createSearch" = "" ] && cat << EOF >> $myHtml
+  <div data-history=false data-role=popup id=popup$myTypeCap data-theme=none>
+    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
+EOF
+for category in $(ls -d $dbDir/others/collaborate/shastra/*/)
+do
+    myCategory=$(basename $category)
+    myCategory=$(echo $myCategory | sed 's/.*_//')
+    [ "$createSearch" = "" ] && cat <<EOF >> $myHtml
+    <div data-role=collapsible data-inset=false data-theme=a>
+      <h2>$myCategory</h2>
+      <ul data-role=listview>
+EOF
+    OIFS="$IFS"
+    IFS=$'\n'
+    for item in $(ls -d $category/*/)
+    do
+        myItem=$(basename $item)
+        myItem=$(echo $myItem | sed 's/.*_//');
+        echo "  <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/$myType/$(basename $category)/$(basename $item)/html/index.html>$myItem</a></li>" >> $myHtml
+    done
+    IFS="$OIFS"
+    [ "$createSearch" = "" ] &&  cat << EOF >> $myHtml 
+      </ul>
+    </div>
+EOF
+    if [ "$createSearch" = "" ]; then
+      echo "  Search $(basename $category) Done"
+    else
+      echo "  Search $(basename $category) Done"
+    fi
+done
+
+ [ "$createSearch" = "" ] &&  cat << EOF >> $myHtml 
+  </div>
+</div>
+EOF
+}
+
 function createMiscList {
   myFile=$1
   myRelPath=$2
@@ -146,7 +277,7 @@ read -r -d '' myHeaderVar << EOF
   <link rel="stylesheet" href="${myRelPath}js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
   <script type="text/javascript" src="${myRelPath}js/jquery.js"></script>
   <script type="text/javascript" src="${myRelPath}js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script>
-  <script type="text/javascript" src="${myRelPath}js/$myjsFile"></script>
+  <!--script type="text/javascript" src="${myRelPath}js/$myjsFile"></script-->
 <style>
 img {
     border-radius: 10px 10px 10px 10px;
@@ -200,7 +331,7 @@ div.poojarth {
         <ul>
             <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupBhajan">भजन</a></li>
             <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupPooja">पूजा-पाठ</a></li>
-            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupGranth">Full Granth</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupTeeka">Full Granth</a></li>
             <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupShastra">Granth Gaatha-By-Gatha</a></li>
             <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupGames">Play / Test</a></li>
             <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupMisc">Misc</a></li>

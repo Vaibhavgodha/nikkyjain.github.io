@@ -6,36 +6,39 @@ echo "DB Dir $dbDir"
 . $dbDir/others/collaborate/shastra/common.sh
 myjsFile=myMobile.js
 jsFile=$dbDir/js/$myjsFile
-for category in $(ls -d $dbDir/jainDataBase/bhajans/*/)
+for group in $(ls -d $dbDir/jainDataBase/bhajans/*/)
 do
     myCntr=1
     OIFS="$IFS"
     IFS=$'\n'
-    [ ! -d $category/main ] && continue
-    for bhajan in $(ls $category/main/*)
+    [ ! -d $group/main ] && continue
+    for bhajan in $(ls $group/main/*)
     do
-      mkdir -p $category/html
+      mkdir -p $group/html
       myBhajanName=bhajan-$myCntr
-      myHtml=$category/html/${myBhajanName}.html
-      ## ---- Header -----
-      createHeader $myHtml '../../../../'
-      ## ---- Bhajan Div -----
-      createList 'bhajan' $dbDir/jainDataBase/bhajans $myHtml 
-      ## ---- Pooja Div -----
-      createList 'pooja'  $dbDir/others/collaborate/poojas  $myHtml
-      ## ---- Granth Div -----
-      createList 'granth'  $dbDir/others/collaborate/shastra  $myHtml
-      ## ---- Shastra Div -----
-      createList 'shastra'  $dbDir/others/collaborate/shastra  $myHtml
-      ## ---- Granth Div -----
-      createList 'granth'  $dbDir/others/collaborate/shastra  $myHtml
-      ## ---- Misc Div ----
-      createMiscList $myHtml '../../../../'
+      myHtml=$group/html/${myBhajanName}.html
+      if [ "$headerCreated" = "" ]; then
+        ## ---- Header -----
+        createHeader $myHtml '../../../../'
+        ## ---- Bhajan Div -----
+        createBhajan '../../../../'
+        ## ---- Pooja Div -----
+        createPooja '../../../../'
+        ## ---- Granth Div -----
+        createGranth '../../../../' 'teeka'
+        ## ---- Shastra Div -----
+        createGranth '../../../../' 'shastra'
+        ## ---- Misc Div ----
+        createMiscList $myHtml '../../../../'
+        headerCreated=$(cat $myHtml)
+      else
+        echo "$headerCreated" > $myHtml
+      fi
 
 
       echo "<br><div class=main>$(basename $bhajan | perl -pe 's/.txt//g')<br>" >> $myHtml
       audioFileName=$(basename $bhajan | perl -pe 's/\.txt/.mp3/g')
-      if [ -f $category/audio/$audioFileName ]; then
+      if [ -f $group/audio/$audioFileName ]; then
         cat <<EOF >> $myHtml
         <audio controls>
             <source src="../audio/$audioFileName" type="audio/mpeg">
@@ -48,5 +51,5 @@ EOF
       echo "</div></body></html>" >> $myHtml
       myCntr=$(($myCntr+1))
     done
-    echo "Bhajan Category $(basename $category) Done"
+    echo "Bhajan group $(basename $group) Done"
 done
