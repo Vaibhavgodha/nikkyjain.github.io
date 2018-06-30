@@ -5,8 +5,6 @@
 export dbDir=$(cd ../../.. && echo $PWD)
 echo "DB Dir $dbDir"
 . $dbDir/others/collaborate/shastra/common.sh
-myjsFile=myMobile.js
-jsFile=$dbDir/js/$myjsFile
 for group in $(ls -d $dbDir/others/collaborate/poojas/*/)
 do
     mygroup=$(basename $group)
@@ -22,23 +20,13 @@ do
       mkdir -p $(dirname $myHtml)
       if [ "$headerCreated" = "" ]; then
         ## ---- Header -----
-        createHeader $myHtml '../../../../../'
-        ## ---- Bhajan Div -----
-        createBhajan '../../../../../'
-        ## ---- Pooja Div -----
-        createPooja '../../../../../'
-        ## ---- Granth Div -----
-        createGranth '../../../../../' 'teeka'
-        ## ---- Shastra Div -----
-        createGranth '../../../../../' 'shastra'
-        ## ---- Misc Div ----
-        createMiscList $myHtml '../../../../../'
+        createHeader '../../../../../'
         headerCreated=$(cat $myHtml)
       else
         echo "$headerCreated" > $myHtml
       fi
 
-      echo "<div align=center><h1><font color=darkBlue>$(basename $pooja | perl -pe 's/.txt//g' | perl -pe 's/.*_//')</font></h1>" >> $myHtml
+      echo "<div class=main>$(basename $pooja | perl -pe 's/.txt//g' | perl -pe 's/.*_//')</div>" >> $myHtml
       audioFileName=$(basename $pooja | perl -pe 's/\.txt/.mp3/g')
       if [ -f $myOutDir/audio/$audioFileName ]; then
         cat <<EOF >> $myHtml
@@ -62,7 +50,6 @@ EOF
         echo "<div class=pooja>" >> $myHtml 
         c="$(cat $curFile)"
         c=$(echo "$c" | perl -pe 's/\n/<br>/g')
-        c=$(echo "$c" | perl -pe 's/\n/<br>/g')
         c=$(echo "$c" | perl -pe 's/ॐ ह्रीं/<span class=om>ॐ ह्रीं/g')
         c=$(echo "$c" | perl -pe 's/निर्वपामीति स्वाहा/निर्वपामीति स्वाहा<\/span>/g')
         c=$(echo "$c" | perl -pe 's/संवौषट् आह्वाननं/संवौषट् आह्वाननं<\/span>/g')
@@ -73,10 +60,12 @@ EOF
         curFile=$myInDir/arth/$(basename $cFile)
         if [ -f $curFile ]; then
           c="$(cat $curFile)"
-          echo "<div class=poojarth><font color=black>अन्वयार्थ : </font>$c</div><br>" >>  $myHtml
+          c=$(echo "$c" | perl -pe 's/\(\(/<div class=comment>/g' | perl -pe 's/\)\)/<\/div>/g')
+          c=$(echo "$c" | perl -pe 's/\[/<span class=gatharth>[/g' | perl -pe 's/\]/]<\/span>/g'); 
+          echo "<div class=poojarth><font color=maroon><b>अन्वयार्थ : </b></font>$c</div><br>" >>  $myHtml
         fi
       done
-      echo "</div></body></html>" >> $myHtml
+      echo "<div></body></html>" >> $myHtml
     done
     echo "Pooja group $(basename $group) Done"
 done

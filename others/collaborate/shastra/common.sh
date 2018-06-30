@@ -34,24 +34,24 @@ EOF
       myCategory=$(basename $category)
       myCategory=$(echo $myCategory | sed 's/.*_//')
       [ "$createSearch" = "" ] && cat <<EOF >> $myHtml
-    <div data-role=collapsible data-inset=false data-theme=a>
-      <h2>$myCategory</h2>
-      <ul data-role=listview>
+      <div data-role=collapsible data-inset=false data-theme=a>
+        <h2>$myCategory</h2>
+        <ul data-role=listview>
 EOF
       OIFS="$IFS"
       IFS=$'\n'
-      myCntr=1;
+      myCntrL=1;
       for item in $(ls $category/main/*)
       do
           myItem=$(basename $item)
           myItem=$(echo $myItem | sed 's/.txt//');
-          echo "        <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/bhajans/$(basename $category)/html/bhajan-${myCntr}.html>$myItem</a></li>" >> $myHtml
-          myCntr=$(($myCntr+1))
+          echo "          <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/bhajans/$(basename $category)/html/bhajan-${myCntrL}.html>$myItem</a></li>" >> $myHtml
+          myCntrL=$(($myCntrL+1))
   
       done
       [ "$createSearch" = "" ] && cat << EOF >> $myHtml 
-      </ul>
-    </div>
+        </ul>
+      </div>
 EOF
       IFS="$OIFS"
       if [ "$createSearch" = "" ]; then 
@@ -61,8 +61,8 @@ EOF
       fi
   done
   [ "$createSearch" = "" ] && cat << EOF >> $myHtml 
+    </div>
   </div>
-</div>
 EOF
 }
 
@@ -78,9 +78,9 @@ do
     myCategory=$(basename $category)
     myCategory=$(echo $myCategory | sed 's/.*_//')
     [ "$createSearch" = "" ] && cat <<EOF >> $myHtml
-    <div data-role=collapsible data-inset=false data-theme=a>
-      <h2>$myCategory</h2>
-      <ul data-role=listview>
+      <div data-role=collapsible data-inset=false data-theme=a>
+        <h2>$myCategory</h2>
+        <ul data-role=listview>
 EOF
     OIFS="$IFS"
     IFS=$'\n'
@@ -88,13 +88,13 @@ EOF
     do
         myItem=$(basename $item)
         myItem=$(echo $myItem | sed 's/.*_//');
-        echo "      <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/poojas/$(basename $category)/$(basename $item)/html/index.html>$myItem</a></li>" >> $myHtml
+        echo "          <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/poojas/$(basename $category)/$(basename $item)/html/index.html>$myItem</a></li>" >> $myHtml
     done
     #echo "  \$(\"\#poojaListView-$myCategory\").listview('refresh');" >> $jsFile
     IFS="$OIFS"
      [ "$createSearch" = "" ] &&  cat << EOF >> $myHtml 
-      </ul>
-    </div>
+        </ul>
+      </div>
 EOF
    if [ "$createSearch" = "" ];then
       echo "  Category $(basename $category) Done"
@@ -104,8 +104,8 @@ EOF
 done
 
   [ "$createSearch" = "" ] && cat << EOF >> $myHtml 
+    </div>
   </div>
-</div>
 EOF
 }
 
@@ -123,9 +123,9 @@ do
     myCategory=$(basename $category)
     myCategory=$(echo $myCategory | sed 's/.*_//')
     [ "$createSearch" = "" ] && cat <<EOF >> $myHtml
-    <div data-role=collapsible data-inset=false data-theme=a>
-      <h2>$myCategory</h2>
-      <ul data-role=listview>
+      <div data-role=collapsible data-inset=false data-theme=a>
+        <h2>$myCategory</h2>
+        <ul data-role=listview>
 EOF
     OIFS="$IFS"
     IFS=$'\n'
@@ -133,12 +133,12 @@ EOF
     do
         myItem=$(basename $item)
         myItem=$(echo $myItem | sed 's/.*_//');
-        echo "  <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/$myType/$(basename $category)/$(basename $item)/html/index.html>$myItem</a></li>" >> $myHtml
+        echo "          <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/$myType/$(basename $category)/$(basename $item)/html/index.html>$myItem</a></li>" >> $myHtml
     done
     IFS="$OIFS"
     [ "$createSearch" = "" ] &&  cat << EOF >> $myHtml 
-      </ul>
-    </div>
+        </ul>
+      </div>
 EOF
     if [ "$createSearch" = "" ]; then
       echo "  Search $(basename $category) Done"
@@ -148,17 +148,14 @@ EOF
 done
 
  [ "$createSearch" = "" ] &&  cat << EOF >> $myHtml 
+    </div>
   </div>
-</div>
 EOF
 }
 
 function createMiscList {
-  myFile=$1
-  myRelPath=$2
-if [ "$myMiscListVar" = "" ]; then
-#cat << EOF >> $myFile
-read -r -d '' myMiscListVar << EOF
+  myRelPath=$1
+cat << EOF >> $myHtml
   <div data-history=false data-role=popup id=popupMisc data-theme=none>
     <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
         <div data-role=collapsible data-inset=false data-theme=a>
@@ -256,17 +253,12 @@ read -r -d '' myMiscListVar << EOF
     </div>
   </div>
 EOF
-fi
-echo "$myMiscListVar" >> $myFile
 }
 
 function createHeader {
-  myOutFile=$1
-  myRelPath=$2
+  myRelPath=$1
 
-if [ "$myHeaderVar" = "" ]; then
-#cat <<EOF > $myOutFile
-read -r -d '' myHeaderVar << EOF
+cat <<EOF > $myHtml
 <!DOCTYPE html>
 <html>
 <head>
@@ -277,7 +269,7 @@ read -r -d '' myHeaderVar << EOF
   <link rel="stylesheet" href="${myRelPath}js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
   <script type="text/javascript" src="${myRelPath}js/jquery.js"></script>
   <script type="text/javascript" src="${myRelPath}js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script>
-  <!--script type="text/javascript" src="${myRelPath}js/$myjsFile"></script-->
+  <script type="text/javascript" src="js/notify.js"></script>
 <style>
 img {
     border-radius: 10px 10px 10px 10px;
@@ -321,13 +313,56 @@ div.poojarth {
     text-align: justify;
     margin: 0 auto;
 }
+span.gatharth {
+    font-size: 20px;
+    color: darkBlue;
+    font-weight: bold;
+}
+div.comment {
+    font-size: 15px;
+    color: darkgray;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+#demo-page :not(INPUT):not(TEXTAREA) {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+/* Content styling. */
+dl { font-family: "Times New Roman", Times, serif; padding: 1em; }
+dt { font-size: 2em; font-weight: bold; }
+dt span { font-size: .5em; color: #777; margin-left: .5em; }
+dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee; }
+.back-button { float: right; margin: 0 2em 1em 0; }
 </style>
 </head>
 <body>
-<div data-role="header" data-position="fixed">
-    <!--h1 align=center>Jai Jinendra</h1-->
-    <p align=center><img src="${myRelPath}images/jain-saint.jpg" height=100 width=110></img></p>
-    <div data-role="navbar" data-maxbutton="3" class="ui-body-a">
+<script>
+  relPath="$myRelPath";
+  \$( document ).on( "pagecreate", "#demo-page", function() {
+    //\$( document ).on( "swipeleft swiperight", "#demo-page", function( e ) {
+    \$( document ).on( "swiperight", "#demo-page", function( e ) {
+        // We check if there is no open panel on the page because otherwise
+        // a swipe to close the left panel would also open the right panel (and v.v.).
+        // We do this by checking the data that the framework stores on the page element (panel: open).
+        if ( \$( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+            //if ( e.type === "swipeleft" ) {
+            //    \$( "#right-panel" ).panel( "open" );
+            //} else if ( e.type === "swiperight" ) {
+            if ( e.type === "swiperight" ) {
+                \$( "#leftPanel" ).panel( "open" );
+            }
+        }
+    });
+  });
+</script>
+<div data-role="page" id=demo-page>
+  <div data-role="panel" id="leftPanel">
+    <div data-role="navbar" data-maxbutton="1" class="ui-body-a">
         <ul>
             <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupBhajan">भजन</a></li>
             <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupPooja">पूजा-पाठ</a></li>
@@ -337,12 +372,39 @@ div.poojarth {
             <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupMisc">Misc</a></li>
         </ul>
     </div>
-</div>
-
-<script>
-  relPath="$myRelPath";
-</script>
+    <div>
+      <form>
+        <input data-type="search" id="searchTitleIn" placeholder="Search in Hindi..">
+      </form>
+      <ul id=searchTitle data-role="listview" data-filter="true" data-input="#searchTitleIn" data-filter-reveal="true" data-filter-placeholder="Search Bhajan / Pooja / Shastra">
 EOF
-fi
-echo "$myHeaderVar" > $myOutFile
+    createBhajan $myRelPath 1
+    createPooja $myRelPath 1
+    createGranth $myRelPath 'teeka' 1
+    cat << EOF >> $myHtml
+      </ul>
+    </div>
+  </div> <!-- Panel -->
+  <div data-role="header" data-position="fixed">
+      <!--h1 align=center>Jai Jinendra</h1-->
+      <figure align=center>
+        <a href="#leftPanel" class="ui-button ui-shadow ui-corner-all ui-button-inline">
+          <img id=enPanel src="${myRelPath}images/jain-saint.jpg" height=80 width=90></img>
+          <figcaption>Click Here</figcaption>
+        </a>
+      </figure>
+  </div> <!-- Header -->
+
+EOF
+
+## ---- Bhajan Div -----
+createBhajan $myRelPath
+## ---- Pooja Div -----
+createPooja $myRelPath
+## ---- Granth Div -----
+createGranth $myRelPath 'teeka'
+## ---- Shastra Div -----
+createGranth $myRelPath 'shastra'
+## ---- Misc Div ----
+createMiscList $myRelPath
 }

@@ -5,42 +5,12 @@ export dbDir=$(cd ../../.. && echo $PWD)
 echo "DB Dir $dbDir"
 . $dbDir/others/collaborate/shastra/common.sh
 myHtml=$dbDir/index.html
-myjsFile=myMobile.js
-jsFile=$dbDir/js/$myjsFile
 
 ## ---- Header -----
-createHeader $myHtml './'
-## ---- Bhajan Div -----
-createBhajan './'
-## ---- Pooja Div -----
-createPooja './'
-## ---- Granth Div -----
-createGranth './' 'teeka'
-## ---- Shastra Div -----
-createGranth './' 'shastra'
-createMiscList $myHtml './'
+createHeader './'
 
 cat << EOF >> $myHtml
-<br><br>
-<style>
-  #searchTitle {
-    width : 80%;
-  }
-</style>
-<div>
-  <form>
-    <input data-type="search" id="searchTitleIn">
-  </form>
-  <ul id=searchTitle data-role="listview" data-filter="true" data-input="#searchTitleIn" data-filter-reveal="true" data-filter-placeholder="Search Bhajan / Pooja / Shastra">
-EOF
-createBhajan './' 1
-createPooja './' 1
-createGranth './' 'teeka' 1
-cat << EOF >> $myHtml
-  </ul>
 </div>
-<script>
-  \$('#searchTitleIn').attr('placeholder', 'Search Bhajan / Pooja / Shastra in Hindi');
-</script>
-</body></html>
+</body>
+</html>
 EOF
