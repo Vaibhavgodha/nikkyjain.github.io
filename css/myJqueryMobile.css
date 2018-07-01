@@ -1,0 +1,86 @@
+
+img {
+    border-radius: 10px 10px 10px 10px;
+}
+div.title {
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+div.main {
+    font-size: 35px;
+    color: maroon;
+    font-weight: bold;
+    text-align: center;
+}
+div.pooja {
+    font-size: 25px;
+    color: darkBlue;
+    font-weight: bold;
+    text-align: center;
+    line-height: 140%;
+}
+div.arth {
+    font-size: 20px;
+    color: darkBlue;
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+}
+span.om {
+    font-size: 20px;
+    color: maroon;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+div.poojarth {
+    font-size: 20px;
+    color: darkGreen;
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+}
+span.gatharth {
+    font-size: 20px;
+    color: darkBlue;
+    font-weight: bold;
+}
+div.comment {
+    font-size: 15px;
+    color: darkgray;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+.myCenter {
+    font-size: 20px;
+    color: darkBlue;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+}
+.myBold {
+    font-size: 20px;
+    color: maroon;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+}
+#demo-page :not(INPUT):not(TEXTAREA) {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+//p::first-letter {
+//    font-size: 200%;
+//}
+/* Content styling. */
+dl { font-family: "Times New Roman", Times, serif; padding: 1em; }
+dt { font-size: 2em; font-weight: bold; }
+dt span { font-size: .5em; color: #777; margin-left: .5em; }
+dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee; }
+.back-button { float: right; margin: 0 2em 1em 0; }
