@@ -14,8 +14,8 @@ do
     do
       myPooja=$(basename $pooja)
       myInDir=$dbDir/others/collaborate/poojas/$mygroup/$myPooja
-      myOutDir=$dbDir/jainDataBase/poojas/$mygroup/$myPooja/html
-      myHtml=$myOutDir/index.html
+      myOutDir=$dbDir/jainDataBase/poojas/$mygroup/$myPooja
+      myHtml=$myOutDir/html/index.html
       echo $(dirname $myHtml)
       mkdir -p $(dirname $myHtml)
       if [ "$headerCreated" = "" ]; then
@@ -26,14 +26,14 @@ do
         echo "$headerCreated" > $myHtml
       fi
 
-      echo "<div class=main>$(basename $pooja | perl -pe 's/.txt//g' | perl -pe 's/.*_//g' | perl -e -pe 's/--.*//')</div>" >> $myHtml
-      audioFileName=$(basename $pooja | perl -pe 's/\.txt/.mp3/g')
-      if [ -f $myOutDir/../audio/$audioFileName ]; then
+      echo "<div class=main>$(basename $pooja | perl -pe 's/.*_//g' | perl -pe 's/--.*//')</div>" >> $myHtml
+      audioFileName="${myPooja}.mp3"
+      if [ -f $myOutDir/audio/$audioFileName ]; then
         cat <<EOF >> $myHtml
-        <div><audio controls class=myCenter>
+        <div align=center><audio controls>
           <source src="../audio/$audioFileName" type="audio/mpeg">
         Your browser does not support the audio element.
-        </audio><br><br><div>
+        </audio></div><br>
 EOF
       fi
       for cFile in $(ls $pooja/main/*)

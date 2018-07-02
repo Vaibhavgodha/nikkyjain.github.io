@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
   <script type="text/javascript" src="../../../../../js/jquery.js"></script>
   <script type="text/javascript" src="../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script>
-  <script type="text/javascript" src="js/notify.js"></script>
 <style>
+
 img {
     border-radius: 10px 10px 10px 10px;
 }
@@ -30,6 +30,7 @@ div.pooja {
     color: darkBlue;
     font-weight: bold;
     text-align: center;
+    //line-height: 140%;
 }
 div.arth {
     font-size: 20px;
@@ -64,40 +65,42 @@ div.comment {
     text-align: center;
     margin: 0 auto;
 }
-#demo-page :not(INPUT):not(TEXTAREA) {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+.myCenter {
+    font-size: 20px;
+    color: darkBlue;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
 }
-/* Content styling. */
-dl { font-family: "Times New Roman", Times, serif; padding: 1em; }
-dt { font-size: 2em; font-weight: bold; }
-dt span { font-size: .5em; color: #777; margin-left: .5em; }
-dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee; }
-.back-button { float: right; margin: 0 2em 1em 0; }
+.myBold {
+    font-size: 20px;
+    color: maroon;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+}
+
 </style>
 </head>
 <body>
 <script>
   relPath="../../../../../";
-  $( document ).on( "pagecreate", "#demo-page", function() {
-    //$( document ).on( "swipeleft swiperight", "#demo-page", function( e ) {
-    $( document ).on( "swiperight", "#demo-page", function( e ) {
-        // We check if there is no open panel on the page because otherwise
-        // a swipe to close the left panel would also open the right panel (and v.v.).
-        // We do this by checking the data that the framework stores on the page element (panel: open).
-        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
-            //if ( e.type === "swipeleft" ) {
-            //    $( "#right-panel" ).panel( "open" );
-            //} else if ( e.type === "swiperight" ) {
-            if ( e.type === "swiperight" ) {
-                $( "#leftPanel" ).panel( "open" );
-            }
-        }
-    });
-  });
+//  $( document ).on( "pagecreate", "#demo-page", function() {
+//    //$( document ).on( "swipeleft swiperight", "#demo-page", function( e ) {
+//    $( document ).on( "swiperight", "#demo-page", function( e ) {
+//        // We check if there is no open panel on the page because otherwise
+//        // a swipe to close the left panel would also open the right panel (and v.v.).
+//        // We do this by checking the data that the framework stores on the page element (panel: open).
+//        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+//            //if ( e.type === "swipeleft" ) {
+//            //    $( "#right-panel" ).panel( "open" );
+//            //} else if ( e.type === "swiperight" ) {
+//            if ( e.type === "swiperight" ) {
+//                $( "#leftPanel" ).panel( "open" );
+//            }
+//        }
+//    });
+//  });
 </script>
 <div data-role="page" id=demo-page>
   <div data-role="panel" id="leftPanel">
@@ -105,8 +108,8 @@ dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px
         <ul>
             <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupBhajan">भजन</a></li>
             <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupPooja">पूजा-पाठ</a></li>
-            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupTeeka">Full Granth</a></li>
-            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupShastra">Granth Gaatha-By-Gatha</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupTeeka">Granth Only Gatha</a></li>
+            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupShastra">Granth Gaatha-With-Teeka</a></li>
             <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupGames">Play / Test</a></li>
             <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupMisc">Misc</a></li>
         </ul>
@@ -274,12 +277,13 @@ dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-5.html>जैन धर्म के हीरे मोती</a></li>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-6.html>बडे भाग्य से हमको मिला जिन धर्म</a></li>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-7.html>भावों में सरलता रहती है</a></li>
-          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-8.html>मैं महापुण्य उदय से जिनधर्म</a></li>
-          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-9.html>ये धरम है आतम ज्ञानी का</a></li>
-          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-10.html>लहर लहर लहराये, केसरिया झंडा</a></li>
-          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-11.html>लहरायेगा-लहरायेगा झंडा</a></li>
-          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-12.html>श्रीजिनधर्म सदा जयवन्त</a></li>
-          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-13.html>सब जैन धर्म की जय बोलो</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-8.html>माँ मुझे सुना गुरुवर</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-9.html>मैं महापुण्य उदय से जिनधर्म</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-10.html>ये धरम है आतम ज्ञानी का</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-11.html>लहर लहर लहराये, केसरिया झंडा</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-12.html>लहरायेगा-लहरायेगा झंडा</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-13.html>श्रीजिनधर्म सदा जयवन्त</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-14.html>सब जैन धर्म की जय बोलो</a></li>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/05-तीर्थ/html/bhajan-1.html>ऊंचे ऊंचे शिखरों वाला 1</a></li>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/05-तीर्थ/html/bhajan-2.html>ऊंचे ऊंचे शिखरों वाला 2</a></li>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/05-तीर्थ/html/bhajan-3.html>ऊंचे शिखरों पे बसा है</a></li>
@@ -558,6 +562,8 @@ dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/teeka/03_करणानुयोग/01_लब्धिसार--नेमिचंद्र-आचार्य/html/index.html>लब्धिसार--नेमिचंद्र-आचार्य</a></li>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/teeka/03_करणानुयोग/03_गोम्मटसार-जीवकांड--नेमिचंद्र-आचार्य/html/index.html>गोम्मटसार-जीवकांड--नेमिचंद्र-आचार्य</a></li>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/teeka/05_प्रथमानुयोग/01_आराधना-कथा-कोश--ब्र-नेमिदत्त/html/index.html>आराधना-कथा-कोश--ब्र-नेमिदत्त</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/teeka/05_प्रथमानुयोग/02_उत्तर-पुराण--गुणभद्राचार्य/html/index.html>उत्तर-पुराण--गुणभद्राचार्य</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/teeka/05_प्रथमानुयोग/03_उत्तर-पुराण-संस्कृत--गुणभद्राचार्य/html/index.html>उत्तर-पुराण-संस्कृत--गुणभद्राचार्य</a></li>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/teeka/06_न्याय/01_आप्त-मीमांसा/html/index.html>आप्त-मीमांसा</a></li>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/teeka/06_न्याय/02_लघीयस्त्रय/html/index.html>लघीयस्त्रय</a></li>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/teeka/06_न्याय/03_परीक्षामुख/html/index.html>परीक्षामुख</a></li>
@@ -752,12 +758,13 @@ dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-5.html>जैन धर्म के हीरे मोती</a></li>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-6.html>बडे भाग्य से हमको मिला जिन धर्म</a></li>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-7.html>भावों में सरलता रहती है</a></li>
-          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-8.html>मैं महापुण्य उदय से जिनधर्म</a></li>
-          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-9.html>ये धरम है आतम ज्ञानी का</a></li>
-          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-10.html>लहर लहर लहराये, केसरिया झंडा</a></li>
-          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-11.html>लहरायेगा-लहरायेगा झंडा</a></li>
-          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-12.html>श्रीजिनधर्म सदा जयवन्त</a></li>
-          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-13.html>सब जैन धर्म की जय बोलो</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-8.html>माँ मुझे सुना गुरुवर</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-9.html>मैं महापुण्य उदय से जिनधर्म</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-10.html>ये धरम है आतम ज्ञानी का</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-11.html>लहर लहर लहराये, केसरिया झंडा</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-12.html>लहरायेगा-लहरायेगा झंडा</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-13.html>श्रीजिनधर्म सदा जयवन्त</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/bhajans/04-धर्म/html/bhajan-14.html>सब जैन धर्म की जय बोलो</a></li>
         </ul>
       </div>
       <div data-role=collapsible data-inset=false data-theme=a>
@@ -1119,6 +1126,8 @@ dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px
         <h2>प्रथमानुयोग</h2>
         <ul data-role=listview>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/teeka/05_प्रथमानुयोग/01_आराधना-कथा-कोश--ब्र-नेमिदत्त/html/index.html>आराधना-कथा-कोश--ब्र-नेमिदत्त</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/teeka/05_प्रथमानुयोग/02_उत्तर-पुराण--गुणभद्राचार्य/html/index.html>उत्तर-पुराण--गुणभद्राचार्य</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/teeka/05_प्रथमानुयोग/03_उत्तर-पुराण-संस्कृत--गुणभद्राचार्य/html/index.html>उत्तर-पुराण-संस्कृत--गुणभद्राचार्य</a></li>
         </ul>
       </div>
       <div data-role=collapsible data-inset=false data-theme=a>
@@ -1173,6 +1182,8 @@ dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px
         <h2>प्रथमानुयोग</h2>
         <ul data-role=listview>
           <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/shastra/05_प्रथमानुयोग/01_आराधना-कथा-कोश--ब्र-नेमिदत्त/html/index.html>आराधना-कथा-कोश--ब्र-नेमिदत्त</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/shastra/05_प्रथमानुयोग/02_उत्तर-पुराण--गुणभद्राचार्य/html/index.html>उत्तर-पुराण--गुणभद्राचार्य</a></li>
+          <li data-theme=b><a data-ajax=false href=../../../../../jainDataBase/shastra/05_प्रथमानुयोग/03_उत्तर-पुराण-संस्कृत--गुणभद्राचार्य/html/index.html>उत्तर-पुराण-संस्कृत--गुणभद्राचार्य</a></li>
         </ul>
       </div>
       <div data-role=collapsible data-inset=false data-theme=a>
@@ -1281,8 +1292,8 @@ dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px
         </div>
     </div>
   </div>
-<div class=main>स्वयंभू-स्तोत्र-भाषा--द्यानतरायजी</div>
+<div class=main>स्वयंभू-स्तोत्र-भाषा</div>
 <div class=pooja>
-((पं. द्यानतरायजी कृत))<br><br>राजविषैं जुगलनि सुख कियो, राज त्याग भुवि शिवपद लियो ।<br>स्वयंबोध स्वयंभू भगवान, बन्दौं आदिनाथ गुणखान ॥<br><br>इन्द्र क्षीरसागर-जल लाय, मेरु न्हवाये गाय बजाय ।<br>मदन-विनाशक सुख करतार, बन्दौं अजित अजित-पदकार ॥<br><br>शुकल ध्यानकरि करम विनाशि, घाति-अघाति सकल दुखराशि ।<br>लह्यो मुकतिपद सुख अविकार, बन्दौं सम्भव भव-दु:ख टार ॥<br><br>माता पच्छिम रयन मँझार, सुपने सोलह देखे सार ।<br>भूप पूछि फल सुनि हरषाय, बन्दौं अभिनन्दन मन लाय ॥<br><br>सब कुवादवादी सरदार, जीते स्याद्वाद-धुनि धार ।<br>जैन-धरम-परकाशक स्वाम, सुतिदेव-पद करहुँ प्रनाम ॥<br><br>गर्भ अगाऊ धनपति आय, करी नगर-शोभा अधिकाय ।<br>बरसे रतन पंचदश मास, नमौं पदमप्रभु सुख की रास ॥<br><br>इन्द फेनन्द नरिन्द त्रिकाल, बानी सुनि सुनि होहिं खुस्याल ।<br>द्वादश सभा ज्ञान-दातार, नमौं सुपारसनाथ निहार ॥<br><br>सुगुन छियालिस हैं तु माहिं, दोष अठारह कोऊ नाहिं ।<br>मोह-महातम-नाशक दीप, नमौं चन्द्रप्रभ राख समीप ॥<br><br>द्वादशविध तप करम विनाश, तेरह भेद चरित परकाश ।<br>निज अनिच्छ भवि इच्छक दान, बन्दौं पुहुपदन्त मन आन ॥<br><br>भवि-सुखदाय सुरगतैं आय, दशविध धरम कह्यो जिनराय ।<br>आप समान सबनि सुख देह, बन्दौं शीतल धर्म-सनेह ॥<br><br>समता-सुधा कोप-विष नाश, द्वादशांग वानी परकाश ।<br>चार संघ आनंद-दातार, नमों श्रियांस जिनेश्वर सार ॥<br><br>रत्नत्रय चिर मुकुट विशाल, सोभै कण्ठ सुगुन मनि-माल ।<br>मुक्ति-नार भरता भगवान, वासुपूज्य बन्दौं धर ध्यान ॥<br><br>परम समाधि-स्वरूप जिनेश, ज्ञानी-ध्यानी हित-उपदेश ।<br>कर्म नाशि शिव-सुख-विलसन्त, बन्दौं विमलनाथ भगवन्त ॥<br><br>अन्तर-बाहिर परिग्रह टारि, परम दिगम्बर-व्रत को धारि ।<br>सर्व जीव-हित-राह दिखाय, नमौं अनन्त वचन-मन लाय ॥<br><br>सात तत्त्व पंचास्तिकाय, अरथ नवों छ दरब बहु भाय ।<br>लोक अलोक सकल परकास, बन्दौं धर्मनाथ अविनाश ॥<br><br>पंचम चक्रवर्ती निधि भोग, कामदेव द्वादशम मनोग ।<br>शान्तिकरन सोलम जिनराय, शान्तिनाथ बन्दौं हरषाय ॥<br><br>बहु थुति करे हरष नहिं होय, निन्दे दोष गहैं नहिं कोय ।<br>शीलवान परब्रह्मस्वरूप, बन्दौं कुन्थुनाथ शिव-भूप ॥<br><br>द्वादश गण पूजैं सुखदाय, थुति वन्दना करैं अधिकाय ।<br>जाकी निज-थुति कबहुँ न होय, बन्दौं अर-जिनवर-पद दोय ॥<br><br>पर-भव रत्नत्रय-अनुराग, इह भव ब्याह-समय वैराग ।<br>बाल-ब्रह्म पूरन-व्रत धार, बन्दौं मल्लिनाथ जिनसार ॥<br><br>बिन उपदेश स्वयं वैराग, थुति लोकान्त करै पग लाग ।<br>नम: सिद्ध कहि सब व्रत लेहि, बन्दौं मुनिसुव्रत व्रत देहि ॥<br><br>श्रावक विद्यावन्त निहार, भगति-भाव सों दियो अहार ।<br>बरसी रतन-राशि तत्काल, बन्दौं नमिप्रभु दीन-दयाल ॥<br><br>सब जीवन की बन्दी छोर, राग-द्वेष द्वय बन्धन तोर ।<br>रजमति तजि शिव-तिय सों मिले, नेमिनाथ बन्दौं सुखनिले ॥<br><br>दैत्य कियो उपसर्ग अपार, ध्यान देखि आयो फेनधार ।<br>गयो कमठ शठ मुख कर श्याम, नमों मेरु-सम पारसस्वाम ॥<br><br>भव-सागर तैं जीव अपार, धरम-पोत में धरे निहार ।<br>डूबत काढ़े दया विचार, वर्द्धमान बन्दौं बहु बार ॥<br><br>चौबीसों पद-कमल-जुग, बन्दौं मन-वच-काय ।<br>’द्यानत' पढ़ै सुनै सदा, सो प्रभु क्यों न सहाय ॥<br>
+<div class=comment>पं. द्यानतरायजी कृत</div><br><br>राजविषैं जुगलनि सुख कियो, राज त्याग भुवि शिवपद लियो ।<br>स्वयंबोध स्वयंभू भगवान, बन्दौं आदिनाथ गुणखान ॥<br><br>इन्द्र क्षीरसागर-जल लाय, मेरु न्हवाये गाय बजाय ।<br>मदन-विनाशक सुख करतार, बन्दौं अजित अजित-पदकार ॥<br><br>शुकल ध्यानकरि करम विनाशि, घाति-अघाति सकल दुखराशि ।<br>लह्यो मुकतिपद सुख अविकार, बन्दौं सम्भव भव-दु:ख टार ॥<br><br>माता पच्छिम रयन मँझार, सुपने सोलह देखे सार ।<br>भूप पूछि फल सुनि हरषाय, बन्दौं अभिनन्दन मन लाय ॥<br><br>सब कुवादवादी सरदार, जीते स्याद्वाद-धुनि धार ।<br>जैन-धरम-परकाशक स्वाम, सुतिदेव-पद करहुँ प्रनाम ॥<br><br>गर्भ अगाऊ धनपति आय, करी नगर-शोभा अधिकाय ।<br>बरसे रतन पंचदश मास, नमौं पदमप्रभु सुख की रास ॥<br><br>इन्द फेनन्द नरिन्द त्रिकाल, बानी सुनि सुनि होहिं खुस्याल ।<br>द्वादश सभा ज्ञान-दातार, नमौं सुपारसनाथ निहार ॥<br><br>सुगुन छियालिस हैं तु माहिं, दोष अठारह कोऊ नाहिं ।<br>मोह-महातम-नाशक दीप, नमौं चन्द्रप्रभ राख समीप ॥<br><br>द्वादशविध तप करम विनाश, तेरह भेद चरित परकाश ।<br>निज अनिच्छ भवि इच्छक दान, बन्दौं पुहुपदन्त मन आन ॥<br><br>भवि-सुखदाय सुरगतैं आय, दशविध धरम कह्यो जिनराय ।<br>आप समान सबनि सुख देह, बन्दौं शीतल धर्म-सनेह ॥<br><br>समता-सुधा कोप-विष नाश, द्वादशांग वानी परकाश ।<br>चार संघ आनंद-दातार, नमों श्रियांस जिनेश्वर सार ॥<br><br>रत्नत्रय चिर मुकुट विशाल, सोभै कण्ठ सुगुन मनि-माल ।<br>मुक्ति-नार भरता भगवान, वासुपूज्य बन्दौं धर ध्यान ॥<br><br>परम समाधि-स्वरूप जिनेश, ज्ञानी-ध्यानी हित-उपदेश ।<br>कर्म नाशि शिव-सुख-विलसन्त, बन्दौं विमलनाथ भगवन्त ॥<br><br>अन्तर-बाहिर परिग्रह टारि, परम दिगम्बर-व्रत को धारि ।<br>सर्व जीव-हित-राह दिखाय, नमौं अनन्त वचन-मन लाय ॥<br><br>सात तत्त्व पंचास्तिकाय, अरथ नवों छ दरब बहु भाय ।<br>लोक अलोक सकल परकास, बन्दौं धर्मनाथ अविनाश ॥<br><br>पंचम चक्रवर्ती निधि भोग, कामदेव द्वादशम मनोग ।<br>शान्तिकरन सोलम जिनराय, शान्तिनाथ बन्दौं हरषाय ॥<br><br>बहु थुति करे हरष नहिं होय, निन्दे दोष गहैं नहिं कोय ।<br>शीलवान परब्रह्मस्वरूप, बन्दौं कुन्थुनाथ शिव-भूप ॥<br><br>द्वादश गण पूजैं सुखदाय, थुति वन्दना करैं अधिकाय ।<br>जाकी निज-थुति कबहुँ न होय, बन्दौं अर-जिनवर-पद दोय ॥<br><br>पर-भव रत्नत्रय-अनुराग, इह भव ब्याह-समय वैराग ।<br>बाल-ब्रह्म पूरन-व्रत धार, बन्दौं मल्लिनाथ जिनसार ॥<br><br>बिन उपदेश स्वयं वैराग, थुति लोकान्त करै पग लाग ।<br>नम: सिद्ध कहि सब व्रत लेहि, बन्दौं मुनिसुव्रत व्रत देहि ॥<br><br>श्रावक विद्यावन्त निहार, भगति-भाव सों दियो अहार ।<br>बरसी रतन-राशि तत्काल, बन्दौं नमिप्रभु दीन-दयाल ॥<br><br>सब जीवन की बन्दी छोर, राग-द्वेष द्वय बन्धन तोर ।<br>रजमति तजि शिव-तिय सों मिले, नेमिनाथ बन्दौं सुखनिले ॥<br><br>दैत्य कियो उपसर्ग अपार, ध्यान देखि आयो फेनधार ।<br>गयो कमठ शठ मुख कर श्याम, नमों मेरु-सम पारसस्वाम ॥<br><br>भव-सागर तैं जीव अपार, धरम-पोत में धरे निहार ।<br>डूबत काढ़े दया विचार, वर्द्धमान बन्दौं बहु बार ॥<br><br>चौबीसों पद-कमल-जुग, बन्दौं मन-वच-काय ।<br>’द्यानत' पढ़ै सुनै सदा, सो प्रभु क्यों न सहाय ॥<br>
 </div>
 <div></body></html>
