@@ -26,11 +26,11 @@ do
         echo "$headerCreated" > $myHtml
       fi
 
-      echo "<div class=main>$(basename $pooja | perl -pe 's/.txt//g' | perl -pe 's/.*_//')</div>" >> $myHtml
+      echo "<div class=main>$(basename $pooja | perl -pe 's/.txt//g' | perl -pe 's/.*_//g' | perl -e -pe 's/--.*//')</div>" >> $myHtml
       audioFileName=$(basename $pooja | perl -pe 's/\.txt/.mp3/g')
-      if [ -f $myOutDir/audio/$audioFileName ]; then
+      if [ -f $myOutDir/../audio/$audioFileName ]; then
         cat <<EOF >> $myHtml
-        <div><audio controls>
+        <div><audio controls class=myCenter>
           <source src="../audio/$audioFileName" type="audio/mpeg">
         Your browser does not support the audio element.
         </audio><br><br><div>
@@ -50,6 +50,7 @@ EOF
         echo "<div class=pooja>" >> $myHtml 
         c="$(cat $curFile)"
         c=$(echo "$c" | perl -pe 's/\n/<br>/g')
+        c=$(echo "$c" | perl -pe 's/\(\(/<div class=comment>/g' | perl -pe 's/\)\)/<\/div>/g')
         c=$(echo "$c" | perl -pe 's/ॐ ह्रीं/<span class=om>ॐ ह्रीं/g')
         c=$(echo "$c" | perl -pe 's/निर्वपामीति स्वाहा/निर्वपामीति स्वाहा<\/span>/g')
         c=$(echo "$c" | perl -pe 's/संवौषट् आह्वाननं/संवौषट् आह्वाननं<\/span>/g')
