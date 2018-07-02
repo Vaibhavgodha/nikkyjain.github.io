@@ -5,31 +5,102 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jai Jinendra</title>
   <link rel="icon" type="image/png" href="../../../../../images/default/jainFlag-short.jpg"/>
-  <link rel="stylesheet" href="../../../../../css/myJqueryMobile.css">
   <link rel="stylesheet" href="../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
   <script type="text/javascript" src="../../../../../js/jquery.js"></script>
   <script type="text/javascript" src="../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script>
-  <script type="text/javascript" src="js/notify.js"></script>
+<style>
+
+img {
+    border-radius: 10px 10px 10px 10px;
+}
+div.title {
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+div.main {
+    font-size: 35px;
+    color: maroon;
+    font-weight: bold;
+    text-align: center;
+}
+div.pooja {
+    font-size: 25px;
+    color: darkBlue;
+    font-weight: bold;
+    text-align: center;
+    //line-height: 140%;
+}
+div.arth {
+    font-size: 20px;
+    color: darkBlue;
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+}
+span.om {
+    font-size: 20px;
+    color: maroon;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+div.poojarth {
+    font-size: 20px;
+    color: darkGreen;
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+}
+span.gatharth {
+    font-size: 20px;
+    color: darkBlue;
+    font-weight: bold;
+}
+div.comment {
+    font-size: 15px;
+    color: darkgray;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+.myCenter {
+    font-size: 20px;
+    color: darkBlue;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+}
+.myBold {
+    font-size: 20px;
+    color: maroon;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+}
+
+</style>
 </head>
 <body>
 <script>
   relPath="../../../../../";
-  $( document ).on( "pagecreate", "#demo-page", function() {
-    //$( document ).on( "swipeleft swiperight", "#demo-page", function( e ) {
-    $( document ).on( "swiperight", "#demo-page", function( e ) {
-        // We check if there is no open panel on the page because otherwise
-        // a swipe to close the left panel would also open the right panel (and v.v.).
-        // We do this by checking the data that the framework stores on the page element (panel: open).
-        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
-            //if ( e.type === "swipeleft" ) {
-            //    $( "#right-panel" ).panel( "open" );
-            //} else if ( e.type === "swiperight" ) {
-            if ( e.type === "swiperight" ) {
-                $( "#leftPanel" ).panel( "open" );
-            }
-        }
-    });
-  });
+//  $( document ).on( "pagecreate", "#demo-page", function() {
+//    //$( document ).on( "swipeleft swiperight", "#demo-page", function( e ) {
+//    $( document ).on( "swiperight", "#demo-page", function( e ) {
+//        // We check if there is no open panel on the page because otherwise
+//        // a swipe to close the left panel would also open the right panel (and v.v.).
+//        // We do this by checking the data that the framework stores on the page element (panel: open).
+//        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
+//            //if ( e.type === "swipeleft" ) {
+//            //    $( "#right-panel" ).panel( "open" );
+//            //} else if ( e.type === "swiperight" ) {
+//            if ( e.type === "swiperight" ) {
+//                $( "#leftPanel" ).panel( "open" );
+//            }
+//        }
+//    });
+//  });
 </script>
 <div data-role="page" id=demo-page>
   <div data-role="panel" id="leftPanel">
@@ -1229,7 +1300,7 @@
 ﻿मंगलाचरण</div>
 <div class=main>
 ﻿मूलगुणेसु विसुद्धे वंदित्ता सव्वसंजदे सिरसा<br>इहपरलोगहिदत्थे मूलगुणे कित्तइस्सामि ॥१॥</div>
-<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[मूलगुणेसु विसुद्धे]</font></b> मूलगुणों द्वारा विशुद्ध <b><font color=darkRed>[सव्वसंजदे]</font></b> सभी संयतों को <b><font color=darkRed>[सिरसा]</font></b> सर से (<font color=DarkSlateGray>झुकाकर</font>) <b><font color=darkRed>[वंदित्ता]</font></b> नमस्कार करके <b><font color=darkRed>[इहपरलोगहिदत्थे]</font></b> इस और पर लोक के लिए हितकर <b><font color=darkRed>[मूलगुणे]</font></b> मूल गुणों का <b><font color=darkRed>[कित्तइस्सामि]</font></b> वर्णन करूँगा ।<br></div><br>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[मूलगुणेसु विसुद्धे]</font></b> मूलगुणों द्वारा विशुद्ध <b><font color=darkRed>[सव्वसंजदे]</font></b> सभी संयतों को <b><font color=darkRed>[सिरसा]</font></b> सर से <span class=comment>(झुकाकर)</span> <b><font color=darkRed>[वंदित्ता]</font></b> नमस्कार करके <b><font color=darkRed>[इहपरलोगहिदत्थे]</font></b> इस और पर लोक के लिए हितकर <b><font color=darkRed>[मूलगुणे]</font></b> मूल गुणों का <b><font color=darkRed>[कित्तइस्सामि]</font></b> वर्णन करूँगा ।<br></div><br>
 <br><div class=title>
 ﻿मूलगुण के नाम</div>
 <div class=main>
@@ -1244,7 +1315,7 @@
 ﻿अहिंसा महाव्रत</div>
 <div class=main>
 ﻿कायेंदियगुणमग्गण कुलाउजोणीसु सव्वजीवाणं<br>णाऊण य ठाणादिसु हिंसादिविवज्जणमहिंसा ॥५॥</div>
-<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[कायेंदियगुणमग्गण]</font></b> काय, इन्द्रिय, गुणस्थान, मार्गणा, जीवसमास, <b><font color=darkRed>[कुलाउजोणीसु]</font></b> कुल, योनि द्वारा <b><font color=darkRed>[सव्वजीवाणं]</font></b> सभी जीवों का स्वरूप जानकर <b><font color=darkRed>[ठाणादिसु]</font></b> बैठना आदि (<font color=DarkSlateGray>उठना, सोना, गमन करना, भोजन करना, हाथ पांव फैलाना, संकुचित करना वगैरह क्रिया-विशेष</font>) में <b><font color=darkRed>[हिंसादिविवज्जणमहिंसा]</font></b> हिंसा को छोड़ना अहिंसा महाव्रत है ।<br></div><br>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[कायेंदियगुणमग्गण]</font></b> काय, इन्द्रिय, गुणस्थान, मार्गणा, जीवसमास, <b><font color=darkRed>[कुलाउजोणीसु]</font></b> कुल, योनि द्वारा <b><font color=darkRed>[सव्वजीवाणं]</font></b> सभी जीवों का स्वरूप जानकर <b><font color=darkRed>[ठाणादिसु]</font></b> बैठना आदि <span class=comment>(उठना, सोना, गमन करना, भोजन करना, हाथ पांव फैलाना, संकुचित करना वगैरह क्रिया-विशेष)</span> में <b><font color=darkRed>[हिंसादिविवज्जणमहिंसा]</font></b> हिंसा को छोड़ना अहिंसा महाव्रत है ।<br></div><br>
 <br><div class=title>
 ﻿सत्य महाव्रत</div>
 <div class=main>
@@ -1254,22 +1325,22 @@
 ﻿अचौर्य महाव्रत</div>
 <div class=main>
 ﻿गामादिसु पडिदाइं अप्पप्पहुदिं परणे संगहिदं<br>णादाणं परदव्वं अदत्तपरिवज्जणं तं तुं ॥७॥</div>
-<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[﻿गामादिसु पडिदाइं]</font></b> ग्राम आदिक में पड़ा हुआ, <b><font color=darkRed>[अप्पप्पहुदिं]</font></b> भूला हुआ, रखा हुआ इत्यादि रूप से अल्प भी स्थूल सूक्ष्म वस्तु को <b><font color=darkRed>[परेण संगहिदं]</font></b> दूसरे के द्वारा इकट्ठा किया हुआ ऐसे <b><font color=darkRed>[णादाणं परदव्वं]</font></b> पर-द्रव्य को ग्रहण नहीं करना <b><font color=darkRed>[अदत्तपरिवज्जणं तं तु]</font></b> वह अदत्तत्याग (<font color=DarkSlateGray>अचौर्य महाव्रत</font>) है ।<br></div><br>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[﻿गामादिसु पडिदाइं]</font></b> ग्राम आदिक में पड़ा हुआ, <b><font color=darkRed>[अप्पप्पहुदिं]</font></b> भूला हुआ, रखा हुआ इत्यादि रूप से अल्प भी स्थूल सूक्ष्म वस्तु को <b><font color=darkRed>[परेण संगहिदं]</font></b> दूसरे के द्वारा इकट्ठा किया हुआ ऐसे <b><font color=darkRed>[णादाणं परदव्वं]</font></b> पर-द्रव्य को ग्रहण नहीं करना <b><font color=darkRed>[अदत्तपरिवज्जणं तं तु]</font></b> वह अदत्तत्याग <span class=comment>(अचौर्य महाव्रत)</span> है ।<br></div><br>
 <br><div class=title>
 ﻿ब्रह्मचर्य महाव्रत</div>
 <div class=main>
 ﻿मादुसुदाभगिणीव य दट्ठूणित्थित्तियं च पडिरूवं<br>इत्थिकहादिणियत्ती तिलोयपुज्जं हवे बंभं ॥८॥</div>
-<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[मादुसुदाभगिणीव य]</font></b> वृद्धा, बाला, यौवनवाली स्त्री को देखकर अथवा उनकी तस्वीरों को देखकर <b><font color=darkRed>[दट्ठूणित्थित्तियं च पडिरूवं]</font></b> उनको माता-पुत्री-बहन समान समझ <b><font color=darkRed>[इत्थिकहादिणियत्ती]</font></b> स्त्री-सम्बन्धी कथादि का अनुराग छोड़ना, <b><font color=darkRed>[तिलोयपुज्जं हवे बंभं]</font></b> वह तीनों लोकों का पूज्य  ब्रह्मचर्य (<font color=DarkSlateGray>महाव्रत</font>) है ।<br></div><br>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[मादुसुदाभगिणीव य]</font></b> वृद्धा, बाला, यौवनवाली स्त्री को देखकर अथवा उनकी तस्वीरों को देखकर <b><font color=darkRed>[दट्ठूणित्थित्तियं च पडिरूवं]</font></b> उनको माता-पुत्री-बहन समान समझ <b><font color=darkRed>[इत्थिकहादिणियत्ती]</font></b> स्त्री-सम्बन्धी कथादि का अनुराग छोड़ना, <b><font color=darkRed>[तिलोयपुज्जं हवे बंभं]</font></b> वह तीनों लोकों का पूज्य  ब्रह्मचर्य <span class=comment>(महाव्रत)</span> है ।<br></div><br>
 <br><div class=title>
 ﻿परिग्रह महाव्रत </div>
 <div class=main>
 ﻿जीव णिबद्धाबद्धा परिग्गहा जीवसंभवा चेव<br>तेसिं सक्क्च्चाओ इयरम्हि य णिम्‍मओऽसंगो ॥९॥</div>
-<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[जीवणिबद्धाबद्धा परिग्गहा]</font></b> जीव के आश्रित अन्तरंग परिग्रह तथा <b><font color=darkRed>[जीवसंभवा चेव]</font></b> चेतन व अचेतन परिग्रह इत्यादि का <b><font color=darkRed>[तेसिं सक्कच्चागो]</font></b> शक्ति प्रगट करके त्याग, <b><font color=darkRed>[इयम्हि य]</font></b> तथा इनसे इतर जो संयम, ज्ञान, शौच के उपकरण इनमें <b><font color=darkRed>[णिम्ममोऽसंगो]</font></b> ममत्व का न होना परिग्रह-त्याग (<font color=DarkSlateGray>महाव्रत</font>) है ।<br></div><br>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[जीवणिबद्धाबद्धा परिग्गहा]</font></b> जीव के आश्रित अन्तरंग परिग्रह तथा <b><font color=darkRed>[जीवसंभवा चेव]</font></b> चेतन व अचेतन परिग्रह इत्यादि का <b><font color=darkRed>[तेसिं सक्कच्चागो]</font></b> शक्ति प्रगट करके त्याग, <b><font color=darkRed>[इयम्हि य]</font></b> तथा इनसे इतर जो संयम, ज्ञान, शौच के उपकरण इनमें <b><font color=darkRed>[णिम्ममोऽसंगो]</font></b> ममत्व का न होना परिग्रह-त्याग <span class=comment>(महाव्रत)</span> है ।<br></div><br>
 <br><div class=title>
 ﻿समिति के नाम</div>
 <div class=main>
 ﻿इरिया भासा एसण णिक्खेवादाणमेव समिदीओ<br>पदिठावणिया य तहा उच्चारादीण पंचविहा ॥१०॥</div>
-<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[इरिया]</font></b> ईर्या, <b><font color=darkRed>[भासा]</font></b> भाषा, <b><font color=darkRed>[एसण]</font></b> एषणा, <b><font color=darkRed>[णिक्खेवादाणमेव]</font></b> आदान निक्षेपण और <b><font color=darkRed>[पदिठावणिया]</font></b> (<font color=DarkSlateGray>मल-मूत्रादि का</font>) प्रतिष्ठापन ये <b><font color=darkRed>[पंचविहा]</font></b> पाँच प्रकार की ही <b><font color=darkRed>[समिदीओ]</font></b> समितियाँ हैं।<br></div><br>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[इरिया]</font></b> ईर्या, <b><font color=darkRed>[भासा]</font></b> भाषा, <b><font color=darkRed>[एसण]</font></b> एषणा, <b><font color=darkRed>[णिक्खेवादाणमेव]</font></b> आदान निक्षेपण और <b><font color=darkRed>[पदिठावणिया]</font></b> <span class=comment>(मल-मूत्रादि का)</span> प्रतिष्ठापन ये <b><font color=darkRed>[पंचविहा]</font></b> पाँच प्रकार की ही <b><font color=darkRed>[समिदीओ]</font></b> समितियाँ हैं।<br></div><br>
 <br><div class=title>
 ﻿ईर्या समिति</div>
 <div class=main>
@@ -1284,7 +1355,7 @@
 ﻿एषणा समिति</div>
 <div class=main>
 ﻿छादालदोससुद्धं कारणजुत्तं विसुद्धणवकोडी<br>सीदादीसमभुत्ती परिसुद्धा एसणासमिदी ॥१३॥</div>
-<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[छादालदोससुद्धं]</font></b> उद्गम, उत्पादन, आदि छियालीस दोषों से रहित शुद्ध, <b><font color=darkRed>[कारणजुत्तं]</font></b> कारण (<font color=DarkSlateGray>असाता / भूख</font>) से सहित, <b><font color=darkRed>[विसुद्धणवकोडी]</font></b> नवकोटि से विशुद्ध और <b><font color=darkRed>[सीदादीसमभुत्ती]</font></b> शीत उष्ण आदि में समान भाव से आहार ग्रहण करना <b><font color=darkRed>[परिसुद्धा]</font></b> निर्मल <b><font color=darkRed>[एसणासमिदी]</font></b> एषणा समिति है।<br></div><br>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[छादालदोससुद्धं]</font></b> उद्गम, उत्पादन, आदि छियालीस दोषों से रहित शुद्ध, <b><font color=darkRed>[कारणजुत्तं]</font></b> कारण <span class=comment>(असाता / भूख)</span> से सहित, <b><font color=darkRed>[विसुद्धणवकोडी]</font></b> नवकोटि से विशुद्ध और <b><font color=darkRed>[सीदादीसमभुत्ती]</font></b> शीत उष्ण आदि में समान भाव से आहार ग्रहण करना <b><font color=darkRed>[परिसुद्धा]</font></b> निर्मल <b><font color=darkRed>[एसणासमिदी]</font></b> एषणा समिति है।<br></div><br>
 <br><div class=title>
 ﻿आदान निक्षेपण समिति</div>
 <div class=main>
@@ -1294,7 +1365,7 @@
 ﻿प्रतिष्ठापन समिति</div>
 <div class=main>
 ﻿एगंते अच्चित्ते दूरे गूढे विसालमविरोहे<br>उच्चरादिच्चाओ पदिठावणिया हवे समिदी ॥१५॥</div>
-<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[एगंते]</font></b> एकांत, <b><font color=darkRed>[अच्चित्ते]</font></b> अचित (<font color=DarkSlateGray>जीव-जन्तु रहित</font>), <b><font color=darkRed>[दूरे]</font></b> दूर-स्थित, <b><font color=darkRed>[गूढे]</font></b> गूढ़ (<font color=DarkSlateGray>मर्यादित</font>), <b><font color=darkRed>[विसालमविरोहे]</font></b> विशाल (<font color=DarkSlateGray>विस्तीर्ण</font>) और विरोध-रहित स्थान में <b><font color=darkRed>[उच्चरादिच्चाओ]</font></b> सावधानी पूर्वक मल-मूत्रादिक का विसर्जन <b><font color=darkRed>[पदिठावणिया]</font></b> प्रतिष्ठापन <b><font color=darkRed>[हवे समिदी]</font></b> समिति है।<br></div><br>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[एगंते]</font></b> एकांत, <b><font color=darkRed>[अच्चित्ते]</font></b> अचित <span class=comment>(जीव-जन्तु रहित)</span>, <b><font color=darkRed>[दूरे]</font></b> दूर-स्थित, <b><font color=darkRed>[गूढे]</font></b> गूढ़ <span class=comment>(मर्यादित)</span>, <b><font color=darkRed>[विसालमविरोहे]</font></b> विशाल <span class=comment>(विस्तीर्ण)</span> और विरोध-रहित स्थान में <b><font color=darkRed>[उच्चरादिच्चाओ]</font></b> सावधानी पूर्वक मल-मूत्रादिक का विसर्जन <b><font color=darkRed>[पदिठावणिया]</font></b> प्रतिष्ठापन <b><font color=darkRed>[हवे समिदी]</font></b> समिति है।<br></div><br>
 <br><div class=title>
 ﻿इन्द्रिय निरोध व्रत</div>
 <div class=main>
@@ -1324,7 +1395,7 @@
 ﻿स्पर्शनेन्द्रिय निरोध व्रत</div>
 <div class=main>
 ﻿जीवाजीवसमुत्थे कक्कडमउगादिअट्ठभेदजुदे<br>फासे सुहे य असुहे फासणिरोहो असंमोहो ॥२१॥</div>
-<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जीव (<font color=DarkSlateGray>स्त्री आदि</font>) के निमित्त से और अजीव से उत्पन्न हुए एवं कठोर कोमल आदि आठ भेदों से युक्त सुख और दु:ख रूप स्पर्श में मोह रागादि नहीं करना स्पर्शनेन्द्रिय निरोध व्रत है।<br></div><br>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿जीव <span class=comment>(स्त्री आदि)</span> के निमित्त से और अजीव से उत्पन्न हुए एवं कठोर कोमल आदि आठ भेदों से युक्त सुख और दु:ख रूप स्पर्श में मोह रागादि नहीं करना स्पर्शनेन्द्रिय निरोध व्रत है।<br></div><br>
 <br><div class=title>
 ﻿षट् आवश्यक क्रिया</div>
 <div class=main>
@@ -1678,7 +1749,7 @@
 <div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿इच्छाकार, मिथ्याकार, तथाकार, आसिका, निषेधिका, आपृच्छा, प्रतिपृच्छा, छन्दन, निमन्त्रणा, उपसम्पत् ये दश भेद औघिक समाचार के हैं ।<br></div><br>
 <div class=main>
 ﻿इट्ठे इच्छाकारो मिच्छाकारो तहेव अवराहे<br>पडिसुणणाह्मि तहत्तिय णिग्गमणे आसिया भणिया ॥१२६॥<br>पविसंते य णिसीही आपुच्छणियासकज्ज आरम्भे<br>साधम्मिणा य गुरुणा पुव्वणिसिट्ठह्यि पडिपुच्छा ॥१२७॥<br>छंदणगहिदे दव्वे अगहिददव्वेणिमंतणा भणिदा<br>तुह्यमहंतिगुरुकुले आदणिसग्गो दु उवसंपा ॥१२८॥</div>
-<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿इष्ट विषय में इच्छाकार, उसी प्रकार अपराध में मिथ्याकार, प्रतिपादित के विषय में तथा 'ऐसा ही है' ऐसा कथन तथाकार और निकलने में आसिका का कथन किया गया है । प्रवेश करने में निषेधिका तथा अपने कार्य के आरम्भ में आपृच्छा करनी होती है । सहधर्मी साधु और गुरु से पूर्व में ली गई वस्तु को पुन: ग्रहण करने में प्रतिपृच्छा होती है । ग्रहण की हुई वस्तु में उसकी अनुकूलता रखना छन्दन है । अगृहीत द्रव्य के विषय में याचना करना निमन्त्रणा है और गुरु के संघ में 'मैं आपका हूँ' ऐसा आत्म-समर्पण करना उपसम्पत् कहा गया है । (<font color=DarkSlateGray>ये दश भेद औघिक समाचार के हैं</font>)<br></div><br>
+<div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿इष्ट विषय में इच्छाकार, उसी प्रकार अपराध में मिथ्याकार, प्रतिपादित के विषय में तथा 'ऐसा ही है' ऐसा कथन तथाकार और निकलने में आसिका का कथन किया गया है । प्रवेश करने में निषेधिका तथा अपने कार्य के आरम्भ में आपृच्छा करनी होती है । सहधर्मी साधु और गुरु से पूर्व में ली गई वस्तु को पुन: ग्रहण करने में प्रतिपृच्छा होती है । ग्रहण की हुई वस्तु में उसकी अनुकूलता रखना छन्दन है । अगृहीत द्रव्य के विषय में याचना करना निमन्त्रणा है और गुरु के संघ में 'मैं आपका हूँ' ऐसा आत्म-समर्पण करना उपसम्पत् कहा गया है । <span class=comment>(ये दश भेद औघिक समाचार के हैं)</span><br></div><br>
 <div class=main>
 ﻿औधियसामाचारो एसो भणिदो हु दसविहो णेओ<br>एत्तो य पदविभागी समासदो वण्णइस्सामि ॥१२९॥</div>
 <div class=arth><b><font color=black>अन्वयार्थ : </font></b>﻿यह कहा गया दस प्रकार का औधिक समाचार जानना चाहिए । अब इसके बाद संक्षेप से पद-विभागी समाचार कहुंगा ।<br></div><br>
