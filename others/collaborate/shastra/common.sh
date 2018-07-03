@@ -1,27 +1,3 @@
-function createList {
-  myType=$1
-  myCatDir=$2
-  myFile=$3
-  myTypeCap="$(tr '[:lower:]' '[:upper:]' <<< ${myType:0:1})${myType:1}"
-cat << EOF >> $myFile
-  <div data-history=false data-role=popup id=popup$myTypeCap data-theme=none>
-    <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
-EOF
-
-for myCat in $(ls -d $myCatDir/*/)
-do
-    myCategoryL=$(basename $myCat)
-    myCategoryL=$(echo $myCategoryL | sed 's/.*_//')
-    cat <<EOF >> $myFile
-        <div data-role=collapsible data-inset=false data-theme=a>
-          <h2>$myCategoryL</h2>
-          <ul data-role=listview id=${myType}ListView-$myCategoryL></ul>
-        </div>
-EOF
-done
-echo "   </div></div>" >> $myFile
-}
-
 function createBhajan {
   relPath=$1
   createSearch=$2
@@ -45,7 +21,7 @@ EOF
       do
           myItem=$(basename $item)
           myItem=$(echo $myItem | sed 's/.txt//');
-          echo "          <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/bhajans/$(basename $category)/html/bhajan-${myCntrL}.html>$myItem</a></li>" >> $myHtml
+          echo "          <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/bhajans/$(basename $category)/html/bhajan-${myCntrL}.html>$myCntrL) $myItem</a></li>" >> $myHtml
           myCntrL=$(($myCntrL+1))
   
       done
@@ -84,11 +60,13 @@ do
 EOF
     OIFS="$IFS"
     IFS=$'\n'
+    myCntrL=1
     for item in $(ls -d $category/*/)
     do
         myItem=$(basename $item)
         myItem=$(echo $myItem | sed 's/.*_//');
-        echo "          <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/poojas/$(basename $category)/$(basename $item)/html/index.html>$myItem</a></li>" >> $myHtml
+        echo "          <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/poojas/$(basename $category)/$(basename $item)/html/index.html>$myCntrL) $myItem</a></li>" >> $myHtml
+        myCntrL=$(($myCntrL+1))
     done
     #echo "  \$(\"\#poojaListView-$myCategory\").listview('refresh');" >> $jsFile
     IFS="$OIFS"
@@ -129,11 +107,13 @@ do
 EOF
     OIFS="$IFS"
     IFS=$'\n'
+    myCntrL=1
     for item in $(ls -d $category/*/)
     do
         myItem=$(basename $item)
         myItem=$(echo $myItem | sed 's/.*_//');
-        echo "          <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/$myType/$(basename $category)/$(basename $item)/html/index.html>$myItem</a></li>" >> $myHtml
+        echo "          <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/$myType/$(basename $category)/$(basename $item)/html/index.html>$myCntrL) $myItem</a></li>" >> $myHtml
+        myCntrL=$(($myCntrL+1))
     done
     IFS="$OIFS"
     [ "$createSearch" = "" ] &&  cat << EOF >> $myHtml 
@@ -266,82 +246,10 @@ cat <<EOF > $myHtml
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jai Jinendra</title>
   <link rel="icon" type="image/png" href="${myRelPath}images/default/jainFlag-short.jpg"/>
+  <link rel="stylesheet" href="${myRelPath}css/myJqueryMobile.css">
   <link rel="stylesheet" href="${myRelPath}js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
   <script type="text/javascript" src="${myRelPath}js/jquery.js"></script>
   <script type="text/javascript" src="${myRelPath}js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script>
-<style>
-
-img {
-    border-radius: 10px 10px 10px 10px;
-}
-div.title {
-    font-size: 15px;
-    color: red;
-    font-weight: bold;
-    text-align: center;
-}
-div.main {
-    font-size: 35px;
-    color: maroon;
-    font-weight: bold;
-    text-align: center;
-}
-div.pooja {
-    font-size: 25px;
-    color: darkBlue;
-    font-weight: bold;
-    text-align: center;
-    //line-height: 140%;
-}
-div.arth {
-    font-size: 20px;
-    color: darkBlue;
-    width: 90%;
-    text-align: justify;
-    margin: 0 auto;
-}
-span.om {
-    font-size: 20px;
-    color: maroon;
-    width: 90%;
-    text-align: center;
-    margin: 0 auto;
-}
-div.poojarth {
-    font-size: 20px;
-    color: darkGreen;
-    width: 90%;
-    text-align: justify;
-    margin: 0 auto;
-}
-span.gatharth {
-    font-size: 20px;
-    color: darkBlue;
-    font-weight: bold;
-}
-div.comment {
-    font-size: 15px;
-    color: darkgray;
-    width: 90%;
-    text-align: center;
-    margin: 0 auto;
-}
-.myCenter {
-    font-size: 20px;
-    color: darkBlue;
-    font-weight: bold;
-    text-align: center;
-    width: 90%;
-}
-.myBold {
-    font-size: 20px;
-    color: maroon;
-    font-weight: bold;
-    text-align: center;
-    width: 90%;
-}
-
-</style>
 </head>
 <body>
 <script>
@@ -388,7 +296,7 @@ EOF
       </ul>
     </div>
   </div> <!-- Panel -->
-  <div data-role="header" data-position="fixed">
+  <div data-role="header" data-position="fixed" data-fullscreen="true">
       <!--h1 align=center>Jai Jinendra</h1-->
       <figure align=center>
         <a href="#leftPanel" class="ui-button ui-shadow ui-corner-all ui-button-inline">

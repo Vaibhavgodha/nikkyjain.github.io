@@ -17,6 +17,9 @@ cat << EOF >> $myHtml
   <div class=myBold>धन, यौवन और जीवन को जल के बुलबुले के समान देखते हुए भी मनुष्य उन्हें नित्य मानता है, यह बड़ा आश्चर्य है। मोह का माहात्म्य अति बलवान है।</div><br><br>
   <div class=myCenter>इसी ध्‍यान से दिव्‍य चिंतामणि मिल सकता है, इसी से खली के टुकड़े भी मिल सकते हैं । जब कि ध्‍यान के द्वारा दोनों मिल सकते हैं, तब विवेकी लोग किस ओर आदरबुद्धि करेंगे ?</div>
 
+  <!--div data-role="footer" data-position="fixed" data-fullscreen="true">
+    <div align=right>nikkyjain@gmail.com</div>
+  </div-->
 </div>
 </body>
 </html>
