@@ -9,42 +9,35 @@
   <link rel="stylesheet" href="../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
   <script type="text/javascript" src="../../../../js/jquery.js"></script>
   <script type="text/javascript" src="../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script>
+  <script>
+    relPath="../../../../";
+  </script>
+  <script type="text/javascript" src="../../../../js/myMobile.js"></script>
 </head>
 <body>
-<script>
-  relPath="../../../../";
-//  $( document ).on( "pagecreate", "#demo-page", function() {
-//    //$( document ).on( "swipeleft swiperight", "#demo-page", function( e ) {
-//    $( document ).on( "swiperight", "#demo-page", function( e ) {
-//        // We check if there is no open panel on the page because otherwise
-//        // a swipe to close the left panel would also open the right panel (and v.v.).
-//        // We do this by checking the data that the framework stores on the page element (panel: open).
-//        if ( $( ".ui-page-active" ).jqmData( "panel" ) !== "open" ) {
-//            //if ( e.type === "swipeleft" ) {
-//            //    $( "#right-panel" ).panel( "open" );
-//            //} else if ( e.type === "swiperight" ) {
-//            if ( e.type === "swiperight" ) {
-//                $( "#leftPanel" ).panel( "open" );
-//            }
-//        }
-//    });
-//  });
-</script>
-<div data-role="page" id=demo-page>
-  <div data-role="panel" id="leftPanel">
-    <div data-role="navbar" data-maxbutton="1" class="ui-body-a">
-        <ul>
-            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupBhajan">भजन</a></li>
-            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupPooja">पूजा-पाठ</a></li>
-            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupTeeka">Granth Only Gatha</a></li>
-            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupShastra">Granth Gaatha-With-Teeka</a></li>
-            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupGames">Play / Test</a></li>
-            <li><a data-rel="popup" data-icon="ui-icon-star" data-transition="pop" href="#popupMisc">Misc</a></li>
+<div data-role=page id=demo-page>
+  <div data-role=panel id=leftPanel>
+    <div data-role=navbar data-maxbutton=1 class=ui-body-a>
+        <ul id=myPanelUl>
+            <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupBhajan'>भजन</a></li>
+            <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupPooja'>पूजा-पाठ</a></li>
+            <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupTeeka'>Granth Only Gatha</a></li>
+            <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupShastra'>Granth Gaatha-With-Teeka</a></li>
+            <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupGames'>Play / Test</a></li>
+            <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupMisc'>Misc</a></li>
         </ul>
+    </div>
+    <a href="#jainRadio" data-rel="popup" class="ui-button ui-corner-all ui-shadow ui-button-inline">Jain Radio</a>
+    <div data-role="popup" id=jainRadio class="ui-content" style="max-width:480px">
+      <a href="#" data-rel=back data-ajax=false class="ui-button ui-corner-all ui-shadow ui-button-a ui-button-icon-only ui-toolbar-header-button-right">Close <span class="ui-icon ui-icon-delete"></span></a>
+      <br><p> Play Jain Bhajan / Pooja / Path</p>
+      <a href='#' data-role=button data-inline=true data-icon=ui-icon-audio id=myRadioId>Radio</a>
+      <a href="#" data-role=button data-inline=true data-icon=ui-icon-arrow-r id=myRadioNextId data-show-label=false>Next Audio</a>
+      <div id=myRadio></div>
     </div>
     <div>
       <form>
-        <input data-type="search" id="searchTitleIn" placeholder="Search in Hindi..">
+        <input data-type='search' id='searchTitleIn' placeholder='Search in Hindi..'>
       </form>
       <ul id=searchTitle data-role="listview" data-filter="true" data-input="#searchTitleIn" data-filter-reveal="true" data-filter-placeholder="Search Bhajan / Pooja / Shastra">
           <li data-theme=b><a data-ajax=false href=../../../../jainDataBase/bhajans/01-देव/html/bhajan-1.html>1) अरिहंत देव स्वामी शरण</a></li>
@@ -498,7 +491,7 @@
       </ul>
     </div>
   </div> <!-- Panel -->
-  <div data-role="header" data-position="fixed" data-fullscreen="true">
+  <div data-role="header" data-position="fixed">
       <!--h1 align=center>Jai Jinendra</h1-->
       <figure align=center>
         <a href="#leftPanel" class="ui-button ui-shadow ui-corner-all ui-button-inline">
