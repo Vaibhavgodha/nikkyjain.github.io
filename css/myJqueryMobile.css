@@ -68,19 +68,55 @@ div.comment {
     text-align: center;
     width: 90%;
 }
-#demo-page :not(INPUT):not(TEXTAREA) {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
 //p::first-letter {
 //    font-size: 200%;
 //}
+
+//#demo-page :not(INPUT):not(TEXTAREA) {
+//    -webkit-user-select: none;
+//    -moz-user-select: none;
+//    -ms-user-select: none;
+//    -o-user-select: none;
+//    user-select: none;
+//}
 /* Content styling. */
-dl { font-family: "Times New Roman", Times, serif; padding: 1em; }
-dt { font-size: 2em; font-weight: bold; }
-dt span { font-size: .5em; color: #777; margin-left: .5em; }
-dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee; }
-.back-button { float: right; margin: 0 2em 1em 0; }
+//dl { font-family: "Times New Roman", Times, serif; padding: 1em; }
+//dt { font-size: 2em; font-weight: bold; }
+//dt span { font-size: .5em; color: #777; margin-left: .5em; }
+//dd { font-size: 1.25em; margin: 1em 0 0; padding-bottom: 1em; border-bottom: 1px solid #eee; }
+//.back-button { float: right; margin: 0 2em 1em 0; }
+
+
+// Adhikaar related -- Begin
+div.adhikaar {
+    font-size: 40px;
+    color: saddlebrown;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+}
+h1 {
+    position: relative;
+    font-size: 40px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+h1:before, h1:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: red;
+}
+h1:before {
+    margin-left: -50%;
+    text-align: right;
+}
+.adhikaar {
+    background-color: #ccc;
+}
+
+// Adhikaar related -- end
