@@ -27,7 +27,10 @@
             <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupMisc'>Misc</a></li>
         </ul>
     </div>
-    <div id=myRadioIconDiv style='display:none'>
+    <a href="#jainRadio" data-rel="popup" class="ui-button ui-corner-all ui-shadow ui-button-inline">Jain Radio</a>
+    <div data-role="popup" id=jainRadio class="ui-content" style="max-width:480px">
+      <a href="#" data-rel=back data-ajax=false class="ui-button ui-corner-all ui-shadow ui-button-a ui-button-icon-only ui-toolbar-header-button-right">Close <span class="ui-icon ui-icon-delete"></span></a>
+      <br><p> Play Jain Bhajan / Pooja / Path</p>
       <a href='#' data-role=button data-inline=true data-icon=ui-icon-audio id=myRadioId>Radio</a>
       <a href="#" data-role=button data-inline=true data-icon=ui-icon-arrow-r id=myRadioNextId data-show-label=false>Next Audio</a>
       <div id=myRadio></div>
