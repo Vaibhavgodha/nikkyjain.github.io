@@ -4,7 +4,6 @@ img {
 }
 div.title {
     font-size: 15px;
-    color: red;
     font-weight: bold;
     text-align: center;
 }
@@ -68,6 +67,18 @@ div.comment {
     text-align: center;
     width: 90%;
 }
+#myQuotes p {
+  font-size : 30px;
+  font-weight: bold;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#myQuotes p::first-letter {
+    font-size: 150%;
+}
+
 //p::first-letter {
 //    font-size: 200%;
 //}

@@ -12,12 +12,7 @@ createHeader './'
 
 cat << EOF >> $myHtml
 <br><br>
-  <div class=myCenter>जो ऐसा मानता है कि मैं दूसरों को दु:खी या सुखी करता हूँ, वह वस्तुत: अज्ञानी है। ज्ञानी ऐसा कभी नहीं मानते। -- कुन्दकुंदाचार्य </div><br><br>
-  <div class=myBold>एक द्रव्य के द्वारा दोनों द्रव्यों का परिणमन किया जा रहा है, ऐसा मुझे प्रतिभासित मत होवे -- अमृतचंद्राचार्य</div><br><br>
-  <div class=myCenter>यहाँ प्रत्येक जीव अपने—अपने कर्मफल को अकेला ही भोगता है। ऐसी स्थिति में यहाँ कौन किसका स्वजन है और कौन किसका परजन ?</div><br><br>
-  <div class=myBold>धन, यौवन और जीवन को जल के बुलबुले के समान देखते हुए भी मनुष्य उन्हें नित्य मानता है, यह बड़ा आश्चर्य है। मोह का माहात्म्य अति बलवान है।</div><br><br>
-  <div class=myCenter>इसी ध्‍यान से दिव्‍य चिंतामणि मिल सकता है, इसी से खली के टुकड़े भी मिल सकते हैं । जब कि ध्‍यान के द्वारा दोनों मिल सकते हैं, तब विवेकी लोग किस ओर आदरबुद्धि करेंगे ?</div>
-
+  <div id=myQuotes> </div>
   <!--div data-role="footer" data-position="fixed" data-fullscreen="true">
     <div align=right>nikkyjain@gmail.com</div>
   </div-->
@@ -29,6 +24,7 @@ EOF
 cat << EOF > $myJs
 
 var myAudioFIles = [];
+var quotes = [];
 
 EOF
 
@@ -45,9 +41,15 @@ do
   myAudioFile=$(echo $audio | perl -pe 's|.*?jainData|.|')
   echo "myAudioFIles.push(relPath+'$myAudioFile');" >> $myJs
 done
+for quote in $(ls $dbDir/others/collaborate/quotes/*)
+do
+  echo "quotes.push('<p>$(cat $quote)</p>');" >> $myJs
+done
 IFS="$OIFS"
 
 cat << EOF >> $myJs
+var curQuote=0;
+var quoteCol=['red', 'darkBlue', 'maroon', 'darkGreen', 'darkMagenta', 'indigo'];
 
 // Shuffle Array
 function shuffle(array) {
@@ -57,6 +59,13 @@ function shuffle(array) {
         array[i] = array[j];
         array[j] = temp;
     }
+}
+function load_quotes() {
+    \$('#myQuotes').html(quotes[curQuote]);
+    \$('#myQuotes p').css( 'color', quoteCol[curQuote%(quoteCol.length)]);
+    curQuote++;
+    if(curQuote==quotes.length) curQuote=0;
+    setTimeout(load_quotes, 7000);
 }
 
 \$(document).on( 'pagecontainershow', function(){
@@ -80,6 +89,10 @@ function shuffle(array) {
     if(myAudioFIles.length>0) {
       \$('#myRadioIconDiv').show();
     }
+    shuffle(quotes);
+    var maxHeight = \$( window ).height() - 60 + "px";
+    \$('#myQuotes').css( 'height', maxHeight );
+    load_quotes();
 
     \$('#myRadioNextId').click(function() {
         if (myAudio) {
