@@ -43,13 +43,15 @@ do
 done
 for quote in $(ls $dbDir/others/collaborate/quotes/*)
 do
-  echo "quotes.push('<p>$(cat $quote)</p>');" >> $myJs
+    c="$(cat $quote)"
+    c=$(echo "$c" | perl -pe 's/\n/<br>/g' | perl -pe 's/--/<\/p><div class=aacharyaName>--/')
+    echo "quotes.push('<p>$c</div>');" >> $myJs
 done
 IFS="$OIFS"
 
 cat << EOF >> $myJs
 var curQuote=0;
-var quoteCol=['red', 'darkBlue', 'maroon', 'darkGreen', 'darkMagenta', 'indigo'];
+var quoteCol=['darkRed', 'darkBlue', 'maroon', 'darkGreen', 'darkMagenta', 'indigo'];
 
 // Shuffle Array
 function shuffle(array) {

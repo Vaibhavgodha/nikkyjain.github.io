@@ -53,7 +53,7 @@ do
             echo "</div>" >> $myHtml
             curFile=$myInDir/mainH/$(basename $cFile)
             if [ -f $curFile ]; then
-              echo "<div class=poojarth>" >> $myHtml 
+              echo "<div class=gadya>" >> $myHtml 
               cat $curFile | perl -pe 's/\n/<br>/g' >>  $myHtml
               echo "</div>" >> $myHtml
             fi

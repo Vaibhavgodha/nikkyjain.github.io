@@ -50,7 +50,7 @@ EOF
         echo "<div class=pooja>" >> $myHtml 
         c="$(cat $curFile)"
         c=$(echo "$c" | perl -pe 's/\n/<br>/g')
-        c=$(echo "$c" | perl -pe 's/\(\(/<div class=comment>/g' | perl -pe 's/\)\)/<\/div>/g')
+        c=$(echo "$c" | perl -pe 's/\(\(/<span class=comment>/g' | perl -pe 's/\)\)/<\/span>/g')
         c=$(echo "$c" | perl -pe 's/ॐ ह्रीं/<span class=om>ॐ ह्रीं/g')
         c=$(echo "$c" | perl -pe 's/निर्वपामीति स्वाहा/निर्वपामीति स्वाहा<\/span>/g')
         c=$(echo "$c" | perl -pe 's/संवौषट् आह्वाननं/संवौषट् आह्वाननं<\/span>/g')

@@ -16,7 +16,6 @@ div.main {
 div.pooja {
     font-size: 25px;
     color: darkBlue;
-    font-weight: bold;
     text-align: center;
     line-height: 140%;
 }
@@ -34,6 +33,13 @@ span.om {
     text-align: center;
     margin: 0 auto;
 }
+div.gadya {
+    font-size: 15px;
+    color: darkGreen;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
 div.poojarth {
     font-size: 20px;
     color: darkGreen;
@@ -46,7 +52,7 @@ span.gatharth {
     color: darkBlue;
     font-weight: bold;
 }
-div.comment {
+.comment {
     font-size: 15px;
     color: darkgray;
     width: 90%;
@@ -68,11 +74,22 @@ div.comment {
     width: 90%;
 }
 #myQuotes p {
-  font-size : 30px;
+  font-size : 6vh;
   font-weight: bold;
   text-align: center;
   width: 90%;
   margin: 0 auto;
+  border-radius: 20px;
+  border-bottom: 6px solid red;
+  background-color: lightgrey;
+}
+.aacharyaName {
+  text-align: right;
+  color : black; 
+  font-size : 7vh;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: bold;
 }
 
 #myQuotes p::first-letter {
