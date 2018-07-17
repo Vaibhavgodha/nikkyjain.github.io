@@ -24,6 +24,19 @@ do
         else
             echo "$headerCreated" > $myHtml
         fi
+#
+#        for audio in $(ls $myInDir/audioLink/* 2> /dev/null)
+#        do
+#          curAudio=$(basename $audio | perl -pe 's/.txt//g')
+#          c=$(cat $audio)
+#          cat <<EOF >> $myHtml
+#        <div align=center><audio controls>
+#          <source src="$c" type="audio/mpeg">
+#          Your browser does not support the audio element.
+#        </audio></div><br>
+#EOF
+#
+#        done
 
         for cFile in $(ls $myInDir/main/*)
         do

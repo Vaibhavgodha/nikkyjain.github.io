@@ -33,7 +33,7 @@ do
         <div align=center><audio controls>
           <source src="../audio/$audioFileName" type="audio/mpeg">
           Your browser does not support the audio element.
-        </audio></div><br>
+        </audio><span align=center>$audioFileName</span></div><br>
 EOF
       fi
       for cFile in $(ls $pooja/main/*)
