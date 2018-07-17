@@ -1,0 +1,20 @@
+document.write("<div id=-पं-रत्नचन्द-मुख्तार class='dropdown dropdown-tip dropdown-scroll'>");
+document.write("  <ul class=dropdown-menu>");
+document.write("        <li><a href='001.html'><font size=4><font color=darkPurple><b>001</b></font> - <font color=darkBlue>﻿आलापपद्धतिर्वचनरचनाऽनुक्रमेण
+नयचक्र स्‍योपरि उच्‍यते ॥१॥</font></font></a></li>");
+document.write("        <li><a href='005.html'><font size=4><font color=darkPurple><b>005</b></font> - <font color=darkGreen>﻿जीवपुद् गलधर्माधर्माकाशकालद्रव्‍याणि ॥५॥</font></font></a></li>");
+document.write("        <li><a href='007.html'><font size=4><font color=darkPurple><b>007</b></font> - <font color=darkBlue>﻿उत्‍पादव्‍ययघ्रौव्‍युत्‍कं सत् ॥७॥</font></font></a></li>");
+document.write("        <li><a href='008.html'><font size=4><br><font size=5 color=black><b>﻿गुणाधिकार </b></font><br><br><font color=darkPurple><b>008</b></font> - <font color=darkGreen>﻿लक्षण के नामान्तर</font></font></a></li>");
+document.write("        <li><a href='009.html'><font size=4><font color=darkPurple><b>009</b></font> - <font color=darkBlue>﻿सामान्‍य गुणों के नाम व कथन</font></font></a></li>");
+document.write("        <li><a href='010.html'><font size=4><font color=darkPurple><b>010</b></font> - <font color=darkGreen>﻿प्रत्येक द्रव्य के कितने गुण</font></font></a></li>");
+document.write("        <li><a href='011.html'><font size=4><font color=darkPurple><b>011</b></font> - <font color=darkBlue>﻿ज्ञान, दर्शन, सुख व वीर्य के लक्षण तथा ज्ञान-दर्शन में अंतर</font></font></a></li>");
+document.write("        <li><a href='012.html'><font size=4><font color=darkPurple><b>012</b></font> - <font color=darkGreen>﻿जीव और पुद्गल के विशेष गुण</font></font></a></li>");
+document.write("        <li><a href='013.html'><font size=4><font color=darkPurple><b>013</b></font> - <font color=darkBlue>﻿धर्मादिक चार द्रव्‍यों के विशेष गुण</font></font></a></li>");
+document.write("        <li><a href='014.html'><font size=4><font color=darkPurple><b>014</b></font> - <font color=darkGreen>﻿चेतन-अचेतन, मूर्त-अमूर्त सामान्य गुण भी हैं और विशेष गुण भी</font></font></a></li>");
+document.write("        <li><a href='015.html'><font size=4><br><font size=5 color=black><b>﻿पर्याय अधिकार </b></font><br><br><font color=darkPurple><b>015</b></font> - <font color=darkBlue>﻿अर्थ पर्याय व व्यंजन पर्याय</font></font></a></li>");
+document.write("        <li><a href='016.html'><font size=4><font color=darkPurple><b>016</b></font> - <font color=darkGreen>﻿पर्याय के भेद प्रतिभेद</font></font></a></li>");
+document.write("        <li><a href='017.html'><font size=4><font color=darkPurple><b>017</b></font> - <font color=darkBlue>﻿स्वभाव अर्थ पर्याय--अगुरु लघुगुण के विकार का कथन</font></font></a></li>");
+document.write("        <li><a href='018.html'><font size=4><font color=darkPurple><b>018</b></font> - <font color=darkGreen>﻿जीव की विभावार्थ पर्याय</font></font></a></li>");
+document.write("        <li><a href='019.html'><font size=4><font color=darkPurple><b>019</b></font> - <font color=darkBlue>﻿जीव की विभाव द्रव्य व्यंजन पर्याय</font></font></a></li>");
+document.write("        <li><a href='020.html'><font size=4><font color=darkPurple><b>020</b></font> - <font color=darkGreen>﻿जीव की विभाव गुण व्यंजन पर्याय</font></font></a></li>");
+document.write("</ul></div>");
