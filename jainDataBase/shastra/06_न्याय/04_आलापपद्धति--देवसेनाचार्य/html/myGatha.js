@@ -16,4 +16,14 @@ document.write("        <li><a href='017.html'><font size=4><font color=darkPurp
 document.write("        <li><a href='018.html'><font size=4><font color=darkPurple><b>018</b></font> - <font color=darkGreen>﻿जीव की विभावार्थ पर्याय</font></font></a></li>");
 document.write("        <li><a href='019.html'><font size=4><font color=darkPurple><b>019</b></font> - <font color=darkBlue>﻿जीव की विभाव द्रव्य व्यंजन पर्याय</font></font></a></li>");
 document.write("        <li><a href='020.html'><font size=4><font color=darkPurple><b>020</b></font> - <font color=darkGreen>﻿जीव की विभाव गुण व्यंजन पर्याय</font></font></a></li>");
+document.write("        <li><a href='021.html'><font size=4><font color=darkPurple><b>021</b></font> - <font color=darkBlue>﻿जीव की स्‍वभाव-द्रव्‍य-व्‍यंजनपर्याय</font></font></a></li>");
+document.write("        <li><a href='022.html'><font size=4><font color=darkPurple><b>022</b></font> - <font color=darkGreen>﻿जीव की स्‍वभाव-गुण-व्‍यंजन-पर्याय</font></font></a></li>");
+document.write("        <li><a href='023.html'><font size=4><font color=darkPurple><b>023</b></font> - <font color=darkBlue>﻿पुद्गल की विभाव-द्रव्‍य-व्‍यंजन-पर्याय</font></font></a></li>");
+document.write("        <li><a href='024.html'><font size=4><font color=darkPurple><b>024</b></font> - <font color=darkGreen>﻿पुद्गल की विभाव-गुण-व्‍यंजनपर्याय</font></font></a></li>");
+document.write("        <li><a href='025.html'><font size=4><font color=darkPurple><b>025</b></font> - <font color=darkBlue>﻿पुद्गल की स्‍वभाव-द्रव्‍य-व्यंजन-पर्याय </font></font></a></li>");
+document.write("        <li><a href='026.html'><font size=4><font color=darkPurple><b>026</b></font> - <font color=darkGreen>﻿पुद्गल की स्‍वभाव-गुण-व्यंजन-पर्याय </font></font></a></li>");
+document.write("        <li><a href='027.html'><font size=4><br><font size=5 color=black><b>﻿स्वाभाधिकार </b></font><br><br><font color=darkPurple><b>027</b></font> - <font color=darkBlue>﻿प्रकारान्‍तर से द्रव्‍य, गुण व पर्याय का लक्षण</font></font></a></li>");
+document.write("        <li><a href='028.html'><font size=4><font color=darkPurple><b>028</b></font> - <font color=darkGreen>﻿द्रव्‍यों के सामान्‍य व विशेष स्‍वभावों का कथन</font></font></a></li>");
+document.write("        <li><a href='029.html'><font size=4><font color=darkPurple><b>029</b></font> - <font color=darkBlue>﻿जीव और पुद्गल के भावों की संख्‍या </font></font></a></li>");
+document.write("        <li><a href='030.html'><font size=4><font color=darkPurple><b>030</b></font> - <font color=darkGreen>﻿धर्मादि तीन द्रव्‍यों में स्‍वभावों की संख्‍या </font></font></a></li>");
 document.write("</ul></div>");
