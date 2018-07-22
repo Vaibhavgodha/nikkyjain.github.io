@@ -8,13 +8,13 @@ div.title {
     text-align: center;
 }
 div.main {
-    font-size: 35px;
+    font-size: 6vw;
     color: maroon;
     font-weight: bold;
     text-align: center;
 }
 div.pooja {
-    font-size: 25px;
+    font-size: 3vw;
     color: darkBlue;
     text-align: center;
     line-height: 140%;
@@ -27,7 +27,7 @@ div.arth {
     margin: 0 auto;
 }
 span.om {
-    font-size: 20px;
+    font-size: 2vw;
     color: maroon;
     width: 90%;
     text-align: center;
