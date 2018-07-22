@@ -12,7 +12,7 @@ myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/तुम
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/तुम्हारे दर्श बिन स्वामी.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/दिन रात स्वामी तेरे गीत.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/देखो जी आदिश्वर स्वामी.mp3');
-myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/नाम तुम्हारा तारणहारा कब तेरा.mp3');
+myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/नाम तुम्हारा तारणहारा.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/निरखत जिन चंद्रवदन.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/निरखी निरखी मनहर.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/निरखो अंग अंग.mp3');
@@ -20,7 +20,7 @@ myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/नेम
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/पंचपरम परमेष्ठी.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/बाहुबली भगवान.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/भावना की चूनरी.mp3');
-myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/मेरे सर पर रख दो भगवन.mp3');
+myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/मेरे सर पर रख दो.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/रंगमा रंगमा.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/रोम रोम पुलकित हो जाये.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/रोम रोम से निकले.mp3');
@@ -30,7 +30,7 @@ myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/शौर
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01-देव/audio/हम यही कामना करते हैं.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./02-शास्त्र/audio/आज मैं परम पदारथ.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./02-शास्त्र/audio/चरणों में आ पडा हूं.mp3');
-myAudioFIles.push(relPath+'./jainDataBase/bhajans/./02-शास्त्र/audio/धन्य धन्य जिनवाणी माता शरण.mp3');
+myAudioFIles.push(relPath+'./jainDataBase/bhajans/./02-शास्त्र/audio/धन्य धन्य जिनवाणी माता.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./02-शास्त्र/audio/धन्य धन्य वीतराग वाणी.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./02-शास्त्र/audio/माँ जिनवाणी तेरो नाम.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./02-शास्त्र/audio/माता तू दया करके.mp3');
@@ -44,12 +44,12 @@ myAudioFIles.push(relPath+'./jainDataBase/bhajans/./03-गुरु/audio/पर
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./03-गुरु/audio/परम दिगम्बर मुनिवर देखे.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./03-गुरु/audio/मुनिवर आज मेरी कुटिया में.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./03-गुरु/audio/मुनिवर को आहार.mp3');
-myAudioFIles.push(relPath+'./jainDataBase/bhajans/./03-गुरु/audio/म्हारा परम दिगम्बर मुनिवर आया.mp3');
+myAudioFIles.push(relPath+'./jainDataBase/bhajans/./03-गुरु/audio/म्हारा परम दिगम्बर मुनिवर.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./03-गुरु/audio/वे मुनिवर कब मिली हैं उपगारी.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./03-गुरु/audio/वेष दिगम्बर धार.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./03-गुरु/audio/संत साधु बन के विचरूँ.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./03-गुरु/audio/है परम-दिगम्बर मुद्रा जिनकी.mp3');
-myAudioFIles.push(relPath+'./jainDataBase/bhajans/./03-गुरु/audio/होली खेलें मुनिराज शिखर वन में.mp3');
+myAudioFIles.push(relPath+'./jainDataBase/bhajans/./03-गुरु/audio/होली खेलें मुनिराज शिखर.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./04-धर्म/audio/उठे सब के कदम.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./04-धर्म/audio/माँ मुझे सुना गुरुवर.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./05-तीर्थ/audio/ऊंचे शिखरों पे बसा है.mp3');
@@ -62,7 +62,7 @@ myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/aud
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/आनंद अवसर आज सुरगण आये.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/आया पंच कल्याणक महान.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/कल्पद्रुम यह समवसरण है.mp3');
-myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/कुडंलपुर वाले कुडंलपुर वाले वीरजी.mp3');
+myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/कुडंलपुर वाले कुडंलपुर वाले.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/गर्भ कल्याणक आ गया.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/गिरनारी पर तप कल्याणक.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/घर घर आनंद छायो.mp3');
@@ -74,7 +74,7 @@ myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/aud
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/पंखिड़ा तू उड़ के जाना स्वर्ग.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/पंखिडा रे उड के आओ कुंड्लपुर में.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/बाजे कुण्डलपुर में बधाई.mp3');
-myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/मणियों के पलने में स्वामी महावीर.mp3');
+myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/मणियों के पलने में स्वामी.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/मेरा पलने में.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/मोहे भावे ना भैया थारो देस.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./06-कल्याणक/audio/रोम रोम में नेमिकुंवर के.mp3');

@@ -8,73 +8,79 @@ div.title {
     text-align: center;
 }
 div.main {
-    font-size: 6vw;
+    font-size: 7vw;
+    color: maroon;
+    font-weight: bold;
+    text-align: center;
+}
+div.gatha {
+    font-size: 4vw;
     color: maroon;
     font-weight: bold;
     text-align: center;
 }
 div.pooja {
-    font-size: 3vw;
+    font-size: 4vw;
     color: darkBlue;
     text-align: center;
     line-height: 140%;
 }
 div.arth {
-    font-size: 20px;
+    font-size: 2vw;
     color: darkBlue;
     width: 90%;
     text-align: justify;
     margin: 0 auto;
 }
 span.om {
-    font-size: 2vw;
+    font-size: 3vw;
     color: maroon;
     width: 90%;
     text-align: center;
     margin: 0 auto;
 }
 div.gadya {
-    font-size: 15px;
+    font-size: 2vw;
     color: darkGreen;
     text-align: center;
     margin: 0 auto;
     font-weight: bold;
 }
 div.poojarth {
-    font-size: 20px;
+    font-size: 3vw;
     color: darkGreen;
     width: 90%;
     text-align: justify;
     margin: 0 auto;
 }
 span.gatharth {
-    font-size: 20px;
+    font-size: 3vw;
     color: darkBlue;
     font-weight: bold;
 }
 .comment {
-    font-size: 15px;
+    font-size: 2vw;
     color: darkgray;
     width: 90%;
     text-align: center;
     margin: 0 auto;
 }
 .myCenter {
-    font-size: 20px;
+    font-size: 5vw;
     color: darkBlue;
     font-weight: bold;
     text-align: center;
     width: 90%;
 }
 .myBold {
-    font-size: 20px;
+    font-size: 5vw;
     color: maroon;
     font-weight: bold;
     text-align: center;
     width: 90%;
 }
 #myQuotes p {
-  font-size : 6vh;
+  font-size : 4vw;
   font-weight: bold;
   text-align: center;
   width: 90%;
@@ -86,7 +92,7 @@ span.gatharth {
 .aacharyaName {
   text-align: right;
   color : black; 
-  font-size : 7vh;
+  font-size : 7vw;
   width: 90%;
   margin: 0 auto;
   font-weight: bold;
@@ -117,7 +123,7 @@ span.gatharth {
 
 // Adhikaar related -- Begin
 div.adhikaar {
-    font-size: 40px;
+    font-size: 8vw;
     color: saddlebrown;
     text-align: center;
     font-weight: bold;
@@ -125,7 +131,7 @@ div.adhikaar {
 }
 h1 {
     position: relative;
-    font-size: 40px;
+    font-size: 8vw;
     z-index: 1;
     overflow: hidden;
     text-align: center;
