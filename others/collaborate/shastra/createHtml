@@ -159,9 +159,18 @@ EOF
         bottomFile=$teeka/$cFile
         bottomFileS=$(echo $teeka/$cFile | perl -i -pe 's/\..*//g')
         teekakaar=$(echo $teeka | perl -pe 's/.*?-//' | perl -i -pe 's/_/-/g')
-		if ls $bottomFileS* 1> /dev/null 2>&1; then
+		    if ls $bottomFileS* 1> /dev/null 2>&1; then
           gathaName=$(echo $cFile | sed 's/\..*//')
           echo "    <span id=teeka$teekaCntr class=gatha$gathaName style=\"color: darkGreen;\">&nbsp;&nbsp;$teekakaar</span>" >> $outFile
+          if [[ $teeka = *"notes"* ]]; then
+              cat <<EOF >> $outFile
+      <script>
+        \$(document).ready(function(){
+          \$('#teeka$teekaCntr').click();
+        });
+      </script>
+EOF
+          fi
           teekaCntr=$(($teekaCntr + 1))
         fi
       done

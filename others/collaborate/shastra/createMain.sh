@@ -67,7 +67,7 @@ function load_quotes() {
     \$('#myQuotes p').css( 'color', quoteCol[curQuote%(quoteCol.length)]);
     curQuote++;
     if(curQuote==quotes.length) curQuote=0;
-    setTimeout(load_quotes, 7000);
+    setTimeout(load_quotes, 8000);
 }
 
 \$(document).on( 'pagecontainershow', function(){

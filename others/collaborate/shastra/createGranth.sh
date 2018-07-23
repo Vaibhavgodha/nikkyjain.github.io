@@ -61,7 +61,7 @@ do
                 fi
             fi
             curFile=$myInDir/main/$(basename $cFile)
-            echo "<div class=main>" >> $myHtml 
+            echo "<div class=gatha>" >> $myHtml 
             cat $curFile | perl -pe 's/\n/<br>/g' >>  $myHtml
             echo "</div>" >> $myHtml
             curFile=$myInDir/mainH/$(basename $cFile)
@@ -110,6 +110,7 @@ do
             #                teekaCntr=$(($teekaCntr+1))
             #            fi
             #        done
+            echo "<hr align=center width=40%>" >>  $myHtml
         done
         echo "</div></body></html>" >> $myHtml
         myCntr=$(($myCntr+1))
