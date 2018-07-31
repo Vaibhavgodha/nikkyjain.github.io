@@ -1,4 +1,4 @@
-document.write("<div id=-पं-रत्नचन्द-मुख्तार class='dropdown dropdown-tip dropdown-scroll'>");
+document.write("<div id=पं-रत्नचन्द-मुख्तार class='dropdown dropdown-tip dropdown-scroll'>");
 document.write("  <ul class=dropdown-menu>");
 document.write("        <li><a href='001.html'><font size=4><font color=darkPurple><b>001</b></font> - <font color=darkBlue>﻿आलापपद्धति का अर्थ</font></font></a></li>");
 document.write("        <li><a href='005.html'><font size=4><font color=darkPurple><b>005</b></font> - <font color=darkGreen>﻿द्रव्यों के नाम</font></font></a></li>");
