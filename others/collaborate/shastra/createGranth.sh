@@ -75,7 +75,7 @@ do
                 c="$(cat $curFile)"
                 c=$(echo "$c" | perl -pe 's/\n/<br>/g' | perl -pe 's/\[/<b><font color=darkRed>[/g' | perl -pe 's/\]/]<\/font><\/b>/g')
                 c=$(echo "$c" | perl -pe 's/\(/<span class=comment>(/g' | perl -pe 's/\)/)<\/span>/g'); 
-                echo "<div class=arth><b><font color=black>अन्वयार्थ : </font></b>$c</div><br>" >>  $myHtml
+                echo "<div class=arth><b><font color=black>अन्वयार्थ : </font></b>$c</div>" >>  $myHtml
             fi
             #        for teeka in $(ls -d $myInDir/teeka[0-9]* 2>/dev/null)
             #        do

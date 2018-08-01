@@ -3,12 +3,14 @@
 #export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
 export dbDir=$(cd ../../.. && echo $PWD)
 echo "DB Dir $dbDir"
+inDir=$dbDir/../jaindb-dev
 . $dbDir/others/collaborate/shastra/common.sh
-for group in $(ls -d $dbDir/jainDataBase/bhajans/*/)
+for group in $(ls -d $inDir/jainDataBase/bhajans/*/)
 do
     myCntr=1
     OIFS="$IFS"
     IFS=$'\n'
+    myGroup=$(basename $group);
     [ ! -d $group/main ] && continue
     for bhajan in $(ls $group/main/*)
     do
@@ -26,7 +28,7 @@ do
 
       echo "<br><div class=main>$(basename $bhajan | perl -pe 's/.txt//g')<br></div>" >> $myHtml
       audioFileName=$(basename $bhajan | perl -pe 's/\.txt/.mp3/g')
-      if [ -f $group/audio/$audioFileName ]; then
+      if [ -f $inDir/jainDataBase/bhajans/$myGroup/audio/$audioFileName ]; then
         cat <<EOF >> $myHtml
         <div align=center><audio controls>
             <source src="../audio/$audioFileName" type="audio/mpeg">
