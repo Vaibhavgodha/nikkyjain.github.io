@@ -2,11 +2,11 @@
 
 
 #export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
-export dbDir=$(cd ../../.. && echo $PWD)
-inDir=$dbDir/../jaindb-dev
+outDir=$(cd ../../.. && echo $PWD)
+export dbDir=$(cd ../../../../jaindb-dev && echo $PWD)
 echo "Input Dir $dbDir"
-. $inDir/others/collaborate/shastra/common.sh
-for group in $(ls -d $inDir/others/collaborate/poojas/*/)
+. $dbDir/others/collaborate/shastra/common.sh
+for group in $(ls -d $dbDir/others/collaborate/poojas/*/)
 do
     mygroup=$(basename $group)
     OIFS="$IFS"
@@ -14,8 +14,8 @@ do
     for pooja in $(ls -d $group/*/)
     do
       myPooja=$(basename $pooja)
-      myInDir=$inDir/others/collaborate/poojas/$mygroup/$myPooja
-      myOutDir=$dbDir/jainDataBase/poojas/$mygroup/$myPooja
+      myInDir=$dbDir/others/collaborate/poojas/$mygroup/$myPooja
+      myOutDir=$outDir/jainDataBase/poojas/$mygroup/$myPooja
       myHtml=$myOutDir/html/index.html
       echo $(dirname $myHtml)
       mkdir -p $(dirname $myHtml)

@@ -1,11 +1,11 @@
 #!/bin/sh
 
 #export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
-export dbDir=$(cd ../../.. && echo $PWD)
+outDir=$(cd ../../../ && echo $PWD)
+export dbDir=$(cd ../../../../jaindb-dev && echo $PWD)
 echo "DB Dir $dbDir"
-inDir=$dbDir/../jaindb-dev
-. $inDir/others/collaborate/shastra/common.sh
-for group in $(ls -d $inDir/jainDataBase/bhajans/*/)
+. $dbDir/others/collaborate/shastra/common.sh
+for group in $(ls -d $dbDir/jainDataBase/bhajans/*/)
 do
     myCntr=1
     OIFS="$IFS"
@@ -16,7 +16,7 @@ do
     do
       mkdir -p $group/html
       myBhajanName=bhajan-$myCntr
-      myHtml=$dbDir/jainDataBase/bhajans/$myGroup/html/${myBhajanName}.html
+      myHtml=$outDir/jainDataBase/bhajans/$myGroup/html/${myBhajanName}.html
       if [ "$headerCreated" = "" ]; then
         ## ---- Header -----
         createHeader '../../../../'
@@ -28,7 +28,7 @@ do
 
       echo "<br><div class=main>$(basename $bhajan | perl -pe 's/.txt//g')<br></div>" >> $myHtml
       audioFileName=$(basename $bhajan | perl -pe 's/\.txt/.mp3/g')
-      if [ -f $dbDir/jainDataBase/bhajans/$myGroup/audio/$audioFileName ]; then
+      if [ -f $outDir/jainDataBase/bhajans/$myGroup/audio/$audioFileName ]; then
         cat <<EOF >> $myHtml
         <div align=center><audio controls>
             <source src="../audio/$audioFileName" type="audio/mpeg">
