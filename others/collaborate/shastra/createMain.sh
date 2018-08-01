@@ -1,11 +1,12 @@
 #!/bin/sh
 
 #export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
-export dbDir=$(cd ../../.. && echo $PWD)
+outDir=$(cd ../../.. && echo $PWD)
+export dbDir=$(cd ../../../../jaindb-dev && echo $PWD)
 echo "DB Dir $dbDir"
 . $dbDir/others/collaborate/shastra/common.sh
-myHtml=$dbDir/index.html
-myJs=$dbDir/js/myMobile.js
+myHtml=$outDir/index.html
+myJs=$outDir/js/myMobile.js
 
 ## ---- Header -----
 createHeader './'
@@ -31,12 +32,12 @@ EOF
 OIFS="$IFS"
 IFS=$'\n'
 declare -a myAudioFIles=()
-for audio in $(find $dbDir/jainDataBase/bhajans/. -name '*.mp3')
+for audio in $(find $outDir/jainDataBase/bhajans/. -name '*.mp3')
 do
   myAudioFile=$(echo $audio | perl -pe 's|.*?jainData|.|')
   echo "myAudioFIles.push(relPath+'$myAudioFile');" >> $myJs
 done
-for audio in $(find $dbDir/jainDataBase/poojas/. -name '*.mp3')
+for audio in $(find $outDir/jainDataBase/poojas/. -name '*.mp3')
 do
   myAudioFile=$(echo $audio | perl -pe 's|.*?jainData|.|')
   echo "myAudioFIles.push(relPath+'$myAudioFile');" >> $myJs
