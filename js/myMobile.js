@@ -17,6 +17,7 @@ myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01_देव/audio/नेम
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01_देव/audio/पंचपरम परमेष्ठी.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01_देव/audio/बाहुबली भगवान.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01_देव/audio/भावना की चूनरी.mp3');
+myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01_देव/audio/मेरे मन मंदिर में आन.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01_देव/audio/मेरे सर पर रख दो.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01_देव/audio/रंगमा रंगमा.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01_देव/audio/रोम रोम पुलकित हो जाये.mp3');
@@ -25,6 +26,7 @@ myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01_देव/audio/वर्
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01_देव/audio/वीतरागी देव.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01_देव/audio/शौरीपुर वाले.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01_देव/audio/हम यही कामना करते हैं.mp3');
+myAudioFIles.push(relPath+'./jainDataBase/bhajans/./01_देव/audio/हे वीर तुम्हारे द्वारे पर.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./02_शास्त्र/audio/चरणों में आ पडा हूं.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./02_शास्त्र/audio/धन्य धन्य जिनवाणी माता.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./02_शास्त्र/audio/धन्य धन्य वीतराग वाणी.mp3');
@@ -79,7 +81,6 @@ myAudioFIles.push(relPath+'./jainDataBase/bhajans/./07_महामंत्र/
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./07_महामंत्र/audio/णमोकार मन्त्र को प्रणाम हो.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./07_महामंत्र/audio/मंत्र नवकार हमें प्राणों से प्यारा.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./07_महामंत्र/audio/समरो मन्त्र भलो नवकार.mp3');
-myAudioFIles.push(relPath+'./jainDataBase/bhajans/./08_अध्यात्म/audio/अपनी सुधि भूल आप.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./08_अध्यात्म/audio/अब गतियों में नाहीं रुलेंगे.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./08_अध्यात्म/audio/ओ जीवड़ा तू थारी.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./08_अध्यात्म/audio/कोई लाख करे चतुराई.mp3');
@@ -90,6 +91,8 @@ myAudioFIles.push(relPath+'./jainDataBase/bhajans/./08_अध्यात्म/
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./08_अध्यात्म/audio/वीर भज ले रे भाया.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./08_अध्यात्म/audio/सजधज के जिस दिन.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./08_अध्यात्म/audio/हम न किसीके कोई न हमारा.mp3');
+myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/अपनी सुधि भूल आप.mp3');
+myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/अरे जिया जग धोखे.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/आज मैं परम पदारथ.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/आतम रूप अनूपम अद्भुत.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/आपा नहिं जाना तूने.mp3');
@@ -105,8 +108,8 @@ myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतरा
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/प्रभुजी का सुमिरन.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/मेरे कब ह्वै वा.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/सुनो जिया ये सतगुरु.mp3');
-myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/हम तो कबहुँ न निज-गुन.mp3');
-myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/हम तो कबहुँ न निज-घर.mp3');
+myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/हम तो कबहुँ न निज गुन.mp3');
+myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/हम तो कबहुँ न निज घर.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/हे जिन तेरे मैं शरणै.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./09_पं-दौलतराम-कृत/audio/हे जिन मेरी ऐसी बुधि.mp3');
 myAudioFIles.push(relPath+'./jainDataBase/bhajans/./10_पं-भागचंद-कृत/audio/आतम अनुभव आवै.mp3');
