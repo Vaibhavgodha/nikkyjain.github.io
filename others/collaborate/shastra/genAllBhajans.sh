@@ -115,7 +115,8 @@ myGrCntr=1
 echo "  <div class=adhikaar id=home><h1>Index</h1></div><br>" >> $myHtml
 for group in $(ls -d $dbDir/jainDataBase/bhajans/*/)
 do
-    echo "  <div class=main>$(basename $group | perl -pe 's/.*_//g') भजन</div><br>" >> $myHtml
+    myGroup=$(basename $group | perl -pe 's/-/ /g' | perl -pe 's/.*_//g')
+    echo "  <div class=main>$myGroup भजन</div><br>" >> $myHtml
     echo "    <table align=center width=90%>" >>  $myHtml
     myCntr=1
     OIFS="$IFS"
@@ -137,7 +138,8 @@ echo "<br><br><br><br><br>" >> $myHtml
 myGrCntr=1
 for group in $(ls -d $dbDir/jainDataBase/bhajans/*/)
 do
-    echo "<br><br><div class=adhikaar><h1>$(basename $group | perl -pe 's/.*_//g') भजन</h1></div><br>" >>  $myHtml
+    myGroup=$(basename $group | perl -pe 's/-/ /g' | perl -pe 's/.*_//g')
+    echo "<br><br><div class=adhikaar><h1>$myGroup भजन</h1></div><br>" >>  $myHtml
     myCntr=1
     OIFS="$IFS"
     IFS=$'\n'

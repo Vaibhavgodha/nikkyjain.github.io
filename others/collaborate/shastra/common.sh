@@ -8,7 +8,7 @@ EOF
   for category in $(ls -d $dbDir/jainDataBase/bhajans/*/)
   do
       myCategory=$(basename $category)
-      myCategory=$(echo $myCategory | sed 's/.*_//')
+      myCategory=$(echo $myCategory | sed 's/-/ /g' | sed 's/.*_//')
       [ "$createSearch" = "" ] && cat <<EOF >> $myHtml
       <div data-role=collapsible data-inset=false data-theme=a>
         <h2>$myCategory</h2>
@@ -52,7 +52,7 @@ EOF
 for category in $(ls -d $dbDir/others/collaborate/poojas/*/)
 do
     myCategory=$(basename $category)
-    myCategory=$(echo $myCategory | sed 's/.*_//')
+    myCategory=$(echo $myCategory | sed 's/-/ /g' | sed 's/.*_//')
     [ "$createSearch" = "" ] && cat <<EOF >> $myHtml
       <div data-role=collapsible data-inset=false data-theme=a>
         <h2>$myCategory</h2>
@@ -99,7 +99,7 @@ EOF
 for category in $(ls -d $dbDir/others/collaborate/shastra/*/)
 do
     myCategory=$(basename $category)
-    myCategory=$(echo $myCategory | sed 's/.*_//')
+    myCategory=$(echo $myCategory | sed 's/-/ /g' | sed 's/.*_//')
     [ "$createSearch" = "" ] && cat <<EOF >> $myHtml
       <div data-role=collapsible data-inset=false data-theme=a>
         <h2>$myCategory</h2>
