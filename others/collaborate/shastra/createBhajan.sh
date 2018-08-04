@@ -12,6 +12,7 @@ do
     IFS=$'\n'
     myGroup=$(basename $group);
     [ ! -d $group/main ] && continue
+    mkdir -p $outDir/jainDataBase/bhajans/$myGroup/html
     for bhajan in $(ls $group/main/*)
     do
       if ! test -f $bhajan; then
