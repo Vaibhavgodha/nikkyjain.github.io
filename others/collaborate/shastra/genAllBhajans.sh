@@ -123,7 +123,7 @@ do
     IFS=$'\n'
     for bhajan in $(ls $group/main/*)
     do
-        myBhajanName=$(basename $bhajan | perl -pe 's/.txt//g')
+        myBhajanName=$(basename $bhajan | perl -pe 's/.txt//g' | perl -pe 's/-/ /g')
         myBjn=$(echo $myBhajanName | perl -pe 's/\s/_/g')
         echo "      <td><a href='#gr$myGrCntr-bh$myCntr'>$myCntr) $myBhajanName</a>" >> $myHtml
         [ $((myCntr%2)) -eq 0 ] && echo "      <tr>" >> $myHtml
@@ -146,7 +146,7 @@ do
     [ ! -d $group/main ] && continue
     for bhajan in $(ls $group/main/*)
     do
-      myBhajanName=$(basename $bhajan | perl -pe 's/.txt//g')
+      myBhajanName=$(basename $bhajan | perl -pe 's/.txt//g' | perl -pe 's/-/ /g')
       myBjn=$(echo $myBhajanName | perl -pe 's/\s/_/g')
       echo "<br><div class=main id='gr$myGrCntr-bh$myCntr'>$myBhajanName<a href='#home' class=index>&#x1f3e0;</a></div>" >> $myHtml
       c="$(cat $bhajan)"

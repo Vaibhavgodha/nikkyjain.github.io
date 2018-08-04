@@ -14,8 +14,11 @@ do
     [ ! -d $group/main ] && continue
     for bhajan in $(ls $group/main/*)
     do
+      if ! test -f $bhajan; then
+        continue
+      fi
       mkdir -p $group/html
-      myBhajanName=bhajan-$myCntr
+      myBhajanName=$(echo $(basename $bhajan) | perl -pe 's/.txt//g');
       myHtml=$outDir/jainDataBase/bhajans/$myGroup/html/${myBhajanName}.html
       if [ "$headerCreated" = "" ]; then
         ## ---- Header -----
@@ -26,7 +29,7 @@ do
       fi
 
 
-      echo "<br><div class=main>$(basename $bhajan | perl -pe 's/.txt//g')<br></div>" >> $myHtml
+      echo "<br><div class=main>$(echo $myBhajanName | perl -pe 's/-/ /g')<br></div>" >> $myHtml
       audioFileName=$(basename $bhajan | perl -pe 's/\.txt/.mp3/g')
       if [ -f $outDir/jainDataBase/bhajans/$myGroup/audio/$audioFileName ]; then
         cat <<EOF >> $myHtml

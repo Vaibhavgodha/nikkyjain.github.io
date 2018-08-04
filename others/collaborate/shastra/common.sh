@@ -20,8 +20,10 @@ EOF
       for item in $(ls $category/main/*)
       do
           myItem=$(basename $item)
-          myItem=$(echo $myItem | sed 's/.txt//');
-          echo "          <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/bhajans/$(basename $category)/html/bhajan-${myCntrL}.html>$myCntrL) $myItem</a></li>" >> $myHtml
+          myItem=$(echo $myItem | sed 's/.txt//' | perl -pe 's/-/ /g');
+          myCategory=$(basename $(dirname $(dirname $(readlink -f $item))))
+          myWebName=$(echo $myItem | perl -pe 's/ /-/g');
+          echo "          <li data-theme=b><a data-ajax=false href=${relPath}jainDataBase/bhajans/$myCategory/html/${myWebName}.html>$myCntrL) $myItem</a></li>" >> $myHtml
           myCntrL=$(($myCntrL+1))
   
       done
