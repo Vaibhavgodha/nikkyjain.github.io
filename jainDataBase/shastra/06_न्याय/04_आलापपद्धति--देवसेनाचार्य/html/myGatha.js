@@ -61,4 +61,15 @@ document.write("        <li><a href='062.html'><font size=4><font color=darkPurp
 document.write("        <li><a href='063.html'><font size=4><font color=darkPurple><b>063</b></font> - <font color=darkBlue>﻿अनित्‍य-अशुद्ध पर्यायार्थिकनय</font></font></a></li>");
 document.write("        <li><a href='064.html'><font size=4><font color=darkPurple><b>064</b></font> - <font color=darkGreen>﻿नैगमनय के प्रकार</font></font></a></li>");
 document.write("        <li><a href='065.html'><font size=4><font color=darkPurple><b>065</b></font> - <font color=darkBlue>﻿भूत नैगम-नय</font></font></a></li>");
+document.write("        <li><a href='066.html'><font size=4><font color=darkPurple><b>066</b></font> - <font color=darkGreen>﻿भावि नैगम-नय</font></font></a></li>");
+document.write("        <li><a href='067.html'><font size=4><font color=darkPurple><b>067</b></font> - <font color=darkBlue>﻿वर्तमान नैगम-नय</font></font></a></li>");
+document.write("        <li><a href='068.html'><font size=4><font color=darkPurple><b>068</b></font> - <font color=darkGreen>﻿संग्रह-नय के प्रकार</font></font></a></li>");
+document.write("        <li><a href='069.html'><font size=4><font color=darkPurple><b>069</b></font> - <font color=darkBlue>﻿सामान्‍य संग्रहनय</font></font></a></li>");
+document.write("        <li><a href='070.html'><font size=4><font color=darkPurple><b>070</b></font> - <font color=darkGreen>﻿विशेष संग्रहनय</font></font></a></li>");
+document.write("        <li><a href='071.html'><font size=4><font color=darkPurple><b>071</b></font> - <font color=darkBlue>﻿व्‍यवहारनय के प्रकार</font></font></a></li>");
+document.write("        <li><a href='072A.html'><font size=4><font color=darkPurple><b>072A</b></font> - <font color=darkGreen>﻿सामान्‍य व्‍यवहार-नय</font></font></a></li>");
+document.write("        <li><a href='072.html'><font size=4><font color=darkPurple><b>072</b></font> - <font color=darkBlue>﻿विशेष-संग्रहभेदक व्‍यवहारनय</font></font></a></li>");
+document.write("        <li><a href='073.html'><font size=4><font color=darkPurple><b>073</b></font> - <font color=darkGreen>﻿ऋजुसूत्रनय के प्रकार</font></font></a></li>");
+document.write("        <li><a href='074.html'><font size=4><font color=darkPurple><b>074</b></font> - <font color=darkBlue>﻿सूक्ष्‍म ऋजुसूत्रनय</font></font></a></li>");
+document.write("        <li><a href='075.html'><font size=4><font color=darkPurple><b>075</b></font> - <font color=darkGreen>﻿स्‍थूल ऋजुसूत्रनय</font></font></a></li>");
 document.write("</ul></div>");
