@@ -3,8 +3,11 @@
 #export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
 export dbDir=$(cd ../../.. && echo $PWD)
 echo "DB Dir $dbDir"
-myHtml=$dbDir/allBhajans.html
+myHtml=$dbDir/jainDataBase/genBooks/allBhajans.html
 #. $dbDir/others/collaborate/shastra/common.sh
+
+myRelPath=../../
+# Start creating It
 cat << EOF > $myHtml
 <!DOCTYPE html>
 <html>
@@ -13,8 +16,8 @@ cat << EOF > $myHtml
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JainBhajan</title>
   <link rel="icon" type="image/png" href="${myRelPath}images/default/jainFlag-short.jpg"/>
-  <!--link rel="stylesheet" href="${myRelPath}css/myJqueryMobile.css">
-  <link rel="stylesheet" href="${myRelPath}js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
+  <link rel="stylesheet" href="${myRelPath}css/myJqueryMobile.css">
+  <!--link rel="stylesheet" href="${myRelPath}js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
   <script type="text/javascript" src="${myRelPath}js/jquery.js"></script>
   <script type="text/javascript" src="${myRelPath}js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script-->
   <style>
@@ -44,48 +47,6 @@ cat << EOF > $myHtml
       background-color: #333;
       width:50%;
     }
-    div.adhikaar {
-        font-size: 60px;
-        color: saddlebrown;
-        text-align: center;
-        font-weight: bold;
-        margin: 0 auto;
-    }
-    h1 {
-        position: relative;
-        font-size: 50px;
-        z-index: 1;
-        overflow: hidden;
-        text-align: center;
-    }
-    h1:before, h1:after {
-        position: absolute;
-        top: 51%;
-        overflow: hidden;
-        width: 50%;
-        height: 1px;
-        content: '\a0';
-        background-color: red;
-    }
-    h1:before {
-        margin-left: -50%;
-        text-align: right;
-    }
-    .adhikaar {
-        background-color: #ccc;
-    }
-    div.main {
-        font-size: 50px;
-        color: maroon;
-        font-weight: bold;
-        text-align: center;
-    }
-    div.pooja {
-        font-size: 30px;
-        color: darkBlue;
-        text-align: center;
-        line-height: 140%;
-    }
     a, a:visited, a:hover, a:active {
       color: inherit;
     }
@@ -99,7 +60,7 @@ cat << EOF > $myHtml
   <script type="text/javascript" src="${myRelPath}js/myMobile.js"></script-->
 </head>
 <body>
-<div align=center><img src="images/jain-saint.jpg" height=240 width=270></img></div>
+<div align=center><img src="${myRelPath}images/jain-saint.jpg" height=240 width=270></img></div>
 <br><br><br>
 <div class=hdr align=center>जैन भजन</div>
 <br><br><br>
@@ -157,7 +118,8 @@ do
       myCntr=$(($myCntr+1))
     done
     IFS="$OIFS"
-    echo "Bhajan group $(basename $group) Done"
+    echo -ne "Done - Bhajan group $(basename $group)"\\r
     myGrCntr=$(($myGrCntr+1))
 done
 echo "</body></html>" >> $myHtml
+echo

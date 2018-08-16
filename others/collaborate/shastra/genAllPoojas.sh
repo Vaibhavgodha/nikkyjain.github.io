@@ -3,9 +3,12 @@
 #export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
 export dbDir=$(cd ../../.. && echo $PWD)
 echo "DB Dir $dbDir"
-myHtml=$dbDir/allPoojas.html
+myHtml=$dbDir/jainDataBase/genBooks/allPoojas.html
 myInDir=$dbDir/others/collaborate/poojas
 #. $dbDir/others/collaborate/shastra/common.sh
+
+myRelPath=../../
+# Start creating It
 cat << EOF > $myHtml
 <!DOCTYPE html>
 <html>
@@ -124,7 +127,7 @@ cat << EOF > $myHtml
   <script type="text/javascript" src="${myRelPath}js/myMobile.js"></script-->
 </head>
 <body>
-<div align=center><img src="images/jain-saint.jpg" height=240 width=270></img></div>
+<div align=center><img src="${myRelPath}images/jain-saint.jpg" height=240 width=270></img></div>
 <br><br><br>
 <div class=hdr align=center>जैन<br>पूजा-पाठ</div>
 <br><br><br>
@@ -204,8 +207,9 @@ do
       echo "<br><hr align=center><br>" >>  $myHtml
       myCntr=$(($myCntr+1))
     done
-    echo "Pooja group $(basename $group) Done"
+    echo -ne "Done - Pooja group $(basename $group)"\\r
     myGrCntr=$(($myGrCntr+1))
 done
 
 echo "</body></html>" >> $myHtml
+echo

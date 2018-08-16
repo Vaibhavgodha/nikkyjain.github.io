@@ -70,8 +70,8 @@
 068.txt
 069.txt
 070.txt
-071A.txt
 071.txt
+072A.txt
 072.txt
 073.txt
 074.txt

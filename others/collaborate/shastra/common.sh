@@ -196,6 +196,42 @@ cat << EOF >> $myHtml
             <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaa-yogsaar.pdf>योगसार--गाथा</a></li>
           </ul>
         </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Print Granth</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/समयसार.html>समयसार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/प्रवचनसार.html>प्रवचनसार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/पन्चास्तिकाय.html>पन्चास्तिकाय</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/श्रीअष्टपाहुड.html>श्रीअष्टपाहुड</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/योगसार-प्राभृत.html>योगसार-प्राभृत</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/योगसार.html>योगसार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/गोम्मटसार-जीवकांड.html>गोम्मटसार-जीवकांड</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/रत्नकरण्ड-श्रावकाचार.html>रत्नकरण्ड-श्रावकाचार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/आलापपद्धति.html>आलापपद्धति</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/समाधितन्त्र.html>समाधितन्त्र</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/द्रव्यसंग्रह.html>द्रव्यसंग्रह</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/तत्त्वार्थसूत्र.html>तत्त्वार्थसूत्र</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/इष्टोपदेश.html>इष्टोपदेश</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Print Granth With Teeka</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/समयसार.html>समयसार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/प्रवचनसार.html>प्रवचनसार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/पन्चास्तिकाय.html>पन्चास्तिकाय</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/श्रीअष्टपाहुड.html>श्रीअष्टपाहुड</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/योगसार-प्राभृत.html>योगसार-प्राभृत</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/योगसार.html>योगसार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/गोम्मटसार-जीवकांड.html>गोम्मटसार-जीवकांड</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/रत्नकरण्ड-श्रावकाचार.html>रत्नकरण्ड-श्रावकाचार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/आलापपद्धति.html>आलापपद्धति</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/समाधितन्त्र.html>समाधितन्त्र</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/द्रव्यसंग्रह.html>द्रव्यसंग्रह</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/तत्त्वार्थसूत्र.html>तत्त्वार्थसूत्र</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/इष्टोपदेश.html>इष्टोपदेश</a></li>
+          </ul>
+        </div>
     </div>
   </div>
 
