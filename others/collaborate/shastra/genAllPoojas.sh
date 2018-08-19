@@ -1,4 +1,4 @@
-﻿#!/bin/sh
+#!/bin/sh
 
 #export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
 export dbDir=$(cd ../../.. && echo $PWD)

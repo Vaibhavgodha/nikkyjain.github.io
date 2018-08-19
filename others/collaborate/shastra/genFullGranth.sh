@@ -9,7 +9,11 @@ export dbDir=$(cd ../../../../.. && echo $PWD)
 echo "DB Dir $dbDir"
 myHtmlName=$(basename $PWD | sed 's/.*_//' | sed 's/--.*//')
 myWriter=$(basename $PWD | sed 's/.*--//')
-myHtml=$dbDir/jainDataBase/genBooks/${myHtmlName}.html
+if [ "$1" = "-f" ]; then
+  myHtml=$dbDir/jainDataBase/genBooksWithTeeka/${myHtmlName}.html
+else
+  myHtml=$dbDir/jainDataBase/genBooks/${myHtmlName}.html
+fi
 echo "Creating $myHtml"
 
 myRelPath=../../
@@ -82,7 +86,7 @@ div.title {
   <script type="text/javascript" src="${myRelPath}js/myMobile.js"></script-->
 </head>
 <body>
-<div align=center><img src="${myRelPath}images/jain-saint.jpg" height=270 width=300></img></div>
+<div align=center><a href="${myRelPath}index.html"><img src="${myRelPath}images/jain-saint.jpg" height=270 width=300></img></a></div>
 <br><br><br>
 <div class=hdr align=center>$myHtmlName</div>
 <br><br><br>

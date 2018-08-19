@@ -17,9 +17,10 @@ while read oDir; do
         iDir=$(echo "$iDir" | tr -d '\r')
         cd $curDir/$oDir/$iDir
         echo $PWD
+        $curDir/createTeeka.sh
         $curDir/createHtml.sh
         $curDir/genFullGranth.sh
-        $curDir/genFullGranthWithTeeka.sh
+        $curDir/genFullGranth.sh -f
     done < "index.txt"
     cd $curDir
 done < "index.txt"

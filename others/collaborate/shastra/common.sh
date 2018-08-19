@@ -290,6 +290,11 @@ cat <<EOF > $myHtml
   <script type="text/javascript" src="${myRelPath}js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script>
   <script>
     relPath="$myRelPath";
+\$(document).on( "pagecontainershow", function(){
+  \$("#my_audio").on("error", function (e) {
+    \$("#myAudio").hide();
+  });
+})
   </script>
   <script type="text/javascript" src="${myRelPath}js/myMobile.js"></script>
 </head>

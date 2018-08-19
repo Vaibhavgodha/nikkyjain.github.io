@@ -31,15 +31,17 @@ do
 
 
       echo "<br><div class=main>$(echo $myBhajanName | perl -pe 's/-/ /g')<br></div>" >> $myHtml
-      audioFileName=$(basename $bhajan | perl -pe 's/\.txt/.mp3/g')
-      if [ -f $outDir/jainDataBase/bhajans/$myGroup/audio/$audioFileName ]; then
+      aFile=$(basename $bhajan | perl -pe 's/\.txt/.mp3/g')
+      audioFileName="https://nikkyjain.github.io/jainDataBase/bhajans/$myGroup/audio/$aFile"
+      #if wget --spider $audioFileName 2>/dev/null; then
+      #if [ -f $outDir/jainDataBase/bhajans/$myGroup/audio/$audioFileName ]; then
         cat <<EOF >> $myHtml
-        <div align=center><audio controls>
-            <source src="../audio/$audioFileName" type="audio/mpeg">
-            Your browser does not support the audio element.
+        <div align=center id=myAudio><audio controls>
+            <source src="../audio/$aFile" type="audio/mpeg">
+            <source id=my_audio src="$audioFileName"  type="audio/mpeg">
         </audio></div>
 EOF
-      fi
+      #fi
       c="$(cat $bhajan)"
       c=$(echo "$c" | perl -pe 's/\n/<br>/g')
       echo "<br>    <div class=pooja>$c" >>  $myHtml

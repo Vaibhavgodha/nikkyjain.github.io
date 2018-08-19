@@ -28,15 +28,15 @@ do
       fi
 
       echo "<div class=main>$(basename $pooja | perl -pe 's/.*_//g' | perl -pe 's/--.*//')</div>" >> $myHtml
-      audioFileName="${myPooja}.mp3"
-      if [ -f $myOutDir/audio/$audioFileName ]; then
+      audioFileName="https://nikkyjain.github.io/jainDataBase/poojas/$mygroup/$myPooja/audio/${myPooja}.mp3"
+      #if [ -f $myOutDir/audio/$audioFileName ]; then
         cat <<EOF >> $myHtml
-        <div align=center><audio controls>
-          <source src="../audio/$audioFileName" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio><span align=center>$audioFileName</span></div><br>
+        <div align=center id=myAudio><audio controls>
+          <source src="../audio/${myPooja}.mp3" type="audio/mpeg">
+          <source id=my_audio src="$audioFileName" type="audio/mpeg">
+        </audio></div>
 EOF
-      fi
+      #fi
       for cFile in $(ls $pooja/main/*)
       do
         curFile=$myInDir/main/$(basename $cFile)
