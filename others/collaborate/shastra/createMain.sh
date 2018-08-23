@@ -26,22 +26,14 @@ cat << EOF > $myJs
 
 var myAudioFIles = [];
 var quotes = [];
+$.getScript("${relPath}allAudioFiles.js", function() {
+});
 
 EOF
 
 OIFS="$IFS"
 IFS=$'\n'
 declare -a myAudioFIles=()
-for audio in $(find $outDir/jainDataBase/bhajans/. -name '*.mp3')
-do
-  myAudioFile=$(echo $audio | perl -pe 's|.*?jainData|.|')
-  echo "myAudioFIles.push(relPath+'$myAudioFile');" >> $myJs
-done
-for audio in $(find $outDir/jainDataBase/poojas/. -name '*.mp3')
-do
-  myAudioFile=$(echo $audio | perl -pe 's|.*?jainData|.|')
-  echo "myAudioFIles.push(relPath+'$myAudioFile');" >> $myJs
-done
 for quote in $(ls $dbDir/others/collaborate/quotes/*)
 do
     c="$(cat $quote)"

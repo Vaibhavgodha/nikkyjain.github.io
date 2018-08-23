@@ -13,7 +13,7 @@ do
     myGroup=$(basename $group);
     [ ! -d $group/main ] && continue
     mkdir -p $outDir/jainDataBase/bhajans/$myGroup/html
-    for bhajan in $(ls $group/main/*)
+    for bhajan in $(ls $group/main/* | sort)
     do
       if ! test -f $bhajan; then
         continue
