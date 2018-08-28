@@ -17,7 +17,7 @@ EOF
       OIFS="$IFS"
       IFS=$'\n'
       myCntrL=1;
-      for item in $(ls $category/main/*)
+      for item in $(ls $category/main/* | sort)
       do
           myItem=$(basename $item)
           myItem=$(echo $myItem | sed 's/.txt//' | perl -pe 's/-/ /g');
@@ -193,12 +193,20 @@ cat << EOF >> $myHtml
             <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaa-panchastikay.pdf>पंचास्तिकाय--गाथा</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/JeevSamas.pdf>JeevSamas</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/bookmark.pdf>Bookmark</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaa-yogsaar.pdf>योगसार--गाथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/समयसार.pdf>समयसार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/प्रवचनसार.pdf>प्रवचनसार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/पन्चास्तिकाय.pdf>पन्चास्तिकाय</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/श्रीअष्टपाहुड.pdf>श्रीअष्टपाहुड</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/द्रव्यसंग्रह.pdf>द्रव्यसंग्रह</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/तत्त्वार्थसूत्र.pdf>तत्त्वार्थसूत्र</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/इष्टोपदेश.pdf>इष्टोपदेश</a></li>
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>
           <h2>Print Granth</h2>
           <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/allBhajans.html>JainBhajans</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/allPoojas>JainPoojaPath</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/समयसार.html>समयसार</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/प्रवचनसार.html>प्रवचनसार</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/पन्चास्तिकाय.html>पन्चास्तिकाय</a></li>
@@ -293,6 +301,9 @@ cat <<EOF > $myHtml
 \$(document).on( "pagecontainershow", function(){
   \$("#my_audio").on("error", function (e) {
     \$("#myAudio").hide();
+  });
+  $.getScript("${relPath}js/allAudioFiles.js", function() {
+    console.log("Added Audio Files");
   });
 })
   </script>

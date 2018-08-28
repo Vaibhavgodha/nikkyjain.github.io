@@ -47,6 +47,11 @@ EOF
           cat $curFile >>  $myHtml 
           echo "</div>" >> $myHtml
         fi
+        curFile=$(basename $cFile | perl -pe 's/\.txt/.jpg/')
+        if [ -f $outDir/jainDataBase/poojas/$mygroup/$myPooja/images/$curFile ]; then
+          echo "<p align=center><img src=../images/$curFile></img><p>" >> $myHtml 
+
+        fi
         curFile=$myInDir/main/$(basename $cFile)
         echo "<div class=pooja>" >> $myHtml 
         c="$(cat $curFile)"

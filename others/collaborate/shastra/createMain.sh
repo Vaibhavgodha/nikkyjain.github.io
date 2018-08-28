@@ -26,8 +26,6 @@ cat << EOF > $myJs
 
 var myAudioFIles = [];
 var quotes = [];
-$.getScript("${relPath}allAudioFiles.js", function() {
-});
 
 EOF
 

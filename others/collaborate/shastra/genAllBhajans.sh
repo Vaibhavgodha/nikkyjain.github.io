@@ -82,7 +82,7 @@ do
     myCntr=1
     OIFS="$IFS"
     IFS=$'\n'
-    for bhajan in $(ls $group/main/*)
+    for bhajan in $(ls $group/main/* | sort)
     do
         myBhajanName=$(basename $bhajan | perl -pe 's/.txt//g' | perl -pe 's/-/ /g')
         myBjn=$(echo $myBhajanName | perl -pe 's/\s/_/g')
@@ -105,7 +105,7 @@ do
     OIFS="$IFS"
     IFS=$'\n'
     [ ! -d $group/main ] && continue
-    for bhajan in $(ls $group/main/*)
+    for bhajan in $(ls $group/main/* | sort)
     do
       myBhajanName=$(basename $bhajan | perl -pe 's/.txt//g' | perl -pe 's/-/ /g')
       myBjn=$(echo $myBhajanName | perl -pe 's/\s/_/g')
