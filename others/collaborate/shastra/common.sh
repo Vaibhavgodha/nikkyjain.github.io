@@ -206,7 +206,7 @@ cat << EOF >> $myHtml
           <h2>Print Granth</h2>
           <ul data-role=listview>
             <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/allBhajans.html>JainBhajans</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/allPoojas>JainPoojaPath</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/allPoojas.html>JainPoojaPath</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/समयसार.html>समयसार</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/प्रवचनसार.html>प्रवचनसार</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/पन्चास्तिकाय.html>पन्चास्तिकाय</a></li>

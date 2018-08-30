@@ -60,11 +60,6 @@ do
                     echo "</div>" >> $myHtml
                 fi
             fi
-            curFile=$(basename $cFile | perl -pe 's/\.txt/.jpg/')
-            if [ -f $outDir/images/$curFile ]; then
-              echo "<p align=center><img src=../images/$curFile></img><p>" >> $myHtml 
-
-            fi
             curFile=$myInDir/main/$(basename $cFile)
             echo "<div class=gatha>" >> $myHtml 
             cat $curFile | perl -pe 's/\n/<br>/g' >>  $myHtml

@@ -15,7 +15,7 @@ cat << EOF > $myHtml
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jainpooja</title>
+  <title>JainPooja</title>
   <link rel="icon" type="image/png" href="${myRelPath}images/default/jainFlag-short.jpg"/>
   <!--link rel="stylesheet" href="${myRelPath}css/myJqueryMobile.css">
   <link rel="stylesheet" href="${myRelPath}js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
@@ -32,6 +32,10 @@ cat << EOF > $myHtml
     td a {
       text-decoration: none !important;
     }
+    p img {
+      width: 40%;
+    }
+
     .hdr {
       font-size: 200px;
       color : darkred;
@@ -40,6 +44,7 @@ cat << EOF > $myHtml
     .index {
       color:blue;
       float:right;
+      font-size: 4vw;
     }
     hr {
       border: none;
@@ -92,9 +97,6 @@ cat << EOF > $myHtml
     }
     a, a:visited, a:hover, a:active {
       color: inherit;
-    }
-    .index {
-        font-size: 20px;
     }
     div.title {
         font-size: 15px;
@@ -185,7 +187,7 @@ do
         fi
         curFile=$(basename $cFile | perl -pe 's/\.txt/.jpg/')
         if [ -f $dbDir/jainDataBase/poojas/$mygroup/$myPooja/images/$curFile ]; then
-          echo "<p align=center><img src=../images/$curFile></img><p>" >> $myHtml 
+          echo "<p align=center><img src=../poojas/$mygroup/$myPooja/images/$curFile></img><p>" >> $myHtml 
 
         fi
         curFile=$myInDir/$mygroup/$myPooja/main/$(basename $cFile)

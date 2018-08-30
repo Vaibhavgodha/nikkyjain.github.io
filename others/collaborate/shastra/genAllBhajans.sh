@@ -39,6 +39,7 @@ cat << EOF > $myHtml
     .index {
       color:blue;
       float:right;
+      font-size: 4vw;
     }
     hr {
       border: none;
@@ -49,9 +50,6 @@ cat << EOF > $myHtml
     }
     a, a:visited, a:hover, a:active {
       color: inherit;
-    }
-    .index {
-        font-size: 20px;
     }
   </style>
   <!--script>
