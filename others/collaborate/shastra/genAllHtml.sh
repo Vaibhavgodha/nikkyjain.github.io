@@ -4,7 +4,7 @@ convert=
 [ "$1" = "-c" ] && convert="-c"
 launchDir=$PWD
 
-export dbDir=$(echo $PWD | perl -i -pe 's/(.*jaindb-dev).*/$1/g')
+export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
 curDir=$dbDir/others/collaborate/shastra
 # CD to 'shastra' directory
 cd $curDir

@@ -20,14 +20,11 @@ echo "pDir $pDir"
 echo "gDir $gDir"
 echo "ggDir $ggDir"
 
-outDir=$dbDir/jainDataBase/teeka/$gDir/$pDir
+outDir=$dbDir/jainDataBase/teeka/$gDir/$pDir/html
 /bin/rm -rf $outDir
 mkdir -p $outDir
 echo "Will Create HTML files here - $outDir"
 mkdir -p $outDir
-/bin/cp -f $dbDir/others/collaborate/$ggDir/$gDir/$pDir/index.txt $outDir/index.txt 
-/bin/cp -f $dbDir/others/collaborate/$ggDir/$gDir/index.txt $outDir/../index.txt 
-/bin/cp -f $dbDir/others/collaborate/$ggDir/index.txt $outDir/../../index.txt 
 outFile="$outDir/index.html"
 /bin/rm -f $outFile
 
@@ -131,7 +128,7 @@ while read cFile; do
             echo "</div>" >> $outFile
         fi
     fi
-    echo "Processed $cFile"
+    echo -ne "Processed $cFile"\\r
 done < "index.txt"
 
 # Add Footer

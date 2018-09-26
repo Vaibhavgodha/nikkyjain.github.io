@@ -316,8 +316,9 @@ cat <<EOF > $myHtml
         <ul id=myPanelUl>
             <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupBhajan'>भजन</a></li>
             <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupPooja'>पूजा-पाठ</a></li>
-            <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupTeeka'>Granth Only Gatha</a></li>
-            <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupShastra'>Granth Gaatha-With-Teeka</a></li>
+            <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupGatha'>Full Granth Only Gatha</a></li>
+            <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupTeeka'>Full Granth With Teeka</a></li>
+            <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupShastra'>Granth Gaatha-By-Gatha</a></li>
             <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupGames'>Play / Test</a></li>
             <li><a data-rel=popup data-icon=ui-icon-star data-transition=pop href='#popupMisc'>Misc</a></li>
         </ul>
@@ -359,6 +360,8 @@ EOF
 createBhajan $myRelPath
 ## ---- Pooja Div -----
 createPooja $myRelPath
+## ---- Granth Div -----
+createGranth $myRelPath 'gatha'
 ## ---- Granth Div -----
 createGranth $myRelPath 'teeka'
 ## ---- Shastra Div -----

@@ -54,7 +54,7 @@ cat << EOF > $myHtml
       width:50%;
     }
     div.adhikaar {
-        font-size: 60px;
+        font-size: 5vw;
         color: saddlebrown;
         text-align: center;
         font-weight: bold;
@@ -62,7 +62,7 @@ cat << EOF > $myHtml
     }
     h1 {
         position: relative;
-        font-size: 50px;
+        font-size: 5vw;
         z-index: 1;
         overflow: hidden;
         text-align: center;
@@ -84,13 +84,13 @@ cat << EOF > $myHtml
         background-color: #ccc;
     }
     div.main {
-        font-size: 50px;
+        font-size: 5vw;
         color: maroon;
         font-weight: bold;
         text-align: center;
     }
     div.pooja {
-        font-size: 30px;
+        font-size: 4vw;
         color: darkBlue;
         text-align: center;
         line-height: 140%;
@@ -99,24 +99,24 @@ cat << EOF > $myHtml
       color: inherit;
     }
     div.title {
-        font-size: 15px;
+        font-size: 2vw;
         font-weight: bold;
         text-align: center;
     }
     div.poojarth {
-        font-size: 20px;
+        font-size: 3vw;
         color: darkGreen;
         width: 90%;
         text-align: justify;
         margin: 0 auto;
     }
     span.gatharth {
-        font-size: 20px;
+        font-size: 3vw;
         color: darkBlue;
         font-weight: bold;
     }
     span.om {
-        font-size: 30px;
+        font-size: 3vw;
         color: maroon;
         width: 90%;
         text-align: center;
@@ -129,7 +129,7 @@ cat << EOF > $myHtml
   <script type="text/javascript" src="${myRelPath}js/myMobile.js"></script-->
 </head>
 <body>
-<div align=center><img src="${myRelPath}images/jain-saint.jpg" height=240 width=270></img></div>
+<div align=center><a href="${myRelPath}index.html"><img src="${myRelPath}images/jain-saint.jpg" height=240 width=270></img></a></div>
 <br><br><br>
 <div class=hdr align=center>जैन<br>पूजा-पाठ</div>
 <br><br><br>

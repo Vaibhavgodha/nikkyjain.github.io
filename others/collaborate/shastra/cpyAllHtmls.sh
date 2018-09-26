@@ -39,6 +39,11 @@ echo "Copy Done - shastra"
 cp -r $dbDir/teeka $outDir/teeka
 echo "Copy Done - teeka"
 
+# Copy Gatha
+/bin/rm -rf $outDir/gatha
+cp -r $dbDir/gatha $outDir/gatha
+echo "Copy Done - gatha"
+
 # Copy genBooks
 /bin/rm -rf $outDir/genBooks
 cp -r $dbDir/genBooks $outDir/genBooks

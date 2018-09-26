@@ -7,16 +7,24 @@ fi
 
 export dbDir=$(cd ../../../../.. && echo $PWD)
 echo "DB Dir $dbDir"
+parentDir=$(basename $(dirname $PWD) | sed -e 's/.*_//')
+pDir=$(basename $PWD)
+gDir=$(basename $(dirname $PWD))
+ggDir=$(basename $(dirname $(dirname $PWD)))
 myHtmlName=$(basename $PWD | sed 's/.*_//' | sed 's/--.*//')
 myWriter=$(basename $PWD | sed 's/.*--//')
 if [ "$1" = "-f" ]; then
+  mkdir -p $dbDir/jainDataBase/teeka/$gDir/$pDir/html
   myHtml=$dbDir/jainDataBase/genBooksWithTeeka/${myHtmlName}.html
+  myHtml=$dbDir/jainDataBase/teeka/$gDir/$pDir/html/index.html
 else
+  mkdir -p $dbDir/jainDataBase/gatha/$gDir/$pDir/html
   myHtml=$dbDir/jainDataBase/genBooks/${myHtmlName}.html
+  myHtml=$dbDir/jainDataBase/gatha/$gDir/$pDir/html/index.html
 fi
 echo "Creating $myHtml"
 
-myRelPath=../../
+myRelPath=../../../../../
 # Start creating It
 cat << EOF > $myHtml
 <!DOCTYPE html>
@@ -69,7 +77,7 @@ div.main {
 div.gadya {
     font-size: 3vw;
 }
-div.arth {
+div.teeka {
     font-size: 3vw;
 }
 .comment {
@@ -193,14 +201,15 @@ do
                gathaName=$(echo $bcFile | sed 's/\..*//')
                c=$(echo "$c" | perl -pe 's/प्रतिशंका [-–—]/<b><\/font><font color=darkgreen>उत्तर –<\/font><\/b>/g');
                c=$(echo "$c" | perl -pe 's/शंका [-–—]/<b><font color=red>शंका –/g'); 
-               c=$(echo "$c" | perl -pe 's/प्रश्न [-–—:]/<b><font color=red>प्रश्न –/g'); 
+               c=$(echo "$c" | perl -pe 's/प्रश्न [-–—]/<b><font color=red>प्रश्न –/g'); 
                c=$(echo "$c" | perl -pe 's/समाधान [-–—]/<\/font><font color=darkGreen>समाधान –<\/font><\/b>/g'); 
-               c=$(echo "$c" | perl -pe 's/उत्तर [-–—:]/<\/font><font color=darkGreen>उत्तर –<\/font><\/b>/g'); 
+               c=$(echo "$c" | perl -pe 's/उत्तर [-–—]/<\/font><font color=darkGreen>उत्तर –<\/font><\/b>/g'); 
                c=$(echo "$c" | perl -pe 's/अर्थ [-–—]/<b><font color=maroon>अर्थ –<\/font><\/b>/g'); 
                c=$(echo "$c" | perl -pe 's/विशेषार्थ [-–—]/<b><font color=maroon>विशेषार्थ –<\/font><\/b>/g'); 
                c=$(echo "$c" | perl -pe 's/भावार्थ [-–—]/<b><font color=maroon>भावार्थ –<\/font><\/b>/g'); 
-               c=$(echo "$c" | perl -pe 's/\[\[/<b><font color=maroon>/g' | perl -pe 's/\]\]/<\/font><\/b>/g'); 
-               c=$(echo "$c" | perl -pe 's/\[/<b><font color=maroon>/g' | perl -pe 's/\]/<\/b><\/font>/g'); 
+               c=$(echo "$c" | perl -pe 's/\(\(/<b><div align=center>/g' | perl -pe 's/\)\)/<\/div><\/b>/g'); 
+               c=$(echo "$c" | perl -pe 's/\[\[/<b><font color=blue>/g' | perl -pe 's/\]\]/<\/font><\/b>/g'); 
+               c=$(echo "$c" | perl -pe 's/\[/<b><font color=blue>/g' | perl -pe 's/\]/<\/b><\/font>/g'); 
                c=$(echo "$c" | perl -pe 's:\n:</p><p>:g' | perl -pe 's/\[/<b>[/g' | perl -pe 's/\]/]<\/b>/g'); 
                c=$(echo "<p>$c</p>" | perl -pe 's/<p>.*\(\(.*\)\)//g' | perl -pe 's/\;\;/<br>/g'); 
                c=$(echo "$c" | perl -pe 's/\(/<font color=DarkSlateGray>(/g' | perl -pe 's/\)/)<\/font>/g'); 
@@ -210,7 +219,7 @@ do
                c=$(echo "$c" | perl -pe 's:</span></p>:</span>:g'); 
                c=$(echo "$c" | perl -pe 's/<br><br>/<br>/g'); 
                c=$(echo "$c" | perl -pe 's:<br>$::g'); 
-               echo "<br><div class=arth><b><font color=darkgreen>$teekakaar :</font></b> $c</div>" >> $myHtml
+               echo "<br><div class=teeka><b><font color=darkgreen>$teekakaar :</font></b> $c</div>" >> $myHtml
                teekaCntr=$(($teekaCntr+1))
            fi
        done

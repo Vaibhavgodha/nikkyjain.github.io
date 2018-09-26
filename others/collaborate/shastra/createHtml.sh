@@ -17,7 +17,7 @@ totalIndexLines=$(cat index.txt | wc -l)
 globalCntr=0
 jsFile="myGatha.js"
 jsDone=0
-export dbDir=$(echo $PWD | perl -i -pe 's/(.*jaindb-dev).*/$1/g')
+export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
 echo "DB Dir $dbDir"
 echo "pDir $pDir"
 echo "gDir $gDir"
@@ -131,7 +131,7 @@ EOF
   curFile=main/$cFile
   if [ -f "$curFile" ]; then
     c="$(cat $curFile)"
-    c=$(echo "$c" | perl -i -pe 's/\n/<br>/g'); 
+    c=$(echo "$c" | perl -pe 's/\n/<br>/g'); 
     cat <<EOF >> $outFile
     <h3 class=mainTitle align=center><font color=maroon> $c </font></h3>
 EOF
@@ -146,8 +146,8 @@ EOF
 	  #dos2unix $arthFile
       c="$(cat $arthFile)"
 	  #unix2dos $arthFile
-      c=$(echo "$c" | perl -i -pe 's/\n/<br>/g' | perl -i -pe 's/\[/<b>[/g' | perl -i -pe 's/\]/]<\/b>/g')
-	  c=$(echo "$c" | perl -i -pe 's/(\()/$1<font color=DarkSlateGray>/g' | perl -i -pe 's/(\))/<\/font>$1/g'); 
+      c=$(echo "$c" | perl -pe 's/\n/<br>/g' | perl -pe 's/\[/<b>[/g' | perl -pe 's/\]/]<\/b>/g')
+	  c=$(echo "$c" | perl -pe 's/(\()/$1<font color=DarkSlateGray>/g' | perl -pe 's/(\))/<\/font>$1/g'); 
       echo "      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>$c</div>" >> $outFile
     fi
       cat <<EOF >> $outFile
@@ -157,8 +157,8 @@ EOF
       for teeka in $(ls -d teeka[0-9]*)
       do
         bottomFile=$teeka/$cFile
-        bottomFileS=$(echo $teeka/$cFile | perl -i -pe 's/\..*//g')
-        teekakaar=$(echo $teeka | perl -pe 's/.*?-//' | perl -i -pe 's/_/-/g')
+        bottomFileS=$(echo $teeka/$cFile | perl -pe 's/\..*//g')
+        teekakaar=$(echo $teeka | perl -pe 's/.*?-//' | perl -pe 's/_/-/g')
 		    if ls $bottomFileS* 1> /dev/null 2>&1; then
           gathaName=$(echo $cFile | sed 's/\..*//')
           echo "    <span id=teeka$teekaCntr class=gatha$gathaName style=\"color: darkGreen;\">&nbsp;&nbsp;$teekakaar</span>" >> $outFile
@@ -184,15 +184,15 @@ EOF
       for teeka in $(ls -d teeka[0-9]*)
       do
         bottomFile=$teeka/$cFile
-        bottomFileS=$(echo $teeka/$cFile | perl -i -pe 's/\..*//g')
-        teekakaar=$(echo $teeka | perl -pe 's/.*?-//' | perl -i -pe 's/_/ /g')
+        bottomFileS=$(echo $teeka/$cFile | perl -pe 's/\..*//g')
+        teekakaar=$(echo $teeka | perl -pe 's/.*?-//' | perl -pe 's/_/ /g')
         teekaNum=$(echo $teeka | perl -pe 's/teeka(.*)/$1/')
-        teekaSNum=$(echo teekaS$teekaNum/$cFile | perl -i -pe 's/\..*//g')
+        teekaSNum=$(echo teekaS$teekaNum/$cFile | perl -pe 's/\..*//g')
 		#echo "HaHa $teekaSNum"
 		if ls $teekaSNum* 1> /dev/null 2>&1; then
 		  st="<span class=sanskritTeeka justify=right>संस्कृत टीका</span>"
 		  s="<span id=sanskritTeeka justify=left><font color=datkMaroon><br><br>$(cat $teekaSNum*)</font></span>"
-          s=$(echo "$s" | perl -i -pe 's/\n/<br>/g'); 
+          s=$(echo "$s" | perl -pe 's/\n/<br>/g'); 
 		else
 		  s=""
 		  st=""
@@ -200,23 +200,23 @@ EOF
 		if ls $bottomFileS* 1> /dev/null 2>&1; then
           c="$(cat $bottomFileS*)"
           gathaName=$(echo $cFile | sed 's/\..*//')
-          c=$(echo "$c" | perl -i -pe 's/शंका [-–—]/<b><font color=red>शंका –/g'); 
-          c=$(echo "$c" | perl -i -pe 's/प्रश्न [-–—:]/<b><font color=red>प्रश्न –/g'); 
-          c=$(echo "$c" | perl -i -pe 's/समाधान [-–—]/<\/font><font color=darkGreen>समाधान –<\/font><\/b>/g'); 
-          c=$(echo "$c" | perl -i -pe 's/उत्तर [-–—:]/<\/font><font color=darkGreen>उत्तर –<\/font><\/b>/g'); 
-          c=$(echo "$c" | perl -i -pe 's/अर्थ [-–—]/<b><font color=maroon>अर्थ –<\/font><\/b>/g'); 
-          c=$(echo "$c" | perl -i -pe 's/विशेषार्थ [-–—]/<b><font color=maroon>विशेषार्थ –<\/font><\/b>/g'); 
-          c=$(echo "$c" | perl -i -pe 's/भावार्थ [-–—]/<b><font color=maroon>भावार्थ –<\/font><\/b>/g'); 
-          c=$(echo "$c" | perl -i -pe 's/\[\[/<b>/g' | perl -i -pe 's/\]\]/<\/b>/g'); 
-          c=$(echo "$c" | perl -i -pe 's:\n:</p><br><p>:g' | perl -i -pe 's/\[/<b>[/g' | perl -i -pe 's/\]/]<\/b>/g'); 
-          c=$(echo "<p>$c</p>" | perl -i -pe 's/<p>.*\(\(/<div class=teekaPadya align=center>/g' | perl -i -pe 's/\)\)/<\/div><br><p>/g' | perl -i -pe 's/\;\;/<br>/g'); 
-	      c=$(echo "$c" | perl -i -pe 's/(\()/$1<font color=DarkSlateGray>/g' | perl -i -pe 's/(\))/<\/font>$1/g'); 
-          c=$(echo "$c" | perl -i -pe 's/<p>\s*<\/p>//g'); 
-          c=$(echo "$c" | perl -i -pe 's:<p><span:<span:g'); 
-          c=$(echo "$c" | perl -i -pe 's:<\/p><br><p><sup:<br><sup:g'); 
-          c=$(echo "$c" | perl -i -pe 's:</span></p>:</span>:g'); 
-          c=$(echo "$c" | perl -i -pe 's/<br><br>/<br>/g'); 
-          c=$(echo "$c" | perl -i -pe 's:<br>$::g'); 
+          c=$(echo "$c" | perl -pe 's/शंका [-–—]/<b><font color=red>शंका –/g'); 
+          c=$(echo "$c" | perl -pe 's/प्रश्न [-–—:]/<b><font color=red>प्रश्न –/g'); 
+          c=$(echo "$c" | perl -pe 's/समाधान [-–—]/<\/font><font color=darkGreen>समाधान –<\/font><\/b>/g'); 
+          c=$(echo "$c" | perl -pe 's/उत्तर [-–—:]/<\/font><font color=darkGreen>उत्तर –<\/font><\/b>/g'); 
+          c=$(echo "$c" | perl -pe 's/अर्थ [-–—]/<b><font color=maroon>अर्थ –<\/font><\/b>/g'); 
+          c=$(echo "$c" | perl -pe 's/विशेषार्थ [-–—]/<b><font color=maroon>विशेषार्थ –<\/font><\/b>/g'); 
+          c=$(echo "$c" | perl -pe 's/भावार्थ [-–—]/<b><font color=maroon>भावार्थ –<\/font><\/b>/g'); 
+          c=$(echo "$c" | perl -pe 's/\[\[/<b>/g' | perl -pe 's/\]\]/<\/b>/g'); 
+          c=$(echo "$c" | perl -pe 's:\n:</p><br><p>:g' | perl -pe 's/\[/<b>[/g' | perl -pe 's/\]/]<\/b>/g'); 
+          c=$(echo "<p>$c</p>" | perl -pe 's/<p>.*\(\(/<div class=teekaPadya align=center>/g' | perl -pe 's/\)\)/<\/div><br><p>/g' | perl -pe 's/\;\;/<br>/g'); 
+	      c=$(echo "$c" | perl -pe 's/(\()/$1<font color=DarkSlateGray>/g' | perl -pe 's/(\))/<\/font>$1/g'); 
+          c=$(echo "$c" | perl -pe 's/<p>\s*<\/p>//g'); 
+          c=$(echo "$c" | perl -pe 's:<p><span:<span:g'); 
+          c=$(echo "$c" | perl -pe 's:<\/p><br><p><sup:<br><sup:g'); 
+          c=$(echo "$c" | perl -pe 's:</span></p>:</span>:g'); 
+          c=$(echo "$c" | perl -pe 's/<br><br>/<br>/g'); 
+          c=$(echo "$c" | perl -pe 's:<br>$::g'); 
           echo "    <td id=gatha$gathaName-teeka$teekaCntr><b><font color=darkGreen>$teekakaar $st$s</font></b><br><br><font color=darkBlue>$c</font></td>" >> $outFile
           teekaCntr=$(($teekaCntr+1))
         fi
