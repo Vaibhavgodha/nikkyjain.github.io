@@ -1,178 +1,307 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>न्याय</title>
-<link rel="icon" type="image/png" href="../../../../images/default/jainFlag-short.jpg"/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Language" content="hi" />
-<link type="text/css" rel="stylesheet" href="../../../../css/shastra.css" />
-<script type="text/javascript" src="../../../../js/jquery.js"></script>
-<script type="text/javascript" src="../../../../js/teeka.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>परीक्षामुख</title>
+  <link rel="icon" type="image/png" href="../../../../../images/default/jainFlag-short.jpg"/>
+  <link rel="stylesheet" href="../../../../../css/myJqueryMobile.css">
+  <!--link rel="stylesheet" href="../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
+  <script type="text/javascript" src="../../../../../js/jquery.js"></script>
+  <script type="text/javascript" src="../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script-->
+  <style>
+    body {
+      background-color: #fcf5e8;
+    }
+    th {
+      text-align: center; 
+      vertical-align: middle;
+      font-size: 2vw;
+    }
+    td {
+      text-align: center; 
+      vertical-align: middle;
+      font-size: 2vw;
+      color : darkblue;
+    }
+    table.mainIndex td {
+      text-align: left; 
+    }
+    a {
+      text-decoration: none !important;
+    }
+    .hdr {
+      font-size: 14vw;
+      color : darkred;
+      font-weight:bold;
+    }
+    .index {
+      color:blue;
+      float:right;
+    }
+    hr {
+      border: none;
+      height: 3px;
+      color: #333;
+      background-color: #333;
+      width:50%;
+    }
+    a, a:visited, a:hover, a:active {
+      color: inherit;
+    }
+    .index {
+        font-size: 20px;
+    }
+div.main {
+    font-size: 5vw;
+}
+div.gadya {
+    font-size: 3vw;
+}
+div.teeka {
+    font-size: 3vw;
+}
+.comment {
+    font-size: 3vw;
+}
+div.title {
+    font-size: 2vw;
+    color: DarkGreen;
+}
+  </style>
+  <!--script>
+    relPath="../../../../../";
+  </script>
+  <script type="text/javascript" src="../../../../../js/myMobile.js"></script-->
 </head>
 <body>
-<script src="../../../../js/myRockingRolling.js" type="text/javascript"></script>
-<script>
-  $('.myMenu').html("<a href='#'><button class='hideShowTeeka' onclick='hideShowTeeka()'>Hide Teeka</button></a>"+
-  "<a href='#'><button class='hideShowArth' onclick='hideShowArth()'>Hide Arth</button></a>"+
-  "<a href='#'><button class='hideShowTitle' onclick='hideShowTitle()'>Hide Title</button></a>"+
-  "<a href='#'><button class='hideShowPadhya' onclick='hideShowPadhya()'>Hide Padhya</button></a>");
-</script>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-<h3 class=mainTitle align=center><font color=maroon> ﻿<font color=black>!!<font color=purple> श्रीसर्वज्ञवीतरागाय नम: </font>!!</font><br><br>स्वामी‌-श्री-अकलंकाचार्य-देव-विरचित<br><br>श्री<br><font style="font-size:120px"> लघीयस्त्रय </font><br><br><br><span class=bottomContainer align=justify><font color=black>मूल संस्कृत गाथा, अभयचन्द्र-सूरि कृत टीका सहित</font></span><br> </font></h3>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-<h3 class=mainTitle align=center><font color=maroon> ﻿<font color=black>!!<font color=purple> नम: श्रीसर्वज्ञवीतरागाय </font>!!</font><br><br>ओंकारं बिन्दुसंयुक्तं नित्यं ध्यायन्ति योगिनः <br>कामदं मोक्षदं चैव ॐकाराय नमो नम: ॥१॥<br><br>अविरलशब्दघनौघप्रक्षालितसकलभूतलकलंका <br>मुनिभिरूपासिततीर्था सरस्वती हरतु नो दुरितान् ॥२॥<br><br>अज्ञानतिमिरान्धानां ज्ञानाञ्जनशलाकया <br>चक्षुरुन्मीलितं येन तस्मै श्रीगुरवे नम: ॥३॥<br><br><font color=black>॥ श्रीपरमगुरुवे नम:, परम्पराचार्यगुरुवे नम: ॥</font><br><br><span class=gatharth><p align=justify><font color=darkblue>सकलकलुषविध्वंसकं, श्रेयसां परिवर्धकं, धर्मसम्बन्धकं, भव्यजीवमन: प्रतिबिधकारकं, पुण्यप्रकाशकं, पापप्रणाशकमिदं शास्त्रं श्रीलघीयस्त्रय नामधेयं, अस्य मूलाग्रन्थकर्तार: श्रीसर्वज्ञदेवास्तदुत्तरग्रन्थकर्तार: श्रीगणधरदेवा: प्रतिगणधरदेवास्तेषां वचनानुसारमासाद्य आचार्य श्रीअकलंकाचार्यदेव विरचितं, श्रोतार: सावधानतया शृणवन्तु ॥ </font></p></span><br><br><font color=darkGreen>मंगलं भगवान् वीरो मंगलं गौतमो गणी<br>मंगलं कुन्दकुन्दार्यो जैनधर्मोsस्तु मंगलम्‌ ॥<br>सर्वमंगलमांगल्यं सर्वकल्याणकारकं <br>प्रधानं सर्वधर्माणां जैनं जयतु शासनम्‌ ॥</font><br> </font></h3>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿प्रमाण का लक्षण</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿स्वापूर्वार्थव्यवसायात्मकं ज्ञानं प्रमाणम् ॥१॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt3 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿स्व अर्थात् अपने आपको और 'अपूर्वार्थ' अर्थात् जिसे किसी अन्य प्रमाण से जाना नहीं है, ऐसे पदार्थ का निश्चय करनेवाले ज्ञान को प्रमाण कहते हैं ।<br></div>
-<br><div class='teeka' align=justify><b><font color=darkgreen>डा-योगेशचंद्र :</font></b> <font color=darkblue><p>﻿यहाँ प्रमाण के लक्षण में पाँच विशेषण देकर लक्षण के तीन दोषों से रहित अन्यमतों के लक्षण का निरसन करते हुए प्रमाण का सामान्य स्वरूप प्रस्तुत किया है । प्रमाण के पाँच विशेषणों का सकारण वैशिष्ट्य प्रस्तुत है ।</p><br><p>प्रमाण का मूल आधार तो ज्ञान ही है; अत: प्रमाण के साथ ज्ञान को रखा है । ज्ञान का प्रयत्न कैसा हो ? यह बतलाने के लिए ज्ञान के पहले 'व्यवसायात्मकं' पद रखा है । ज्ञान के प्रयत्न का विषय कहीं कल्पनालोक न बन सके, वस्तु-जगत रहे, इसके लिए व्यवसाय के पूर्व 'अर्थ' पद दिया है । ज्ञान का विषय वस्तु-जगत होने पर भी कहीं उसमें <sup>*</sup>पिष्टपेषण न होता रहे, अतः इस दोष से बचने के लिए 'अपूर्व' शब्द रखा है । बाह्य वस्तु-जगत की खोज में स्वयं ही न खो जावे । बाह्य जानकारी के मोह में कहीं स्वयं से ही अजान न रह जावे । 'स्व' भी एक वस्तु है । अत: सर्वप्रथम उसका भी ज्ञान होना आवश्यक है, इसीलिए सूत्र के आदि में ही 'स्व' पद रखा है । जैनदर्शन में इस पद का अत्यधिक महत्त्व है । इसके ज्ञान बिना उत्पन्न हुआ ज्ञान 'प्रमाण' की कोटि में ही नहीं है । अत: 'स्व' शब्द सूत्र का सिरमौर है ।</p><br><p>इस तरह सूत्र का प्रत्येक शब्द सार्थक व परमत का खण्डन करने में सक्षम है । इसमें ज्ञान पद तो नैयायिकों के सन्निकर्ष व वैशेषिकों के कारक-साकल्यवाद का खण्डन करता है । 'व्यवसायात्मक' बौद्धों के निर्विकल्पवाद का तथा 'अर्थ' पद विज्ञानाद्वैतवाद चित्राद्वैतवाद का 'अपूर्व' पद धारावाहिक ज्ञान का तथा 'स्वङ्क पद से ज्ञान को सर्वथा परोक्ष मानने वाले मीमांसक तथा अन्य ज्ञान से उसे ग्राहक माननेवाले नैयायिकों के कारकसाकल्य व वैशेषिकों के सन्निकर्षवाद का खण्डन करके प्रत्येक पद स्वत: सक्षम सिद्ध होता है ।</p><br><p>अब क्रमागत विशेषणों का विवेचन सूत्रकार विस्तार से दे रहे हैं ।</p><br><span class=shortFont><sup>*</sup>पीसी हुई वस्तु को फिर से पीसना, किसी कार्य की पुनरावृत्ति करना</span></font></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿प्रमाण-लक्षण में ज्ञान विशेषण की सार्थकता</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿हिताहितप्राप्तिपरिहारसमर्थं हि प्रमाणं ततो ज्ञानमेव तत् ॥२॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt4 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿जो हित की प्राप्ति और अहित का परिहार कराने में समर्थ है वही प्रमाण है और वह ज्ञान ही हो सकता है ।<br></div>
-<br><div class='teeka' align=justify><b><font color=darkgreen>डा-योगेशचंद्र :</font></b> <font color=darkblue><p>﻿सुख और सुख के साधनों को हित कहते हैं, दुख और दुख के साधनों को अहित कहते हैं । सूत्र में 'प्राप्ति' का अर्थ अर्थप्रापक नहीं, अपितु पदार्थ के गुण-दोषों को प्रदर्शित करना ही ज्ञान की प्रापकता है, क्योंकि पदार्थ में प्रवृत्त होनेरूप चारित्र तो ज्ञान के आधीन नहीं, वह तो पुरुष की इच्छा (<font color=DarkSlateGray>आत्मा के चारित्र</font>) व योग्यता के आधीन है, जैसे दीपक अर्थप्रकाशक है, परन्तु अर्थ-प्रापक नहीं । यदि ज्ञान पदार्थों में प्रवृत्ति या निवृत्ति कराता होता तो जगत् में विषभक्षण या पंचपापों में प्रवृत्ति आदि होती ही नहीं; क्योंकि इनसे हानि का ज्ञान तो जगप्रसिद्ध है । अत: अर्थक्रिया में समर्थ ऐसे पदार्थ को बतलाना ही प्रमाण की हित प्रापकता है । अहित-परिहार भी अनिष्टकारी पदार्थ को दिखा देना ही है । इसतरह पदार्थ का जैसा का तैसा प्रकाशित होना जिसके द्वारा होवे वह प्रमाण है और वह ज्ञानरूप ही है । अज्ञानरूप सन्निकर्ष आदि इसप्रकार के प्राप्ति-परिहार कराने में समर्थ नहीं हैं, यदि वे ऐसे होते तो जगत में ज्ञान की कल्पना ही नहीं होती ।</p></font></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿प्रमाण का निश्चायकपना</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿तन्निश्चयात्मकं समारोपविरुद्धत्वादनुमानवत् ॥३॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt5 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿वह प्रमाण पदार्थ का निश्चयात्मक है, समारोप (<font color=DarkSlateGray>संशय, विपर्यय, अनध्यवसाय</font>) का विरोधी होने से, अनुामान की तरह ।<br></div>
-<br><div class='teeka' align=justify><b><font color=darkgreen>डा-योगेशचंद्र :</font></b> <font color=darkblue><p>﻿प्रमाण के लक्षण में 'व्यवसायात्मक' विशेषण बौद्धों की निर्विकल्प मान्यता के खण्डन के लिए दिया है । ज्ञान का व्यवसायात्मक अर्थात् निश्चयपना तो विपरीत ज्ञान में भी होता है; परन्तु वह साध्य अर्थ का निश्चायक नहीं होता है, अत: वह समारोप का विरोधी नहीं है । इसी कारण प्रस्तुत सूत्र में निश्चयात्मक के साथ 'समारोपविरुद्धत्वात्' शब्द डाला है । जिसका अर्थ है कि वह निश्चायक इस कारण है, क्योंकि उसका मिथ्या-ज्ञानरूप संशय, विपर्यय व अनध्यवसाय से सहावस्थान लक्षणरूप विरोध है । जहाँ वस्तु का यथार्थ निश्चय हो, वहाँ संशय, विपर्यय और अनध्यवसायरूप समारोप का रहना ही सम्भव नहीं है । जैसे कि बौद्ध 'अनुमान' प्रमाण को समारोप का विरोधी होने से निश्चयात्मक प्रमाण मानते हैं, उसी तरह प्रमाण भी समारोप का विरोधी होने से निश्चयात्मक है ।</p></font></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿अपूर्वार्थ का लक्षण</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿अनिश्चितोऽपूर्वार्थ: ॥४॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt6 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿जिस पदार्थ का पहले किसी प्रमाण से निश्चय न किया गया हो, वह अपूर्वार्थ कहलाता है ।<br></div>
-<br><div class='teeka' align=justify><b><font color=darkgreen>डा-योगेशचंद्र :</font></b> <font color=darkblue><p>﻿सूत्र में 'प्रतीत्यन्तर-अव्यवधान' से अभिप्राय तुल्य जातीय की अपेक्षा से व्यवधान का निषेध करने के लिए है, देश-काल आदि की अपेक्षा से नहीं । जैसे ऊपर-ऊपर पटल देश (<font color=DarkSlateGray>क्षेत्र</font>) के व्यवधान से तो स्थित हैं, किन्तु तुल्य जातीय (<font color=DarkSlateGray>बीच में अन्य किसी रचना का होना</font>) अन्य पटलों की अपेक्षा से अन्तरित नहीं हैं । इसी तरह जिस ज्ञान में अन्य तुल्यजातीय ज्ञान का व्यवधान नहीं है ङ्घ ऐसे दूसरे ज्ञान की सहायता बिना जिसमें विशेषाकार का प्रतिभास हो रहा है, वह ज्ञान विशद है । यहाँ पर यदि शंका की जावे कि परोक्षभूत स्मृति, प्रत्यभिज्ञान आदि में भी स्वरूपसंवेदन से प्रत्यक्ष का लक्षण जाने से अतिव्याप्ति दोष है । उनका समाधान यह है कि यद्यपि ज्ञानावरण के क्षयोपशम से होनेवाले इन क्षायोपशमिक ज्ञानों का जो स्वरूपसंवेदन है, वह मन की प्रधानता से उत्पन्न होने के कारण यद्यपि मानस प्रत्यक्ष कहा जावेगा; परन्तु इन ज्ञानों में जो प्रत्यक्ष-परोक्ष का भेद स्वीकृत है, वह बाह्य-पदार्थों को ग्रहण की अपेक्षा से है । अपने स्वरूप को ग्रहण करने में अर्थात् अपने आपको जानने में किसी ज्ञान का व्यवधान अर्थात् आवश्यकता नहीं होती, अत: सदैव प्रत्यक्ष ही है ।</p><br><p>स्मृति आदिक ज्ञानों में अपने आपको जानने के लिए अन्य प्रमाणों का व्यवधान नहीं पडता है । अत: वे स्व-ग्रहण की अपेक्षा प्रत्यक्ष नाम पाते हैं, जैसे सुखादिक का ज्ञान मानस प्रत्यक्ष कहा जाता है, वैसे ही स्मृति आदिक ज्ञान अपने आपको संवेदन करने में अन्य का व्यवधान नहीं रखते, अत: सभी मानस प्रत्यक्ष हैं; किन्तु जब वे स्मृति आदिक ज्ञान बाहरी पदार्थ को ग्रहण करने में प्रवृत्त होते हैं, तब उन्हें परोक्ष कहते हैं, क्योंकि उनमें तब प्रमाणान्तर का व्यवधान पाया जाता है । प्रत्यक्षनाम से स्वीकृत हुआ प्रमाण स्व और अन्य घट-पट आदि पदार्थों को प्रमाणान्तर के व्यवधान हुए बिना ही जानता है, अत: वह हमेशा ही प्रत्यक्ष नाम से कहा जायेगा । इस कारण से इसमें अतिव्याप्ति दोष नहीं है ।</p><br><p>यद्यपि प्रतीत्यन्तर के अव्यवधान से होनेवाले ज्ञान का नाम ही वैशद्य है । तथापि वस्तु के वर्ण-गन्धादि तथा आकार-प्रकार आदि विशेषताओं के द्वारा होनेवाले विशिष्ट प्रतिभास को भी वैशद्य कहा गया है, क्योंकि ऐसा न मानने पर समस्त लोक-व्यवहार के विनाश का प्रसंग आ जावेगा । इस तरह प्रत्यक्ष के दो भेद प्रदर्शित करने के उद्देश्य से सूत्रकार अगला सूत्र कहते हैं ।</p></font></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿अपूर्वार्थ का दूसरा लक्षण</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿दृष्टोऽपि समारोपात्तादृक् ॥५॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt7 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿पूर्व में देखे हुए पदार्थ में भी यदि समारोप अर्थात् संशय, विपर्यय, अनध्यवसाय आ जाता है तो वह पदार्थ भी अपूर्वार्थ बन जाता है । (<font color=DarkSlateGray>जैसे पढी हुई पुस्तक अनभ्यास से पुन: अपठित जैसी हो जाती है।</font>)<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿स्वव्यवसाय का स्वरूप</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿स्वोन्मुखतया प्रतिभासनं स्वस्य व्यवसाय: ॥६॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt8 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿स्वयं की तरफ सन्मुख होने से जो अनुभवन होता है, वही स्व-व्यवसाय कहलाता है।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿स्वव्यवसाय का दृष्टान्त</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿अर्थस्येव तदुन्मुखतया ॥७॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt9 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿जिसप्रकार पदार्थ के प्रति सन्मुख होने से पदार्थ का निश्चय होता है अर्थात् ज्ञान होता है, उसीप्रकार स्व की ओर उन्मुख होने पर स्व का निश्चय होता है।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿पदार्थ को जानते समय ज्ञान में प्रतीति</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿घटहमात्मना वेद्मि ॥८॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt10 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿घट को मैं (<font color=DarkSlateGray>आत्मा</font>) अपने (<font color=DarkSlateGray>ज्ञान</font>) द्वारा जानता हूँ। यहाँ जैसे ‘घटङ्क पदार्थ रूप कर्म का प्रत्यक्ष होता है। वैसे ही कर्ता-आत्मा,करण-ज्ञान और जानने रूप क्रिया इन तीनों का प्रतीतिरूप प्रत्यक्ष होता है।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿कर्मवत्कर्तृकरणक्रियाप्रतीते: ॥९॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt11 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿शब्दोच्चारण बिना ही स्वव्यवसायकता</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿शब्दानुच्चारणेऽपि स्वस्यानुभवनमर्थवत् ॥१०॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt12 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿शब्दों का उच्चारण किये बिना भी अपना अनुभव होता है। जैसे पदार्थों का घट आदि रूप वचन बोले बिना भी उसका ज्ञान होता है।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿स्वप्रतीति की पुष्टि व उदाहरण</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿को वा तत्प्रतिभासिनमर्थध्यक्षमिच्छंस्तदेव तथा नेच्छेत् ॥११॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt13 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿ऐसा कौन (<font color=DarkSlateGray>लौकिक या परीक्षक</font>) पुरुष है जो ज्ञान के द्वारा अनुभव हुए पदार्थ को तो प्रत्यक्ष माने और उस ज्ञान को ही प्रत्यक्ष न माने अर्थात् उसे अवश्य ही ज्ञान को प्रत्यक्ष मानना चाहिए।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿प्रदीपवत् ॥१२॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt14 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿प्रमाण के प्रामाण्य का निर्णय</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿तत्प्रामाण्यं स्वत: परश्च ॥१३॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt15 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿उस प्रमाण की प्रामाणिकता कहीं स्वत: होती है और कहीं पर से भी होती है।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿प्रमाण के भेद</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿तद्द्वेधा ॥१॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt16 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿वह प्रमाण दो प्रकार का है।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿भेदों का स्पष्टीकरण</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿प्रत्यक्षेतरभेदात् ॥२॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt17 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿प्रत्यक्ष और इतर अर्थात् परोक्ष के भेद से प्रमाण दो प्रकार का होता है।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿प्रत्यक्ष प्रमाण का स्वरूप</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿विशदं प्रत्यक्षम् ॥३॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt18 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿विशद अर्थात् निर्मल और स्पष्ट ज्ञान को प्रत्यक्ष कहते हैं।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿वैशद्य का स्वरूप</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿प्रतीत्यन्तराव्यवधानेन विशेषवत्तया वा प्रतिभासनं वैशद्यम् ॥४॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt19 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿दूसरे ज्ञान के व्यवधान से रहित और विशेषता से होनेवाले प्रतिभास को वैशद्य कहा जाता है।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿सांव्यवहारिक प्रत्यक्ष का लक्षण</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿इन्द्रियानिन्द्रियानिमित्तं देशत: सांव्यवहारिकम् ॥५॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt20 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿इन्द्रिय और मन के निमित्त से होनेवाले एकदेश विशद ज्ञान को सांव्यवहारिक प्रत्यक्ष कहते हैं।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿पदार्थ और प्रकाश के ज्ञानकारणता के निषेध में तर्क</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿नार्थालोकौ कारणं परिच्छेद्यत्वात्तमोवत् ॥६॥<br> </font></h3>
-<div class=bottomContainer id=bottomTxt21 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿पदार्थ व प्रकाश सांव्यवहारिक प्रत्यक्ष के कारण नहीं हैं,क्योंकि ये परिच्छेद्य अर्थात् ज्ञान के विषय हैं-जाननेयोग्य ज्ञेय हैं। जो ज्ञान का विषय होता है, वह ज्ञान का कारण नहीं होता, जैसे अन्धकार।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿इसी बात को उदाहरण से सतर्क स्पष्ट करते हैं</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿तदन्वयव्यतिरेकानुविधानाभावाच्च केशोण्डुकज्ञानवन्नक्तंचर ज्ञानवच्च।।७।।<br> </font></h3>
-<div class=bottomContainer id=bottomTxt22 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿पदार्थ और प्रकाश ज्ञान के कारण नहीं, क्योंकि ज्ञान का पदार्थ और प्रकाश के साथ अन्वय-व्यतिरेक रूप संबंध का अभाव है। जैसे, केश में भ्र से होनेवाले मच्छर ज्ञान के साथ तथा नक्तंचर अर्थात् रात्रि में चलनेवाले उलूक आदि को रात्रि में होनेवाले ज्ञान के साथ देखा जाता है।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿ज्ञान के अर्थजन्यता और अर्थाकारता का खण्डन</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿अतज्जन्यमपि तत्प्रकाशकं प्रदीपवत्।।८।।<br> </font></h3>
-<div class=bottomContainer id=bottomTxt23 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿पदार्थ से उत्पन्न नहीं होकर भी ज्ञान पदार्थ का प्रकाशक होता है, दीपक के समान।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿ज्ञान के विषय की निश्चित व्यवस्था</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿स्वावरणक्षयोपशमलक्षणयोग्यतया हि प्रतिनियतमर्थं व्यवस्थापयति।।९।।<br> </font></h3>
-<div class=bottomContainer id=bottomTxt24 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿अपने आवरण कर्म के (<font color=DarkSlateGray>ज्ञानावरण, वीर्यान्तराय</font>) क्षयोपशम लक्षणवाली योग्यता प्रत्यक्ष प्रमाण प्रतिनियत पदार्थों के जानने की व्यवस्था करता है।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿कारणस्य च परिच्छेद्यत्वे करणादिना व्यभिचार:।।१०।।<br> </font></h3>
-<div class=bottomContainer id=bottomTxt25 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿कारण को परिच्छेद्य अर्थात् ज्ञेय मानने पर करण अर्थात् इन्द्रियों के साथ व्यभिचार दोष आता है।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿मुख्य प्रत्यक्ष का स्वरूप</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿सामग्रीविशेषविश्लेषिताखिलावरणमतीन्द्रियशेषतो मुख्यम्।।११।।<br> </font></h3>
-<div class=bottomContainer id=bottomTxt26 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿सामग्री की विशेषता से विश्लेषित अर्थात् दूर हो गये हैं,समस्त आवरण जिसके ऐसे अतीन्द्रिय और पूर्णरूप से विशद ज्ञान को मुख्य प्रत्यक्ष कहते हैं।<br></div>
-</div>
-<hr style='height:4px;border:none;color:#333;background-color:#333;' width=50%><div class='context'>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿अतीन्द्रिय व अनावरणत्व विशेषण की सार्थकता</font></div>
-<h3 class=mainTitle align=center><font color=maroon> ﻿सावरणत्वे करणजन्यत्वे च प्रतिबंधसम्भवात्।।१२।।<br> </font></h3>
-<div class=bottomContainer id=bottomTxt27 style='text-align: justify; margin: 0 auto; width: 90%;'>
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>﻿आवरण सहित होने पर और इन्द्रिय के द्वारा उत्पन्न होने पर प्रतिबंध सम्भव है।<br></div>
-</div>
-</div></body>
-</html>
+<div align=center><a href="../../../../../index.html"><img src="../../../../../images/jain-saint.jpg" height=270 width=300></img></a></div>
+<br><br><br>
+<div class=hdr align=center>परीक्षामुख</div>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<div align=right><b><font size=20>- 03_परीक्षामुख</font></b></div>
+<br><br><br>
+<div align=right><font size=2 color=darkRed>nikkyjain@gmail.com<br>
+Date : 28-09-18</font></div>
+<br><br><div class=adhikaar id=index><h1>Index</h1></div><br>
+    <table align=center width=90% class=mainIndex>
+<tr><th>गाथा / सूत्र<th>विषय</tr>
+      <tr>
+<td><b>001)</b> <td><a href=#gatha-001>﻿प्रमाण का लक्षण</a>
+     <tr>
+<td><b>002)</b> <td><a href=#gatha-002>﻿प्रमाण-लक्षण में ज्ञान विशेषण की सार्थकता</a>
+      <tr>
+<td><b>003)</b> <td><a href=#gatha-003>﻿प्रमाण का निश्चायकपना</a>
+     <tr>
+<td><b>004)</b> <td><a href=#gatha-004>﻿अपूर्वार्थ का लक्षण</a>
+      <tr>
+<td><b>005)</b> <td><a href=#gatha-005>﻿अपूर्वार्थ का दूसरा लक्षण</a>
+     <tr>
+<td><b>006)</b> <td><a href=#gatha-006>﻿स्वव्यवसाय का स्वरूप</a>
+      <tr>
+<td><b>007)</b> <td><a href=#gatha-007>﻿स्वव्यवसाय का दृष्टान्त</a>
+     <tr>
+<td><b>008)</b> <td><a href=#gatha-008>﻿पदार्थ को जानते समय ज्ञान में प्रतीति</a>
+      <tr>
+<td><b>009)</b> <td><a href=#gatha-009>﻿</a>
+     <tr>
+<td><b>010)</b> <td><a href=#gatha-010>﻿शब्दोच्चारण बिना ही स्वव्यवसायकता</a>
+      <tr>
+<td><b>011)</b> <td><a href=#gatha-011>﻿स्वप्रतीति की पुष्टि व उदाहरण</a>
+     <tr>
+<td><b>012)</b> <td><a href=#gatha-012>﻿</a>
+      <tr>
+<td><b>013)</b> <td><a href=#gatha-013>﻿प्रमाण के प्रामाण्य का निर्णय</a>
+     <tr>
+<td><b>014)</b> <td><a href=#gatha-014>﻿प्रमाण के भेद</a>
+      <tr>
+<td><b>015)</b> <td><a href=#gatha-015>﻿भेदों का स्पष्टीकरण</a>
+     <tr>
+<td><b>016)</b> <td><a href=#gatha-016>﻿प्रत्यक्ष प्रमाण का स्वरूप</a>
+      <tr>
+<td><b>017)</b> <td><a href=#gatha-017>﻿वैशद्य का स्वरूप</a>
+     <tr>
+<td><b>018)</b> <td><a href=#gatha-018>﻿सांव्यवहारिक प्रत्यक्ष का लक्षण</a>
+      <tr>
+<td><b>019)</b> <td><a href=#gatha-019>﻿पदार्थ और प्रकाश के ज्ञानकारणता के निषेध में तर्क</a>
+     <tr>
+<td><b>020)</b> <td><a href=#gatha-020>﻿इसी बात को उदाहरण से सतर्क स्पष्ट करते हैं</a>
+      <tr>
+<td><b>021)</b> <td><a href=#gatha-021>﻿ज्ञान के अर्थजन्यता और अर्थाकारता का खण्डन</a>
+     <tr>
+<td><b>022)</b> <td><a href=#gatha-022>﻿ज्ञान के विषय की निश्चित व्यवस्था</a>
+      <tr>
+<td><b>023)</b> <td><a href=#gatha-023>﻿</a>
+     <tr>
+<td><b>024)</b> <td><a href=#gatha-024>﻿मुख्य प्रत्यक्ष का स्वरूप</a>
+      <tr>
+<td><b>025)</b> <td><a href=#gatha-025>﻿अतीन्द्रिय व अनावरणत्व विशेषण की सार्थकता</a>
+    </table><br><br><hr><br>
+<div class=gatha>
+﻿<font color=black>!!<font color=purple> श्रीसर्वज्ञवीतरागाय नम: </font>!!</font><br><br>स्वामी‌-श्री-अकलंकाचार्य-देव-विरचित<br><br>श्री<br><font style="font-size:120px"> लघीयस्त्रय </font><br><br><br><span class=bottomContainer align=justify><font color=black>मूल संस्कृत गाथा, अभयचन्द्र-सूरि कृत टीका सहित</font></span></div>
+<hr align=center width=40%>
+<div class=gatha>
+﻿<font color=black>!!<font color=purple> नम: श्रीसर्वज्ञवीतरागाय </font>!!</font><br><br>ओंकारं बिन्दुसंयुक्तं नित्यं ध्यायन्ति योगिनः <br>कामदं मोक्षदं चैव ॐकाराय नमो नम: ॥१॥<br><br>अविरलशब्दघनौघप्रक्षालितसकलभूतलकलंका <br>मुनिभिरूपासिततीर्था सरस्वती हरतु नो दुरितान् ॥२॥<br><br>अज्ञानतिमिरान्धानां ज्ञानाञ्जनशलाकया <br>चक्षुरुन्मीलितं येन तस्मै श्रीगुरवे नम: ॥३॥<br><br><font color=black>॥ श्रीपरमगुरुवे नम:, परम्पराचार्यगुरुवे नम: ॥</font><br><br><span class=gatharth><p align=justify><font color=darkblue>सकलकलुषविध्वंसकं, श्रेयसां परिवर्धकं, धर्मसम्बन्धकं, भव्यजीवमन: प्रतिबिधकारकं, पुण्यप्रकाशकं, पापप्रणाशकमिदं शास्त्रं श्रीलघीयस्त्रय नामधेयं, अस्य मूलाग्रन्थकर्तार: श्रीसर्वज्ञदेवास्तदुत्तरग्रन्थकर्तार: श्रीगणधरदेवा: प्रतिगणधरदेवास्तेषां वचनानुसारमासाद्य आचार्य श्रीअकलंकाचार्यदेव विरचितं, श्रोतार: सावधानतया शृणवन्तु ॥ </font></p></span><br><br><font color=darkGreen>मंगलं भगवान् वीरो मंगलं गौतमो गणी<br>मंगलं कुन्दकुन्दार्यो जैनधर्मोsस्तु मंगलम्‌ ॥<br>सर्वमंगलमांगल्यं सर्वकल्याणकारकं <br>प्रधानं सर्वधर्माणां जैनं जयतु शासनम्‌ ॥</font></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-001><a href=#index>
+﻿प्रमाण का लक्षण</a></div>
+<div class=gatha>
+﻿स्वापूर्वार्थव्यवसायात्मकं ज्ञानं प्रमाणम् ॥१॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿स्व अर्थात् अपने आपको और 'अपूर्वार्थ' अर्थात् जिसे किसी अन्य प्रमाण से जाना नहीं है, ऐसे पदार्थ का निश्चय करनेवाले ज्ञान को प्रमाण कहते हैं ।<br></div>
+<br><div class=teeka><b><font color=darkgreen>डा-योगेशचंद्र :</font></b> <p>﻿यहाँ प्रमाण के लक्षण में पाँच विशेषण देकर लक्षण के तीन दोषों से रहित अन्यमतों के लक्षण का निरसन करते हुए प्रमाण का सामान्य स्वरूप प्रस्तुत किया है । प्रमाण के पाँच विशेषणों का सकारण वैशिष्ट्य प्रस्तुत है ।</p><p>प्रमाण का मूल आधार तो ज्ञान ही है; अत: प्रमाण के साथ ज्ञान को रखा है । ज्ञान का प्रयत्न कैसा हो ? यह बतलाने के लिए ज्ञान के पहले 'व्यवसायात्मकं' पद रखा है । ज्ञान के प्रयत्न का विषय कहीं कल्पनालोक न बन सके, वस्तु-जगत रहे, इसके लिए व्यवसाय के पूर्व 'अर्थ' पद दिया है । ज्ञान का विषय वस्तु-जगत होने पर भी कहीं उसमें <sup>*</sup>पिष्टपेषण न होता रहे, अतः इस दोष से बचने के लिए 'अपूर्व' शब्द रखा है । बाह्य वस्तु-जगत की खोज में स्वयं ही न खो जावे । बाह्य जानकारी के मोह में कहीं स्वयं से ही अजान न रह जावे । 'स्व' भी एक वस्तु है । अत: सर्वप्रथम उसका भी ज्ञान होना आवश्यक है, इसीलिए सूत्र के आदि में ही 'स्व' पद रखा है । जैनदर्शन में इस पद का अत्यधिक महत्त्व है । इसके ज्ञान बिना उत्पन्न हुआ ज्ञान 'प्रमाण' की कोटि में ही नहीं है । अत: 'स्व' शब्द सूत्र का सिरमौर है ।</p><p>इस तरह सूत्र का प्रत्येक शब्द सार्थक व परमत का खण्डन करने में सक्षम है । इसमें ज्ञान पद तो नैयायिकों के सन्निकर्ष व वैशेषिकों के कारक-साकल्यवाद का खण्डन करता है । 'व्यवसायात्मक' बौद्धों के निर्विकल्पवाद का तथा 'अर्थ' पद विज्ञानाद्वैतवाद चित्राद्वैतवाद का 'अपूर्व' पद धारावाहिक ज्ञान का तथा 'स्वङ्क पद से ज्ञान को सर्वथा परोक्ष मानने वाले मीमांसक तथा अन्य ज्ञान से उसे ग्राहक माननेवाले नैयायिकों के कारकसाकल्य व वैशेषिकों के सन्निकर्षवाद का खण्डन करके प्रत्येक पद स्वत: सक्षम सिद्ध होता है ।</p><p>अब क्रमागत विशेषणों का विवेचन सूत्रकार विस्तार से दे रहे हैं ।</p><span class=shortFont><sup>*</sup>पीसी हुई वस्तु को फिर से पीसना, किसी कार्य की पुनरावृत्ति करना</span></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-002><a href=#index>
+﻿प्रमाण-लक्षण में ज्ञान विशेषण की सार्थकता</a></div>
+<div class=gatha>
+﻿हिताहितप्राप्तिपरिहारसमर्थं हि प्रमाणं ततो ज्ञानमेव तत् ॥२॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जो हित की प्राप्ति और अहित का परिहार कराने में समर्थ है वही प्रमाण है और वह ज्ञान ही हो सकता है ।<br></div>
+<br><div class=teeka><b><font color=darkgreen>डा-योगेशचंद्र :</font></b> <p>﻿सुख और सुख के साधनों को हित कहते हैं, दुख और दुख के साधनों को अहित कहते हैं । सूत्र में 'प्राप्ति' का अर्थ अर्थप्रापक नहीं, अपितु पदार्थ के गुण-दोषों को प्रदर्शित करना ही ज्ञान की प्रापकता है, क्योंकि पदार्थ में प्रवृत्त होनेरूप चारित्र तो ज्ञान के आधीन नहीं, वह तो पुरुष की इच्छा <font color=DarkSlateGray>(आत्मा के चारित्र)</font> व योग्यता के आधीन है, जैसे दीपक अर्थप्रकाशक है, परन्तु अर्थ-प्रापक नहीं । यदि ज्ञान पदार्थों में प्रवृत्ति या निवृत्ति कराता होता तो जगत् में विषभक्षण या पंचपापों में प्रवृत्ति आदि होती ही नहीं; क्योंकि इनसे हानि का ज्ञान तो जगप्रसिद्ध है । अत: अर्थक्रिया में समर्थ ऐसे पदार्थ को बतलाना ही प्रमाण की हित प्रापकता है । अहित-परिहार भी अनिष्टकारी पदार्थ को दिखा देना ही है । इसतरह पदार्थ का जैसा का तैसा प्रकाशित होना जिसके द्वारा होवे वह प्रमाण है और वह ज्ञानरूप ही है । अज्ञानरूप सन्निकर्ष आदि इसप्रकार के प्राप्ति-परिहार कराने में समर्थ नहीं हैं, यदि वे ऐसे होते तो जगत में ज्ञान की कल्पना ही नहीं होती ।</p></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-003><a href=#index>
+﻿प्रमाण का निश्चायकपना</a></div>
+<div class=gatha>
+﻿तन्निश्चयात्मकं समारोपविरुद्धत्वादनुमानवत् ॥३॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿वह प्रमाण पदार्थ का निश्चयात्मक है, समारोप <span class=comment>(संशय, विपर्यय, अनध्यवसाय)</span> का विरोधी होने से, अनुामान की तरह ।<br></div>
+<br><div class=teeka><b><font color=darkgreen>डा-योगेशचंद्र :</font></b> <p>﻿प्रमाण के लक्षण में 'व्यवसायात्मक' विशेषण बौद्धों की निर्विकल्प मान्यता के खण्डन के लिए दिया है । ज्ञान का व्यवसायात्मक अर्थात् निश्चयपना तो विपरीत ज्ञान में भी होता है; परन्तु वह साध्य अर्थ का निश्चायक नहीं होता है, अत: वह समारोप का विरोधी नहीं है । इसी कारण प्रस्तुत सूत्र में निश्चयात्मक के साथ 'समारोपविरुद्धत्वात्' शब्द डाला है । जिसका अर्थ है कि वह निश्चायक इस कारण है, क्योंकि उसका मिथ्या-ज्ञानरूप संशय, विपर्यय व अनध्यवसाय से सहावस्थान लक्षणरूप विरोध है । जहाँ वस्तु का यथार्थ निश्चय हो, वहाँ संशय, विपर्यय और अनध्यवसायरूप समारोप का रहना ही सम्भव नहीं है । जैसे कि बौद्ध 'अनुमान' प्रमाण को समारोप का विरोधी होने से निश्चयात्मक प्रमाण मानते हैं, उसी तरह प्रमाण भी समारोप का विरोधी होने से निश्चयात्मक है ।</p></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-004><a href=#index>
+﻿अपूर्वार्थ का लक्षण</a></div>
+<div class=gatha>
+﻿अनिश्चितोऽपूर्वार्थ: ॥४॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जिस पदार्थ का पहले किसी प्रमाण से निश्चय न किया गया हो, वह अपूर्वार्थ कहलाता है ।<br></div>
+<br><div class=teeka><b><font color=darkgreen>डा-योगेशचंद्र :</font></b> <p>﻿सूत्र में 'प्रतीत्यन्तर-अव्यवधान' से अभिप्राय तुल्य जातीय की अपेक्षा से व्यवधान का निषेध करने के लिए है, देश-काल आदि की अपेक्षा से नहीं । जैसे ऊपर-ऊपर पटल देश <font color=DarkSlateGray>(क्षेत्र)</font> के व्यवधान से तो स्थित हैं, किन्तु तुल्य जातीय <font color=DarkSlateGray>(बीच में अन्य किसी रचना का होना)</font> अन्य पटलों की अपेक्षा से अन्तरित नहीं हैं । इसी तरह जिस ज्ञान में अन्य तुल्यजातीय ज्ञान का व्यवधान नहीं है ङ्घ ऐसे दूसरे ज्ञान की सहायता बिना जिसमें विशेषाकार का प्रतिभास हो रहा है, वह ज्ञान विशद है । यहाँ पर यदि शंका की जावे कि परोक्षभूत स्मृति, प्रत्यभिज्ञान आदि में भी स्वरूपसंवेदन से प्रत्यक्ष का लक्षण जाने से अतिव्याप्ति दोष है । उनका समाधान यह है कि यद्यपि ज्ञानावरण के क्षयोपशम से होनेवाले इन क्षायोपशमिक ज्ञानों का जो स्वरूपसंवेदन है, वह मन की प्रधानता से उत्पन्न होने के कारण यद्यपि मानस प्रत्यक्ष कहा जावेगा; परन्तु इन ज्ञानों में जो प्रत्यक्ष-परोक्ष का भेद स्वीकृत है, वह बाह्य-पदार्थों को ग्रहण की अपेक्षा से है । अपने स्वरूप को ग्रहण करने में अर्थात् अपने आपको जानने में किसी ज्ञान का व्यवधान अर्थात् आवश्यकता नहीं होती, अत: सदैव प्रत्यक्ष ही है ।</p><p>स्मृति आदिक ज्ञानों में अपने आपको जानने के लिए अन्य प्रमाणों का व्यवधान नहीं पडता है । अत: वे स्व-ग्रहण की अपेक्षा प्रत्यक्ष नाम पाते हैं, जैसे सुखादिक का ज्ञान मानस प्रत्यक्ष कहा जाता है, वैसे ही स्मृति आदिक ज्ञान अपने आपको संवेदन करने में अन्य का व्यवधान नहीं रखते, अत: सभी मानस प्रत्यक्ष हैं; किन्तु जब वे स्मृति आदिक ज्ञान बाहरी पदार्थ को ग्रहण करने में प्रवृत्त होते हैं, तब उन्हें परोक्ष कहते हैं, क्योंकि उनमें तब प्रमाणान्तर का व्यवधान पाया जाता है । प्रत्यक्षनाम से स्वीकृत हुआ प्रमाण स्व और अन्य घट-पट आदि पदार्थों को प्रमाणान्तर के व्यवधान हुए बिना ही जानता है, अत: वह हमेशा ही प्रत्यक्ष नाम से कहा जायेगा । इस कारण से इसमें अतिव्याप्ति दोष नहीं है ।</p><p>यद्यपि प्रतीत्यन्तर के अव्यवधान से होनेवाले ज्ञान का नाम ही वैशद्य है । तथापि वस्तु के वर्ण-गन्धादि तथा आकार-प्रकार आदि विशेषताओं के द्वारा होनेवाले विशिष्ट प्रतिभास को भी वैशद्य कहा गया है, क्योंकि ऐसा न मानने पर समस्त लोक-व्यवहार के विनाश का प्रसंग आ जावेगा । इस तरह प्रत्यक्ष के दो भेद प्रदर्शित करने के उद्देश्य से सूत्रकार अगला सूत्र कहते हैं ।</p></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-005><a href=#index>
+﻿अपूर्वार्थ का दूसरा लक्षण</a></div>
+<div class=gatha>
+﻿दृष्टोऽपि समारोपात्तादृक् ॥५॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿पूर्व में देखे हुए पदार्थ में भी यदि समारोप अर्थात् संशय, विपर्यय, अनध्यवसाय आ जाता है तो वह पदार्थ भी अपूर्वार्थ बन जाता है । <span class=comment>(जैसे पढी हुई पुस्तक अनभ्यास से पुन: अपठित जैसी हो जाती है।)</span><br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-006><a href=#index>
+﻿स्वव्यवसाय का स्वरूप</a></div>
+<div class=gatha>
+﻿स्वोन्मुखतया प्रतिभासनं स्वस्य व्यवसाय: ॥६॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿स्वयं की तरफ सन्मुख होने से जो अनुभवन होता है, वही स्व-व्यवसाय कहलाता है।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-007><a href=#index>
+﻿स्वव्यवसाय का दृष्टान्त</a></div>
+<div class=gatha>
+﻿अर्थस्येव तदुन्मुखतया ॥७॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जिसप्रकार पदार्थ के प्रति सन्मुख होने से पदार्थ का निश्चय होता है अर्थात् ज्ञान होता है, उसीप्रकार स्व की ओर उन्मुख होने पर स्व का निश्चय होता है।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-008><a href=#index>
+﻿पदार्थ को जानते समय ज्ञान में प्रतीति</a></div>
+<div class=gatha>
+﻿घटहमात्मना वेद्मि ॥८॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿घट को मैं <span class=comment>(आत्मा)</span> अपने <span class=comment>(ज्ञान)</span> द्वारा जानता हूँ। यहाँ जैसे ‘घटङ्क पदार्थ रूप कर्म का प्रत्यक्ष होता है। वैसे ही कर्ता-आत्मा,करण-ज्ञान और जानने रूप क्रिया इन तीनों का प्रतीतिरूप प्रत्यक्ष होता है।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-009><a href=#index>
+﻿</a></div>
+<div class=gatha>
+﻿कर्मवत्कर्तृकरणक्रियाप्रतीते: ॥९॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-010><a href=#index>
+﻿शब्दोच्चारण बिना ही स्वव्यवसायकता</a></div>
+<div class=gatha>
+﻿शब्दानुच्चारणेऽपि स्वस्यानुभवनमर्थवत् ॥१०॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿शब्दों का उच्चारण किये बिना भी अपना अनुभव होता है। जैसे पदार्थों का घट आदि रूप वचन बोले बिना भी उसका ज्ञान होता है।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-011><a href=#index>
+﻿स्वप्रतीति की पुष्टि व उदाहरण</a></div>
+<div class=gatha>
+﻿को वा तत्प्रतिभासिनमर्थध्यक्षमिच्छंस्तदेव तथा नेच्छेत् ॥११॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿ऐसा कौन <span class=comment>(लौकिक या परीक्षक)</span> पुरुष है जो ज्ञान के द्वारा अनुभव हुए पदार्थ को तो प्रत्यक्ष माने और उस ज्ञान को ही प्रत्यक्ष न माने अर्थात् उसे अवश्य ही ज्ञान को प्रत्यक्ष मानना चाहिए।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-012><a href=#index>
+﻿</a></div>
+<div class=gatha>
+﻿प्रदीपवत् ॥१२॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-013><a href=#index>
+﻿प्रमाण के प्रामाण्य का निर्णय</a></div>
+<div class=gatha>
+﻿तत्प्रामाण्यं स्वत: परश्च ॥१३॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿उस प्रमाण की प्रामाणिकता कहीं स्वत: होती है और कहीं पर से भी होती है।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-014><a href=#index>
+﻿प्रमाण के भेद</a></div>
+<div class=gatha>
+﻿तद्द्वेधा ॥१॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿वह प्रमाण दो प्रकार का है।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-015><a href=#index>
+﻿भेदों का स्पष्टीकरण</a></div>
+<div class=gatha>
+﻿प्रत्यक्षेतरभेदात् ॥२॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿प्रत्यक्ष और इतर अर्थात् परोक्ष के भेद से प्रमाण दो प्रकार का होता है।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-016><a href=#index>
+﻿प्रत्यक्ष प्रमाण का स्वरूप</a></div>
+<div class=gatha>
+﻿विशदं प्रत्यक्षम् ॥३॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿विशद अर्थात् निर्मल और स्पष्ट ज्ञान को प्रत्यक्ष कहते हैं।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-017><a href=#index>
+﻿वैशद्य का स्वरूप</a></div>
+<div class=gatha>
+﻿प्रतीत्यन्तराव्यवधानेन विशेषवत्तया वा प्रतिभासनं वैशद्यम् ॥४॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿दूसरे ज्ञान के व्यवधान से रहित और विशेषता से होनेवाले प्रतिभास को वैशद्य कहा जाता है।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-018><a href=#index>
+﻿सांव्यवहारिक प्रत्यक्ष का लक्षण</a></div>
+<div class=gatha>
+﻿इन्द्रियानिन्द्रियानिमित्तं देशत: सांव्यवहारिकम् ॥५॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿इन्द्रिय और मन के निमित्त से होनेवाले एकदेश विशद ज्ञान को सांव्यवहारिक प्रत्यक्ष कहते हैं।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-019><a href=#index>
+﻿पदार्थ और प्रकाश के ज्ञानकारणता के निषेध में तर्क</a></div>
+<div class=gatha>
+﻿नार्थालोकौ कारणं परिच्छेद्यत्वात्तमोवत् ॥६॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿पदार्थ व प्रकाश सांव्यवहारिक प्रत्यक्ष के कारण नहीं हैं,क्योंकि ये परिच्छेद्य अर्थात् ज्ञान के विषय हैं-जाननेयोग्य ज्ञेय हैं। जो ज्ञान का विषय होता है, वह ज्ञान का कारण नहीं होता, जैसे अन्धकार।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-020><a href=#index>
+﻿इसी बात को उदाहरण से सतर्क स्पष्ट करते हैं</a></div>
+<div class=gatha>
+﻿तदन्वयव्यतिरेकानुविधानाभावाच्च केशोण्डुकज्ञानवन्नक्तंचर ज्ञानवच्च।।७।।</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿पदार्थ और प्रकाश ज्ञान के कारण नहीं, क्योंकि ज्ञान का पदार्थ और प्रकाश के साथ अन्वय-व्यतिरेक रूप संबंध का अभाव है। जैसे, केश में भ्र से होनेवाले मच्छर ज्ञान के साथ तथा नक्तंचर अर्थात् रात्रि में चलनेवाले उलूक आदि को रात्रि में होनेवाले ज्ञान के साथ देखा जाता है।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-021><a href=#index>
+﻿ज्ञान के अर्थजन्यता और अर्थाकारता का खण्डन</a></div>
+<div class=gatha>
+﻿अतज्जन्यमपि तत्प्रकाशकं प्रदीपवत्।।८।।</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿पदार्थ से उत्पन्न नहीं होकर भी ज्ञान पदार्थ का प्रकाशक होता है, दीपक के समान।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-022><a href=#index>
+﻿ज्ञान के विषय की निश्चित व्यवस्था</a></div>
+<div class=gatha>
+﻿स्वावरणक्षयोपशमलक्षणयोग्यतया हि प्रतिनियतमर्थं व्यवस्थापयति।।९।।</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿अपने आवरण कर्म के <span class=comment>(ज्ञानावरण, वीर्यान्तराय)</span> क्षयोपशम लक्षणवाली योग्यता प्रत्यक्ष प्रमाण प्रतिनियत पदार्थों के जानने की व्यवस्था करता है।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-023><a href=#index>
+﻿</a></div>
+<div class=gatha>
+﻿कारणस्य च परिच्छेद्यत्वे करणादिना व्यभिचार:।।१०।।</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿कारण को परिच्छेद्य अर्थात् ज्ञेय मानने पर करण अर्थात् इन्द्रियों के साथ व्यभिचार दोष आता है।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-024><a href=#index>
+﻿मुख्य प्रत्यक्ष का स्वरूप</a></div>
+<div class=gatha>
+﻿सामग्रीविशेषविश्लेषिताखिलावरणमतीन्द्रियशेषतो मुख्यम्।।११।।</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿सामग्री की विशेषता से विश्लेषित अर्थात् दूर हो गये हैं,समस्त आवरण जिसके ऐसे अतीन्द्रिय और पूर्णरूप से विशद ज्ञान को मुख्य प्रत्यक्ष कहते हैं।<br></div>
+<hr align=center width=40%>
+<br><div class=title id=gatha-025><a href=#index>
+﻿अतीन्द्रिय व अनावरणत्व विशेषण की सार्थकता</a></div>
+<div class=gatha>
+﻿सावरणत्वे करणजन्यत्वे च प्रतिबंधसम्भवात्।।१२।।</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿आवरण सहित होने पर और इन्द्रिय के द्वारा उत्पन्न होने पर प्रतिबंध सम्भव है।<br></div>
+<hr align=center width=40%>
+</body></html>
