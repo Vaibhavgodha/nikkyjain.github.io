@@ -2,6 +2,9 @@
 img {
     border-radius: 10px 10px 10px 10px;
 }
+p img {
+    width: 40%;
+}
 div.title {
     font-size: 15px;
     font-weight: bold;
@@ -26,8 +29,15 @@ div.pooja {
     line-height: 140%;
 }
 div.arth {
-    font-size: 2vw;
+    font-size: 3vw;
     color: darkBlue;
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+}
+div.teeka {
+    font-size: 2vw;
+    color: black;
     width: 90%;
     text-align: justify;
     margin: 0 auto;
@@ -154,3 +164,54 @@ h1:before {
 }
 
 // Adhikaar related -- end
+
+table {
+   border-spacing: 0px;
+   border-collapse: collapse;
+//   overflow-x:auto;
+  //border: 1px solid DarkOrange;
+  //border-radius: 13px; 
+}
+
+table.mainIndex td {
+  font-size : 2vw;
+  text-align: left; 
+  color : darkblue;
+}
+table.myTable, th,td {
+  font-size : 1vw;
+  border: 1px solid black;
+  text-align: center; 
+  vertical-align: middle;
+}
+
+table.myTable th {
+  background-color : #ffcc99;
+}
+
+.tableNotes {
+  font-size : 1vw;
+  background-color: lightGray;
+}
+
+.emptyTableCell {
+  background-color: #fcf5e8;
+  border-spacing: 0px;
+  border-style:none;
+  text-align: left; 
+}
+table.myAltTable th,td {
+  font-size : 1vw;
+  border: 1px solid black;
+  text-align: center; 
+  vertical-align: middle;
+}
+table.myAltTable tr:nth-child(odd) {
+    background-color: #e6ffe6;
+}
+table.myAltTable tr:nth-child(even) {
+    background-color: AliceBlue;
+}
+table.myAltTable th {
+  background-color : #ffcc99;
+}
