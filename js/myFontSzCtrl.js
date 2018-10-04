@@ -1,32 +1,45 @@
 $(function() {
   var curGathaSz=3;
+  var curGadyaSz=2;
   var curArthSz=2;
   var curTableSz=2;
   var curTeekaSz=2;
+  $('.head1').css('background-color', '#ffe0b3');
+  $('.head2').css('background-color', '#b3ffff');
+  $('.head3').css('background-color', '#e6ccff');
+  $('.head4').css('background-color', '#b3d9ff');
   $('.incFontSz').click(function() {
       curGathaSz+=1;
       curArthSz+=1;
+      curGadyaSz+=1;
       curTeekaSz+=1;
       curTableSz+=1;
       $(".gatha").css("font-size", curGathaSz+"vw");
       $(".arth").css("font-size", curArthSz+"vw");
+      $(".gadya").css("font-size", curGadyaSz+"vw");
       $(".teeka").css("font-size", curTeekaSz+"vw");
       $(".myTable td").css("font-size", curTableSz+"vw");
       $(".myTable th").css("font-size", curTableSz+"vw");
       $(".myAltTable td").css("font-size", curTableSz+"vw");
       $(".myAltTable th").css("font-size", curTableSz+"vw");
+      $(".myAltColTable td").css("font-size", curTableSz+"vw");
+      $(".myAltColTable th").css("font-size", curTableSz+"vw");
   });
   $('.decFontSz').click(function() {
       curGathaSz-=1;
       curArthSz-=1;
+      curGadyaSz-=1;
       curTeekaSz-=1;
       curTableSz-=1;
       $(".gatha").css("font-size", curGathaSz+"vw");
       $(".arth").css("font-size", curArthSz+"vw");
+      $(".gadya").css("font-size", curGadyaSz+"vw");
       $(".teeka").css("font-size", curTeekaSz+"vw");
       $(".myTable td").css("font-size", curTableSz+"vw");
       $(".myTable th").css("font-size", curTableSz+"vw");
       $(".myAltTable td").css("font-size", curTableSz+"vw");
       $(".myAltTable th").css("font-size", curTableSz+"vw");
+      $(".myAltColTable td").css("font-size", curTableSz+"vw");
+      $(".myAltColTable th").css("font-size", curTableSz+"vw");
   });
 });

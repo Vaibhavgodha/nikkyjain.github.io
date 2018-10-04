@@ -3,7 +3,7 @@
 #export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
 export dbDir=$(cd ../../.. && echo $PWD)
 echo "DB Dir $dbDir"
-myHtml=$dbDir/jainDataBase/genBooks/allBhajans.html
+myHtml=$dbDir/jainDataBase/genBooks/jainBhajans.html
 #. $dbDir/others/collaborate/shastra/common.sh
 
 myRelPath=../../
@@ -21,6 +21,9 @@ cat << EOF > $myHtml
   <script type="text/javascript" src="${myRelPath}js/jquery.js"></script>
   <script type="text/javascript" src="${myRelPath}js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script-->
   <style>
+    body {
+      background-color: #fcf5e8;
+    }
     td {
       text-align: left; 
       vertical-align: middle;
@@ -58,7 +61,7 @@ cat << EOF > $myHtml
   <script type="text/javascript" src="${myRelPath}js/myMobile.js"></script-->
 </head>
 <body>
-<div align=center><img src="${myRelPath}images/jain-saint.jpg" height=240 width=270></img></div>
+<div align=center><a href="${myRelPath}index.html"><img src="${myRelPath}images/jain-saint.jpg" height=240 width=270></img></a></div>
 <br><br><br>
 <div class=hdr align=center>जैन भजन</div>
 <br><br><br>

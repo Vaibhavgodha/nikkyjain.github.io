@@ -35,16 +35,13 @@ cat << EOF > $myHtml
   <title>$myHtmlName</title>
   <link rel="icon" type="image/png" href="${myRelPath}images/default/jainFlag-short.jpg"/>
   <link rel="stylesheet" href="${myRelPath}css/myJqueryMobile.css">
-  <!--link rel="stylesheet" href="${myRelPath}js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
   <script type="text/javascript" src="${myRelPath}js/jquery.js"></script>
+  <script type="text/javascript" src="${myRelPath}js/myFontSzCtrl.js"></script>
+  <!--link rel="stylesheet" href="${myRelPath}js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
   <script type="text/javascript" src="${myRelPath}js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script-->
   <style>
-    td {
-      text-align: left; 
-      vertical-align: middle;
-      height : 40px;
-      font-size: 25px;
-      color : darkblue;
+    body {
+      background-color: #fcf5e8;
     }
     a {
       text-decoration: none !important;
@@ -68,25 +65,6 @@ cat << EOF > $myHtml
     a, a:visited, a:hover, a:active {
       color: inherit;
     }
-    .index {
-        font-size: 20px;
-    }
-div.main {
-    font-size: 5vw;
-}
-div.gadya {
-    font-size: 3vw;
-}
-div.teeka {
-    font-size: 3vw;
-}
-.comment {
-    font-size: 3vw;
-}
-div.title {
-    font-size: 2vw;
-    color: DarkGreen;
-}
   </style>
   <!--script>
     relPath="$myRelPath";
@@ -106,15 +84,15 @@ div.title {
 <br><br><br>
 <br><br><br>
 <div align=right><b><font size=20>- $myWriter</font></b></div>
-<br><br><br>
-<div align=right><font size=2 color=darkRed>nikkyjain@gmail.com<br>
-Date : $(date +%d-%m-%y)</font></div>
+<br><br><br><font size=2 color=darkRed>
+<div align=right>nikkyjain@gmail.com</div>
+<div align=right>Date : $(date +%d-%m-%y)</font></div>
 EOF
 
 # Create Index
 if [ -d $PWD/title -o -d $PWD/ftitle ]; then
     echo "<br><br><div class=adhikaar id=index><h1>Index</h1></div><br>" >>  $myHtml
-    echo "    <table align=center width=90%>" >>  $myHtml
+    echo "    <table align=center width=90% class=mainIndex>" >>  $myHtml
     echo "<tr><th>गाथा / सूत्र<th>विषय</tr>" >> $myHtml
     myCntr=0
     for cFile in $(ls $PWD/main/*)
@@ -157,7 +135,7 @@ do
         curFile=$PWD/ftitle/$bcFile
         myFName=$(basename $curFile | sed 's/.txt//')
         if [ -f $curFile ]; then
-            echo "<br><div class=title id=gatha-$myFName><a href=#index>$(cat $curFile)</a></div>" >> $myHtml
+            echo "<br><div class=title id=gatha-$myFName><span class=incFontSz>+ </span><a href=#index>$(cat $curFile)</a><span class=decFontSz> -</span></div>" >> $myHtml
         else
             echo "<br>" >> $myHtml
         fi
@@ -165,10 +143,10 @@ do
         curFile=$PWD/title/$bcFile
         myFName=$(basename $curFile | sed 's/.txt//')
         if [ -f $PWD/header/$cFile -o -f $curFile ]; then
-            echo "<br><div class=title id=gatha-$myFName><a href=#index>" >> $myHtml 
+            echo "<br><div class=title id=gatha-$myFName><span class=incFontSz>+ </span><a href=#index>" >> $myHtml 
             [ -f $PWD/header/$bcFile ] && curFile=$PWD/header/$bcFile
             cat $curFile >>  $myHtml 
-            echo "</a></div>" >> $myHtml
+            echo "</a><span class=decFontSz> -</span></div>" >> $myHtml
         fi
     fi
     curFile=$PWD/main/$bcFile
@@ -228,4 +206,5 @@ do
     echo -ne "Done - $bcFile"\\r
 done
 echo "</body></html>" >> $myHtml
+unix2dos $myHtml
 echo

@@ -57,4 +57,5 @@ echo "Copy Done - genBooksWithTeeka"
 # Copy Index
 cp $dbDir/../index.html $outDir/../.
 # Copy JS
-cp $dbDir/../js/myMobile.js $outDir/../js/.
+cp $dbDir/../js/*.js $outDir/../js/.
+cp $dbDir/../css/*.css $outDir/../css/.

@@ -64,9 +64,16 @@ EOF
         c=$(echo "$c" | perl -pe 's/वषट् सन्निधि करणं/वषट् सन्निधि करणं<\/span>/g')
         echo $c >>  $myHtml
         echo "</div>" >> $myHtml
+        curFile=$myInDir/mainH/$(basename $cFile)
+        if [ -f $curFile ]; then
+          c="$(cat $curFile)"
+          c=$(echo "$c" | perl -pe 's/\n/<br>/g')
+          echo "<div class=gadya>$c</div>" >> $myHtml 
+        fi
         curFile=$myInDir/arth/$(basename $cFile)
         if [ -f $curFile ]; then
           c="$(cat $curFile)"
+          c=$(echo "$c" | perl -pe 's/\n/<br>/g')
           c=$(echo "$c" | perl -pe 's/\(\(/<div class=comment>/g' | perl -pe 's/\)\)/<\/div>/g')
           c=$(echo "$c" | perl -pe 's/\[/<span class=gatharth>[/g' | perl -pe 's/\]/]<\/span>/g'); 
           echo "<div class=poojarth><font color=maroon><b>अन्वयार्थ : </b></font>$c</div><br>" >>  $myHtml

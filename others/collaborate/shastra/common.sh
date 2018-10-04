@@ -1,3 +1,4 @@
+
 function createBhajan {
   relPath=$1
   createSearch=$2
@@ -184,60 +185,40 @@ cat << EOF >> $myHtml
         <div data-role=collapsible data-inset=false data-theme=a>
           <h2>Download</h2>
           <ul data-role=listview>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/JainBhajan.pdf>जैन भजन</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/JainPooja.pdf>जैन पूजा-पाठ</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaa-ratnakarandShraavakaachaar.pdf>रत्नकरंड-श्रावकाचार--गाथा</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaa-samaysaar.pdf>समयसार--गाथा</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaa-labdhisaar.pdf>लब्धिसार--गाथा</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaa-gommatSaarJeevKand.pdf>गोम्मटसार-जीवकांड--गाथा</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaa-panchastikay.pdf>पंचास्तिकाय--गाथा</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/JeevSamas.pdf>JeevSamas</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/bookmark.pdf>Bookmark</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/समयसार.pdf>समयसार</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/प्रवचनसार.pdf>प्रवचनसार</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/पन्चास्तिकाय.pdf>पन्चास्तिकाय</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/श्रीअष्टपाहुड.pdf>श्रीअष्टपाहुड</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/द्रव्यसंग्रह.pdf>द्रव्यसंग्रह</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/तत्त्वार्थसूत्र.pdf>तत्त्वार्थसूत्र</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/gathaWithTeeka/इष्टोपदेश.pdf>इष्टोपदेश</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/JeevSamas.pdf>जीव समास</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/downloads/BookMark.pdf>BookMark</a></li>
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>
           <h2>Print Granth</h2>
           <ul data-role=listview>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/allBhajans.html>JainBhajans</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/allPoojas.html>JainPoojaPath</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/समयसार.html>समयसार</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/प्रवचनसार.html>प्रवचनसार</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/पन्चास्तिकाय.html>पन्चास्तिकाय</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/श्रीअष्टपाहुड.html>श्रीअष्टपाहुड</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/योगसार-प्राभृत.html>योगसार-प्राभृत</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/योगसार.html>योगसार</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/गोम्मटसार-जीवकांड.html>गोम्मटसार-जीवकांड</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/रत्नकरण्ड-श्रावकाचार.html>रत्नकरण्ड-श्रावकाचार</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/आलापपद्धति.html>आलापपद्धति</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/समाधितन्त्र.html>समाधितन्त्र</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/द्रव्यसंग्रह.html>द्रव्यसंग्रह</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/तत्त्वार्थसूत्र.html>तत्त्वार्थसूत्र</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/इष्टोपदेश.html>इष्टोपदेश</a></li>
+EOF
+for myPdfPath in $(ls -d $dbDir/jainDataBase/genBooks/*.html)
+do
+  myPdfFile=$(basename $myPdfPath)
+ 	myPdfName=$(echo $myPdfFile | perl -pe 's/.html//')
+  echo "<li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/$myPdfFile>$myPdfFile</a></li>"  >> $myHtml
+done
+for myPdfPath in $(ls -d $dbDir/jainDataBase/genBooks/*.pdf)
+do
+  myPdfFile=$(basename $myPdfPath)
+ 	myPdfName=$(echo $myPdfFile | perl -pe 's/.pdf//')
+  echo "<li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooks/$myPdfFile>$myPdfName</a></li>"  >> $myHtml
+done
+cat << EOF >> $myHtml
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>
           <h2>Print Granth With Teeka</h2>
           <ul data-role=listview>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/समयसार.html>समयसार</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/प्रवचनसार.html>प्रवचनसार</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/पन्चास्तिकाय.html>पन्चास्तिकाय</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/श्रीअष्टपाहुड.html>श्रीअष्टपाहुड</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/योगसार-प्राभृत.html>योगसार-प्राभृत</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/योगसार.html>योगसार</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/गोम्मटसार-जीवकांड.html>गोम्मटसार-जीवकांड</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/रत्नकरण्ड-श्रावकाचार.html>रत्नकरण्ड-श्रावकाचार</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/आलापपद्धति.html>आलापपद्धति</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/समाधितन्त्र.html>समाधितन्त्र</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/द्रव्यसंग्रह.html>द्रव्यसंग्रह</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/तत्त्वार्थसूत्र.html>तत्त्वार्थसूत्र</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/इष्टोपदेश.html>इष्टोपदेश</a></li>
+EOF
+for myPdfPath in $(ls -d $dbDir/jainDataBase/genBooksWithTeeka/*.pdf)
+do
+  myPdfFile=$(basename $myPdfPath)
+ 	myPdfName=$(echo $myPdfFile | perl -pe 's/.pdf//')
+  echo "<li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/$myPdf>$myPdfName</a></li>"  >> $myHtml
+done
+cat << EOF >> $myHtml
           </ul>
         </div>
     </div>

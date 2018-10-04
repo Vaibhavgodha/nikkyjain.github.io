@@ -226,7 +226,7 @@ EOF
   fi
   echo "</body>" >> $outFile
   echo "</html>" >> $outFile
-  echo "Processed $cFile"
+  echo -ne "Done - $bcFile"\\r
   if [ "$indexDone" = "" ]; then
     indexDone="Done"
     cp $outFile $outDir/html/index.html

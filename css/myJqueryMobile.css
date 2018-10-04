@@ -6,31 +6,31 @@ p img {
     width: 40%;
 }
 div.title {
-    font-size: 15px;
+    font-size: 2vw;
     font-weight: bold;
     text-align: center;
 }
 div.main {
-    font-size: 7vw;
+    font-size: 5vw;
     color: maroon;
     font-weight: bold;
     text-align: center;
 }
 div.gatha {
-    font-size: 4vw;
+    font-size: 3vw;
     color: maroon;
     font-weight: bold;
     text-align: center;
 }
 div.pooja {
-    font-size: 4vw;
-    color: darkBlue;
+    font-size: 3vw;
+    color: navy;
     text-align: center;
     line-height: 140%;
 }
 div.arth {
-    font-size: 3vw;
-    color: darkBlue;
+    font-size: 2vw;
+    color: navy;
     width: 90%;
     text-align: justify;
     margin: 0 auto;
@@ -43,7 +43,7 @@ div.teeka {
     margin: 0 auto;
 }
 span.om {
-    font-size: 3vw;
+    font-size: 2vw;
     color: maroon;
     width: 90%;
     text-align: center;
@@ -57,20 +57,20 @@ div.gadya {
     font-weight: bold;
 }
 div.poojarth {
-    font-size: 3vw;
+    font-size: 2vw;
     color: darkGreen;
     width: 90%;
     text-align: justify;
     margin: 0 auto;
 }
 span.gatharth {
-    font-size: 3vw;
-    color: darkBlue;
+    font-size: 2vw;
+    color: navy;
     font-weight: bold;
 }
 .comment {
     font-size: 2vw;
-    color: darkgray;
+    color: steelBlue;
     width: 90%;
     text-align: center;
     margin: 0 auto;
@@ -178,30 +178,17 @@ table.mainIndex td {
   text-align: left; 
   color : darkblue;
 }
+
+
 table.myTable, th,td {
-  font-size : 1vw;
+  font-size : 2vw;
   border: 1px solid black;
   text-align: center; 
   vertical-align: middle;
 }
 
-table.myTable th {
-  background-color : #ffcc99;
-}
-
-.tableNotes {
-  font-size : 1vw;
-  background-color: lightGray;
-}
-
-.emptyTableCell {
-  background-color: #fcf5e8;
-  border-spacing: 0px;
-  border-style:none;
-  text-align: left; 
-}
 table.myAltTable th,td {
-  font-size : 1vw;
+  font-size : 2vw;
   border: 1px solid black;
   text-align: center; 
   vertical-align: middle;
@@ -212,6 +199,66 @@ table.myAltTable tr:nth-child(odd) {
 table.myAltTable tr:nth-child(even) {
     background-color: AliceBlue;
 }
+
+// Alt Row Coloured
+table.myAltTable th,td {
+  font-size : 2vw;
+  border: 1px solid black;
+  text-align: center; 
+  vertical-align: middle;
+}
+table.myAltTable tr:nth-child(odd) {
+    background-color: #e6ffe6;
+}
+table.myAltTable tr:nth-child(even) {
+    background-color: AliceBlue;
+}
+
+// Alt Col Coloured
+table.myAltColTable th,td {
+  font-size : 2vw;
+  border: 1px solid black;
+  text-align: center; 
+  vertical-align: middle;
+}
+table.myAltColTable col:nth-child(odd) {
+    background-color: #e6ffe6;
+}
+table.myAltColTable col:nth-child(even) {
+    background-color: AliceBlue;
+}
+
+table.myTable th {
+  background-color : #ffcc99;
+}
+table.myTable th div {
+  writing-mode: vertical-lr;
+  //min-width: 50px; /* for firefox */
+}
 table.myAltTable th {
   background-color : #ffcc99;
+}
+table.myAltTable th {
+  background-color : #ffcc99;
+}
+table.myAltColTable th {
+  background-color : #ffcc99;
+}
+
+.cellY {
+    background-color: #f5ffe6;
+}
+.cellN {
+    background-color: #ffe6f3;
+}
+.tableNotes {
+  font-size : 1vw;
+  background-color: lightGray;
+}
+
+.emptyTableCell {
+  background-color: #fcf5e8;
+  border-spacing: 0px;
+  border-style:none;
+  text-align: left; 
 }

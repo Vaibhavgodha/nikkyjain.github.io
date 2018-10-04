@@ -3,7 +3,7 @@
 #export dbDir=$(echo $PWD | perl -pe 's/(.*jaindb-dev).*/$1/g')
 export dbDir=$(cd ../../.. && echo $PWD)
 echo "DB Dir $dbDir"
-myHtml=$dbDir/jainDataBase/genBooks/allPoojas.html
+myHtml=$dbDir/jainDataBase/genBooks/jainPoojas.html
 myInDir=$dbDir/others/collaborate/poojas
 #. $dbDir/others/collaborate/shastra/common.sh
 
@@ -22,6 +22,9 @@ cat << EOF > $myHtml
   <script type="text/javascript" src="${myRelPath}js/jquery.js"></script>
   <script type="text/javascript" src="${myRelPath}js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script-->
   <style>
+    body {
+      background-color: #fcf5e8;
+    }
     td {
       text-align: left; 
       vertical-align: middle;
@@ -203,9 +206,16 @@ do
         c=$(echo "$c" | perl -pe 's/वषट् सन्निधि करणं/वषट् सन्निधि करणं<\/span>/g')
         echo $c >>  $myHtml
         echo "</div>" >> $myHtml
+        curFile=$myInDir/mainH/$(basename $cFile)
+        if [ -f $curFile ]; then
+          c="$(cat $curFile)"
+          c=$(echo "$c" | perl -pe 's/\n/<br>/g')
+          echo "<div class=gadya>$c</div>" >> $myHtml 
+        fi
         curFile=$myInDir/$mygroup/$myPooja/arth/$(basename $cFile)
         if [ -f $curFile ]; then
           c="$(cat $curFile)"
+          c=$(echo "$c" | perl -pe 's/\n/<br>/g')
           c=$(echo "$c" | perl -pe 's/\(\(/<div class=comment>/g' | perl -pe 's/\)\)/<\/div>/g')
           c=$(echo "$c" | perl -pe 's/\[/<span class=gatharth>[/g' | perl -pe 's/\]/]<\/span>/g'); 
           echo "<div class=poojarth><font color=maroon><b>अन्वयार्थ : </b></font>$c</div><br>" >>  $myHtml
