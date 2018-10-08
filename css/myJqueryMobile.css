@@ -236,13 +236,13 @@ table.myTable th div {
   //min-width: 50px; /* for firefox */
 }
 table.myAltTable th {
-  background-color : #ffcc99;
+  background-color : #ffe0b3;
 }
 table.myAltTable th {
-  background-color : #ffcc99;
+  background-color : #ffe0b3;
 }
 table.myAltColTable th {
-  background-color : #ffcc99;
+  background-color : #ffe0b3;
 }
 
 .cellY {
@@ -261,4 +261,8 @@ table.myAltColTable th {
   border-spacing: 0px;
   border-style:none;
   text-align: left; 
+}
+.tableTitle {
+  color : darkblue;
+  background-color: #ffcc99;
 }

@@ -1,19 +1,24 @@
-$(function() {
-  var curGathaSz=3;
+  var curGathaSz=2.4;
   var curGadyaSz=2;
   var curArthSz=2;
   var curTableSz=2;
   var curTeekaSz=2;
+  var curTableTitle=2.4;
+  var curTableNotes=1.4
+$(function() {
   $('.head1').css('background-color', '#ffe0b3');
   $('.head2').css('background-color', '#b3ffff');
   $('.head3').css('background-color', '#e6ccff');
   $('.head4').css('background-color', '#b3d9ff');
+  $(".curTableTitle").css("font-size", curTableTitle+"vw");
   $('.incFontSz').click(function() {
-      curGathaSz+=1;
-      curArthSz+=1;
-      curGadyaSz+=1;
-      curTeekaSz+=1;
-      curTableSz+=1;
+      curGathaSz+=0.2;
+      curArthSz+=0.2;
+      curGadyaSz+=0.2;
+      curTeekaSz+=0.2;
+      curTableSz+=0.2;
+      curTableTitle+=0.2;
+      curTableNotes+=0.2;
       $(".gatha").css("font-size", curGathaSz+"vw");
       $(".arth").css("font-size", curArthSz+"vw");
       $(".gadya").css("font-size", curGadyaSz+"vw");
@@ -24,13 +29,17 @@ $(function() {
       $(".myAltTable th").css("font-size", curTableSz+"vw");
       $(".myAltColTable td").css("font-size", curTableSz+"vw");
       $(".myAltColTable th").css("font-size", curTableSz+"vw");
+      $(".tableNotes").css("font-size", curTableNotes+"vw");
+      $(".tableTitle").css("font-size", curTableTitle+"vw");
   });
   $('.decFontSz').click(function() {
-      curGathaSz-=1;
-      curArthSz-=1;
-      curGadyaSz-=1;
-      curTeekaSz-=1;
-      curTableSz-=1;
+      curGathaSz-=0.2;
+      curArthSz-=0.2;
+      curGadyaSz-=0.2;
+      curTeekaSz-=0.2;
+      curTableSz-=0.2;
+      curTableTitle-=0.2;
+      curTableNotes-=0.2;
       $(".gatha").css("font-size", curGathaSz+"vw");
       $(".arth").css("font-size", curArthSz+"vw");
       $(".gadya").css("font-size", curGadyaSz+"vw");
@@ -41,5 +50,7 @@ $(function() {
       $(".myAltTable th").css("font-size", curTableSz+"vw");
       $(".myAltColTable td").css("font-size", curTableSz+"vw");
       $(".myAltColTable th").css("font-size", curTableSz+"vw");
+      $(".tableTitle").css("font-size", curTableTitle+"vw");
+      $(".tableNotes").css("font-size", curTableNotes+"vw");
   });
 });
