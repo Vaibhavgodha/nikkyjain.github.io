@@ -63,6 +63,12 @@ div.poojarth {
     text-align: justify;
     margin: 0 auto;
 }
+div.lay {
+    font-size: 1.2vw;
+    color: darkRed;
+    text-align: justify;
+    margin: 0 auto;
+}
 span.gatharth {
     font-size: 2vw;
     color: navy;
