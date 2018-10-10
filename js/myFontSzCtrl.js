@@ -1,16 +1,16 @@
   var curGathaSz=2.4;
   var curGadyaSz=2;
   var curArthSz=2;
-  var curTableSz=2;
+  var curTableSz=1.4;
   var curTeekaSz=2;
-  var curTableTitle=2.4;
-  var curTableNotes=1.4
+  var curTableTitle=2;
+  var curTableNotes=1;
 $(function() {
   $('.head1').css('background-color', '#ffe0b3');
   $('.head2').css('background-color', '#b3ffff');
   $('.head3').css('background-color', '#e6ccff');
   $('.head4').css('background-color', '#b3d9ff');
-  $(".curTableTitle").css("font-size", curTableTitle+"vw");
+  $(".tableTitle").css("font-size", curTableTitle+"vw");
   $('.incFontSz').click(function() {
       curGathaSz+=0.2;
       curArthSz+=0.2;

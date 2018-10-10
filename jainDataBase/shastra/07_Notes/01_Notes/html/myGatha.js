@@ -9,10 +9,11 @@ document.write("        <li><a href='006.html'><font size=4><font color=darkPurp
 document.write("        <li><a href='007.html'><font size=4><font color=darkPurple><b>007</b></font> - <font color=darkBlue>﻿स्तिथि सारिणी</font></font></a></li>");
 document.write("        <li><a href='008.html'><font size=4><font color=darkPurple><b>008</b></font> - <font color=darkGreen>﻿गुणस्थानों का काल और उनमें जीवों की संख्या</font></font></a></li>");
 document.write("        <li><a href='009.html'><font size=4><font color=darkPurple><b>009</b></font> - <font color=darkBlue>﻿प्रकृति-बन्ध प्ररूपणा</font></font></a></li>");
-document.write("        <li><a href='011.html'><font size=4><font color=darkPurple><b>011</b></font> - <font color=darkGreen>﻿अनुभाग बन्ध सारणी</font></font></a></li>");
-document.write("        <li><a href='012.html'><font size=4><font color=darkPurple><b>012</b></font> - <font color=darkBlue>﻿गति-आगति</font></font></a></li>");
-document.write("        <li><a href='013.html'><font size=4><font color=darkPurple><b>013</b></font> - <font color=darkGreen>﻿जीव कहाँ तक जा सकता है</font></font></a></li>");
-document.write("        <li><a href='014.html'><font size=4><font color=darkPurple><b>014</b></font> - <font color=darkBlue>﻿जीव नियमत: कहाँ जाते हैं</font></font></a></li>");
-document.write("        <li><a href='020.html'><font size=4><font color=darkPurple><b>020</b></font> - <font color=darkGreen>﻿आयु</font></font></a></li>");
-document.write("        <li><a href='030.html'><font size=4><font color=darkPurple><b>030</b></font> - <font color=darkBlue>﻿न्याय-वाक्य</font></font></a></li>");
+document.write("        <li><a href='010.html'><font size=4><font color=darkPurple><b>010</b></font> - <font color=darkGreen>﻿संहनन की अपेक्षा गति प्राप्ति</font></font></a></li>");
+document.write("        <li><a href='011.html'><font size=4><font color=darkPurple><b>011</b></font> - <font color=darkBlue>﻿अनुभाग बन्ध सारणी</font></font></a></li>");
+document.write("        <li><a href='012.html'><font size=4><font color=darkPurple><b>012</b></font> - <font color=darkGreen>﻿गति-आगति</font></font></a></li>");
+document.write("        <li><a href='013.html'><font size=4><font color=darkPurple><b>013</b></font> - <font color=darkBlue>﻿जीव कहाँ तक जा सकता है</font></font></a></li>");
+document.write("        <li><a href='014.html'><font size=4><font color=darkPurple><b>014</b></font> - <font color=darkGreen>﻿जीव नियमत: कहाँ जाते हैं</font></font></a></li>");
+document.write("        <li><a href='020.html'><font size=4><font color=darkPurple><b>020</b></font> - <font color=darkBlue>﻿आयु</font></font></a></li>");
+document.write("        <li><a href='030.html'><font size=4><font color=darkPurple><b>030</b></font> - <font color=darkGreen>﻿न्याय-वाक्य</font></font></a></li>");
 document.write("</ul></div>");

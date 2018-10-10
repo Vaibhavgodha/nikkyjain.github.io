@@ -186,68 +186,68 @@ table.mainIndex td {
 }
 
 
-table.myTable, th,td {
-  font-size : 2vw;
+.myTable, th,td {
+  font-size : 1.4vw;
   border: 1px solid black;
   text-align: center; 
   vertical-align: middle;
 }
 
-table.myAltTable th,td {
-  font-size : 2vw;
+.myAltTable th,td {
+  font-size : 1.4vw;
   border: 1px solid black;
   text-align: center; 
   vertical-align: middle;
 }
-table.myAltTable tr:nth-child(odd) {
+.myAltTable tr:nth-child(odd) {
     background-color: #e6ffe6;
 }
-table.myAltTable tr:nth-child(even) {
+.myAltTable tr:nth-child(even) {
     background-color: AliceBlue;
 }
 
 // Alt Row Coloured
-table.myAltTable th,td {
-  font-size : 2vw;
+.myAltTable th,td {
+  font-size : 1.4vw;
   border: 1px solid black;
   text-align: center; 
   vertical-align: middle;
 }
-table.myAltTable tr:nth-child(odd) {
+.myAltTable tr:nth-child(odd) {
     background-color: #e6ffe6;
 }
-table.myAltTable tr:nth-child(even) {
+.myAltTable tr:nth-child(even) {
     background-color: AliceBlue;
 }
 
 // Alt Col Coloured
-table.myAltColTable th,td {
-  font-size : 2vw;
+.myAltColTable th,td {
+  font-size : 1.4vw;
   border: 1px solid black;
   text-align: center; 
   vertical-align: middle;
 }
-table.myAltColTable col:nth-child(odd) {
+.myAltColTable col:nth-child(odd) {
     background-color: #e6ffe6;
 }
-table.myAltColTable col:nth-child(even) {
+.myAltColTable col:nth-child(even) {
     background-color: AliceBlue;
 }
 
-table.myTable th {
+.myTable th {
   background-color : #ffcc99;
 }
-table.myTable th div {
+.myTable th div {
   writing-mode: vertical-lr;
   //min-width: 50px; /* for firefox */
 }
-table.myAltTable th {
+.myAltTable th {
   background-color : #ffe0b3;
 }
-table.myAltTable th {
+.myAltTable th {
   background-color : #ffe0b3;
 }
-table.myAltColTable th {
+.myAltColTable th {
   background-color : #ffe0b3;
 }
 
