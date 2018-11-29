@@ -16,11 +16,8 @@ cat << EOF > $myHtml
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JainPooja</title>
-  <link rel="icon" type="image/png" href="${myRelPath}images/default/jainFlag-short.jpg"/>
-  <!--link rel="stylesheet" href="${myRelPath}css/myJqueryMobile.css">
-  <link rel="stylesheet" href="${myRelPath}js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
-  <script type="text/javascript" src="${myRelPath}js/jquery.js"></script>
-  <script type="text/javascript" src="${myRelPath}js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script-->
+  <link rel="icon" type="image/png" href='${myRelPath}images/default/jainFlag-short.jpg'/>
+  <link rel="stylesheet" href='${myRelPath}css/myJqueryMobile.css'>
   <style>
     body {
       background-color: #fcf5e8;
@@ -34,9 +31,6 @@ cat << EOF > $myHtml
     }
     td a {
       text-decoration: none !important;
-    }
-    p img {
-      width: 40%;
     }
 
     .hdr {
@@ -58,72 +52,12 @@ cat << EOF > $myHtml
     }
     div.adhikaar {
         font-size: 5vw;
-        color: saddlebrown;
-        text-align: center;
-        font-weight: bold;
-        margin: 0 auto;
     }
     h1 {
-        position: relative;
         font-size: 5vw;
-        z-index: 1;
-        overflow: hidden;
-        text-align: center;
-    }
-    h1:before, h1:after {
-        position: absolute;
-        top: 51%;
-        overflow: hidden;
-        width: 50%;
-        height: 1px;
-        content: '\a0';
-        background-color: red;
-    }
-    h1:before {
-        margin-left: -50%;
-        text-align: right;
-    }
-    .adhikaar {
-        background-color: #ccc;
-    }
-    div.main {
-        font-size: 5vw;
-        color: maroon;
-        font-weight: bold;
-        text-align: center;
-    }
-    div.pooja {
-        font-size: 4vw;
-        color: darkBlue;
-        text-align: center;
-        line-height: 140%;
     }
     a, a:visited, a:hover, a:active {
       color: inherit;
-    }
-    div.title {
-        font-size: 2vw;
-        font-weight: bold;
-        text-align: center;
-    }
-    div.poojarth {
-        font-size: 3vw;
-        color: darkGreen;
-        width: 90%;
-        text-align: justify;
-        margin: 0 auto;
-    }
-    span.gatharth {
-        font-size: 3vw;
-        color: darkBlue;
-        font-weight: bold;
-    }
-    span.om {
-        font-size: 3vw;
-        color: maroon;
-        width: 90%;
-        text-align: center;
-        margin: 0 auto;
     }
   </style>
   <!--script>
@@ -190,14 +124,15 @@ do
         fi
         curFile=$(basename $cFile | perl -pe 's/\.txt/.jpg/')
         if [ -f $dbDir/jainDataBase/poojas/$mygroup/$myPooja/images/$curFile ]; then
-          echo "<p align=center><img src=../poojas/$mygroup/$myPooja/images/$curFile></img><p>" >> $myHtml 
+          echo "<p align=center><img src=../poojas/$mygroup/$myPooja/images/$curFile class=itemImage></img><p>" >> $myHtml 
 
         fi
         curFile=$myInDir/$mygroup/$myPooja/main/$(basename $cFile)
         echo "<div class=pooja>" >> $myHtml 
         c="$(cat $curFile)"
         c=$(echo "$c" | perl -pe 's/\n/<br>/g')
-        c=$(echo "$c" | perl -pe 's/\(\(/<span class=comment>/g' | perl -pe 's/\)\)/<\/span>/g')
+        c=$(echo "$c" | perl -pe 's/\(\(/<span class=detail>/g' | perl -pe 's/\)\)/<\/span>/g')
+        c=$(echo "$c" | perl -pe 's/\(/<span class=lay>/g' | perl -pe 's/\)/<\/span>/g'); 
         c=$(echo "$c" | perl -pe 's/ॐ ह्रीं/<span class=om>ॐ ह्रीं/g')
         c=$(echo "$c" | perl -pe 's/निर्वपामीति स्वाहा/निर्वपामीति स्वाहा<\/span>/g')
         c=$(echo "$c" | perl -pe 's/पुष्पांजलिं क्षिपामि/पुष्पांजलिं क्षिपामि<\/span>/g')
@@ -206,7 +141,7 @@ do
         c=$(echo "$c" | perl -pe 's/वषट् सन्निधि करणं/वषट् सन्निधि करणं<\/span>/g')
         echo $c >>  $myHtml
         echo "</div>" >> $myHtml
-        curFile=$myInDir/mainH/$(basename $cFile)
+        curFile=$myInDir/$mygroup/$myPooja/mainH/$(basename $cFile)
         if [ -f $curFile ]; then
           c="$(cat $curFile)"
           c=$(echo "$c" | perl -pe 's/\n/<br>/g')
@@ -216,8 +151,9 @@ do
         if [ -f $curFile ]; then
           c="$(cat $curFile)"
           c=$(echo "$c" | perl -pe 's/\n/<br>/g')
-          c=$(echo "$c" | perl -pe 's/\(\(/<div class=comment>/g' | perl -pe 's/\)\)/<\/div>/g')
+          c=$(echo "$c" | perl -pe 's/\(\(/<span class=details>/g' | perl -pe 's/\)\)/<\/span>/g')
           c=$(echo "$c" | perl -pe 's/\[/<span class=gatharth>[/g' | perl -pe 's/\]/]<\/span>/g'); 
+          c=$(echo "$c" | perl -pe 's/\(/<span class=comment>\(/g' | perl -pe 's/\)/\)<\/span>/g'); 
           echo "<div class=poojarth><font color=maroon><b>अन्वयार्थ : </b></font>$c</div><br>" >>  $myHtml
         fi
       done

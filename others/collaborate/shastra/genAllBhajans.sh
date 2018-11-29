@@ -15,11 +15,11 @@ cat << EOF > $myHtml
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JainBhajan</title>
-  <link rel="icon" type="image/png" href="${myRelPath}images/default/jainFlag-short.jpg"/>
-  <link rel="stylesheet" href="${myRelPath}css/myJqueryMobile.css">
-  <!--link rel="stylesheet" href="${myRelPath}js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
-  <script type="text/javascript" src="${myRelPath}js/jquery.js"></script>
-  <script type="text/javascript" src="${myRelPath}js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script-->
+  <link rel="icon" type="image/png" href='${myRelPath}images/default/jainFlag-short.jpg'/>
+  <link rel="stylesheet" href='${myRelPath}css/myJqueryMobile.css'>
+  <!--link rel="stylesheet" href='${myRelPath}js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+  <script type="text/javascript" src='${myRelPath}js/jquery.js'></script>
+  <script type="text/javascript" src='${myRelPath}js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script-->
   <style>
     body {
       background-color: #fcf5e8;
@@ -56,12 +56,12 @@ cat << EOF > $myHtml
     }
   </style>
   <!--script>
-    relPath="$myRelPath";
+    relPath='$myRelPath';
   </script>
-  <script type="text/javascript" src="${myRelPath}js/myMobile.js"></script-->
+  <script type="text/javascript" src='${myRelPath}js/myMobile.js'></script-->
 </head>
 <body>
-<div align=center><a href="${myRelPath}index.html"><img src="${myRelPath}images/jain-saint.jpg" height=240 width=270></img></a></div>
+<div align=center><a href='${myRelPath}index.html'><img src='${myRelPath}images/jain-saint.jpg' height=240 width=270></img></a></div>
 <br><br><br>
 <div class=hdr align=center>जैन भजन</div>
 <br><br><br>

@@ -12,15 +12,14 @@ do
     IFS=$'\n'
     myGroup=$(basename $group);
     [ ! -d $group/main ] && continue
-    mkdir -p $outDir/jainDataBase/bhajans/$myGroup/html
+    mkdir -p $outDir/jainDataBase/bhajans/$myGroup/html1
     for bhajan in $(ls $group/main/* | sort)
     do
       if ! test -f $bhajan; then
         continue
       fi
-      mkdir -p $group/html
       myBhajanName=$(echo $(basename $bhajan) | perl -pe 's/.txt//g');
-      myHtml=$outDir/jainDataBase/bhajans/$myGroup/html/${myBhajanName}.html
+      myHtml=$outDir/jainDataBase/bhajans/$myGroup/html1/${myBhajanName}.html
       if [ "$headerCreated" = "" ]; then
         ## ---- Header -----
         createHeader '../../../../'

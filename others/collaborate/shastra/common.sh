@@ -216,7 +216,7 @@ for myPdfPath in $(ls -d $dbDir/jainDataBase/genBooksWithTeeka/*.pdf)
 do
   myPdfFile=$(basename $myPdfPath)
  	myPdfName=$(echo $myPdfFile | perl -pe 's/.pdf//')
-  echo "<li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/$myPdf>$myPdfName</a></li>"  >> $myHtml
+  echo "<li data-theme=b><a data-rel=dialog data-ajax=false href=${myRelPath}jainDataBase/genBooksWithTeeka/$myPdfFile>$myPdfName</a></li>"  >> $myHtml
 done
 cat << EOF >> $myHtml
           </ul>
@@ -272,23 +272,23 @@ cat <<EOF > $myHtml
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jai Jinendra</title>
-  <link rel="icon" type="image/png" href="${myRelPath}images/default/jainFlag-short.jpg"/>
-  <link rel="stylesheet" href="${myRelPath}css/myJqueryMobile.css">
-  <link rel="stylesheet" href="${myRelPath}js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css">
-  <script type="text/javascript" src="${myRelPath}js/jquery.js"></script>
-  <script type="text/javascript" src="${myRelPath}js/jquery-mobile/1.5-alpha/jquery.mobile.js"></script>
+  <link rel="icon" type="image/png" href='${myRelPath}images/default/jainFlag-short.jpg'/>
+  <link rel="stylesheet" href='${myRelPath}css/myJqueryMobile.css'>
+  <link rel="stylesheet" href='${myRelPath}js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+  <script type="text/javascript" src='${myRelPath}js/jquery.js'></script>
+  <script type="text/javascript" src='${myRelPath}js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
   <script>
-    relPath="$myRelPath";
+    relPath='$myRelPath';
 \$(document).on( "pagecontainershow", function(){
   \$("#my_audio").on("error", function (e) {
     \$("#myAudio").hide();
   });
-  $.getScript("${relPath}js/allAudioFiles.js", function() {
+  \$.getScript('${relPath}js/allAudioFiles.js', function() {
     console.log("Added Audio Files");
   });
 })
   </script>
-  <script type="text/javascript" src="${myRelPath}js/myMobile.js"></script>
+  <script type="text/javascript" src='${myRelPath}js/myMobile.js'></script>
 </head>
 <body>
 <div data-role=page id=demo-page>

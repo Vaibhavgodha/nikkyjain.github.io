@@ -23,6 +23,7 @@ echo "pDir $pDir"
 echo "gDir $gDir"
 echo "ggDir $ggDir"
 
+
 mkdir -p $dbDir/jainDataBase/$ggDir/$gDir/$pDir
 outDir=$(find $dbDir/jainDataBase/$ggDir/$gDir -name $pDir -type d)
 echo "Will Create HTML files here - $outDir"
@@ -32,6 +33,7 @@ mkdir -p $outDir/html
 /bin/cp -f $dbDir/others/collaborate/$ggDir/$gDir/index.txt $outDir/../index.txt 
 /bin/cp -f $dbDir/others/collaborate/$ggDir/index.txt $outDir/../../index.txt 
 
+exit
 
 while read cFile; do
   #q=`echo $p | sed 's/.txt//'`
@@ -57,8 +59,10 @@ while read cFile; do
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Language" content="hi" />
     <link type="text/css" rel="stylesheet" href="../../../../../css/shastra.css" />
+    <link type="text/css" rel="stylesheet" href="../../../../../css/myJqueryMobile.css" />
     <script type="text/javascript" src="../../../../../js/jquery.js"></script>
     <script type="text/javascript" src="../../../../../js/${ggDir}.js"></script>
+    <script type="text/javascript" src="../../../../../js/myFontSzCtrl.js"></script>
   </head>
   <body>
     <script src="../../../../../js/myRockingRolling.js" type="text/javascript"></script>
@@ -210,13 +214,14 @@ EOF
           c=$(echo "$c" | perl -pe 's/\[\[/<b>/g' | perl -pe 's/\]\]/<\/b>/g'); 
           c=$(echo "$c" | perl -pe 's:\n:</p><br><p>:g' | perl -pe 's/\[/<b>[/g' | perl -pe 's/\]/]<\/b>/g'); 
           c=$(echo "<p>$c</p>" | perl -pe 's/<p>.*\(\(/<div class=teekaPadya align=center>/g' | perl -pe 's/\)\)/<\/div><br><p>/g' | perl -pe 's/\;\;/<br>/g'); 
-	      c=$(echo "$c" | perl -pe 's/(\()/$1<font color=DarkSlateGray>/g' | perl -pe 's/(\))/<\/font>$1/g'); 
+	        c=$(echo "$c" | perl -pe 's/(\()/$1<font color=DarkSlateGray>/g' | perl -pe 's/(\))/<\/font>$1/g'); 
           c=$(echo "$c" | perl -pe 's/<p>\s*<\/p>//g'); 
           c=$(echo "$c" | perl -pe 's:<p><span:<span:g'); 
           c=$(echo "$c" | perl -pe 's:<\/p><br><p><sup:<br><sup:g'); 
           c=$(echo "$c" | perl -pe 's:</span></p>:</span>:g'); 
           c=$(echo "$c" | perl -pe 's/<br><br>/<br>/g'); 
           c=$(echo "$c" | perl -pe 's:<br>$::g'); 
+          c=$(echo "$c" | perl -pe 's:></p><br><p>\s*:>:g');
           echo "    <td id=gatha$gathaName-teeka$teekaCntr><b><font color=darkGreen>$teekakaar $st$s</font></b><br><br><font color=darkBlue>$c</font></td>" >> $outFile
           teekaCntr=$(($teekaCntr+1))
         fi

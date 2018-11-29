@@ -32,8 +32,8 @@ do
       #if [ -f $myOutDir/audio/$audioFileName ]; then
         cat <<EOF >> $myHtml
         <div align=center id=myAudio><audio controls>
-          <source src="../audio/${myPooja}.mp3" type="audio/mpeg">
-          <source id=my_audio src="$audioFileName" type="audio/mpeg">
+          <source src='../audio/${myPooja}.mp3' type="audio/mpeg">
+          <source id=my_audio src='$audioFileName' type="audio/mpeg">
         </audio></div>
 EOF
       #fi

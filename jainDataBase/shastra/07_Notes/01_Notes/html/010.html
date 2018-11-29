@@ -1,40 +1,83 @@
-<html>
-  <head>
-    <title>Notes</title>
-    <link rel="icon" type="image/png" href="../../../../../images/default/jainFlag-short.jpg"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Content-Language" content="hi" />
-    <link type="text/css" rel="stylesheet" href="../../../../../css/shastra.css" />
-    <link type="text/css" rel="stylesheet" href="../../../../../css/myJqueryMobile.css" />
-    <script type="text/javascript" src="../../../../../js/jquery.js"></script>
-    <script type="text/javascript" src="../../../../../js/shastra.js"></script>
-    <script type="text/javascript" src="../../../../../js/myFontSzCtrl.js"></script>
-  </head>
-  <body>
-    <script src="../../../../../js/myRockingRolling.js" type="text/javascript"></script>
-      <a href='009.html'><img src='../../../../../images/common/prev.jpg' id=next height=50 width=50/></a>
-      <a href='011.html' style='float: right'><img src='../../../../../images/common/next.jpg' id=prev height=50 width=50/></a>
-	<!--div align=center>
-    <form name=myForm align=center>
-        <button id=submitCorrections onclick="return false;">Submit Corrections</button>
-    </form>
-	</div-->
-	<table width=100% justify=center border=0><tr>
-      <td class=example data-dropdown=#विशेष>विशेष</td>
-    </table><script type='text/javascript' src='myGatha.js'>
-      </script></div>
-	  <hr style='height:4px;border:none;color:#333;background-color:#333;'><h2 align=center>Notes (Notes)</h2>
-      <br><div class=titleContainer align=center><font color=darkGreen>﻿संहनन की अपेक्षा गति प्राप्ति</font></div>
-    <h3 class=mainTitle align=center><font color=maroon> ﻿संहनन की अपेक्षा गति प्राप्ति<br> </font></h3>
-  <div class=bottomContainer id=bottomTxt10 style="text-align: justify; margin: 0 auto; width: 90%;">
-      <div class=arthContainer><b><font color=black>अन्वयार्थ : </font></b>संहनन की अपेक्षा गति प्राप्ति<br></div>
-    <div class=tikaTopContainer><b><br> टीका : 
-    <span id=teeka0 class=gatha010 style="color: darkGreen;">&nbsp;&nbsp;विशेष</span>
-    <b></div>
-  <table class=display cellspacing=0 width="100%" border=1>
-     <tbody>
-         <tr>
-    <td id=gatha010-teeka0><b><font color=darkGreen>विशेष </font></b><br><br><font color=darkBlue><p>﻿<table class=myAltTable></p><br><p><th colspan=2 class=tableTitle>किस संहनन से मरकर किस गति तक उत्‍पन्न होना सम्‍भव है</th><tr></p><br><p><th>संहनन</th><th>प्राप्तव्‍य स्‍वर्ग</th><tr></p><br><p><th>१</th><td>पंच अनुत्तर तक<tr></p><br><p><th>१,२</th><td>नव अनुदिश तक<tr></p><br><p><th>१-३</th><td>नव ग्रैवेयक तक<tr></p><br><p><th>१-४</th><td>अच्‍युत तक<tr></p><br><p><th>१-५</th><td>सहस्रार तक<tr></p><br><p><th>१-६</th><td>सौधर्म से कापिष्‍ठ तक<tr></p><br><p><td class=emptyTableCell></td></p><br><p><td class=tableNotes>1=वज्रऋषभनाराच 2=वज्रनाराच 3=नाराच;4=अर्धनाराच;5=कीलित;6=सृपाटिका</td><tr></p><br><p><td class=emptyTableCell></td></p><br><p><td class=tableNotes>गो.क./मू./२९-३१/२४ और गो.क./जी.प्र./५४९/७२५/१४</td></p><br><p></table></p></font></td>
-      </tbody></table></div>
-</body>
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Notes</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='009.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='011.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>विशेष</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-010><span class=incFontSz>+ </span><a href=#index>
+﻿संहनन की अपेक्षा गति प्राप्ति</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿संहनन की अपेक्षा गति प्राप्ति</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>संहनन की अपेक्षा गति प्राप्ति</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;विशेष</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>विशेष :</font></b> <br><br>﻿<table class=myAltTable><br><br>
+<th colspan=2 class=tableTitle>किस संहनन से मरकर किस गति तक उत्‍पन्न होना सम्‍भव है</th><tr><br><br>
+<th>संहनन</th><th>प्राप्तव्‍य स्‍वर्ग</th><tr><br><br>
+<th>१</th><td>पंच अनुत्तर तक<tr><br><br>
+<th>१,२</th><td>नव अनुदिश तक<tr><br><br>
+<th>१-३</th><td>नव ग्रैवेयक तक<tr><br><br>
+<th>१-४</th><td>अच्‍युत तक<tr><br><br>
+<th>१-५</th><td>सहस्रार तक<tr><br><br>
+<th>१-६</th><td>सौधर्म से कापिष्‍ठ तक<tr><br><br>
+<td class=emptyTableCell></td><br><br>
+<td class=tableNotes>1=वज्रऋषभनाराच 2=वज्रनाराच 3=नाराच;4=अर्धनाराच;5=कीलित;6=सृपाटिका</td><tr><br><br>
+<td class=emptyTableCell></td><br><br>
+<td class=tableNotes>गो.क./मू./२९-३१/२४ और गो.क./जी.प्र./५४९/७२५/१४</td><br><br>
+</table><br><br>
+
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
 </html>

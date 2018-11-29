@@ -5,6 +5,12 @@ img {
 p img {
     width: 40%;
 }
+div.teekakaar {
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    color: darkGreen;
+}
 div.title {
     font-size: 2vw;
     font-weight: bold;
@@ -17,16 +23,22 @@ div.main {
     text-align: center;
 }
 div.gatha {
-    font-size: 3vw;
+    font-size: 4vw;
     color: maroon;
     font-weight: bold;
     text-align: center;
 }
 div.pooja {
-    font-size: 3vw;
+    font-size: 4vw;
     color: navy;
     text-align: center;
     line-height: 140%;
+}
+span.tarj {
+    font-size: 2vw;
+    color: brown;
+    font-weight: bold;
+    float: right;
 }
 div.arth {
     font-size: 2vw;
@@ -35,12 +47,22 @@ div.arth {
     text-align: justify;
     margin: 0 auto;
 }
+span.stitle {
+    color: red;
+    float :right;
+}
 div.teeka {
     font-size: 2vw;
     color: black;
-    width: 90%;
     text-align: justify;
     margin: 0 auto;
+}
+div.steeka {
+    font-size: 2vw;
+    color: brown;
+    text-align: justify;
+    margin: 0 auto;
+    display:none;
 }
 span.om {
     font-size: 2vw;
@@ -50,7 +72,7 @@ span.om {
     margin: 0 auto;
 }
 div.gadya {
-    font-size: 2vw;
+    font-size: 3vw;
     color: darkGreen;
     text-align: center;
     margin: 0 auto;
@@ -76,10 +98,27 @@ span.gatharth {
 }
 .comment {
     font-size: 2vw;
+    color: darkGray;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+.lay {
+    font-size: 1.2vw;
+    color: darkRed;
+    text-align: center;
+    margin: 0 auto;
+}
+.detail {
+    font-size: 1.4vw;
     color: steelBlue;
     width: 90%;
     text-align: center;
     margin: 0 auto;
+    font-weight: bold;
+}
+.itemImage {
+    border-radius: 6%;
 }
 .myCenter {
     font-size: 5vw;
