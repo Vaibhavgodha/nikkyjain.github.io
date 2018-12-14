@@ -518,6 +518,7 @@ $( document ).ready(function() {
     $optgrp=$('<optgroup label="﻿पीठिका">')
        $optgrp.append("<option value='002.html'><b>002</b> - ﻿स्वसमय और परसमय का लक्षण </option>");
        $optgrp.append("<option value='009-010.html'><b>009-010</b> - ﻿श्रुतकेवली</option>");
+       $optgrp.append("<option value='016.html'><b>016</b> - ﻿शुद्धनय का लक्षण</option>");
        $optgrp.append("<option value='018.html'><b>018</b> - ﻿ध्यान में केवल आत्मा</option>");
        $optgrp.append("<option value='023.html'><b>023</b> - ﻿आत्मा के बंध मोक्ष का कारण</option>");
        $optgrp.append("<option value='036.html'><b>036</b> - ﻿निश्चय स्तुति - जितेन्द्रिय</option>");

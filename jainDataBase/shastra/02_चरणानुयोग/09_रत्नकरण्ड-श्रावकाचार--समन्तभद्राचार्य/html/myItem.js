@@ -70,8 +70,7 @@ $( document ).ready(function() {
        $optgrp.append("<option value='045.html'><b>045</b> - ﻿चरणानुयोग</option>");
        $optgrp.append("<option value='046.html'><b>046</b> - ﻿द्रव्यानुयोग</option>");
   mySel.append($optgrp);
-    $optgrp=$('<optgroup label="﻿सम्यक-चारित्र-अधिकार
-">')
+    $optgrp=$('<optgroup label="﻿सम्यक-चारित्र-अधिकार">')
        $optgrp.append("<option value='047.html'><b>047</b> - ﻿चारित्र की आवश्यकता</option>");
        $optgrp.append("<option value='048.html'><b>048</b> - ﻿चारित्र कब होता है?</option>");
        $optgrp.append("<option value='049.html'><b>049</b> - ﻿चारित्र का लक्षण</option>");
@@ -238,8 +237,7 @@ $( document ).ready(function() {
        $optgrp.append("<option value='045.html'><b>045</b> - ﻿चरणानुयोग</option>");
        $optgrp.append("<option value='046.html'><b>046</b> - ﻿द्रव्यानुयोग</option>");
   mySel.append($optgrp);
-    $optgrp=$('<optgroup label="﻿सम्यक-चारित्र-अधिकार
-">')
+    $optgrp=$('<optgroup label="﻿सम्यक-चारित्र-अधिकार">')
        $optgrp.append("<option value='047.html'><b>047</b> - ﻿चारित्र की आवश्यकता</option>");
        $optgrp.append("<option value='048.html'><b>048</b> - ﻿चारित्र कब होता है?</option>");
        $optgrp.append("<option value='049.html'><b>049</b> - ﻿चारित्र का लक्षण</option>");

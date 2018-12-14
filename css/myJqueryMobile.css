@@ -41,7 +41,7 @@ span.tarj {
     float: right;
 }
 div.arth {
-    font-size: 3vw;
+    font-size: 2.6vw;
     color: navy;
     width: 90%;
     text-align: justify;
@@ -52,7 +52,7 @@ span.stitle {
     float :right;
 }
 div.teeka {
-    font-size: 3vw;
+    font-size: 2.6vw;
     color: black;
     text-align: justify;
     margin: 0 auto;
@@ -92,7 +92,7 @@ div.lay {
     margin: 0 auto;
 }
 span.gatharth {
-    font-size: 2vw;
+    font-size: 2.6vw;
     color: navy;
     font-weight: bold;
 }
