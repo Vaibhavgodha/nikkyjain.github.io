@@ -15,7 +15,7 @@ def createBhajan (html, relPath, createSearch,dbDir):
     if(createSearch==""):
         html.write("""  <div data-history=false data-role=popup id=popupBhajan data-theme=none>
     <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>\n""")
-    for category in glob.glob(dbDir+"/jainDataBase/bhajans/*/"):
+    for category in sorted(glob.glob(dbDir+"/jainDataBase/bhajans/*/")):
         myCategory=os.path.basename(os.path.dirname(category))
         myCategory=myCategory.replace('-', ' ')
         myCategory=re.sub(r'.*_', '', myCategory)
@@ -153,6 +153,7 @@ def createMiscList (html, myRelPath, dbDir):
           <ul data-role=listview>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/JeevSamas.pdf>जीव समास</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/BookMark.pdf>BookMark</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/Cal-2019.pdf>Calendar-2019</a></li>
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>
