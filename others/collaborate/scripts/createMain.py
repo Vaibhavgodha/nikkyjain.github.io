@@ -10,7 +10,7 @@ from common import mkdirs
 from common import createHeader
 
 outDir=os.path.abspath('../../../')
-dbDir=os.path.abspath('../../../../jaindb-dev/')
+dbDir=os.path.abspath('../../../../jaindb/')
 print("DB Dir ",dbDir)
 myHtml=outDir+"/index.html"
 myJs=outDir+"/js/myMobile.js"

@@ -17,7 +17,7 @@ pDir=os.path.basename(os.path.abspath('./'))
 gDir=os.path.basename(os.path.dirname(os.path.abspath('./')))
 ggDir=os.path.basename(os.path.dirname(os.path.dirname(os.path.abspath('./'))))
 jsFile="myItem.js"
-dbDir=re.sub('jaindb-dev.*', 'jaindb-dev', os.path.abspath('./'))
+dbDir=re.sub('jaindb.*', 'jaindb', os.path.abspath('./'))
 outDir=dbDir+"/jainDataBase/"+ggDir+"/"+gDir+"/"+pDir+"/html"
 #outDir=os.path.abspath('./')+"/html"
 print("Will Create HTML files here - "+outDir)

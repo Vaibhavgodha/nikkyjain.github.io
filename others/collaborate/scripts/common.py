@@ -156,8 +156,20 @@ def createMiscList (html, myRelPath, dbDir):
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Jain Comics</h2>
+          <ul data-role=listview>\n""")
+    # Jain Comics
+    for myPdfPath in sorted(glob.glob(dbDir+"/jainDataBase/jainComics/*.pdf")):
+        myPdfFile=os.path.basename(myPdfPath)
+        myPdfName=myPdfFile.replace('.pdf', '')
+        html.write("<li data-theme=b><a data-rel=dialog data-ajax=false href="+myRelPath+"jainDataBase/jainComics/"+myPdfFile+">"+myPdfName+"</a></li>\n")
+    html.write("""
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
           <h2>Print Granth</h2>
           <ul data-role=listview>\n""")
+    # genBooks
     for myPdfPath in sorted(glob.glob(dbDir+"/jainDataBase/genBooks/*.html")):
         myPdfFile=os.path.basename(myPdfPath)
         myPdfName=myPdfFile.replace('.html', '')
