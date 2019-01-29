@@ -58,12 +58,12 @@ html.write("""<!DOCTYPE html>
       color:blue;
       float:right;
     }
-    hr {
-      border: none;
-      height: 3px;
-      color: #333;
-      background-color: #333;
-      width:50%;
+    hr.type_7 {
+      border: 0;
+      height: 55px;
+      background: url("""+myRelPath+"""images/type_7.png) no-repeat top center;
+      display: block;
+      position: relative;
     }
     a, a:visited, a:hover, a:active {
       color: inherit;
@@ -92,6 +92,7 @@ html.write("""<!DOCTYPE html>
 
 if (os.path.isdir('./main') or os.path.isdir('./ftitle')):
     html.write("""<br><br><div class=adhikaar id=index><h1>Index</h1></div><br>
+<div align=center><img src='"""+myRelPath+"""images/brownOm.png' width='5%'></img></div>
     <table align=center width=90% class=mainIndex>
 <tr><th>गाथा / सूत्र<th>विषय</tr>""")
     myCntr=0
@@ -123,7 +124,8 @@ if (os.path.isdir('./main') or os.path.isdir('./ftitle')):
                     fData=fData.replace('\xef\xbb\xbf', '')
                 html.write("<td><b>"+myFName+")<b> <td><a href=#gatha-"+myFName+">"+fData+"</a>")
                 myCntr+=1
-    html.write("    </table><br><br><hr><br>")
+    html.write("    </table><br><br><br>\n")
+html.write("<div align=center><img src='"+myRelPath+"images/hrim.png' width='20%'></img></div>\n");
 
 for bcFile in sorted(os.listdir('./main')):
     # Handle Adhikaar
@@ -133,6 +135,7 @@ for bcFile in sorted(os.listdir('./main')):
             fData=myfile.read().replace('\n', '')
             fData=fData.replace('\xef\xbb\xbf', '')
         html.write("<br><br><div class=adhikaar><h1>"+fData+"</h1></div><br>")
+        html.write("<div align=center><img src='"+myRelPath+"images/ahinsaParmoDharm.png' width='15%'></img></div>\n");
     # Handle Title
     if os.path.isdir('./ftitle'):
         curFile="./ftitle/"+bcFile
@@ -228,8 +231,9 @@ for bcFile in sorted(os.listdir('./main')):
 #                fData=re.sub(r'<br>$', '', fData); 
                 html.write("<br><div class=teeka><b><font color=darkgreen>"+teekakaar+" :</font></b><br><br>"+fData+"</div>")
     ##
-    html.write("<hr align=center width=40%>\n")
+    html.write("<hr class=type_7>\n")
     print ("\rDone - "+bcFile, end="")
+html.write("<div align=center><img src='"+myRelPath+"images/Srutskandh.jpg' width='70%'></img></div>\n");
 html.write("</body></html>")
 html.close()
 print("Done")

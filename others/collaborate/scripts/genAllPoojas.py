@@ -50,12 +50,12 @@ html.write("""
       float:right;
       font-size: 4vw;
     }
-    hr {
-      border: none;
-      height: 3px;
-      color: #333;
-      background-color: #333;
-      width:50%;
+    hr.type_7 {
+      border: 0;
+      height: 55px;
+      background: url("""+myRelPath+"""images/type_7.png) no-repeat top center;
+      display: block;
+      position: relative;
     }
     div.adhikaar {
         font-size: 5vw;
@@ -90,6 +90,7 @@ for group in sorted(glob.glob(myInDir+"/*/")):
     myGroup=os.path.basename(os.path.dirname(group))
     myGroup=re.sub('.*_', '', myGroup)
     html.write("  <div class=main>"+myGroup+"</div><br>\n")
+    html.write("  <div align=center><img src='"+myRelPath+"images/brownOm.png' width='5%'></img></div>\n");
     html.write("    <table align=center width=90%>\n")
     myCntr=1
     # Loop for all bhajans in a group
@@ -161,8 +162,9 @@ for group in sorted(glob.glob(myInDir+"/*/")):
                 fData=fData.replace('[', '<span class=gatharth>[')
                 fData=fData.replace(']', ']</span>')
                 html.write("<div class=poojarth><font color=maroon><b>अन्वयार्थ : </b></font>"+fData+"</div><br>\n")
-        html.write("<br><hr align=center><br>\n")
+        html.write("<br><hr class=type_7><br>\n")
         myCntr+=1
     print ("\rDone - Pooja Group "+os.path.basename(group), end="")
     myGrCntr+=1
+html.write("<div align=center><img src='"+myRelPath+"images/Srutskandh.jpg' width='70%'></img></div>\n");
 html.write("</body></html>\n")

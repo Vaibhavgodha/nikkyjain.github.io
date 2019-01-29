@@ -1,8 +1,7 @@
 #!/bin/sh
 
-# Copy Bhajans
 outDir=$(cd ../../../jainDataBase && echo $PWD)
-export dbDir=$(cd ../../../../jaindb-dev/jainDataBase && echo $PWD)
+export dbDir=$(cd ../../../../jaindb/jainDataBase && echo $PWD)
 echo "DB Dir $dbDir"
 
 # Copy Bhajans
@@ -33,6 +32,12 @@ echo "Copy Done - poojas"
 /bin/rm -rf $outDir/shastra
 cp -r $dbDir/shastra $outDir/shastra
 echo "Copy Done - shastra"
+# Copy Scripts
+cp -r $dbDir/../others/collaborate/scripts/* $outDir/../others/collaborate/scripts/.
+echo "Copy Done - scripts"
+# Copy Downloads
+cp -r $dbDir/downloads/*.pdf $outDir/downloads/.
+echo "Copy Done - downloads"
 
 # Copy Teeka
 /bin/rm -rf $outDir/teeka

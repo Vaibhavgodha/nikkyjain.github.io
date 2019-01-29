@@ -52,12 +52,12 @@ html.write("""
       float:right;
       font-size: 4vw;
     }
-    hr {
-      border: none;
-      height: 3px;
-      color: #333;
-      background-color: #333;
-      width:50%;
+    hr.type_7 {
+      border: 0;
+      height: 55px;
+      background: url("""+myRelPath+"""images/type_7.png) no-repeat top center;
+      display: block;
+      position: relative;
     }
     a, a:visited, a:hover, a:active {
       color: inherit;
@@ -86,6 +86,7 @@ for group in sorted(glob.glob(dbDir+"/jainDataBase/bhajans/*/")):
     myGroup=os.path.basename(os.path.dirname(group)).replace('-', ' ')
     myGroup=re.sub('.*_', '', myGroup)
     html.write("  <div class=main>"+myGroup+" भजन</div><br>\n")
+    html.write("  <div align=center><img src='"+myRelPath+"images/brownOm.png' width='5%'></img></div>\n");
     html.write("    <table align=center width=90%>\n")
     myCntr=1
     # Loop for all bhajans in a group
@@ -106,6 +107,7 @@ for group in sorted(glob.glob(dbDir+"/jainDataBase/bhajans/*/")):
     myGroup=os.path.basename(os.path.dirname(group)).replace('-', ' ')
     myGroup=re.sub('.*_', '', myGroup)
     html.write("<br><br><div class=adhikaar><h1>"+myGroup+" भजन</h1></div><br>\n")
+    html.write("<div align=center><img src='"+myRelPath+"images/ahinsaParmoDharm.png' width='15%'></img></div>\n");
     myCntr=1
     if not os.path.isdir(group+'./main'):
         continue
@@ -119,8 +121,9 @@ for group in sorted(glob.glob(dbDir+"/jainDataBase/bhajans/*/")):
             fData=fData.replace('\n', '<br>')
             fData=fData.replace('((', '<span class=tarj>')
             fData=fData.replace('))', '</span>')
-        html.write("<div class=pooja>"+fData+"\n  </div><br>\n<hr align=center>\n")
+        html.write("<div class=pooja>"+fData+"\n  </div><br>\n<hr class=type_7>\n")
         myCntr+=1
     print ("\rDone - Bhajan Group "+os.path.basename(group), end="")
     myGrCntr+=1
+html.write("<div align=center><img src='"+myRelPath+"images/Srutskandh.jpg' width='70%'></img></div>\n");
 html.write("</body></html>\n")

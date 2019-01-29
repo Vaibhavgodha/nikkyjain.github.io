@@ -517,11 +517,15 @@ $( document ).ready(function() {
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿पीठिका">')
        $optgrp.append("<option value='002.html'><b>002</b> - ﻿स्वसमय और परसमय का लक्षण </option>");
+       $optgrp.append("<option value='007.html'><b>007</b> - ﻿ज्ञानी आत्मा शुद्ध ज्ञायक है</option>");
+       $optgrp.append("<option value='008.html'><b>008</b> - ﻿व्यवहार की आवश्यकता</option>");
        $optgrp.append("<option value='009-010.html'><b>009-010</b> - ﻿श्रुतकेवली</option>");
+       $optgrp.append("<option value='015.html'><b>015</b> - ﻿शुद्धनय से जानना सम्यक्त्व है</option>");
        $optgrp.append("<option value='016.html'><b>016</b> - ﻿शुद्धनय का लक्षण</option>");
        $optgrp.append("<option value='018.html'><b>018</b> - ﻿ध्यान में केवल आत्मा</option>");
        $optgrp.append("<option value='023.html'><b>023</b> - ﻿आत्मा के बंध मोक्ष का कारण</option>");
        $optgrp.append("<option value='036.html'><b>036</b> - ﻿निश्चय स्तुति - जितेन्द्रिय</option>");
+       $optgrp.append("<option value='039-040.html'><b>039-040</b> - ﻿प्रतिबुद्ध द्वारा परभावों का त्याग - प्रत्याख्यान</option>");
        $optgrp.append("<option value='054.html'><b>054</b> - ﻿शुद्ध जीव कैसा होता है?</option>");
        $optgrp.append("<option value='082.html'><b>082</b> - ﻿कर्मों को जानते हुए इस जीव का पुद्गल के साथ अतादात्म्य</option>");
   mySel.append($optgrp);

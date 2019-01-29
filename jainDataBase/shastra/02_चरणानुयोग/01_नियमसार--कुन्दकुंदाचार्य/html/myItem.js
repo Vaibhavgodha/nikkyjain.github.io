@@ -23,7 +23,7 @@ function toggleSTeeka(teeka) {
 $( document ).ready(function() {
   mySel=$('select#select-native-0')
   mySel.append("<option value='001.html'><b>001</b> - ﻿मंगलाचरण</option>");
-  mySel.append("<option value='002.html'><b>002</b></option>");
+  mySel.append("<option value='002.html'><b>002</b> - ﻿मार्ग और मार्ग-फल</option>");
   mySel.append("<option value='003.html'><b>003</b></option>");
   mySel.append("<option value='004.html'><b>004</b></option>");
   mySel.selectmenu();
