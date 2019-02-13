@@ -22,86 +22,212 @@ function toggleSTeeka(teeka) {
 }
 $( document ).ready(function() {
   mySel=$('select#select-native-0')
-  mySel.append("<option value='001.html'><b>001</b> - ﻿मंगलाचरण</option>");
-  mySel.append("<option value='002.html'><b>002</b> - ﻿सिद्ध परमेष्ठी को नमस्कार</option>");
-  mySel.append("<option value='003.html'><b>003</b> - ﻿सिद्ध परमेष्ठी को नमस्कार</option>");
-  mySel.append("<option value='004.html'><b>004</b> - ﻿सिद्ध परमेष्ठी को नमस्कार</option>");
-  mySel.append("<option value='005.html'><b>005</b> - ﻿सिद्ध परमेष्ठी को नमस्कार</option>");
-  mySel.append("<option value='006.html'><b>006</b> - ﻿अरिहंत परमेष्ठी को नमस्कार</option>");
-  mySel.append("<option value='007.html'><b>007</b> - ﻿आचार्य, उपाध्याय, साधु परमेष्ठी को नमस्कार</option>");
-  mySel.append("<option value='008.html'><b>008</b> - ﻿प्रभाकरभट्ट द्वारा विनती</option>");
-  mySel.append("<option value='009.html'><b>009</b> - ﻿विनती</option>");
-  mySel.append("<option value='010.html'><b>010</b> - ﻿परमात्मा के कथन की विनती</option>");
-  mySel.append("<option value='011.html'><b>011</b> - ﻿तीन प्रकार के आत्मा को कहने की प्रतिज्ञा</option>");
-  mySel.append("<option value='012.html'><b>012</b> - ﻿तीन प्रकार के आत्मा को जानने का प्रयोजन</option>");
-  mySel.append("<option value='013.html'><b>013</b> - ﻿बहिरात्मा</option>");
-  mySel.append("<option value='014.html'><b>014</b> - ﻿अन्तरात्मा</option>");
-  mySel.append("<option value='015.html'><b>015</b> - ﻿परमात्मा</option>");
-  mySel.append("<option value='016.html'><b>016</b> - ﻿ध्येय</option>");
-  mySel.append("<option value='017.html'><b>017</b> - ﻿लक्ष्य के लक्षण</option>");
-  mySel.append("<option value='018.html'><b>018</b> - ﻿शान्त और शिव</option>");
-  mySel.append("<option value='019-021.html'><b>019-021</b> - ﻿निरन्जन</option>");
-  mySel.append("<option value='022.html'><b>022</b> - ﻿परमात्मा - ध्यान के साधन नहीं</option>");
-  mySel.append("<option value='023.html'><b>023</b> - ﻿परमात्मा - ज्ञान का साधन नहीं</option>");
-  mySel.append("<option value='024.html'><b>024</b> - ﻿परमात्मा - अनन्त ज्ञान-दर्शन-सुख-वीर्यमयी</option>");
-  mySel.append("<option value='025.html'><b>025</b> - ﻿परमात्मा - शरीर रहित लोक के शिखर पर स्थित</option>");
-  mySel.append("<option value='026.html'><b>026</b> - ﻿परमात्मा - शरीर में स्थित</option>");
-  mySel.append("<option value='027.html'><b>027</b> - ﻿परमात्मा - अंतर-दृष्टि के प्रेरणा</option>");
-  mySel.append("<option value='028.html'><b>028</b> - ﻿[परमात्मा - शारीरिक और मानसिक सुख-दुःख रहित </option>");
-  mySel.append("<option value='029.html'><b>029</b> - ﻿[परमात्मा - देह में रहते हुए भी स्वभाव में स्थित </option>");
-  mySel.append("<option value='030.html'><b>030</b> - ﻿भेद-ज्ञान की प्रेरणा</option>");
-  mySel.append("<option value='031.html'><b>031</b> - ﻿आत्मा का लक्षण</option>");
-  mySel.append("<option value='032.html'><b>032</b> - ﻿ध्यान की विधि और उसका फल</option>");
-  mySel.append("<option value='033.html'><b>033</b> - ﻿देह में ही परमात्मा का निवास</option>");
-  mySel.append("<option value='034.html'><b>034</b> - ﻿परमात्मा का एक अद्भुत् लक्षण</option>");
-  mySel.append("<option value='035.html'><b>035</b> - ﻿परमात्मा - समभाव द्वारा परम आनन्द की प्राप्ति</option>");
-  mySel.append("<option value='036.html'><b>036</b> - ﻿आत्मा का परम आत्मा स्वरूप</option>");
-  mySel.append("<option value='037.html'><b>037</b> - ﻿पूर्व कथन की पुष्टि</option>");
-  mySel.append("<option value='038.html'><b>038</b> - ﻿परमात्मा - केवलज्ञान में स्वयं प्रतिभासित</option>");
-  mySel.append("<option value='039.html'><b>039</b> - ﻿परमात्मा - ध्यान का ध्येय</option>");
-  mySel.append("<option value='040.html'><b>040</b> - ﻿परमात्मा - संसार को उपजाता है</option>");
-  mySel.append("<option value='041.html'><b>041</b> - ﻿परमात्मा - संसार में रहते हुए भी संसार से परे</option>");
-  mySel.append("<option value='042.html'><b>042</b> - ﻿परमात्मा - उत्कृष्ट समाधि / तप द्वारा ही जो जाना जाता है</option>");
-  mySel.append("<option value='043.html'><b>043</b> - ﻿परमात्मा - उत्पाद-व्यय-ध्रौव्य संयुक्त</option>");
-  mySel.append("<option value='044.html'><b>044</b> - ﻿शरीर और आत्मा के दृढ़ सम्बन्ध का सीधे साधे शब्दों में कथन</option>");
-  mySel.append("<option value='045.html'><b>045</b> - ﻿देह से आत्मा का विशिष्ट महत्व</option>");
-  mySel.append("<option value='046.html'><b>046</b> - ﻿परमात्मा का वीतराग स्वरूप</option>");
-  mySel.append("<option value='047.html'><b>047</b> - ﻿परमात्मा के ज्ञान के स्थान का कथन</option>");
-  mySel.append("<option value='048.html'><b>048</b> - ﻿कर्म बंधन से मुक्त परमात्मा का स्वरूप</option>");
-  mySel.append("<option value='049.html'><b>049</b> - ﻿कर्म बंधन से मुक्त परमात्मा का स्वरूप</option>");
-  mySel.append("<option value='050.html'><b>050</b> - ﻿आत्मा क्या है</option>");
-  mySel.append("<option value='051.html'><b>051</b> - ﻿आत्मा का स्वरूप</option>");
-  mySel.append("<option value='052.html'><b>052</b> - ﻿आत्मा का सर्वव्यापक स्वरूप</option>");
-  mySel.append("<option value='053.html'><b>053</b> - ﻿आत्मा का जड स्वरूप</option>");
-  mySel.append("<option value='054.html'><b>054</b> - ﻿आत्मा का चरम शरीर प्रमाणरूप स्वरूप</option>");
-  mySel.append("<option value='055.html'><b>055</b> - ﻿आत्मा के शून्य स्वरूप का कथन</option>");
-  mySel.append("<option value='056.html'><b>056</b> - ﻿आत्मा के लक्षण</option>");
-  mySel.append("<option value='057.html'><b>057</b> - ﻿आत्मा के लक्षण का स्पष्टीकरण</option>");
-  mySel.append("<option value='058.html'><b>058</b></option>");
-  mySel.append("<option value='059.html'><b>059</b> - ﻿आत्मा और कर्म का परष्पर सम्बन्ध</option>");
-  mySel.append("<option value='060.html'><b>060</b> - ﻿सभी जीवों का प्राण कर्म</option>");
-  mySel.append("<option value='061.html'><b>061</b> - ﻿कर्म के कारण जीव को स्वभाव-लाभ नहीं</option>");
-  mySel.append("<option value='062.html'><b>062</b> - ﻿विषय-कषायों में लिप्तता से कर्म-बंध</option>");
-  mySel.append("<option value='063.html'><b>063</b> - ﻿इन्द्रियाँ, मन, समस्त विभाव, दुःख कर्म-जनित</option>");
-  mySel.append("<option value='064.html'><b>064</b> - ﻿परमार्थ से दुःख-सुख कर्म जनित</option>");
-  mySel.append("<option value='065-1.html'><b>065-1</b></option>");
-  mySel.append("<option value='065.html'><b>065</b> - ﻿परमार्थ से बन्ध और मोक्ष कर्मजनित</option>");
-  mySel.append("<option value='066.html'><b>066</b> - ﻿कर्म द्वारा ही जीव के लोक में भ्रमण </option>");
-  mySel.append("<option value='067.html'><b>067</b> - ﻿द्रव्य-रूप परिवर्तित नहीं होता</option>");
-  mySel.append("<option value='068.html'><b>068</b> - ﻿जीव के जन्म-मरण बंध-मोक्ष नहीं</option>");
-  mySel.append("<option value='069.html'><b>069</b> - ﻿जीव के जन्म-मरण-रोग, इन्द्रियाँ, वर्ण नहीं</option>");
-  mySel.append("<option value='070.html'><b>070</b> - ﻿जन्म-बुढापा-मरण, रोग, वर्ण देह के</option>");
-  mySel.append("<option value='071.html'><b>071</b> - ﻿जीव को अमर जानकर भय-मुक्त हो</option>");
-  mySel.append("<option value='072.html'><b>072</b> - ﻿शरीर से ममत्व त्यागकर आत्मा को ध्या</option>");
-  mySel.append("<option value='073.html'><b>073</b> - ﻿पर-भाव और पर द्रव्य जीव स्वभाव से भिन्न</option>");
-  mySel.append("<option value='074.html'><b>074</b> - ﻿ज्ञानमयी भाव को छोड़कर अन्य सभी भाव को त्याग</option>");
-  mySel.append("<option value='075.html'><b>075</b> - ﻿रत्नत्रयमयी आत्मा का ध्यान कर</option>");
-  mySel.append("<option value='076.html'><b>076</b></option>");
-  mySel.append("<option value='077.html'><b>077</b></option>");
-  mySel.append("<option value='078.html'><b>078</b></option>");
-  mySel.append("<option value='079.html'><b>079</b></option>");
-  mySel.append("<option value='080.html'><b>080</b></option>");
-  mySel.append("<option value='081.html'><b>081</b></option>");
+  mySel.append("<option value='001.html'><b>001</b> - ﻿जे जाया झाणग्गियएँ कम्म-कलंक डहेवि
+णिच्च-णिरंजण-णाण-मय ते परमप्प णवेवि ॥१॥</option>");
+  mySel.append("<option value='002.html'><b>002</b> - ﻿ते वंदउँ सिरि-सिद्ध-गण होसहिँ जे वि अणंत
+सिवमय-णिरुवम-णाणमय परम-समाहि भजंत ॥२॥</option>");
+  mySel.append("<option value='003.html'><b>003</b> - ﻿ते हउँ वंदउँ सिद्ध-गण अच्छहिँ जे वि हवंत
+परम-समाहि-महग्गियएँ कम्मिंधणइँ हुणंत ॥३॥</option>");
+  mySel.append("<option value='004.html'><b>004</b> - ﻿ते पुणु वंदउँ सिद्ध-गण जे णिव्वाणि वसंति
+णाणिं तिहुयणि गरुया वि भव-सायरि ण पडंति ॥४॥</option>");
+  mySel.append("<option value='005.html'><b>005</b> - ﻿ते पुणु वंदउँं सिद्ध-गण जे अप्पाणि वसंत
+लोयालोउ वि सयलु इहु अच्छहिँ विमलु णियंत ॥५॥</option>");
+  mySel.append("<option value='006.html'><b>006</b> - ﻿केवल-दंसण-णाणमय केवल-सुक्ख-सहाव
+जिणवर वंदउँ भत्तियए जेहिँ पयासिय भाव ॥६॥</option>");
+  mySel.append("<option value='007.html'><b>007</b> - ﻿जे परमप्पु णियंति मुणि परम-समाहि धरेवि
+परमाणंदह कारणिण तिण्णि वि ते वि णवेवि ॥७॥</option>");
+  mySel.append("<option value='008.html'><b>008</b> - ﻿भाविं पणविवि पंच-गुरु सिरि-जोइंदु-जिणाउ
+भट्टपहायरि विण्णविउ विमलु करेविणु भाउ ॥८॥</option>");
+  mySel.append("<option value='009.html'><b>009</b> - ﻿गउ संसारि वसंताहँ सामिय कालु अणंतु
+पर मइँ किं पि ण पत्तु सुहु दुक्खु जि पत्तु महंतु ॥९॥</option>");
+  mySel.append("<option value='010.html'><b>010</b> - ﻿चउ-गइ-दुक्खहँ तत्ताहँ जो परमप्पउ कोइ
+चउ-गइ-दुक्ख-विणासयरु कहहु पसाएँ सो वि ॥१०॥</option>");
+  mySel.append("<option value='011.html'><b>011</b> - ﻿पुणु पुणु पणविवि पंच-गुरु भावेँ चित्ति धरेवि
+भट्टपहायर णिसुणि तुहुँ अप्पा तिविहु कहेवि ॥११॥</option>");
+  mySel.append("<option value='012.html'><b>012</b> - ﻿अप्पा ति-विहु मुणेवि लहु मूढउ मेल्लहि भाउ
+मुणि सण्णाणेँ णाणमउ जो परमप्प-सहाउ ॥१२॥</option>");
+  mySel.append("<option value='013.html'><b>013</b> - ﻿मूढु वियक्खणु बंभु परु अप्पा ति-विहु हवेइ
+देहु जि अप्पा जो मुणइ सो जणु मूढु हवेइ ॥१३॥</option>");
+  mySel.append("<option value='014.html'><b>014</b> - ﻿देह-विभिण्णउ णाणमउ जो परमप्पु णिएइ
+परम-समाहि-परिट्ठियउ पंडिउ सो जि हवेइ ॥१४॥</option>");
+  mySel.append("<option value='015.html'><b>015</b> - ﻿अप्पा लद्धउ णाणमउ कम्म-विमुक्केँ जेण
+मेल्लिवि सयलु वि दव्वु परु सो परु मुणहि मणेण ॥१५॥</option>");
+  mySel.append("<option value='016.html'><b>016</b> - ﻿तिहुयण-वंदिउ सिद्धि-गउ हरि-हर झायहिँ जो जि
+लक्खु अलक्खेँ धरिवि थिरु मुणि परमप्पउ सो जि ॥१६॥</option>");
+  mySel.append("<option value='017.html'><b>017</b> - ﻿णिच्चु णिरंजणु णाणमउ परमाणंद-सहाउ
+जो एहउ सो संतु सिउ तासु मुणिज्जहि भाउ ॥१७॥</option>");
+  mySel.append("<option value='018.html'><b>018</b> - ﻿जो णिय-भाउ ण परिहरइ जो पर-भाउ ण लेइ
+जाणइ सयलु वि णिच्चु पर सो सिउ संतु हवेइ ॥१८॥</option>");
+  mySel.append("<option value='019-021.html'><b>019-021</b> - ﻿जासु ण वण्णु ण गंधु रसु जासु ण सद्दु ण फासु 
+जासु ण जम्मणु मरणु णवि णाउ णिरंजणु  तासु ॥१९॥
+जासु ण कोहु ण मोहु मउ जासु ण माय ण माणु 
+जासु ण ठाणु ण झाणु जिय सो जि णिरंजणु जाणु ॥२०॥
+अत्थि ण पुण्णु ण पाउ जसु अत्थि ण हरिसु विसाउ 
+अत्थि ण एक्कु वि दोसु जसु सो जि णिरंजणु भाउ ॥२१॥</option>");
+  mySel.append("<option value='022.html'><b>022</b> - ﻿जासु ण धारणु धेउ ण वि जासु ण जंतु ण मंतु 
+जासु ण मंडलु मुद्द ण वि सो मुणि देउँ अणंतु ॥२२॥</option>");
+  mySel.append("<option value='023.html'><b>023</b> - ﻿वेयहिँ सत्थहिँ इंदियहिँ जो जिय मुणहु ण जाइ 
+णिम्मल-झाणहँ जो विसउ सो परमप्पु अणाइ ॥२३॥</option>");
+  mySel.append("<option value='024.html'><b>024</b> - ﻿केवल-दंसण -णाणमउ केवल-सुक्ख सहाउ 
+केवल-वीरिउ सो मुणहि जो जि परावरु भाउ ॥२४॥</option>");
+  mySel.append("<option value='025.html'><b>025</b> - ﻿एयहिँ जुत्तउ लक्खणहिँ जो परु णिक्कलु देउ 
+सो तहिँ णिवसइ परम-पइ जो तइलोयहँ झेउ ॥२५॥</option>");
+  mySel.append("<option value='026.html'><b>026</b> - ﻿जेहउ णिम्मलु णाणमउ सिद्धिहिँ णिवसइ देउ
+तेहउ णिवसइ बंभु परु देहहं मं करि भेउ ॥२६॥</option>");
+  mySel.append("<option value='027.html'><b>027</b> - ﻿जेँ दिट्ठेँ तुट्टंति लहु कम्मइँ पुव्व-कियाइँ
+सो परु जाणहि जोइया देहि वसंतु ण काइँ ॥२७॥</option>");
+  mySel.append("<option value='028.html'><b>028</b> - ﻿जित्थु ण इंदिय-सुह-दुहइँ जित्थु ण मण-वावारु
+सो अप्पा मुणि जीव तुहुँ अण्णु परिं अवहारु ॥२८॥</option>");
+  mySel.append("<option value='029.html'><b>029</b> - ﻿देहादेहहिँ जो वसइ भेयाभेय-णएण
+सो अप्पा मुणि जीव तुहुँ किं अण्णेँ बहुएण ॥२९॥</option>");
+  mySel.append("<option value='030.html'><b>030</b> - ﻿जीवाजीव म एक्कु करि लक्खण-भेएँ भेउ
+जो परु सो परु भणमि मुणि अप्पा अप्पु अभेउ ॥३०॥</option>");
+  mySel.append("<option value='031.html'><b>031</b> - ﻿अमणु अणिंदिउ णाणमउ मुत्ति-विरहिउ चिमित्तु
+अप्पा इंदिय-विसउ णवि लक्खणु एहु णिरुत्तु ॥३१॥</option>");
+  mySel.append("<option value='032.html'><b>032</b> - ﻿भव-तणु-भोय-विरत्त-मणु जो अप्पा झाएइ
+तासु  गुरुक्की  वेल्लडी  संसारिणि तुट्टेइ ॥३२॥</option>");
+  mySel.append("<option value='033.html'><b>033</b> - ﻿देहादेवलि जो वसइ देउ अणाइ-अणंतु
+केवल-णाण-फुरंत-तणु सो परमप्पु णिभंतु ॥३३॥</option>");
+  mySel.append("<option value='034.html'><b>034</b> - ﻿देहे वसंतु वि णवि छिवइ णियमेँ देहु वि जो जि
+देहेँ छिप्पइ जो वि णवि मुणि परमप्पउ सो जि ॥३४॥</option>");
+  mySel.append("<option value='035.html'><b>035</b> - ﻿जो सम-भाव -परिट्ठियहं जोइहँ कोइ फुरेइ
+परमाणंदु जणंतु  फुडु  सो परमप्पु हवेइ ॥३५॥</option>");
+  mySel.append("<option value='036.html'><b>036</b> - ﻿कम्म-णिबद्धु वि जोइया देहि वसंतु वि जो जि
+होइ ण सयलु कया वि फुडु मुणि परमप्पउ सो जि ॥३६॥</option>");
+  mySel.append("<option value='037.html'><b>037</b> - ﻿जो परमत्थेँ णिक्कलु वि कम्म-विभिण्णउ जो जि 
+मूढा सयलु भणंति फुडु मुणि परमप्पउ सो जि  ॥३७॥</option>");
+  mySel.append("<option value='038.html'><b>038</b> - ﻿गयणि अणंति वि एक्क उडु जेहउ भुयणु विहाइ
+मुक्कहँ जसु पए बिंबियउ सो परमप्पु अणाइ ॥३८॥</option>");
+  mySel.append("<option value='039.html'><b>039</b> - ﻿जोइय-विंदहिँ णाणमउ जो झाइज्जइ झेउ
+मोक्खहँ कारणि अणवरउ सो परमप्पउ देउ ॥३९॥</option>");
+  mySel.append("<option value='040.html'><b>040</b> - ﻿जो जिउ हेउ लहेवि विहि जगु बहु-विहउ जणेइ
+लिंगत्तय-परिमंडियउ सो परमप्पु हवेइ ॥४०॥</option>");
+  mySel.append("<option value='041.html'><b>041</b> - ﻿जसु अब्भंतरि जगु वसइ जग-अब्भंतरि जो जि
+जगि जि वसंतु वि जगु जि ण वि मुणि परमप्पउ सो जि ॥४१॥</option>");
+  mySel.append("<option value='042.html'><b>042</b> - ﻿देहि वसंतु वि हरि-हर वि जं अज्ज वि ण मुणंति
+परम-समाहि-तवेण विणु सो परमप्पु भणंति ॥४२॥</option>");
+  mySel.append("<option value='043.html'><b>043</b> - ﻿भावाभावहिँ संजुवउ भावाभावहिँ जो जि ।
+देहि जि दिट्ठउ जिणवरहिँ मुणि परमप्पउ सो जि ॥४३॥</option>");
+  mySel.append("<option value='044.html'><b>044</b> - ﻿देहि वसंतेँ जेण पर इंदिय-गामु वसेइ
+उव्वसु होइ गएण फुडु सो परमप्पु हवेइ ॥४४॥</option>");
+  mySel.append("<option value='045.html'><b>045</b> - ﻿जो णिय-करणहिँ पंचहिँ वि पंच वि विसय मुणेइ
+मुणिउ ण पंचहिँ पंचहिँ वि सो परमप्पु हवेइ ॥४५॥</option>");
+  mySel.append("<option value='046.html'><b>046</b> - ﻿जसु परमत्थेँ बंधु णवि जोइय ण वि संसारु
+सो परमप्पउ जाणि तुहुँ मणि मिल्लिवि ववहारु ॥४६॥</option>");
+  mySel.append("<option value='047.html'><b>047</b> - ﻿णेयाभावे विल्लि जिम थक्कइ णाणु वलेवि
+मुक्कहँ जसु पय बिंबियउ परम-सहाउ भणेवि ॥४७॥</option>");
+  mySel.append("<option value='048.html'><b>048</b> - ﻿णेयाभावे विल्लि जिम थक्कइ णाणु वलेवि
+मुक्कहँ जसु पय बिंबियउ परम-सहाउ भणेवि ॥४८॥</option>");
+  mySel.append("<option value='049.html'><b>049</b> - ﻿कम्म-णिबद्धु वि होइ णवि जो फुडु कम्मु कया वि
+कम्मु वि जो ण कया वि फुडु सो परमप्पउ भावि ॥४९॥</option>");
+  mySel.append("<option value='050.html'><b>050</b> - ﻿कि वि भणंति जिउ सव्वगउ जिउ जडु के वि भणंति
+कि वि भणंति जिउ देह-समु सुण्णु वि के वि भणंति ॥५०॥</option>");
+  mySel.append("<option value='051.html'><b>051</b> - ﻿अप्पा जोइय सव्व-गउ अप्पा जडु वि वियाणि
+अप्पा देह-पमाणु मुणि अप्पा सुण्णु वियाणि ॥५१॥</option>");
+  mySel.append("<option value='052.html'><b>052</b> - ﻿अप्पा कम्म - विवज्जियउ केवल-णाणेँ जेण
+लोयालोउ वि  मुणइ  जिय सव्वगु वुच्चइ तेण ॥५२॥</option>");
+  mySel.append("<option value='053.html'><b>053</b> - ﻿जे णिय-बोह -परिट्ठियहँ जीवहँ तुट्टइ णाणु
+इंदिय-जणियउ जोइया तिं जिउ जडु वि वियाणु ॥५३॥</option>");
+  mySel.append("<option value='054.html'><b>054</b> - ﻿कारण - विरहिउ सुद्ध-जिउ वड्ढइ खिरइ ण जेण
+चरम-सरीर-पमाणु जिउ जिणवर बोल्लहिं तेण ॥५४॥</option>");
+  mySel.append("<option value='055.html'><b>055</b> - ﻿अट्ठ वि कम्मइँ बहुविहइँ णवणव दोस वि जेण
+सुद्धहँ एक्कुवि अत्थि णवि सुण्णु वि वुच्चइ तेण ॥५५॥</option>");
+  mySel.append("<option value='056.html'><b>056</b> - ﻿अप्पा जणियउ केण ण वि अप्पेँ जणिउ ण कोइ
+दव्व-सहावेँ णिच्चु मुणि पज्जउ विणसइ होइ ॥५६॥</option>");
+  mySel.append("<option value='057.html'><b>057</b> - ﻿तं परियाणहि दव्वु तुहुँ  जं गुण-पज्जय-जुत्तु
+सह-भुव जाणहि ताहँ गुण कम-भुव पज्जउ वुत्तु ॥५७॥</option>");
+  mySel.append("<option value='058.html'><b>058</b> - ﻿अप्पा बुज्झहि दव्वु तुहुँ गुण पुणु दंसणु णाणु
+पज्जय चउ-गइ-भाव तणु कम्म-विणिम्मिय जाणु ॥५८॥</option>");
+  mySel.append("<option value='059.html'><b>059</b> - ﻿जीवहँ कम्मु अणाइ जिय जणियउ कम्मु ण तेण
+कम्मेँ जीउ वि जणिउ णवि दोहिँ वि आइ ण जेण ॥५९॥</option>");
+  mySel.append("<option value='060.html'><b>060</b> - ﻿एहु ववहारेँ जीवउउ हेउ लहेविणु कम्मु
+बहुविह-भावेँ परिणवइ तेण जि धम्मु-अहम्मु ॥६०॥</option>");
+  mySel.append("<option value='061.html'><b>061</b> - ﻿ते पुणु जीवहँ जोइया अट्ठ वि कम्म हवंति ।
+जेहिँ जि झंपिय जीव णवि अप्प-सहाउ लहंति ॥६१॥</option>");
+  mySel.append("<option value='062.html'><b>062</b> - ﻿विसय-कसायहिँ रंगियहँ ते अणुया लग्गंति ।
+जीव-पएसेहँ मोहियहँ ते जिण कम्म भणंति ॥६२॥</option>");
+  mySel.append("<option value='063.html'><b>063</b> - ﻿पंच वि इंदिय अण्णु मणु अण्णु वि सयल-विभाव ।
+जीवहँ कम्मइँ जणिय जिय अण्णु वि चउगइ-ताव ॥६३॥</option>");
+  mySel.append("<option value='064.html'><b>064</b> - ﻿दुक्खु वि सुक्खु वि बहु-विहउ जीवहँ कम्मु जणेइ ।
+अप्पा देक्खइ मुणइ पर णिच्छउ एउँ भणेइ ॥६४॥</option>");
+  mySel.append("<option value='065-1.html'><b>065-1</b> - ﻿सो णत्थि त्ति पएसो चउरासी-जोणि-लक्ख-मज्झम्मि ।
+जिण वयणं ण लहंतो जत्थ ण डुलुडुल्लिओ जीवो ॥६५-१॥</option>");
+  mySel.append("<option value='065.html'><b>065</b> - ﻿बंधु वि मोक्खु वि सयलु जिय जीवहँ कम्मु जणेइ ।
+अप्पा किंपि वि कुणइ णवि णिच्छउ एउँ भणेइ ॥६५॥</option>");
+  mySel.append("<option value='066.html'><b>066</b> - ﻿अप्पा पंगुह अणुहरइ अप्पु ण जाइ ण एइ ।
+भुवणत्तयहँ वि मज्झि जिय विहि आणइ विहि णेइ ॥६६॥</option>");
+  mySel.append("<option value='067.html'><b>067</b> - ﻿अप्पा अप्पु जि परु जि परु अप्पा परु जि ण होइ ।
+परु जि कयाइ वि अप्पु णवि णियमेँ पभणहिं जोई ॥६७॥</option>");
+  mySel.append("<option value='068.html'><b>068</b> - ﻿ण वि उप्पज्जइ ण वि मरइ बंधु ण मोक्खु करेइ ।
+जिउ परमत्थेँ जोइया जिणवरु एउँ भणेइ ॥६८॥</option>");
+  mySel.append("<option value='069.html'><b>069</b> - ﻿अत्थि ण उब्भउ जर-मरणु रोय वि लिंग वि वण्ण ।
+णियमिं अप्पु वियाणि तुहुँ जीवहँ एक्क वि सण्ण ॥६९॥</option>");
+  mySel.append("<option value='070.html'><b>070</b> - ﻿देहहँ उब्भउ जर-मरणु देहहँ वण्णु विचित्तु ।
+देहहँ रोय वियाणि तुहुँ देहहँ लिंगु विचित्तु ॥७०॥</option>");
+  mySel.append("<option value='071.html'><b>071</b> - ﻿देहहँ पेक्खिवि जर-मरणु मा भउ जीव करेहि ।
+जो अजरामरु बंभु परु सो अप्पाणु मुणेहि ॥७१॥</option>");
+  mySel.append("<option value='072.html'><b>072</b> - ﻿छिज्जउ भिज्जउ जाउ खउ जोइय एहु सरीरु ।
+अप्पा भावहि णिम्मलउ जिं पावहि भव-तीरु ॥७२॥</option>");
+  mySel.append("<option value='073.html'><b>073</b> - ﻿कम्महँ केरा भावडा अण्णु अचेयणु दव्वु ।
+जीव-सहावहँ भिण्णु जिय णियमिं बुज्झहि सव्वु ॥७३॥</option>");
+  mySel.append("<option value='074.html'><b>074</b> - ﻿अप्पा मेल्लिवि णाणमउ अण्णु परायउ भाउ ।
+सो छंडेविणु जीव तुहुँ भावहि अप्प-सहाउ ॥७४॥</option>");
+  mySel.append("<option value='075.html'><b>075</b> - ﻿अट्ठहँ कम्महँ बाहिरउ सयलहँ दोसहँ चत्तु ।
+दंसण-णाण-चरित्तमउ अप्पा भावि णिरुत्तु ॥७५॥</option>");
+  mySel.append("<option value='076.html'><b>076</b> - ﻿अप्पिं अप्पु मुणंतु जिंउ सम्मादिट्ठि हवेइ ।
+सम्माइट्ठिउ जीवडउ लहु कम्मइँ मुच्चेइ ॥७६॥</option>");
+  mySel.append("<option value='077.html'><b>077</b> - ﻿पज्जय-रत्तउ जीवडउ मिच्छादिट्ठि हवेइ ।
+बंधउ बहु-विह-कम्मडा जेँ संसारु भमेइ ॥७७॥</option>");
+  mySel.append("<option value='078.html'><b>078</b> - ﻿कम्मइँ दिढ-घण-चिक्कणइँ गरुवइँ वज्ज-समाइँ ।
+णाण-वियक्खणु जीवडउ उप्पहि पाडहिँ ताइँ ॥७८॥</option>");
+  mySel.append("<option value='079.html'><b>079</b> - ﻿जिउ मिच्छत्तेँ परिणमिउ विवरिउ तच्चु मुणेई ।
+कम्म-विणिम्मिय भावडा ते अप्पाणु भणेइ ॥७९॥</option>");
+  mySel.append("<option value='080.html'><b>080</b> - ﻿हउँ गोरउ हउँ सामलउ हउँ जि विभिण्णउ वण्णु ।
+हउँ तणु-अंगउँ थूलु हउँ एहउँ मूढउ मण्णु ॥८०॥</option>");
+  mySel.append("<option value='081.html'><b>081</b> - ﻿हउँ वरु बंभणु वइसु हउँ हउँ खत्तिउ हउँ सेसु ।
+पुरिसु णउँसर इत्थि हउँ मण्णइ मूढु विसेसु ॥८१॥</option>");
+  mySel.append("<option value='082.html'><b>082</b> - ﻿तरुणउ बूढउ रूयडउ सूरउ पंडिउ दिव्वु ।
+खवणउ वंदउ सेवडउ मूढउ मण्णइ सव्वु ॥८२॥</option>");
+  mySel.append("<option value='083.html'><b>083</b> - ﻿जणणी जणणु वि कंत घरु पत्तु वि मित्तु वि दव्वु ।
+माया-जालु वि अप्पणउ मूढउ मण्णइ सव्वु ॥८३॥</option>");
+  mySel.append("<option value='084.html'><b>084</b> - ﻿दुक्खहँ कारणि जे विसय ते सुह-हेउ रमेइ ।
+मिच्छाइट्ठिउ जीवडउ इत्थु ण काइँ करेइ ॥८४॥</option>");
+  mySel.append("<option value='085.html'><b>085</b> - ﻿कालु लहेविणु जोइया जिमु जिमु मोहु गलेइ ।
+तिमु तिमु दंसणु लहइ जिउ णियमेँ अप्पु मुणेइ ॥८५॥</option>");
+  mySel.append("<option value='086.html'><b>086</b> - ﻿अप्पा गोरउ किण्हु ण वि अप्पा रत्तु ण होइ ।
+अप्पा सुहुमु वि थूलु ण वि णाणिउ जाणेँ जोइ ॥८६॥</option>");
+  mySel.append("<option value='087.html'><b>087</b> - ﻿अप्पा बंभणु वइसु ण वि ण वि खत्तिउ ण वि सेसु ।
+पुरिसु णउंसउ इत्थि ण वि णाणिउ मुणइ असेसु ॥८७॥</option>");
+  mySel.append("<option value='088.html'><b>088</b> - ﻿अप्पा वंदउ खवणु ण वि अप्पा गुरउ ण होइ ।
+अप्पा लिंगिउ एक्कु ण वि णाणिउ जाणइ जोइ ॥८८॥</option>");
+  mySel.append("<option value='089.html'><b>089</b> - ﻿अप्पा गुरु णवि सिस्सु णवि णवि सामिउ णवि भिच्चु ।
+सूरउ कायरु होइ णवि णवि उत्तमु णवि णिच्चु ॥८९॥</option>");
+  mySel.append("<option value='090.html'><b>090</b> - ﻿अप्पा माणुसु देउ ण वि अप्पा तिरिउ ण होइ ।
+अप्पा णारउ कहिँ वि णवि णाणिउ जाणइ जोइ ॥९०॥</option>");
+  mySel.append("<option value='091.html'><b>091</b> - ﻿अप्पा पंडिउ मुक्खु णवि णवि ईसरु णवि णीसु ।
+तरुणउ बूढउ बालु णवि अण्णु वि कम्म-विसेसु ॥९१॥</option>");
+  mySel.append("<option value='092.html'><b>092</b> - ﻿पुण्णु वि पाउ वि कालु णहु धम्माधम्मु वि काउ ।
+एक्कु वि अप्पा होइ णवि मेल्लिवि चेयण-भाउ ॥९२॥</option>");
+  mySel.append("<option value='093.html'><b>093</b> - ﻿अप्पा संजमु सीलु तउ अप्पा दंसणु णाणु ।
+अप्पा सासय-मोक्ख-पउ जाणंतउ अप्पाणु ॥९३॥</option>");
+  mySel.append("<option value='094.html'><b>094</b> - ﻿अण्णु जि दंसणु अत्थि ण वि अण्णु जि अत्थि ण णाणु ।
+अण्णु जि चरणु ण अत्थि जिय मेल्लिवि अप्पा जाणु ॥९४॥</option>");
+  mySel.append("<option value='095.html'><b>095</b> - ﻿अण्णु जि तित्थु म जाहि जिय अण्णु जि गुरुउ म सेवि ।
+अण्णु जि देउ म चिंति तुहुँ अप्पा विमलु मुएवि ॥९५॥</option>");
+  mySel.append("<option value='096.html'><b>096</b> - ﻿अप्पा दंसणु केवलु वि अण्णु सव्वु ववहारु ।
+एक्कु जि जोइय झाइयइ जो तइलोयहँ सारु ॥९६॥</option>");
+  mySel.append("<option value='097.html'><b>097</b> - ﻿अप्पा झायहि णिम्मलउ किं बहुएँ अण्णेण ।
+जो झायंतहँ परम-पउ लब्भइ एक्क-खणेण ॥९७॥</option>");
+  mySel.append("<option value='098.html'><b>098</b> - ﻿अप्पा णिय-मणि णिम्मलउ णियमेँ वसइ ण जासु ।
+सत्थ-पुराणइँ तव-चरणु मुक्खु वि करहिँ कि तासु ॥९८॥</option>");
+  mySel.append("<option value='099.html'><b>099</b> - ﻿जोइय अप्पेँ जाणिएण जगु जाणियउ हवेइ ।
+अप्पहँ केरइ भावडइ बिंबिउ जेण वसेइ ॥९९॥</option>");
+  mySel.append("<option value='100.html'><b>100</b> - ﻿अप्प-सहावि परिट्ठियह एहउ होइ विसेसु ।
+दीसइ अप्प-सहावि लहु लोयालोउ असेसु ॥१००॥</option>");
+  mySel.append("<option value='101.html'><b>101</b> - ﻿अप्पु पयासइ अप्पु परु जिम अंबरि रवि-राउ ।
+जोइय एत्थु म भंति करि एहउ वत्थु-सहाउ ॥१०१॥</option>");
+  mySel.append("<option value='102.html'><b>102</b> - ﻿तारायणु जलि बिंबियउ णिम्मलि दीसइ जेम ।
+अप्पए णिम्मलि बिंबियउ लोयालोउ वि तेम ॥१०२॥</option>");
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);
 })
