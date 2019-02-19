@@ -77,16 +77,14 @@ $( document ).ready(function() {
   mySel.append("<option value='055.html'><b>055</b> - ﻿आत्मा के शून्य स्वरूप का कथन</option>");
   mySel.append("<option value='056.html'><b>056</b> - ﻿आत्मा के लक्षण</option>");
   mySel.append("<option value='057.html'><b>057</b> - ﻿आत्मा के लक्षण का स्पष्टीकरण</option>");
-  mySel.append("<option value='058.html'><b>058</b> - ﻿अप्पा बुज्झहि दव्वु तुहुँ गुण पुणु दंसणु णाणु
-पज्जय चउ-गइ-भाव तणु कम्म-विणिम्मिय जाणु ॥५८॥</option>");
+  mySel.append("<option value='058.html'><b>058</b> - ﻿आत्मा द्रव्य और उसके गुण</option>");
   mySel.append("<option value='059.html'><b>059</b> - ﻿आत्मा और कर्म का परष्पर सम्बन्ध</option>");
   mySel.append("<option value='060.html'><b>060</b> - ﻿सभी जीवों का प्राण कर्म</option>");
   mySel.append("<option value='061.html'><b>061</b> - ﻿कर्म के कारण जीव को स्वभाव-लाभ नहीं</option>");
   mySel.append("<option value='062.html'><b>062</b> - ﻿विषय-कषायों में लिप्तता से कर्म-बंध</option>");
   mySel.append("<option value='063.html'><b>063</b> - ﻿इन्द्रियाँ, मन, समस्त विभाव, दुःख कर्म-जनित</option>");
   mySel.append("<option value='064.html'><b>064</b> - ﻿परमार्थ से दुःख-सुख कर्म जनित</option>");
-  mySel.append("<option value='065-1.html'><b>065-1</b> - ﻿सो णत्थि त्ति पएसो चउरासी-जोणि-लक्ख-मज्झम्मि ।
-जिण वयणं ण लहंतो जत्थ ण डुलुडुल्लिओ जीवो ॥६५-१॥</option>");
+  mySel.append("<option value='065-1.html'><b>065-1</b> - ﻿जिन्वचन को नहीं मानने का परिणाम</option>");
   mySel.append("<option value='065.html'><b>065</b> - ﻿परमार्थ से बन्ध और मोक्ष कर्मजनित</option>");
   mySel.append("<option value='066.html'><b>066</b> - ﻿कर्म द्वारा ही जीव के लोक में भ्रमण </option>");
   mySel.append("<option value='067.html'><b>067</b> - ﻿द्रव्य-रूप परिवर्तित नहीं होता</option>");
@@ -127,6 +125,10 @@ $( document ).ready(function() {
   mySel.append("<option value='102.html'><b>102</b> - ﻿उदाहरण</option>");
   mySel.append("<option value='103.html'><b>103</b> - ﻿उपसंहार</option>");
   mySel.append("<option value='104.html'><b>104</b> - ﻿प्रश्न</option>");
+  mySel.append("<option value='105.html'><b>105</b> - ﻿आत्मा का संस्थान</option>");
+  mySel.append("<option value='106.html'><b>106</b> - ﻿पर भावों को छोड़</option>");
+  mySel.append("<option value='107.html'><b>107</b> - ﻿आत्मा ज्ञान गोचर</option>");
+  mySel.append("<option value='108.html'><b>108</b> - ﻿आत्मा से परमात्मा</option>");
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);
 })

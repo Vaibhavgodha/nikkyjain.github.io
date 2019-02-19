@@ -31,6 +31,7 @@ else:
 print("HTML : ", myHtml)
 mkdirs(myHtmlDir)
 myRelPath="../../../../../"
+indexCol2=os.path.isfile('./config/indexCol2.txt')
 html=open(myHtml, "w")
 html.write("""<!DOCTYPE html>
 <html>
@@ -94,7 +95,10 @@ if (os.path.isdir('./main') or os.path.isdir('./ftitle')):
     html.write("""<br><br><div class=adhikaar id=index><h1>Index</h1></div><br>
 <div align=center><img src='"""+myRelPath+"""images/brownOm.png' width='5%'></img></div>
     <table align=center width=90% class=mainIndex>
-<tr><th>गाथा / सूत्र<th>विषय</tr>""")
+<tr><th>गाथा / सूत्र<th>विषय""")
+    if (indexCol2):
+      html.write("<th>गाथा / सूत्र<th>विषय")
+    html.write("</tr>\n")
     myCntr=0
     for bcFile in sorted(os.listdir('./main')):
         if os.path.isfile('./adhikaar/'+bcFile):
@@ -105,8 +109,9 @@ if (os.path.isdir('./main') or os.path.isdir('./ftitle')):
         if os.path.isdir('./ftitle'):
             curFile="./ftitle/"+bcFile
             if os.path.isfile(curFile):
+                if (not(myCntr%2 and indexCol2)):
+                  html.write("    <tr>\n")
                 myFName=re.sub(r'.txt',"", bcFile)
-                html.write("    <tr>\n")
                 with open(curFile, 'r') as myfile:
                     fData=myfile.read().replace('\n', '')
                     fData=fData.replace('\xef\xbb\xbf', '')
@@ -117,8 +122,9 @@ if (os.path.isdir('./main') or os.path.isdir('./ftitle')):
             if (os.path.isfile('./header/'+bcFile) or os.path.isfile(curFile)):
                 if os.path.isfile('./header/'+bcFile):
                     curFile='./header/'+bcFile
+                if (not(myCntr%2 and indexCol2)):
+                  html.write("    <tr>\n")
                 myFName=re.sub(r'.txt',"", bcFile)
-                html.write("    <tr>\n")
                 with open(curFile, 'r') as myfile:
                     fData=myfile.read().replace('\n', '')
                     fData=fData.replace('\xef\xbb\xbf', '')
