@@ -44,7 +44,7 @@ $( document ).ready(function() {
        $optgrp.append("<option value='021.html'><b>021</b> - ﻿अंगहीन सम्यक्त्व व्यर्थ है</option>");
        $optgrp.append("<option value='022.html'><b>022</b> - ﻿लोक मूढ़ता</option>");
        $optgrp.append("<option value='023.html'><b>023</b> - ﻿देव मूढ़ता</option>");
-       $optgrp.append("<option value='024.html'><b>024</b> - ﻿अब सम्यग्दर्शन के स्वरूप में पाखण्डि मूढ़ता का स्वरूप दिखाते हुए कहते हैं-</option>");
+       $optgrp.append("<option value='024.html'><b>024</b> - ﻿गुरु मूढ़ता</option>");
        $optgrp.append("<option value='025.html'><b>025</b> - ﻿आठमद के नाम</option>");
        $optgrp.append("<option value='026.html'><b>026</b> - ﻿मद करने से हानि</option>");
        $optgrp.append("<option value='027.html'><b>027</b> - ﻿पाप त्याग का उपदेश</option>");
@@ -98,7 +98,7 @@ $( document ).ready(function() {
        $optgrp.append("<option value='067.html'><b>067</b> - ﻿गुणव्रतों के नाम</option>");
        $optgrp.append("<option value='068.html'><b>068</b> - ﻿दिग्व्रत का लक्षण</option>");
        $optgrp.append("<option value='069.html'><b>069</b> - ﻿मर्यादा की विधि</option>");
-       $optgrp.append("<option value='070.html'><b>070</b> - ﻿दिग्व्रत की मर्यादा के बाहर अणुव्रतों के महाव्रतपना</option>");
+       $optgrp.append("<option value='070.html'><b>070</b> - ﻿दिग्व्रती के महाव्रतपना</option>");
        $optgrp.append("<option value='071.html'><b>071</b> - ﻿सो कैसे ? उसका समाधान</option>");
        $optgrp.append("<option value='072.html'><b>072</b> - ﻿महाव्रत का लक्षण</option>");
        $optgrp.append("<option value='073.html'><b>073</b> - ﻿दिग्व्रत के अतिचार</option>");
@@ -211,7 +211,7 @@ $( document ).ready(function() {
        $optgrp.append("<option value='021.html'><b>021</b> - ﻿अंगहीन सम्यक्त्व व्यर्थ है</option>");
        $optgrp.append("<option value='022.html'><b>022</b> - ﻿लोक मूढ़ता</option>");
        $optgrp.append("<option value='023.html'><b>023</b> - ﻿देव मूढ़ता</option>");
-       $optgrp.append("<option value='024.html'><b>024</b> - ﻿अब सम्यग्दर्शन के स्वरूप में पाखण्डि मूढ़ता का स्वरूप दिखाते हुए कहते हैं-</option>");
+       $optgrp.append("<option value='024.html'><b>024</b> - ﻿गुरु मूढ़ता</option>");
        $optgrp.append("<option value='025.html'><b>025</b> - ﻿आठमद के नाम</option>");
        $optgrp.append("<option value='026.html'><b>026</b> - ﻿मद करने से हानि</option>");
        $optgrp.append("<option value='027.html'><b>027</b> - ﻿पाप त्याग का उपदेश</option>");
@@ -265,7 +265,7 @@ $( document ).ready(function() {
        $optgrp.append("<option value='067.html'><b>067</b> - ﻿गुणव्रतों के नाम</option>");
        $optgrp.append("<option value='068.html'><b>068</b> - ﻿दिग्व्रत का लक्षण</option>");
        $optgrp.append("<option value='069.html'><b>069</b> - ﻿मर्यादा की विधि</option>");
-       $optgrp.append("<option value='070.html'><b>070</b> - ﻿दिग्व्रत की मर्यादा के बाहर अणुव्रतों के महाव्रतपना</option>");
+       $optgrp.append("<option value='070.html'><b>070</b> - ﻿दिग्व्रती के महाव्रतपना</option>");
        $optgrp.append("<option value='071.html'><b>071</b> - ﻿सो कैसे ? उसका समाधान</option>");
        $optgrp.append("<option value='072.html'><b>072</b> - ﻿महाव्रत का लक्षण</option>");
        $optgrp.append("<option value='073.html'><b>073</b> - ﻿दिग्व्रत के अतिचार</option>");
