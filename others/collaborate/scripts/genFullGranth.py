@@ -74,8 +74,10 @@ html.write("""<!DOCTYPE html>
     }
   </style>
 </head>
-<body>
-<div align=center><a href='"""+myRelPath+"index.html'><img src='"+myRelPath+"""images/jain-saint.jpg' height=270 width=300></img></a></div>
+<body>""")
+if not os.path.isfile('./config/NoJainSaint.txt'):
+  html.write("<div align=center><a href='"+myRelPath+"index.html'><img src='"+myRelPath+"images/jain-saint.jpg' height=270 width=300></img></a></div>")
+html.write("""
 <br><br><br>
 <div class=hdr align=center>"""+myHtmlName+"""</div>
 <br><br><br>
@@ -230,7 +232,8 @@ for bcFile in sorted(os.listdir('./main')):
     ##
     html.write("<hr class=type_7>\n")
     print ("\rDone - "+bcFile, end="")
-html.write("<div align=center><img src='"+myRelPath+"images/Srutskandh.jpg' width='70%'></img></div>\n");
+if (len(sys.argv) > 1) and not os.path.isfile('./config/NoShrutSkandh.txt'):
+    html.write("<div align=center><img src='"+myRelPath+"images/Srutskandh.jpg' width='70%'></img></div>\n");
 html.write("</body></html>")
 html.close()
 print("Done")

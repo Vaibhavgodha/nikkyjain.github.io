@@ -137,7 +137,7 @@ for group in sorted(glob.glob(myInDir+"/*/")):
             fData=fData.replace(')', '</span>')
             fData=fData.replace('ॐ ह्रीं','<span class=om>ॐ ह्रीं')
             fData=fData.replace('निर्वपामीति स्वाहा','निर्वपामीति स्वाहा</span>')
-            fData=fData.replace('पुष्पांजलिं क्षिपामि','पुष्पांजलिं क्षिपामि<\/span>')
+            fData=fData.replace('पुष्पांजलिं क्षिपामि','पुष्पांजलिं क्षिपामि</span>')
             fData=fData.replace('संवौषट् आह्वाननं','संवौषट् आह्वाननं</span>')
             fData=fData.replace('ठः स्थापनं','ठः स्थापनं</span>')
             fData=fData.replace('वषट् सन्निधि करणं','वषट् सन्निधि करणं</span>')
@@ -162,6 +162,12 @@ for group in sorted(glob.glob(myInDir+"/*/")):
                 fData=fData.replace('[', '<span class=gatharth>[')
                 fData=fData.replace(']', ']</span>')
                 html.write("<div class=poojarth><font color=maroon><b>अन्वयार्थ : </b></font>"+fData+"</div><br>\n")
+            # Handle argh
+            curFile=pooja+"/argh/"+pName
+            if os.path.isfile(curFile):
+                with open(curFile, 'r') as myfile:
+                    fData=myfile.read().replace('\xef\xbb\xbf', '')
+                html.write('<div class=om>'+fData+'</div>')
         html.write("<br><hr class=type_7><br>\n")
         myCntr+=1
     print ("\rDone - Pooja Group "+os.path.basename(group), end="")

@@ -26,6 +26,8 @@ $( document ).ready(function() {
   mySel.append("<option value='002.html'><b>002</b> - ﻿मार्ग और मार्ग-फल</option>");
   mySel.append("<option value='003.html'><b>003</b></option>");
   mySel.append("<option value='004.html'><b>004</b></option>");
+  mySel.append("<option value='005.html'><b>005</b></option>");
+  mySel.append("<option value='006.html'><b>006</b></option>");
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);
 })

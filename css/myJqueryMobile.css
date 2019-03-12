@@ -71,6 +71,13 @@ span.om {
     text-align: center;
     margin: 0 auto;
 }
+div.om {
+    font-size: 2vw;
+    color: maroon;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
 div.gadya {
     font-size: 3vw;
     color: darkGreen;
