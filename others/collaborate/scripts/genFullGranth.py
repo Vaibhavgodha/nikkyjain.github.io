@@ -77,6 +77,8 @@ html.write("""<!DOCTYPE html>
 <body>""")
 if not os.path.isfile('./config/NoJainSaint.txt'):
   html.write("<div align=center><a href='"+myRelPath+"index.html'><img src='"+myRelPath+"images/jain-saint.jpg' height=270 width=300></img></a></div>")
+else:
+  html.write("<div align=center><a href='"+myRelPath+"index.html'><img src='"+myRelPath+"images/stories.png' height=270 width=300></img></a></div>")
 html.write("""
 <br><br><br>
 <div class=hdr align=center>"""+myHtmlName+"""</div>
