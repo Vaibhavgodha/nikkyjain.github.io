@@ -160,6 +160,14 @@ $( document ).ready(function() {
   mySel.append("<option value='2-013.html'><b>2-013</b> - ﻿मोक्ष-मार्ग - रत्नत्रय परिणत आत्मा</option>");
   mySel.append("<option value='2-014.html'><b>2-014</b></option>");
   mySel.append("<option value='2-015.html'><b>2-015</b></option>");
+  mySel.append("<option value='2-016.html'><b>2-016</b></option>");
+  mySel.append("<option value='2-017.html'><b>2-017</b></option>");
+  mySel.append("<option value='2-018.html'><b>2-018</b></option>");
+  mySel.append("<option value='2-019.html'><b>2-019</b></option>");
+  mySel.append("<option value='2-020.html'><b>2-020</b></option>");
+  mySel.append("<option value='2-021.html'><b>2-021</b></option>");
+  mySel.append("<option value='2-022.html'><b>2-022</b></option>");
+  mySel.append("<option value='2-023.html'><b>2-023</b></option>");
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);
 })

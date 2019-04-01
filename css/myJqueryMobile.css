@@ -5,6 +5,9 @@ img {
 p img {
     width: 40%;
 }
+.png {
+    width: 20%;
+}
 div.teekakaar {
     font-size: 2vw;
     font-weight: bold;

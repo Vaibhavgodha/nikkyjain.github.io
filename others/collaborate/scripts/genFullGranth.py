@@ -24,13 +24,20 @@ myHtmlName=re.sub(r'--.*', "", myHtmlName)
 myWriter=re.sub(r'.*--', "", os.path.basename(os.path.abspath('./')))
 if (len(sys.argv) > 1):
     myHtmlDir=dbDir+"/jainDataBase/teeka/"+gdir+"/"+pdir+"/html"
+    myImgDir=dbDir+"/jainDataBase/teeka/"+gdir+"/"+pdir+"/images"
     myHtml=myHtmlDir+"/index.html"
+    myTitle=myHtmlName
 else:
     myHtmlDir=dbDir+"/jainDataBase/gatha/"+gdir+"/"+pdir+"/html"
+    myImgDir=dbDir+"/jainDataBase/gatha/"+gdir+"/"+pdir+"/images"
     myHtml=myHtmlDir+"/index.html"
+    myTitle=myHtmlName+"--Gatha"
 print("HTML : ", myHtml)
 mkdirs(myHtmlDir)
 myRelPath="../../../../../"
+hasImages=0
+if os.path.isdir(myImgDir):
+    hasImages=1
 indexCol2=os.path.isfile('./config/indexCol2.txt')
 html=open(myHtml, "w")
 html.write("""<!DOCTYPE html>
@@ -38,7 +45,7 @@ html.write("""<!DOCTYPE html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>"""+myHtmlName+"""</title>
+  <title>"""+myTitle+"""</title>
   <link rel="icon" type="image/png" href='"""+myRelPath+"""images/default/jainFlag-short.jpg'/>
   <link rel="stylesheet" href='"""+myRelPath+"""css/myJqueryMobile.css'>
   <script type="text/javascript" src='"""+myRelPath+"""js/jquery.js'></script>
@@ -169,6 +176,12 @@ for bcFile in sorted(os.listdir('./main')):
                 fData=fData.replace('\xef\xbb\xbf', '')
             html.write(fData)
             html.write("</a><span class=decFontSz> -</span></div>")
+    # Handle images
+    if hasImages:
+      iFile=re.sub(r'.txt',".png", bcFile)
+      curFile=myImgDir+"/"+iFile
+      if os.path.isfile(curFile):
+        html.write("<div align=center><img class=png src='../images/"+iFile+"'></div>\n")
     # Handle Main
     curFile="./main/"+bcFile
     html.write("<div class=gatha>")
