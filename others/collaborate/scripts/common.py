@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 import random
 import sys
 import os
@@ -151,6 +151,8 @@ def createMiscList (html, myRelPath, dbDir):
         <div data-role=collapsible data-inset=false data-theme=a>
           <h2>Download</h2>
           <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/JainBhajan.pdf>जैन भजन</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/JainPooja.pdf>जैन पूजा-पाठ</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/JeevSamas.pdf>जीव समास</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/BookMark.pdf>BookMark</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/Cal-2019.pdf>Calendar-2019</a></li>

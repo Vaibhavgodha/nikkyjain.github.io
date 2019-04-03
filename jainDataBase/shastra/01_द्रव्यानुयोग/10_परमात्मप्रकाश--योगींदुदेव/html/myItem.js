@@ -168,6 +168,8 @@ $( document ).ready(function() {
   mySel.append("<option value='2-021.html'><b>2-021</b></option>");
   mySel.append("<option value='2-022.html'><b>2-022</b></option>");
   mySel.append("<option value='2-023.html'><b>2-023</b></option>");
+  mySel.append("<option value='2-024.html'><b>2-024</b></option>");
+  mySel.append("<option value='2-025.html'><b>2-025</b></option>");
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);
 })
