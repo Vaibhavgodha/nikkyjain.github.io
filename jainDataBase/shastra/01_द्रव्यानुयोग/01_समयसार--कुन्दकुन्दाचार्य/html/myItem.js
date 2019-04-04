@@ -177,7 +177,7 @@ $( document ).ready(function() {
        $optgrp.append("<option value='213.html'><b>216</b> - ﻿ज्ञानी अनागत कर्मोदय के उपभोग की वांछा क्यों नहीं करता ?</option>");
        $optgrp.append("<option value='214.html'><b>217</b> - ﻿इसका विस्तार करते हैं --</option>");
        $optgrp.append("<option value='215.html'><b>208</b> - ﻿मिथ्यात्वादि अपध्यान मेरा परिग्रह नहीं</option>");
-       $optgrp.append("<option value='216.html'><b>203</b> - ﻿वह परामात्म-पद क्या है ? इसका समाधान आचार्य करते हैं --</option>");
+       $optgrp.append("<option value='216.html'><b>203</b> - ﻿वह परमात्म-पद क्या है ? इसका समाधान आचार्य करते हैं --</option>");
        $optgrp.append("<option value='217.html'><b>207</b> - ﻿अब पूछते हैं कि ज्ञानी पर-द्रव्य को क्यों नहीं ग्रहण करता ? उत्तर --</option>");
        $optgrp.append("<option value='218.html'><b>209</b></option>");
        $optgrp.append("<option value='219.html'><b>206</b> - ﻿और क्या ?</option>");
@@ -423,7 +423,7 @@ $( document ).ready(function() {
        $optgrp.append("<option value='213.html'><b>213</b> - ﻿ज्ञानी अनागत कर्मोदय के उपभोग की वांछा क्यों नहीं करता ?</option>");
        $optgrp.append("<option value='214.html'><b>214</b> - ﻿इसका विस्तार करते हैं --</option>");
        $optgrp.append("<option value='215.html'><b>215</b> - ﻿मिथ्यात्वादि अपध्यान मेरा परिग्रह नहीं</option>");
-       $optgrp.append("<option value='216.html'><b>216</b> - ﻿वह परामात्म-पद क्या है ? इसका समाधान आचार्य करते हैं --</option>");
+       $optgrp.append("<option value='216.html'><b>216</b> - ﻿वह परमात्म-पद क्या है ? इसका समाधान आचार्य करते हैं --</option>");
        $optgrp.append("<option value='217.html'><b>217</b> - ﻿अब पूछते हैं कि ज्ञानी पर-द्रव्य को क्यों नहीं ग्रहण करता ? उत्तर --</option>");
        $optgrp.append("<option value='218.html'><b>218</b></option>");
        $optgrp.append("<option value='219.html'><b>219</b> - ﻿और क्या ?</option>");

@@ -304,6 +304,7 @@ for gatha in myMainFIles:
 #                fData=fData.replace('</span></p>', '</span>'); 
 #                fData=fData.replace('<br><br>', '<br>'); 
 #                fData=re.sub(r'<br>$', '', fData); 
+                fData=fData.replace('</div></b><br><br>', '</div></b>')
                 html.write("    <tr><td><div id=teeka"+str(myCntr)+" class=teeka>")
                 html.write("<b><font color=darkgreen>"+teekakaar+" :</font></b> ")
                 if(sTeeka):

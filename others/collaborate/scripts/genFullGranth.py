@@ -242,7 +242,8 @@ for bcFile in sorted(os.listdir('./main')):
                 fData=fData.replace('[', '<b>[<font color=maroon>')
                 fData=fData.replace(']', '</font></b>]'); 
                 fData=fData.replace('(', '<font color=DarkSlateGray>(')
-                fData=fData.replace(')', ')</font>') 
+                fData=fData.replace(')', ')</font>')
+                fData=fData.replace('</div></b><br><br>', '</div></b>')
                 html.write("<br><div class=teeka><b><font color=darkgreen>"+teekakaar+" :</font></b><br><br>"+fData+"</div>")
     ##
     html.write("<hr class=type_7>\n")
