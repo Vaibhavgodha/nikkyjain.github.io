@@ -97,7 +97,15 @@ for group in sorted(glob.glob(myInDir+"/*/")):
     for bhajan in sorted(glob.glob(group+"/*/")):
         myBhajanName=os.path.basename(os.path.dirname(bhajan)).replace('.txt','')
         myBjn=re.sub('.*_','',myBhajanName)
-        html.write("      <td><a href='#gr"+str(myGrCntr)+"-bh"+str(myCntr)+"'>"+str(myCntr)+") "+myBjn+"</a>\n")
+        myBjnName=re.sub('--.*','',myBjn)
+        myWriter=re.sub('.*--','',myBjn)
+        if(myBjn==myBjnName):
+            myWriter=""
+        else:
+            myWriter=re.sub('-',' ',myWriter)
+            myWriter=" -- "+myWriter
+        myBjnName=re.sub('-',' ',myBjnName)
+        html.write("      <td><a href='#gr"+str(myGrCntr)+"-bh"+str(myCntr)+"'>"+str(myCntr)+") "+myBjnName+myWriter+"</a>\n")
         if myCntr%2==0:
             html.write("      <tr>\n")
         myCntr+=1

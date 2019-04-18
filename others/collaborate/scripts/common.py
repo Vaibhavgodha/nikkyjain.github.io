@@ -293,7 +293,7 @@ $(document).on( "pagecontainershow", function(){
       </ul>
     </div>
   </div> <!-- Panel -->
-  <div align=right><a href="mailto:nikkyjain@gmail.com">nikkyjain@gmail.com</a></div>
+  <div align=right><font size=1><a href="mailto:nikkyjain@gmail.com">nikkyjain@gmail.com</a></font></div>
   <div data-role="header" data-position="fixed">
       <!--h1 align=center>Jai Jinendra</h1-->
       <figure align=center>
