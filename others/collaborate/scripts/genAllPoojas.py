@@ -167,6 +167,8 @@ for group in sorted(glob.glob(myInDir+"/*/")):
                 fData=fData.replace('))', '</span>')
                 fData=fData.replace('(', '<span class=comment>(')
                 fData=fData.replace(')', ')</span>')
+                fData=fData.replace('[[', '<b><font color=blue>')
+                fData=fData.replace(']]', '</font></b>')
                 fData=fData.replace('[', '<span class=gatharth>[')
                 fData=fData.replace(']', ']</span>')
                 html.write("<div class=poojarth><font color=maroon><b>अन्वयार्थ : </b></font>"+fData+"</div><br>\n")

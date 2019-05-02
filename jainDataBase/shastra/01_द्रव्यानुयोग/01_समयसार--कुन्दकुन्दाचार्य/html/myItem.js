@@ -223,7 +223,6 @@ $( document ).ready(function() {
        $optgrp.append("<option value='311-315.html'><b>291-293</b> - ﻿इसी को और स्पष्ट करते हैं</option>");
        $optgrp.append("<option value='316.html'><b>294</b> - ﻿आत्मा और बन्ध को भिन्न कैसे किया जाए ?</option>");
        $optgrp.append("<option value='317-319.html'><b>295-297</b> - ﻿आत्मा और बन्ध के प्रथक्-करण कब होता है ?</option>");
-       $optgrp.append("<option value='318.html'><b>298</b></option>");
        $optgrp.append("<option value='320-322.html'><b>298-299</b> - ﻿भेद-भावना -- मैं बस जानने देखने देखने वाला </option>");
        $optgrp.append("<option value='323.html'><b>300</b> - ﻿शुद्धात्मा मात्र ज्ञाता, पर भाव मेरे नहीं </option>");
        $optgrp.append("<option value='324-326.html'><b>301-303</b> - ﻿पर भावों को अपना मानने से बन्ध और वीतरागता से मुक्ति</option>");
