@@ -39,6 +39,10 @@ hasImages=0
 if os.path.isdir(myImgDir):
     hasImages=1
 indexCol2=os.path.isfile('./config/indexCol2.txt')
+noAnvayarth=os.path.isfile('./config/noAnvayarth.txt')
+anvayarth=""
+if not noAnvayarth :
+    anvayarth="<b><font color=darkmagenta>अन्वयार्थ : </font></b>"
 html=open(myHtml, "w")
 html.write("""<!DOCTYPE html>
 <html>
@@ -209,7 +213,7 @@ for bcFile in sorted(os.listdir('./main')):
         fData=fData.replace(']', ']</font></b>')
         fData=fData.replace('(', '<span class=comment>(')
         fData=fData.replace(')', ')</span>')
-        html.write("<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>"+fData+"</div>")
+        html.write("<div class=arth>"+anvayarth+fData+"</div>")
     # Handle Teeka
     if (len(sys.argv) > 1):
         for teeka in sorted(glob.glob('teeka[0-9]*')):
