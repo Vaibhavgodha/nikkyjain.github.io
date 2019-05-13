@@ -103,6 +103,9 @@ for group in sorted(glob.glob(myInDir+"/*/")):
             myWriter=""
         else:
             myWriter=re.sub('-',' ',myWriter)
+            myWriter=myWriter.replace('पण्डित', 'पं.')
+            myWriter=myWriter.replace('आर्यिका', 'आ.')
+            myWriter=myWriter.replace('आचार्य', 'आ.')
             myWriter=" -- "+myWriter
         myBjnName=re.sub('-',' ',myBjnName)
         html.write("      <td><a href='#gr"+str(myGrCntr)+"-bh"+str(myCntr)+"'>"+str(myCntr)+") "+myBjnName+myWriter+"</a>\n")
