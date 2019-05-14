@@ -24,7 +24,7 @@ $( document ).ready(function() {
   mySel=$('select#select-native-0')
   mySel.append("<option value='000_मंगलाचरण.html'><b>000_मंगलाचरण</b> - ﻿मंगलाचरण</option>");
   mySel.append("<option value='001.html'><b>001</b> - ﻿मंगलाचरण</option>");
-  mySel.append("<option value='002.html'><b>002</b></option>");
+  mySel.append("<option value='002.html'><b>002</b> - ﻿अरिहंत भगवान की स्तुति</option>");
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);
 })

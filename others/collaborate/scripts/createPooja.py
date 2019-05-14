@@ -36,10 +36,10 @@ for group in sorted(glob.glob(dbDir+"/others/collaborate/poojas/*/")):
         myVar=re.sub(r'.*_','',myPooja)
         myVar=re.sub(r'--.*','',myVar)
         html.write("<div class=main>"+myVar+"</div>\n")
-        audioFileName="https://nikkyjain.github.io/jainDataBase/poojas/"+myGroup+"/"+myPooja+"/audio/"+myPooja+".mp3"
+        audioFileName="https://nikkyjain.github.io/jainDataBase/poojas/"+myGroup+"/"+myPooja+"/audio/audio.mp3"
         html.write("""
             <div align=center id=myAudio><audio controls>
-                <source src='../audio/"""+myPooja+""".mp3' type="audio/mpeg">
+                <source src='../audio/audio.mp3' type="audio/mpeg">
                 <source id=my_audio src='"""+audioFileName+"""'  type="audio/mpeg">
             </audio></div>\n""")
         for cFile in sorted(glob.glob(pooja+"/main/*")):

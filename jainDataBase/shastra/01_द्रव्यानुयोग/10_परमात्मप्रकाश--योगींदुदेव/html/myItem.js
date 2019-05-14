@@ -47,7 +47,7 @@ $( document ).ready(function() {
   mySel.append("<option value='1-025.html'><b>1-025</b> - ﻿परमात्मा - शरीर रहित लोक के शिखर पर स्थित</option>");
   mySel.append("<option value='1-026.html'><b>1-026</b> - ﻿परमात्मा - शरीर में स्थित</option>");
   mySel.append("<option value='1-027.html'><b>1-027</b> - ﻿परमात्मा - अंतर-दृष्टि के प्रेरणा</option>");
-  mySel.append("<option value='1-028.html'><b>1-028</b> - ﻿[परमात्मा - शारीरिक और मानसिक सुख-दुःख रहित </option>");
+  mySel.append("<option value='1-028.html'><b>1-028</b> - ﻿परमात्मा शारीरिक और मानसिक सुख-दुःख रहित </option>");
   mySel.append("<option value='1-029.html'><b>1-029</b> - ﻿[परमात्मा - देह में रहते हुए भी स्वभाव में स्थित </option>");
   mySel.append("<option value='1-030.html'><b>1-030</b> - ﻿भेद-ज्ञान की प्रेरणा</option>");
   mySel.append("<option value='1-031.html'><b>1-031</b> - ﻿आत्मा का लक्षण</option>");
@@ -61,7 +61,7 @@ $( document ).ready(function() {
   mySel.append("<option value='1-039.html'><b>1-039</b> - ﻿परमात्मा - ध्यान का ध्येय</option>");
   mySel.append("<option value='1-040.html'><b>1-040</b> - ﻿परमात्मा - संसार को उपजाता है</option>");
   mySel.append("<option value='1-041.html'><b>1-041</b> - ﻿परमात्मा - संसार में रहते हुए भी संसार से परे</option>");
-  mySel.append("<option value='1-042.html'><b>1-042</b> - ﻿परमात्मा - उत्कृष्ट समाधि / तप द्वारा ही जो जाना जाता है</option>");
+  mySel.append("<option value='1-042.html'><b>1-042</b> - ﻿परमात्मा उत्कृष्ट समाधि / तप द्वारा ही जाना जाता है</option>");
   mySel.append("<option value='1-043.html'><b>1-043</b> - ﻿परमात्मा - उत्पाद-व्यय-ध्रौव्य संयुक्त</option>");
   mySel.append("<option value='1-044.html'><b>1-044</b> - ﻿शरीर और आत्मा के दृढ़ सम्बन्ध </option>");
   mySel.append("<option value='1-045.html'><b>1-045</b> - ﻿देह से आत्मा का विशिष्ट महत्व</option>");
