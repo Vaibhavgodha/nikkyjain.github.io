@@ -28,6 +28,10 @@ $( document ).ready(function() {
   mySel.append("<option value='004.html'><b>004</b></option>");
   mySel.append("<option value='005.html'><b>005</b></option>");
   mySel.append("<option value='006.html'><b>006</b></option>");
+  mySel.append("<option value='007.html'><b>007</b></option>");
+  mySel.append("<option value='008.html'><b>008</b></option>");
+  mySel.append("<option value='009.html'><b>009</b></option>");
+  mySel.append("<option value='010.html'><b>010</b></option>");
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);
 })
