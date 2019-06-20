@@ -25,9 +25,36 @@ $( document ).ready(function() {
   mySel.append("<option value='001.html'><b>001</b> - ﻿मंगलाचरण</option>");
   mySel.append("<option value='002.html'><b>002</b> - ﻿संक्षिप्त और मध्यम रुचि वाले शिष्य की अपेक्षा प्ररूपणा - २ (अभेद विवक्षा) और २० (भेद विवक्षा)</option>");
   mySel.append("<option value='003.html'><b>003</b></option>");
+  mySel.append("<option value='004.html'><b>004</b> - ﻿किस-किस मार्गणा में कौन-कौन सी प्ररूपणा अन्तर्भूत हो सकती है?</option>");
+  mySel.append("<option value='005.html'><b>005</b></option>");
+  mySel.append("<option value='006.html'><b>006</b></option>");
+  mySel.append("<option value='007.html'><b>007</b></option>");
   mySel.append("<option value='008.html'><b>008</b> - ﻿गुणस्थान का लक्षण</option>");
-  mySel.append("<option value='009.html'><b>009</b> - ﻿१४ गुणस्थान</option>");
-  mySel.append("<option value='010.html'><b>010</b></option>");
+  mySel.append("<option value='009-010.html'><b>009-010</b> - ﻿१४ गुणस्थान</option>");
+  mySel.append("<option value='011.html'><b>011</b> - ﻿१४ गणुस्थानों में भाव (मोहनीय की अपेक्षा)</option>");
+  mySel.append("<option value='012.html'><b>012</b></option>");
+  mySel.append("<option value='013.html'><b>013</b></option>");
+  mySel.append("<option value='014.html'><b>014</b></option>");
+  mySel.append("<option value='015.html'><b>015</b> - ﻿मिथ्यात्व गुणस्थान (पहला)</option>");
+  mySel.append("<option value='016.html'><b>016</b></option>");
+  mySel.append("<option value='017.html'><b>017</b> - ﻿मिथ्याभाव को समझने के लिए उदाहरण</option>");
+  mySel.append("<option value='018.html'><b>018</b> - ﻿मिथ्यादृष्टि के बाह्य चिह्न</option>");
+  mySel.append("<option value='019.html'><b>019</b> - ﻿सासादन / सासन गुणस्थान (दूसरा)</option>");
+  mySel.append("<option value='020.html'><b>020</b> - ﻿सासादन का उदाहरण</option>");
+  mySel.append("<option value='021.html'><b>021</b> - ﻿मिश्र / सम्यग्मिथ्यात्व गुणस्थान (तीसरा)</option>");
+  mySel.append("<option value='022.html'><b>022</b></option>");
+  mySel.append("<option value='023.html'><b>023</b></option>");
+  mySel.append("<option value='024.html'><b>024</b></option>");
+  mySel.append("<option value='025.html'><b>025</b> - ﻿अविरत सम्यक्त्व (चौथा)</option>");
+  mySel.append("<option value='026.html'><b>026</b> - ﻿अविरत सम्यक्त्व (चौथा)</option>");
+  mySel.append("<option value='027.html'><b>027</b> - ﻿विपरीत अर्थ का श्रद्धान करने पर भी क्या कोई सम्यग्दृष्टि हो सकता है?</option>");
+  mySel.append("<option value='028.html'><b>028</b></option>");
+  mySel.append("<option value='029.html'><b>029</b> - ﻿देशविरत (पाँचवां)</option>");
+  mySel.append("<option value='030.html'><b>030</b> - ﻿देशविरत (पाँचवां)</option>");
+  mySel.append("<option value='031.html'><b>031</b> - ﻿देशविरत (पाँचवां)</option>");
+  mySel.append("<option value='032.html'><b>032</b> - ﻿प्रमत्तविरत (छठा)</option>");
+  mySel.append("<option value='033.html'><b>033</b> - ﻿प्रमत्तविरत (छठा)</option>");
+  mySel.append("<option value='034.html'><b>034</b> - ﻿१५ प्रमाद</option>");
   mySel.append("<option value='035.html'><b>035</b> - ﻿प्रमाद के अन्य ५ प्रकार</option>");
   mySel.append("<option value='036.html'><b>036</b> - ﻿संख्या (भंग का जोड़) कैसे लाए</option>");
   mySel.append("<option value='037.html'><b>037</b> - ﻿प्रस्तार - प्रथम प्रकार</option>");
@@ -42,27 +69,8 @@ $( document ).ready(function() {
   mySel.append("<option value='046.html'><b>046</b> - ﻿स्वस्थान अप्रमत्त विरत की विशषेता</option>");
   mySel.append("<option value='047.html'><b>047</b> - ﻿सातिशय अप्रमत्त विरत का स्वरूप</option>");
   mySel.append("<option value='048.html'><b>048</b> - ﻿तीन करण की विशषेता</option>");
+  mySel.append("<option value='049.html'><b>049</b></option>");
   mySel.append("<option value='050.html'><b>050</b> - ﻿अपूर्वकरण गुणस्थान</option>");
-  mySel.append("<option value='051.html'><b>051</b> - ﻿अपूर्वकरण का निरुक्तिपूर्वक लक्षण</option>");
-  mySel.append("<option value='052.html'><b>052</b> - ﻿अपूर्वकरण - विशेष स्वरूप</option>");
-  mySel.append("<option value='053.html'><b>053</b></option>");
-  mySel.append("<option value='054.html'><b>054</b> - ﻿अपूर्वकरण परिणामों के कार्य</option>");
-  mySel.append("<option value='055.html'><b>055</b></option>");
-  mySel.append("<option value='056-057.html'><b>056-057</b> - ﻿अनिवृत्ति-करण गुणस्थान</option>");
-  mySel.append("<option value='058.html'><b>058</b> - ﻿सूक्ष्मसांपराय (दसवाँ)</option>");
-  mySel.append("<option value='059.html'><b>059</b> - ﻿कृष्टि किस क्रम से होती है ?</option>");
-  mySel.append("<option value='060.html'><b>060</b> - ﻿पूर्व और अपूर्व स्पर्धक में अंतर</option>");
-  mySel.append("<option value='061.html'><b>061</b> - ﻿उपशांत-कषाय (ग्यारहवाँ)</option>");
-  mySel.append("<option value='062.html'><b>062</b> - ﻿क्षीण-कषाय (बारहवां)</option>");
-  mySel.append("<option value='063-064.html'><b>063-064</b> - ﻿सयोग केवली जिन (तेरहवाँ गुणस्थान)</option>");
-  mySel.append("<option value='065.html'><b>065</b> - ﻿अयोग केवली जिन (चौदहवाँ) गुणस्थान</option>");
-  mySel.append("<option value='068-069.html'><b>068-069</b></option>");
-  mySel.selectmenu();
-  mySel.selectmenu('refresh', true);
-})
-$( document ).ready(function() {
-  mySel=$('select#select-native-1')
-  mySel.append("<option value='001.html'><b>001</b> - ﻿मंगलाचरण</option>");
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);
 })
