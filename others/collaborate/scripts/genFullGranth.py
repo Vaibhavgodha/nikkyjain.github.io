@@ -194,6 +194,15 @@ for bcFile in sorted(os.listdir('./main')):
         fData=fData.replace('\xef\xbb\xbf', '')
     html.write(fData)
     html.write("</div>\n")
+    # Handle Sanskrit Gatha 
+    curFile="./mainS/"+bcFile
+    if os.path.isfile(curFile):
+        html.write("<div class=gathaS>")
+        with open(curFile, 'r') as myfile:
+            fData=myfile.read().replace('\n', '<br>')
+            fData=fData.replace('\xef\xbb\xbf', '')
+        html.write(fData)
+        html.write("</div>\n")
     # Handle Padya 
     curFile="./mainH/"+bcFile
     if os.path.isfile(curFile):

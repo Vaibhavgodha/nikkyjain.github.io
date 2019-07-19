@@ -70,6 +70,31 @@ $( document ).ready(function() {
        $optgrp.append("<option value='048.html'><b>048</b> - ﻿कार्य तथा कारण-समयसार में अन्तर नहीं</option>");
        $optgrp.append("<option value='049.html'><b>049</b> - ﻿निश्चय और व्यवहारनय की उपादेयता</option>");
        $optgrp.append("<option value='050.html'><b>050</b> - ﻿हेय-उपादेय का स्वरूप</option>");
+       $optgrp.append("<option value='051-055.html'><b>051-055</b> - ﻿रत्नत्रय का स्वरूप</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿व्यवहार-चारित्र">')
+       $optgrp.append("<option value='056.html'><b>056</b> - ﻿अहिंसाव्रत</option>");
+       $optgrp.append("<option value='057.html'><b>057</b> - ﻿सत्यव्रत</option>");
+       $optgrp.append("<option value='058.html'><b>058</b> - ﻿अचौर्य-व्रत</option>");
+       $optgrp.append("<option value='059.html'><b>059</b> - ﻿ब्रह्मचर्य-व्रत</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿चारित्र अधिकार">')
+       $optgrp.append("<option value='060.html'><b>060</b> - ﻿परिग्रह-त्याग व्रत</option>");
+       $optgrp.append("<option value='061.html'><b>061</b> - ﻿ईर्या-समिति</option>");
+       $optgrp.append("<option value='062.html'><b>062</b> - ﻿भाषा-समिति</option>");
+       $optgrp.append("<option value='063.html'><b>063</b> - ﻿एषणा-समिति</option>");
+       $optgrp.append("<option value='064.html'><b>064</b> - ﻿आदाननिक्षेपण समिति</option>");
+       $optgrp.append("<option value='065.html'><b>065</b> - ﻿प्रतिष्ठापन समिति</option>");
+       $optgrp.append("<option value='066.html'><b>066</b> - ﻿व्यवहार मनोगुप्ति</option>");
+       $optgrp.append("<option value='067.html'><b>067</b> - ﻿वचन-गुप्ति</option>");
+       $optgrp.append("<option value='068.html'><b>068</b> - ﻿काय-गुप्ति</option>");
+       $optgrp.append("<option value='069.html'><b>069</b> - ﻿निश्चय मनोगुप्ति और वचनगुप्ति</option>");
+       $optgrp.append("<option value='070.html'><b>070</b> - ﻿निश्चय का्य-गुप्ति</option>");
+       $optgrp.append("<option value='071.html'><b>071</b> - ﻿अर्हत् परमेश्वर</option>");
+       $optgrp.append("<option value='072.html'><b>072</b> - ﻿सिद्ध-परमेष्ठि</option>");
+       $optgrp.append("<option value='073.html'><b>073</b> - ﻿आचार्य</option>");
+       $optgrp.append("<option value='074.html'><b>074</b></option>");
+       $optgrp.append("<option value='075.html'><b>075</b></option>");
     mySel.append($optgrp);
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);

@@ -81,6 +81,13 @@ div.om {
     text-align: center;
     margin: 0 auto;
 }
+div.gathaS {
+    font-size: 1.5vw;
+    color: navy;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+}
 div.gadya {
     font-size: 3vw;
     color: darkGreen;

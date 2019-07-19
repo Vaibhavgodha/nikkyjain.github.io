@@ -43,16 +43,13 @@ $( document ).ready(function() {
        $optgrp.append("<option value='018.html'><b>018</b> - ﻿जिनवचन में दर्शन का लिंग</option>");
        $optgrp.append("<option value='019.html'><b>019</b> - ﻿बाह्यलिंग सहित अन्तरंग श्रद्धान ही सम्यग्दृष्टि</option>");
        $optgrp.append("<option value='020.html'><b>020</b> - ﻿सम्यक्त्व के दो प्रकार</option>");
-       $optgrp.append("<option value='021.html'><b>021</b> - ﻿सम्यग्दर्शन ही सब गुणों में सार</option>");
        $optgrp.append("<option value='022.html'><b>022</b> - ﻿श्रद्धानी के ही सम्यक्त्व</option>");
-       $optgrp.append("<option value='023.html'><b>023</b> - ﻿दर्शन-ज्ञान-चारित्र में स्थित की वंदना</option>");
        $optgrp.append("<option value='024.html'><b>024</b> - ﻿यथाजातरूप को मत्सरभाव से वन्दना नहीं करते, वे मिथ्यादृष्टि</option>");
        $optgrp.append("<option value='025.html'><b>025</b> - ﻿इसी को दृढ़ करते हैं</option>");
        $optgrp.append("<option value='026.html'><b>026</b> - ﻿असंयमी वंदने योग्य नहीं</option>");
        $optgrp.append("<option value='027.html'><b>027</b> - ﻿इस ही अर्थ को दृढ़ करते हैं </option>");
        $optgrp.append("<option value='028.html'><b>028</b> - ﻿तप आदि से संयुक्त को नमस्कार</option>");
        $optgrp.append("<option value='029.html'><b>029</b> - ﻿समवसरण सहित तीर्थंकर वंदने योग्य हैं या नहीं</option>");
-       $optgrp.append("<option value='030.html'><b>030</b> - ﻿मोक्ष किससे होता है?</option>");
        $optgrp.append("<option value='031.html'><b>031</b> - ﻿ज्ञान आदि के उत्तरोत्तर सारपना</option>");
        $optgrp.append("<option value='032.html'><b>032</b> - ﻿इसी अर्थ को दृढ़ करते हैं</option>");
        $optgrp.append("<option value='033.html'><b>033</b> - ﻿सम्यग्दर्शनरूप रत्न देवों द्वारा पूज्य</option>");
@@ -137,12 +134,10 @@ $( document ).ready(function() {
     $optgrp=$('<optgroup label="﻿बोध-पाहुड">')
        $optgrp.append("<option value='109-110.html'><b>109-110</b> - ﻿ग्रन्थ करने की मंगलपूर्वक प्रतिज्ञा </option>");
        $optgrp.append("<option value='111-112.html'><b>111-112</b> - ﻿'बोधपाहुड' में ग्यारह स्थलों के नाम </option>");
-       $optgrp.append("<option value='113.html'><b>113</b> - ﻿आयतन का निरूपण </option>");
        $optgrp.append("<option value='114.html'><b>114</b></option>");
        $optgrp.append("<option value='115.html'><b>115</b></option>");
        $optgrp.append("<option value='116.html'><b>116</b> - ﻿चैत्यगृह का निरूपण</option>");
        $optgrp.append("<option value='117.html'><b>117</b></option>");
-       $optgrp.append("<option value='118.html'><b>118</b> - ﻿जिनप्रतिमा का निरूपण</option>");
        $optgrp.append("<option value='119.html'><b>119</b></option>");
        $optgrp.append("<option value='120-121.html'><b>120-121</b></option>");
        $optgrp.append("<option value='122.html'><b>122</b> - ﻿दर्शन का स्वरूप </option>");
@@ -155,7 +150,6 @@ $( document ).ready(function() {
        $optgrp.append("<option value='129.html'><b>129</b> - ﻿इसी को दृष्टान्त द्वारा दृढ़ करते हैं</option>");
        $optgrp.append("<option value='130.html'><b>130</b> - ﻿इसप्रकार ज्ञान-विनय-संयुक्त पुरुष होवे वही मोक्ष को प्राप्त करता है</option>");
        $optgrp.append("<option value='131.html'><b>131</b></option>");
-       $optgrp.append("<option value='132.html'><b>132</b> - ﻿देव का स्वरूप</option>");
        $optgrp.append("<option value='133.html'><b>133</b> - ﻿धर्मादिक का स्वरूप</option>");
        $optgrp.append("<option value='134.html'><b>134</b> - ﻿तीर्थ का स्वरूप</option>");
        $optgrp.append("<option value='135.html'><b>135</b></option>");
@@ -164,7 +158,6 @@ $( document ).ready(function() {
        $optgrp.append("<option value='138.html'><b>138</b></option>");
        $optgrp.append("<option value='139.html'><b>139</b> - ﻿स्थापना द्वारा अरहंत का वर्णन</option>");
        $optgrp.append("<option value='140.html'><b>140</b> - ﻿गुणस्थान में अरिहंत की स्थापना</option>");
-       $optgrp.append("<option value='141.html'><b>141</b> - ﻿मार्गणा में अरिहंत की स्थापना</option>");
        $optgrp.append("<option value='142.html'><b>142</b> - ﻿पर्याप्ति में अरिहंत की स्थापना</option>");
        $optgrp.append("<option value='143.html'><b>143</b> - ﻿प्राण में अरिहंत की स्थापना </option>");
        $optgrp.append("<option value='144.html'><b>144</b> - ﻿जीवस्थान में अरिहंत की स्थापना</option>");
@@ -179,9 +172,7 @@ $( document ).ready(function() {
        $optgrp.append("<option value='156.html'><b>156</b></option>");
        $optgrp.append("<option value='157.html'><b>157</b> - ﻿दीक्षा का बाह्यस्वरूप</option>");
        $optgrp.append("<option value='158.html'><b>158</b></option>");
-       $optgrp.append("<option value='159.html'><b>159</b></option>");
        $optgrp.append("<option value='160.html'><b>160</b></option>");
-       $optgrp.append("<option value='161.html'><b>161</b></option>");
        $optgrp.append("<option value='162.html'><b>162</b></option>");
        $optgrp.append("<option value='163.html'><b>163</b> - ﻿अन्य विशेष</option>");
        $optgrp.append("<option value='164.html'><b>164</b></option>");
@@ -220,10 +211,7 @@ $( document ).ready(function() {
        $optgrp.append("<option value='202.html'><b>202</b> - ﻿काल-परावर्तन</option>");
        $optgrp.append("<option value='203.html'><b>203</b> - ﻿द्रव्य-परावर्तन</option>");
        $optgrp.append("<option value='204.html'><b>204</b> - ﻿क्षेत्र परावर्तन</option>");
-       $optgrp.append("<option value='205.html'><b>205</b> - ﻿शरीर में रोग का वर्णन</option>");
        $optgrp.append("<option value='206.html'><b>206</b> - ﻿उन रोगों का दुःख तूने बहुत सहा </option>");
-       $optgrp.append("<option value='207.html'><b>207</b> - ﻿अपवित्र गर्भवास में भी रहा </option>");
-       $optgrp.append("<option value='208.html'><b>208</b> - ﻿फिर इसी को कहते हैं</option>");
        $optgrp.append("<option value='209.html'><b>209</b> - ﻿बालकपन में भी अज्ञान-जनित दुःख </option>");
        $optgrp.append("<option value='210.html'><b>210</b> - ﻿देह के स्वरूप का विचार करो </option>");
        $optgrp.append("<option value='211.html'><b>211</b> - ﻿अन्तरंग से छोड़ने का उपदेश</option>");
@@ -259,7 +247,6 @@ $( document ).ready(function() {
        $optgrp.append("<option value='241.html'><b>241</b> - ﻿पहिले भाव से नग्न हो, पीछे द्रव्यमुनि बने यह मार्ग है </option>");
        $optgrp.append("<option value='242.html'><b>242</b> - ﻿शुद्ध भाव ही स्वर्ग-मोक्ष का कारण है, मलिनभाव संसार का कारण है</option>");
        $optgrp.append("<option value='243.html'><b>243</b> - ﻿भाव के फल का माहात्म्य</option>");
-       $optgrp.append("<option value='244.html'><b>244</b> - ﻿भावों के भेद</option>");
        $optgrp.append("<option value='245.html'><b>245</b> - ﻿भाव -- शुभ, अशुभ और शुद्ध । आर्त्त और रौद्र ये अशुभ ध्यान हैं तथा धर्मध्यान शुभ है </option>");
        $optgrp.append("<option value='246.html'><b>246</b> - ﻿जिनशासन का इसप्रकार माहात्म्य है </option>");
        $optgrp.append("<option value='247.html'><b>247</b> - ﻿ऐसा मुनि ही तीर्थंकर-प्रकृति बाँधता है </option>");
@@ -274,8 +261,6 @@ $( document ).ready(function() {
        $optgrp.append("<option value='256.html'><b>256</b> - ﻿बाह्य-हिंसादिक क्रिया के बिना, अशुद्ध-भाव से तंदुल मत्स्य नरक को गया</option>");
        $optgrp.append("<option value='257.html'><b>257</b> - ﻿भावरहित के बाह्य परिग्रह का त्यागादिक निष्प्रयोजन </option>");
        $optgrp.append("<option value='258.html'><b>258</b> - ﻿भावशुद्धि के लिये इन्द्रियादिक को वश करो, भावशुद्धि-रहित बाह्यभेष का आडम्बर मत करो</option>");
-       $optgrp.append("<option value='259.html'><b>259</b> - ﻿फिर उपदेश कहते हैं </option>");
-       $optgrp.append("<option value='260.html'><b>260</b> - ﻿फिर कहते हैं </option>");
        $optgrp.append("<option value='261.html'><b>261</b> - ﻿ऐसा करने से क्या होता है ?</option>");
        $optgrp.append("<option value='262.html'><b>262</b> - ﻿भावशुद्धि के लिए फिर उपदेश</option>");
        $optgrp.append("<option value='263.html'><b>263</b> - ﻿परीषह जय की प्रेरणा</option>");
@@ -288,7 +273,6 @@ $( document ).ready(function() {
        $optgrp.append("<option value='270.html'><b>270</b> - ﻿सचित्त भोजन पान -- अशुद्ध-भाव</option>");
        $optgrp.append("<option value='271.html'><b>271</b> - ﻿कंद-मूल-पुष्प आदि सचित्त भोजन -- अशुद्ध-भाव </option>");
        $optgrp.append("<option value='272.html'><b>272</b> - ﻿विनय का वर्णन </option>");
-       $optgrp.append("<option value='273.html'><b>273</b> - ﻿वैयावृत्य का उपदेश</option>");
        $optgrp.append("<option value='274.html'><b>274</b> - ﻿गर्हा का उपदेश</option>");
        $optgrp.append("<option value='275.html'><b>275</b> - ﻿क्षमा का उपदेश</option>");
        $optgrp.append("<option value='276.html'><b>276</b> - ﻿क्षमा का फल</option>");
@@ -299,7 +283,6 @@ $( document ).ready(function() {
        $optgrp.append("<option value='281.html'><b>281</b> - ﻿बाह्य उत्तरगुण की प्रेरणा</option>");
        $optgrp.append("<option value='282.html'><b>282</b> - ﻿तत्त्व की भावना का उपदेश</option>");
        $optgrp.append("<option value='283.html'><b>283</b> - ﻿तत्त्व की भावना बिना मोक्ष नहीं</option>");
-       $optgrp.append("<option value='284.html'><b>284</b> - ﻿पाप-पुण्य का और बन्ध-मोक्ष का कारण जीव के परिणाम</option>");
        $optgrp.append("<option value='285.html'><b>285</b> - ﻿पाप-बंध के परिणाम </option>");
        $optgrp.append("<option value='286.html'><b>286</b> - ﻿इससे उलटा जीव है वह पुण्य बाँधता है</option>");
        $optgrp.append("<option value='287.html'><b>287</b> - ﻿आठों कर्मों से मुक्त होने की भावना</option>");
@@ -323,7 +306,6 @@ $( document ).ready(function() {
        $optgrp.append("<option value='305.html'><b>305</b> - ﻿मिथ्यात्व से संसार में भ्रमण । मिथ्यात्व के भेद</option>");
        $optgrp.append("<option value='306.html'><b>306</b> - ﻿अभव्यजीव अपनी प्रकृति को नहीं छोड़ता, उसका मिथ्यात्व नहीं मिटता</option>");
        $optgrp.append("<option value='307.html'><b>307</b> - ﻿एकान्त मिथ्यात्व के त्याग की प्रेरणा </option>");
-       $optgrp.append("<option value='308.html'><b>308</b> - ﻿कुगुरु के त्याग की प्रेरणा</option>");
        $optgrp.append("<option value='309.html'><b>309</b> - ﻿अनायातन त्याग की प्रेरणा</option>");
        $optgrp.append("<option value='310.html'><b>310</b> - ﻿सर्व मिथ्या मत को छोड़ने की प्रेरणा</option>");
        $optgrp.append("<option value='311.html'><b>311</b> - ﻿सम्यग्दर्शन-रहित प्राणी चलता हुआ मृतक है</option>");
@@ -374,7 +356,6 @@ $( document ).ready(function() {
        $optgrp.append("<option value='354.html'><b>354</b> - ﻿दृष्टांत</option>");
        $optgrp.append("<option value='355.html'><b>355</b> - ﻿अन्य दृष्टान्त</option>");
        $optgrp.append("<option value='356.html'><b>356</b> - ﻿ध्यान के योग से स्वर्ग / मोक्ष की प्राप्ति</option>");
-       $optgrp.append("<option value='357.html'><b>357</b> - ﻿दृष्टांत / दार्ष्टान्त</option>");
        $optgrp.append("<option value='358.html'><b>358</b> - ﻿अव्रतादिक श्रेष्ठ नहीं है</option>");
        $optgrp.append("<option value='359.html'><b>359</b> - ﻿संसार से निकलने के लिए आत्मा का ध्यान करे</option>");
        $optgrp.append("<option value='360.html'><b>360</b> - ﻿आत्मा का ध्यान करने की विधि</option>");
@@ -385,7 +366,6 @@ $( document ).ready(function() {
        $optgrp.append("<option value='366.html'><b>366</b> - ﻿जिनदेवने द्वारा ध्यान अध्ययन में प्रवृत्ति की प्रेरणा</option>");
        $optgrp.append("<option value='367.html'><b>367</b> - ﻿जो रत्नत्रय की आराधना करता है वह जीव आराधक ही है</option>");
        $optgrp.append("<option value='368.html'><b>368</b> - ﻿शुद्धात्मा केवलज्ञान है और केवलज्ञान शुद्धात्मा है</option>");
-       $optgrp.append("<option value='369.html'><b>369</b> - ﻿रत्नत्रय का आराधक ही आत्मा का ध्यान करता है</option>");
        $optgrp.append("<option value='370-371.html'><b>370-371</b> - ﻿आत्मा में रत्नत्रय कैसे है ?</option>");
        $optgrp.append("<option value='372-373.html'><b>372-373</b> - ﻿सम्यग्दर्शन को प्रधान कर कहते हैं</option>");
        $optgrp.append("<option value='374.html'><b>374</b> - ﻿सम्यग्ज्ञान का स्वरूप</option>");
@@ -419,7 +399,6 @@ $( document ).ready(function() {
        $optgrp.append("<option value='404.html'><b>404</b> - ﻿राग संसार का कारण होने से योगीश्वर आत्मा में भावना करते हैं</option>");
        $optgrp.append("<option value='405.html'><b>405</b> - ﻿रागद्वेष से रहित ही चारित्र होता है</option>");
        $optgrp.append("<option value='406-407.html'><b>406-407</b> - ﻿पंचमकाल आत्मध्यान का काल नहीं है, उसका निषेध</option>");
-       $optgrp.append("<option value='408.html'><b>408</b> - ﻿जो ऐसा कहता है कि पंचम-काल ध्यान का काल नहीं, उसको कहते हैं</option>");
        $optgrp.append("<option value='409.html'><b>409</b> - ﻿अभी इस पंचमकाल में धर्मध्यान होता है, यह नहीं मानता है वह अज्ञानी है</option>");
        $optgrp.append("<option value='410.html'><b>410</b> - ﻿इस काल में भी रत्नत्रय का धारक मुनि स्वर्ग प्राप्त करके वहाँ से चयकर मोक्ष जाता है</option>");
        $optgrp.append("<option value='411.html'><b>411</b> - ﻿ध्यान का अभाव मानकर मुनिलिंग ग्रहण कर पाप में प्रवृत्ति करने का निषेध</option>");
@@ -461,7 +440,6 @@ $( document ).ready(function() {
        $optgrp.append("<option value='451.html'><b>451</b> - ﻿जो भोजन में भी रसों का लोलुपी होता है वह भी लिंग को लजाता है</option>");
        $optgrp.append("<option value='452.html'><b>452</b> - ﻿इसी को विशेषरूप से कहते हैं </option>");
        $optgrp.append("<option value='453.html'><b>453</b> - ﻿फिर कहते हैं </option>");
-       $optgrp.append("<option value='454.html'><b>454</b> - ﻿जो लिंग धारण करके ऐसे प्रवर्तते हैं वे श्रमण नहीं हैं </option>");
        $optgrp.append("<option value='455.html'><b>455</b> - ﻿लिंग ग्रहणकर वनस्पति आदि स्थावर जीवों की हिंसा का निषेध</option>");
        $optgrp.append("<option value='456.html'><b>456</b> - ﻿लिंग धारण करके स्त्रियों से राग करने का निषेध</option>");
        $optgrp.append("<option value='457.html'><b>457</b> - ﻿फिर कहते हैं </option>");
