@@ -64,3 +64,6 @@ cp $dbDir/../index.html $outDir/../.
 # Copy JS
 cp $dbDir/../js/*.js $outDir/../js/.
 cp $dbDir/../css/*.css $outDir/../css/.
+# Copy Youtube
+mkdir -p $outDir/youtube
+cp $dbDir/youtube/* $outDir/youtube/.
