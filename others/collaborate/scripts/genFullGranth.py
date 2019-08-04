@@ -195,14 +195,15 @@ for bcFile in sorted(os.listdir('./main')):
     html.write(fData)
     html.write("</div>\n")
     # Handle Sanskrit Gatha 
-    curFile="./mainS/"+bcFile
-    if os.path.isfile(curFile):
-        html.write("<div class=gathaS>")
-        with open(curFile, 'r') as myfile:
-            fData=myfile.read().replace('\n', '<br>')
-            fData=fData.replace('\xef\xbb\xbf', '')
-        html.write(fData)
-        html.write("</div>\n")
+    if (len(sys.argv) > 1):
+      curFile="./mainS/"+bcFile
+      if os.path.isfile(curFile):
+          html.write("<div class=gathaS>")
+          with open(curFile, 'r') as myfile:
+              fData=myfile.read().replace('\n', '<br>')
+              fData=fData.replace('\xef\xbb\xbf', '')
+          html.write(fData)
+          html.write("</div>\n")
     # Handle Padya 
     curFile="./mainH/"+bcFile
     if os.path.isfile(curFile):
@@ -210,6 +211,8 @@ for bcFile in sorted(os.listdir('./main')):
         with open(curFile, 'r') as myfile:
             fData=myfile.read().replace('\n', '<br>')
             fData=fData.replace('\xef\xbb\xbf', '')
+        fData=fData.replace('(', '<span class=comment>(')
+        fData=fData.replace(')', ')</span>')
         html.write(fData)
         html.write("</div>\n")
     # Handle arth 
@@ -248,7 +251,7 @@ for bcFile in sorted(os.listdir('./main')):
                 fData=re.sub(r'अर्थ [-–—]', '<b><font color=maroon>अर्थ –</font></b>', fData); 
                 fData=re.sub(r'विशेषार्थ [-–—]', '<b><font color=maroon>विशेषार्थ –</font></b>', fData); 
                 fData=re.sub(r'भावार्थ [-–—]', '<b><font color=maroon>भावार्थ –</font></b>', fData); 
-                fData=fData.replace('((', '<b><div align=center>')
+                fData=fData.replace('((', '<b><div class=gadya>')
                 fData=fData.replace('))', '</div></b>'); 
                 fData=fData.replace('[[', '<b><font color=blue>')
                 fData=fData.replace(']]', '</font></b>')

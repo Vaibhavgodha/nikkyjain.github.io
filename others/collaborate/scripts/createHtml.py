@@ -286,7 +286,7 @@ for gatha in myMainFIles:
                 fData=re.sub(r'अर्थ [-–—]', '<b><font color=maroon>अर्थ –</font></b>', fData); 
                 fData=re.sub(r'विशेषार्थ [-–—]', '<b><font color=maroon>विशेषार्थ –</font></b>', fData); 
                 fData=re.sub(r'भावार्थ [-–—]', '<b><font color=maroon>भावार्थ –</font></b>', fData); 
-                fData=fData.replace('((', '<b><div align=center>')
+                fData=fData.replace('((', '<b><div class=gadya>')
                 fData=fData.replace('))', '</div></b>'); 
                 fData=fData.replace('[[', '<b><font color=blue>')
                 fData=fData.replace(']]', '</font></b>')

@@ -95,6 +95,20 @@ $( document ).ready(function() {
        $optgrp.append("<option value='073.html'><b>073</b> - ﻿आचार्य</option>");
        $optgrp.append("<option value='074.html'><b>074</b></option>");
        $optgrp.append("<option value='075.html'><b>075</b></option>");
+       $optgrp.append("<option value='076.html'><b>076</b></option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿परमार्थ प्रतिक्रमण">')
+       $optgrp.append("<option value='077-081.html'><b>077-081</b></option>");
+       $optgrp.append("<option value='082.html'><b>082</b></option>");
+       $optgrp.append("<option value='083.html'><b>083</b></option>");
+       $optgrp.append("<option value='084.html'><b>084</b></option>");
+       $optgrp.append("<option value='085.html'><b>085</b></option>");
+       $optgrp.append("<option value='086.html'><b>086</b></option>");
+       $optgrp.append("<option value='087.html'><b>087</b></option>");
+       $optgrp.append("<option value='088.html'><b>088</b></option>");
+       $optgrp.append("<option value='089.html'><b>089</b></option>");
+       $optgrp.append("<option value='090.html'><b>090</b></option>");
+       $optgrp.append("<option value='091.html'><b>091</b></option>");
     mySel.append($optgrp);
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);

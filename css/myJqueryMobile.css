@@ -83,21 +83,21 @@ div.om {
 }
 div.gathaS {
     font-size: 1.5vw;
-    color: navy;
+    color: darkslategray;
     text-align: center;
     margin: 0 auto;
     font-weight: bold;
 }
 div.gadya {
-    font-size: 3vw;
-    color: darkGreen;
+    font-size: 2.5vw;
+    color: darkgreen;
     text-align: center;
     margin: 0 auto;
     font-weight: bold;
 }
 div.poojarth {
     font-size: 2vw;
-    color: darkGreen;
+    color: darkred;
     width: 90%;
     text-align: justify;
     margin: 0 auto;
@@ -109,13 +109,17 @@ div.lay {
     margin: 0 auto;
 }
 span.gatharth {
-    font-size: 2.6vw;
+    font-size: 2vw;
     color: navy;
     font-weight: bold;
 }
+span.shortFont {
+    font-size: 1.6vw;
+    color: violet;
+}
 .comment {
     font-size: 2vw;
-    color: darkGray;
+    color: Purple;
     width: 90%;
     text-align: center;
     margin: 0 auto;
