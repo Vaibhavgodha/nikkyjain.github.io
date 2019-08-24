@@ -108,21 +108,51 @@ def createMiscList (html, myRelPath, dbDir):
   <div data-history=false data-role=popup id=popupMisc data-theme=none>
     <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>
         <div data-role=collapsible data-inset=false data-theme=a>
-          <h2>Youtube Videos</h2>
+          <h2>Youtube -- शास्त्र गाथा</h2>
           <ul data-role=listview>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/rks.html>Ratnakarand Shravakachaar</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/tsutra-1.html>Tattvarth Sutra - PurnaMati Mataji</a></li>
-            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/ishtopadesh.html>ishtopadesh</a></li> 
-            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/swaroopsambodhan.html>Swaroop Sambodhan</a></li> 
-            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/samadhitantra.html>Samadhitantra</a></li> 
-            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/gandharValay.html>Gandhar Valaya</a></li> 
-            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/bhaktamar.html>Bhaktamar - Aacharya Suvidhisagar</a></li> 
-            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/svayambhu.html>Svayambhu Stotra - Aacharya Suvidhisagar</a></li> 
-            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/mahavirashtak.html>Mahaveerashtak Stotra - Aacharya Suvidhisagar</a></li> 
-            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/vishapahaar.html>Vishaapahaar Stotra - Aacharya Suvidhisagar</a></li> 
-            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/yogibhakti.html>Yogi Bhakti - Aacharya Suvidhisagar</a></li> 
-            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/vvinshati.html>Vidhyamaan Vinshati - Aacharya Suvidhisagar</a></li> 
-            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/ekibhav.html>Ekibhav Stotra - Aacharya Suvidhisagar</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/samaysaar.html>समयसार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/rks.html>रत्नकरंड श्रावकाचार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/tsutra-1.html>तत्त्वार्थ-सूत्र - पूर्णमति माताजी</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/ishtopadesh.html>इष्टोपदेश</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/swaroopsambodhan.html>स्वरूप संबोधन</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/samadhitantra.html>समाधितंत्र</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/gandharValay.html>गणधर-वलय स्तोत्र</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/bhaktamar.html>भक्तामर</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/svayambhu.html>स्वयंभू-स्तोत्र</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/mahavirashtak.html>महावीराष्टक-स्तोत्र</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/vishapahaar.html>विषापहार-स्तोत्र</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/yogibhakti.html>योगी-भक्ति</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/vvinshati.html>विद्यमान-विंशति</a></li> 
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube/ekibhav.html>एकीभाव-स्तोत्र</a></li> 
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>Youtube -- Animations</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Neminath.html>भगवान नमिनाथ</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Baahubali.html>भगवान बाहुबली</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Sukumal.html>सुकुमाल मुनि</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Kundkund.html>कुन्दकुन्द आचार्य</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Rakshabandhan.html>रक्षाबंधन की कथा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Samavsaran.html>समवसरण</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/ChaarGati.html>चार-गति</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/ShrutPanchami.html>श्रुत-पंचमी</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/AkshayTritiya.html>अक्षय-तृतीया</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Uddayan.html>उद्दायन राजा</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/ShrenikFrog.html>राजा श्रेणिक और मेंढक</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/AnjanChor.html>अंजन-चोर की कथा</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/FiveSins.html>पांच-पाप</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/JeevDayaa.html>जीव-दया</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/GarbhaKalyaanak.html>गर्भ-कल्याणक</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/JanmKalyaanak.html>जन्म-कल्याणक</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/TapKalyaanak.html>तप-कल्याणक</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Namokaar.html>णमोकार-मंत्र</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Kulaachaar.html>कुलाचार</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Sthaavar.html>स्थावर-जीव</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Teerthankar.html>तीर्थंकर</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/JeevAjeev.html>जीव-अजीव</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/ChaturvidhSangh.html>चतुर्विध-संघ</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/MorningPrayer.html>प्रात:कालीन वन्दना</a></li>
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>

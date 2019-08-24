@@ -243,6 +243,7 @@ for bcFile in sorted(os.listdir('./main')):
                 fData=fData.replace('\n', '<br><br>\n')
                 fData=re.sub(r'\(\(.*?\)\)', lambda m: m.group().replace("<br><br>", "<br>"), fData, flags=re.DOTALL)
                 fData=re.sub(r'<table.*?table>', lambda m: m.group().replace("<br>", ""), fData, flags=re.DOTALL)
+                fData=re.sub(r'<span.*?span>', lambda m: m.group().replace("<br><br>", "<br>"), fData, flags=re.DOTALL)
                 fData=re.sub(r'प्रतिशंका [-–—]', '<b></font><font color=darkgreen>उत्तर –</font></b>', fData)
                 fData=re.sub(r'शंका [-–—]', '<b><font color=red>शंका –', fData); 
                 fData=re.sub(r'प्रश्न [-–—]', '<b><font color=red>प्रश्न –', fData); 
