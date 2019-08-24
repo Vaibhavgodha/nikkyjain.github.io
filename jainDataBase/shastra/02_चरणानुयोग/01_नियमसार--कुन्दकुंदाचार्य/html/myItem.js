@@ -123,6 +123,7 @@ $( document ).ready(function() {
        $optgrp.append("<option value='101.html'><b>101</b></option>");
        $optgrp.append("<option value='102.html'><b>102</b></option>");
        $optgrp.append("<option value='103.html'><b>103</b></option>");
+       $optgrp.append("<option value='104.html'><b>104</b></option>");
     mySel.append($optgrp);
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);

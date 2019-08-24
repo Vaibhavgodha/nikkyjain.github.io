@@ -66,4 +66,13 @@ cp $dbDir/../js/*.js $outDir/../js/.
 cp $dbDir/../css/*.css $outDir/../css/.
 # Copy Youtube
 mkdir -p $outDir/youtube
+mkdir -p $outDir/youtube-animation
 cp $dbDir/youtube/* $outDir/youtube/.
+cp $dbDir/youtube-animation/* $outDir/youtube-animation/.
+# Remove Stories
+\rm -rf $outDir/teeka/07_Notes/02_Stories
+\rm -rf $outDir/teeka/07_Notes/03_*
+\rm -rf $outDir/gatha/07_Notes/02_Stories
+\rm -rf $outDir/gatha/07_Notes/03_*
+\rm -rf $outDir/shastra/07_Notes/02_Stories
+\rm -rf $outDir/shastra/07_Notes/03_*
