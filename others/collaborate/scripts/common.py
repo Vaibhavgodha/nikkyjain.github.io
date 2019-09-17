@@ -15,7 +15,7 @@ def createBhajan (html, relPath, createSearch,dbDir):
     if(createSearch==""):
         html.write("""  <div data-history=false data-role=popup id=popupBhajan data-theme=none>
     <div data-role=collapsibleset data-theme=b data-content-theme=a data-collapsed-icon=arrow-r data-expanded-icon=arrow-d style='margin:0; width:250px;'>\n""")
-    for category in sorted(glob.glob(dbDir+"/jainDataBase/bhajans/*/")):
+    for category in sorted(glob.glob(dbDir+"/others/collaborate/bhajans/*/")):
         myCategory=os.path.basename(os.path.dirname(category))
         myCategory=myCategory.replace('-', ' ')
         myCategory=re.sub(r'.*_', '', myCategory)
@@ -130,29 +130,29 @@ def createMiscList (html, myRelPath, dbDir):
           <h2>Youtube -- Animations</h2>
           <ul data-role=listview>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Neminath.html>भगवान नमिनाथ</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Baahubali.html>भगवान बाहुबली</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Baahubali.html>भगवान बाहुबली</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Sukumal.html>सुकुमाल मुनि</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Kundkund.html>कुन्दकुन्द आचार्य</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Rakshabandhan.html>रक्षाबंधन की कथा</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Samavsaran.html>समवसरण</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/ChaarGati.html>चार-गति</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/ShrutPanchami.html>श्रुत-पंचमी</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/AkshayTritiya.html>अक्षय-तृतीया</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Uddayan.html>उद्दायन राजा</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/ShrenikFrog.html>राजा श्रेणिक और मेंढक</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/AnjanChor.html>अंजन-चोर की कथा</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/FiveSins.html>पांच-पाप</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/JeevDayaa.html>जीव-दया</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/GarbhaKalyaanak.html>गर्भ-कल्याणक</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/JanmKalyaanak.html>जन्म-कल्याणक</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/TapKalyaanak.html>तप-कल्याणक</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Namokaar.html>णमोकार-मंत्र</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Kulaachaar.html>कुलाचार</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Sthaavar.html>स्थावर-जीव</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Teerthankar.html>तीर्थंकर</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/JeevAjeev.html>जीव-अजीव</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/ChaturvidhSangh.html>चतुर्विध-संघ</a></li>
-	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/MorningPrayer.html>प्रात:कालीन वन्दना</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/ChaarGati.html>चार-गति</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/ShrutPanchami.html>श्रुत-पंचमी</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/AkshayTritiya.html>अक्षय-तृतीया</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Uddayan.html>उद्दायन राजा</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/ShrenikFrog.html>राजा श्रेणिक और मेंढक</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/AnjanChor.html>अंजन-चोर की कथा</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/FiveSins.html>पांच-पाप</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/JeevDayaa.html>जीव-दया</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/GarbhaKalyaanak.html>गर्भ-कल्याणक</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/JanmKalyaanak.html>जन्म-कल्याणक</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/TapKalyaanak.html>तप-कल्याणक</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Namokaar.html>णमोकार-मंत्र</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Kulaachaar.html>कुलाचार</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Sthaavar.html>स्थावर-जीव</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/Teerthankar.html>तीर्थंकर</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/JeevAjeev.html>जीव-अजीव</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/ChaturvidhSangh.html>चतुर्विध-संघ</a></li>
+	          <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/youtube-animation/MorningPrayer.html>प्रात:कालीन वन्दना</a></li>
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>
@@ -208,13 +208,42 @@ def createMiscList (html, myRelPath, dbDir):
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>
+          <h2>PDF शास्त्र</h2>
+          <ul data-role=listview>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/GomatsarJeevkand_InChartsTables.pdf>गोम्मटसार-जीवकांड</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/Tatvarthsutra_in_Charts_&_Table.pdf>तत्त्वार्थसूत्र-चार्ट</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/RamSinghMuni-PahudDoha.pdf>पाहुड-दोहा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/Nagsen-TatvanuShasan.pdf>तत्त्वानुशासन</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/AmrutChandraAacharya--LaghuTattvaSfot.pdf>लघुतत्त्व-स्फोट</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/AmrutChandraAacharya-ParamAadhyatmTarngini-Subhchandraacharya.pdf>परम-अध्यात्म-तरंगिनी</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/ShubChandrAacharya--Gyaanarnav.pdf>ज्ञानार्णव</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/ShivaAcharya--BhagwatiAaradhana--PtSadasukhDasJi.pdf>भगवती-आराधना</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/समयसार.pdf>समयसार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/योगसार--Gatha.pdf>योगसार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/प्रवचनसार.pdf>प्रवचनसार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/पन्चास्तिकाय.pdf>पन्चास्तिकाय</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/द्रव्यसंग्रह.pdf>द्रव्यसंग्रह</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/दर्शनसार--Gatha.pdf>दर्शनसार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/तत्त्वार्थसूत्र.pdf>तत्त्वार्थसूत्र</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/आलापपद्धति--Gatha.pdf>आलापपद्धति</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/इष्टोपदेश--Gatha.pdf>इष्टोपदेश</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/परमात्मप्रकाश--Gatha.pdf>परमात्मप्रकाश</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/पुरुषार्थसिद्ध्युपाय--Gatha.pdf>पुरुषार्थसिद्ध्युपाय</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/बारसणुपेक्_खा--Gatha.pdf>बारसणुपेक्_खा</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/रत्नकरण्ड-श्रावकाचार.pdf>रत्नकरण्ड-श्रावकाचार</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/श्रीअष्टपाहुड.pdf>श्रीअष्टपाहुड</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/समाधितन्त्र--Gatha.pdf>समाधितन्त्र</a></li>
+            <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/स्वरूप-संबोधन--Gatha.pdf>स्वरूप-संबोधन</a></li>
+          </ul>
+        </div>
+        <div data-role=collapsible data-inset=false data-theme=a>
           <h2>Jain Comics</h2>
           <ul data-role=listview>\n""")
     # Jain Comics
     for myPdfPath in sorted(glob.glob(dbDir+"/jainDataBase/jainComics/*.pdf")):
         myPdfFile=os.path.basename(myPdfPath)
         myPdfName=myPdfFile.replace('.pdf', '')
-        html.write("<li data-theme=b><a data-rel=dialog data-ajax=false href="+myRelPath+"jainDataBase/jainComics/"+myPdfFile+">"+myPdfName+"</a></li>\n")
+        html.write("            <li data-theme=b><a data-rel=dialog data-ajax=false href="+myRelPath+"jainDataBase/jainComics/"+myPdfFile+">"+myPdfName+"</a></li>\n")
     html.write("""
           </ul>
         </div>
@@ -225,24 +254,24 @@ def createMiscList (html, myRelPath, dbDir):
     for myPdfPath in sorted(glob.glob(dbDir+"/jainDataBase/genBooks/*.html")):
         myPdfFile=os.path.basename(myPdfPath)
         myPdfName=myPdfFile.replace('.html', '')
-        html.write("<li data-theme=b><a data-rel=dialog data-ajax=false href="+myRelPath+"jainDataBase/genBooks/"+myPdfFile+">"+myPdfFile+"</a></li>\n")
-    for myPdfPath in sorted(glob.glob(dbDir+"/jainDataBase/genBooks/*.pdf")):
-        myPdfFile=os.path.basename(myPdfPath)
-        myPdfName=myPdfFile.replace('.pdf', '')
-        html.write("<li data-theme=b><a data-rel=dialog data-ajax=false href="+myRelPath+"jainDataBase/genBooks/"+myPdfFile+">"+myPdfName+"</a></li>\n")
+        html.write("            <li data-theme=b><a data-rel=dialog data-ajax=false href="+myRelPath+"jainDataBase/genBooks/"+myPdfFile+">"+myPdfFile+"</a></li>\n")
+#    for myPdfPath in sorted(glob.glob(dbDir+"/jainDataBase/genBooks/*.pdf")):
+#        myPdfFile=os.path.basename(myPdfPath)
+#        myPdfName=myPdfFile.replace('.pdf', '')
+#        html.write("<li data-theme=b><a data-rel=dialog data-ajax=false href="+myRelPath+"jainDataBase/genBooks/"+myPdfFile+">"+myPdfName+"</a></li>\n")
+#    html.write("""
+#          </ul>
+#        </div>
+#        <div data-role=collapsible data-inset=false data-theme=a>
+#          <h2>Print Granth With Teeka</h2>
+#          <ul data-role=listview>\n""")
+#    for myPdfPath in sorted(glob.glob(dbDir+"/jainDataBase/genBooksWithTeeka/*.pdf")):
+#        myPdfFile=os.path.basename(myPdfPath)
+#        myPdfName=myPdfFile.replace('.pdf', '')
+#        html.write("<li data-theme=b><a data-rel=dialog data-ajax=false href="+myRelPath+"jainDataBase/genBooksWithTeeka/"+myPdfFile+">"+myPdfName+"</a></li>\n")
+    html.write("""          </ul>
+        </div>""")
     html.write("""
-          </ul>
-        </div>
-        <div data-role=collapsible data-inset=false data-theme=a>
-          <h2>Print Granth With Teeka</h2>
-          <ul data-role=listview>\n""")
-    for myPdfPath in sorted(glob.glob(dbDir+"/jainDataBase/genBooksWithTeeka/*.pdf")):
-        myPdfFile=os.path.basename(myPdfPath)
-        myPdfName=myPdfFile.replace('.pdf', '')
-        html.write("<li data-theme=b><a data-rel=dialog data-ajax=false href="+myRelPath+"jainDataBase/genBooksWithTeeka/"+myPdfFile+">"+myPdfName+"</a></li>\n")
-    html.write("""
-          </ul>
-        </div>
     </div>
   </div>
 

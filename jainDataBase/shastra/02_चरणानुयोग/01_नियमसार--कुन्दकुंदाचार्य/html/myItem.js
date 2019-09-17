@@ -124,6 +124,32 @@ $( document ).ready(function() {
        $optgrp.append("<option value='102.html'><b>102</b></option>");
        $optgrp.append("<option value='103.html'><b>103</b></option>");
        $optgrp.append("<option value='104.html'><b>104</b></option>");
+       $optgrp.append("<option value='105.html'><b>105</b></option>");
+       $optgrp.append("<option value='106.html'><b>106</b></option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿परम आलोचना">')
+       $optgrp.append("<option value='107.html'><b>107</b></option>");
+       $optgrp.append("<option value='108.html'><b>108</b></option>");
+       $optgrp.append("<option value='109.html'><b>109</b></option>");
+       $optgrp.append("<option value='110.html'><b>110</b></option>");
+       $optgrp.append("<option value='111.html'><b>111</b></option>");
+       $optgrp.append("<option value='112.html'><b>112</b></option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿शुद्धनिश्चय-प्रायश्चित्त">')
+       $optgrp.append("<option value='113.html'><b>113</b></option>");
+       $optgrp.append("<option value='114.html'><b>114</b></option>");
+       $optgrp.append("<option value='115.html'><b>115</b></option>");
+       $optgrp.append("<option value='116.html'><b>116</b></option>");
+       $optgrp.append("<option value='117.html'><b>117</b></option>");
+       $optgrp.append("<option value='118.html'><b>118</b></option>");
+       $optgrp.append("<option value='119.html'><b>119</b></option>");
+       $optgrp.append("<option value='120.html'><b>120</b></option>");
+       $optgrp.append("<option value='121.html'><b>121</b></option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿परम-समाधि">')
+       $optgrp.append("<option value='122.html'><b>122</b></option>");
+       $optgrp.append("<option value='123.html'><b>123</b></option>");
+       $optgrp.append("<option value='124.html'><b>124</b></option>");
     mySel.append($optgrp);
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);

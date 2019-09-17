@@ -54,11 +54,6 @@ echo "Copy Done - gatha"
 cp -r $dbDir/genBooks $outDir/genBooks
 echo "Copy Done - genBooks"
 
-# Copy genBooks
-/bin/rm -rf $outDir/genBooksWithTeeka
-cp -r $dbDir/genBooksWithTeeka $outDir/genBooksWithTeeka
-echo "Copy Done - genBooksWithTeeka"
-
 # Copy Index
 cp $dbDir/../index.html $outDir/../.
 # Copy JS
@@ -76,3 +71,23 @@ cp $dbDir/youtube-animation/* $outDir/youtube-animation/.
 \rm -rf $outDir/gatha/07_Notes/03_*
 \rm -rf $outDir/shastra/07_Notes/02_Stories
 \rm -rf $outDir/shastra/07_Notes/03_*
+
+## Update jaindb-web
+export jaindb=$(cd ../../../../jaindb && echo $PWD)
+export dbWeb=$(cd ../../../../jaindb-dev && echo $PWD)
+\rm -rf $dbWeb/jainDataBase
+\rm -rf $dbWeb/js
+\rm -rf $dbWeb/css
+\rm -rf $dbWeb/images
+\rm -rf $dbWeb/jainDataBase
+cp -r $jaindb/index.html $dbWeb/.
+cp -r $jaindb/jainDataBase $dbWeb/.
+cp -r $jaindb/js $dbWeb/.
+cp -r $jaindb/css $dbWeb/.
+cp -r $jaindb/images $dbWeb/.
+\rm -rf $dbWeb/jainDataBase/teeka/07_Notes/02_Stories
+\rm -rf $dbWeb/jainDataBase/teeka/07_Notes/03_*
+\rm -rf $dbWeb/jainDataBase/gatha/07_Notes/02_Stories
+\rm -rf $dbWeb/jainDataBase/gatha/07_Notes/03_*
+\rm -rf $dbWeb/jainDataBase/shastra/07_Notes/02_Stories
+\rm -rf $dbWeb/jainDataBase/shastra/07_Notes/03_*

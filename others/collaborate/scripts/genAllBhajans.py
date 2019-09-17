@@ -82,7 +82,7 @@ html.write("""
 
 # Create Anchors
 myGrCntr=1
-for group in sorted(glob.glob(dbDir+"/jainDataBase/bhajans/*/")):
+for group in sorted(glob.glob(dbDir+"/others/collaborate/bhajans/*/")):
     myGroup=os.path.basename(os.path.dirname(group)).replace('-', ' ')
     myGroup=re.sub('.*_', '', myGroup)
     html.write("  <div class=main>"+myGroup+" भजन</div><br>\n")
@@ -103,7 +103,7 @@ for group in sorted(glob.glob(dbDir+"/jainDataBase/bhajans/*/")):
 
 html.write("<br><br><br><br><br>\n")
 myGrCntr=1
-for group in sorted(glob.glob(dbDir+"/jainDataBase/bhajans/*/")):
+for group in sorted(glob.glob(dbDir+"/others/collaborate/bhajans/*/")):
     myGroup=os.path.basename(os.path.dirname(group)).replace('-', ' ')
     myGroup=re.sub('.*_', '', myGroup)
     html.write("<br><br><div class=adhikaar><h1>"+myGroup+" भजन</h1></div><br>\n")
