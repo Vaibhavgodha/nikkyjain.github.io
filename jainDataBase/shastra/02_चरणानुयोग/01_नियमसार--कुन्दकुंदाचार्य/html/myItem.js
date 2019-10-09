@@ -150,6 +150,19 @@ $( document ).ready(function() {
        $optgrp.append("<option value='122.html'><b>122</b></option>");
        $optgrp.append("<option value='123.html'><b>123</b></option>");
        $optgrp.append("<option value='124.html'><b>124</b></option>");
+       $optgrp.append("<option value='125.html'><b>125</b></option>");
+       $optgrp.append("<option value='126.html'><b>126</b></option>");
+       $optgrp.append("<option value='127.html'><b>127</b></option>");
+       $optgrp.append("<option value='128.html'><b>128</b></option>");
+       $optgrp.append("<option value='129.html'><b>129</b></option>");
+       $optgrp.append("<option value='130.html'><b>130</b></option>");
+       $optgrp.append("<option value='131-132.html'><b>131-132</b></option>");
+       $optgrp.append("<option value='133.html'><b>133</b></option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿परम-भक्ति">')
+       $optgrp.append("<option value='134.html'><b>134</b></option>");
+       $optgrp.append("<option value='135.html'><b>135</b></option>");
+       $optgrp.append("<option value='136.html'><b>136</b></option>");
     mySel.append($optgrp);
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);

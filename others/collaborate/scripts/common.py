@@ -218,6 +218,8 @@ def createMiscList (html, myRelPath, dbDir):
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/AmrutChandraAacharya-ParamAadhyatmTarngini-Subhchandraacharya.pdf>परम-अध्यात्म-तरंगिनी</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/ShubChandrAacharya--Gyaanarnav.pdf>ज्ञानार्णव</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/ShivaAcharya--BhagwatiAaradhana--PtSadasukhDasJi.pdf>भगवती-आराधना</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/आराधनासार--Gatha.pdf>आराधानासार</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/Jain_Siddhant_Praveshika.pdf>जैन-सिद्धांत-प्रवेशिका</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/समयसार.pdf>समयसार</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/योगसार--Gatha.pdf>योगसार</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/प्रवचनसार.pdf>प्रवचनसार</a></li>
@@ -234,6 +236,9 @@ def createMiscList (html, myRelPath, dbDir):
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/श्रीअष्टपाहुड.pdf>श्रीअष्टपाहुड</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/समाधितन्त्र--Gatha.pdf>समाधितन्त्र</a></li>
             <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/स्वरूप-संबोधन--Gatha.pdf>स्वरूप-संबोधन</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/उत्तरपुराण.pdf>उत्तर-पुराण</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/आदिपुराण.pdf>आदि-पुराण</a></li>
+	    <li data-theme=b><a data-rel=dialog data-ajax=false href="""+myRelPath+"""jainDataBase/downloads/आराधना-कथा-कोश--Gatha.pdf>आराधना-कथा-कोश</a></li>
           </ul>
         </div>
         <div data-role=collapsible data-inset=false data-theme=a>
