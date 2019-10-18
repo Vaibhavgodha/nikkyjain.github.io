@@ -57,6 +57,7 @@ $( document ).ready(function() {
   mySel.append("<option value='036.html'><b>036</b> - ﻿क्षेत्रानुगम</option>");
   mySel.append("<option value='038.html'><b>038</b> - ﻿अल्प-बहुत्व</option>");
   mySel.append("<option value='041.html'><b>041</b> - ﻿गुणस्थानों में बंध प्रत्यय</option>");
+  mySel.append("<option value='042.html'><b>042</b> - ﻿कर्म की १४८ प्रकृतियाँ</option>");
   mySel.append("<option value='050.html'><b>050</b> - ﻿न्याय-वाक्य</option>");
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);
