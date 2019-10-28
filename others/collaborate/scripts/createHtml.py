@@ -125,7 +125,7 @@ for gatha in myMainFIles:
         $('select option:odd').css({'color': 'blue'})
       </style>
     </head>
-    <body>
+    <body oncopy="return false" onpaste="return false" oncut="return false">
     <div align=center><a href='"""+myRelPath+"index.html' rel=external><img src='"+myRelPath+"""images/jain-saint.jpg' width=8%></img></a></div><br>
     """)
     if(myPrevGatha!=""):

@@ -170,6 +170,15 @@ $( document ).ready(function() {
        $optgrp.append("<option value='142.html'><b>142</b></option>");
        $optgrp.append("<option value='143.html'><b>143</b></option>");
        $optgrp.append("<option value='144.html'><b>144</b></option>");
+       $optgrp.append("<option value='145.html'><b>145</b></option>");
+       $optgrp.append("<option value='146.html'><b>146</b></option>");
+       $optgrp.append("<option value='147.html'><b>147</b></option>");
+       $optgrp.append("<option value='148.html'><b>148</b></option>");
+       $optgrp.append("<option value='149.html'><b>149</b></option>");
+       $optgrp.append("<option value='150.html'><b>150</b></option>");
+       $optgrp.append("<option value='151.html'><b>151</b></option>");
+       $optgrp.append("<option value='152.html'><b>152</b></option>");
+       $optgrp.append("<option value='153.html'><b>153</b></option>");
     mySel.append($optgrp);
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);
