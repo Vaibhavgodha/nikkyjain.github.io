@@ -59,8 +59,15 @@ $( document ).ready(function() {
   mySel.append("<option value='041.html'><b>041</b> - ﻿क्षेत्रानुगम</option>");
   mySel.append("<option value='042.html'><b>042</b> - ﻿अल्प-बहुत्व</option>");
   mySel.append("<option value='043.html'><b>043</b> - ﻿गुणस्थानों में बंध प्रत्यय</option>");
-  mySel.append("<option value='048.html'><b>048</b> - ﻿एक जीव की अपेक्षा प्रकृतिबंध अंतरानुगम</option>");
-  mySel.append("<option value='050.html'><b>050</b> - ﻿न्याय-वाक्य</option>");
+  mySel.append("<option value='044.html'><b>044</b> - ﻿नरक में प्रकृति बंध</option>");
+  mySel.append("<option value='045.html'><b>045</b> - ﻿तिर्यञ्च-गति में प्रकृति बंध</option>");
+  mySel.append("<option value='046.html'><b>046</b> - ﻿मनुष्य-गति में प्रकृति बंध</option>");
+  mySel.append("<option value='047.html'><b>047</b> - ﻿देवगति में प्रकृति बंध</option>");
+  mySel.append("<option value='048.html'><b>048</b> - ﻿जाति-मार्गणा में प्रकृति बंध</option>");
+  mySel.append("<option value='049.html'><b>049</b> - ﻿काय-मार्गणा में प्रकृति बंध</option>");
+  mySel.append("<option value='050.html'><b>050</b> - ﻿योग-मार्गणा में प्रकृति बंध</option>");
+  mySel.append("<option value='058.html'><b>058</b> - ﻿एक जीव की अपेक्षा प्रकृतिबंध अंतरानुगम</option>");
+  mySel.append("<option value='060.html'><b>060</b> - ﻿न्याय-वाक्य</option>");
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);
 })

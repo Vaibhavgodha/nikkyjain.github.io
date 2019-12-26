@@ -85,7 +85,9 @@ html.write("""<!DOCTYPE html>
     }
   </style>
 </head>
-<body oncopy="return false" onpaste="return false" oncut="return false">""")
+<!-body oncopy="return false" onpaste="return false" oncut="return false"->
+<body>
+""")
 if not os.path.isfile('./config/NoJainSaint.txt'):
   html.write("<div align=center><a href='"+myRelPath+"index.html'><img src='"+myRelPath+"images/jain-saint.jpg' height=270 width=300></img></a></div>")
 else:
