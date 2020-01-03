@@ -84,12 +84,27 @@ html.write("""
 <div align=right>Date : """+datetime.now().strftime('%d')+"-"+datetime.now().strftime('%h')+"-"+datetime.now().strftime('%Y')+"""</font></div>
    <div class=adhikaar id=home><h1>Index</h1></div><br>\n""")
 
-# Create Anchors
+html.write("  <div class=main>अधिकार</div><br>\n")
+html.write("    <table align=center width=90%>\n")
+# Create Title Group Anchors
+myGrCntr=1
+myCntr=1
+for group in sorted(glob.glob(myInDir+"/*/")):
+    myGroup=os.path.basename(os.path.dirname(group))
+    myGroup=re.sub('.*_', '', myGroup)
+    html.write("      <td><a href='#ad"+str(myCntr)+"'>"+myGroup+"</a>\n")
+    if myCntr%4==0:
+        html.write("      <tr>\n")
+    myCntr+=1
+html.write("    </table>\n")
+html.write("<br><br><br><br><br>\n")
+
+# Create Individual Title Anchors
 myGrCntr=1
 for group in sorted(glob.glob(myInDir+"/*/")):
     myGroup=os.path.basename(os.path.dirname(group))
     myGroup=re.sub('.*_', '', myGroup)
-    html.write("  <div class=main>"+myGroup+"</div><br>\n")
+    html.write("  <div class=main id='ad"+str(myGrCntr)+"'>"+myGroup+"</div><br>\n")
     html.write("  <div align=center><img src='"+myRelPath+"images/brownOm.png' width='5%'></img></div>\n");
     html.write("    <table align=center width=90%>\n")
     myCntr=1

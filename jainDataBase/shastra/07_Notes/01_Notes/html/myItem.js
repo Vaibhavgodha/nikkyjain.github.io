@@ -22,52 +22,96 @@ function toggleSTeeka(teeka) {
 }
 $( document ).ready(function() {
   mySel=$('select#select-native-0')
-  mySel.append("<option value='001.html'><b>001</b> - ﻿कर्म की १४८ प्रकृतियाँ</option>");
-  mySel.append("<option value='002.html'><b>002</b> - ﻿कर्म प्रकृतियों में समूह-वाचक शब्द</option>");
-  mySel.append("<option value='003.html'><b>003</b> - ﻿गुणस्थानों में विभाजन</option>");
-  mySel.append("<option value='004.html'><b>004</b> - ﻿गुणस्थानों में गमनागमन</option>");
-  mySel.append("<option value='005.html'><b>005</b> - ﻿गुणस्थानों में कर्म के उदय</option>");
-  mySel.append("<option value='006.html'><b>006</b> - ﻿गुणस्थानों में कर्म के बन्ध</option>");
-  mySel.append("<option value='007.html'><b>007</b> - ﻿गुणस्थानों में कर्म की सत्ता</option>");
-  mySel.append("<option value='008.html'><b>008</b> - ﻿प्रकृति-बन्ध प्ररूपणा</option>");
-  mySel.append("<option value='009.html'><b>009</b> - ﻿स्तिथि सारिणी</option>");
-  mySel.append("<option value='010.html'><b>010</b> - ﻿गुणस्थानों का काल और उनमें जीवों की संख्या</option>");
-  mySel.append("<option value='011.html'><b>011</b> - ﻿प्रकृति-बन्ध प्ररूपणा</option>");
-  mySel.append("<option value='012.html'><b>012</b> - ﻿संहनन की अपेक्षा गति प्राप्ति</option>");
-  mySel.append("<option value='013.html'><b>013</b> - ﻿अनुभाग बन्ध के स्वामी</option>");
-  mySel.append("<option value='014.html'><b>014</b> - ﻿गति-आगति</option>");
-  mySel.append("<option value='015.html'><b>015</b> - ﻿जीव कहाँ तक जा सकता है</option>");
-  mySel.append("<option value='016.html'><b>016</b> - ﻿जीव नियमत: कहाँ जाते हैं</option>");
-  mySel.append("<option value='017.html'><b>017</b> - ﻿आयु</option>");
-  mySel.append("<option value='018.html'><b>018</b> - ﻿गुणस्थानों में आलाप</option>");
-  mySel.append("<option value='019.html'><b>019</b> - ﻿नरक में गुणस्थानों में आलाप</option>");
-  mySel.append("<option value='021.html'><b>021</b> - ﻿तिर्यन्चों में गुणस्थानों में आलाप</option>");
-  mySel.append("<option value='022.html'><b>022</b> - ﻿मनुष्यों में गुणस्थानों में आलाप</option>");
-  mySel.append("<option value='023.html'><b>023</b> - ﻿गुणस्थानों में समुद्घात</option>");
-  mySel.append("<option value='024.html'><b>024</b> - ﻿गुणस्थानों में स्पर्श</option>");
-  mySel.append("<option value='025.html'><b>025</b> - ﻿गुणस्थानों में अंतर</option>");
-  mySel.append("<option value='026.html'><b>026</b> - ﻿गुणस्थानों में काल</option>");
-  mySel.append("<option value='027.html'><b>027</b> - ﻿स्पर्शानुगम</option>");
-  mySel.append("<option value='029.html'><b>029</b></option>");
-  mySel.append("<option value='031.html'><b>031</b> - ﻿कालानुगम</option>");
-  mySel.append("<option value='032.html'><b>032</b> - ﻿भावानुगम</option>");
-  mySel.append("<option value='033.html'><b>033</b> - ﻿स्वामित्व</option>");
-  mySel.append("<option value='034.html'><b>034</b> - ﻿कालानुगम</option>");
-  mySel.append("<option value='035.html'><b>035</b> - ﻿अन्तरानुगम</option>");
-  mySel.append("<option value='036.html'><b>036</b> - ﻿भंग-विचय</option>");
-  mySel.append("<option value='038.html'><b>038</b> - ﻿द्रव्य-प्रमाणानुगम</option>");
-  mySel.append("<option value='041.html'><b>041</b> - ﻿क्षेत्रानुगम</option>");
-  mySel.append("<option value='042.html'><b>042</b> - ﻿अल्प-बहुत्व</option>");
-  mySel.append("<option value='043.html'><b>043</b> - ﻿गुणस्थानों में बंध प्रत्यय</option>");
-  mySel.append("<option value='044.html'><b>044</b> - ﻿नरक में प्रकृति बंध</option>");
-  mySel.append("<option value='045.html'><b>045</b> - ﻿तिर्यञ्च-गति में प्रकृति बंध</option>");
-  mySel.append("<option value='046.html'><b>046</b> - ﻿मनुष्य-गति में प्रकृति बंध</option>");
-  mySel.append("<option value='047.html'><b>047</b> - ﻿देवगति में प्रकृति बंध</option>");
-  mySel.append("<option value='048.html'><b>048</b> - ﻿जाति-मार्गणा में प्रकृति बंध</option>");
-  mySel.append("<option value='049.html'><b>049</b> - ﻿काय-मार्गणा में प्रकृति बंध</option>");
-  mySel.append("<option value='050.html'><b>050</b> - ﻿योग-मार्गणा में प्रकृति बंध</option>");
-  mySel.append("<option value='058.html'><b>058</b> - ﻿एक जीव की अपेक्षा प्रकृतिबंध अंतरानुगम</option>");
-  mySel.append("<option value='060.html'><b>060</b> - ﻿न्याय-वाक्य</option>");
+    $optgrp=$('<optgroup label="﻿कर्म">')
+       $optgrp.append("<option value='01-01.html'><b>01-01</b> - ﻿कर्म की १४८ प्रकृतियाँ</option>");
+       $optgrp.append("<option value='01-02.html'><b>01-02</b> - ﻿कर्म प्रकृतियों में समूह-वाचक शब्द</option>");
+       $optgrp.append("<option value='01-03.html'><b>01-03</b> - ﻿कर्मों में विभाजन</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿गुणस्थान">')
+       $optgrp.append("<option value='02-01.html'><b>02-01</b> - ﻿गुणस्थानों में विभाजन</option>");
+       $optgrp.append("<option value='02-02.html'><b>02-02</b> - ﻿गुणस्थानों में गमनागमन</option>");
+       $optgrp.append("<option value='02-03.html'><b>02-03</b> - ﻿गुणस्थानों में समुद्घात</option>");
+       $optgrp.append("<option value='02-04.html'><b>02-04</b> - ﻿गुणस्थानों में कर्म के उदय</option>");
+       $optgrp.append("<option value='02-05.html'><b>02-05</b> - ﻿गुणस्थानों में कर्म के बन्ध</option>");
+       $optgrp.append("<option value='02-06.html'><b>02-06</b> - ﻿गुणस्थानों में कर्म की सत्ता</option>");
+       $optgrp.append("<option value='02-07.html'><b>02-07</b> - ﻿गुणस्थानों का काल और उनमें जीवों की संख्या</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿गति-आगति नियम">')
+       $optgrp.append("<option value='03-01.html'><b>03-01</b> - ﻿गति-आगति</option>");
+       $optgrp.append("<option value='03-02.html'><b>03-02</b> - ﻿जीव कहाँ तक जा सकता है</option>");
+       $optgrp.append("<option value='03-03.html'><b>03-03</b> - ﻿जीव नियमत: कहाँ जाते हैं</option>");
+       $optgrp.append("<option value='03-04.html'><b>03-04</b> - ﻿आयु</option>");
+       $optgrp.append("<option value='03-05.html'><b>03-05</b> - ﻿संहनन की अपेक्षा गति प्राप्ति</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿बंध प्रत्यय">')
+       $optgrp.append("<option value='04-01.html'><b>04-01</b> - ﻿गुणस्थानों में बंध प्रत्यय</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿प्रकृति बंध ">')
+       $optgrp.append("<option value='05-01.html'><b>05-01</b> - ﻿प्रकृति-बन्ध प्ररूपणा</option>");
+       $optgrp.append("<option value='05-02.html'><b>05-02</b> - ﻿नरक में प्रकृति बंध</option>");
+       $optgrp.append("<option value='05-03.html'><b>05-03</b> - ﻿तिर्यञ्च-गति में प्रकृति बंध</option>");
+       $optgrp.append("<option value='05-04.html'><b>05-04</b> - ﻿मनुष्य-गति में प्रकृति बंध</option>");
+       $optgrp.append("<option value='05-05.html'><b>05-05</b> - ﻿देवगति में प्रकृति बंध</option>");
+       $optgrp.append("<option value='05-06.html'><b>05-06</b> - ﻿जाति-मार्गणा में प्रकृति बंध</option>");
+       $optgrp.append("<option value='05-07.html'><b>05-07</b> - ﻿काय-मार्गणा में प्रकृति बंध</option>");
+       $optgrp.append("<option value='05-08.html'><b>05-08</b> - ﻿योग-मार्गणा में प्रकृति बंध</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿स्थिति बंध ">')
+       $optgrp.append("<option value='06-01.html'><b>06-01</b> - ﻿एकेन्द्रिय आदि में जघन्य और उत्कृष्ट स्तिथि-बंध</option>");
+       $optgrp.append("<option value='06-02.html'><b>06-02</b> - ﻿जघन्य-उत्कृष्ट स्थिति बंध का काल और स्वामी</option>");
+       $optgrp.append("<option value='06-03.html'><b>06-03</b> - ﻿कर्मों में जघन्य आदि स्थिति बंध के सादि-ध्रुव आदि प्रकार</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿अनुभाग बंध ">')
+       $optgrp.append("<option value='07-01.html'><b>07-01</b> - ﻿अनुभाग बन्ध के स्वामी</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿गुणस्थानों में आलाप">')
+       $optgrp.append("<option value='08-01.html'><b>08-01</b> - ﻿गुणस्थानों में आलाप</option>");
+       $optgrp.append("<option value='08-02.html'><b>08-02</b> - ﻿नरक में गुणस्थानों में आलाप</option>");
+       $optgrp.append("<option value='08-03.html'><b>08-03</b> - ﻿तिर्यन्चों में गुणस्थानों में आलाप</option>");
+       $optgrp.append("<option value='08-04.html'><b>08-04</b> - ﻿मनुष्यों में गुणस्थानों में आलाप</option>");
+       $optgrp.append("<option value='08-06.html'><b>08-06</b></option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿सत्-अनुगम">')
+       $optgrp.append("<option value='10-01.html'><b>10-01</b> - ﻿मार्गणा में भंग-विचय</option>");
+       $optgrp.append("<option value='10-02.html'><b>10-02</b> - ﻿मार्गणा का स्वामित्व</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿संख्यानुगम">')
+       $optgrp.append("<option value='11-01.html'><b>11-01</b> - ﻿मार्गणा में द्रव्य-प्रमाणानुगम</option>");
+       $optgrp.append("<option value='11-02.html'><b>11-02</b> - ﻿वैमानिक देवों की संख्या</option>");
+       $optgrp.append("<option value='11-03.html'><b>11-03</b> - ﻿नारकियों की संख्या</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿क्षेत्रानुगम">')
+       $optgrp.append("<option value='12-01.html'><b>12-01</b> - ﻿मार्गणा में क्षेत्रानुगम</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿स्पर्शानुगम">')
+       $optgrp.append("<option value='13-01.html'><b>13-01</b> - ﻿गुणस्थानों में स्पर्श</option>");
+       $optgrp.append("<option value='13-02.html'><b>13-02</b> - ﻿मार्गणा में स्पर्शानुगम</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿कालानुगम">')
+       $optgrp.append("<option value='14-01.html'><b>14-01</b> - ﻿गुणस्थानों में काल</option>");
+       $optgrp.append("<option value='14-02.html'><b>14-02</b> - ﻿मार्गणा में कालानुगम</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿भावानुगम">')
+       $optgrp.append("<option value='15-01.html'><b>15-01</b> - ﻿मार्गणा में भावानुगम</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿अन्तरानुगम">')
+       $optgrp.append("<option value='16-01.html'><b>16-01</b> - ﻿गुणस्थानों में अंतर</option>");
+       $optgrp.append("<option value='16-02.html'><b>16-02</b> - ﻿मार्गणा में अन्तरानुगम</option>");
+       $optgrp.append("<option value='16-03.html'><b>16-03</b> - ﻿एक जीव की अपेक्षा प्रकृतिबंध अंतरानुगम</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿अल्प-बहुत्व">')
+       $optgrp.append("<option value='17-01.html'><b>17-01</b> - ﻿जीवों में अल्प-बहुत्व</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿मूल संघ पट्टावली">')
+       $optgrp.append("<option value='28-01.html'><b>28-01</b> - ﻿मूल संघ पट्टावली</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿अलौकिक गणित">')
+       $optgrp.append("<option value='29-01.html'><b>29-01</b> - ﻿क्षेत्र प्रमाण</option>");
+       $optgrp.append("<option value='29-02.html'><b>29-02</b> - ﻿संख्या प्रमाण</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿न्याय-वाक्य">')
+       $optgrp.append("<option value='30-01.html'><b>30-01</b> - ﻿न्याय-वाक्य</option>");
+    mySel.append($optgrp);
   mySel.selectmenu();
   mySel.selectmenu('refresh', true);
 })
