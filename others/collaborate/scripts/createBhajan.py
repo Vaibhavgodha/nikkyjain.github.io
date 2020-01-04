@@ -14,7 +14,7 @@ dbDir=os.path.abspath('../../../../jaindb/')
 print("DB Dir ",dbDir)
 
 headerCreated=""
-for group in glob.glob(dbDir+"/jainDataBase/bhajans/*/"):
+for group in glob.glob(dbDir+"/others/collaborate/bhajans/*/"):
     myCntr=1
     myGroup=os.path.basename(os.path.dirname(group))
     if not os.path.isdir(group+'/main'):
