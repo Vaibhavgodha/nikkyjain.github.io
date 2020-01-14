@@ -55,6 +55,8 @@ $( document ).ready(function() {
        $optgrp.append("<option value='05-06.html'><b>05-06</b> - ﻿जाति-मार्गणा में प्रकृति बंध</option>");
        $optgrp.append("<option value='05-07.html'><b>05-07</b> - ﻿काय-मार्गणा में प्रकृति बंध</option>");
        $optgrp.append("<option value='05-08.html'><b>05-08</b> - ﻿योग-मार्गणा में प्रकृति बंध</option>");
+       $optgrp.append("<option value='05-09.html'><b>05-09</b> - ﻿वेद-मार्गणा में प्रकृति बंध</option>");
+       $optgrp.append("<option value='05-10.html'><b>05-10</b> - ﻿लेश्या-मार्गणा में प्रकृति बंध</option>");
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿स्थिति बंध ">')
        $optgrp.append("<option value='06-01.html'><b>06-01</b> - ﻿एकेन्द्रिय आदि में जघन्य और उत्कृष्ट स्तिथि-बंध</option>");
