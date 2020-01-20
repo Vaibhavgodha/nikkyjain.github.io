@@ -100,7 +100,7 @@ myGrCntr=1
 for group in sorted(glob.glob(dbDir+"/others/collaborate/bhajans/*/")):
     myGroup=os.path.basename(os.path.dirname(group)).replace('-', ' ')
     myGroup=re.sub('.*_', '', myGroup)
-    html.write("  <div class=main>"+myGroup+" भजन</div><br>\n")
+    html.write("  <div class=main id='ad"+str(myGrCntr)+"'>"+myGroup+" भजन</div><br>\n")
     html.write("  <div align=center><img src='"+myRelPath+"images/brownOm.png' width='5%'></img></div>\n");
     html.write("    <table align=center width=90%>\n")
     myCntr=1
