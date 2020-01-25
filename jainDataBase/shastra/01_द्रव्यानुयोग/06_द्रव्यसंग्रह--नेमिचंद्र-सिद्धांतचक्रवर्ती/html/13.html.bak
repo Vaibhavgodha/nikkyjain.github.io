@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>द्रव्यसंग्रह--नेमिचंद्र-सिद्धांतचक्रवर्ती</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='12.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='14.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>आर्यिका-ज्ञानमती</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-13><span class=incFontSz>+ </span><a href=#index>
+﻿उभयनय से संसारी जीव का स्वरूप</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿मग्गणगुणठाणेहय, चउदसिंहह-वंतितहअसुद्धणया<br>विण्णेया संसारी, सव्वे सुद्धा हु सुद्धणया ॥१३॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿अशुद्धनय की अपेक्षा चौदह मार्गणा, चौदह गुणस्थान और चौदह जीव समासों के द्वारा ये जीव संसारी हैं और शुद्धनय से सभी जीव शुद्ध ही हैं, ऐसा जानना चाहिए ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;ज्ञानमती</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>ज्ञानमती :</font></b> <br><br>﻿<b><font color=red>प्रश्न – किस नय की अपेक्षा से जीव चौदह प्रकार के होते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> व्यवहारनय की अपेक्षा से जीव चौदह मार्गणा, चौदह गुणस्थान वाले होने से चौदह प्रकार के होते हैं।<br><br>
+<b><font color=red>प्रश्न – किस नय की अपेक्षा से जीव शुद्ध माना जाता है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> शुद्ध निश्चयनय की दृष्टि से।<br><br>
+<b><font color=red>प्रश्न – मार्गणा के कितने भेद हैं? नाम बताइये।<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> मार्गणाएँ चौदह होती हैं-१. गति मार्गणा २. इंद्रिय मार्गणा ३. कायमार्गणा ४. योगमार्गणा ५. वेदमार्गणा ६. कषायमार्गणा ७. ज्ञानमार्गणा ८. संयममार्गणा ९. दर्शनमार्गणा १०. लेश्यामार्गणा ११. भव्यत्वमार्गणा १२. सम्यक्त्व मार्गणा १३. संज्ञित्व मार्गणा १४. आहार मार्गणा।<br><br>
+<b><font color=red>प्रश्न – मार्गणा किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जिन धर्मविशेषों के द्वारा जीवों का अन्वेषण किया जाए उन्हें मार्गणा कहते हैं।<br><br>
+<b><font color=red>प्रश्न – गुणस्थान किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> मोह और योग के निमित्त से होने वाले आत्मा के गुणों को गुणस्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – गुणस्थान कितने होते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> चौदह गुणस्थान होते हैं-१. मिथ्यात्व, २. सासादन, ३. मिश्र, ४. अविरत सम्यग्दृष्टि, ५. देशविरत, ६. प्रमत्तविरत, ७. अप्रमत्तविरत, ८. अपूर्वकरण, ९. अनिवृत्तिकरण, १०. सूक्ष्मसाम्पराय, ११. उपशान्तमोह, १२. क्षीणमोह, १३. सयोगकेवली, १४. अयोगकेवली।<br><br>
+<b><font color=red>प्रश्न – मिथ्यात्व गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> मिथ्यात्व कर्म के उदय से तत्त्वार्थ के विषय में जो अश्रद्धान उत्पन्न होता है अथवा विपरीत श्रद्धान होता है, उसको मिथ्यात्व गुणस्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – सासादन गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जो सम्यक्त्व की विराधना-आसादना सहित है, उसे सासादन कहते हैं, जो प्राणी सम्यक्त्वरूपी प्रासाद से गिरा हुआ है और जिसने मिथ्यात्व की भूमि का स्पर्श नहीं किया है, सम्यक्त्व एवं मिथ्यात्व इन दोनों के मध्य की जो अवस्था है, उसे सासादन गुणस्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – सम्यग्मिथ्यात्व गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> सम्यग्मिथ्यात्वप्रकृति के उदय से केवल सम्यक्त्वरूप या मिथ्यात्व रूप परिणाम न होकर मिश्ररूप परिणाम होते हैं। उसे सम्यग्मिथ्यात्व गुण स्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – अविरतसम्यक्त्व गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जो इन्द्रियों के विषय से तथा त्रस स्थावर जीवों की हिंसा से विरक्त नहीं है, किन्तु जिनेन्द्र द्वारा कथित प्रवचन का श्रद्धान करता है, अर्थात् सम्यक्त्व सहित और व्रत रहित परिणाम को अविरतसम्यक्त्व गुणस्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – देशविरत गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> सम्यक्त्व और देशचारित्र सहित परिणाम को देशविरत गुणस्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – प्रमत्तविरत गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> महाव्रतों सहित सम्पूर्ण मूलगुणों और शील के भेदों से युक्त होते हुए व्यक्त एवं अव्यक्त दोनों प्रकार के प्रमाद सहित परिणाम को प्रमत्तविरत गुणस्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – अप्रमत्तविरत गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> प्रमादरहित महाव्रतों के पालन सहित परिणाम को अप्रमत्तविरत गुणस्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – अपूर्वकरण गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> यहाँ करण का अभिप्राय अध्यवसाय, परिणाम या विचार है, अभूतपूर्व अध्यवसायों का उत्पन्न होना अपूर्वकरण गुणस्थान है।<br><br>
+<b><font color=red>प्रश्न – अनिवृत्तिकरण गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जहाँ एक समय में सदृशपरिणाम रहते हैं, उसे अनिवृत्तिकरण गुणस्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – सूक्ष्मसांपराय गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> समस्त कषायों को नष्ट कर केवल लोभ का अतिशय सूक्ष्म अंश जहाँ शेष रह जाता है, उसे सूक्ष्मसांपराय गुणस्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – उपशांतमोह गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> कषायों के पूर्ण उपशमसहित परिणामों को उपशांतमोह गुणस्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – क्षीणकषाय गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> कषायों के सर्वथा क्षय हो जाने को क्षीणकषाय गुणस्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – सयोगकेवली गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> योग की प्रवृत्ति सहित केवलज्ञानरूप परिणामों को सयोग केवली गुणस्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – अयोगकेवली गुणस्थान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> पूर्णत: योग की प्रवृत्ति रहित केवलज्ञान की अवस्था को अयोगकेवली गुणस्थान कहते हैं।<br><br>
+<b><font color=red>प्रश्न – शुद्धनय से संसारी जीव के कितने गुणस्थान और मार्गणा होती हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> शुद्ध निश्चयनय से संसारी जीव के गुणस्थान भी नहीं और मार्गणा भी नहीं होती हैं।<br><br>
+<b><font color=red>प्रश्न – क्या सिद्ध भगवान के गुणस्थान और मार्गणाएँ होती हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> सिद्ध भगवान गुणस्थान और मार्गणाओं से रहित गुणस्थानातीत व मार्गणातीत होते हैं।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

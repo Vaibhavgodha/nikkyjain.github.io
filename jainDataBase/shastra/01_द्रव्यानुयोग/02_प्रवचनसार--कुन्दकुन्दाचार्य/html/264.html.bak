@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>प्रवचनसार--कुन्दकुन्दाचार्य</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='263.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='265.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>अमृतचंद्राचार्य</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>जयसेनाचार्य</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-264><span class=incFontSz>+ </span><a href=#index>
+﻿अब, निश्चय व्यवहार नामक उत्सर्ग और अपवाद में कथंचित् परस्पर सापेक्षभाव को स्थापित करते हुये, चारित्र की रक्षा को दिखाते हैं - </a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿बालो वा वुड्‌ढो वा समभिहदो वा पुणो गिलाणो वा (२३०)<br>चरियं चरदु सजोग्गं मूलच्छेदो जधा ण हवदि ॥२६४॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[बाल: वा]</font></b> बाल, <b><font color=darkRed>[वृद्ध: वा]</font></b> वृद्ध <b><font color=darkRed>[श्रमाभिहत: वा]</font></b> श्रांत <b><font color=darkRed>[पुन: ग्लानः वा]</font></b> या ग्लान श्रमण <b><font color=darkRed>[मूलच्छेद:]</font></b> मूल का छेद <b><font color=darkRed>[यथा न भवति]</font></b> जैसा न हो उस प्रकार से <b><font color=darkRed>[स्वयोग्यां]</font></b> अपने योग्य <b><font color=darkRed>[चर्यां चरतु]</font></b> आचरण आचरो । </div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;अमृतचंद्राचार्य</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;जयसेनाचार्य</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>अमृतचंद्राचार्य :</font></b> <br><br>﻿बाल, वृद्ध श्रमित या ग्‍लान <font color=DarkSlateGray>(श्रमण)</font> को भी संयम का जो कि शुद्धात्मतत्त्व का साधन होने से मूलभूत है उसका—छेद जैसे न हो उस प्रकार, संयत ऐसे अपने योग्य अति कर्कश <font color=DarkSlateGray>(कठोर)</font> आचरण ही आचरना; इस प्रकार उत्सर्ग है ।<br><br>
+    बाल, वृद्ध, श्रमित या ग्‍लान <font color=DarkSlateGray>(श्रमण)</font> को भी शरीर का—जो कि शुद्धात्मतत्त्व के साधनभूत संयम का साधन होने से मूलभूत है उसका—छेद जैसे न हो उस प्रकार, बाल-वृद्ध-श्रांत-ग्लान को अपने योग्य मृदु आचरण ही आचरना; इस प्रकार अपवाद है ।<br><br>
+    बाल-वृद्ध-श्रांत-ग्लान के, संयम का—जो कि शुद्धात्मतत्त्व का साधन होने से मूलभूत है उसका—छेद जैसे न हो उस प्रकार का संयत ऐसा अपने योग्य अति कठोर आचरण आचरते हुए, <font color=DarkSlateGray>(उसके)</font> शरीर का—जो कि शुद्धात्मतत्त्व के साधनभूत संयम का साधन होने से मूलभूत है उसका <font color=DarkSlateGray>(भी)</font> छेद जैसे न हो उस प्रकार बाल-वृद्ध-श्रांत-ग्लान ऐसे अपने योग्य मृदु आचरण भी आचरना । इस प्रकार अपवादसापेक्ष उत्सर्ग है ।<br><br>
+    बाल-वृद्ध-श्रांत-ग्लान को शरीर का—जो कि शुद्धात्मतत्त्व के साधनभूत संयम का साधन होने से मूलभूत है उसका—छेद जैसे न हो उस प्रकार से बाल-वृद्ध-श्रांत-ग्लान ऐसे अपने योग्य मृदु आचरण आचरते हुए, <font color=DarkSlateGray>(उसके)</font> संयम का—जो कि शुद्धात्मतत्व का साधन होने से मूलभूत है उसका <font color=DarkSlateGray>(भी)</font>—छेद जैसे न हो उस प्रकार से संयत ऐसा अपने योग्य अतिकर्कश आचरण भी आचरना; इस प्रकार उत्सर्गसापेक्ष अपवाद है ।<br><br>
+    इससे <font color=DarkSlateGray>(यह कहा है कि)</font> सर्वथा उत्सर्ग और अपवाद की मैत्री द्वारा आचरण का सुस्थितपना करना चाहिये ॥२३०॥<br><br>
+
+       </div>
+    </td></tr>
+    <tr><td><div id=teeka1 class=teeka><b><font color=darkgreen>जयसेनाचार्य :</font></b> <br><br>﻿<b>[<font color=maroon>चरदु</font>]</b> चलें-आचरण करें । क्या <font color=DarkSlateGray>(किसका)</font> आचरण करें? <b>[<font color=maroon>चरियं</font>]</b> चारित्र, अनुष्ठान का आचरण करें । कैसे चारित्र का आचरण करें? <b>[<font color=maroon>सजोग्गं</font>]</b> अपने योग्य अपनी अवस्था के योग्य चारित्र का आचरण करें । कैसा जैसे होता है <font color=DarkSlateGray>(जिसप्रकार क्या नहीं हो)</font> ? <b>[<font color=maroon>मलच्छेदो जधा ण हवदि</font>]</b> मूल का छेद जैसे न हो, वैसे अपने योग्य चारित्र का आचरण करें । कर्तारूप वे कौन आचरण करें? <b>[<font color=maroon>बालो वा वुड्ढो वा समभिहदो वा पुणो गिलाणो वा</font>]</b> बालक अथवा वृद्ध अथवा श्रम से पीड़ित-श्रम-पीड़ित <font color=DarkSlateGray>(इस प्रकार तृतीया तत्पुरुष समास किया है)</font> अथवा ग्लान-व्याधि में स्थित-बीमार-रोगी ऐसा आचरण करें ।<br><br>
+वह इसप्रकार- सबसे पहले उत्सर्ग और अपवाद का लक्षण कहते हैं- अपने शुद्धात्मा से भिन्न बहिरंग-अन्तरंग रूप सम्पूर्ण परिग्रह का त्याग उत्सर्ग है । उत्सर्ग, निश्चयनय, सभी का पूर्णता त्याग, परम उपेक्षा संयम, वीतराग चारित्र, शुद्धोपयोग-ये सभी एकार्थ हैं- एक ही भाव के द्योतक हैं । उसमें असमर्थ पुरुष शुद्धात्मा की भावना के सहकारी- कुछ प्रासुक आहार ज्ञान के उपकरण आदि ग्रहण करता है- वह अपवाद है; अपवाद, व्यवहारनय, एकदेश परित्याग और उसीप्रकार अपह्रत संयम सरागचारित्र शुभोपयोग- ये सभी एकार्थ हैं ।<br><br>
+वहाँ शुद्धात्मा की भावना के निमित्त समूर्ण त्याग लक्षण उत्सर्गरूप दुर्धर अनुष्ठान में प्रवृत्ति करने वाले मुनिराज, शुद्धात्मतत्त्व का साधक होने से मूलभूत संयम का अथवा संयम का साधक होने से मूलभूत शरीर का जैसे छेद विनाश नहीं होता है, वैसे कुछ प्रासुक आहार आदि को ग्रहण करते है- इसप्रकार अपवाद सापेक्ष उत्सर्ग कहा गया है । और जब अपवाद लक्षण अपह्रत संयम में प्रवृत्त होते हैं तब भी शुद्धात्मतत्त्व का साधक होने से संयम का अथवा संयम का साधक होने से मूलभूत शरीर का उच्छेद-विनाश नहीं होता है, वैसे उत्सर्ग की सापेक्षता से प्रवृत्ति करते हैं । वैसी प्रवृत्ति करते हैं- इसका क्या अर्थ है? जिसप्रकार संयम की विराधना नहीं होती है वैसी प्रवृत्ति करते है- यह इसका अर्थ है; इसप्रकार उत्सर्ग सापेक्ष अपवाद है- ऐसा अभिप्राय है ॥२६४॥<br><br>
+
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

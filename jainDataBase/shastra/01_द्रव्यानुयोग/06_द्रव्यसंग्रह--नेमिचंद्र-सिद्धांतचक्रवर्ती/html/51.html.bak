@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>द्रव्यसंग्रह--नेमिचंद्र-सिद्धांतचक्रवर्ती</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='50.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='52.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>आर्यिका-ज्ञानमती</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-51><span class=incFontSz>+ </span><a href=#index>
+﻿सिद्ध परमेष्ठी का स्वरूप</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿णट्ठट्ठकम्मदेहो, लोयालोयस्स जाणओ दट्ठा<br>पुरुसायारो अप्पा, सिद्धो झाएह लोय सिहरत्थो ॥५१॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जिन्होने आठ कर्म रूपी शरीर का नाश कर दिया है, जो लोक और अलोक के जानने और देखने वाले हैं, पुरुषाकार हैं और लोक के शिखर पर स्थित हैं ऐसे आत्मा सिद्ध परमेष्ठी हैं उनका तुम सब जन ध्यान करो ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;ज्ञानमती</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>ज्ञानमती :</font></b> <br><br>﻿<b><font color=red>प्रश्न – सिद्ध परमात्मा कैसे होते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जो ज्ञानावरण, दर्शनावरण, वेदनीय, मोहनीय, आयु, नाम, गोत्र और अन्तराय-इन आठ कर्मों से रहित हैं, औदारिक, वैक्रियिक, आहारक, तैजस व कार्मण शरीर से रहित हैं, जो लोक-अलोक को जानने वाले हैं, वे सिद्ध परमेष्ठी हैं।<br><br>
+<b><font color=red>प्रश्न – सिद्ध परमेष्ठी कहाँ रहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> सिद्धपरमेष्ठी लोक के अग्रभाग में रहते हैं।<br><br>
+<b><font color=red>प्रश्न – लोक के अग्रभाग को क्या कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> लोक के अग्रभाग को 'सिद्धालय' कहते हैं।<br><br>
+<b><font color=red>प्रश्न – सिद्धालय में सिद्धों का आकार कैसी होता है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> सिद्ध परमेष्ठी का आकार पुरुषाकार होता है। वे लोकाग्र में अपने अंतिम शरीर से किञ्चित् न्यून आकार के रूप में रहते हैं।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

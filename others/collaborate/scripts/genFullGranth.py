@@ -85,7 +85,6 @@ html.write("""<!DOCTYPE html>
     }
   </style>
 </head>
-<!-body oncopy="return false" onpaste="return false" oncut="return false"->
 <body>
 """)
 if not os.path.isfile('./config/NoJainSaint.txt'):

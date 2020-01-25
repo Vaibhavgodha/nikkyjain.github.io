@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>द्रव्यसंग्रह--नेमिचंद्र-सिद्धांतचक्रवर्ती</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='15.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='17.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>आर्यिका-ज्ञानमती</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-16><span class=incFontSz>+ </span><a href=#index>
+﻿पुद्गल द्रव्य की विभाव व्यंजन पर्यायें</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿सद्दो बंधो सुहमो, थूलो संठाणभेदतमछाया<br>उज्जोदादवसहिया, पुग्गल दव्वस्स पज्जाया ॥१६॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿शब्द, बन्ध, सूक्ष्मत्व, स्थूलत्व, भेद-खंड, अंधकार, छाया, उद्योत और आतप ये सब पुद्गल द्रव्य की पर्यायें हैं । अर्थात् इन्हें विभाव व्यंजन पर्याय कहते हैं ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;ज्ञानमती</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>ज्ञानमती :</font></b> <br><br>﻿<b><font color=red>प्रश्न – शब्द किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> द्रव्य कर्ण <font color=DarkSlateGray>(कान)</font> इन्द्रिय के आधार से भाव कर्णेन्द्रिय के द्वारा जो ध्वनि सुनी जाती है, उसे शब्द कहते हैं।<br><br>
+<b><font color=red>प्रश्न – शब्द के भेद बताइये?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> शब्द के दो भेद हैं—१-भाषारूप और २-अभाषारूप।<br><br>
+<b><font color=red>प्रश्न – बन्ध पर्याय के भेद बताइये?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> बन्ध पुद्गल पर्याय के २ भेद हैं—१-वैस्रसिक और २-प्रायोगिक।<br><br>
+<b><font color=red>प्रश्न – सूक्ष्मता के कितने भेद है?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> सूक्ष्मता दो प्रकार की होती है—१-अन्त्य और २-आपेक्षिक।<br><br>
+<b><font color=red>प्रश्न – स्थौल्य किसे कहते है? उसके भेद बताइये।<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> स्थूलता को स्थौल्य कहते हैं। यह भी दो प्रकार का है—१-अन्त्य और २-आपेक्षिक।<br><br>
+<b><font color=red>प्रश्न – संस्थान किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> आकृति को संस्थान कहते हैं। त्रिकोण, चतुष्कोण आदि आकार संस्थान हैं।<br><br>
+<b><font color=red>प्रश्न – भेद किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> वस्तु को अलग-अलग चूर्णादि करना भेद है।<br><br>
+<b><font color=red>प्रश्न – तम किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जिससे दृष्टि में प्रतिबंध होता है और जो प्रकाश का विरोधी-अंधकार है वह तम कहलाता है।<br><br>
+<b><font color=red>प्रश्न – छाया किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> प्रकाश को रोकने वाले पदार्थों के निमित्त से जो पैदा होती है वह छाया कहलाती है। अर्थात् किसी की परछाई को छाया कहते हैं।<br><br>
+<b><font color=red>प्रश्न – आतप किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जो सूर्य के निमित्त से उष्ण प्रकाश होता है उसे आतप कहते हैं।<br><br>
+<b><font color=red>प्रश्न – उद्योत किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> चंद्रकांतमणि और जुगनू आदि के निमित्त से जो प्रकाश होता है उसे उद्योत कहते हैं।<br><br>
+<b><font color=red>प्रश्न – शब्द आदि पुद्गल की पर्याय स्वभाव पर्याय है कि विभाव पर्याय?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> शब्दादि विभाव पर्याय हैं, क्योंकि ये स्कन्ध के संयोग से उत्पन्न होती हैं, शुद्ध परमाणु से नहीं।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

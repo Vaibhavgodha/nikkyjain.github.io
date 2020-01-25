@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>समाधितन्त्र--आचार्य‌-पूज्यपाद</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='005.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='007.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>श्रीमद्-प्रभाचन्द्र</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>क्षु-मनोहरजी-वर्णी</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-006><span class=incFontSz>+ </span><a href=#index>
+﻿परमात्मा के पर्यायवाची</a><span class=decFontSz> -</span></div>
+   <div class=gatha>निर्मल: केवल: शुद्धो विविक्त: प्रभुरव्यय:<br>परमेष्ठी परात्मेति परमात्मेश्वरो जिन: ॥६॥</div>
+    <div class=gadya>﻿शुद्ध, स्पर्श-मल बिन प्रभू अव्यय अज परमात्म ।<br>ईश्वर निज उत्कृष्ट वह, परमेष्ठी परमात्म ॥६॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[निर्मल:]</font></b> निर्मल <span class=comment>(मलरहित)</span>, <b><font color=darkRed>[केवल]</font></b> केवल <span class=comment>(शरीरादि पर-द्रव्यों के सहाय से रहित)</span>, <b><font color=darkRed>[शुद्ध:]</font></b> शुद्ध <span class=comment>(रागादि से अत्यन्त भिन्न हो गये होने से परमविशुद्धिवाले)</span>, <b><font color=darkRed>[विविक्त]</font></b> विविक्त <span class=comment>(शरीर और कर्मादिक के स्पर्श से रहित)</span>, <b><font color=darkRed>[प्रभु:]</font></b> प्रभु <span class=comment>(इन्द्रादिक के स्वामी)</span>, <b><font color=darkRed>[अव्यय]</font></b> अव्यय <span class=comment>(अपने अनन्त चतुष्टयरूप स्वभाव से कभी स्मृत नहीं होनेवाले)</span>, <b><font color=darkRed>[परमेष्ठी]</font></b> परमेष्ठी <span class=comment>(इन्द्रादिक से अन्य परमपद में स्थित)</span>, <b><font color=darkRed>[परात्मा]</font></b> परात्मा <span class=comment>(संसारी जीवों से उत्कृष्ट आत्मा)</span>, <b><font color=darkRed>[ईश्वर]</font></b> ईश्वर <span class=comment>(अन्य जीवों में असम्भव, ऐसी शक्ति के धारक, अर्थात् अन्तरंग अनन्त चतुष्टय और बाह्य समवसरणादि विभूतियों से युक्त)</span>, <b><font color=darkRed>[जिन:]</font></b> जिन <span class=comment>(ज्ञानावरणादि सम्पूर्ण कर्म-शत्रुओं को जीतनेवाले)</span>, <b><font color=darkRed>[इति परमात्मा]</font></b> ये परमात्मा के नाम हैं ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;प्रभाचन्द्र</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;वर्णी</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+  </table><br><br><br>
+  </body>
+</html>

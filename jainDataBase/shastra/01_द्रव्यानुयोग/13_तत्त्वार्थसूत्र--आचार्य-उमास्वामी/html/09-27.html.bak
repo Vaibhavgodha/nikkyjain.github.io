@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>तत्त्वार्थसूत्र--आचार्य-उमास्वामी</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='09-26.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='09-28.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>सर्वार्थसिद्धि</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>राजवार्तिक</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-09-27><span class=incFontSz>+ </span><a href=#index>﻿ध्यान के स्वामी और काल</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿उत्तम-संहननस्यैकाग्र-चिन्ता-निरोधो ध्यानमान्त-र्मुहूर्तात्॥२७॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿उत्तम संहनन वाले का एक विषय में चित्त‍वृत्ति का रोकना ध्यान है जो अन्तूर्मुहूर्त काल तक होता है ॥२७॥</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;सर्वार्थसिद्धि</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;राजवार्तिक</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>सर्वार्थसिद्धि :</font></b> <br><br>﻿आदि के वज्रवृषभनाराच संहनन, वज्रनाराच संहनन और नाराच संहनन ये तीन संहनन उत्तम हैं। ये तीनों ही ध्यान के साधन हैं। मोक्ष का साधन तो प्रथम ही है। जिसके ये उत्तम संहनन होते हैं वह उत्तम संहनन वाला कहलाता है उस उत्तम संहनन वाले के। यहाँ इस पद द्वारा प्रयोक्ता का निर्देश किया है। 'अग्र' पद का अर्थ मुख है। जिसका एक अग्र होता है वह एकाग्र कहलाता है। नाना पदार्थों का अवलम्बन लेने से चिन्ता परिस्पन्दवती होती है। उसे अन्य अशेष मुखों से लौटाकर एक अग्र अर्थात एक विषय में नियमित करना एकाग्रचिन्‍तानिरोध कहलाता है। इस द्वारा ध्यान का स्वरूप कहा गया है। मुहूर्त यह काल का विवक्षित परिमाण है। जो मुहूर्त के भीतर होता है वह अन्तर्मुहूर्त कहलाता है। 'अन्तर्मुहूर्त काल तक' इस पद द्वारा काल की अवधि की गयी है। इतने काल के बाद एकाग्रचिन्ता दुर्धर होती है। <br><br>
+<b><font color=red>शंका – यदि चिन्ता के निरोध का नाम ध्यान है निरोध अभाव स्वरूप होता है, इसलिये गधे के सींग के समान ध्याान असत्‌ ठहरता है ?<br><br>
+</font><font color=darkGreen>समाधान –</font></b> यह कोई दोष नहीं है, क्योंकि अन्य चिन्ता की निवृत्ति की अपेक्षा वह असत कहा जाता है और अपने विषयरूप से प्रवृत्ति होने के कारण वह सत कहा जाता है, क्यों कि अभाव भावान्तर स्वभाव होता है और अभाव वस्तु का धर्म है यह बात सपक्ष सत्व विपक्ष व्यावृत्ति इत्यादि हेतु के अंग आदि के द्वारा सिद्ध होती है। अथवा, यह निरोध शब्द 'निरोधनं निरोधः' इस प्रकार भाव साधन नहीं है। तो क्या है ? 'निरुध्यत इति निरोधः' -- जो रोका जाता है, इस प्रकार कर्म साधन है। चिंता का जो निरोध वह चिंतानिरोध है। आशय यह है कि निश्‍चल अग्नि शिखा के समान निश्‍चल रूप से अवभासमान ज्ञान ही ध्यान है।<br><br>
+अब उसके भेद दिखलाने के लिए आगे का सूत्र कहते हैं-
+       </div>
+    </td></tr>
+    <tr><td><div id=teeka1 class=teeka><b><font color=darkgreen>राजवार्तिक :</font></b> <br><br>﻿जिसके द्वारा जाना जाता है या जिसमें जाना जाता है ऐसा अग्र मुख है ।३। अग्र शब्द अर्थ का पर्यायवाची है, जिसके द्वारा गमन किया जाये या जाना जाये सो अग्र या अर्थ है ऐसा अर्थ समझना ।७। जो गमन करता है या जानता है सो अग्र आत्मा है ।२१।<br><br>
+जीवपर्यायेषु औदयिकौपशमिकक्षायोपशमिकेषूत्पद्यतेऽवधिज्ञानम्‌ रूपिद्रव्यसंबन्धात्‌, न क्षायिकपारिणामिकेषु....तत्संबन्धाभावात्‌ । = रूपी पदार्थ विषयक अवधिज्ञान भाव की अपेक्षा स्वविषयभूत पुद्‌गलस्कन्धों के रूपादि विकल्पों में तथा जीव के औदयिक, औपशमिक व क्षायोपशमिक भावों में वर्तता है, क्योंकि रूपीद्रव्य का <font color=DarkSlateGray>(कर्मों का)</font> सम्बन्ध होने के कारण ये भाव पौद्‌गलिक हैं । परन्तु क्षायिक व पारिणामिक भावों में नहीं वर्तता है, क्योंकि उन दोनों में उस रूपीद्रव्य के सम्बन्ध का अभाव है ।<br><br>
+‘रूपिषु’ इत्यनेन पुद्‌गलाः पुद्‌गलद्रव्यसंबन्धाश्च जीवाः परिगृह्यन्ते । = सूत्र में कहे गये ‘रूपिषु’ इस पद से पुद्‌गलों का और पुद्‌गलों से बद्ध जीवों का ग्रहण होता है । 
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

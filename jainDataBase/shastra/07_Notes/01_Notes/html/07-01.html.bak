@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Notes</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='06-07.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='08-01.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>विशेष</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-07-01><span class=incFontSz>+ </span><a href=#index>
+﻿अनुभाग बन्ध के स्वामी</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿अनुभाग बन्ध के स्वामी</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;विशेष</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>विशेष :</font></b> <br><br>﻿<table class=myAltTable><br><br>
+  <thead><br><br>
+		<tr><br><br>
+			<td class=emptyTableCell></td><br><br>
+			<th class=tableTitle colspan=2>अनुभाग बंध के स्वामी</th><br><br>
+		<tr><br><br>
+			<td class=emptyTableCell></td><br><br>
+			<th>उत्कृष्ट अनुभाग के स्वामी</th><br><br>
+			<th>जघन्य अनुभाग के स्वामी</th><br><br>
+		</tr><br><br>
+  </thead><br><br>
+	<tbody><br><br>
+		<tr><br><br>
+			<th>ज्ञानावरणीय ५</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>सूक्ष्मसाम्पराय क्षपक का चरम समय</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>दर्शनावरणीय ४</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>सूक्ष्मसाम्पराय क्षपक का चरम समय</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>निद्रा, प्रचला</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>अपूर्वकरण में बन्धव्युच्छित्ति से पहले</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>निद्रा निद्रा, प्रचला प्रचला</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>सातिशय मिथ्यादृष्टि/चरम</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>स्त्यानगृद्धि</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>संयम और सम्यक्त्व सन्मुख मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>अन्तराय ५</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>सूक्ष्मसाम्पराय क्षपक का चरम समय</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>मिथ्यात्व</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>संयम और सम्यक्त्व सन्मुख मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>अनन्तानुबन्धी 4</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>संयम और सम्यक्त्व सन्मुख मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>अप्रत्याख्यान 4</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>संयम सन्मुख अविरतसम्यग्दृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>प्रत्याख्यान 4</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>संयम सन्मुख देशसंयत</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>संज्वलन 4</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>अनिवृत्तिकरण क्षपक के बन्धव्युच्छित्ति से पहले</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>हास्य, रति, भय, जुगुप्सा</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>अपूर्वकरण क्षपक में बन्धव्युच्छित्ति से पहले</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>अरति, शोक</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>अप्रमत्तसंयत सन्मुख प्रमत्तसंयत</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>स्त्री, नपुंसक वेद</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>विशुद्ध मिथ्या.</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>पुरुष वेद</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>अनिवृत्तिकरण क्षपक के बन्धव्युच्छित्ति से पहले</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>साता</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>अपरिवर्तमान मध्य मिथ्यादृष्टि / सम्यग्दृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>असाता</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>अपरिवर्तमान मध्य मिथ्यादृष्टि / सम्यग्दृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>नरकायु</th><br><br>
+			<td>मिथ्यादृष्टि मनुष्य तिर्यंच</td><br><br>
+			<td>मिथ्यादृष्टि मनुष्य तिर्यंच</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>तिर्यंचायु</th><br><br>
+			<td>मिथ्यादृष्टि मनुष्य तिर्यंच</td><br><br>
+			<td>मिथ्यादृष्टि मनुष्य तिर्यंच</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>मनुष्यायु</th><br><br>
+			<td>विशुद्ध मिथ्यादृष्टि मनुष्य तिर्यंच</td><br><br>
+			<td>मिथ्यादृष्टि मनुष्य तिर्यंच</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>देवायु</th><br><br>
+			<td>अप्रमत्तसंयत</td><br><br>
+			<td>मिथ्यादृष्टि मनुष्य तिर्यंच</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>उच्च गोत्र</th><br><br>
+			<td>क्षपक श्रेणी</td><br><br>
+			<td>मध्य. मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>नीच गोत्र</th><br><br>
+			<td>चतु. तीव्र मिथ्यादृष्टि</td><br><br>
+			<td>सम्यक्त्व सन्मुख सप्तम पृथ्वी नारकी मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>तीर्थंकर</th><br><br>
+			<td>क्षपक श्रेणी</td><br><br>
+			<td>नरक और मिथ्यात्व सन्मुख सम्यग्दृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>नरक द्वि.</th><br><br>
+			<td>मिथ्यादृष्टि मनुष्य तिर्यंच</td><br><br>
+			<td>मिथ्यादृष्टि मनुष्य तिर्यंच</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>तिर्यक् द्वि.</th><br><br>
+			<td>मिथ्यादृष्टि देव नारकी</td><br><br>
+			<td>सम्यक्त्व सन्मुख सप्तम पृथ्वी नारकी मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>मनुष्य द्वि.</th><br><br>
+			<td>सम्यग्दृष्टि देव नारकी</td><br><br>
+			<td>मध्य मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>देव द्वि.</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>मिथ्यादृष्टि मनुष्य तिर्यंच</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>एकेन्द्रिय जाति</th><br><br>
+			<td>आयु-बंध के समय संक्लेशित मध्य मिथ्यादृष्टि देव</td><br><br>
+			<td>देव मनुष्य तिर्यंच</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>सूक्ष्म-त्रय, विकलत्रय</th><br><br>
+			<td>मिथ्यादृष्टि मनुष्य तिर्यंच</td><br><br>
+			<td>मिथ्यादृष्टि मनुष्य तिर्यंच</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>पंचेन्द्रिय जाति</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>संक्लिष्ट मिथ्या.</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>औदारिक द्वि.</th><br><br>
+			<td>सम्यग्दृष्टि देव / नारकी</td><br><br>
+			<td>संक्लिष्ट  मिथ्यादृष्टि देव / नारकी</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>वैक्रियक द्वि.</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>मिथ्यादृष्टि मनुष्य / तिर्यंच</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>आहारक द्वि.</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>प्रमत्तसंयत सन्मुख अप्रमत्तसंयत</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>तैजस, कार्माण शरीर</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>संक्लिष्ट मिथ्या.</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>निर्माण</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>संक्लिष्ट मिथ्या.</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>प्रशस्त वर्णादि ४</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>संक्लिष्ट मिथ्या.</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>अप्रशस्त वर्णादि ४</th><br><br>
+			<td>संक्लिष्ट मिथ्या.</td><br><br>
+			<td>अपूर्वकरण में बन्ध-व्युच्छित्ति से पहले मध्य मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>समचतुरस्र संस्थान</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>मध्य मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>शेष पाँच संस्थान</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>मध्य मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>वज्र ऋषभ नाराच</th><br><br>
+			<td>सम्यग्दृष्टि देव</td><br><br>
+			<td>मध्य मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>वज्र नाराच आदि ४</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>मध्य मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>असंप्राप्त सृपाटिका</th><br><br>
+			<td>मिथ्यादृष्टि देव नारकी</td><br><br>
+			<td>मध्य मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>अगुरुलघु</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>संक्लिष्ट मिथ्या.</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>उपघात</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>अपूर्वकरण क्षपक में बन्धव्युच्छित्ति के समय</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>परघात</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>संक्लिष्ट मिथ्या.</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>आतप</th><br><br>
+			<td>आयु-बंध के समय संक्लेशित मिथ्यादृष्टि देव</td><br><br>
+			<td>तीव्र कषाय युक्त मिथ्यादृष्टि भवनत्रिक से ईशान.</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>उद्योत</th><br><br>
+			<td>सातवें नरक में उपशम सम्यक्त्व के सन्मुख विशुद्ध मिथ्यादृष्टि नारकी</td><br><br>
+			<td>संक्लिष्ट मिथ्यादृष्टि देव / नारकी</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>उच्छ्वास</th><br><br>
+			<td>सूक्ष्मसाम्पराय क्षपक का चरम समय</td><br><br>
+			<td>संक्लिष्ट मिथ्या.</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>प्रशस्त विहायोगति</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>मध्य मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>अप्रशस्त विहायोगति</th><br><br>
+			<td>ती. मिथ्या.</td><br><br>
+			<td>मध्य मिथ्यादृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>प्रत्येक</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>संक्लिष्ट मिथ्या.</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>त्रस-त्रिक</th><br><br>
+			<td>क्षपकश्रेणी</td><br><br>
+			<td>संक्लिष्ट मिथ्या.</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>स्थावर</th><br><br>
+			<td>आयु-बंध के समय संक्लेशित मिथ्यादृष्टि देव</td><br><br>
+			<td>देव मनुष्य तिर्यंच</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>यश:कीर्ति</th><br><br>
+			<td>सूक्ष्मसाम्पराय क्षपक का चरम समय</td><br><br>
+			<td>अपरिवर्तमान मध्य मिथ्यादृष्टि / सम्यग्दृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>अयश:कीर्ति</th><br><br>
+			<td>सूक्ष्मसाम्पराय क्षपक का चरम समय</td><br><br>
+			<td>संक्लिष्ट मिथ्या.</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>शुभ</th><br><br>
+			<td>अपूर्वकरण क्षपक में बन्धव्युच्छित्ति के समय</td><br><br>
+			<td>अपरिवर्तमान मध्य मिथ्यादृष्टि / सम्यग्दृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>अशुभ</th><br><br>
+			<td>सूक्ष्मसाम्पराय क्षपक का चरम समय</td><br><br>
+			<td>संक्लिष्ट मिथ्या.</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>स्थिर</th><br><br>
+			<td>अपूर्वकरण क्षपक में बन्धव्युच्छित्ति के समय</td><br><br>
+			<td>अपरिवर्तमान मध्य मिथ्यादृष्टि / सम्यग्दृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<th>अस्थिर</th><br><br>
+			<td>संक्लिष्ट मिथ्या.</td><br><br>
+			<td>अपरिवर्तमान मध्य मिथ्यादृष्टि / सम्यग्दृष्टि</td><br><br>
+		</tr><br><br>
+		<tr><br><br>
+			<td class=emptyTableCell></td><br><br>
+			<td class=tableNotes colspan=2>संक्लिष्ट मिथ्या. = तीव्र कषाययुक्त चतुर्गति के मिथ्यादृष्टि जीव</td><br><br>
+		</tr><br><br>
+	</tbody><br><br>
+</table><br><br>
+
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

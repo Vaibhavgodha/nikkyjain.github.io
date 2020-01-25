@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>द्रव्यसंग्रह--नेमिचंद्र-सिद्धांतचक्रवर्ती</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='02.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='04.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>आर्यिका-ज्ञानमती</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-03><span class=incFontSz>+ </span><a href=#index>
+﻿जीवत्व का लक्षण</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿तिक्काले चदुपाणा, इंदिय बलमाउ आणपाणो य<br>ववहारा सो जीवो, णिच्चयणयदोदु चेदणाजस्स ॥३॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जिसके व्यवहारनय से तीनों कालों में इन्द्रिय, बल, आयु और श्वासोच्छ्वास ये चार प्राण हैं और निश्चयनय से चेतना प्राण है, वह जीव कहलाता है ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;ज्ञानमती</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>ज्ञानमती :</font></b> <br><br>﻿<b><font color=red>प्रश्न – व्यवहारनय किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> वस्तु के अशुद्ध स्वरूप को ग्रहण करने वाले ज्ञान को व्यवहारनय कहते हैं।<br><br>
+प्रश्न- व्यवहारनय से जीव का लक्षण बताइये?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जिसमें तीनों कालों में चार प्राण पाये जाते हैं, व्यवहारनय से वह जीव है।<br><br>
+<b><font color=red>प्रश्न – चार प्राण कौन से हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> इन्द्रिय, बल, आयु और स्वासोच्छ्वास।<br><br>
+<b><font color=red>प्रश्न – निश्चयनय किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> वस्तु के शुद्ध स्वरूप का कथन करने वाले नय को निश्चयनय कहते हैं।<br><br>
+<b><font color=red>प्रश्न – निश्चयनय से जीव का लक्षण बताइये?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जिसमें चेतना पायी जाती है, निश्चयनय से वह जीव है।<br><br>
+<b><font color=red>प्रश्न – एकेन्द्रिय जीव के कितने प्राण होते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> एकेन्द्रिय जीव के चार प्राण होते हैं-स्पर्शन इन्द्रिय, कायबल, आयु और श्वासोच्छ्वास।<br><br>
+<b><font color=red>प्रश्न – द्वीन्द्रिय जीव के कितने प्राण होते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> १. स्पर्शन इन्द्रिय २. रसना इन्द्रिय ३. वचनबल ४. कायबल ५. आयु ६. श्वासोच्छ्वास ये कुल ६ प्राण द्वीन्द्रिय जीव के होते हैं।<br><br>
+<b><font color=red>प्रश्न – तीन इन्द्रिय जीव के कितने प्राण होते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> तीन इन्द्रिय जीव के सात प्राण होते हैं-स्पर्शन, रसना, घ्राण ये तीन इन्द्रियाँ, वचनबल, कायबल, आयु और श्वासोच्छ्वास।<br><br>
+<b><font color=red>प्रश्न – चार इन्द्रिय जीव के कितने प्राण होते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> स्पर्शन, रसना, घ्राण, चक्षु ये चार इन्द्रियाँ, वचनबल, कायबल, आयु और श्वासोच्छ्वास इस प्रकार कुल ८ प्राण चार इन्द्रिय जीव के होते हैं।<br><br>
+<b><font color=red>प्रश्न – असंज्ञी पंचेन्द्रिय जीव के कितने प्राण होते हैं।<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> स्पर्शन, रसना, घ्राण, चक्षु, कर्ण ये पाँच इन्द्रियाँ, वचनबल, कायबल, आयु और श्वासोच्छ्वास ये कुल ९ प्राण असंज्ञी पंचेन्द्रिय जीव के होते हैं।<br><br>
+<b><font color=red>प्रश्न – संज्ञी पंचेन्द्रिय जीव के कितने प्राण होते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> संज्ञी पंचेन्द्रिय जीव के दस प्राण होते हैं-पाँचों इन्द्रियाँ, तीनों बल, आयु और श्वासोच्छ्वास।<br><br>
+<b><font color=red>प्रश्न – एक मात्र चेतना प्राण किनके होता है?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> सिद्ध भगवान के दस प्राणों में से कोई भी प्राण नहीं है। उनको मात्र एक चेतना प्राण माना है।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

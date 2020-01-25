@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>प्रवचनसार--कुन्दकुन्दाचार्य</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='278.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='280.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>अमृतचंद्राचार्य</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>जयसेनाचार्य</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-279><span class=incFontSz>+ </span><a href=#index>
+﻿अब, जो वे अपने शुद्धात्मा में एकाग्र हैं उनका ही मोक्ष होता है; ऐसा उपदेश देते हैं -</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿अट्ठेसु जो ण मुज्झदि ण हि रज्जदि णेव दोसमुवयादि (२४४)<br>समणो जदि सो णियदं खवेदि कम्माणि विविहाणि ॥२७९॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[यदि यः श्रमण:]</font></b> यदि श्रमण <b><font color=darkRed>[अर्थेषु]</font></b> पदार्थों में <b><font color=darkRed>[न मुह्यति]</font></b> मोह नहीं करता, <b><font color=darkRed>[न हि रज्यति]</font></b> राग नहीं करता, <b><font color=darkRed>[न एव द्वेषम् उपयाति]</font></b> और न द्वेष को प्राप्त होता है <b><font color=darkRed>[सः]</font></b> तो वह <b><font color=darkRed>[नियतं]</font></b> नियम से <b><font color=darkRed>[विविधानि कर्माणि]</font></b> विविध कर्मों को <b><font color=darkRed>[क्षपयति]</font></b> खपाता है ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;अमृतचंद्राचार्य</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;जयसेनाचार्य</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>अमृतचंद्राचार्य :</font></b> <br><br>﻿जो ज्ञानात्मक आत्मारूप एक अग्र <font color=DarkSlateGray>(विषय)</font> को भाता है वह ज्ञेयभूत अन्य द्रव्य का आश्रय नहीं करता; और उसका आश्रय नहीं करके ज्ञानात्मक आत्मा के ज्ञान से अभ्रष्ट ऐसा वह स्वयमेव ज्ञानीभूत रहता हुआ, मोह नहीं करता, राग नहीं करता, द्वेष नहीं करता, और ऐसा <font color=DarkSlateGray>(अमोही, अरागी, अद्वेषी)</font> वर्तता हुआ <font color=DarkSlateGray>(वह)</font> मुक्त ही होता है, परन्तु बँधता नहीं है ।<br><br>
+इससे एकाग्रता को ही मोक्षमार्गत्व सिद्ध होता है ॥२४४॥
+       </div>
+    </td></tr>
+    <tr><td><div id=teeka1 class=teeka><b><font color=darkgreen>जयसेनाचार्य :</font></b> <br><br>﻿<b>[<font color=maroon>अट्ठेसु जो ण मुज्झदि ण हि रज्जदि णेव</font>]</b> अर्थों--बाह्य पदार्थों में जो मोह नहीं करता है, राग नहीं करता, वास्तव में द्वेष को भी प्राप्त नहीं है <b>[<font color=maroon>जदि</font>]</b> यदि, तो <b>[<font color=maroon>सो समणो</font>]</b> वह मुनि <b>[<font color=maroon>णियदं</font>]</b> निश्चित <b>[<font color=maroon>खवेदि कम्माणि विविहाणि</font>]</b> विविध कर्मों का क्षय करता है । <br><br>
+अब <font color=DarkSlateGray>(इसका)</font> विशेष कथन करते हैं -- जो वे देखे हुये, सुने हुये, भोगे हुये भोगों की इच्छारूप अपध्यान <font color=DarkSlateGray>(बुरे ध्यान)</font> के त्याग पूर्वक अपने स्वरूप की भावना है, उनका मन बाह्य पदार्थों में नहीं जाता है, और इसलिए बाह्य पदार्थों सम्बन्धी चिन्ता का अभाव होने से विकार रहित चैतन्य चमत्कार से च्युत नहीं होते हैं और उससे च्युत नहीं होने के कारण रागादि का अभाव होने से, विविध कर्म नष्ट हो जाते हैं । इसलिये मोक्षार्थी को निश्चल मन से, अपने आत्मा में भावना करना चाहिये । <br><br>
+ <br><br>
+इसप्रकार के वीतराग चारित्र सम्बन्धी विशेष कथन को सुनकर कोई कहते हैं -- सयोगकेवलियों के भी एकदेश चारित्र है, परिपूर्ण चारित्र तो अयोगी के अन्तिम समय में होगा, इस कारण अभी हमारे सम्यक्त्व-भावना और भेदज्ञान-भावना ही पर्याप्त है, चारित्र बाद में होगा । <font color=DarkSlateGray>(आचार्य कहते है)</font> ऐसा नहीं कहना चाहिये । अभेदनय से ध्यान ही चारित्र है, और वह ध्यान केवलियों के उपचार से कहा गया है, इसीप्रकार चारित्र भी उपचार से कहा है । तथा जो सम्पूर्ण रागादि विकल्प जाल रहित शुद्धात्मानुभूति लक्षण सम्यग्दर्शन-ज्ञान पूर्वक छद्मस्थ का वीतराग चारित्र है, वही कार्यकारी है । वही कार्यकारी क्यों है? क्योंकि उससे ही केवलज्ञान उत्पन्न होता है, अत: वही कार्यकारी है; इसलिये चारित्र में प्रयत्न करना चाहिये- ऐसा भाव है । <br><br>
+ <br><br>
+दूसरी बात यह है कि उत्सर्ग व्याख्यान के समय श्रामण्य का व्याख्यान किया था, यहाँ फिर से किसलिए किया है? ऐसा प्रश्न होने पर उत्तर कहते है- वहाँ सम्पूर्ण <font color=DarkSlateGray>(परिग्रहादि)</font> का परित्याग लक्षण उत्सर्ग ही मुख्य रूप से मोक्षमार्ग है <font color=DarkSlateGray>(यह कहा था)</font>; यहाँ श्रामण्य का व्याख्यान है, परन्तु श्रामण्य <font color=DarkSlateGray>(मुनिपना)</font> ही मोक्षमार्ग है <font color=DarkSlateGray>(यह कहा गया है)</font> - इसप्रकार <font color=DarkSlateGray>(पृथक्‌-पृथक्)</font> मुख्यता से दोनों में अन्तर है ॥२७९॥ <br><br>
+ <br><br>
+इसप्रकार श्रामण्य दूसरा नाम मोक्षमार्ग के उपसंहार की मुख्यता से चौथे स्थल में दो गाथायें पूर्ण हुई । <br><br>
+ <br><br>
+इसप्रकार पहले कहे गये क्रम से '<b>[<font color=maroon>एयग्गगदो</font>]</b>' इत्यादि चौदह गाथाओं द्वारा चार स्थल रूप से श्रामण्य अपरनाम मोक्षमार्ग नामक तीसरा अन्तराधिकार पूर्ण हुआ । <br><br>
+ <br><br>
+अब, इसके बाद ३२ गाथाओं तक, पाँच स्थलों द्वारा शुभोपयोग अधिकार कहा जाता है । वहीं सबसे पहले लौकिक संसर्ग के निषेध की मुख्यता से, '<b>[<font color=maroon>णिच्छिदसुत्तत्थ पदो</font>]</b>' इत्यादि पाठक्रम से पहले स्थल में पाँच गाथायें हैं । तदुपरान्त सराग-संयम दूसरा नाम शुभोपयोग के स्वरूप कथन की मुख्यता से, '<b>[<font color=maroon>समणा सुद्धवजुत्ता</font>]</b>' इत्यादि दूसरे स्थल में आठ गाथायें हैं । तदनन्तर पात्र-अपात्र की परीक्षा के प्रतिपादनरूप से <font color=DarkSlateGray>(तीसरे स्थल में)</font>, '<b>[<font color=maroon>रागो पसत्थभूदो</font>]</b>' इत्यादि छह गाथायें हैं । तत्पश्चात् परम आचार आदि कहे गये क्रम से और भी संक्षेपरूप से <font color=DarkSlateGray>(चौथे स्थल में)</font>, समाचार व्याख्यान की प्रधानतारूप '<b>[<font color=maroon>दिट्ठा पगदं वत्थुं</font>]</b>' इत्यादि आठ गाथायें हैं । और उसके बाद पंच रत्न की मुख्यता से <font color=DarkSlateGray>(पाँचवे स्थल मे)</font> 'जे अजधागहिदत्था-' इत्यादि पाँच गाथायें हैं । <br><br>
+ <br><br>
+इसप्रकार ३२ गाथाओं द्वारा प्राँच स्थलरूप से चौथे अन्तराधिकार में सामूहिक पातनिका है । <br><br>
+ <br><br>
+चतुर्थ अन्तराधिकार का स्थलविभाजन <font color=DarkSlateGray>(गाथा २८० से ३११ पर्यन्त)</font><br><br>
+ <br><br>
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="text-align:center;" class=arthTable width="100%"><tr><td><strong>स्थलक्रम</strong></td><td><strong>प्रतिपादित प्रधान विषय</strong></td><td><strong>कहाँ से कहाँ पर्यंत गाथायें</strong></td><td><strong>कुल गाथायें</strong></td></tr><tr><td>प्रथम स्थल</td><td>लौकिक संसर्ग के निषेध परक</td><td>२८० से २८४</td><td>५</td></tr><tr><td>द्वितीय स्थल</td><td>शुभोपयोग स्वरूप कथन</td><td>२८५ से २९२</td><td>८</td></tr><tr><td>तृतीय स्थल</td><td>पात्र-अपात्र की परीक्षा प्रतिपादक</td><td>२९३ से २९८</td><td>६</td></tr><tr><td>चतुर्थ स्थल</td><td>समाचार व्याख्यान प्रतिपादक</td><td>२९९ से ३०६</td><td>८</td></tr><tr><td>पंचम स्थल</td><td>पंचरत्न गाथायें</td><td>३०७ से ३११</td><td>५</td></tr><tr><td>कुल पाँच स्थल</td><td></td><td></td><td>कुल ३२ गाथायें</td></tr></table><br><br>
+ <br><br>
+<font color=DarkSlateGray>(अब चौथे अन्तराधिकार का पाँच गाथाओं वाला पहला स्थल प्रारम्भ होता है ।)</font> वह इसप्रकार -<br><br>
+
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

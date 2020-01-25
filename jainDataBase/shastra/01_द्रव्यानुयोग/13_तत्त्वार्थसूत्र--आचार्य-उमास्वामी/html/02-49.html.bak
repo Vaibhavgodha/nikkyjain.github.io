@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>तत्त्वार्थसूत्र--आचार्य-उमास्वामी</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='02-48.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='02-50.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>सर्वार्थसिद्धि</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>राजवार्तिक</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-02-49><span class=incFontSz>+ </span><a href=#index>﻿आहारक शरीर का स्वरूप</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿शुभं विशुद्धमव्याघाति चाहारकं प्रमत्तसंयतस्यैव ॥४९॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿आहारक शरीर शुभ, विशुद्ध और व्‍याघात रहित है और वह प्रमत्तसंयत के ही होता है॥४९॥</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;सर्वार्थसिद्धि</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;राजवार्तिक</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>सर्वार्थसिद्धि :</font></b> <br><br>﻿शुभकर्मका कारण होने से इसे शुभ कहा है। यह शरीर आहारक काययोगरूप शुभकर्मका कारण है, इसलिए आहारक शरीर शुभ कहलाता है। यहाँ कारणमें कार्यका उपचार है। जैसे अन्‍नमें प्राणका उपचार करके अन्‍नको प्राण कहते हैं। विशुद्धकर्मका कार्य होनेसे आहारक शरीरको विशुद्ध कहा है। तात्‍पर्य यह हैकि जो चित्र-विचित्र न होकर निर्दोष है ऐसे विशुद्ध अर्थात् पुण्‍यकर्मका कार्य होनेसे आहारक शरीरको विशुद्ध कहते हैं। यहाँ कार्य में कारणका उपचार है। जैसे तन्‍तुओंमें कपासका उपचार करके तन्‍तुओं को कपास कहते हैं। दोनों ओरसे व्‍याघात नहीं होता, इसलिए यह अव्‍याघाती है। तात्‍पर्य यह है कि आहारक शरीरसे अन्‍य पदार्थका व्‍याघात नहीं होता और अन्‍य पदार्थसे आहारक शरीरका व्‍याघात नहीं होता। आहारक शरीरके प्रयोजनका समुच्‍चय करने के लिए सूत्रमें 'च' शब्‍द दिया है। यथा – आहारक शरीर कदाचित् लब्धि-विशेषके सद्भावको जतानेके लिए, कदाचित् सूक्ष्‍म पदार्थका निश्‍चय करनेके लिए और संयमकी रक्षा करनेके लिए उत्‍पन्‍न होता है। सूत्रमें 'आहारक' पद आया है उससे पूर्व में कहे गये आहारक शरीरको दुहराया है। जिस समय जीव आहारक शरीरकी रचना का आरम्‍भ करता है उस समय वह प्रमत्त हो जाता है, इसलिए सूत्रमें प्रमत्तसंयतके ही आहारक शरीर होता है यह कहा है। इष्‍ट अर्थके निश्‍चय करनेके लिए सूत्रमें 'एवकार' पदको ग्रहण किया है। जिससे यह जाना जाय कि आहारक शरीर प्रमत्तसंयतके ही होता है अन्‍यके नहीं किन्‍तु यह न जाना जाय कि प्रमत्तसंयतके आहारक ही होता है। तात्‍पर्य यह है कि प्रमत्तसंयतके औदारिक आदि शरीरोंका निराकरण न हो, इसलिए प्रमत्तसंयत पदके साथ ही एवकार पद लगाया है। <br><br>
+इस प्रकार इन शरीरोंको धारण करनेवाले संसारी जीवोंके प्रत्‍येक गतिमें क्‍या तीनों लिंग होते हैं या लिंगका कोई स्‍वतन्‍त्र नियम है ? अब इस बातका ज्ञान करानेके लिए आगेका सूत्र कहते हैं –
+       </div>
+    </td></tr>
+    <tr><td><div id=teeka1 class=teeka><b><font color=darkgreen>राजवार्तिक :</font></b> <br><br>﻿दुरधिगमसूक्ष्मपदार्थ निर्णयलक्षणमाहारकम्।<br><br>
+= न तो आहारक शरीर किसीका व्याघात करता है, न किसीसे व्याघातित ही होता है, इसलिए अव्याघाती है। सूक्ष्म पदार्थके निर्णयके लिए आहारक शरीर होता है।<br><br>
+यदा आहारकशरीरं निर्वर्तयितुमारभते तदा प्रमतो भवतीति प्रमत्तसंयतस्येत्युच्यते।<br><br>
+= जिस समय मुनि आहारक शरीरकी रचना करता है, उस समय प्रमत्तसंयत हो होता है।<br><br>
+प्रमत्तसंयतस्यैवाहरकं नान्यस्य।<br><br>
+= प्रमत्तसंयतके ही आहारक शरीर होता है।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

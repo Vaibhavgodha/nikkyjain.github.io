@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>तत्त्वार्थसूत्र--आचार्य-उमास्वामी</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='02-07.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='02-09.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>सर्वार्थसिद्धि</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>राजवार्तिक</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-02-08><span class=incFontSz>+ </span><a href=#index>﻿जीव का लक्षण</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿उपयोगो लक्षणम् ॥८॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿उपयोग जीव का लक्षण है॥८॥</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;सर्वार्थसिद्धि</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;राजवार्तिक</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>सर्वार्थसिद्धि :</font></b> <br><br>﻿जो अन्‍तरंग और बहिरंग दोनों प्रकार के निमित्‍तों से होता है और चैतन्‍य का अन्‍वयी है अर्थात् चैतन्‍य को छोड़कर अन्‍यत्र नहीं रहता वह परिणाम उपयोग कहलाता है । यद्यपि आत्‍मा बन्‍ध की अपेक्षा एक है तो भी इससे वह स्‍वतन्‍त्र जाना जाता है । जिस प्रकार स्‍वर्ण और चाँदी बन्‍ध की अपेक्षा एक हैं तो भी वर्णादि के भेद से उनमें पार्थक्‍य रहता है उसी प्रकार प्रकृत में समझना चाहिए ।<br><br>
+	<br><br>
+अब उपयोग के भेद दिखलाने के लिए आगे का सूत्र कहते हैं -
+       </div>
+    </td></tr>
+    <tr><td><div id=teeka1 class=teeka><b><font color=darkgreen>राजवार्तिक :</font></b> <br><br>﻿अन्तर शब्द के अनेक अर्थ हैं। १. यथा `सान्तरं काष्ठं' में छिद्र अर्थ है। २. कहीं पर अन्य अर्थ के रूप में वर्तता है। ३. `हिमवत्सागरान्तरे' में अन्तर शब्द का अर्थ मध्य है। ४. `शुक्लरक्ताद्यन्तरस्थस्य स्फटिकस्य - सफेद और लाल रंग के समीप रखा हुआ स्फटिक। यहाँ अन्तरका समीप अर्थ है। ५. कहीं पर विशेषता अर्थ में भी प्रयुक्त होता है जैसे - घोड़ा, हाथी और लोहे में, लकड़ी, पत्थर और कपड़े में, स्त्री, पुरुष और जलमें अन्तर ही नहीं, महान् अन्तर है। यहाँ अन्तर शब्द वैशिष्ट्यवाचक है। ६. `ग्रामस्यान्तर कूपाः' में बाह्यार्थक अन्तर शब्द है अर्थात् गाँव के बाहर कुआँ है। ७. कहीं उपसंव्यान अर्थात् अन्तर्वस्त्र के अर्थ में अन्तर शब्द का प्रयोग होता है यथा `अन्तरे शाटकाः'। ८. कहीं विरह अर्थ में जैसे `अनभिप्रेतश्रोतृजनान्तरे मन्त्रयते' - अनिष्ट व्यक्तियों के विरहमें मण्त्रणा करता है।<br><br>
+किसी समर्थ द्रव्यकी किसी निमित्त से अमुक पर्याय का अभाव होनेपर निमित्तान्तर से जब तक वह पर्याय पुनः प्रकट नहीं होती, तब तक के कालको अन्तर कहते हैं।<br><br>
+वाचां गोचरताऽत्ययात्।<br><br>
+= शब्द के गोचर हो नहीं हो सकता।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

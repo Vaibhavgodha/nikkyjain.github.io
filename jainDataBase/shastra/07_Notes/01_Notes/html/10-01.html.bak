@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Notes</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='08-04.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='10-02.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>विशेष</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-10-01><span class=incFontSz>+ </span><a href=#index>
+﻿मार्गणा में भंग-विचय</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿मार्गणा में भंग-विचय</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;विशेष</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>विशेष :</font></b> <br><br>﻿<table class=myAltTable><br><br>
+  <tr><br><br>
+    <th colspan=4 class=tableTitle>नाना जीवों की अपेक्षा भंगविचय</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=3>मार्गणा</th><br><br>
+    <th>प्रति-समय अस्तित्व</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=3>गति</th><br><br>
+    <th class=head4 colspan=2>नारकी, तिर्यंच, देव</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head4 rowspan=2>मनुष्य</th><br><br>
+    <th class=head4>पर्याप्त</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head4>अपर्याप्त</th><br><br>
+    <td>कथंचित हैं कथंचित नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>इन्द्रिय</th><br><br>
+    <th class=head2 colspan=2>एकेंद्रिय सूक्ष्म-बादर, दो, तीन, चार, पंच इन्द्रिय पर्याप्त अपर्याप्त </th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>काय</th><br><br>
+    <th class=head4 colspan=2>पृथ्वी, जल, अग्नि, वायु, वनस्पति, निगोद बादर-सूक्ष्म, पर्याप्त अपर्याप्त</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=2>योग</th><br><br>
+    <th class=head2 colspan=2>पांच मनोयोगी, पांच वचनयोगी, काययोगी, औदारिक, औदारिक-मिश्र, वैक्रियिक और कार्मण काययोगी</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head2 colspan=2>वैक्रियिक-मिश्र, आहारक, आहारक-मिश्र</th><br><br>
+    <td>कथंचित हैं कथंचित नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>वेद</th><br><br>
+    <th class=head3 colspan=2>स्त्री, पुरुष, नपुंसक वेदी और अपगत वेदी</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>कषाय</th><br><br>
+    <th class=head4 colspan=2>क्रोध, मान, माया, लोभ और अकषायी</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>ज्ञान</th><br><br>
+    <th class=head2 colspan=2>मत्यज्ञानी, श्रुताज्ञानी, विभंगावधि, मतिज्ञानी, श्रुतज्ञानी, अवधिज्ञानी, मन:पर्यय और केवलज्ञानी</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=2>संयम</th><br><br>
+    <th class=head3 colspan=2>सामायिक, छेदोपस्थापना, परिहार-विशुद्धि, यथाख्यात, संयता-संयत और असंयत</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head2 colspan=2>सूक्ष्म-साम्परायिक</th><br><br>
+    <td>कथंचित हैं कथंचित नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>दर्शन</th><br><br>
+    <th class=head4 colspan=2>चक्षु, अचक्षु, अवधि और केवल</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>लेश्या</th><br><br>
+    <th class=head2 colspan=2>कृष्ण, नील, कापोत, पीत, पद्म, शुक्ल</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>भव्य</th><br><br>
+    <th class=head3 colspan=2>भव्य-सिद्धिक, अभव्य-सिद्धिक</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=2>सम्यक्त्व</th><br><br>
+    <th class=head4 colspan=2>सम्यग्दृष्टि, क्षायिक सम्यग्दृष्टि, वेदक सम्यग्दृष्टि, मिथ्यादृष्टि</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head4 colspan=2>औपशमिक सम्यग्दृष्टि, सासादन सम्यग्दृष्टि, सम्यग्मिथ्यादृष्टि</th><br><br>
+    <td>कथंचित हैं कथंचित नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>संज्ञी</th><br><br>
+    <th class=head2 colspan=2>संज्ञी, असंज्ञी</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>आहार</th><br><br>
+    <th class=head3 colspan=2>आहारक, अनाहारक</th><br><br>
+    <td>नियम से हैं</td><br><br>
+  </tr><br><br>
+</table><br><br>
+
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

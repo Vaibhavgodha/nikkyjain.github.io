@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>तत्त्वार्थसूत्र--आचार्य-उमास्वामी</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='06-24.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='06-26.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>सर्वार्थसिद्धि</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>राजवार्तिक</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-06-25><span class=incFontSz>+ </span><a href=#index>﻿नीचगोत्र के आस्रव</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿परात्म-निन्दा-प्रशंसे सदसद् गुणोच्छादनोद्भावने च नीचैर्गोत्रस्य ॥२५॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿परनिंदा, आत्मप्रशंसा, सद्गुणों का उच्छादन और असद्गुणों का उद्भावन ये नीचगोत्र के आस्रव हैं ॥२५॥</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;सर्वार्थसिद्धि</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;राजवार्तिक</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>सर्वार्थसिद्धि :</font></b> <br><br>﻿सच्चे या झूठे दोष को प्रकट करने की इच्छा <b><font color=blue>निन्दा</font></b> है । गुणों के प्रकट करने का भाव <b><font color=blue>प्रशंसा</font></b> है । पर और आत्मा शब्द के साथ इनका क्रम से सम्बन्ध होता है । यथा <b><font color=blue>परनिन्दा</font></b> और <b><font color=blue>आत्मप्रशंसा</font></b> है । रोकनेवाले कारणों के रहने पर प्रकट नहीं करने की वृत्ति होना <b><font color=blue>उच्छादन</font></b> है और रोकनेवाले कारणों का अभाव होने पर प्रकट करने की वृत्ति होना <b><font color=blue>उद्भावन</font></b> है । यहाँ भी क्रम से सम्बन्ध होता है । यथा - सद्गुणोच्छादन और असद्गुणोद्भावन । इन सब का नीच गोत्र के आस्रव के कारण जानना चाहिए ।<br><br>
+अब उच्च गोत्र के आस्रव के कारण क्या हैं यह बतलाने के लिए आगे का सूत्र कहते हैं -
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

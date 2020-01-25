@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>द्रव्यसंग्रह--नेमिचंद्र-सिद्धांतचक्रवर्ती</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='48.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='50.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>आर्यिका-ज्ञानमती</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-49><span class=incFontSz>+ </span><a href=#index>
+﻿ध्यान के योग्य मंत्र</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿पणतीस सोल छप्पण, चदुदुगमेगं च जबह झाएह<br>परमेट्ठिवाचयाणं, अण्णं च गुरूवएसेण ॥४९॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿परमेष्ठी के वाचक पैंतीस, सोलह, छह, पाँच, चार, दो और एक अक्षर वाले मंत्रों का तथा गुरु के उपदेश से अन्य भी मन्त्रों का जाप करो और ध्यान करो ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;ज्ञानमती</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>ज्ञानमती :</font></b> <br><br>﻿णमोकार मंत्र में पैंतीस अक्षर हैं, 'अरिहन्त सिद्ध आइरिय उवज्झाय साहू' यह सोलह अक्षर का मंत्र है, 'अरिहन्त सिद्ध' 'ऊँ नम: सिद्धेभ्य:' इनमें छह 'अ सि आ उ सा' में पाँच, अरिहन्त में चार, सिद्ध में दो और ऊँ या ह्रीं में एक अक्षर है। अथवा गुरु की आज्ञा से सिद्ध चक्र आदि मंत्रों का जाप्य या ध्यान करना चाहिए।<br><br>
+<b><font color=red>प्रश्न – परमेष्ठी किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जो परम पद में स्थित हैं वे परमेष्ठी कहलाते हैं।<br><br>
+<b><font color=red>प्रश्न – परमेष्ठीवाचक पैंतीस अक्षरों का मंत्र कौन-सा है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> णमो अरिहंताणं, णमो सिद्धाणं, णमो आइरियाणं, णमो उवज्झायाणं, णमो लोए सव्वसाहूणं। इसे णमोकार मंत्र, अनादिनिधन मंत्र, अपराजित आदि अनेक नामों से जाना जाता है।<br><br>
+<b><font color=red>प्रश्न – ध्यान की सिद्धि के लिये जाप्य की विधि क्या है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जाप्य तीन प्रकार से किया जाता है—<font color=DarkSlateGray>(१)</font> वाचनिक, <font color=DarkSlateGray>(२)</font> मानसिक, <font color=DarkSlateGray>(३)</font> उपांशु जाप्य। वाचनिक—वचन से बोलकर जप करना। मानसिक—मन-मन में उच्चारण करना। उपांशु—ओठों को हिलाते हुये मंद-मंद स्वर में जाप करना। इनमें मानसिक जाप उत्तम है। उसका फल भी उत्तम है। 'उपांशु' जाप मध्यम है तथा वाचनिक जाप जघन्य माना जाता है।<br><br>
+<b><font color=red>प्रश्न – सोलह अक्षर का मंत्र कौन सा है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> अरिहंत सिद्ध आइरिय उवज्झाय साहू। अथवा ॐ अर्हदाचार्योपाध्याय सर्व साधुभ्यो नम: आदि।<br><br>
+<b><font color=red>प्रश्न – छह अक्षरों का मंत्र कौन सा है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> अरिहंत सिद्ध। ॐ नम: सिद्धेभ्य:। अरहंत सिद्ध। नमोर्हत्सिद्धेभ्य:। इत्यादि छह अक्षर के मंत्र हैं।<br><br>
+<b><font color=red>प्रश्न – पाँच अक्षरों का मंत्र कौन सा है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> असि आ उसा। अर्हद्भ्यो नम: इत्यादि पाँच अक्षर से निष्पन्न मंत्र हैं।<br><br>
+<b><font color=red>प्रश्न – चार अक्षर का मंत्र कौन सा है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> अरिहंत यह चार अक्षरों से निष्पन्न मंत्र हैं।<br><br>
+<b><font color=red>प्रश्न – दो अक्षर का मंत्र कौन सा है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> सिद्ध दो अक्षर का मंत्र है।<br><br>
+<b><font color=red>प्रश्न – एक अक्षर का मंत्र कौन सा है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> ॐ, ह्रीं इत्यादि एकाक्षरी मंत्र हैं।<br><br>
+<b><font color=red>प्रश्न – ॐ अक्षर की निष्पत्ति कैसे हुई है, यह किसका वाचक है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> यह 'ॐ' अक्षर अरिहंत आदि के प्रथम अक्षर से निष्पन्न है अत: यह पंचपरमेष्ठी वाचक है। सो ही कहा है- अरिहंता असरीरा, आइरिया तह उवज्झया मुणिणो। पढमक्खरणिप्पणो ओंकारो पञ्च परमेट्ठी॥ अरिहंत का आदि अक्षर 'अ', अशरीरी <font color=DarkSlateGray>(सिद्ध)</font> का प्रथम अक्षर 'अ', आचार्य का प्रथम अक्षर 'आ', उपाध्याय का प्रथम अक्षर 'उ' और साधु अर्थात् मुनि का प्रथम अक्षर 'म्' इस प्रकार पंच परमेष्ठियों के प्रथम अक्षर <font color=DarkSlateGray>(अ±अ±आ±उ±म्)</font> इस प्रकार संधि करने पर 'ॐ' मंत्र की निष्पत्ति होती है। अर्थात् अ±अ± की संधि दीर्घ आ±आ·आ। आ±उ±-ओ। म्-का अनुस्वार लगता है। अत: यह 'ॐ' पंचपरमेष्ठी वाचक है। पदस्थ धर्मध्यान में मन को स्थिर करने के लिए परमेष्ठी वाचक बीजाक्षरों का और मंत्राक्षरों का ध्यान किया जाता है।<br><br>
+<b><font color=red>प्रश्न – इन मंत्राक्षरों के सिवाय अन्य भी कोई मंत्र है जिसका ध्यान कर सकते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> सिद्धचक्र, ऋषिमंडल यंत्र, कलिकुण्ड आदि अनेक ध्यान करने योग्य मंत्र हैं, जिनका गुरुओं के उपदेश से जानकर ध्यान करना चाहिए।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

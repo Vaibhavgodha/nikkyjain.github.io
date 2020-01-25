@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>तत्त्वार्थसूत्र--आचार्य-उमास्वामी</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='07-28.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='07-30.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>सर्वार्थसिद्धि</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>राजवार्तिक</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-07-29><span class=incFontSz>+ </span><a href=#index>﻿परिग्रहपरिमाण अणुव्रत के अतिचार</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿क्षेत्रवास्तु-हिरण्यसुवर्ण-धन-धान्य-दासीदास-कुप्य-प्रमाणातिक्रमा: ॥२९॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿क्षेत्र और वास्तु के प्रमाण का अतिक्रम, हिरण्य और सुवर्ण के प्रमाण का अतिक्रम, धन और धान्य के प्रमाण का अतिक्रम,दासी और दास के प्रमाण का अतिक्रम तथा कुप्य के प्रमाण का अतिक्रम ये परिग्रहपरिमाण अणुव्रत के पाँच अतिचार हैं ||२९||</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;सर्वार्थसिद्धि</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;राजवार्तिक</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>सर्वार्थसिद्धि :</font></b> <br><br>﻿धान्‍य पैदा करनेका आधारभूत स्‍थान <b><font color=blue>क्षेत्र</font></b> है। मकान <b><font color=blue>वास्‍तु</font></b> है। जिससे रुप्‍य आदि का व्‍यवहार होता है व‍ह <b><font color=blue>हिरण्‍य</font></b> है। <b><font color=blue>सुवर्ण</font></b> का अर्थ स्‍पष्‍ट है। <b><font color=blue>धन</font></b> से गाय आदि लिये जाते हैं । <b><font color=blue>धान्‍य</font></b> से व्रीहि आदि लिये जाते हैं। नौकर स्‍त्री पुरुष मिलकर <b><font color=blue>दासी–दास</font></b> कहलाते है । रेशम, कपास, और कोसा के वस्‍त्र त‍था चन्‍दन आदि <b><font color=blue>कुप्‍य</font></b> कहलाते हैं । <br><br>
+क्षेत्र-वास्‍तु, हिरण्‍य–सुवर्ण, धन-धान्‍य, दासी-दास और कुप्‍य इनके विषय में मेरा इतना ही परिग्रह है इससे अधिक नहीं ऐसा प्रमाण निश्चित करके लोभवश क्षेत्रवास्‍तु आदि के प्रमाण को बढा लेना प्रमाणातिक्रम है। इस प्रकार ये परिग्रहपरिमाण अणुव्रत के पॉंच अतिचार हैं। 
+       </div>
+    </td></tr>
+    <tr><td><div id=teeka1 class=teeka><b><font color=darkgreen>राजवार्तिक :</font></b> <br><br>﻿क्लेशतिर्यग्वणिज्यावधकारम्भादिषु पापसंयुतं वचनं पापोपदेशः। तद्यथा अस्मिन् देशे दासा दास्यश्च सुलभास्तानमुं देशं नीत्वा विक्रये कृते महानर्थ लाभो भवतीति क्लेशवणिज्या। गोमहिष्यादीन् अमुत्र गृहीत्वा अन्यत्र देशे व्यवहारे कृते भूरिवित्तलाभ इति तिर्यग्वणिज्या। वागुरिकसौकरिकशाकुनिकादिभ्यो मृगवराहशकुन्तप्रभृतयोऽमुष्मिन् देशे सन्तीति वचनं वधकोपदेशः। आरम्भकेभ्यः कृषीवलादिभ्यः क्षित्युदकज्वलनपवनवनस्पत्यारम्भोऽनेनोपायेन कर्तव्यः इत्याख्यानमारम्भकोपदेशः। इत्येवं प्रकारं पापसंयुतं वचनं पापोपदेशः। <br><br>
+= क्लेशवणिज्या, तिर्यग्वणिज्या, वधक तथा आरम्भादिकमें पाप संयुक्त वचन पापोपदेश कहलाता है। वह इस प्रकार कि-१. इस देशमें दास-दासी बहुत सुलभ हैं। उनको अमुक देशमें ले जाकर बेचने से महान् अर्थ लाभ होता है। इसे क्लेशवणिज्या कहते हैं। २. गाय, भैंस आदि पशु अमुक स्थानसे ले जाकर अन्यत्र देशमें व्यवहार करने से महान् अर्थ लाभ होता है, इसे तिर्यग्वणिज्या कहते हैं। ३. वधक व शिकारी लोगों को यह बताना कि हिरण, सूअर व पक्षी आदि अमुक देशमें अधिक होते हैं, ऐसा वचन वधकोपदेश है। ४. खेती आदि करनेवालों से यह कहना कि पृथ्वी का अथवा जल, अग्नि, पवन, वनस्पति आदि का आरम्भ इस उपाय से करना चाहिए। ऐसा कथन आरम्भकोपदेश है। इस प्रकार के पाप संयुक्त वचन पापोपदेश नाम का अनर्थदण्ड है।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

@@ -61,10 +61,11 @@ $( document ).ready(function() {
     $optgrp=$('<optgroup label="﻿स्थिति बंध ">')
        $optgrp.append("<option value='06-01.html'><b>06-01</b> - ﻿मार्गणा में जघन्य और उत्कृष्ट स्तिथि-बंध</option>");
        $optgrp.append("<option value='06-02.html'><b>06-02</b> - ﻿जघन्य-उत्कृष्ट स्थिति बंध का काल और स्वामी</option>");
-       $optgrp.append("<option value='06-03.html'><b>06-03</b> - ﻿कर्मों में जघन्य आदि स्थिति बंध के सादि-ध्रुव आदि प्रकार</option>");
+       $optgrp.append("<option value='06-03.html'><b>06-03</b> - ﻿मूल-प्रकृतियों में अजघन्य आदि स्थिति के प्रकार</option>");
        $optgrp.append("<option value='06-04.html'><b>06-04</b> - ﻿स्तिथि-बंधस्थान प्ररूपणा</option>");
        $optgrp.append("<option value='06-05.html'><b>06-05</b> - ﻿संक्लेश-विशुद्धि-स्थान प्ररूपणा</option>");
        $optgrp.append("<option value='06-06.html'><b>06-06</b> - ﻿स्थिति बंध अल्प-बहुत्व</option>");
+       $optgrp.append("<option value='06-07.html'><b>06-07</b> - ﻿उत्तर-प्रकृतियों में अजघन्य आदि स्थिति के प्रकार</option>");
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿अनुभाग बंध ">')
        $optgrp.append("<option value='07-01.html'><b>07-01</b> - ﻿अनुभाग बन्ध के स्वामी</option>");
@@ -87,6 +88,7 @@ $( document ).ready(function() {
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿क्षेत्रानुगम">')
        $optgrp.append("<option value='12-01.html'><b>12-01</b> - ﻿मार्गणा में क्षेत्रानुगम</option>");
+       $optgrp.append("<option value='12-02.html'><b>12-02</b> - ﻿जीवों का वर्तमान निवास-स्थान / अवस्था</option>");
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿स्पर्शानुगम">')
        $optgrp.append("<option value='13-01.html'><b>13-01</b> - ﻿गुणस्थानों में स्पर्श</option>");
@@ -106,6 +108,7 @@ $( document ).ready(function() {
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿अल्प-बहुत्व">')
        $optgrp.append("<option value='17-01.html'><b>17-01</b> - ﻿जीवों में अल्प-बहुत्व</option>");
+       $optgrp.append("<option value='17-02.html'><b>17-02</b> - ﻿अद्धापरिमाण में अल्प-बहुत्व</option>");
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿मूल संघ पट्टावली">')
        $optgrp.append("<option value='28-01.html'><b>28-01</b> - ﻿मूल संघ पट्टावली</option>");

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>द्रव्यसंग्रह--नेमिचंद्र-सिद्धांतचक्रवर्ती</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='41.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='43.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>आर्यिका-ज्ञानमती</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-42><span class=incFontSz>+ </span><a href=#index>
+﻿सम्यग्ज्ञान का स्वरूप</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿संसयविमोह विब्भम, विवज्जियं अप्पपरसरूवस्स<br>गहणं सम्मं णाणं; सायार-मणेयभेयं च ॥४२॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿आत्मा के स्वरूप का और पर के स्वरूप का संशय, विपरीत और अनध्यवसाय रहित ग्रहण करना-जैसे का तैसा जानना सो सम्यग्ज्ञान है जोकि साकार-सविकल्प और अनेक भेद सहित है ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;ज्ञानमती</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>ज्ञानमती :</font></b> <br><br>﻿पदार्थ के आकार का 'यह घट है' इत्यादि विकल्प रूप जानना यह ज्ञान का लक्षण है।<br><br>
+<b><font color=red>प्रश्न – सम्यक्ज्ञान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> संशय, विपर्यय और अनध्यवसाय रहित व आकार सहित अपने और पर के स्वरूप का जानना सम्यक्ज्ञान कहलाता है।<br><br>
+<b><font color=red>प्रश्न – सम्यक्ज्ञान के कितने भेद हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> पाँच भेद हैं—<font color=DarkSlateGray>(१)</font> मतिज्ञान, <font color=DarkSlateGray>(२)</font> श्रुतज्ञान, <font color=DarkSlateGray>(३)</font> अवधिज्ञान, <font color=DarkSlateGray>(४)</font> मन:-पर्ययज्ञान और <font color=DarkSlateGray>(५)</font> केवलज्ञान।<br><br>
+<b><font color=red>प्रश्न – श्रुतज्ञान के दो भेद कौन से हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> अंगबाह्य और अंगप्रविष्ट के भेद से श्रुतज्ञान दो प्रकार का है।<br><br>
+<b><font color=red>प्रश्न – अंगबाह्य श्रुतज्ञान किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जो आरातीय <font color=DarkSlateGray>(कुन्दकुन्दादि)</font> आचार्यो के द्वारा रचित है, वह अंग- बाह्य कहलाता है।<br><br>
+<b><font color=red>प्रश्न – अंगबाह्य के कितने भेद हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> अंगबाह्य को प्रकीर्णक कहते हैं, उसके चौदह भेद हैं। वह चौदह भेद निम्न प्रकार हैं-सामायिक, चतुर्विंशति संस्तवन, वंदना, प्रतिक्रमण, वैनयिक, कृतिकर्म, दशवैकालिक, अनुत्तराध्ययन, कल्पव्यवहार, कल्पाकल्प, महाकल्प, पुण्डरीक, महापुण्डरीक और अशीतिक।<br><br>
+<b><font color=red>प्रश्न – अंग प्रविष्ट किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जो गणधर के द्वारा तथा पूर्वधर के द्वारा रचित हैं, वह अंग प्रविष्ट कहलाते हैं।<br><br>
+<b><font color=red>प्रश्न – अंग प्रविष्ट श्रुतज्ञान के कितने भेद हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> अंग प्रविष्ट श्रुतज्ञान के बारह भेद हैं।<br><br>
+<b><font color=red>प्रश्न – अंग प्रविष्ट के बारह भेद कौन-कौन से हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> आचारांग, सूत्रकृतांग, स्थानांग, समवायांग, व्याख्याप्रज्ञप्त्यंग, ज्ञातृकथांग, उपासकाध्ययनांग, अन्तकृद्दशांग, अनुत्तरोपपादिकदशांग, प्रश्न-व्याकरणांग, विपाकसूत्रांग और दृष्टिवादांग ये अंगप्रविष्ट के बारह भेद हैं।<br><br>
+<b><font color=red>प्रश्न – चौदह पूर्व के नाम कौन-कौन से हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> उत्पादपूर्व, अग्रणीयपूर्व, वीर्यानुप्रवादपूर्व, अस्तिनास्तिप्रवादपूर्व, ज्ञान प्रवादपूर्व, सत्यप्रवादपूर्व, आत्माप्रवाद, कर्मप्रवाद, प्रत्याख्यानप्रवादपूर्व, विद्यानुप्रवादपूर्व, कल्याणवादपूर्व, प्राणानुप्रवादपूर्व, क्रियाविशालपूर्व, लोकबिन्दु- सारपूर्व ये चौदह पूर्व के नाम हैं।<br><br>
+<b><font color=red>प्रश्न – अवधिज्ञान के कितने भेद हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> सर्वावधि, परमावधि, देशावधि आदि अवधिज्ञान के भी अनेक भेद हैं।<br><br>
+<b><font color=red>प्रश्न – मन:पर्यय ज्ञान के कितने भेद हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> ऋजुमति और विपुलमति के भेद से मन:पर्यय ज्ञान के दो भेद हैं।<br><br>
+<b><font color=red>प्रश्न – ज्ञान सम्यव् किससे बनता है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> सम्यग्दर्शन से ज्ञान में समीचीनता आती है क्योंकि सम्यग्दर्शन सहित ज्ञान सम्यग्ज्ञान कहलाता है। ज्ञानावरण कर्म के क्षयोपशम से या क्षय से ज्ञान की प्राप्ति होती है और ज्ञान में समीचीनता और समीचीनता सम्यग्दर्शन और मिथ्यादर्शन से आती है।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

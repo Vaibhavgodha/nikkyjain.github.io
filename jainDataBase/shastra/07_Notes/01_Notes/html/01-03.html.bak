@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Notes</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='01-02.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='02-01.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>विशेष</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-01-03><span class=incFontSz>+ </span><a href=#index>
+﻿कर्मों में विभाजन</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿कर्मों में विभाजन</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;विशेष</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>विशेष :</font></b> <br><br>﻿<table class=myAltTable><br><br>
+  <tr><br><br>
+    <th class=tableTitle colspan=4>कर्मों में विभाजन</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>सर्वघाति</th><br><br>
+    <th colspan=2>देशघाति</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <td colspan=2>20 <font color=DarkSlateGray>(केवलज्ञानावरण, केवलदर्शनावरण, पाँच निद्रा, अनंतानुबंधी-4, अप्रत्याख्यानावरण-4, प्रत्याख्यानावरण-4, मिथ्यात्व)</font> + सम्यग्मिथ्यात्व*</td><br><br>
+    <td colspan=2>26 <font color=DarkSlateGray>(ज्ञानावरण-4 <b>[<font color=maroon>मति-श्रुत-अवधि-मन:पर्यय</font>]</b>, दर्शनावरण-3 <b>[<font color=maroon>चक्षु-अचक्षु-अवधि</font>]</b>, सम्यक्त्वप्रकृति, संज्वलन-4, नोकषाय-9, अंतराय-5)</font></td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <td class=tableNotes colspan=4>घातिया कर्मों में ही सर्व-घाति और देश-घाति के विकल्प हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>प्रशस्त</th><br><br>
+    <th colspan=2>अप्रशस्त</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <td colspan=2>42 <font color=DarkSlateGray>(सातावेदनीय, 3 आयु <b>[<font color=maroon>तिर्यंच-मनुष्य-देव</font>]</b>, उच्चगोत्र, मनुष्य-द्विक, देव-द्विक, पंचेन्द्रिय जाति, 5-शरीर, 3-अंगोपांग, 4<span style=font-style:italic>-</span><span style=font-style:normal>वर्ण-चतुष्क</span>, समचतुरस्र-संस्थान, वज्रऋषभनाराच-संहनन, अगुरुलघु, प्रशस्त विहायोगति, परघात, आतप, उद्योत, सूक्ष्म, पर्याप्तक, प्रत्येक, स्थिर, शुभ, सुभग, सुस्वर,आदेय, यशस्कीर्ति, त्रस, बादर, निर्माण, तीर्थंकर)</font></td><br><br>
+    <td colspan=2>82 <font color=DarkSlateGray>(शेष बंध-योग्य प्रकृतियाँ)</font> </td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <td class=tableNotes colspan=4>घातिया कर्मों की सभी प्रकृतियाँ अप्रशस्त हैं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>जीव-विपाकी</th><br><br>
+    <th colspan=2>पुद्गल-विपाकी</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <td colspan=2>78 <font color=DarkSlateGray>(47-घातिया कर्म, 2-वेदनीय, 2-गोत्र, 4 गति, 5 जाति, बादर-सूक्ष्म, पर्याप्त-अपर्याप्त, सुस्वर-दु:स्वर, आदेय-अनादेय, यशकीर्ति-अयशकीर्ति, त्रस-स्थावर, 2-विहायोगति, सुभग-दुर्भग, उच्छवास, तीर्थंकर)</font></td><br><br>
+    <td colspan=2>36 <font color=DarkSlateGray>(5 शरीर, 3 अंगोपांग, 6 संस्थान, 6 संहनन, 4 वर्ण-चतुष्क, निर्माण, आताप, उद्योत, स्थिर-अस्थिर, शुभ-अशुभ, प्रत्येक-साधारण, उच्छ्वास, अगुरुलघु, निर्माण)</font></td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>ध्रुव</th><br><br>
+    <th colspan=2>अध्रुव</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <td colspan=2>47 <font color=DarkSlateGray>(5-ज्ञानावरण, 9-दर्शनावरण, 5-अंतराय, मिथ्यात्व, 16 कषाय, भाय-जुगुप्सा, तेजस-कार्माण, अगुरुलघु, उपघात, निर्माण, वर्ण-चतुष्क)</font></td><br><br>
+    <td colspan=2>73 <font color=DarkSlateGray>(2-वेदनीय, 7-नोकषाय, 4-आयु, 4-गति, 5-जाति, औदारिक-द्विक, वैक्रियिक-द्विक, आहारक-द्विक, 6-संहनन, 6-संस्थान, 4-आनुपूर्वी, परघात, आतप, उद्योत, उच्छ्वास, 2-विहायोगति, त्रस-स्थावर, बादर-सूक्ष्म, पर्याप्त-अपर्याप्त, प्रत्येक-साधारण, स्थिर-अस्थिर, सुभग-दुर्भग, शुभ-अशुभ, सुस्वर-दुस्वर, आदेय-अनादेय, यश्स्कीर्ति-अयश्स्कीर्ति, तीर्थंकर, 2-गोत्र)</font></td><br><br>
+  </tr><br><br>
+</table>
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

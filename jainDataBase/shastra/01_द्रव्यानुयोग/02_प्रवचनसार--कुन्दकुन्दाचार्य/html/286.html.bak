@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>प्रवचनसार--कुन्दकुन्दाचार्य</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='285.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='287.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>अमृतचंद्राचार्य</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>जयसेनाचार्य</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-286><span class=incFontSz>+ </span><a href=#index>
+﻿अब, शुभोपयोगी श्रमणों का लक्षण प्रसिद्ध करते है-</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿अरहंतादिसु भत्ती वच्छलदा पवयणाभिजुत्तेसु (२४६)<br>विज्जदि जदि सामण्णे सा सुहजुत्त भवे चरिया ॥२८६॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[श्रामण्ये]</font></b> श्रामण्य में <b><font color=darkRed>[यदि]</font></b> यदि <b><font color=darkRed>[अर्हदादिषु भक्ति:]</font></b> अर्हन्तादि के प्रति भक्ति तथा <b><font color=darkRed>[प्रवचनाभियुक्तेषु वत्सलता]</font></b> प्रवचनरत जीवों के प्रति वात्सल्य <b><font color=darkRed>[विद्यते]</font></b> पाया जाता है तो <b><font color=darkRed>[सा]</font></b> वह <b><font color=darkRed>[शुभयुक्ता चर्या]</font></b> शुभयुक्त चर्या <span class=comment>(शुभोपयोगी चारित्र)</span> <b><font color=darkRed>[भवेत्]</font></b> है ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;अमृतचंद्राचार्य</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;जयसेनाचार्य</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>अमृतचंद्राचार्य :</font></b> <br><br>﻿सकल संग के संन्यासस्वरूप श्रामण्य के होने पर भी जो कषायांश <font color=DarkSlateGray>(अल्पकषाय)</font> के आवेश के वश केवल शुद्धात्मपरिणतिरूप से रहने में स्वयं अशक्त है ऐसा श्रमण, पर ऐसे जो <font color=DarkSlateGray>(१)</font> केवल शुद्धात्मपरिणतरूप से रहने वाले अर्हन्तादिक तथा <font color=DarkSlateGray>(२)</font> केवल शुद्धात्मपरिणतरूप से रहने का प्रतिपादन करने वाले प्रवचनरत जीवों के प्रति <font color=DarkSlateGray>(१)</font> भक्ति तथा <font color=DarkSlateGray>(२)</font> वात्सल्य से चंचल है उस <font color=DarkSlateGray>(श्रमण)</font> के, मात्र उतने राग से प्रवर्तमान परद्रव्यप्रवृत्ति के साथ शुद्धात्मपरिणतिमिलित होने के कारण, शुभोपयोगी चारित्र है ।<br><br>
+     इससे <font color=DarkSlateGray>(यह कहा गया है कि)</font> शुद्धात्मा का अनुरागयुक्त चारित्र शुभोपयोगी श्रमणों का लक्षण है ।<br><br>
+
+       </div>
+    </td></tr>
+    <tr><td><div id=teeka1 class=teeka><b><font color=darkgreen>जयसेनाचार्य :</font></b> <br><br>﻿<b>[<font color=maroon>सा सुहजुत्ता भवे चरिया</font>]</b> वह चर्या शुभयुक्त हो । किसके वह चर्या शुभ युक्त हो ?  मुनि के वह चर्या शुभ युक्त हो । कैसे मुनिराज के, वह ऐसी हो? सम्पूर्ण रागादि विकल्प रहित परम समाधि <font color=DarkSlateGray>(स्वरूप-स्थिरता)</font> में ठहरने के लिये असमर्थ मुनि के, वह ऐसी हो । यदि क्या है तो ऐसी शुभयुक्त चर्या हो ? <b>[<font color=maroon>विज्जदि जदि</font>]</b> यदि पाई जाती है तो वह हो? कहाँ पायी जाती है, तो वह हो? <b>[<font color=maroon>सामण्णे</font>]</b> श्रामण्य-चारित्र में यदि पाई जाती है, तो वह हो । उसमें क्या पायी जाती है? <b>[<font color=maroon>अरहंतादिसु भत्ती</font>]</b> अनन्त ज्ञान आदि गुणों से सहित अरहन्त-सिद्धों में, गुणों के प्रति अनुराग सहित भक्ति पायी जाती है । <b>[<font color=maroon>वच्छलदा</font>]</b> वत्सल का भाव वत्सलता-वात्सल्य है, विनय अनुकूल वृत्ति-प्रवृत्ति रूप वत्सलता पायी जाती है । किन विषयों में वत्सलता पायी जाती है? <b>[<font color=maroon>पवयणाभिजुत्तेसु</font>]</b> प्रवचन में अभियुक्तों के प्रति । यहाँ प्रवचन शब्द से आगम अथवा संघ कहा गया है, उस प्रवचन से अभियुक्त, प्रवचनाभियुक्त है <font color=DarkSlateGray>(इसप्रकार तृतीया तत्पुरुष समास किया)</font> अर्थात् आगम में लीन- स्वाध्याय-रत या संघ में स्थित आचार्य, उपाध्याय, साधुओं के प्रति उसमें वत्सलता पायी जाती है । <br><br>
+इससे यह कहा गया है- स्वयं शुद्धोपयोग लक्षण परम सामयिक में ठहरने के लिए असमर्थ मुनि के, शुद्धोपयोग के फलस्वरूप केवलज्ञान परिणत अन्य जीवों के प्रति और उसीप्रकार शुद्धोपयोग के आराधक जीवों के प्रति, जो वह भक्ति है, वह शुभोपयोगी श्रमणों का लक्षण है ॥२८६॥<br><br>
+
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

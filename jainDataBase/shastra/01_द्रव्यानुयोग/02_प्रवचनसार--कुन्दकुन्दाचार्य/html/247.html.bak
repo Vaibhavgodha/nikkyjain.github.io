@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>प्रवचनसार--कुन्दकुन्दाचार्य</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='246.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='248.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>अमृतचंद्राचार्य</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>जयसेनाचार्य</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-247><span class=incFontSz>+ </span><a href=#index>
+﻿अब उनके मोहादि की बहुलता को दिखाते हैं -</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿<br>संति धुवं पमदाणं मोहपदोसा भयं दुगुंछा य<br>चित्ते चित्ता माया तम्हा तासिं ण णिव्वाणं ॥२४७॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿स्त्रियों के मन में मोह, प्रद्वेष, भय, ग्लानि और विचित्र प्रकार की माया निश्चित होती है; इसलिए उन्हें मोक्ष नहीं है ॥२४७॥ </div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;अमृतचंद्राचार्य</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;जयसेनाचार्य</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>जयसेनाचार्य :</font></b> <br><br>﻿<b>[<font color=maroon>संति धुवं पमदाणं</font>]</b> प्रमदाओं-स्त्रियों के ध्रुव-निश्चित हैं । स्त्रियों के वे क्या निश्चित हैं ? <b>[<font color=maroon>मोह पदोसा भयं दुगुंछा य</font>]</b> मोह आदि से रहित अनन्त सुख आदि गुण स्वरूप मोक्ष के कारणों को रोकनेवाले मोह, प्रद्वेष, भय दुगुंछा-ग्लानिरूप परिणाम स्त्रियों के निश्चित हैं । <b>[<font color=maroon>चित्ते चित्ता माया</font>]</b> कुटिलता-वक्रता आदि से रहित परमज्ञान-केवलज्ञान आदि रूप परिणति से विपरीत चित्त में- मन में चित्र- अनेक प्रकार की माया होती है, <b>[<font color=maroon>तम्हा तासिं ण णिव्वाणं</font>]</b> इसलिये उनके, बाधाओं से रहित सुख आदि अनन्त गुणों का आधारभूत मोक्ष नहीं है- ऐसा अभिप्राय है ॥२४७॥<br><br>
+
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

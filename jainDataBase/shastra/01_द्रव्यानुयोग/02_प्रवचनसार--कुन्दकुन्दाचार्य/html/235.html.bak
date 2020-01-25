@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>प्रवचनसार--कुन्दकुन्दाचार्य</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='234.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='236.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>अमृतचंद्राचार्य</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>जयसेनाचार्य</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-235><span class=incFontSz>+ </span><a href=#index>
+﻿अब बाह्य में जीव का घात होने पर बन्ध होता है, अथवा नहीं होता है; परन्तु परिग्रह होने पर नियम से बन्ध होता है, ऐसा प्रतिपादन करते हैं -</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿हवदि व ण हवदि बंधो मदम्हि जीवेऽध कायचेट्ठम्हि (२१९)<br>बंधो धुवमुवधीदो इदि समणा छड्डिया सव्वं ॥२३५॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[अथ]</font></b> अब <span class=comment>(उपधि के संबंध में ऐसा है कि)</span>, <b><font color=darkRed>[कायचेष्टायाम्]</font></b> कायचेष्टापूर्वक <b><font color=darkRed>[जीवे मृते]</font></b> जीव के मरने पर <b><font color=darkRed>[बन्ध:]</font></b> बंध <b><font color=darkRed>[भवति]</font></b> होता है <b><font color=darkRed>[वा]</font></b> अथवा <b><font color=darkRed>[न भवति]</font></b> नहीं होता; <span class=comment>(किन्तु)</span> <b><font color=darkRed>[उपधे:]</font></b> उपधि से-परिग्रह से <b><font color=darkRed>[ध्रुवम् बंध:]</font></b> निश्‍चय ही बंध होता है; <b><font color=darkRed>[इति]</font></b> इसलिये <b><font color=darkRed>[श्रमणा:]</font></b> श्रमणों <span class=comment>(अर्हन्तदेवों)</span> ने <b><font color=darkRed>[सर्वं]</font></b> सर्व परिग्रह को <b><font color=darkRed>[त्यक्तवन्तः]</font></b> छोड़ा है । </div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;अमृतचंद्राचार्य</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;जयसेनाचार्य</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>अमृतचंद्राचार्य :</font></b> <br><br>﻿जैसे काय-व्यापार-पूर्वक पर-प्राण-व्यपरोप को अशुद्धोपयोग के सद्‌भाव और असद्‌भाव के द्वारा अनैकांतिक बंधरूप होने से उसे <font color=DarkSlateGray>(काय-व्यापार-पूर्वक पर-प्राण-व्यपरोप को)</font> छेदपना अनैकांतिक माना गया है, वैसा उपधि-परिग्रह का नहीं है । परिग्रह सर्वथा अशुद्धोपयोग के बिना नहीं होता, ऐसा जो परिग्रह का सर्वथा अशुद्धोपयोग के साथ अविनाभावित्व है उससे प्रसिद्ध होने वाले ऐकान्तिक अशुद्धोपयोग के सद्‌भाव के कारण परिग्रह तो ऐकान्तिक बंधरूप है, इसलिये उसे <font color=DarkSlateGray>(परिग्रह को)</font> छेदपना ऐकान्तिक ही है । इसीलिये भगवन्त अर्हन्तों ने परम श्रमणों ने स्वयं ही पहले ही सर्व परिग्रह को छोड़ा है; और इसीलिये दूसरों को भी, अन्तरंग छेद की भांति प्रथम ही सर्व परिग्रह छोड़ने योग्य है, क्योंकि वह <font color=DarkSlateGray>(परिग्रह)</font> अन्तरंग छेद के बिना नहीं होता ॥२१९॥<br><br>
+<font color=DarkSlateGray>(अब, 'कहने योग्य सब कहा गया है' इत्यादि कथन श्‍लोक द्वारा किया जाता है ।)</font><br><br>
+वक्तव्यमेव किल यत्तदशेषमुक्तमेतावतैव यदि चेतयतेऽत्र कोऽपि ।<br><br>
+व्यामोहजालमतिदुस्तरमेव नूनं निश्चेतनस्य वचसामतिविस्तरेऽपि ॥१४॥<br><br>
+जो कहने के योग्य है कहा गया वह सब्ब ।<br><br>
+इतने से ही चेत लो अति से क्या है अब्ब ॥१४॥<br><br>
+<b><font color=blue>अर्थ:</font></b> जो कहने योग्य ही था वह अशेषरूप से कहा गया है, इतने मात्र से ही यदि यहाँ कोई चेत जाये--समझ ले तो, <font color=DarkSlateGray>(अन्यथा)</font> वाणी का अतिविस्तार किया जाये तथापि निश्‍चेतन <font color=DarkSlateGray>(जड़वत्—नासमझ)</font> को व्यामोह का जाल वास्तव में अति दुस्तर है ।<br><br>
+अब, इस उपधि <font color=DarkSlateGray>(परिग्रह)</font> का निषेध वह अंतरंग छेद का ही निषेध है, ऐसा उपदेश करते हैं<br><br>
+
+       </div>
+    </td></tr>
+    <tr><td><div id=teeka1 class=teeka><b><font color=darkgreen>जयसेनाचार्य :</font></b> <br><br>﻿<b>[<font color=maroon>हवदि वा ण हवदि बंधे</font>]</b> बन्ध होता है अथवा नहीं होता है । क्या होने पर बन्ध होता है अथवा नहीं होता है? <b>[<font color=maroon>मदम्हि जीवे</font>]</b> दूसरे जीव के मर जाने पर, बन्ध होता है अथवा नहीं होता है । <b>[<font color=maroon>अध</font>]</b> अहो! कैसे मर जाने पर बन्ध होता है अथवा नहीं होता है? <b>[<font color=maroon>कायचेट्ठम्हि</font>]</b> शरीर की चेष्टा से जीव मर जाने पर बन्ध होता है अथवा नहीं होता है । तो बन्ध कैसे होता है? <b>[<font color=maroon>बन्धो धुवमुवधीदो</font>]</b> ध्रुव-निश्चित बन्ध होता है । किससे निश्चित ही बन्ध होता है? उपधि अर्थात् परिग्रह से बन्ध निश्चित ही होता है । <b>[<font color=maroon>इदि</font>]</b> इस कारण- <b>[<font color=maroon>समणा छड्डिया सव्वं</font>]</b> श्रमण अर्थात महाश्रमण सर्वज्ञ भगवान ने, पहले दीक्षा के समय शुद्ध-बुद्ध एक स्वभावी अपने आत्मा को सब ओर से ग्रहण कर, शेष सम्पूर्ण अन्तरंग और बहिरंग परिग्रह, छर्दि <font color=DarkSlateGray>(वमन)</font> के समान छोड़ा है । ऐसा जानकर, शेष मुनिराजों को भी अपने परमात्मा को परिग्रहण कर-स्वीकार कद शेष सभी परिग्रह, मन-वचन-काय और कृत-कारित-अनुमोदना रूप से छोड़ देना चाहिये । <br><br>
+ <br><br>
+यहाँ यह कहा गया है कि रागादि परिणामरूप निश्चय हिंसा से चैतन्यरूप निश्चय प्राणों का घात होने पर, नियम से बन्ध होता है । दूसरे जीव का घात होने पर होता भी है, नहीं भी होता, नियम नहीं है; परन्तु परद्रव्य में ममत्वरूप मूर्च्छा परिग्रह से तो नियम से बंध होता ही है । <br><br>
+ <br><br>
+इसप्रकार भावहिंसा के व्याख्यान की मुख्यता से पाँचवे स्थल में छह गाथायें पूर्ण हुई । इसप्रकार पहले कहे गये क्रम से '<b>[<font color=maroon>एवं पणमिय सिद्धे</font>]</b>' इत्यादि २१ गाथाओं द्वारा पाँचवे स्थलरूप से '<b>[<font color=maroon>उत्सर्ग चारित्र व्याख्यान</font>]</b>' नामक पहला अन्तराधिकार समाप्त हुआ ।<br><br>
+अब इसके बाद चारित्र के देश-काल की अपेक्षा अपह्रत संयमरूप से अपवाद व्याख्यान के लिये पाठक्रम में ३० गाथाओं द्वारा दूसरा अन्तराधिकार प्रारम्भ होता है । वहीं चार स्थल हैं । उनमें प्रथम स्थल म्रें निर्ग्रन्थ मोक्षमार्ग की स्थापना की मुख्यता से व '<b>[<font color=maroon>ण हि णिरवेक्खो चागो</font>]</b>' इत्यादि पाँच गाथायें हैं । यहाँ टीका में <font color=DarkSlateGray>(तत्त्वप्रदीपिका टीका में)</font> तीन गाथायें नहीं हैं । उसके बाद दूसरे स्थल में, सम्पूर्ण सावद्य <font color=DarkSlateGray>(पाप क्रियाओं)</font> का त्याग लक्षण सामायिक संयम में असमर्थ मुनिराजों के संयम, शौच और ज्ञान के उपकरण निमित्त अपवाद व्याख्यान की मुख्यता से '<b>[<font color=maroon>छेदो जेण ण विज्जदि</font>]</b>' इत्यादि तीन गाथायें हैं । उसके बाद तीसरे स्थल में, स्त्री- मुक्ति के निराकरण की प्रधानता से '<b>[<font color=maroon>पेच्छदि ण हि इह लोगं</font>]</b>' इत्यादि ग्यारह गाथायें हैं । और वे गाथायें '<b>[<font color=maroon>आचार्य अमृतचन्द्र</font>]</b>' कृत टीका में नहीं हैं । तदुपरान्त चौथे स्थल में पूरिपूर्ण उपेक्षा संयम में असमर्थ मुनिराजों के, देशकाल की अपेक्षा किंचित् संयम के साधक शरीर के लिये निदोंष आहार आदि सहकारी कारण ग्रहण करने योग्य हैं- इसप्रकार फिर से अपवाद के विशेष व्याख्यान की मुख्यता से '<b>[<font color=maroon>उवयरणं जिणमग्गे</font>]</b>' इत्यादि ग्यारह गाथायें हैं । यहाँ टीका <font color=DarkSlateGray>(त.प्र.)</font> में चार गाथायें नहीं हैं । <br><br>
+ <br><br>
+इस प्रकार गाथाओं के अभिप्राय से ३० गाथाओं द्वारा और <font color=DarkSlateGray>(त.प्र.)</font> टीका की अपेक्षा बारह गाथाओं द्वारा दूसरे में सामूहिक पातनिका है ।<br><br>
+ <br><br>
+द्वितीय अन्तराधिकार का स्थल विभाजन <font color=DarkSlateGray>(गाथा २३६ से २६५ पर्यन्त)</font><br><br>
+ <br><br>
+स्थल क्रम स्थल प्रतिपादित प्रधान विषय कहां से कहाँ पर्यंत गाथायें कुल गाथायें<br><br>
+प्रथम स्थल ५<br><br>
+द्वितीय स्थल ३<br><br>
+तृतीय स्थल १ <br><br>
+चतुर्थ स्थल ११<br><br>
+कुल चार स्थल, कुल ३० गाथायें <br><br>
+<font color=DarkSlateGray>(अब निर्ग्रन्थ मोक्षमार्ग की स्थापना परक पाँच गाथाओं में निबद्ध दूसरे अन्तराधिकार का प्रथम स्थल प्रारम्भ होता है ।)</font><br><br>
+वह इसप्रकार -<br><br>
+
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

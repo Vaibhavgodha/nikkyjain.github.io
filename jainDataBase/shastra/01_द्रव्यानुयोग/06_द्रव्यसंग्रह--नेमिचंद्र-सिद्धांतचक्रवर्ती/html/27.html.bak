@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>द्रव्यसंग्रह--नेमिचंद्र-सिद्धांतचक्रवर्ती</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='26.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='28.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>आर्यिका-ज्ञानमती</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-27><span class=incFontSz>+ </span><a href=#index>
+﻿प्रदेश का लक्षण और उसकी योग्यता</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿जावदियं आयासं, अविभागी पुग्गलाणु वट्ठद्धं<br>तं खु पदेसं जाणे, सव्वाणुट्ठाणदाणरिहं ॥२७॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जितना मात्र आकाश एक अविभागी पुद्गल के परमाणु से रुका हुआ है उतने मात्र को तुम प्रदेश जानो। वह प्रदेश भी सभी परमाणुओं को ठहराने में समर्थ हो सकता है ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;ज्ञानमती</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>ज्ञानमती :</font></b> <br><br>﻿आकाश में एक प्रदेश में अनन्त परमाणुओं का स्वंâध भी रह सकता है। आकाश में ऐसी अवकाश देने की योग्यता विद्यमान है।<br><br>
+<b><font color=red>प्रश्न – प्रदेश किसको कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जितने आकाश क्षेत्र को परमाणु रोकता है-उतने आकाश क्षेत्र को प्रदेश कहते हैं।<br><br>
+<b><font color=red>प्रश्न – असंख्यातप्रदेशी लोक में अनन्त जीव, अनन्तानन्त पुद्गल कैसे रहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> यह आकाश द्रव्य में रहने वाले अवगाहन गुण का प्रभाव है। एक निगोदिया जीव के शरीर में सिद्धराशि से अनन्त गुणे जीव समाये हुए हैं। इसी प्रकार असंख्यातप्रदेशी लोकाकाश में अनन्तानन्त जीव और उनसे भी अनन्त गुणे पुद्गल समाये हुए हैं।<br><br>
+<b><font color=red>प्रश्न – जीव, पुद्गल, धर्म, अधर्म, आकाश और काल द्रव्यों की संख्या बताइये?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जीव-अनन्तानन्त हैं। पुद्गल-जीव द्रव्य से अनन्तगुणे पुद्गल हैं। धर्मद्रव्य, अधर्म द्रव्य-एक-एक हैं। आकाश-एक अखण्ड द्रव्य है। छ: द्रव्यों के निवास की अपेक्षा इसके दो भेद हैं-१. लोकाकाश, २. अलोकाकाश। कालद्रव्य-असंख्यात हैं।<br><br>
+<b><font color=red>प्रश्न – जीव और पुद्गल के संयोग से होने वाली पर्याय कौन-कौन हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जीव और पुद्गल की संयोगज पर्याय है आस्रव और बंध।<br><br>
+<b><font color=red>प्रश्न – जीव और पुद्गल वियोगज पर्याय कौन सी है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जीव और पुद्गल के वियोग से उत्पन्न होने वाली पर्याय है-मोक्ष।<br><br>
+<b><font color=red>प्रश्न – उन दोनों की विभागज पर्याय कौन सी है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जीव और पुद्गल की विभागज पर्याय है संवर और निर्जरा।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

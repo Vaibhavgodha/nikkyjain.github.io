@@ -341,7 +341,6 @@ $(document).on( "pagecontainershow", function(){
   </script>
   <script type="text/javascript" src='"""+myRelPath+"""js/myMobile.js'></script>
 </head>
-<!--body oncopy="return false" onpaste="return false" oncut="return false"-->
 <body>
 <div data-role=page id=demo-page>
   <div data-role=panel id=leftPanel>

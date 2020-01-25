@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>द्रव्यसंग्रह--नेमिचंद्र-सिद्धांतचक्रवर्ती</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='11.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='13.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>आर्यिका-ज्ञानमती</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-12><span class=incFontSz>+ </span><a href=#index>
+﻿चौदह जीव समास</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿समणा अमणा णेया, पंचिंदिय णिम्मणा परे सव्वे<br>बादरसुहुमेइंदी, सव्वे पज्जत्त इदरा य ॥१२॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿पंचेन्द्रिय जीव संज्ञी और असंज्ञी हैं तथा शेष सभी जीव असंज्ञी ही होते हैं ऐसा जानना चाहिए। बादर और सूक्ष्म ऐसे एकेन्द्रिय के दो भेद हैं । ये सभी पर्याप्तक और अपर्याप्तक होते हैं । </div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;ज्ञानमती</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>ज्ञानमती :</font></b> <br><br>﻿पंचेन्द्रिय के संज्ञी-असंज्ञी दो भेद, विकलेन्द्रिय के तीन भेद और एकेन्द्रिय के सूक्ष्म-बादर दो भेद ये सात हुए, इन सातों को पर्याप्त-अपर्याप्त से गुणा करने से चौदह जीव समास हो जाते हैं ।<br><br>
+<b><font color=red>प्रश्न – पंचेन्द्रिय जीव के कितने भेद होते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> दो भेद होते हैं-संज्ञी और असंज्ञी।<br><br>
+<b><font color=red>प्रश्न – मनसहित एवं मनरहित जीव कौन से हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> पंचेन्द्रिय जीव मनरहित भी होते हैं व मनसहित भी होते हैं किन्तु एकेन्द्रिय से चारइंद्रिय तक सभी जीव मनरहित होते हैं।<br><br>
+<b><font color=red>प्रश्न – एकेन्द्रिय जीव के कितने भेद हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> दो भेद हैं-बादर और सूक्ष्म।<br><br>
+<b><font color=red>प्रश्न – बादर जीव किन्हें कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जो स्वयं भी दूसरों से रुकते हैं और दूसरों को भी रोकते हैं उनको बादर जीव कहते हैं।<br><br>
+<b><font color=red>प्रश्न – सूक्ष्म जीव किन्हें कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जो दूसरों को नहीं रोकते हैं तथा दूसरों से रुकते भी नहीं हैं उन्हें सूक्ष्म जीव कहते हैं।<br><br>
+<b><font color=red>प्रश्न – पर्याप्तक जीव किन्हें कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जिन जीवों की आहारादि पर्याप्तियाँ पूर्ण हो जाये उन्हें पर्याप्तक जीव कहते हैं।<br><br>
+<b><font color=red>प्रश्न – अपर्याप्तक जीव किन्हें कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जिन जीवों की आहार आदि पर्याप्तियाँ पूर्ण नहीं होती हैं उन्हें अपर्याप्तक जीव कहते हैं।<br><br>
+<b><font color=red>प्रश्न – पर्याप्ति किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> गृहीत आहारवर्गणा को खल-रस-भाग आदि रूप परिणमाने की जीव की शक्ति के पूर्ण हो जाने को पर्याप्ति कहते हैं।<br><br>
+<b><font color=red>प्रश्न – पर्याप्तियों के कितने भेद हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> पर्याप्ति के ६ भेद हैं-१. आहार, २.शरीर, ३. इन्द्रिय, ४. श्वासोच्छ्वास, ५. भाषा, ६. मन।<br><br>
+<b><font color=red>प्रश्न – किस जीव की कितनी पर्याप्तियाँ हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> एकेन्द्रिय जीव के ४ पर्याप्तियाँ-आहार, शरीर, इंद्रिय और श्वासोच्छ्वास होती हैं। विकलत्रय जीव व असंज्ञी पंचेन्द्रिय जीव के मन पर्याप्ति को छोड़कर पाँच होती हैं तथा सैनी पंचेन्द्रिय जीव के छहों पर्याप्तियाँ होती हैं।<br><br>
+<b><font color=red>प्रश्न – जीव समास किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जिनके द्वारा अनेक जीव तथा उनकी अनेक प्रकार की जाति जानी जाय उन धर्मों को अनेक पदार्थों का संग्रह करने वाले होने से जीव-समास कहते हैं।<br><br>
+<b><font color=red>प्रश्न – चौदह जीवसमास कौन-कौन से होते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b>	एकेन्द्रिय सूक्ष्म, बादर ·२ दो इन्द्रिय	 ·१ तीन इन्द्रिय	 ·१ चार इन्द्रिय	 ·१ पंचेन्द्रिय असैनी	 ·१ पंचेन्द्रिय सैनी ·१ ·७ ये सात प्रकार के जीव पर्याप्त भी होते हैं और अपर्याप्त भी होते हैं अत: ७²२·१४ जीव समास होते हैं।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

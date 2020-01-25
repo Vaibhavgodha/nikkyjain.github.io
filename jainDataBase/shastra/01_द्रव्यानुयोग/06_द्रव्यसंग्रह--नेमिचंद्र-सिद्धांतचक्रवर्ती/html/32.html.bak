@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>द्रव्यसंग्रह--नेमिचंद्र-सिद्धांतचक्रवर्ती</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='31.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='33.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>आर्यिका-ज्ञानमती</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-32><span class=incFontSz>+ </span><a href=#index>
+﻿भावबंध और द्रव्यबंध</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿बज्झदि कम्मं जेण दु, चेदणभावेण भावबंधो सो<br>कम्मदपदेसाणं अण्णोण्णपवेसणं इदरो ॥३२॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿आत्मा के जिन भावों से कर्म बंधता है वह आत्मा का भाव ही भाव बंध कहलाता है, कर्म और आत्मा के प्रदेशों का परस्पर में प्रवेश हो जाना / मिल जाना द्रव्य बंध कहलाता है ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;ज्ञानमती</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>ज्ञानमती :</font></b> <br><br>﻿<b><font color=red>प्रश्न – बन्ध किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जीव कषाय सहित होने से कर्म के योग्य कार्मण वर्गणारूप पुद्गल परमाणुओं को जो ग्रहण करता है, वह बन्ध है।<br><br>
+<b><font color=red>प्रश्न – बन्ध के कितने भेद हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> दो भेद हैं-१. भावबन्ध २.द्रव्यबन्ध<br><br>
+<b><font color=red>प्रश्न – भावबन्ध किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> जिन मिथ्यात्वादि आत्म-परिणामों से कर्म बँधता है वह भावबन्ध कहलाता है।<br><br>
+<b><font color=red>प्रश्न – द्रव्यबन्ध किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> पुद्गल कर्मों से जो कर्मबन्ध होता है उसे द्रव्यबन्ध कहते हैं।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

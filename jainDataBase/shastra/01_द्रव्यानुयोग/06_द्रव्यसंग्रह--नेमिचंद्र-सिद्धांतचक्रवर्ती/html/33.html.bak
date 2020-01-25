@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>द्रव्यसंग्रह--नेमिचंद्र-सिद्धांतचक्रवर्ती</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='32.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='34.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>आर्यिका-ज्ञानमती</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-33><span class=incFontSz>+ </span><a href=#index>
+﻿बन्ध के भेद और कारण</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿पयडिट्ठिदिअणुभाग-प्पदेसभेदा दु चदुविधो बंधो<br>जोगा पयडिपदेसा, ठिदि अणुभागा कसायदो होंति ॥३३॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿प्रकृति बन्ध, स्थिति बन्ध, अनुभाग बन्ध और प्रदेश बन्ध इन भेदों से बन्ध चार प्रकार का है । इनमें से प्रकृति और प्रदेश बन्ध योग के निमित्त से होते हैं तथा स्थिति और अनुभाग बन्ध कषाय से होते हैं ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;ज्ञानमती</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>ज्ञानमती :</font></b> <br><br>﻿<b><font color=red>प्रश्न – प्रकृतिबन्ध का क्या लक्षण है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> कर्मों के स्वभाव को प्रकृतिबन्ध कहते हैं। जैसे-ज्ञानावरणादि।<br><br>
+<b><font color=red>प्रश्न – स्थितिबन्ध किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> ज्ञानावरणादि कर्मों का अपने स्वभाव से च्युत नहीं होना सो स्थितिबन्ध है।<br><br>
+<b><font color=red>प्रश्न – अनुभागबन्ध किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> ज्ञानावरणादि कर्मों के रस विशेष को अनुभागबन्ध कहते हैं।<br><br>
+<b><font color=red>प्रश्न – प्रदेशबन्ध किसे कहते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> ज्ञानावरणादि कर्मरूप होने वाले पुद्गल स्कन्धों के परमाणुओं की संख्या को प्रदेशबन्ध कहते हैं।<br><br>
+<b><font color=red>प्रश्न – चारों प्रकार के बन्ध किन-किन निमित्तों से होते हैं ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> इन चारों प्रकार के बन्धों में प्रकृति और प्रदेशबन्ध योग के निमित्त से होते हैं तथा स्थिति और अनुभागबन्ध कषाय के निमित्त से होते हैं।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

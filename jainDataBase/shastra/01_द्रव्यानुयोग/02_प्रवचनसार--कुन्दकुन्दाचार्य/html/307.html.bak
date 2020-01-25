@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>प्रवचनसार--कुन्दकुन्दाचार्य</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='306.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='308.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>अमृतचंद्राचार्य</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>जयसेनाचार्य</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-307><span class=incFontSz>+ </span><a href=#index>
+﻿अब, संसारस्वरूप प्रकट करते हैं -</a><span class=decFontSz> -</span></div>
+   <div class=gatha>जे अजधागहिदत्था एदे तच्च त्ति णिच्छिदा समये (२७१) <br>अच्चंतफलसमिद्धं भमंति ते तो परं कालं ॥३०७॥<br></div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[ये]</font></b> जो <b><font color=darkRed>[समये]</font></b> भले ही समय में हों <span class=comment>(भले ही वे द्रव्यलिंगी के रूप में जिनमत में हों)</span> तथापि वे <b><font color=darkRed>[एते तत्त्वम्]</font></b> यह तत्त्व है <span class=comment>(वस्तुस्वरूप ऐसा ही है)</span> <b><font color=darkRed>[इति निश्‍चिता:]</font></b> इस प्रकार निश्‍चयवान वर्तते हुए <b><font color=darkRed>[अयथागृहीतार्था:]</font></b> पदार्थों को अयथार्थरूप से ग्रहण करते हैं <span class=comment>(जैसे नहीं हैं वैसा समझते हैं)</span>, <b><font color=darkRed>[ते]</font></b> वे <b><font color=darkRed>[अत्यन्तफलसमृद्धम्]</font></b> अत्यन्तफलसमृद्ध <span class=comment>(अनन्त कर्मफलों से भरे हुए)</span> ऐसे <b><font color=darkRed>[अत: परं कालं]</font></b> अब से आगामी काल में <b><font color=darkRed>[भ्रमन्ति]</font></b> परिभ्रमण करेंगे ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;अमृतचंद्राचार्य</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;जयसेनाचार्य</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>अमृतचंद्राचार्य :</font></b> <br><br>﻿जो स्वयं अविवेक से पदार्थों को अन्यथा ही अंगीकृत करके <font color=DarkSlateGray>(अन्य प्रकार से ही समझकर)</font> ऐसा ही तत्त्व <font color=DarkSlateGray>(वस्तुस्वरूप)</font> है ऐसा निश्‍चय करते हुए, सतत एकत्रित किये जाने वाले महा मोहमल से मलिन मन वाले होने से नित्य अज्ञानी हैं, वे भले ही समय में <font color=DarkSlateGray>(द्रव्यलिंगी रूप से जिनमार्ग में)</font> स्थित हों तथापि परमार्थ श्रामण्य को प्राप्त न होने से वास्तव में श्रमणाभास वर्तते हुए अनन्त कर्मफल की उपभोगराशि से भयंकर ऐसे अनन्तकाल तक अनन्त भावान्तररूप परावर्त्तनों से अनवस्थित वृत्ति वाले रहने से, उनको संसारतत्त्व ही जानना ॥२७१॥
+       </div>
+    </td></tr>
+    <tr><td><div id=teeka1 class=teeka><b><font color=darkgreen>जयसेनाचार्य :</font></b> <br><br>﻿<b>[<font color=maroon>जे अजधागहिदत्था</font>]</b> वीतराग-सर्वज्ञ प्रणीत, निश्चय-व्यवहार रत्नत्रयरूप भाव की जानकारी का अभाव होने से, जो पदार्थों को अन्यथा ग्रहण करनेवाले - विपरीत ग्रहण करनेवाले हैं । और जो कैसे हैं? <b>[<font color=maroon>एदे तच्च त्ति णिच्छिदा</font>]</b> ये तत्व हैं -ऐसा निश्चय करनेवाले हैं ये जो मेरे द्वारा कल्पित पदार्थ हैं वे ही तत्त्व हैं - ऐसा निश्चय करनेवाले हैं । कहाँ स्थित होकर ऐसा निश्चित करनेवाले हैं? <b>[<font color=maroon>समये</font>]</b> निर्ग्रन्थ रूप द्रव्यसमय में स्थित होकर ऐसा निश्चय करने वाले हैं । <b>[<font color=maroon>अच्चंतफलसमिद्धं भमंति ते तो परं काल</font>]</b> वे अत्यन्त फलसमृद्ध हो, अनन्त काल तक घूमते हैं । द्रव्य- क्षेत्र- काल- भव- भाव रूप पाँच प्रकार के संसार परिभमण से रहित शुद्धात्मस्वरूप की भावना से च्युत - भ्रष्ट होते हुये घूमते हैं । कब तक घूमते हैं ?  परकाल- अनन्तकाल तक घूमते हैं । कैसे घूमते हैं? नारक आदि दुःखरूप अत्यन्त फलसमृद्ध होते हुये, घूमते हैं । और कैसे <font color=DarkSlateGray>(कब तक)</font> घूमते हैं? इस वर्तमानकाल से आगे भविष्य तक घूमते हैं । <br><br>
+ <br><br>
+यहाँ अर्थ यह है- इसप्रकार संसार परिप्रमणरूप परिणत पुरुष ही, अभेदरूप से संसारस्वरूप जानना चाहिये ॥३०७॥<br><br>
+
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

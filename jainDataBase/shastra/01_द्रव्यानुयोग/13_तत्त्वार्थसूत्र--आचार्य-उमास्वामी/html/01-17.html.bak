@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>तत्त्वार्थसूत्र--आचार्य-उमास्वामी</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='01-16.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='01-18.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>सर्वार्थसिद्धि</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>राजवार्तिक</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-01-17><span class=incFontSz>+ </span><a href=#index>﻿बहु बहुविध आदि किसके विशेषण हैं</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿अर्थस्य ॥१७॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿अर्थ के <span class=comment>(वस्‍तु के)</span> अवग्रह, ईहा, अवाय और धारणा ये चारों मतिज्ञान होते हैं ॥१७॥</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;सर्वार्थसिद्धि</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;राजवार्तिक</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>सर्वार्थसिद्धि :</font></b> <br><br>﻿चक्षु आदि इन्द्रियों का विषय अर्थ कहलाता है। बहु आदि विशेषणों से युक्त उस <font color=DarkSlateGray>(अर्थ)</font> के अवग्रह आदि होते हैं ऐसा यहाँ सम्‍बन्‍ध करना चाहिए। <br><br>
+<b><font color=red>शंका – यत: बहु आदिक अर्थ ही हैं, अत: यह सूत्र किसलिए कहा ? <br><br>
+</font><font color=darkGreen>समाधान –</font></b> यह सत्‍य है कि बहु आदिक अर्थ ही हैं तो भी अन्‍य वादियों की कल्‍पना निराकरण करने के लिए 'अर्थस्‍य' सूत्र कहा है। कितने ही प्रवादी मानते हैं कि रूपादिक गुण ही इन्द्रियों के साथ सम्‍बन्‍ध को प्राप्‍त होते हैं, अत: उन्‍हीं का ग्रहण होता है, किन्‍तु उनका ऐसा मानना ठीक नहीं है, क्‍योंकि वे रूपादिक गुण अमूर्त हैं, अत: उनका इन्द्रियों के साथ सम्‍बन्‍ध नहीं हो सकता। <br><br>
+<b><font color=red>शंका – यदि ऐसा है तो 'मैंने रूप देखा, मैंने गन्‍ध सूँघा' यह व्‍यवहार नहीं हो सकता, किन्‍तु होता अवश्‍य है सो इसका क्‍या कारण है ? <br><br>
+</font><font color=darkGreen>समाधान –</font></b> जो पर्यायों को प्राप्‍त होता है या पर्यायों के द्वारा जो प्राप्‍त किया जाता है, यह 'अर्थ' है। इसके अनुसार अर्थ द्रव्‍य ठहरता है। उसके इन्द्रियों के साथ सम्‍बन्‍ध को प्राप्‍त होने पर चूंकि रूपादिक उससे अभिन्‍न हैं, अत: रूपादिक में भी ऐसा व्‍यवहार बन जाता है कि 'मैंने रूप देखा, मैंने गन्‍ध सूँघा।'<br><br>
+	<br><br>
+क्‍या ये अवग्रह आदि सब इन्द्रिय और मन के होतेहैं या इनमें विषय की अपेक्षा कुछ भेद हैं ? अब इसी बात को बतलाने के लिए आगे का सूत्र कहते हैं –
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

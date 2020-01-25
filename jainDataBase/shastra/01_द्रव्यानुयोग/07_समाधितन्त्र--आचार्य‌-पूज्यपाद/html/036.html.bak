@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>समाधितन्त्र--आचार्य‌-पूज्यपाद</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='035.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='037.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>श्रीमद्-प्रभाचन्द्र</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>क्षु-मनोहरजी-वर्णी</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-036><span class=incFontSz>+ </span><a href=#index>
+﻿भेद-ज्ञान से रहित आत्मानुभव एक भ्रान्ति</a><span class=decFontSz> -</span></div>
+   <div class=gatha>अविक्षिप्तं मनस्तत्त्वं विक्षिप्तं भ्रान्तिरात्मन:<br>धारयेत्तदविक्षिप्तं विक्षिप्तं नाश्रयेत्तत: ॥३६॥</div>
+    <div class=gadya>﻿निश्चल मन ही तत्त्व है, चञ्चलता निज-भ्रान्ति ।<br>स्थिर में स्थिरता राखि, तज अस्थिर मूल अशान्ति ॥३६॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[अविक्षिप्त]</font></b> रागादि परिणति से रहित तथा शरीर और आत्मा को एक माननेरूप मिथ्या अभिप्राय से रहित, जो स्वरूप में स्थिर है, <b><font color=darkRed>[मन:]</font></b> वही मन है, <b><font color=darkRed>[आत्मनः तत्त्व]</font></b> आत्मा का वास्तविक रूप है और <b><font color=darkRed>[विक्षिप्त]</font></b> रागादिरूप परिणत हुआ एवं शरीर तथा आत्मा के भेदज्ञान से शून्य मन है, वह <b><font color=darkRed>[आत्मनः भ्रान्ति:]</font></b> आत्मा का विभ्रम है; आत्मा का निजरूप नहीं है; <b><font color=darkRed>[ततः]</font></b> इसलिए तत् <b><font color=darkRed>[अविक्षिप्त]</font></b> उस राग-द्वेषादि से रहित मन को <b><font color=darkRed>[धारयेत्]</font></b> धारण करना चाहिए और <b><font color=darkRed>[विक्षिप्त]</font></b> राग-द्वेषादि से क्षुब्ध हुए मन को <b><font color=darkRed>[न आश्रयेत्]</font></b> आश्रय नहीं देना चाहिए ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;प्रभाचन्द्र</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;वर्णी</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+  </table><br><br><br>
+  </body>
+</html>

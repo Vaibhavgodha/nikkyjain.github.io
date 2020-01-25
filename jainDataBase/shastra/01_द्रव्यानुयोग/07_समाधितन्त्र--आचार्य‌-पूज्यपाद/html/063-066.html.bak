@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>समाधितन्त्र--आचार्य‌-पूज्यपाद</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='062.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='063.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>श्रीमद्-प्रभाचन्द्र</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>क्षु-मनोहरजी-वर्णी</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-063-066><span class=incFontSz>+ </span><a href=#index>
+﻿अन्तरात्मा के शरीर के प्रति भेद-भावना</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿घने वस्त्रे यथाऽऽत्मानं न घनं मन्यते तथा<br>घने स्वदेहेऽप्यात्मानं न घनं मन्यते बुध: ॥६३॥<br>जीर्णे वस्त्रे यथाऽऽत्मानं न जीर्णं मन्यते तथा<br>जीर्णे स्वदेहेऽप्यात्मानं न जीर्णं मन्यते बुध: ॥६४॥<br>नष्टे वस्त्रे यथाऽऽत्मानं न नष्टं मन्यते तथा<br>नष्टे स्वदेहेऽप्यात्मानं न नष्टं मन्यते बुध: ॥६५॥<br>रक्ते वस्त्रे यथाऽऽत्मानं न रक्तं मन्यते तथा<br>रक्ते स्वदेहेऽप्यात्मानं न रक्तं मन्यते बुध: ॥६६॥</div>
+    <div class=gadya>﻿मोटा कपड़ा पहनकर, मानें नहीं तन पुष्ट ।<br>त्यों बुध तन की पुष्टि से, गिने न आत्मा पुष्ट ॥६३॥<br>वस्त्र जीर्ण से जीर्ण तन, माने नहीं बुधिवान ।<br>त्यों न जीर्ण तन से गिनें, जीर्ण आत्म मतिमान ॥६४॥<br>वस्त्र फटे माने नहीं, बुद्धिमान तन-नाश ।<br>त्यों तन-नाश से, बुधजन गिनते नहीं विनाश ॥६५॥<br>रक्त वस्त्र से नहीं गिनें, बुधजन तन को लाल ।<br>रक्त देह से ज्ञानीजन, गिने न चेतन लाल ॥६६॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[यथा]</font></b> जिस प्रकार <b><font color=darkRed>[वस्त्र घने]</font></b> गाढा वस्त्र पहन लेने पर <b><font color=darkRed>[बुध:]</font></b> बुद्धिमान पुरुष, <b><font color=darkRed>[आत्मानं]</font></b> अपने को-अपने शरीर को <b><font color=darkRed>[घनं]</font></b> गाढ़ा अथवा पुष्ट <b><font color=darkRed>[न मन्यते]</font></b> नहीं मानता है, <b><font color=darkRed>[तथा]</font></b> उसी प्रकार <b><font color=darkRed>[स्वदेहेऽपि घने]</font></b> अपने शरीर के भी गाढा अथवा पुष्ट होने पर <b><font color=darkRed>[बुध:]</font></b> अन्तरात्मा, <b><font color=darkRed>[आत्मानं]</font></b> आत्मा को <b><font color=darkRed>[घनं न मन्यते]</font></b> मोटा <span class=comment>(पुष्ट)</span> नहीं मानता है ।<br><b><font color=darkRed>[यथा]</font></b> जिस प्रकार <b><font color=darkRed>[वस्त्रे जीर्णे]</font></b> पहने हुए वस्त्र के जीर्ण होने पर <b><font color=darkRed>[बुध:]</font></b> बुद्धिमान पुरुष, <b><font color=darkRed>[आत्मानं]</font></b> अपने को-अपने शरीर को <b><font color=darkRed>[जीर्ण न मन्यते]</font></b> जीर्ण नहीं मानता है; <b><font color=darkRed>[तथा]</font></b> उसी प्रकार <b><font color=darkRed>[स्वदेहे अपि जीर्णे]</font></b> अपने शरीर के भी जीर्ण हो जाने पर <b><font color=darkRed>[बुध:]</font></b> अन्तरात्मा, <b><font color=darkRed>[आत्मानं]</font></b> आत्मा को <b><font color=darkRed>[जीर्ण न मन्यते]</font></b> जीर्ण नहीं मानता है ।<br><b><font color=darkRed>[यथा]</font></b> जिस तरह <b><font color=darkRed>[वस्त्रे नष्टे]</font></b> कपड़े के नष्ट हो जाने पर <b><font color=darkRed>[बुध:]</font></b> बुद्धिमान पुरुष, <b><font color=darkRed>[आत्मानं]</font></b> अपने शरीर को <b><font color=darkRed>[नष्ट न मन्यते]</font></b> नष्ट हुआ नहीं मानता है; <b><font color=darkRed>[तथा]</font></b> उसी तरह <b><font color=darkRed>[बुध:]</font></b> अन्तरात्मा, <b><font color=darkRed>[स्वदेहे अपि नष्टे]</font></b> अपने शरीर के नष्ट हो जाने पर, <b><font color=darkRed>[आत्मानं]</font></b> अपने आत्मा को <b><font color=darkRed>[नष्टं न मन्यते]</font></b> नष्ट हुआ नहीं मानता है ।<br><b><font color=darkRed>[यथा]</font></b> जिस प्रकार <b><font color=darkRed>[वस्त्रं रक्ते]</font></b> पहना हुआ वस्त्र, लाल होने पर भी <b><font color=darkRed>[बुध:]</font></b> बुद्धिमान पुरुष, <b><font color=darkRed>[आत्मानं]</font></b> अपने शरीर को <b><font color=darkRed>[रक्तं न मन्यते]</font></b> लाल नहीं मानता है; <b><font color=darkRed>[तथा]</font></b> उसी तरह <b><font color=darkRed>[स्वदेहे अपि रक्ते]</font></b> अपने शरीर के लाल होने पर भी <b><font color=darkRed>[बुध:]</font></b> अन्तरात्मा, <b><font color=darkRed>[आत्मानं]</font></b> अपने आत्मा को <b><font color=darkRed>[रक्तं न मन्यते]</font></b> लाल नहीं मानता है ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;प्रभाचन्द्र</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;वर्णी</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+  </table><br><br><br>
+  </body>
+</html>

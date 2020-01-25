@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>द्रव्यसंग्रह--नेमिचंद्र-सिद्धांतचक्रवर्ती</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='28.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='30.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>आर्यिका-ज्ञानमती</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-29><span class=incFontSz>+ </span><a href=#index>
+﻿भावास्रव और द्रव्यास्रव</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿आसवदि जेण कम्मं, परिणामेणप्पणो स विण्णेयो<br>भावासवो जिणुत्तो, कम्मासवणं परो होदि ॥२९॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿आत्मा के जिन परिणामों से कर्म आता है उस परिणाम को जिनेन्द्र द्वारा कहा गया भावास्रव नाम से जानना चाहिये । इससे भिन्न कर्मों का आना द्रव्यास्रव होता है ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;ज्ञानमती</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>ज्ञानमती :</font></b> <br><br>﻿<b><font color=red>प्रश्न – आस्रव किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> आत्मा में कर्मों का आना आस्रव कहलाता है।<br><br>
+<b><font color=red>प्रश्न – आस्रव के कितने भेद हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> दो भेद हैं-१. भावास्रव, २. द्रव्यास्रव।<br><br>
+<b><font color=red>प्रश्न – भावास्रव किसे कहते हैं?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> मिथ्यात्व, अविरति, प्रमाद, कषाय और योगरूप जिन परिणामों से कर्मों का आस्रव होता है उन परिणामों को भावास्रव कहते हैं।<br><br>
+<b><font color=red>प्रश्न – द्रव्यास्रव का क्या लक्षण है?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> ज्ञानावरणादि पुद्गल कर्मों का आना द्रव्यास्रव कहलाता है।<br><br>
+<b><font color=red>प्रश्न – द्रव्यास्त्रव और भावास्त्रव में अन्तर क्या है ?<br><br>
+</font><font color=darkGreen>उत्तर –</font></b> इन दोनों में परस्पर निमित्त-नैमित्तक भाव है। जीव के रागादि भावों का निमित्त पाकर पुद्गल वर्गणा स्वयमेव अपने उपादान से कर्मरूप परिणत हो जाती है और मिथ्यात्व आदि द्रव्यकर्मप्रकृति का निमित्त प्राप्त कर स्वयं परिणमनशील आत्मा अपनी उपादान शक्ति से रागद्वेषरूप परिणमन करता है अत: द्रव्यास्त्रव से भावास्त्रव और भावास्त्रव से द्रव्यास्त्रव होता है।
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

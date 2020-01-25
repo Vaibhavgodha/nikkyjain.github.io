@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>समाधितन्त्र--आचार्य‌-पूज्यपाद</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='060.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='062.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>श्रीमद्-प्रभाचन्द्र</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>क्षु-मनोहरजी-वर्णी</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-061><span class=incFontSz>+ </span><a href=#index>
+﻿अन्तरात्मा शरीरादि के प्रति उदासीन</a><span class=decFontSz> -</span></div>
+   <div class=gatha>न जानन्ति शरीराणि सुखदु:खान्यबुद्धय:<br>निग्रहानुग्रहधियं तथाप्यत्रैव कुर्वते ॥६१॥</div>
+    <div class=gadya>﻿काया को होती नहीं, सुख-दुख की अनुभूति ।<br>पोषण-शोषण यत्न से, करते व्यर्थ कुबुद्धि ॥६१॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[शरीराणि]</font></b> ये शरीर <b><font color=darkRed>[सुख-दुखानि न जानन्ति]</font></b> जड़ होने से सुखों तथा दुखों को नहीं जानते हैं, <b><font color=darkRed>[तथापि]</font></b> तो भी <b><font color=darkRed>[ये]</font></b> जो जीव <b><font color=darkRed>[अत्रैव]</font></b> इन शरीरों में ही <b><font color=darkRed>[निग्रहानुग्रहधियं]</font></b> <span class=comment>(उपवासादि द्वारा दण्डरूप)</span> निग्रह की और <span class=comment>(अलंकारादि द्वारा अलंकृत करनेरूप)</span> अनुग्रह की बुद्धि <b><font color=darkRed>[कुर्वते]</font></b> धारण करते हैं, <b><font color=darkRed>[ते]</font></b> वे जीव <b><font color=darkRed>[अबुद्धय:]</font></b> मूढ्बुद्धि <span class=comment>(बहिरात्मा)</span> हैं ।</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;प्रभाचन्द्र</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;वर्णी</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+  </table><br><br><br>
+  </body>
+</html>

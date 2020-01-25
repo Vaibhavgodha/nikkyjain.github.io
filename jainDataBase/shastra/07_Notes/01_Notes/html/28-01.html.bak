@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Notes</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='17-02.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='29-01.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>विशेष</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-28-01><span class=incFontSz>+ </span><a href=#index>
+﻿मूल संघ पट्टावली</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿मूल संघ पट्टावली</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;विशेष</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>विशेष :</font></b> <br><br>﻿	<table class=myAltTable><br><br>
+	<tr><br><br>
+		<th colspan=4 class=tableTitle>मूल संघ पट्टावली</th><br><br>
+	</tr><br><br>
+			<tbody><br><br>
+				<tr><br><br>
+					<td>केवल ज्ञानी</td><br><br>
+					<td>0-12 वर्ष</td><br><br>
+					<td>गौतम स्वामी</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>केवल ज्ञानी</td><br><br>
+					<td>13-24 वर्ष</td><br><br>
+					<td>सुधर्मा स्वामी / लोहार्य</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>केवल ज्ञानी</td><br><br>
+					<td>24-62 वर्ष</td><br><br>
+					<td>जम्बू स्वामी</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td></td><br><br>
+					<td></td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 14 पूर्व धारी</td><br><br>
+					<td>62-76</td><br><br>
+					<td>विष्णु</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 14 पूर्व धारी</td><br><br>
+					<td>76-92</td><br><br>
+					<td>नन्दिमित्र</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 14 पूर्व धारी</td><br><br>
+					<td>92-114</td><br><br>
+					<td>अपराजित</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 14 पूर्व धारी</td><br><br>
+					<td>114-133</td><br><br>
+					<td>गोवर्धन</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 14 पूर्व धारी</td><br><br>
+					<td>133-162</td><br><br>
+					<td>भद्रबाहु</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td></td><br><br>
+					<td></td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 10 पूर्व धारी</td><br><br>
+					<td>162-172</td><br><br>
+					<td>विशाखाचार्य</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 10 पूर्व धारी</td><br><br>
+					<td>172-191</td><br><br>
+					<td>प्रोष्ठिल</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 10 पूर्व धारी</td><br><br>
+					<td>191-208</td><br><br>
+					<td>क्षत्रिय</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 10 पूर्व धारी</td><br><br>
+					<td>208-229</td><br><br>
+					<td>जयसेन</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 10 पूर्व धारी</td><br><br>
+					<td>229-247</td><br><br>
+					<td>नागसेन</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 10 पूर्व धारी</td><br><br>
+					<td>247-264</td><br><br>
+					<td>सिद्धार्थ</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 10 पूर्व धारी</td><br><br>
+					<td>264-282</td><br><br>
+					<td>घृतसेण</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 10 पूर्व धारी</td><br><br>
+					<td>282-295</td><br><br>
+					<td>विजय</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 10 पूर्व धारी</td><br><br>
+					<td>295-315</td><br><br>
+					<td>बुद्धिलिंग</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 10 पूर्व धारी</td><br><br>
+					<td>315-329</td><br><br>
+					<td>देव</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग 10 पूर्व धारी</td><br><br>
+					<td>329-345</td><br><br>
+					<td>धर्मसेन</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग</td><br><br>
+					<td>345-363</td><br><br>
+					<td>क्षत्र</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग</td><br><br>
+					<td>363-383</td><br><br>
+					<td>जयपाल</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग</td><br><br>
+					<td>383-422</td><br><br>
+					<td>पांडु</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग</td><br><br>
+					<td>422-436</td><br><br>
+					<td>ध्रुवसेन</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>11 अंग</td><br><br>
+					<td>436-468</td><br><br>
+                    <td>कंस</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+                    <td>11 अंग</td><br><br>
+					<td>468-474</td><br><br>
+					<td>सुभद्र</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>10 अंग</td><br><br>
+					<td>474-492</td><br><br>
+					<td>यशोभद्र</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>9 अंग</td><br><br>
+					<td>492-515</td><br><br>
+					<td>भद्रबाहु</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>8 अंग</td><br><br>
+					<td>515-565</td><br><br>
+					<td>लोहाचार्य</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>1 अंग</td><br><br>
+					<td>565-585</td><br><br>
+					<td>विनयदत्त</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>1 अंग</td><br><br>
+					<td>565-585</td><br><br>
+					<td>श्रीदत्त</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>1 अंग</td><br><br>
+					<td>565-585</td><br><br>
+					<td>शिवदत्त</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>1 अंग</td><br><br>
+					<td>565-585</td><br><br>
+					<td>अर्हदत्त</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>अंगांशधारी</td><br><br>
+					<td>565-593</td><br><br>
+					<td>अर्हद्वालि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>अंगांशधारी</td><br><br>
+					<td>593-614</td><br><br>
+					<td>माघनन्दि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>अंगांशधारी</td><br><br>
+					<td>610-633</td><br><br>
+					<td>धरसेन</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>अंगांशधारी</td><br><br>
+					<td>633-663</td><br><br>
+					<td>पुष्पदंत</td><br><br>
+					<td>षट्-खण्डागम</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>अंगांशधारी</td><br><br>
+					<td>614-683</td><br><br>
+					<td>भूतबलि</td><br><br>
+					<td>महा-बंधो</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>अंगांशधारी</td><br><br>
+					<td>645-654</td><br><br>
+					<td>जिनचंद</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>अंगांशधारी</td><br><br>
+					<td>654-706</td><br><br>
+					<td>कुंदकुंद</td><br><br>
+					<td>समयसार</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>अंगांशधारी</td><br><br>
+					<td>600-660</td><br><br>
+					<td>आर्यमंक्षु</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>अंगांशधारी</td><br><br>
+					<td>620-687</td><br><br>
+					<td>नागहस्ति</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>अंगांशधारी</td><br><br>
+					<td>650-700</td><br><br>
+					<td>यतिवृषभ</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>अंगांशधारी</td><br><br>
+					<td>706-770</td><br><br>
+					<td>उमास्वामी</td><br><br>
+					<td>तत्त्वार्थ-सूत्र</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>अंगांशधारी</td><br><br>
+					<td>700-740</td><br><br>
+					<td>रविषेण स्वामी</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td>ईश्वी संवत</td><br><br>
+					<td>120-185</td><br><br>
+					<td>समंतभद्र</td><br><br>
+					<td>रत्न-करण्ड-श्रावकाचार</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>220-231</td><br><br>
+					<td>लोहाचार्य</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>231-289</td><br><br>
+					<td>यशकीर्ति</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>289-386</td><br><br>
+					<td>यशोनन्दि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>336-386</td><br><br>
+					<td>देवनन्दि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>386-436</td><br><br>
+					<td>जयनन्दि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>436-442</td><br><br>
+					<td>गुणनन्दि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>422-464</td><br><br>
+					<td>ब्रजनन्दि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>464-505</td><br><br>
+					<td>कुमारनन्दि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>505-531</td><br><br>
+					<td>लोकचंद्र</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>531-556</td><br><br>
+					<td>प्रभाचंद्र</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>556-565</td><br><br>
+					<td>नेमिचंद्र</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>565-586</td><br><br>
+					<td>भानुनन्दि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>586-603</td><br><br>
+					<td>सिंहनन्दि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>603-609</td><br><br>
+					<td>वसुनन्दि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>609-639</td><br><br>
+					<td>वीरनन्दि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>639-663</td><br><br>
+					<td>रत्ननन्दि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>663-679</td><br><br>
+					<td>माणिक्यनन्दि</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>679-705</td><br><br>
+					<td>मेघचंद्र</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>705-720</td><br><br>
+					<td>शान्तिकीर्ति</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>720-758</td><br><br>
+					<td>मेरुकीर्ति</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>770-860</td><br><br>
+					<td>वादिभसिंह</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>770-860</td><br><br>
+					<td>सोमसेन</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>770-860</td><br><br>
+					<td>गुणभद्र</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>770-860</td><br><br>
+					<td>जिनसेन</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>770-860</td><br><br>
+					<td>समंतभद्र</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>818-878</td><br><br>
+					<td>जिनसेन</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>820-878</td><br><br>
+					<td>दशरथ</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>820-878</td><br><br>
+					<td>पद्मसेन</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>820-878</td><br><br>
+					<td>देवसेन</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>820-898</td><br><br>
+					<td>धर्मसेन</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>870-898</td><br><br>
+					<td>गुणभद्र</td><br><br>
+					<td>उत्तरपुराण, आदिपुराण</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>905-955</td><br><br>
+					<td>अमृतचंद्र</td><br><br>
+					<td>आत्मख्याति टीका</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>923-960</td><br><br>
+					<td>माघवचंद</td><br><br>
+					<td>त्रिलोकसार टीका</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>923-960</td><br><br>
+					<td>नेमिचन्द सि. चक्र</td><br><br>
+					<td></td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>923-963</td><br><br>
+					<td>अमितगति</td><br><br>
+					<td>योगसार प्राभृत</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>930-950</td><br><br>
+					<td>अभयनन्दि</td><br><br>
+					<td>जैनेद्र महावृति</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>930-1023</td><br><br>
+					<td>पद्मनन्दि</td><br><br>
+					<td>आविद्धकरण</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>931</td><br><br>
+					<td>हरिषेण</td><br><br>
+					<td>वृहत्कथा</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>933-955</td><br><br>
+					<td>देवसेन</td><br><br>
+					<td>दर्शनसार रचना</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>935-999</td><br><br>
+					<td>मेघचन्द्र</td><br><br>
+					<td>ज्वालामालिनी</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>937</td><br><br>
+					<td>कुलभद्र</td><br><br>
+					<td>सारसमुच्च्य</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>939</td><br><br>
+					<td>इन्द्रनन्दि</td><br><br>
+					<td>श्रुतावतार</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>939</td><br><br>
+					<td>कनकनन्दि</td><br><br>
+					<td>सत्वत्रिभंगी</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>970</td><br><br>
+					<td>पोन्न</td><br><br>
+					<td>शान्तिपुराण</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>960-993</td><br><br>
+					<td>रत्न</td><br><br>
+					<td>अजितनाथ पुराण</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>950-990</td><br><br>
+					<td>रविभद्र</td><br><br>
+					<td>आराधनासार</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>950-990</td><br><br>
+					<td>वीरनन्दि</td><br><br>
+					<td>आचारसार</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>950-1020</td><br><br>
+					<td>प्रभाचन्द्र</td><br><br>
+					<td>प्रमेय कमल मार्तण्ड</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>974</td><br><br>
+					<td>महासेन</td><br><br>
+					<td>प्रघुम्न चरित्र</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>978</td><br><br>
+					<td>चामुण्डराय</td><br><br>
+					<td>चारित्रसार</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>981</td><br><br>
+					<td>नेमिचन्द्र सि.</td><br><br>
+					<td>गोमट्टसार, द्रव्य संग्रह</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>923-1023</td><br><br>
+					<td>अमितगति</td><br><br>
+					<td>श्रावकाचार</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>987</td><br><br>
+					<td>हरिषेण</td><br><br>
+					<td>धम्म परिरक्खा</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1023-1028</td><br><br>
+					<td>माणिक्यनन्दि</td><br><br>
+					<td>परिक्षामुख</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1010-1065</td><br><br>
+					<td>वादिराज</td><br><br>
+					<td>एकीभाव स्तोत्र</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1018</td><br><br>
+					<td>वीर कवि</td><br><br>
+					<td>जम्बू स्वामी चरित्र</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1047</td><br><br>
+					<td>मल्लिषेण</td><br><br>
+					<td>महापुराण</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1047</td><br><br>
+					<td>धवलचार्य</td><br><br>
+					<td>हरिवंशपुराण</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>उत्तरार्ध ईश्वी</td><br><br>
+					<td>पद्मनन्दि</td><br><br>
+					<td>पंच वंशतिका</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1066</td><br><br>
+					<td>श्री चन्द</td><br><br>
+					<td>पुराण संग्रह</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1068</td><br><br>
+					<td>नेमिचन्द</td><br><br>
+					<td>द्रव्य संग्रह</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1068-1118</td><br><br>
+					<td>वसुनन्दि</td><br><br>
+					<td>प्रतिष्ठा पाठ</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1089</td><br><br>
+					<td>अग्गल कवि</td><br><br>
+					<td>चन्द्र प्रभा चारित्र</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>अन्तिम पाद ई.</td><br><br>
+					<td>वृत्तिविलास</td><br><br>
+					<td>धर्म परीक्षा</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1100</td><br><br>
+					<td>नामचन्द्र</td><br><br>
+					<td>मल्लिनाथ पुराण</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>ई.श. 11-12</td><br><br>
+					<td>जयसेन</td><br><br>
+					<td>कुन्द्कुन्द त्रयी टीका</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>ई.श. 11-12</td><br><br>
+					<td>वसुनन्दि</td><br><br>
+					<td>श्रावकाचार</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1103</td><br><br>
+					<td>वादिभ सिंह</td><br><br>
+					<td>स्याद्वाद सिद्धि</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1123</td><br><br>
+					<td>नयसेन</td><br><br>
+					<td>धर्मामृत</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>मध्यपाद</td><br><br>
+					<td>योगचन्द्र</td><br><br>
+					<td>दोहासार</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>मध्यपाद</td><br><br>
+					<td>अनन्तवीर्य</td><br><br>
+					<td>प्रमेय रत्नमाला</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>मध्यपाद</td><br><br>
+					<td>पद्मप्रभ मल्ल्धारी</td><br><br>
+					<td>नियमसार टीका</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1132</td><br><br>
+					<td>गुणधरकीर्ती</td><br><br>
+					<td>अध्यात्म टीका</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1151</td><br><br>
+					<td>श्रीधर</td><br><br>
+					<td>सुकुमाल चरित्र</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1173-1243</td><br><br>
+					<td>पं आशाधर</td><br><br>
+					<td>सागार / अनगार धर्मामृत</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1185-1243</td><br><br>
+					<td>प्रभाचन्द</td><br><br>
+					<td>क्रियाकलाप</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1189</td><br><br>
+					<td>अग्गल</td><br><br>
+					<td>चन्द्र प्रभ पुराण</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>अंतिमपाद</td><br><br>
+					<td>नेमिचन्द्र</td><br><br>
+					<td>कर्म प्रकृति</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1193-1260</td><br><br>
+					<td>माघनन्दि</td><br><br>
+					<td>शास्त्रसार समुच्च</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1200</td><br><br>
+					<td>बन्धुवर्मा</td><br><br>
+					<td>हरिवंश पुराण</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1200</td><br><br>
+					<td>शुभचन्द्र</td><br><br>
+					<td>नर पिंगल</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>ई.श. 12-13</td><br><br>
+					<td>रविचंद्र</td><br><br>
+					<td>आराधना सार</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>पूर्वपाद</td><br><br>
+					<td>गुणभद्र</td><br><br>
+					<td>धन्य कुमार चरित</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1213</td><br><br>
+					<td>माघव चन्द्र</td><br><br>
+					<td>क्षपणसार</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>मध्यपाद</td><br><br>
+					<td>रामचन्द मुमुक्षु</td><br><br>
+					<td>पुण्यास्रव कथा कोश</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>उत्तरार्ध</td><br><br>
+					<td>अर्हदास</td><br><br>
+					<td>गुरुदेव चम्पू</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1393-1468</td><br><br>
+					<td>जिनदास</td><br><br>
+					<td>जम्बू स्वामी चरित</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1387</td><br><br>
+					<td>धनपाल</td><br><br>
+					<td>बाहुबलि चरित</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>मध्यपाद</td><br><br>
+					<td>प. योगदेव</td><br><br>
+					<td>वारस अणुवेक्खा</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1448-1515</td><br><br>
+					<td>तारण स्वामी</td><br><br>
+					<td>उपदेश शुद्ध सार</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1468-1498</td><br><br>
+					<td>ज्ञान भषण</td><br><br>
+					<td>तत्वज्ञान तरंगिनी</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1604</td><br><br>
+					<td>अकलंक</td><br><br>
+					<td>शब्दानुशासान</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1605</td><br><br>
+					<td>चन्द्रप्रभ</td><br><br>
+					<td>गोमटेश्वर चरित्र</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1602</td><br><br>
+					<td>ज्ञानकीर्ति</td><br><br>
+					<td>यशोधर चरित्र</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1623-1643</td><br><br>
+					<td>पं बनारसीदास</td><br><br>
+					<td>समयसार नाटक</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1623-1643</td><br><br>
+					<td>पं भगवतीदास</td><br><br>
+					<td>दंडनासार</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>मध्यपाद</td><br><br>
+					<td>हेमराज पाण्डेय</td><br><br>
+					<td>प्रवचनसार वचनिका</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>मध्यपाद</td><br><br>
+					<td>पं हीराचन्द</td><br><br>
+					<td>पंचास्तिकाय टीका</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1642-1646</td><br><br>
+					<td>पं. जगन्नाथ</td><br><br>
+					<td>सुख निधान</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1696</td><br><br>
+					<td>महीचन्द</td><br><br>
+					<td>आदिपुराण</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1697</td><br><br>
+					<td>बुलकीदास</td><br><br>
+					<td>पाण्डव पुराण</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>ई.श. 17-18</td><br><br>
+					<td>संतलाल</td><br><br>
+					<td>सिद्धचक्र विधान</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>ई.18 पूर्वार्ध</td><br><br>
+					<td>खुशालचन्द्र</td><br><br>
+					<td>व्रतकथा कोष</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1716-1728</td><br><br>
+					<td>किशनसिंह</td><br><br>
+					<td>क्रिया कोष</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1718</td><br><br>
+					<td>पं ज्ञानचंद्र</td><br><br>
+					<td>पंचास्तिकाय टीका</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1718</td><br><br>
+					<td>पं मनोहरलाल</td><br><br>
+					<td>धर्म परीक्षा</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1720-1772</td><br><br>
+					<td>पं दौलतराम</td><br><br>
+					<td>क्रिया कोष</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1721-1729</td><br><br>
+					<td>देवेंद्रकीर्ति</td><br><br>
+					<td>विषायाहार पूजा</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1721-1740</td><br><br>
+					<td>जिनदास</td><br><br>
+					<td>हरिवंश पुराण</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1722</td><br><br>
+					<td>दीपचंदशाह</td><br><br>
+					<td>चिदविलास</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1724-1744</td><br><br>
+					<td>जिनसागर</td><br><br>
+					<td>जिनकथा</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1724-1732</td><br><br>
+					<td>भूधरदास</td><br><br>
+					<td>जिनशतक</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1730-1733</td><br><br>
+					<td>नरेन्द्र सेन</td><br><br>
+					<td>प्रमाण प्रमेय</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1740-1767</td><br><br>
+					<td>पं टोडरमल</td><br><br>
+					<td>सम्यकज्ञान चंद्रिका</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1741</td><br><br>
+					<td>पं रूपचंद पाण्डेय</td><br><br>
+					<td>स. ना. टीका</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1761</td><br><br>
+					<td>पं शिवलाल</td><br><br>
+					<td>चर्चा संग्रह</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1770-1840</td><br><br>
+					<td>पं पन्नालाल</td><br><br>
+					<td>राजवार्तिक टीका</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1780</td><br><br>
+					<td>पं गुमानीराम</td><br><br>
+					<td>समाधिमरण</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1795-1867</td><br><br>
+					<td>सदासुख दास</td><br><br>
+					<td>रत्नकरण्ड श्रावकाचार टीका</td><br><br>
+				</tr><br><br>
+				<tr><br><br>
+					<td></td><br><br>
+					<td>1798-1866</td><br><br>
+					<td>दौलतराम</td><br><br>
+					<td>छहढाला</td><br><br>
+				</tr><br><br>
+			</tbody><br><br>
+		</table>
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

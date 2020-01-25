@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Notes</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='02-07.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='03-02.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>विशेष</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-03-01><span class=incFontSz>+ </span><a href=#index>
+﻿गति-आगति</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿गति-आगति</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;विशेष</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>विशेष :</font></b> <br><br>﻿<table class=myAltTable><br><br>
+  <thead><br><br>
+  <tr><br><br>
+    <td class=emptyTableCell rowspan=3 colspan=2></td><br><br>
+    <th class=tableTitle class=tableTitle colspan=16>जीवों में गति</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head1 colspan=8>देव</th><br><br>
+    <th class=head2 colspan=2>मनुष्य</th><br><br>
+    <th class=head3 colspan=4>तिर्यंच</th><br><br>
+    <th class=head4 colspan=2>नरक</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head1>भवनवासी</th><br><br>
+    <th class=head1>व्यंतर</th><br><br>
+    <th class=head1>ज्योतिष</th><br><br>
+    <th class=head1>१-२ स्वर्ग</th><br><br>
+    <th class=head1>३-१२ स्वर्ग</th><br><br>
+    <th class=head1>१३-१६ स्वर्ग</th><br><br>
+    <th class=head1>नव ग्रैवेयक</th><br><br>
+    <th class=head1>सर्वार्थसिद्धि</th><br><br>
+    <th class=head2>भोगभूमि</th><br><br>
+    <th class=head2>कर्मभूमि</th><br><br>
+    <th class=head3>भोगभूमि</th><br><br>
+    <th class=head3>एकेंद्रिय</th><br><br>
+    <th class=head3>विकलत्रय</th><br><br>
+    <th class=head3>पंचेन्द्रिय</th><br><br>
+    <th class=head4>पहला</th><br><br>
+    <th class=head4>२-७</th><br><br>
+  </tr><br><br>
+  </thead><br><br>
+  <tbody><br><br>
+  <tr><br><br>
+    <th class=head1 rowspan=3>देव</th><br><br>
+    <th class=head1>भवनत्रिक, देवियाँ, १-२ स्वर्ग</th><br><br>
+    <td class=cellN rowspan=3 colspan=9>नहीं</td><br><br>
+    <td class=cellY rowspan=3>हाँ</td><br><br>
+    <td class=cellN>नहीं</td><br><br>
+    <td class=cellY>हाँ+</td><br><br>
+    <td class=cellN>नहीं</td><br><br>
+    <td class=cellY rowspan=2>हाँ</td><br><br>
+    <td class=cellN rowspan=2 colspan=2>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head1>३-१२ स्वर्ग</th><br><br>
+    <td class=cellN colspan=3>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head1>१३वें स्वर्ग से सर्वार्थ-सिद्धि</th><br><br>
+    <td class=cellN colspan=6>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <td class=emptyTableCell colspan=2></td><br><br>
+    <th class=head1>भवनवासी</th><br><br>
+    <th class=head1>व्यंतर</th><br><br>
+    <th class=head1>ज्योतिष</th><br><br>
+    <th class=head1>१-२ स्वर्ग</th><br><br>
+    <th class=head1>३-१२ स्वर्ग</th><br><br>
+    <th class=head1>१३-१६ स्वर्ग</th><br><br>
+    <th class=head1>नव ग्रैवेयक</th><br><br>
+    <th class=head1>सर्वार्थसिद्धि</th><br><br>
+    <th class=head2>भोगभूमि</th><br><br>
+    <th class=head2>कर्मभूमि</th><br><br>
+    <th class=head3>भोगभूमि</th><br><br>
+    <th class=head3>एकेंद्रिय</th><br><br>
+    <th class=head3>विकलत्रय</th><br><br>
+    <th class=head3>पंचेन्द्रिय</th><br><br>
+    <th class=head4>पहला</th><br><br>
+    <th class=head4>२-७</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head2 rowspan=10>मनुष्य</th><br><br>
+    <th class=head2>मि. पर्याप्तक कर्मभूमि</th><br><br>
+    <td class=cellY colspan=6>हाँ</td><br><br>
+    <td class=cellY>हाँ^</td><br><br>
+    <td class=cellN>नहीं</td><br><br>
+    <td class=cellY colspan=8>हाँ</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head2>मि. अपर्याप्तक</th><br><br>
+    <td class=cellN colspan=9>नहीं</td><br><br>
+    <td class=cellY>हाँ</td><br><br>
+    <td class=cellN>नहीं</td><br><br>
+    <td class=cellY colspan=3>हाँ</td><br><br>
+    <td class=cellN colspan=2>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head2>मि. भोगभूमि</th><br><br>
+    <td class=cellN colspan=3>नहीं</td><br><br>
+    <td class=cellY>हाँ</td><br><br>
+    <td class=cellN colspan=12>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head2>सा. कर्मभूमि</th><br><br>
+    <td class=cellY colspan=7>हाँ</td><br><br>
+    <td class=cellN>नहीं</td><br><br>
+    <td class=cellY colspan=4>हाँ</td><br><br>
+    <td class=cellN>नहीं</td><br><br>
+    <td class=cellY>हाँ</td><br><br>
+    <td class=cellN colspan=2>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head2>अ.स. / संयातासंयत कर्मभूमि</th><br><br>
+    <td class=cellN rowspan=6 colspan=3>नहीं</td><br><br>
+    <td class=cellY colspan=3>हाँ</td><br><br>
+    <td class=cellY>हाँ^</td><br><br>
+    <td class=cellN colspan=9>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head2>संयत</th><br><br>
+    <td class=cellY colspan=5>हाँ</td><br><br>
+    <td class=cellN colspan=8>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head2>पुलाक मुनि</th><br><br>
+    <td class=cellY colspan=2>हाँ</td><br><br>
+    <td class=cellN colspan=11>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head2>बकुश, प्रतिसेवना मुनि</th><br><br>
+    <td class=cellY colspan=3>हाँ</td><br><br>
+    <td class=cellN colspan=10>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head2>कषायकुशील, निर्ग्रन्थ मुनि</th><br><br>
+    <td class=cellY colspan=5>हाँ</td><br><br>
+    <td class=cellN colspan=8>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head2>अ.स. भोगभूमि </th><br><br>
+    <td class=cellY>हाँ</td><br><br>
+    <td class=cellN colspan=12>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <td class=emptyTableCell colspan=2></td><br><br>
+    <th class=head1>भवनवासी</th><br><br>
+    <th class=head1>व्यंतर</th><br><br>
+    <th class=head1>ज्योतिष</th><br><br>
+    <th class=head1>१-२ स्वर्ग</th><br><br>
+    <th class=head1>३-१२ स्वर्ग</th><br><br>
+    <th class=head1>१३-१६ स्वर्ग</th><br><br>
+    <th class=head1>नव ग्रैवेयक</th><br><br>
+    <th class=head1>सर्वार्थसिद्धि</th><br><br>
+    <th class=head2>भोगभूमि</th><br><br>
+    <th class=head2>कर्मभूमि</th><br><br>
+    <th class=head3>भोगभूमि</th><br><br>
+    <th class=head3>एकेंद्रिय</th><br><br>
+    <th class=head3>विकलत्रय</th><br><br>
+    <th class=head3>पंचेन्द्रिय</th><br><br>
+    <th class=head4>पहला</th><br><br>
+    <th class=head4>२-७</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head3 rowspan=9>तिर्यंच</th><br><br>
+    <th class=head3>मि. संज्ञी पर्याप्तक पंचेन्द्रिय कर्मभूमि</th><br><br>
+    <td class=cellY colspan=5>हाँ</td><br><br>
+    <td class=cellN colspan=3>नहीं</td><br><br>
+    <td class=cellY colspan=8>हाँ</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head3>असंज्ञी पर्याप्तक पंचेन्द्रिय कर्मभूमि</th><br><br>
+    <td class=cellY colspan=2>हाँ</td><br><br>
+    <td class=cellN colspan=7>नहीं</td><br><br>
+    <td class=cellY rowspan=2>हाँ</td><br><br>
+    <td class=cellN rowspan=2>नहीं</td><br><br>
+    <td class=cellY colspan=4>हाँ</td><br><br>
+    <td class=cellN>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head3>पंचेन्द्रिय अपर्याप्त, विकलेन्द्रिय, जल, पृथ्वी, वनस्पति</th><br><br>
+    <td class=cellN colspan=9>नहीं</td><br><br>
+    <td class=cellY rowspan=2 colspan=3>हाँ</td><br><br>
+    <td class=cellN rowspan=2 colspan=2>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head3>अग्नि / वायुकायिक</th><br><br>
+    <td class=cellN colspan=11>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head3>मि. भोगभूमि</th><br><br>
+    <td class=cellY colspan=3>हाँ</td><br><br>
+    <td class=cellN colspan=13>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head3>नित्य / इतर निगोद</th><br><br>
+    <td class=cellN colspan=9>नहीं</td><br><br>
+    <td class=cellY>हाँ</td><br><br>
+    <td class=cellN>नहीं</td><br><br>
+    <td class=cellY colspan=3>हाँ</td><br><br>
+    <td class=cellN rowspan=2 colspan=2>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head3>सा. कर्मभूमि</th><br><br>
+    <td class=cellY colspan=5>हाँ</td><br><br>
+    <td class=cellN colspan=3>नहीं</td><br><br>
+    <td class=cellY colspan=4>हाँ</td><br><br>
+    <td class=cellN>नहीं</td><br><br>
+    <td class=cellY>हाँ</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head3>अ.स. / संयातासंयत कर्मभूमि</th><br><br>
+    <td class=cellN rowspan=2 colspan=3>नहीं</td><br><br>
+    <td class=cellY colspan=2>हाँ</td><br><br>
+    <td class=cellY>हाँ*</td><br><br>
+    <td class=cellN colspan=10>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head3>अ.स. भोगभूमि</th><br><br>
+    <td class=cellY>हाँ</td><br><br>
+    <td class=cellN colspan=12>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <td class=emptyTableCell colspan=2></td><br><br>
+    <th class=head1>भवनवासी</th><br><br>
+    <th class=head1>व्यंतर</th><br><br>
+    <th class=head1>ज्योतिष</th><br><br>
+    <th class=head1>१-२ स्वर्ग</th><br><br>
+    <th class=head1>३-१२ स्वर्ग</th><br><br>
+    <th class=head1>१३-१६ स्वर्ग</th><br><br>
+    <th class=head1>नव ग्रैवेयक</th><br><br>
+    <th class=head1>सर्वार्थसिद्धि</th><br><br>
+    <th class=head2>भोगभूमि</th><br><br>
+    <th class=head2>कर्मभूमि</th><br><br>
+    <th class=head3>भोगभूमि</th><br><br>
+    <th class=head3>एकेंद्रिय</th><br><br>
+    <th class=head3>विकलत्रय</th><br><br>
+    <th class=head3>पंचेन्द्रिय</th><br><br>
+    <th class=head4>पहला</th><br><br>
+    <th class=head4>२-७</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head4 rowspan=2>नरक</th><br><br>
+    <th class=head4>पहला नरक</th><br><br>
+    <td class=cellN colspan=9>नहीं</td><br><br>
+    <td class=cellY>हाँ</td><br><br>
+    <td class=cellN colspan=3>नहीं</td><br><br>
+    <td class=cellY rowspan=2>हाँ</td><br><br>
+    <td class=cellN colspan=2 rowspan=2>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th class=head4>२-७ नरक</th><br><br>
+    <td class=cellN colspan=13>नहीं</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <td class=emptyTableCell colspan=2></td><br><br>
+    <td class=tableNotes colspan=2>मि. = मिथ्यादृष्टि</td><br><br>
+    <td class=tableNotes colspan=2>सा. = सासादन</td><br><br>
+    <td class=tableNotes colspan=2>अ.स. = असंयत सम्यग्दृष्टि</td><br><br>
+    <td class=tableNotes colspan=2>* = २ मत हैं</td><br><br>
+    <td class=tableNotes colspan=4>^ = १६ स्वर्ग से ऊपर बाह्य में निर्ग्रन्थ वेष</td><br><br>
+    <td class=tableNotes colspan=4>+ = देव अग्नि और वायु में पैदा नहीं होते</td><br><br>
+  </tr><br><br>
+  </tbody><br><br>
+</table><br><br>
+
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

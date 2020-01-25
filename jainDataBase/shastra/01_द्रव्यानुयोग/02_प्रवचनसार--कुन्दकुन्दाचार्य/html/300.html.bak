@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>प्रवचनसार--कुन्दकुन्दाचार्य</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='299.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='301.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>अमृतचंद्राचार्य</option>
+      </select>
+    </li>
+
+        <li>
+          <select name='select-native-1' class='teekakaar' id='select-native-1' >
+              <option disabled=disabled selected=true>जयसेनाचार्य</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-300><span class=incFontSz>+ </span><a href=#index>
+﻿अब उसे ही विशेष कहते हैं -</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿अब्भुट्ठाणं गहणं उवासणं पोसणं च सक्कारं (२६२)<br>अंजलिकरणं पणमं भणिदमिह गुणाधिगाणं हि ॥३००॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿<b><font color=darkRed>[गुणाधिकाना हि]</font></b> गुणों में अधिक <span class=comment>(श्रमणों)</span> के प्रति <b><font color=darkRed>[अभ्‍युत्थानं]</font></b> अभ्‍युत्थान, <b><font color=darkRed>[ग्रहणं]</font></b> ग्रहण <span class=comment>(आदर से स्वीकार)</span>, <b><font color=darkRed>[उपासनं]</font></b> उपासन <span class=comment>(सेवा)</span>, <b><font color=darkRed>[पोषणं]</font></b> पोषण <span class=comment>(उनके अशन, शयनादि की चिन्ता)</span>, <b><font color=darkRed>[सत्कार:]</font></b> सत्कार <span class=comment>(गुणों की प्रशंसा)</span>, <b><font color=darkRed>[अञ्जलिकरणं]</font></b> अंजलि करना <span class=comment>(विनयपूर्वक हाथ जोड़ना)</span> <b><font color=darkRed>[च]</font></b> और <b><font color=darkRed>[प्रणाम:]</font></b> प्रणाम करना <b><font color=darkRed>[इह]</font></b> यहाँ <b><font color=darkRed>[भणितम्]</font></b> कहा है । </div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;अमृतचंद्राचार्य</span>&nbsp;
+    <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;जयसेनाचार्य</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>अमृतचंद्राचार्य :</font></b> <br><br>﻿श्रमणों को अपने से अधिक गुणवान <font color=DarkSlateGray>(श्रमण)</font> के प्रति अभ्‍युत्थान, ग्रहण, उपासन, पोषण, सत्कार, अंजलिकरण और प्रणामरूप प्रवृत्तियाँ निषिद्ध नहीं हैं ॥२६२॥ 
+       </div>
+    </td></tr>
+    <tr><td><div id=teeka1 class=teeka><b><font color=darkgreen>जयसेनाचार्य :</font></b> <br><br>﻿<b>[<font color=maroon>भणिदं</font>]</b> कहा गया है । <b>[<font color=maroon>इह</font>]</b> इस ग्रन्थ में । यहाँ किनके सम्बन्ध में कहा गया है ? <b>[<font color=maroon>गुणाधिगाणं हि</font>]</b> यहाँ वास्तव में गुणों में अधिक मुनियों के सम्बन्ध में कहा गया है । उनके सम्बन्ध में क्या कहा गया है? <b>[<font color=maroon>अब्भुट्ठाणं ग्रहणं उवासणं पोसणं च सक्कारं अंजलिकरणं पणमं</font>]</b> खड़े होना, ग्रहण, उपासन, पोषण, सत्कार, अंजलिकरण, प्रणाम आदि उनके सम्बन्ध में, करने को कहा गया है । सामने जाना अभ्युत्थान है, स्वीकार करना ग्रहण है, शुद्धात्म- भावना के सहकारी कारण के हेतु से सेवा करना उपासन है, उसी के लिये भोजन-शयन आदि की चिन्ता करना पोषण है, भेदाभेद रत्नत्रयरूप गुण को प्रकाशित करना सत्कार है, अंजलि बाँधकर नमस्कार करना अंजलिकरण है, नमस्कार हो- ऐसा वचन बोलना प्रणाम है ॥३००॥<br><br>
+
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>

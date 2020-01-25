@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Notes</title>
+      <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jquery.js'></script>
+      <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
+      <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
+      <script type="text/javascript" src='myItem.js'></script>
+      <style>
+        body {
+          background-color: #fcf5e8;
+        }
+        a {
+          text-decoration: none !important;
+        }
+        .hdr {
+          font-size: 5vw;
+          color : darkred;
+          font-weight:bold;
+        }
+        .index {
+          color:blue;
+          float:right;
+        }
+        hr {
+          border: none;
+          height: 3px;
+          color: #333;
+          background-color: #333;
+          width:50%;
+        }
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+        }
+        $('select option:even').css({'color': 'red'})
+        $('select option:odd').css({'color': 'blue'})
+      </style>
+    </head>
+    <body>
+    <div align=center><a href='../../../../../index.html' rel=external><img src='../../../../../images/jain-saint.jpg' width=8%></img></a></div><br>
+    <a href='04-01.html' rel=external><img src='../../../../../images/common/prev.jpg' height=50 width=50/></a><a href='05-02.html' rel=external style='float: right'><img src='../../../../../images/common/next.jpg' height=50 width=50/></a>  <div data-role='navbar'>
+    <ul>
+
+        <li>
+          <select name='select-native-0' class='teekakaar' id='select-native-0' >
+              <option disabled=disabled selected=true>विशेष</option>
+      </select>
+    </li>
+      </ul>
+    </div>
+    <br><div class=title id=gatha-05-01><span class=incFontSz>+ </span><a href=#index>
+﻿प्रकृति-बन्ध प्ररूपणा</a><span class=decFontSz> -</span></div>
+   <div class=gatha>﻿प्रकृति-बन्ध प्ररूपणा</div>
+  <br><div class=teekakaar>
+    <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;विशेष</span>&nbsp;
+  </div>
+  <br><table width=90% align=center>
+    <tr><td><div id=teeka0 class=teeka><b><font color=darkgreen>विशेष :</font></b> <br><br><table class=myAltTable><br><br>
+  <thead><br><br>
+  <tr><br><br>
+    <td class=emptyTableCell></td><br><br>
+    <th class=tableTitle colspan=4>प्रकृतिबन्ध की अपेक्षा स्वामित्व प्ररूपणा</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=2>मूल प्रकृति</th><br><br>
+    <th colspan=2 rowspan=2>उत्तर प्रकृति</th><br><br>
+    <th colspan=2>स्वामित्व व गुणस्थान</th><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>उत्कृष्ट</th><br><br>
+    <th>जघन्य</th><br><br>
+  </tr><br><br>
+  </thead><br><br>
+  <tbody><br><br>
+  <tr><br><br>
+    <th>ज्ञानावरण</th><br><br>
+    <th colspan=2>पाँचों</th><br><br>
+    <td>१०</td><br><br>
+    <td>सू. ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=3>दर्शनावरण</th><br><br>
+    <th colspan=2>चक्षु, अचक्षु अवधि व केवलदर्शन</th><br><br>
+    <td>१०</td><br><br>
+    <td>सू. ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>निद्रा, प्रचला</th><br><br>
+    <td>१०</td><br><br>
+    <td>सू. ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>निद्रानिद्रा, प्रचलाप्रचला</th><br><br>
+    <td>१</td><br><br>
+    <td>सू. ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=2>वेदनीय</th><br><br>
+    <th colspan=2>साता</th><br><br>
+    <td>१०</td><br><br>
+    <td>सू. ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>असाता</th><br><br>
+    <td>१-९</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=7>मोहनीय</th><br><br>
+    <th colspan=2>मिथ्यात्व, अनन्तानुबन्धी चतुष्क</th><br><br>
+    <td>१</td><br><br>
+    <td>सू. ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>अप्रत्याख्यानावरण चतुष्क</th><br><br>
+    <td>४</td><br><br>
+    <td>सू. ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>प्रत्याख्यानावरण चतुष्क</th><br><br>
+    <td>५</td><br><br>
+    <td>सू. ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>संज्वलन चतुष्क</th><br><br>
+    <td>९</td><br><br>
+    <td>सू. ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>हास्य,रति, अरति, शोक,भय, जुगुप्सा</th><br><br>
+    <td>४-९</td><br><br>
+    <td>सू. ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>स्त्री वेद, नपुंसक वेद</th><br><br>
+    <td>१</td><br><br>
+    <td>सू. ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>पुरुष वेद</th><br><br>
+    <td>१०</td><br><br>
+    <td>सू. ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=3>आयु</th><br><br>
+    <th colspan=2>नरक</th><br><br>
+    <td>१</td><br><br>
+    <td>असंज्ञी</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>तिर्यंच</th><br><br>
+    <td>१</td><br><br>
+    <td>सू. ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>मनुष्‍य, देव</th><br><br>
+    <td>१-९</td><br><br>
+    <td></td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=30>नाम</th><br><br>
+    <th rowspan=3>गति</th><br><br>
+    <th>नरक</th><br><br>
+    <td>१</td><br><br>
+    <td>असंज्ञी</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>तिर्यंच, मनुष्‍य</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>देव</th><br><br>
+    <td>१-९</td><br><br>
+    <td>अविरत सम्‍यक्त्वी</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>जाति</th><br><br>
+    <th>एकेन्द्रियादि पाँचों</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=3>शरीर</th><br><br>
+    <th>औदारिक, तैजस, कार्मण</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>वैक्रियक</th><br><br>
+    <td>१-९</td><br><br>
+    <td>अविरत सम्‍यक्त्वी</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>आहारक</th><br><br>
+    <td>७</td><br><br>
+    <td>अप्रमत्त</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=3>अंगोपांग</th><br><br>
+    <th>औदारिक</th><br><br>
+    <td>१</td><br><br>
+    <td></td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>वैक्रियक</th><br><br>
+    <td>१-९</td><br><br>
+    <td>अविरति</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>आहारक</th><br><br>
+    <td>७</td><br><br>
+    <td>अप्रमत्त</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>निर्माण, बन्‍धन, संघात</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=2>संस्‍थान</th><br><br>
+    <th>समचतुरस्र</th><br><br>
+    <td>१-९</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>शेष पाँचों</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=2>संहनन</th><br><br>
+    <th>वज्र वृषभ नाराच</th><br><br>
+    <td>१-९</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>शेष पाँचों</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>स्‍पर्श, रस, गन्‍ध, वर्ण</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=3>आनुपूर्वी</th><br><br>
+    <th>नरक</th><br><br>
+    <td>१</td><br><br>
+    <td>असंज्ञी</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>तिर्यंच व मनुष्‍य</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>देव</th><br><br>
+    <td>१-९</td><br><br>
+    <td>अविरत सम्‍यक्त्वी</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>अगुरुलघु, उपघात, परघात</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>आतप, उद्योत, उच्‍छ्‍वास</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=2>विहायोगति</th><br><br>
+    <th>प्रशस्‍त</th><br><br>
+    <td>१-९</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>अप्रशस्‍त</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>प्रत्‍येक, साधारण, त्रस, स्‍थावर, दुर्भग</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>सुभग, आदेय</th><br><br>
+    <td>१-९</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>सुस्वर, दु:स्‍वर, शुभ, अशुभ</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>सूक्ष्‍म,बादर, पर्याप्त, अपर्याप्त</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>स्थिर, अस्थिर, अनादेय, अयश:कीर्ति </th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>यश:कीर्ति</th><br><br>
+    <td>१०</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>तीर्थंकर</th><br><br>
+    <td></td><br><br>
+    <td></td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th rowspan=2>गोत्र</th><br><br>
+    <th colspan=2>उच्‍च</th><br><br>
+    <td>१०</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th colspan=2>नीच</th><br><br>
+    <td>१</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <th>अन्‍तराय</th><br><br>
+    <th colspan=2>पाँचों</th><br><br>
+    <td>१०</td><br><br>
+    <td>सू.ल./च</td><br><br>
+  </tr><br><br>
+  <tr><br><br>
+    <td class=emptyTableCell></td><br><br>
+    <td class=tableNotes colspan=4>सू.ल./च = चरम भवस्थ तथा तीन विग्रह में से प्रथम विग्रह में स्थित सूक्ष्म निगोद लब्ध्यपर्याप्त जीव</td><br><br>
+  <tr><br><br>
+  </tbody><br><br>
+</table><br><br>
+
+       </div>
+    </td></tr>
+  </table><br><br><br>
+  </body>
+</html>
