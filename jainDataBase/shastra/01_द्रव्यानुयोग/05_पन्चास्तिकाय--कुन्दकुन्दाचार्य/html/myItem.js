@@ -51,13 +51,11 @@ $( document ).ready(function() {
        $optgrp.append("<option value='021.html'><b>021</b> - ﻿द्रव्य पीठिका समापन</option>");
        $optgrp.append("<option value='022.html'><b>022</b> - ﻿काल द्रव्य प्रतिपादक अन्ताराधिकार -- जीवादि पाँच के अस्ति-कायत्व सूचक</option>");
        $optgrp.append("<option value='023.html'><b>023</b> - ﻿निश्चय काल कथन</option>");
-       $optgrp.append("<option value='024.html'><b>024</b> - ﻿अब पुन: निश्चय-काल का स्वरूप कहते हैं</option>");
        $optgrp.append("<option value='025.html'><b>025</b> - ﻿समयादि व्यवहार-काल मुख्यता </option>");
        $optgrp.append("<option value='026.html'><b>026</b> - ﻿अब पहली गाथा में व्यवहारकाल की जो कथंचित् पराधीनता कही है, वह किसरूप से सम्भव है; ऐसा पूछने पर युक्ति दिखाते हैं</option>");
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿जीवास्तिकाय">')
        $optgrp.append("<option value='027.html'><b>027</b> - ﻿जीव सिद्धि हेतु नौ अधिकार-सुचक अधिकार गाथा</option>");
-       $optgrp.append("<option value='0272.html'><b>कलश-८</b></option>");
        $optgrp.append("<option value='028.html'><b>028</b> - ﻿प्रभुत्व व्याख्यान मुख्यता-परक सर्वज्ञ-सिद्धि </option>");
        $optgrp.append("<option value='029.html'><b>029</b> - ﻿अब, जो पूर्वोक्त निरुपाधि ज्ञान-दर्शन-सुख स्वरूप है, उसका ही जादोसयं.. इसप्रकार के वचन द्वारा पुन: समर्थन करते हैं</option>");
        $optgrp.append("<option value='030.html'><b>030</b> - ﻿जीवत्व व्याख्यान</option>");
@@ -266,7 +264,6 @@ $( document ).ready(function() {
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿जीवास्तिकाय">')
        $optgrp.append("<option value='027.html'><b>027</b> - ﻿जीव सिद्धि हेतु नौ अधिकार-सुचक अधिकार गाथा</option>");
-       $optgrp.append("<option value='0270.html'><b>चूलिका</b></option>");
        $optgrp.append("<option value='028.html'><b>028</b> - ﻿प्रभुत्व व्याख्यान मुख्यता-परक सर्वज्ञ-सिद्धि </option>");
        $optgrp.append("<option value='029.html'><b>029</b> - ﻿अब, जो पूर्वोक्त निरुपाधि ज्ञान-दर्शन-सुख स्वरूप है, उसका ही जादोसयं.. इसप्रकार के वचन द्वारा पुन: समर्थन करते हैं</option>");
        $optgrp.append("<option value='030.html'><b>030</b> - ﻿जीवत्व व्याख्यान</option>");

@@ -72,6 +72,7 @@ cp $dbDir/youtube-animation/* $outDir/youtube-animation/.
 \rm -rf $outDir/shastra/07_Notes/02_Stories
 \rm -rf $outDir/shastra/07_Notes/03_*
 find $outDir/. -name "*.html" -exec perl -i -pe 's/<body>/<body oncopy="return false" onpaste="return false" oncut="return false">/g' {} \;
+find $outDir/. -name "*.bak" -exec rm {} \;
 
 ## Update jaindb-web
 export jaindb=$(cd ../../../../jaindb && echo $PWD)
