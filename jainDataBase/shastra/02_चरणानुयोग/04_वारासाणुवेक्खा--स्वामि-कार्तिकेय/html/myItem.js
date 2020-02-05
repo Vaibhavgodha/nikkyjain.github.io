@@ -55,6 +55,8 @@ $( document ).ready(function() {
        $optgrp.append("<option value='029.html'><b>029</b> - ﻿इसी को दृढ़ करते हैं</option>");
        $optgrp.append("<option value='030.html'><b>030</b> - ﻿परमार्थ शरण</option>");
        $optgrp.append("<option value='031.html'><b>031</b> - ﻿निष्कर्ष</option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿संसार अनुप्रेक्षा">')
        $optgrp.append("<option value='032-033.html'><b>032-033</b> - ﻿संसार का सामान्य स्वरूप</option>");
        $optgrp.append("<option value='034.html'><b>034</b> - ﻿नरक-गति के दुःख</option>");
        $optgrp.append("<option value='035.html'><b>035</b> - ﻿नरक में पांच प्रकार के दुःख</option>");
