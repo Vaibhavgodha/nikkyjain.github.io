@@ -44,14 +44,17 @@ anvayarth=""
 if not noAnvayarth :
     anvayarth="<b><font color=darkmagenta>अन्वयार्थ : </font></b>"
 html=open(myHtml, "w")
-html.write("""<!DOCTYPE html>
-<html>
+#html.write("""<!DOCTYPE html>
+html.write("""<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>"""+myTitle+"""</title>
   <link rel="icon" type="image/png" href='"""+myRelPath+"""images/default/jainFlag-short.jpg'/>
   <link rel="stylesheet" href='"""+myRelPath+"""css/myJqueryMobile.css'>
+  <link rel="stylesheet" href='"""+myRelPath+"""css/orgchart.css'>
+  <link rel="stylesheet" href='"""+myRelPath+"""css/jsmind.css'>
+  <script type="text/javascript" src='"""+myRelPath+"""js/jsmind.js'></script>
   <script type="text/javascript" src='"""+myRelPath+"""js/jquery.js'></script>
   <script type="text/javascript" src='"""+myRelPath+"""js/myFontSzCtrl.js'></script>
   <style>
@@ -149,6 +152,8 @@ if (os.path.isdir('./main') or os.path.isdir('./ftitle')):
     html.write("    </table><br><br><br>\n")
 html.write("<div align=center><img src='"+myRelPath+"images/hrim.png' width='20%'></img></div>\n");
 
+jsmCtr=0
+themes=['pomegranate', 'primary', 'danger', 'success', 'nephrite', 'belizehole', 'wisteria', 'asphalt', 'pumpkin'];
 for bcFile in sorted(os.listdir('./main')):
     # Handle Adhikaar
     curFile="./adhikaar/"+bcFile
@@ -226,6 +231,17 @@ for bcFile in sorted(os.listdir('./main')):
         fData=fData.replace(']', ']</font></b>')
         fData=fData.replace('(', '<span class=comment>(')
         fData=fData.replace(')', ')</span>')
+        fData=re.sub(r'<!--PythonTagBegin.*?PythonTagEnd-->', lambda m: m.group().replace("<br>", "\n"), fData, flags=re.DOTALL)
+        fData=fData.replace('<!--PythonTagBegin-->', '<div align=center>')
+        fData=fData.replace('<!--PythonTagEnd-->', '</div>')
+        fData=re.sub(r'<!--JsMindTagBegin.*?JsMindTagEnd-->', lambda m: m.group().replace("<br>", "\n"), fData, flags=re.DOTALL)
+        fData=re.sub(r'<!--JsMindTagBegin.*?JsMindTagEnd-->', lambda m: m.group().replace("<b><font color=darkRed>[", "["), fData, flags=re.DOTALL)
+        fData=re.sub(r'<!--JsMindTagBegin.*?JsMindTagEnd-->', lambda m: m.group().replace("]</font></b>", "]"), fData, flags=re.DOTALL)
+        fData=fData.replace('<!--JsMindTagBegin-->', '<div class=jsm id="jsm'+str(jsmCtr)+'"></div>\n<script type="text/javascript">\nvar mind'+str(jsmCtr)+' = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[')
+        fData=fData.replace('<!--JsMindTagBeginH2-->', '<div class=jsm2 id="jsm'+str(jsmCtr)+'"></div>\n<script type="text/javascript">\nvar mind'+str(jsmCtr)+' = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[')
+        fData=fData.replace('<!--H2JsMindTagBeginH7-->', '<div class=jsm7 id="jsm'+str(jsmCtr)+'"></div>\n<script type="text/javascript">\nvar mind'+str(jsmCtr)+' = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[')
+        fData=fData.replace('<!--JsMindTagEnd-->', ']}; var options'+str(jsmCtr)+' = { container:"jsm'+str(jsmCtr)+'", editable:false, theme:"'+themes[jsmCtr%9]+'" }; var jm = new jsMind(options'+str(jsmCtr)+'); jm.show(mind'+str(jsmCtr)+'); \n</script>\n')
+        jsmCtr+=1
         html.write("<div class=arth>"+anvayarth+fData+"</div>")
     # Handle Teeka
     if (len(sys.argv) > 1):
@@ -245,6 +261,7 @@ for bcFile in sorted(os.listdir('./main')):
                 fData=re.sub(r'\(\(.*?\)\)', lambda m: m.group().replace("<br><br>", "<br>"), fData, flags=re.DOTALL)
                 fData=re.sub(r'<table.*?table>', lambda m: m.group().replace("<br>", ""), fData, flags=re.DOTALL)
                 fData=re.sub(r'<span.*?span>', lambda m: m.group().replace("<br><br>", "<br>"), fData, flags=re.DOTALL)
+                fData=re.sub(r'<!--PythonTagBegin.*?PythonTagEnd-->', lambda m: m.group().replace("<br><br>", ""), fData, flags=re.DOTALL)
                 fData=re.sub(r'प्रतिशंका [-–—]', '<b></font><font color=darkgreen>उत्तर –</font></b>', fData)
                 fData=re.sub(r'शंका [-–—]', '<b><font color=red>शंका –', fData); 
                 fData=re.sub(r'प्रश्न [-–—]', '<b><font color=red>प्रश्न –', fData); 

@@ -71,8 +71,11 @@ cp $dbDir/youtube-animation/* $outDir/youtube-animation/.
 \rm -rf $outDir/gatha/07_Notes/03_*
 \rm -rf $outDir/shastra/07_Notes/02_Stories
 \rm -rf $outDir/shastra/07_Notes/03_*
-find $outDir/. -name "*.html" -exec perl -i -pe 's/<body>/<body oncopy="return false" onpaste="return false" oncut="return false">/g' {} \;
-find $outDir/. -name "*.bak" -exec rm {} \;
+# Disable HTML copy
+if [ "$1" = "" ]; then
+  find $outDir/. -name "*.html" -exec perl -i -pe 's/<body>/<body oncopy="return false" onpaste="return false" oncut="return false">/g' {} \;
+  find $outDir/. -name "*.bak" -exec rm {} \;
+fi
 
 ## Update jaindb-web
 export jaindb=$(cd ../../../../jaindb && echo $PWD)
@@ -93,3 +96,9 @@ cp -r $jaindb/images $dbWeb/.
 \rm -rf $dbWeb/jainDataBase/gatha/07_Notes/03_*
 \rm -rf $dbWeb/jainDataBase/shastra/07_Notes/02_Stories
 \rm -rf $dbWeb/jainDataBase/shastra/07_Notes/03_*
+# Disable HTML copy
+if [ "$1" != "" ]; then
+    mkdir -p $dbWeb/.trash
+    cp $jaindb/others/crypt.html $dbWeb/.trash/.
+    cp $jaindb/others/personal.html $dbWeb/.trash/.
+fi

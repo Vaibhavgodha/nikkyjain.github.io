@@ -101,7 +101,7 @@ $( document ).ready(function() {
        $optgrp.append("<option value='02-41.html'><b>02-41</b> - ﻿अनादिसंबन्धे च ॥४१॥</option>");
        $optgrp.append("<option value='02-42.html'><b>02-42</b> - ﻿सर्वस्य ॥४२॥</option>");
        $optgrp.append("<option value='02-43.html'><b>02-43</b> - ﻿तदादीनि भाज्यानि युगपदेकस्मिन्नाचतुर्भ्यः ॥४३॥</option>");
-       $optgrp.append("<option value='02-44.html'><b>02-44</b> - ﻿निरूपभोगमन्त्यम् ॥४४॥</option>");
+       $optgrp.append("<option value='02-44.html'><b>02-44</b> - ﻿निरुपभोगमन्त्यम् ॥४४॥</option>");
        $optgrp.append("<option value='02-45.html'><b>02-45</b> - ﻿गर्भसम्मूर्च्छनजमाद्यम्‌ ॥४५॥</option>");
        $optgrp.append("<option value='02-46.html'><b>02-46</b> - ﻿औपपादिकं वैक्रियिकम्‌ ॥४६॥</option>");
        $optgrp.append("<option value='02-47.html'><b>02-47</b> - ﻿लब्धिप्रत्ययं च॥४७॥</option>");
@@ -127,10 +127,10 @@ $( document ).ready(function() {
        $optgrp.append("<option value='03-12.html'><b>03-12</b> - ﻿हेमार्जुन-तपनीय वैडूर्य-रजत हेममयाः॥१२॥</option>");
        $optgrp.append("<option value='03-13.html'><b>03-13</b> - ﻿मणि-विचित्र-पार्श्‍वा उपरि मूले च तुल्यविस्ताराः॥१३॥</option>");
        $optgrp.append("<option value='03-14.html'><b>03-14</b> - ﻿पद्ममहापद्मतिगिञ्छकेशरि महापुण्डरीकपुण्डरीका-हृदास्तेषामुपरि॥१४॥</option>");
-       $optgrp.append("<option value='03-15.html'><b>03-15</b> - ﻿प्रथमो योजन-सहस्रायामस्तदर्द्धविष्कम्भो ह्रदः।॥१५॥</option>");
+       $optgrp.append("<option value='03-15.html'><b>03-15</b> - ﻿प्रथमो योजन-सहस्रायामस्तदर्द्धविष्कम्भो हृदः।॥१५॥</option>");
        $optgrp.append("<option value='03-16.html'><b>03-16</b> - ﻿दशयोजनावगाहः॥१६॥</option>");
        $optgrp.append("<option value='03-17.html'><b>03-17</b> - ﻿तन्मध्ये योजनं पुष्करम्॥१७॥</option>");
-       $optgrp.append("<option value='03-18.html'><b>03-18</b> - ﻿तद् द्विगुण-द्विगुणा ह्रदाः पुष्कराणि च॥१८॥</option>");
+       $optgrp.append("<option value='03-18.html'><b>03-18</b> - ﻿तद् द्विगुण-द्विगुणा हृदाः पुष्कराणि च॥१८॥</option>");
        $optgrp.append("<option value='03-19.html'><b>03-19</b> - ﻿तन्निवासिन्यो देव्यः श्री-ह्री-धृति-कीर्ति-बुद्धि-लक्ष्म्यः पल्योपमस्थितयः ससामानिक परिषत्काः ॥१९॥</option>");
        $optgrp.append("<option value='03-20.html'><b>03-20</b> - ﻿गंगासिन्धु रोहिद्रोहितास्या-हरिद्धरिकान्ता सीतासीतोदा-नारीनरकान्ता सुवर्णरूप्यकूला रक्तारक्तोदाः सरितस्तन्मध्यगाः ॥२०॥</option>");
        $optgrp.append("<option value='03-21.html'><b>03-21</b> - ﻿द्वयोर्द्वयोः पूर्वाः पूर्वगाः॥२१॥</option>");

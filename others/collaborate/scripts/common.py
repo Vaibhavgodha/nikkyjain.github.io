@@ -325,6 +325,7 @@ def createHeader (html, myRelPath, dbDir):
   <title>Jai Jinendra</title>
   <link rel="icon" type="image/png" href='"""+myRelPath+"""images/default/jainFlag-short.jpg'/>
   <link rel="stylesheet" href='"""+myRelPath+"""css/myJqueryMobile.css'>
+  <link rel="stylesheet" href='"""+myRelPath+"""css/orgchart.css'>
   <link rel="stylesheet" href='"""+myRelPath+"""js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
   <script type="text/javascript" src='"""+myRelPath+"""js/jquery.js'></script>
   <script type="text/javascript" src='"""+myRelPath+"""js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>

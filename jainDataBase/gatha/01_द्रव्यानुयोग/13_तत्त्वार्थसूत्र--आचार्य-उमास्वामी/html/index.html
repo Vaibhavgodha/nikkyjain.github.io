@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -6,6 +5,9 @@
   <title>तत्त्वार्थसूत्र--Gatha</title>
   <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
   <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+  <link rel="stylesheet" href='../../../../../css/orgchart.css'>
+  <link rel="stylesheet" href='../../../../../css/jsmind.css'>
+  <script type="text/javascript" src='../../../../../js/jsmind.js'></script>
   <script type="text/javascript" src='../../../../../js/jquery.js'></script>
   <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
   <style>
@@ -54,7 +56,7 @@
 <div align=right><b><font size=20>- आचार्य-उमास्वामी</font></b></div>
 <br><br><br><font size=2 color=darkRed>
 <div align=right>nikkyjain@gmail.com</div>
-<div align=right>Date : 05-Feb-2020</font></div><br><br><div class=adhikaar id=index><h1>Index</h1></div><br>
+<div align=right>Date : 29-Feb-2020</font></div><br><br><div class=adhikaar id=index><h1>Index</h1></div><br>
 <div align=center><img src='../../../../../images/brownOm.png' width='5%'></img></div>
     <table align=center width=90% class=mainIndex>
 <tr><th>गाथा / सूत्र<th>विषय<th>गाथा / सूत्र<th>विषय</tr>
@@ -92,7 +94,7 @@
 <td><b>02-24)<b> <td><a href=#gatha-02-24>﻿संज्ञी जीव का स्वरूप</a><td><b>02-25)<b> <td><a href=#gatha-02-25>﻿विग्रह गति में योग</a>    <tr>
 <td><b>02-26)<b> <td><a href=#gatha-02-26>﻿विग्रह गति में गमन</a><td><b>02-27)<b> <td><a href=#gatha-02-27>﻿मुक्त जीव का गमन</a>    <tr>
 <td><b>02-28)<b> <td><a href=#gatha-02-28>﻿विग्रह गति का काल</a><td><b>02-29)<b> <td><a href=#gatha-02-29>﻿ऋजु-गति का काल</a>    <tr>
-<td><b>02-30)<b> <td><a href=#gatha-02-30>﻿विरह-गति में अनाहारक</a><td><b>02-31)<b> <td><a href=#gatha-02-31>﻿जन्म के प्रकार</a>    <tr>
+<td><b>02-30)<b> <td><a href=#gatha-02-30>﻿विग्रह-गति में अनाहारक</a><td><b>02-31)<b> <td><a href=#gatha-02-31>﻿जन्म के प्रकार</a>    <tr>
 <td><b>02-32)<b> <td><a href=#gatha-02-32>﻿जन्म-योनि के प्रकार</a><td><b>02-33)<b> <td><a href=#gatha-02-33>﻿गर्भ-जन्म के स्वामी</a>    <tr>
 <td><b>02-34)<b> <td><a href=#gatha-02-34>﻿उपपाद-जन्म के स्वामी</a><td><b>02-35)<b> <td><a href=#gatha-02-35>﻿सम्मूर्छन-जन्म के स्वामी</a>    <tr>
 <td><b>02-36)<b> <td><a href=#gatha-02-36>﻿शरीर के प्रकार</a><td><b>02-37)<b> <td><a href=#gatha-02-37>﻿शरीरों में स्थूलता-सूक्ष्मता</a>    <tr>
@@ -255,25 +257,209 @@
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जो मोक्षमार्ग के नेता हैं, अग्रणी हैं, पथप्रदर्शक हैं; कर्मरूपी पर्वतों को भेदने वाले हैं और सम्पूर्ण तत्त्वों के ज्ञाता हैं, ऐसे आप्त को मैं उनके गुणों - सर्वज्ञतादि की प्राप्ति के लिए नमस्कार करता हूँ ।</div><hr class=type_7>
 <br><br><div class=adhikaar><h1>﻿१-जीवाधिकार</h1></div><br><div align=center><img src='../../../../../images/ahinsaParmoDharm.png' width='15%'></img></div>
 <br><div class=title id=gatha-01-01><span class=incFontSz>+ </span><a href=#index>﻿मोक्ष का उपाय</a><span class=decFontSz> -</span></div><div class=gatha>﻿सम्यग्दर्शनज्ञानचारित्राणि मोक्षमार्गः ॥१॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿सम्‍यग्‍दर्शन, सम्‍यग्‍ज्ञान और सम्‍यक्‌चारित्र ये तीनों मिलकर मोक्ष का मार्ग हैं ॥१॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿सम्‍यग्‍दर्शन, सम्‍यग्‍ज्ञान और सम्‍यक्‌चारित्र ये तीनों मिलकर मोक्ष का मार्ग हैं ॥१॥<br><div class=jsm2 id="jsm1"></div>
+<script type="text/javascript">
+var mind1 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"मोक्षमार्ग"},
+
+                {"id":"sub1", "parentid":"root", "topic":"सम्‍यग्‍दर्शन"},
+                {"id":"sub11", "parentid":"root", "topic":"सम्‍यग्‍ज्ञान"},
+                {"id":"sub12", "parentid":"root", "topic":"सम्‍यक्‌चारित्र"}
+]}; var options1 = { container:"jsm1", editable:false, theme:"primary" }; var jm = new jsMind(options1); jm.show(mind1); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-01-02><span class=incFontSz>+ </span><a href=#index>﻿सम्यग्दर्शन का लक्षण</a><span class=decFontSz> -</span></div><div class=gatha>﻿तत्त्वार्थश्रद्धानं सम्यग्दर्शनम् ॥२॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿अपने अपने स्‍वरूप के अनुसार पदार्थों का जो श्रद्धान होता है वह सम्‍यग्‍दर्शन है ॥२॥</div><hr class=type_7>
 <br><div class=title id=gatha-01-03><span class=incFontSz>+ </span><a href=#index>﻿उत्पत्ति के आधार पर सम्यग्दर्शन के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿तन्निसर्गादधिगमाद्वा ॥३॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿वह <span class=comment>(सम्‍यग्‍दर्शन)</span> निसर्ग से और अधिगम से उत्‍पन्‍न होता है॥३॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿वह <span class=comment>(सम्‍यग्‍दर्शन)</span> निसर्ग से और अधिगम से उत्‍पन्‍न होता है ॥३॥<br><div align=center>
+<div class=oc>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>सम्यग्दर्शन</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>निसर्गज</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>अधिगमज</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-01-04><span class=incFontSz>+ </span><a href=#index>﻿सात तत्त्व</a><span class=decFontSz> -</span></div><div class=gatha>﻿जीवाजीवास्रवबन्धसंवरनिर्जरामोक्षास्तत्त्वम् ॥४॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जीव, अजीव, आस्रव, बंध, संवर, निर्जरा और मोक्ष ये तत्त्व हैं॥४॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जीव, अजीव, आस्रव, बंध, संवर, निर्जरा और मोक्ष ये तत्त्व हैं ॥४॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>तत्त्व</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>जीव</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>अजीव</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>आस्रव</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>बंध</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>संवर</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>निर्जरा</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>मोक्ष</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-01-05><span class=incFontSz>+ </span><a href=#index>﻿निक्षेपों का कथन</a><span class=decFontSz> -</span></div><div class=gatha>﻿नामस्थापनाद्रव्यभाव तस्तन्न्यासः ॥५॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿नाम, स्‍थापना, द्रव्‍य और भाव रूप से उनका अर्थात् सम्‍यग्‍दर्शन आदि और जीव आदि का न्‍यास अर्थात् निक्षेप होता है॥५॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿नाम, स्‍थापना, द्रव्‍य और भाव रूप से उनका अर्थात् सम्‍यग्‍दर्शन आदि और जीव आदि का न्‍यास <span class=comment>(निक्षेप)</span> होता है ॥५॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>निक्षेप</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>नाम</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>स्थापना</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>द्रव्य</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>भाव</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-01-06><span class=incFontSz>+ </span><a href=#index>﻿तत्त्वों को जानने का उपाय</a><span class=decFontSz> -</span></div><div class=gatha>﻿प्रमाणनयैरधिगमः ॥६॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿प्रमाण और नयों से पदार्थों का ज्ञान होता है ॥६॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿प्रमाण और नयों से पदार्थों का ज्ञान होता है ॥६॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>ज्ञान के उपाय</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>प्रमाण</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>नय</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-01-07><span class=incFontSz>+ </span><a href=#index>﻿तत्त्वों को जानने का अन्य उपाय</a><span class=decFontSz> -</span></div><div class=gatha>﻿निर्देशस्वामित्वसाधनाधिकरणस्थितिविधानतः ॥७॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿निर्देश, स्‍वामित्‍व, साधन, अधिकरण, स्थिति और विधान से सम्‍यग्‍दर्शन आदि विषयों का ज्ञान होता है ॥७॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿निर्देश, स्‍वामित्‍व, साधन, अधिकरण, स्थिति और विधान से सम्‍यग्‍दर्शन आदि विषयों का ज्ञान होता है ॥७॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>ज्ञान के उपाय</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>निर्देश</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>स्वामित्व</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>साधन</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>अधिकरण</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>स्थिति</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>विधान</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-01-08><span class=incFontSz>+ </span><a href=#index>﻿जीव आदि को जानने के और भी उपाय</a><span class=decFontSz> -</span></div><div class=gatha>﻿सत्संख्याक्षेत्रस्पर्शनकालान्तरभावाल्पबहुत्वैश्‍च ॥८॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿सत्, संख्या, क्षेत्र, स्पर्शन, काल, अन्तर, भाव और अल्पबहुत्व से भी सम्यग्दर्शन आदि विषयों का ज्ञान होता है ॥८॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿सत्, संख्या, क्षेत्र, स्पर्शन, काल, अन्तर, भाव और अल्पबहुत्व से भी सम्यग्दर्शन आदि विषयों का ज्ञान होता है ॥८॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>ज्ञान के उपाय</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>सत्</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>संख्या</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>क्षेत्र</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>स्पर्शन</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>काल</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>अन्तर</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>भाव</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>अल्प-बहुत्व</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-01-09><span class=incFontSz>+ </span><a href=#index>﻿ज्ञान के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿मतिश्रुतावधिमनःपर्ययकेवलानि ज्ञानम् ॥९॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿मतिज्ञान, श्रुतज्ञान, अवधिज्ञान, मन:पर्ययज्ञान और केवलज्ञान ये पाँच ज्ञान हैं॥९॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿मतिज्ञान, श्रुतज्ञान, अवधिज्ञान, मन:पर्ययज्ञान और केवलज्ञान ये पाँच ज्ञान हैं ॥९॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>ज्ञान</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>मतिज्ञान</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>श्रुतज्ञान</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>अवधिज्ञान</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>मन:पर्ययज्ञान</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>केवलज्ञान</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-01-10><span class=incFontSz>+ </span><a href=#index>﻿ज्ञान ही प्रमाण है</a><span class=decFontSz> -</span></div><div class=gatha>﻿तत्प्रमाणे ॥१०॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿वह पाँचों प्रकार का ज्ञान दो प्रमाणरूप है ॥१०॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿वह पाँचों प्रकार का ज्ञान दो प्रमाणरूप है ॥१०॥<br><div class=jsm id="jsm10"></div>
+<script type="text/javascript">
+var mind10 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"ज्ञान"},
+
+                {"id":"sub1", "parentid":"root", "topic":"परोक्ष"},
+                {"id":"sub11", "parentid":"sub1", "topic":"मति"},
+                {"id":"sub12", "parentid":"sub1", "topic":"श्रुत"},
+                {"id":"sub2", "parentid":"root", "topic":"प्रत्यक्ष", "direction":"right"},
+                {"id":"sub21", "parentid":"sub2", "topic":"अवधि"},
+                {"id":"sub22", "parentid":"sub2", "topic":"मन:पर्यय"},
+                {"id":"sub23", "parentid":"sub2", "topic":"केवल"}
+]}; var options10 = { container:"jsm10", editable:false, theme:"primary" }; var jm = new jsMind(options10); jm.show(mind10); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-01-11><span class=incFontSz>+ </span><a href=#index>﻿परोक्ष प्रमाण</a><span class=decFontSz> -</span></div><div class=gatha>﻿आद्ये परोक्षम् ॥११॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿प्रथम दो ज्ञान परोक्ष प्रमाण हैं ॥११॥</div><hr class=type_7>
 <br><div class=title id=gatha-01-12><span class=incFontSz>+ </span><a href=#index>﻿प्रत्यक्ष प्रमाण ज्ञान</a><span class=decFontSz> -</span></div><div class=gatha>﻿प्रत्यक्षमन्यत् ॥१२॥</div>
@@ -283,9 +469,48 @@
 <br><div class=title id=gatha-01-14><span class=incFontSz>+ </span><a href=#index>﻿मतिज्ञान किससे उत्पन्न होता है</a><span class=decFontSz> -</span></div><div class=gatha>﻿तदिन्द्रयानिन्द्रिय निमित्तम् ॥१४॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿वह<span class=comment>(मतिज्ञान)</span> इन्द्रिय और मन के निमित्त से होता है ॥१४॥</div><hr class=type_7>
 <br><div class=title id=gatha-01-15><span class=incFontSz>+ </span><a href=#index>﻿मतिज्ञान के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿अवग्रहेहावाय धारणाः ॥१५॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿अवग्रह, ईहा, अवाय और धारणा ये मतिज्ञान के चार भेद हैं ॥१५॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿अवग्रह, ईहा, अवाय और धारणा ये मतिज्ञान के चार भेद हैं ॥१५॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>मतिज्ञान</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>अवग्रह</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>ईहा</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>अवाय</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>धारणा</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-01-16><span class=incFontSz>+ </span><a href=#index>﻿अवग्रह आदि ज्ञानों के और भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿बहुबहुविधक्षिप्रानिःसृतानुक्तध्रुवाणां सेतराणाम्‌ ॥१६॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿सेतर<span class=comment>(प्रतिपक्षसहित)</span> बहु, बहुविध, क्षिप्र, अनि:सृत, अनुक्त और ध्रुव के अवग्रह, ईहा, अवाय और धारणारूप मतिज्ञान होते हैं ॥१६॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿सेतर <span class=comment>(प्रतिपक्षसहित)</span> बहु, बहुविध, क्षिप्र, अनि:सृत, अनुक्त और ध्रुव के अवग्रह, ईहा, अवाय और धारणारूप मतिज्ञान होते हैं ॥१६॥<br><div class=jsm id="jsm16"></div>
+<script type="text/javascript">
+var mind16 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"अर्थ / पदार्थ"},
+
+                {"id":"sub1", "parentid":"root", "topic":"अल्प"},
+                {"id":"sub2", "parentid":"root", "topic":"अल्पविध"},
+                {"id":"sub3", "parentid":"root", "topic":"अक्षिप्र"},
+                {"id":"sub4", "parentid":"root", "topic":"नि:सृत"},
+                {"id":"sub5", "parentid":"root", "topic":"उक्त"},
+                {"id":"sub6", "parentid":"root", "topic":"अध्रुव"},
+                {"id":"sub10", "parentid":"root", "topic":"बहु", "direction":"left"},
+                {"id":"sub11", "parentid":"root", "topic":"बहुविध", "direction":"left"},
+                {"id":"sub12", "parentid":"root", "topic":"क्षिप्र", "direction":"left"},
+                {"id":"sub13", "parentid":"root", "topic":"अनि:सृत", "direction":"left"},
+                {"id":"sub14", "parentid":"root", "topic":"अनुक्त", "direction":"left"},
+                {"id":"sub15", "parentid":"root", "topic":"ध्रुव", "direction":"left"}
+]}; var options16 = { container:"jsm16", editable:false, theme:"asphalt" }; var jm = new jsMind(options16); jm.show(mind16); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-01-17><span class=incFontSz>+ </span><a href=#index>﻿बहु बहुविध आदि किसके विशेषण हैं</a><span class=decFontSz> -</span></div><div class=gatha>﻿अर्थस्य ॥१७॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿अर्थ के <span class=comment>(वस्‍तु के)</span> अवग्रह, ईहा, अवाय और धारणा ये चारों मतिज्ञान होते हैं ॥१७॥</div><hr class=type_7>
 <br><div class=title id=gatha-01-18><span class=incFontSz>+ </span><a href=#index>﻿अवग्रह आदि ज्ञान का नियम</a><span class=decFontSz> -</span></div><div class=gatha>﻿व्यञ्जनस्यावग्रहः ॥१८॥</div>
@@ -295,11 +520,38 @@
 <br><div class=title id=gatha-01-20><span class=incFontSz>+ </span><a href=#index>﻿श्रुतज्ञान का स्वरूप</a><span class=decFontSz> -</span></div><div class=gatha>﻿श्रुतं मतिपूर्वं द्वयनेकद्वादशभेदम्‌ ॥२०॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿श्रुतज्ञान मतिज्ञानपूर्वक होता है। वह दो प्रकार का, अनेक प्रकार का और बारह प्रकार का है ॥२०॥</div><hr class=type_7>
 <br><div class=title id=gatha-01-21><span class=incFontSz>+ </span><a href=#index>﻿अवधिज्ञान के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿भवप्रत्ययोऽवधिर्देवनारकाणाम् ॥२१॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿भवप्रत्‍यय अवधिज्ञान देव और नारकियों के होता है ॥२१॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿भवप्रत्‍यय अवधिज्ञान देव और नारकियों के होता है ॥२१॥<br><div class=jsm id="jsm21"></div>
+<script type="text/javascript">
+var mind21 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"अवधिज्ञान"},
+
+                {"id":"sub1", "parentid":"root", "topic":"भव-प्रत्यय"},
+                {"id":"sub11", "parentid":"sub1", "topic":"देव"},
+                {"id":"sub12", "parentid":"sub1", "topic":"नारकी"},
+                {"id":"sub2", "parentid":"root", "topic":"क्षयोपशम-निमित्तक", "direction":"right"},
+                {"id":"sub21", "parentid":"sub2", "topic":"मनुष्य"},
+                {"id":"sub22", "parentid":"sub2", "topic":"तिर्यञ्च"}
+]}; var options21 = { container:"jsm21", editable:false, theme:"success" }; var jm = new jsMind(options21); jm.show(mind21); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-01-22><span class=incFontSz>+ </span><a href=#index>﻿अवधिज्ञान के स्वामी</a><span class=decFontSz> -</span></div><div class=gatha>﻿क्षयोपशमनिमित्तः षड्विकल्पः शेषाणाम् ॥२२॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿क्षयोपशमनिमित्तक अवधिज्ञान छह प्रकार का है, जो शेष अर्थात् तिर्यंचों और मनुष्‍यों के होता है ॥२२॥</div><hr class=type_7>
 <br><div class=title id=gatha-01-23><span class=incFontSz>+ </span><a href=#index>﻿मनःपर्यय के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿ऋजुविपुलमती मनःपर्ययः ॥२३॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿ऋजुमति और विपुलमति मन:पर्ययज्ञान है ॥२३॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿ऋजुमति और विपुलमति मन:पर्ययज्ञान है ॥२३॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>मन:पर्ययज्ञान</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>ऋजुमति</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>विपुलमति</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-01-24><span class=incFontSz>+ </span><a href=#index>﻿मनःपर्यय के दोनो भेदों में विशेषता</a><span class=decFontSz> -</span></div><div class=gatha>﻿विशुद्धयप्रतिपाताभ्यां तद्विशेषः ॥२४॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿विशुद्धि और अप्रतिपात की अपेक्षा इन दोनों में अन्‍तर है ॥२४॥</div><hr class=type_7>
 <br><div class=title id=gatha-01-25><span class=incFontSz>+ </span><a href=#index>﻿अवधिज्ञान और मनःपर्यय ज्ञान में अन्तर</a><span class=decFontSz> -</span></div><div class=gatha>﻿विशुद्धिक्षेत्रस्वामिविषयेभ्योऽवधिमनःपर्यययोः ॥२५॥</div>
@@ -319,48 +571,548 @@
 <br><div class=title id=gatha-01-32><span class=incFontSz>+ </span><a href=#index>﻿मिथ्यादृष्टि का ज्ञान मिथ्या क्यों?</a><span class=decFontSz> -</span></div><div class=gatha>﻿सदसतोरविशेषाद्यदृच्छोपलब्धेरुन्मत्तवत् ॥३२॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿वास्‍तविक और अवा‍स्‍तविक के अन्‍तर के बिना यदृच्‍छोपलब्धि <span class=comment>(जब जैसा जी में आया उस रूप ग्रहण होने)</span> के कारण उन्‍मत्त की तरह ज्ञान भी अज्ञान हो जाता है ॥३२॥</div><hr class=type_7>
 <br><div class=title id=gatha-01-33><span class=incFontSz>+ </span><a href=#index>﻿नय के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿नैगमसंग्रहव्यवहारर्जुसूत्रशब्दसमभिरूढैवंभूता नयाः ॥३३॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿नैगम, संग्रह, व्‍यवहार, ऋजुसूत्र, शब्‍द, समभिरूढ और एवंभू‍त ये सात नय हैं ॥३३॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿नैगम, संग्रह, व्‍यवहार, ऋजुसूत्र, शब्‍द, समभिरूढ और एवंभू‍त ये सात नय हैं ॥३३॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>नय</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>नैगम</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>संग्रह</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>व्यवहार</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>ऋजुसूत्र</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>शब्‍द</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>समभिरूढ</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>एवंभू‍त</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><br><div class=adhikaar><h1>﻿२-जीवाधिकार</h1></div><br><div align=center><img src='../../../../../images/ahinsaParmoDharm.png' width='15%'></img></div>
 <br><div class=title id=gatha-02-01><span class=incFontSz>+ </span><a href=#index>﻿जीव के परिणामों (भावों) के प्रकार</a><span class=decFontSz> -</span></div><div class=gatha>﻿औपशमिकक्षायिकौ भावौ मिश्रश्च जीवस्य स्वतत्त्वमौदयिकपारिणामिकौ च ॥१॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿औपशमिक, क्षायिक, मिश्र, औदयिक और पारिणामिक ये जीव के स्‍वतत्त्‍व हैं॥१॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿औपशमिक, क्षायिक, मिश्र, औदयिक और पारिणामिक ये जीव के स्‍वतत्त्‍व हैं ॥१॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>जीव के भाव</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>औपशमिक</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>क्षायिक</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>क्षायोपशमिक</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>औदयिक</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>पारिणामिक</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-02><span class=incFontSz>+ </span><a href=#index>﻿परिणामों (भावों) के उत्तर-भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿द्विनवाष्टादशैकविंशतित्रिभेदा यथाक्रमम् ॥२॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿उक्त पाँच भावों के क्रम से दो, नौ, अठारह, इक्‍कीस और तीन भेद हैं॥२॥</div><hr class=type_7>
 <br><div class=title id=gatha-02-03><span class=incFontSz>+ </span><a href=#index>﻿औपशमिकभाव के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿सम्यक्त्वचारित्रे ॥३॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿औपशमिक भाव के दो भेद हैं - औपशमिक सम्‍यक्‍त्‍व और औपशमिक चारित्र ॥३॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿औपशमिक भाव के दो भेद हैं - औपशमिक सम्‍यक्‍त्‍व और औपशमिक चारित्र ॥३॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>औपशमिक भाव</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>औपशमिक सम्‍यक्‍त्‍व</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>औपशमिक चारित्र</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-04><span class=incFontSz>+ </span><a href=#index>﻿क्षायिकभाव के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿ज्ञानदर्शनदानलाभभोगोपभोगवीर्याणि च ॥४॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿क्षायिक भाव के नौ भेद हैं - क्षायिक ज्ञान, क्षायिक दर्शन, क्षायिक दान, क्षायिक लाभ, क्षायिक भोग, क्षायिक उपभोग, क्षायिक वीर्य, क्षायिक सम्‍यक्‍त्‍व और क्षायिक चारित्र॥४॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿क्षायिक भाव के नौ भेद हैं - क्षायिक ज्ञान, क्षायिक दर्शन, क्षायिक दान, क्षायिक लाभ, क्षायिक भोग, क्षायिक उपभोग, क्षायिक वीर्य, क्षायिक सम्‍यक्‍त्‍व और क्षायिक चारित्र ॥४॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>क्षायिक भाव</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>क्षायिक ज्ञान</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>क्षायिक दर्शन</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>क्षायिक दान</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>क्षायिक लाभ</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>क्षायिक भोग</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>क्षायिक उपभोग</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>क्षायिक वीर्य</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>क्षायिक सम्‍यक्‍त्‍व</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>क्षायिक चारित्र</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-05><span class=incFontSz>+ </span><a href=#index>﻿क्षायोपशमिक भाव के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿ज्ञानाज्ञानदर्शन लब्धयश्‍चतुस्त्रित्रि पञ्चभेदाः सम्यक्त्वचारित्र संयमासंयमाश्‍च ॥५॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿क्षायोपशमिक भाव के अठारह भेद हैं - चार ज्ञान, तीन अज्ञान, तीन दर्शन, पाँच दानादि लब्धियाँ, सम्‍यक्‍त्‍व, चारित्र और संयमासंयम॥५॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿क्षायोपशमिक भाव के अठारह भेद हैं - चार ज्ञान, तीन अज्ञान, तीन दर्शन, पाँच दानादि लब्धियाँ, सम्‍यक्‍त्‍व, चारित्र और संयमासंयम ॥५॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>क्षायोपशमिक भाव</div>
+    <ul>
+      <li class=node>
+        <div class=nodecontent>4 ज्ञान</div>
+        <ul>
+          <li class=leaf>
+            <div class=nodecontent>मतिज्ञान</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>श्रुतज्ञान</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>अवधिज्ञान</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>मन:पर्ययज्ञान</div>
+          </li>
+        </ul>
+      </li>
+      <li class=node>
+        <div class=nodecontent>3 अज्ञान</div>
+        <ul>
+          <li class=leaf>
+            <div class=nodecontent>कुमतिज्ञान</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>कुश्रुतज्ञान</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>विभंगावधिज्ञान</div>
+          </li>
+        </ul>
+      </li>
+      <li class=node>
+        <div class=nodecontent>3 दर्शन</div>
+        <ul>
+          <li class=leaf>
+            <div class=nodecontent>चक्षुदर्शन</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>अचक्षुदर्शन</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>अवधिदर्शन</div>
+          </li>
+        </ul>
+      </li>
+      <li class=node>
+        <div class=nodecontent>5 लब्धि</div>
+        <ul>
+          <li class=leaf>
+            <div class=nodecontent>दान</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>लाभ</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>भोग</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>उपभोग</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>वीर्य</div>
+          </li>
+        </ul>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>सम्यकत्व</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>चारित्र</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>संयमासंयम</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-06><span class=incFontSz>+ </span><a href=#index>﻿औदयिक भाव के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿गतिकषायलिंग-मिथ्यादर्शनाज्ञानासंयतासिद्धलेश्याश्‍चतुश्‍चतुस्त्र्यैकैकैकैक-षड्भेदाः ॥६॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿औदयिक भाव के इक्‍कीस भेद हैं - चार गति, चार कषाय, तीन लिंग, एक मिथ्‍यादर्शन, एक अज्ञान, एक असंयम, एक असिद्ध भाव और छह लेश्‍याएँ॥६॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿औदयिक भाव के इक्‍कीस भेद हैं - चार गति, चार कषाय, तीन लिंग, एक मिथ्‍यादर्शन, एक अज्ञान, एक असंयम, एक असिद्ध भाव और छह लेश्‍याएँ ॥६॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>औदयिक भाव</div>
+    <ul>
+      <li class=node>
+        <div class=nodecontent>4 गति</div>
+        <ul>
+          <li class=leaf>
+            <div class=nodecontent>नरक</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>तिर्यञ्च</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>मनुष्य</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>देव</div>
+          </li>
+        </ul>
+      </li>
+      <li class=node>
+        <div class=nodecontent>4 कषाय</div>
+        <ul>
+          <li class=leaf>
+            <div class=nodecontent>क्रोध</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>मान</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>माया</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>लोभ</div>
+          </li>
+        </ul>
+      </li>
+      <li class=node>
+        <div class=nodecontent>3 लिंग</div>
+        <ul>
+          <li class=leaf>
+            <div class=nodecontent>स्त्री</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>पुरुष</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>नपुंसक</div>
+          </li>
+        </ul>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>मिथ्यादर्शन</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>अज्ञान</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>असंयम</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>असिद्धत्व</div>
+      </li>
+      <li class=node>
+        <div class=nodecontent>6 लेश्या</div>
+        <ul>
+          <li class=leaf>
+            <div class=nodecontent>कृष्ण</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>नील</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>कापोत</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>पीत</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>पद्म</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>शुक्ल</div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-07><span class=incFontSz>+ </span><a href=#index>﻿पारिणामिक भाव के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿जीवभव्याभव्यत्वानि च ॥७॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿पारिणामिक भाव के तीन भेद हैं - जीवत्‍व, भव्‍यत्‍व और अभव्‍यत्‍व॥७॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿पारिणामिक भाव के तीन भेद हैं - जीवत्‍व, भव्‍यत्‍व और अभव्‍यत्‍व ॥७॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>पारिणामिक भाव</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>जीवत्व</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>भव्यत्व</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>अभव्यत्व</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-08><span class=incFontSz>+ </span><a href=#index>﻿जीव का लक्षण</a><span class=decFontSz> -</span></div><div class=gatha>﻿उपयोगो लक्षणम् ॥८॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿उपयोग जीव का लक्षण है॥८॥</div><hr class=type_7>
 <br><div class=title id=gatha-02-09><span class=incFontSz>+ </span><a href=#index>﻿उपयोग के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿स द्विविधोऽष्ट-चतुर्भेदः ॥९॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿वह उपयोग दो प्रकार का है - ज्ञानोपयोग और दर्शनोपयोग। ज्ञानोपयोग आठ प्रकार का है ओर दर्शनोपयोग चार प्रकार का है॥९॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿वह उपयोग दो प्रकार का है - ज्ञानोपयोग और दर्शनोपयोग। ज्ञानोपयोग आठ प्रकार का है ओर दर्शनोपयोग चार प्रकार का है ॥९॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>उपयोग</div>
+    <ul>
+      <li class=node>
+        <div class=nodecontent>ज्ञानोपयोग</div>
+        <ul>
+          <li class=leaf>
+            <div class=nodecontent>मति</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>श्रुत</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>अवधि</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>मन:पर्यय</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>केवल</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>कुमति</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>कुश्रुत</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>विभंगावधि</div>
+          </li>
+        </ul>
+      </li>
+      <li class=node>
+        <div class=nodecontent>दर्शनोपयोग</div>
+        <ul>
+          <li class=leaf>
+            <div class=nodecontent>चक्षु</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>अचक्षु</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>अवधि</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>केवल</div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-10><span class=incFontSz>+ </span><a href=#index>﻿जीव के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿संसारिणो मुक्ताश्‍च ॥१०॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जीव दो प्रकार के हैं - संसारी और मुक्त॥१०॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जीव दो प्रकार के हैं - संसारी और मुक्त ॥१०॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>जीव</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>संसारी</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>मुक्त</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-11><span class=incFontSz>+ </span><a href=#index>﻿संसारी जीवों के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿समनस्काऽमनस्काः ॥११॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿मनवाले और मनरहित ऐसे संसारी जीव हैं ॥११॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿मनवाले और मनरहित ऐसे संसारी जीव हैं ॥११॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>संसारी जीव</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>मन-सहित</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>मन-रहित</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-12><span class=incFontSz>+ </span><a href=#index>﻿संसारी जीवों के और भी भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿संसारिणस्त्रसस्थावराः ॥१२॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿तथा संसारी जीव त्रस और स्‍थावर के भेद से दो प्रकार हैं॥१२॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿तथा संसारी जीव त्रस और स्‍थावर के भेद से दो प्रकार हैं ॥१२॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>संसारी जीव</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>त्रस</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>स्थावर</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-13><span class=incFontSz>+ </span><a href=#index>﻿स्थावर जीवों के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿पृथिव्यप्तेजो वायु-वनस्पतयः स्थावराः ॥१३॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿पृ‍थिवीकायिक, जलकायिक, अग्निकायिक, वायुकायिक और वनस्‍पतिकायिक ये पाँच स्‍थावर हैं॥१३॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿पृ‍थिवीकायिक, जलकायिक, अग्निकायिक, वायुकायिक और वनस्‍पतिकायिक ये पाँच स्‍थावर हैं ॥१३॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>स्थावर</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>पृथ्वीकायिक</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>जलकायिक</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>अग्निकायिक</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>वायुकायिक</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>वनस्पतिकायिक</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-14><span class=incFontSz>+ </span><a href=#index>﻿त्रस जीवों के भेद</a><span class=decFontSz> -</span></div><div class=gatha>﻿द्वीन्द्रियादयस्त्रसाः ॥१४॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿दो इन्द्रिय आदि त्रस हैं॥१४॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿दो इन्द्रिय आदि त्रस हैं ॥१४॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>त्रस</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>दो-इंद्रिय</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>तीन-इंद्रिय</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>चार-इंद्रिय</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>पंचेंद्रिय</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-15><span class=incFontSz>+ </span><a href=#index>﻿इन्द्रियों की संख्या</a><span class=decFontSz> -</span></div><div class=gatha>﻿पंचेद्रियाणि ॥१५॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿इन्द्रियाँ पाँच हैं॥१५॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿इन्द्रियाँ पाँच हैं ॥१५॥</div><hr class=type_7>
 <br><div class=title id=gatha-02-16><span class=incFontSz>+ </span><a href=#index>﻿इन्द्रियों के प्रकार</a><span class=decFontSz> -</span></div><div class=gatha>﻿द्विविधानि ॥१६॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿वे प्रत्‍येक दो-दो प्रकार की हैं॥१६॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿वे प्रत्‍येक दो-दो प्रकार की हैं ॥१६॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>इंद्रियाँ</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>द्रव्य</div>
+        <ul>
+          <li class=leaf>
+            <div class=nodecontent>निर्वृत्ति</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>उपकरण</div>
+          </li>
+        </ul>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>भाव</div>
+        <ul>
+          <li class=leaf>
+            <div class=nodecontent>लब्धि</div>
+          </li>
+          <li class=leaf>
+            <div class=nodecontent>उपयोग</div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-17><span class=incFontSz>+ </span><a href=#index>﻿द्रव्य-इन्द्रियों का स्वरूप</a><span class=decFontSz> -</span></div><div class=gatha>﻿निर्वृत्त्युपकरणे द्रव्येन्द्रियम्‌ ॥१७॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿निर्वृत्ति और उपकरणरूप द्रव्‍येन्द्रिय है॥१७॥</div><hr class=type_7>
 <br><div class=title id=gatha-02-18><span class=incFontSz>+ </span><a href=#index>﻿भाव-इन्द्रियों का स्वरूप</a><span class=decFontSz> -</span></div><div class=gatha>﻿लब्ध्युपयोगो भावेन्द्रियम् ॥१८॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿लब्धि और उपयोगरूप भावेन्द्रिय है॥१८॥</div><hr class=type_7>
 <br><div class=title id=gatha-02-19><span class=incFontSz>+ </span><a href=#index>﻿इन्द्रियों के प्रकार</a><span class=decFontSz> -</span></div><div class=gatha>﻿स्पर्शन-रसन-घ्राण-चक्षुःश्रोत्राणि ॥१९॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿स्‍पर्शन, रसना, घ्राण, चक्षु और श्रोत्र ये पाँच इन्द्रियाँ हैं॥१९॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿स्‍पर्शन, रसना, घ्राण, चक्षु और श्रोत्र ये पाँच इन्द्रियाँ हैं ॥१९॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>इंद्रियाँ</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>स्पर्शन</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>रसना</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>घ्राण</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>चक्षु</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>कर्ण</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-20><span class=incFontSz>+ </span><a href=#index>﻿इन्द्रियों के विषय</a><span class=decFontSz> -</span></div><div class=gatha>﻿स्पर्श-रस-गन्ध-वर्ण-शब्दास्तदर्थाः ॥२०॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿स्‍पर्शन, रस, गन्‍ध, वर्ण और शब्‍द ये क्रम से उन इन्द्रियों के विषय हैं ॥२०॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿स्‍पर्श, रस, गन्‍ध, वर्ण और शब्‍द ये क्रम से उन इन्द्रियों के विषय हैं ॥२०॥<br><div class=jsm id="jsm53"></div>
+<script type="text/javascript">
+var mind53 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"इंद्रियों के विषय"},
+
+                {"id":"sub1", "parentid":"root", "topic":"स्पर्शन"},
+                {"id":"sub2", "parentid":"root", "topic":"रसना"},
+                {"id":"sub3", "parentid":"root", "topic":"घ्राण"},
+                {"id":"sub4", "parentid":"root", "topic":"चक्षु"},
+                {"id":"sub5", "parentid":"root", "topic":"कर्ण"},
+                {"id":"sub11", "parentid":"sub1", "topic":"स्पर्श"},
+                {"id":"sub21", "parentid":"sub2", "topic":"रस"},
+                {"id":"sub31", "parentid":"sub3", "topic":"गंध"},
+                {"id":"sub41", "parentid":"sub4", "topic":"वर्ण"},
+                {"id":"sub51", "parentid":"sub5", "topic":"शब्द"}
+]}; var options53 = { container:"jsm53", editable:false, theme:"pumpkin" }; var jm = new jsMind(options53); jm.show(mind53); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-02-21><span class=incFontSz>+ </span><a href=#index>﻿मन के विषय</a><span class=decFontSz> -</span></div><div class=gatha>﻿श्रुतमनिन्द्रियस्य ॥२१॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿श्रुत मन का विषय है॥२१॥</div><hr class=type_7>
 <br><div class=title id=gatha-02-22><span class=incFontSz>+ </span><a href=#index>﻿स्पर्शन इन्द्रिय के स्वामी</a><span class=decFontSz> -</span></div><div class=gatha>﻿वनस्पत्यन्तानामेकम् ॥२२॥</div>
@@ -379,20 +1131,112 @@
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿संसारी जीव की गति विग्रहरहित और विग्रहवाली होती है। उसमें विग्रहवाली गति चार समय से पहले अर्थात् तीन समय तक होती है॥२८॥</div><hr class=type_7>
 <br><div class=title id=gatha-02-29><span class=incFontSz>+ </span><a href=#index>﻿ऋजु-गति का काल</a><span class=decFontSz> -</span></div><div class=gatha>﻿एकसमयाऽविग्रहा ॥२९॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿एक समयवाली गति विग्रहरहित होती है॥२९॥</div><hr class=type_7>
-<br><div class=title id=gatha-02-30><span class=incFontSz>+ </span><a href=#index>﻿विरह-गति में अनाहारक</a><span class=decFontSz> -</span></div><div class=gatha>﻿एकं द्वौ त्रीन्वानाहारकः ॥३०॥</div>
+<br><div class=title id=gatha-02-30><span class=incFontSz>+ </span><a href=#index>﻿विग्रह-गति में अनाहारक</a><span class=decFontSz> -</span></div><div class=gatha>﻿एकं द्वौ त्रीन्वानाहारकः ॥३०॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿एक, दो या तीन समय तक जीव अनाहारक रहता है॥३०॥</div><hr class=type_7>
 <br><div class=title id=gatha-02-31><span class=incFontSz>+ </span><a href=#index>﻿जन्म के प्रकार</a><span class=decFontSz> -</span></div><div class=gatha>﻿सम्मूर्च्छन-गर्भोपपादा जन्म ॥३१॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿सम्‍मूर्च्‍छन, गर्भ और उपपाद ये <span class=comment>(तीन)</span> जन्‍म हैं॥३१॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿सम्‍मूर्च्‍छन, गर्भ और उपपाद ये <span class=comment>(तीन)</span> जन्‍म हैं ॥३१॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>जन्म</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>सम्‍मूर्च्‍छन</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>गर्भ</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>उपपाद</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-32><span class=incFontSz>+ </span><a href=#index>﻿जन्म-योनि के प्रकार</a><span class=decFontSz> -</span></div><div class=gatha>﻿सचित्तशीतसंवृताः सेतरा मिश्राश्‍चैकशस्तद्योनयः ॥३२॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿सचित्त, शीत और संवृत तथा इनकी प्रतिपक्षभूत अचित्त, उष्‍ण और विवृत तथा मिश्र अर्थात् सचित्ताचित्त, शीतोष्‍ण और संवृतविवृत ये उसकी अर्थात् जन्‍म की योनियाँ हैं॥३२॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿सचित्त, शीत और संवृत तथा इनकी प्रतिपक्षभूत अचित्त, उष्‍ण और विवृत तथा मिश्र अर्थात् सचित्ताचित्त, शीतोष्‍ण और संवृतविवृत ये उसकी अर्थात् जन्‍म की योनियाँ हैं ॥३२॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>जन्म-योनि</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>सचित्त</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>अचित्त</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>सचित्ताचित्त</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>शीत</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>उष्ण</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>शीतोष्ण</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>संवृत</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>विवृत</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>संवृतविवृत</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-33><span class=incFontSz>+ </span><a href=#index>﻿गर्भ-जन्म के स्वामी</a><span class=decFontSz> -</span></div><div class=gatha>﻿जरायुजाण्डजपोतानां गर्भः ॥३३॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जरायुज, अण्‍डज और पोत जीवों का गर्भजन्‍म होता है॥३३॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जरायुज, अण्‍डज और पोत जीवों का गर्भजन्‍म होता है ॥३३॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>गर्भजन्म</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>जरायुज</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>अण्‍डज</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>पोत</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-34><span class=incFontSz>+ </span><a href=#index>﻿उपपाद-जन्म के स्वामी</a><span class=decFontSz> -</span></div><div class=gatha>﻿देवनारकाणामुपपादः ॥३४॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿देव और नारकियों का उपपाद जन्‍म होता है॥३४॥</div><hr class=type_7>
 <br><div class=title id=gatha-02-35><span class=incFontSz>+ </span><a href=#index>﻿सम्मूर्छन-जन्म के स्वामी</a><span class=decFontSz> -</span></div><div class=gatha>﻿शेषाणां सम्मूर्च्छनं ॥३५॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿शेष सब जीवों का सम्‍मूर्च्‍छन जन्‍म होता है॥३५॥</div><hr class=type_7>
 <br><div class=title id=gatha-02-36><span class=incFontSz>+ </span><a href=#index>﻿शरीर के प्रकार</a><span class=decFontSz> -</span></div><div class=gatha>﻿औदारिक-वैक्रियिकाहारक-तैजस-कार्मणानि शरीराणि ॥३६॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿औदारिक, वैक्रियिक, आहारक, तैजस और कर्मण ये पाँच शरीर हैं॥३६॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿औदारिक, वैक्रियिक, आहारक, तैजस और कार्मण ये पाँच शरीर हैं ॥३६॥<br><div align=center>
+<ul class=orgchart>
+  <li class=root>
+    <div class=nodecontent>शरीर</div>
+    <ul>
+      <li class=leaf>
+        <div class=nodecontent>औदारिक</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>वैक्रियिक</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>आहारक</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>तैजस</div>
+      </li>
+      <li class=leaf>
+        <div class=nodecontent>कार्मण</div>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div></div><hr class=type_7>
 <br><div class=title id=gatha-02-37><span class=incFontSz>+ </span><a href=#index>﻿शरीरों में स्थूलता-सूक्ष्मता</a><span class=decFontSz> -</span></div><div class=gatha>﻿परं परं सूक्ष्मम् ॥३७॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿आगे-आगे का शरीर सूक्ष्‍म है॥३७॥</div><hr class=type_7>
 <br><div class=title id=gatha-02-38><span class=incFontSz>+ </span><a href=#index>﻿शरीरों के प्रदेश</a><span class=decFontSz> -</span></div><div class=gatha>﻿प्रदेशतोऽसंख्येयगुणं प्राक् तैजसात् ॥३८॥</div>
@@ -407,7 +1251,7 @@
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿तथा सब संसारी जीवों के होते हैं॥४२॥</div><hr class=type_7>
 <br><div class=title id=gatha-02-43><span class=incFontSz>+ </span><a href=#index>﻿एक जीव के कितने शरीर सम्भव हैं?</a><span class=decFontSz> -</span></div><div class=gatha>﻿तदादीनि भाज्यानि युगपदेकस्मिन्नाचतुर्भ्यः ॥४३॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿एक साथ एक जीव के तैजस और कार्मण से लेकर चार शरीर तक विकल्‍प से होते हैं॥४३॥</div><hr class=type_7>
-<br><div class=title id=gatha-02-44><span class=incFontSz>+ </span><a href=#index>﻿कार्मण शरीर के बारे में विशेष</a><span class=decFontSz> -</span></div><div class=gatha>﻿निरूपभोगमन्त्यम् ॥४४॥</div>
+<br><div class=title id=gatha-02-44><span class=incFontSz>+ </span><a href=#index>﻿कार्मण शरीर के बारे में विशेष</a><span class=decFontSz> -</span></div><div class=gatha>﻿निरुपभोगमन्त्यम् ॥४४॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿अन्तिम शरीर उपभोगरहित है॥४४॥</div><hr class=type_7>
 <br><div class=title id=gatha-02-45><span class=incFontSz>+ </span><a href=#index>﻿गर्भ और सम्मूर्छन जन्म से कौनसा शरीर</a><span class=decFontSz> -</span></div><div class=gatha>﻿गर्भसम्मूर्च्छनजमाद्यम्‌ ॥४५॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿पहला शरीर गर्भ और संमूर्च्‍छन जन्‍म से पैदा होता है॥४५॥</div><hr class=type_7>
@@ -429,9 +1273,44 @@
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿उपपाद जन्‍मवाले, चरमोत्तम देहवाले और असंख्‍यात वर्ष की आयुवाले जीव अनपवर्त्‍य अन्‍य आयु वाले होते हैं॥५३॥</div><hr class=type_7>
 <br><br><div class=adhikaar><h1>﻿३-जीवाधिकार</h1></div><br><div align=center><img src='../../../../../images/ahinsaParmoDharm.png' width='15%'></img></div>
 <br><div class=title id=gatha-03-01><span class=incFontSz>+ </span><a href=#index>﻿सात पृथ्वियां</a><span class=decFontSz> -</span></div><div class=gatha>﻿रत्न-शर्करा-बालुका-पंक-धूम-तमो-महातमः प्रभा भूमयो घनाम्बुवाताकाश प्रतिष्ठाः सप्ताऽधोऽधः॥१॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿रत्‍नप्रभा, शर्कराप्रभा, वालुकाप्रभा, पंकप्रभा, धूमप्रभा, तमःप्रभा और महातमःप्रभा ये सात भूमियाँ घनाम्‍बु, वात और आकाश के सहारे स्थित हैं तथा क्रमसे नीचे-नीचे हैं ॥१॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿रत्‍नप्रभा, शर्कराप्रभा, बालुकाप्रभा, पंकप्रभा, धूमप्रभा, तमःप्रभा और महातमःप्रभा ये सात भूमियाँ घनाम्‍बु, वात और आकाश के सहारे स्थित हैं तथा क्रम से नीचे-नीचे हैं ॥१॥<br><div class=jsm id="jsm87"></div>
+<script type="text/javascript">
+var mind87 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"नरक"},
+
+                {"id":"sub1", "parentid":"root", "topic":"रत्‍नप्रभा"},
+                {"id":"sub2", "parentid":"root", "topic":"शर्कराप्रभा"},
+                {"id":"sub3", "parentid":"root", "topic":"बालुकाप्रभा"},
+                {"id":"sub4", "parentid":"root", "topic":"पंकप्रभा"},
+                {"id":"sub5", "parentid":"root", "topic":"धूमप्रभा"},
+                {"id":"sub6", "parentid":"root", "topic":"तमःप्रभा"},
+                {"id":"sub7", "parentid":"root", "topic":"महातमःप्रभा"}
+]}; var options87 = { container:"jsm87", editable:false, theme:"wisteria" }; var jm = new jsMind(options87); jm.show(mind87); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-03-02><span class=incFontSz>+ </span><a href=#index>﻿सात पृथ्वियों में नरकों की संख्या</a><span class=decFontSz> -</span></div><div class=gatha>﻿तासु त्रिंशत्पंचविंशति पंचदशदश-त्रि-पंचोनैक-नरक-शतसहस्राणि पंच चैव यथाक्रमम्॥२॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿उन भूमियों में क्रम से तीस लाख, पचीस लाख, पन्‍द्रह लाख, दस लाख, तीन लाख, पाँच कम एक लाख और पाँच नरक हैं ॥२॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿उन भूमियों में क्रम से तीस लाख, पच्चीस लाख, पन्‍द्रह लाख, दस लाख, तीन लाख, पाँच कम एक लाख और पाँच नरक हैं ॥२॥<br><div class=jsm id="jsm88"></div>
+<script type="text/javascript">
+var mind88 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"नरक के 84 लाख बिल"},
+
+                {"id":"sub1", "parentid":"root", "topic":"रत्‍नप्रभा"},
+                {"id":"sub11", "parentid":"sub1", "topic":"30 लाख"},
+                {"id":"sub2", "parentid":"root", "topic":"शर्कराप्रभा"},
+                {"id":"sub21", "parentid":"sub2", "topic":"25 लाख"},
+                {"id":"sub3", "parentid":"root", "topic":"बालुकाप्रभा"},
+                {"id":"sub31", "parentid":"sub3", "topic":"15 लाख"},
+                {"id":"sub4", "parentid":"root", "topic":"बालुकाप्रभा"},
+                {"id":"sub41", "parentid":"sub4", "topic":"10 लाख"},
+                {"id":"sub5", "parentid":"root", "topic":"धूमप्रभा"},
+                {"id":"su51", "parentid":"sub5", "topic":"3 लाख"},
+                {"id":"sub6", "parentid":"root", "topic":"तमःप्रभा"},
+                {"id":"sub61", "parentid":"sub6", "topic":"1 लाख - 5"},
+                {"id":"sub7", "parentid":"root", "topic":"महातमःप्रभा"},
+                {"id":"sub71", "parentid":"sub7", "topic":"5"}
+]}; var options88 = { container:"jsm88", editable:false, theme:"asphalt" }; var jm = new jsMind(options88); jm.show(mind88); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-03-03><span class=incFontSz>+ </span><a href=#index>﻿नारकीयों की लेश्यादि दुःख</a><span class=decFontSz> -</span></div><div class=gatha>﻿नारका नित्याऽशुभतर-लेश्या-परिणामदेह-वेदना-विक्रियाः॥३॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿नारकी निरन्‍तर अशुभतर लेश्‍या, परिणाम, दे‍ह, वेदना और विक्रियावाले हैं ॥३॥</div><hr class=type_7>
 <br><div class=title id=gatha-03-04><span class=incFontSz>+ </span><a href=#index>﻿पारस्परिक दुःख</a><span class=decFontSz> -</span></div><div class=gatha>﻿परस्परोदीरित-दुःखाः॥४॥</div>
@@ -439,7 +1318,46 @@
 <br><div class=title id=gatha-03-05><span class=incFontSz>+ </span><a href=#index>﻿देव-कृत दुःख</a><span class=decFontSz> -</span></div><div class=gatha>﻿संक्लिष्टासुरोदीरित-दुःखाश्‍च प्राक् चतुर्थ्याः॥५॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿और चौथी भूमि से पहले तक वे संक्लिष्‍ट असुरों के द्वारा उत्‍पन्‍न किये गये दुःखवाले भी होते हैं ॥५॥</div><hr class=type_7>
 <br><div class=title id=gatha-03-06><span class=incFontSz>+ </span><a href=#index>﻿नरकों में उत्कृष्ट आयु</a><span class=decFontSz> -</span></div><div class=gatha>﻿तेष्वेक-त्रि-सप्त-दश-सप्तदश-द्वाविंशति-त्रयस्त्रिंशत्सागरोपमा सत्त्वानां परा स्थितिः॥६॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿उन नरकों में जीवों की उत्‍कृष्‍ट स्थिति क्रम से एक, तीन, सात, दस, सत्रह, बाईस और तैंतीस सागरोपम है ॥६॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿उन नरकों में जीवों की उत्‍कृष्‍ट स्थिति क्रम से एक, तीन, सात, दस, सत्रह, बाईस और तैंतीस सागरोपम है ॥६॥<br><div class=jsm id="jsm92"></div>
+<script type="text/javascript">
+var mind92 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"नरक"},
+                {"id":"sub-max", "parentid":"root", "topic":"उत्कृष्ट आयु"},
+                {"id":"sub-min", "parentid":"root", "topic":"जघन्य आयु", "direction":"left"},
+
+                {"id":"sub1", "parentid":"sub-max", "topic":"रत्‍नप्रभा"},
+                {"id":"sub11", "parentid":"sub1", "topic":"1 सागर"},
+                {"id":"sub2", "parentid":"sub-max", "topic":"शर्कराप्रभा"},
+                {"id":"sub21", "parentid":"sub2", "topic":"3 सागर"},
+                {"id":"sub3", "parentid":"sub-max", "topic":"बालुकाप्रभा"},
+                {"id":"sub31", "parentid":"sub3", "topic":"7 सागर"},
+                {"id":"sub4", "parentid":"sub-max", "topic":"बालुकाप्रभा"},
+                {"id":"sub41", "parentid":"sub4", "topic":"10 सागर"},
+                {"id":"sub5", "parentid":"sub-max", "topic":"धूमप्रभा"},
+                {"id":"su51", "parentid":"sub5", "topic":"17 सागर"},
+                {"id":"sub6", "parentid":"sub-max", "topic":"तमःप्रभा"},
+                {"id":"sub61", "parentid":"sub6", "topic":"22 सागर"},
+                {"id":"sub7", "parentid":"sub-max", "topic":"महातमःप्रभा"},
+                {"id":"sub71", "parentid":"sub7", "topic":"33 सागर"},
+
+
+                {"id":"subn1", "parentid":"sub-min", "topic":"रत्‍नप्रभा", "direction":"left"},
+                {"id":"subn11", "parentid":"subn1", "topic":"10 हजार वर्ष", "direction":"left"},
+                {"id":"subn2", "parentid":"sub-min", "topic":"शर्कराप्रभा", "direction":"left"},
+                {"id":"subn21", "parentid":"subn2", "topic":"1 सागर", "direction":"left"},
+                {"id":"subn3", "parentid":"sub-min", "topic":"बालुकाप्रभा", "direction":"left"},
+                {"id":"subn31", "parentid":"subn3", "topic":"3 सागर", "direction":"left"},
+                {"id":"subn4", "parentid":"sub-min", "topic":"बालुकाप्रभा", "direction":"left"},
+                {"id":"subn41", "parentid":"subn4", "topic":"7 सागर", "direction":"left"},
+                {"id":"subn5", "parentid":"sub-min", "topic":"धूमप्रभा", "direction":"left"},
+                {"id":"su5n1", "parentid":"subn5", "topic":"10 सागर", "direction":"left"},
+                {"id":"subn6", "parentid":"sub-min", "topic":"तमःप्रभा", "direction":"left"},
+                {"id":"subn61", "parentid":"subn6", "topic":"17 सागर", "direction":"left"},
+                {"id":"subn7", "parentid":"sub-min", "topic":"महातमःप्रभा", "direction":"left"},
+                {"id":"subn71", "parentid":"subn7", "topic":"22 सागर", "direction":"left"}
+]}; var options92 = { container:"jsm92", editable:false, theme:"danger" }; var jm = new jsMind(options92); jm.show(mind92); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-03-07><span class=incFontSz>+ </span><a href=#index>﻿मध्य-लोक में द्वीप समुद्र</a><span class=decFontSz> -</span></div><div class=gatha>﻿जम्बूद्वीप-लवणोदादयः शुभनामानो द्वीप-समुद्रा॥७॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿जम्‍बूद्वीप आदि शुभ नामवाले द्वीप और लवणोद आदि शुभ नामवाले समुद्र हैं॥७॥</div><hr class=type_7>
 <br><div class=title id=gatha-03-08><span class=incFontSz>+ </span><a href=#index>﻿द्वीप -समुद्र का आकार</a><span class=decFontSz> -</span></div><div class=gatha>﻿द्विर्द्विर्विष्कम्भाः पूर्वपूर्वपरिक्षेपिणो वलयाकृतयः॥८॥</div>
@@ -447,27 +1365,178 @@
 <br><div class=title id=gatha-03-09><span class=incFontSz>+ </span><a href=#index>﻿जम्बू-द्वीप</a><span class=decFontSz> -</span></div><div class=gatha>﻿तन्मध्ये मेरुनाभिर्वृत्तो योजनशतसहस्रविष्कम्भो जम्बूद्वीपः॥९॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿उन सबके बीच में गोल और एक लाख योजन विष्‍कम्‍भवाला जम्‍बूद्वीप है। जिसके मध्‍य में नाभि के समान मेरु पर्वत है ॥९॥</div><hr class=type_7>
 <br><div class=title id=gatha-03-10><span class=incFontSz>+ </span><a href=#index>﻿सात क्षेत्र</a><span class=decFontSz> -</span></div><div class=gatha>﻿भरतहैमवत-हरि-विदेह-रम्यकहैरण्यवतैरावतवर्षाः क्षेत्राणि॥१०॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿भरतवर्ष, हैमवतवर्ष, हरिवर्ष, विदेहवर्ष, रम्‍यकवर्ष, हैरण्‍यवतवर्ष और ऐरावतवर्ष ये सात क्षेत्र हैं ॥१०॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿भरतवर्ष, हैमवतवर्ष, हरिवर्ष, विदेहवर्ष, रम्‍यकवर्ष, हैरण्‍यवतवर्ष और ऐरावतवर्ष ये सात क्षेत्र हैं ॥१०॥<br><div class=jsm id="jsm96"></div>
+<script type="text/javascript">
+var mind96 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"जम्बू-द्वीप के क्षेत्र"},
+
+                {"id":"sub1", "parentid":"root", "topic":"भरत"},
+                {"id":"sub2", "parentid":"root", "topic":"हैमवत"},
+                {"id":"sub3", "parentid":"root", "topic":"हरि"},
+                {"id":"sub4", "parentid":"root", "topic":"विदेह"},
+                {"id":"sub5", "parentid":"root", "topic":"रम्‍यक"},
+                {"id":"sub6", "parentid":"root", "topic":"हैरण्‍यवत"},
+                {"id":"sub7", "parentid":"root", "topic":"ऐरावत"}
+]}; var options96 = { container:"jsm96", editable:false, theme:"wisteria" }; var jm = new jsMind(options96); jm.show(mind96); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-03-11><span class=incFontSz>+ </span><a href=#index>﻿छह पर्वत</a><span class=decFontSz> -</span></div><div class=gatha>﻿तद्विभाजिनः पूर्वापरायता हिमवन्महाहिमवन्निषध-नील-रुक्मि-शिखरिणो वर्षधर-पर्वताः॥११॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿उन क्षेत्रों को विभाजित करनेवाले और पूर्व-पश्चिम लम्‍बे ऐसे हिमवान्, महाहिमवान्, निषध, नील, रुक्‍मी और शिखरी ये छह वर्षधर पर्वत हैं ॥११॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿उन क्षेत्रों को विभाजित करनेवाले और पूर्व-पश्चिम लम्‍बे ऐसे हिमवन्, महाहिमवन्, निषध, नील, रुक्‍मी और शिखरी ये छह वर्षधर पर्वत हैं ॥११॥<br><div class=jsm id="jsm97"></div>
+<script type="text/javascript">
+var mind97 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"जम्बू-द्वीप के पर्वत"},
+
+                {"id":"sub1", "parentid":"root", "topic":"हिमवन्"},
+                {"id":"sub2", "parentid":"root", "topic":"महाहिमवन्"},
+                {"id":"sub3", "parentid":"root", "topic":"निषध"},
+                {"id":"sub4", "parentid":"root", "topic":"नील"},
+                {"id":"sub5", "parentid":"root", "topic":"रुक्‍मी"},
+                {"id":"sub6", "parentid":"root", "topic":"शिखरी"}
+]}; var options97 = { container:"jsm97", editable:false, theme:"asphalt" }; var jm = new jsMind(options97); jm.show(mind97); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-03-12><span class=incFontSz>+ </span><a href=#index>﻿पर्वतों के रंग</a><span class=decFontSz> -</span></div><div class=gatha>﻿हेमार्जुन-तपनीय वैडूर्य-रजत हेममयाः॥१२॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿ये छहों पर्वत क्रम से सोना, चाँदी, तपाया हुआ सोना, वैडूर्यमणि, चाँदी और सोना इनके समान रंगवाले हैं ॥१२॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿ये छहों पर्वत क्रम से सोना, चाँदी, तपाया हुआ सोना, वैडूर्यमणि, चाँदी और सोना इनके समान रंगवाले हैं ॥१२॥<br><div class=jsm id="jsm98"></div>
+<script type="text/javascript">
+var mind98 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"जम्बू-द्वीप के पर्वत के रंग"},
+
+                {"id":"sub1", "parentid":"root", "topic":"हिमवन्"},
+                {"id":"sub2", "parentid":"root", "topic":"महाहिमवन्"},
+                {"id":"sub3", "parentid":"root", "topic":"निषध"},
+                {"id":"sub4", "parentid":"root", "topic":"नील"},
+                {"id":"sub5", "parentid":"root", "topic":"रुक्‍मी"},
+                {"id":"sub6", "parentid":"root", "topic":"शिखरी"},
+
+                {"id":"sub11", "parentid":"sub1", "topic":"स्वर्ण"},
+                {"id":"sub12", "parentid":"sub2", "topic":"चांदी"},
+                {"id":"sub13", "parentid":"sub3", "topic":"तपाया हुआ सोना"},
+                {"id":"sub14", "parentid":"sub4", "topic":"वैडूर्यमणि"},
+                {"id":"sub15", "parentid":"sub5", "topic":"चांदी"},
+                {"id":"sub16", "parentid":"sub6", "topic":"स्वर्ण"}
+]}; var options98 = { container:"jsm98", editable:false, theme:"pumpkin" }; var jm = new jsMind(options98); jm.show(mind98); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-03-13><span class=incFontSz>+ </span><a href=#index>﻿पर्वतों का आकार</a><span class=decFontSz> -</span></div><div class=gatha>﻿मणि-विचित्र-पार्श्‍वा उपरि मूले च तुल्यविस्ताराः॥१३॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿इनके पार्श्‍व मणियों से चित्र-विचित्र हैं तथा वे ऊपर, मध्‍य और मूल में समान विस्‍तारवाले हैं ॥१३॥</div><hr class=type_7>
 <br><div class=title id=gatha-03-14><span class=incFontSz>+ </span><a href=#index>﻿पर्वतों पर तालाब</a><span class=decFontSz> -</span></div><div class=gatha>﻿पद्ममहापद्मतिगिञ्छकेशरि महापुण्डरीकपुण्डरीका-हृदास्तेषामुपरि॥१४॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿इन पर्वतों के ऊपर क्रम से पद्म, महापद्म, तिगिंछ, केस‍री, महापुण्‍डरीक और पुण्‍डरीक ये तालाब हैं ॥१४॥</div><hr class=type_7>
-<br><div class=title id=gatha-03-15><span class=incFontSz>+ </span><a href=#index>﻿तालाब की लम्बाई-चौड़ाई</a><span class=decFontSz> -</span></div><div class=gatha>﻿प्रथमो योजन-सहस्रायामस्तदर्द्धविष्कम्भो ह्रदः।॥१५॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿इन पर्वतों के ऊपर क्रम से पद्म, महापद्म, तिगिंछ, केस‍री, महापुण्‍डरीक और पुण्‍डरीक ये तालाब हैं ॥१४॥<br><div class=jsm id="jsm100"></div>
+<script type="text/javascript">
+var mind100 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"जम्बू-द्वीप के पर्वत के ऊपर तलाब"},
+
+                {"id":"sub1", "parentid":"root", "topic":"हिमवन्"},
+                {"id":"sub2", "parentid":"root", "topic":"महाहिमवन्"},
+                {"id":"sub3", "parentid":"root", "topic":"निषध"},
+                {"id":"sub4", "parentid":"root", "topic":"नील"},
+                {"id":"sub5", "parentid":"root", "topic":"रुक्‍मी"},
+                {"id":"sub6", "parentid":"root", "topic":"शिखरी"},
+
+                {"id":"sub11", "parentid":"sub1", "topic":"पद्म"},
+                {"id":"sub12", "parentid":"sub2", "topic":"महापद्म"},
+                {"id":"sub13", "parentid":"sub3", "topic":"तिगिंछ"},
+                {"id":"sub14", "parentid":"sub4", "topic":"केस‍री"},
+                {"id":"sub15", "parentid":"sub5", "topic":"महापुण्‍डरीक"},
+                {"id":"sub16", "parentid":"sub6", "topic":"पुण्‍डरीक"},
+]}; var options100 = { container:"jsm100", editable:false, theme:"primary" }; var jm = new jsMind(options100); jm.show(mind100); 
+</script>
+</div><hr class=type_7>
+<br><div class=title id=gatha-03-15><span class=incFontSz>+ </span><a href=#index>﻿तालाब की लम्बाई-चौड़ाई</a><span class=decFontSz> -</span></div><div class=gatha>﻿प्रथमो योजन-सहस्रायामस्तदर्द्धविष्कम्भो हृदः।॥१५॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿पहला तालाब एक हजार योजन लम्‍बा और इससे आधा चौड़ा है ॥१५॥</div><hr class=type_7>
 <br><div class=title id=gatha-03-16><span class=incFontSz>+ </span><a href=#index>﻿तालाब की गहराई</a><span class=decFontSz> -</span></div><div class=gatha>﻿दशयोजनावगाहः॥१६॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿तथा दस योजन गहरा है ॥१६॥</div><hr class=type_7>
 <br><div class=title id=gatha-03-17><span class=incFontSz>+ </span><a href=#index>﻿तालाब के बीच में कमल</a><span class=decFontSz> -</span></div><div class=gatha>﻿तन्मध्ये योजनं पुष्करम्॥१७॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿इसके बीच में एक योजन का कमल है ॥१७॥</div><hr class=type_7>
-<br><div class=title id=gatha-03-18><span class=incFontSz>+ </span><a href=#index>﻿बाकी तालाबों के आकार</a><span class=decFontSz> -</span></div><div class=gatha>﻿तद् द्विगुण-द्विगुणा ह्रदाः पुष्कराणि च॥१८॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿आगे के तालाब और कमल दूने-दूने हैं ॥१८॥</div><hr class=type_7>
+<br><div class=title id=gatha-03-18><span class=incFontSz>+ </span><a href=#index>﻿बाकी तालाबों के आकार</a><span class=decFontSz> -</span></div><div class=gatha>﻿तद् द्विगुण-द्विगुणा हृदाः पुष्कराणि च॥१८॥</div>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿आगे के तालाब और कमल दूने-दूने हैं ॥१८॥<br><div class=jsm id="jsm104"></div>
+<script type="text/javascript">
+var mind104 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"तलाबों की लंबाईxचौढ़ाईxगहराई"},
+
+                {"id":"sub1", "parentid":"root", "topic":"हिमवन्"},
+                {"id":"sub2", "parentid":"root", "topic":"महाहिमवन्"},
+                {"id":"sub3", "parentid":"root", "topic":"निषध"},
+                {"id":"sub4", "parentid":"root", "topic":"नील"},
+                {"id":"sub5", "parentid":"root", "topic":"रुक्‍मी"},
+                {"id":"sub6", "parentid":"root", "topic":"शिखरी"},
+
+                {"id":"sub11", "parentid":"sub1", "topic":"पद्म"},
+                {"id":"sub12", "parentid":"sub2", "topic":"महापद्म"},
+                {"id":"sub13", "parentid":"sub3", "topic":"तिगिंछ"},
+                {"id":"sub14", "parentid":"sub4", "topic":"केस‍री"},
+                {"id":"sub15", "parentid":"sub5", "topic":"महापुण्‍डरीक"},
+                {"id":"sub16", "parentid":"sub6", "topic":"पुण्‍डरीक"},
+
+
+                {"id":"sub111", "parentid":"sub11", "topic":"1000x500x10 योजन"},
+                {"id":"sub112", "parentid":"sub12", "topic":"2000x1000x20 योजन"},
+                {"id":"sub113", "parentid":"sub13", "topic":"4000x2000x40 योजन"},
+                {"id":"sub114", "parentid":"sub14", "topic":"4000x2000x40 योजन"},
+                {"id":"sub115", "parentid":"sub15", "topic":"2000x1000x20 योजन"},
+                {"id":"sub116", "parentid":"sub16", "topic":"1000x500x10 योजन"}
+]}; var options104 = { container:"jsm104", editable:false, theme:"belizehole" }; var jm = new jsMind(options104); jm.show(mind104); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-03-19><span class=incFontSz>+ </span><a href=#index>﻿तालाबों में देवियों का निवास</a><span class=decFontSz> -</span></div><div class=gatha>﻿तन्निवासिन्यो देव्यः श्री-ह्री-धृति-कीर्ति-बुद्धि-लक्ष्म्यः पल्योपमस्थितयः ससामानिक परिषत्काः ॥१९॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿इनमें श्री, ह्री, धृति, कीर्ति, बुद्धि और लक्ष्‍मी ये देवियाँ सामानिक और परिषद् देवों के साथ निवास करती हैं। तथा इनकी आयु एक पल्‍योपम है ॥१९॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿इनमें श्री, ह्री, धृति, कीर्ति, बुद्धि और लक्ष्‍मी ये देवियाँ सामानिक और परिषद् देवों के साथ निवास करती हैं। तथा इनकी आयु एक पल्‍योपम है ॥१९॥<br><div class=jsm id="jsm105"></div>
+<script type="text/javascript">
+var mind105 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"तलाबों में पद्म में रहने वाली देवियाँ"},
+
+                {"id":"sub1", "parentid":"root", "topic":"हिमवन्"},
+                {"id":"sub2", "parentid":"root", "topic":"महाहिमवन्"},
+                {"id":"sub3", "parentid":"root", "topic":"निषध"},
+                {"id":"sub4", "parentid":"root", "topic":"नील"},
+                {"id":"sub5", "parentid":"root", "topic":"रुक्‍मी"},
+                {"id":"sub6", "parentid":"root", "topic":"शिखरी"},
+
+                {"id":"sub11", "parentid":"sub1", "topic":"पद्म"},
+                {"id":"sub12", "parentid":"sub2", "topic":"महापद्म"},
+                {"id":"sub13", "parentid":"sub3", "topic":"तिगिंछ"},
+                {"id":"sub14", "parentid":"sub4", "topic":"केस‍री"},
+                {"id":"sub15", "parentid":"sub5", "topic":"महापुण्‍डरीक"},
+                {"id":"sub16", "parentid":"sub6", "topic":"पुण्‍डरीक"},
+
+
+                {"id":"sub111", "parentid":"sub11", "topic":"श्री"},
+                {"id":"sub112", "parentid":"sub12", "topic":"ह्री"},
+                {"id":"sub113", "parentid":"sub13", "topic":"धृति"},
+                {"id":"sub114", "parentid":"sub14", "topic":"कीर्ति"},
+                {"id":"sub115", "parentid":"sub15", "topic":"बुद्धि"},
+                {"id":"sub116", "parentid":"sub16", "topic":"लक्ष्‍मी"}
+]}; var options105 = { container:"jsm105", editable:false, theme:"wisteria" }; var jm = new jsMind(options105); jm.show(mind105); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-03-20><span class=incFontSz>+ </span><a href=#index>﻿क्षेत्रों की नदियाँ</a><span class=decFontSz> -</span></div><div class=gatha>﻿गंगासिन्धु रोहिद्रोहितास्या-हरिद्धरिकान्ता सीतासीतोदा-नारीनरकान्ता सुवर्णरूप्यकूला रक्तारक्तोदाः सरितस्तन्मध्यगाः ॥२०॥</div>
-<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿इन भरत आदि क्षेत्रों में-से गंगा, सिन्‍धु, रो‍हित, रोहितास्‍या, हरित्, हरिकान्‍ता, सीता, सीतोदा, नारी, नरकान्‍ता, सुवर्णकूला, रूप्‍यकूला, रक्‍ता और रक्‍तोदा नदियाँ बही हैं ॥२०॥</div><hr class=type_7>
+<div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿इन भरत आदि क्षेत्रों में-से गंगा, सिन्‍धु, रो‍हित, रोहितास्‍या, हरित्, हरिकान्‍ता, सीता, सीतोदा, नारी, नरकान्‍ता, सुवर्णकूला, रूप्‍यकूला, रक्‍ता और रक्‍तोदा नदियाँ बही हैं ॥२०॥<br><!--JsMindTagBeginH7-->
+                {"id":"root", "isroot":true, "topic":"जम्बू-द्वीप में नदियां"},
+
+
+                {"id":"sub1", "parentid":"root", "topic":"भरत"},
+                {"id":"sub2", "parentid":"root", "topic":"हैमवत"},
+                {"id":"sub3", "parentid":"root", "topic":"हरि"},
+                {"id":"sub4", "parentid":"root", "topic":"विदेह"},
+                {"id":"sub5", "parentid":"root", "topic":"रम्‍यक"},
+                {"id":"sub6", "parentid":"root", "topic":"हैरण्‍यवत"},
+                {"id":"sub7", "parentid":"root", "topic":"ऐरावत"},
+
+                {"id":"sub11", "parentid":"sub1", "topic":"गंगा"},
+                {"id":"sub12", "parentid":"sub1", "topic":"सिन्‍धु"},
+                {"id":"sub13", "parentid":"sub2", "topic":"रो‍हित"},
+                {"id":"sub14", "parentid":"sub2", "topic":"रोहितास्‍या"},
+                {"id":"sub15", "parentid":"sub3", "topic":"हरित्"},
+                {"id":"sub16", "parentid":"sub3", "topic":"हरिकान्‍ता"},
+                {"id":"sub17", "parentid":"sub4", "topic":"सीता"},
+                {"id":"sub18", "parentid":"sub4", "topic":"सीतोदा"},
+                {"id":"sub19", "parentid":"sub5", "topic":"नारी"},
+                {"id":"sub20", "parentid":"sub5", "topic":"नरकान्‍ता"},
+                {"id":"sub21", "parentid":"sub6", "topic":"सुवर्णकूला"},
+                {"id":"sub22", "parentid":"sub6", "topic":"रूप्‍यकूला"},
+                {"id":"sub23", "parentid":"sub7", "topic":"रक्‍ता"},
+                {"id":"sub24", "parentid":"sub7", "topic":"रक्‍तोदा"}
+]}; var options106 = { container:"jsm106", editable:false, theme:"asphalt" }; var jm = new jsMind(options106); jm.show(mind106); 
+</script>
+</div><hr class=type_7>
 <br><div class=title id=gatha-03-21><span class=incFontSz>+ </span><a href=#index>﻿नदियों की दिशा</a><span class=decFontSz> -</span></div><div class=gatha>﻿द्वयोर्द्वयोः पूर्वाः पूर्वगाः॥२१॥</div>
 <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿दो-दो नदियों में-से पहली-पहली नदी पूर्व समुद्र को जाती है ॥२१॥</div><hr class=type_7>
 <br><div class=title id=gatha-03-22><span class=incFontSz>+ </span><a href=#index>﻿तीसरी नदी की दिशा</a><span class=decFontSz> -</span></div><div class=gatha>﻿शेषास्त्वपरगाः॥२२॥</div>

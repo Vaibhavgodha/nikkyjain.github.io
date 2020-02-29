@@ -178,6 +178,22 @@ span.shortFont {
     font-size: 150%;
 }
 
+.jsm2 {
+            width:100%;
+            height:200px;
+            overflow: hidden;
+        }
+.jsm {
+            width:100%;
+            height:400px;
+            overflow: hidden;
+        }
+.jsm7 {
+            width:100%;
+            height:700px;
+            overflow: hidden;
+        }
+
 //p::first-letter {
 //    font-size: 200%;
 //}

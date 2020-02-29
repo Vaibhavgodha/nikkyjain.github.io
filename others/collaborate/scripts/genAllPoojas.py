@@ -25,6 +25,7 @@ html.write("""
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JainPooja</title>
   <link rel="icon" type="image/png" href='"""+myRelPath+"""images/default/jainFlag-short.jpg'/>
+  <link rel="stylesheet" href='"""+myRelPath+"""css/orgchart.css'>
   <link rel="stylesheet" href='"""+myRelPath+"""css/myJqueryMobile.css'>
   <style>
     body {

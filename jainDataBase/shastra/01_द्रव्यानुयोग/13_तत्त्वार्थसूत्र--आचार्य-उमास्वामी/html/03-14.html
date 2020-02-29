@@ -5,8 +5,11 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
       <title>तत्त्वार्थसूत्र--आचार्य-उमास्वामी</title>
       <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/orgchart.css'>
       <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../css/jsmind.css'>
       <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jsmind.js'></script>
       <script type="text/javascript" src='../../../../../js/jquery.js'></script>
       <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
       <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
@@ -61,7 +64,27 @@
     </div>
     <br><div class=title id=gatha-03-14><span class=incFontSz>+ </span><a href=#index>﻿पर्वतों पर तालाब</a><span class=decFontSz> -</span></div>
    <div class=gatha>﻿पद्ममहापद्मतिगिञ्छकेशरि महापुण्डरीकपुण्डरीका-हृदास्तेषामुपरि॥१४॥</div>
-    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿इन पर्वतों के ऊपर क्रम से पद्म, महापद्म, तिगिंछ, केस‍री, महापुण्‍डरीक और पुण्‍डरीक ये तालाब हैं ॥१४॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿इन पर्वतों के ऊपर क्रम से पद्म, महापद्म, तिगिंछ, केस‍री, महापुण्‍डरीक और पुण्‍डरीक ये तालाब हैं ॥१४॥<br><div class=jsm id="jsm100"></div>
+<script type="text/javascript">
+var mind100 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"जम्बू-द्वीप के पर्वत के ऊपर तलाब"},
+
+                {"id":"sub1", "parentid":"root", "topic":"हिमवन्"},
+                {"id":"sub2", "parentid":"root", "topic":"महाहिमवन्"},
+                {"id":"sub3", "parentid":"root", "topic":"निषध"},
+                {"id":"sub4", "parentid":"root", "topic":"नील"},
+                {"id":"sub5", "parentid":"root", "topic":"रुक्‍मी"},
+                {"id":"sub6", "parentid":"root", "topic":"शिखरी"},
+
+                {"id":"sub11", "parentid":"sub1", "topic":"पद्म"},
+                {"id":"sub12", "parentid":"sub2", "topic":"महापद्म"},
+                {"id":"sub13", "parentid":"sub3", "topic":"तिगिंछ"},
+                {"id":"sub14", "parentid":"sub4", "topic":"केस‍री"},
+                {"id":"sub15", "parentid":"sub5", "topic":"महापुण्‍डरीक"},
+                {"id":"sub16", "parentid":"sub6", "topic":"पुण्‍डरीक"},
+]}; var options100 = { container:"jsm100", editable:false, theme:"primary" }; var jm = new jsMind(options100); jm.show(mind100); 
+</script>
+</div>
   <br><div class=teekakaar>
     <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;सर्वार्थसिद्धि</span>&nbsp;
     <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;राजवार्तिक</span>&nbsp;

@@ -64,7 +64,6 @@ $( document ).ready(function() {
        $optgrp.append("<option value='037.html'><b>037</b> - ﻿नरक के दुःख कहना संभव नहीं</option>");
        $optgrp.append("<option value='038.html'><b>038</b> - ﻿नरक का क्षेत्र और परिणाम दुखमयी</option>");
        $optgrp.append("<option value='039.html'><b>039</b> - ﻿नरक में दुःख बहुत काल तक</option>");
-       $optgrp.append("<option value='040.html'><b>040</b> - ﻿तीर्यंच गति के दुःख</option>");
        $optgrp.append("<option value='049.html'><b>049</b> - ﻿पुण्यवान के भी इष्ट-वियोग सम्भव</option>");
        $optgrp.append("<option value='050.html'><b>050</b> - ﻿इसी को आगे और दृढ़ करते हैं</option>");
        $optgrp.append("<option value='057.html'><b>057</b> - ﻿कर्म-वशता</option>");
@@ -81,6 +80,8 @@ $( document ).ready(function() {
        $optgrp.append("<option value='071.html'><b>071</b> - ﻿भाव परावर्तन</option>");
        $optgrp.append("<option value='072.html'><b>072</b> - ﻿उपसंहार</option>");
        $optgrp.append("<option value='074-075.html'><b>074-075</b></option>");
+  mySel.append($optgrp);
+    $optgrp=$('<optgroup label="﻿एकत्व अनुप्रेक्षा">')
        $optgrp.append("<option value='074-076.html'><b>074-076</b> - ﻿एकत्व अनुप्रेक्षा</option>");
        $optgrp.append("<option value='077.html'><b>077</b> - ﻿स्वजन भी दुःख के साथी नहीं</option>");
        $optgrp.append("<option value='078.html'><b>078</b> - ﻿वास्तव में धर्म ही शरण</option>");

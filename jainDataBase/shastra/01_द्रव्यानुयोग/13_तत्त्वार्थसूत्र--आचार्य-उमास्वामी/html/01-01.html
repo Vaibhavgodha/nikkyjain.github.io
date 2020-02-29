@@ -5,8 +5,11 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1">
       <title>तत्त्वार्थसूत्र--आचार्य-उमास्वामी</title>
       <link rel="icon" type="image/png" href='../../../../../images/default/jainFlag-short.jpg'/>
+      <link rel="stylesheet" href='../../../../../css/orgchart.css'>
       <link rel="stylesheet" href='../../../../../css/myJqueryMobile.css'>
+      <link rel="stylesheet" href='../../../../../css/jsmind.css'>
       <link rel="stylesheet" href='../../../../../js/jquery-mobile/1.5-alpha/css/themes/default/jquery.mobile.css'>
+      <script type="text/javascript" src='../../../../../js/jsmind.js'></script>
       <script type="text/javascript" src='../../../../../js/jquery.js'></script>
       <script type="text/javascript" src='../../../../../js/jquery-mobile/1.5-alpha/jquery.mobile.js'></script>
       <script type="text/javascript" src='../../../../../js/myFontSzCtrl.js'></script>
@@ -61,7 +64,17 @@
     </div>
     <br><div class=title id=gatha-01-01><span class=incFontSz>+ </span><a href=#index>﻿मोक्ष का उपाय</a><span class=decFontSz> -</span></div>
    <div class=gatha>﻿सम्यग्दर्शनज्ञानचारित्राणि मोक्षमार्गः ॥१॥</div>
-    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿सम्‍यग्‍दर्शन, सम्‍यग्‍ज्ञान और सम्‍यक्‌चारित्र ये तीनों मिलकर मोक्ष का मार्ग हैं ॥१॥</div>
+    <div class=arth><b><font color=darkmagenta>अन्वयार्थ : </font></b>﻿सम्‍यग्‍दर्शन, सम्‍यग्‍ज्ञान और सम्‍यक्‌चारित्र ये तीनों मिलकर मोक्ष का मार्ग हैं ॥१॥<br><div class=jsm2 id="jsm1"></div>
+<script type="text/javascript">
+var mind1 = { meta:{ name:"demo", author:"abc@abc.com", version:"0.2" }, format:"node_array",data:[
+                {"id":"root", "isroot":true, "topic":"मोक्षमार्ग"},
+
+                {"id":"sub1", "parentid":"root", "topic":"सम्‍यग्‍दर्शन"},
+                {"id":"sub11", "parentid":"root", "topic":"सम्‍यग्‍ज्ञान"},
+                {"id":"sub12", "parentid":"root", "topic":"सम्‍यक्‌चारित्र"}
+]}; var options1 = { container:"jsm1", editable:false, theme:"primary" }; var jm = new jsMind(options1); jm.show(mind1); 
+</script>
+</div>
   <br><div class=teekakaar>
     <span onclick='toggleTeeka("0")' class=teeka0>&nbsp;&nbsp;सर्वार्थसिद्धि</span>&nbsp;
     <span onclick='toggleTeeka("1")' class=teeka1>&nbsp;&nbsp;राजवार्तिक</span>&nbsp;
