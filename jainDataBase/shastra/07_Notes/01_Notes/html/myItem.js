@@ -85,10 +85,18 @@ $( document ).ready(function() {
        $optgrp.append("<option value='08-11.html'><b>08-11</b> - ﻿लेश्या मार्गणा में कर्म का उदय</option>");
        $optgrp.append("<option value='08-12.html'><b>08-12</b> - ﻿सम्यक्त्व मार्गणा में कर्म का उदय</option>");
        $optgrp.append("<option value='08-13.html'><b>08-13</b> - ﻿संज्ञी मार्गणा में कर्म का उदय</option>");
+       $optgrp.append("<option value='08-14.html'><b>08-14</b> - ﻿आहार मार्गणा में कर्म का उदय</option>");
   mySel.append($optgrp);
-    $optgrp=$('<optgroup label="﻿मोहनीय-विभक्ति">')
-       $optgrp.append("<option value='09-01.html'><b>09-01</b> - ﻿प्रकृति-स्थान विभक्ति -- स्थान आदि समुत्कीर्तना अनुयोग द्वार</option>");
-       $optgrp.append("<option value='09-02.html'><b>09-02</b> - ﻿मोहनीय विभक्ति-स्थान में अल्प-बहुत्व</option>");
+    $optgrp=$('<optgroup label="﻿कर्म-सत्व">')
+       $optgrp.append("<option value='09-01.html'><b>09-01</b> - ﻿नरक गति मार्गणा में सत्व</option>");
+       $optgrp.append("<option value='09-02.html'><b>09-02</b> - ﻿तिर्यञ्च गति मार्गणा में सत्व</option>");
+       $optgrp.append("<option value='09-03.html'><b>09-03</b> - ﻿मनुष्य गति मार्गणा में सत्व</option>");
+       $optgrp.append("<option value='09-04.html'><b>09-04</b> - ﻿देव गति मार्गणा में सत्व</option>");
+       $optgrp.append("<option value='09-05.html'><b>09-05</b> - ﻿इंद्रिय और काय मार्गणा में सत्व</option>");
+       $optgrp.append("<option value='09-07.html'><b>09-07</b> - ﻿योग मार्गणा में सत्व</option>");
+       $optgrp.append("<option value='09-08.html'><b>09-08</b> - ﻿वेद, कषाय और ज्ञान मार्गणा में सत्व</option>");
+       $optgrp.append("<option value='09-09.html'><b>09-09</b> - ﻿संयम और दर्शन मार्गणा में सत्व</option>");
+       $optgrp.append("<option value='09-10.html'><b>09-10</b> - ﻿लेश्या, भव्य और सम्यक्त्व मार्गणा में सत्व</option>");
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿गुणस्थानों में आलाप">')
        $optgrp.append("<option value='10-01.html'><b>10-01</b> - ﻿गुणस्थानों में आलाप</option>");
@@ -126,10 +134,9 @@ $( document ).ready(function() {
        $optgrp.append("<option value='17-02.html'><b>17-02</b> - ﻿मार्गणा में अन्तरानुगम</option>");
        $optgrp.append("<option value='17-03.html'><b>17-03</b> - ﻿एक जीव की अपेक्षा प्रकृतिबंध अंतरानुगम</option>");
   mySel.append($optgrp);
-    $optgrp=$('<optgroup label="﻿अल्प-बहुत्व">')
-       $optgrp.append("<option value='18-01.html'><b>18-01</b> - ﻿जीवों में अल्प-बहुत्व</option>");
-       $optgrp.append("<option value='18-02.html'><b>18-02</b> - ﻿अद्धापरिमाण में अल्प-बहुत्व</option>");
-       $optgrp.append("<option value='18-03.html'><b>18-03</b> - ﻿योग-स्थान में अल्प-बहुत्व</option>");
+    $optgrp=$('<optgroup label="﻿मोहनीय-विभक्ति">')
+       $optgrp.append("<option value='27-01.html'><b>27-01</b> - ﻿प्रकृति-स्थान विभक्ति -- स्थान आदि समुत्कीर्तना अनुयोग द्वार</option>");
+       $optgrp.append("<option value='27-02.html'><b>27-02</b> - ﻿मोहनीय विभक्ति-स्थान में अल्प-बहुत्व</option>");
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿विविध विषय">')
        $optgrp.append("<option value='28-01.html'><b>28-01</b> - ﻿मूल संघ पट्टावली</option>");

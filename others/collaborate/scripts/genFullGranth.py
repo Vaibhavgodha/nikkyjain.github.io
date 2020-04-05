@@ -231,6 +231,7 @@ for bcFile in sorted(os.listdir('./main')):
         fData=fData.replace(']', ']</font></b>')
         fData=fData.replace('(', '<span class=comment>(')
         fData=fData.replace(')', ')</span>')
+        fData=re.sub(r'<table.*?table>', lambda m: m.group().replace("<br>", ""), fData, flags=re.DOTALL)
         fData=re.sub(r'<!--PythonTagBegin.*?PythonTagEnd-->', lambda m: m.group().replace("<br>", "\n"), fData, flags=re.DOTALL)
         fData=fData.replace('<!--PythonTagBegin-->', '<div align=center>')
         fData=fData.replace('<!--PythonTagEnd-->', '</div>')
