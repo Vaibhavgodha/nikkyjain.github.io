@@ -58,6 +58,8 @@ $( document ).ready(function() {
        $optgrp.append("<option value='05-08.html'><b>05-08</b> - ﻿योग-मार्गणा में प्रकृति बंध</option>");
        $optgrp.append("<option value='05-09.html'><b>05-09</b> - ﻿वेद-मार्गणा में प्रकृति बंध</option>");
        $optgrp.append("<option value='05-10.html'><b>05-10</b> - ﻿लेश्या-मार्गणा में प्रकृति बंध</option>");
+       $optgrp.append("<option value='05-15.html'><b>05-15</b> - ﻿मूल प्रकृति में सादि आदि बंध के भेद</option>");
+       $optgrp.append("<option value='05-16.html'><b>05-16</b> - ﻿उत्तर प्रकृति में सादि आदि बंध के भेद</option>");
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿स्थिति बंध ">')
        $optgrp.append("<option value='06-01.html'><b>06-01</b> - ﻿मार्गणा में जघन्य और उत्कृष्ट स्तिथि-बंध</option>");
@@ -97,6 +99,15 @@ $( document ).ready(function() {
        $optgrp.append("<option value='09-08.html'><b>09-08</b> - ﻿वेद, कषाय और ज्ञान मार्गणा में सत्व</option>");
        $optgrp.append("<option value='09-09.html'><b>09-09</b> - ﻿संयम और दर्शन मार्गणा में सत्व</option>");
        $optgrp.append("<option value='09-10.html'><b>09-10</b> - ﻿लेश्या, भव्य और सम्यक्त्व मार्गणा में सत्व</option>");
+       $optgrp.append("<option value='09-11.html'><b>09-11</b> - ﻿संज्ञी और आहार मार्गणा में सत्व</option>");
+       $optgrp.append("<option value='09-12.html'><b>09-12</b> - ﻿एक जीव के सत्व में स्थान और भंग की संख्या</option>");
+       $optgrp.append("<option value='09-13.html'><b>09-13</b> - ﻿मिथ्यादृष्टि के सत्व में 18 स्थान / 50 भंग</option>");
+       $optgrp.append("<option value='09-14.html'><b>09-14</b> - ﻿सासादन के सत्व में 4 स्थान / 12 भंग</option>");
+       $optgrp.append("<option value='09-15.html'><b>09-15</b> - ﻿मिश्र गुणस्थान के सत्व में स्थान / 36 भंग</option>");
+       $optgrp.append("<option value='09-16.html'><b>09-16</b> - ﻿अविरत-सम्यक्त्वी के सत्व में 40 स्थान / 120 भंग</option>");
+       $optgrp.append("<option value='09-17.html'><b>09-17</b> - ﻿देशविरती के सत्व में 40 स्थान / 48 भंग</option>");
+       $optgrp.append("<option value='09-18.html'><b>09-18</b> - ﻿6-7 गुणस्थान के सत्व में 40 स्थान / 40 भंग</option>");
+       $optgrp.append("<option value='09-19.html'><b>09-19</b> - ﻿उपशम श्रेणी के सत्व में 24 स्थान और भंग</option>");
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿गुणस्थानों में आलाप">')
        $optgrp.append("<option value='10-01.html'><b>10-01</b> - ﻿गुणस्थानों में आलाप</option>");
@@ -135,13 +146,14 @@ $( document ).ready(function() {
        $optgrp.append("<option value='17-03.html'><b>17-03</b> - ﻿एक जीव की अपेक्षा प्रकृतिबंध अंतरानुगम</option>");
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿मोहनीय-विभक्ति">')
-       $optgrp.append("<option value='27-01.html'><b>27-01</b> - ﻿प्रकृति-स्थान विभक्ति -- स्थान आदि समुत्कीर्तना अनुयोग द्वार</option>");
+       $optgrp.append("<option value='27-01.html'><b>27-01</b> - ﻿मोहनीय प्रकृति-स्थान विभक्ति -- स्थान आदि</option>");
        $optgrp.append("<option value='27-02.html'><b>27-02</b> - ﻿मोहनीय विभक्ति-स्थान में अल्प-बहुत्व</option>");
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿विविध विषय">')
        $optgrp.append("<option value='28-01.html'><b>28-01</b> - ﻿मूल संघ पट्टावली</option>");
        $optgrp.append("<option value='28-02.html'><b>28-02</b> - ﻿पुराण-पुरुष</option>");
        $optgrp.append("<option value='28-03.html'><b>28-03</b> - ﻿जीव-समास (98 भेद)</option>");
+       $optgrp.append("<option value='28-04.html'><b>28-04</b> - ﻿नरक संबंधी जानकारी</option>");
   mySel.append($optgrp);
     $optgrp=$('<optgroup label="﻿अलौकिक गणित">')
        $optgrp.append("<option value='29-01.html'><b>29-01</b> - ﻿क्षेत्र प्रमाण</option>");
